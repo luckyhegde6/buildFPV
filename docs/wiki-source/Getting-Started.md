@@ -38,4 +38,4 @@ Not just speed. Progress includes smoother control, fewer over-corrections, more
 
 ## Next pages
 
-Go to [[Daily Liftoff Routine]] for session length choices, [[Pocket ELRS and Liftoff]] for controller notes, and [[FPV System Basics]] for the aircraft components.
+Go to [[Daily Liftoff Routine]] for session length choices, [[RadioMaster Pocket Button Guide]] for button/switch setup, [[Pocket Video Walkthrough Notes]] for video study, [[Pocket ELRS and Liftoff]] for controller notes, and [[FPV System Basics]] for the aircraft components.
