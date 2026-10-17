@@ -75,3 +75,12 @@ Mark each statement as one of these when it matters:
 - **Open question:** something that needs verification before it becomes a build decision.
 
 This is a learning project, not legal, electrical, or flight-safety certification. Always check the exact product manual and current local rules.
+
+
+## 🎮 RadioMaster Pocket quick links
+
+- [Button, switch and gimbal guide](docs/06-pocket-button-guide.md) — identify the Pocket controls and keep simulator and aircraft models separate.
+- [Pocket-to-Liftoff setup](docs/03-pocket-elrs.md) — connect with a data-capable USB-C cable and calibrate each primary axis.
+- [Video walkthrough notes](docs/wiki-source/Pocket-Video-Walkthrough-Notes.md) — record timestamps and verify instructions against official documentation.
+
+> Safety reminder: USB joystick mode is separate from ExpressLRS binding. For physical aircraft bench work, remove every propeller and verify failsafe, arming, disarming, and motor direction before flight.
