@@ -13,6 +13,8 @@
 
 **Radio + software**
 - [[Pocket ELRS and Liftoff]]
+- [[RadioMaster Pocket Button Guide]]
+- [[Pocket Video Walkthrough Notes]]
 - [[ExpressLRS Basics]]
 - [[Betaflight Basics]]
 - [[Configuration and Customisation]]
