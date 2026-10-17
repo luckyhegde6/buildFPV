@@ -5,7 +5,7 @@ These Markdown files are the source for the **separate GitHub Wiki**. Names with
 ## Recommended page structure
 
 - **Daily learning:** Daily Liftoff Routine, Simulator Training, Practice Skills and Race Times, Learning Journal.
-- **Technical foundation:** FPV System Basics, Pocket ELRS and Liftoff, ExpressLRS Basics, Betaflight Basics.
+- **Technical foundation:** FPV System Basics, Pocket ELRS and Liftoff, RadioMaster Pocket Button Guide, Pocket Video Walkthrough Notes, ExpressLRS Basics, Betaflight Basics.
 - **Build preparation:** Buying Parts in India, First Build Checklist, Video Systems and Goggles, Bench Safety and Flight Readiness.
 - **Ongoing engineering:** Configuration and Customisation, Troubleshooting, BuildFPV Projects Library, Project Roadmap, References, India Outdoor Flying Rules.
 
