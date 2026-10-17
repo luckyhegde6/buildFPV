@@ -11,8 +11,9 @@ Welcome to the beginner-first field guide for [`luckyhegde6/buildFPV`](https://g
 
 | Path | Goal | Start here |
 |---|---|---|
-| 🟢 **Start now** | Radio + simulator setup | [[Getting Started]] · [[Pocket ELRS and Liftoff]] |
+| 🟢 **Start now** | Radio + simulator setup | [[Getting Started]] · [[Pocket ELRS and Liftoff]] · [[RadioMaster Pocket Button Guide]] |
 | 🎮 **Build the habit** | Repeatable daily practice | [[Daily Liftoff Routine]] · [[Learning Journal]] · [[Practice Skills and Race Times]] |
+| 🎛️ **Pocket controls** | Buttons, switches, gimbals and video-study notes | [[RadioMaster Pocket Button Guide]] · [[Pocket Video Walkthrough Notes]] |
 | 🧠 **Understand the aircraft** | Control, power, flight and video systems | [[FPV System Basics]] · [[ExpressLRS Basics]] · [[Betaflight Basics]] |
 | 🛒 **Plan purchases** | Compare compatible parts and local stores | [[Buying Parts in India]] · [[First Build Checklist]] |
 | 🔧 **Configure carefully** | Backups, customisations and troubleshooting | [[Configuration and Customisation]] · [[Troubleshooting]] |
