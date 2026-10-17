@@ -16,6 +16,7 @@
 | Understand the whole aircraft | [FPV system basics](docs/01-fpv-basics.md) |
 | Build a daily flying habit | [Daily Liftoff routine](docs/wiki-source/Daily-Liftoff-Routine.md) · [Learning journal](docs/learning-log/README.md) |
 | Connect a Pocket ELRS to Liftoff | [Pocket ELRS guide](docs/03-pocket-elrs.md) |
+| Understand Pocket buttons, switches and gimbal adjustments | [Button, switch and gimbal guide](docs/06-pocket-button-guide.md) |
 | Track sessions, race times and screenshots | [Practice log template](docs/learning-log/templates/daily-session.md) |
 | Learn Betaflight without risky guesswork | [Betaflight basics](docs/wiki-source/Betaflight-Basics.md) |
 | Plan a first quad or tiny whoop | [First build checklist](docs/04-first-build.md) · [India buyer guide](docs/wiki-source/Buying-Parts-in-India.md) |
@@ -44,6 +45,10 @@ buildFPV/
     ├── 03-pocket-elrs.md
     ├── 04-first-build.md
     ├── 05-roadmap.md
+    ├── 06-pocket-button-guide.md
+    ├── assets/
+    │   ├── pocket-control-map.svg
+    │   └── pocket-gimbal-adjustment.png
     ├── checklists.md
     ├── references.md
     ├── learning-log/
