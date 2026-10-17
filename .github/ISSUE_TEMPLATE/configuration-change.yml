@@ -1,0 +1,75 @@
+name: Configuration / Customisation Log
+description: Record an EdgeTX, ExpressLRS, Betaflight, ESC, or video-system change with a rollback plan.
+title: "[Config] device — change"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🛠️ Make one change at a time
+        Back up the current config where available, state the expected outcome, and record how you tested it. For physical quad setup or motor work, remove **every propeller** first.
+  - type: dropdown
+    id: system
+    attributes:
+      label: System changed
+      options:
+        - EdgeTX / transmitter model
+        - ExpressLRS transmitter module
+        - ExpressLRS receiver
+        - Betaflight flight controller
+        - ESC / motor configuration
+        - Video transmitter / goggles / camera
+        - Liftoff simulator
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: exact_hardware
+    attributes:
+      label: Exact model and revision
+      placeholder: Include board version / receiver variant if known
+    validations:
+      required: true
+  - type: input
+    id: firmware
+    attributes:
+      label: Firmware version before → after
+      placeholder: Unknown → version, or same version
+    validations:
+      required: false
+  - type: textarea
+    id: reason
+    attributes:
+      label: Goal and official documentation
+      placeholder: What problem are you solving? Link the exact guide/manual used.
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety_backup
+    attributes:
+      label: Preparation checklist
+      options:
+        - label: I saved a backup / exported config or CLI diff where available.
+        - label: For physical quad bench work, all propellers are removed.
+        - label: Battery is disconnected before soldering or changing wiring.
+        - label: I verified the exact target/board revision before firmware flashing.
+  - type: textarea
+    id: change
+    attributes:
+      label: What changed and how was it tested?
+      placeholder: Before → change → expected result → observed result
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Outcome and rollback plan
+      placeholder: Keep / revert / needs more testing; include backup path or rollback steps.
+    validations:
+      required: true
+  - type: input
+    id: evidence
+    attributes:
+      label: Screenshot / diff / log link (optional)
+      placeholder: Paste link or add attachment after creating the issue
+    validations:
+      required: false

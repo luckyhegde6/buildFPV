@@ -1,0 +1,31 @@
+## 🚁 buildFPV
+
+**Start**
+- [[Home]]
+- [[Getting Started]]
+- [[FPV System Basics]]
+
+**Practice**
+- [[Daily Liftoff Routine]]
+- [[Simulator Training]]
+- [[Practice Skills and Race Times]]
+- [[Learning Journal]]
+
+**Radio + software**
+- [[Pocket ELRS and Liftoff]]
+- [[ExpressLRS Basics]]
+- [[Betaflight Basics]]
+- [[Configuration and Customisation]]
+
+**Build + buy**
+- [[First Build Checklist]]
+- [[Buying Parts in India]]
+- [[Video Systems and Goggles]]
+
+**Safety + learn more**
+- [[Bench Safety and Flight Readiness]]
+- [[India Outdoor Flying Rules]]
+- [[Troubleshooting]]
+- [[BuildFPV Projects Library]]
+- [[Project Roadmap]]
+- [[References]]

@@ -1,0 +1,99 @@
+name: Daily Liftoff Session
+description: Log a short, repeatable FPV simulator practice session.
+title: "[Practice] YYYY-MM-DD — skill or track"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🚁 One session is a win
+        Record the session briefly. If you captured a screenshot/video, drag it into a comment or link it below. Avoid changing many rates/settings at once.
+  - type: input
+    id: session_date
+    attributes:
+      label: Session date
+      description: Use YYYY-MM-DD.
+      placeholder: 2026-10-17
+    validations:
+      required: true
+  - type: dropdown
+    id: radio
+    attributes:
+      label: Radio / controller used
+      options:
+        - RadioMaster Pocket ELRS
+        - RadioMaster Boxer
+        - RadioMaster TX1 / TX16S / other TX-family radio
+        - Other / game controller
+    validations:
+      required: true
+  - type: dropdown
+    id: duration
+    attributes:
+      label: Session duration
+      description: Choose the time you actually completed; short counts.
+      options:
+        - 5 min
+        - 10 min
+        - 15 min
+        - 20 min
+        - 30+ min
+        - Rest day / intentionally skipped
+    validations:
+      required: true
+  - type: checkboxes
+    id: drill
+    attributes:
+      label: What did you practise?
+      options:
+        - label: Stick-axis warm-up
+        - label: Smooth throttle and altitude control
+        - label: Wide turns / coordinated yaw
+        - label: Figure-eight
+        - label: Gates / circuit
+        - label: Orientation recovery
+        - label: Landing
+        - label: Race laps / time trial
+        - label: Other drill (describe below)
+  - type: input
+    id: map_track
+    attributes:
+      label: Map / track / quad preset
+      placeholder: Track name, quad preset, rates if changed
+    validations:
+      required: false
+  - type: input
+    id: lap_time
+    attributes:
+      label: Best lap time (if applicable)
+      placeholder: 00:32.451 — same track/settings only
+    validations:
+      required: false
+  - type: input
+    id: previous_lap
+    attributes:
+      label: Previous best on same track/settings (optional)
+      placeholder: 00:34.100
+    validations:
+      required: false
+  - type: textarea
+    id: win
+    attributes:
+      label: One win and one difficulty
+      description: Two short bullets are enough.
+      placeholder: "Win: smoother left turns.\nDifficulty: over-corrected yaw after gates."
+    validations:
+      required: true
+  - type: textarea
+    id: next_focus
+    attributes:
+      label: One focus for next session
+      placeholder: Practise wide left and right turns at low speed.
+    validations:
+      required: true
+  - type: input
+    id: media_link
+    attributes:
+      label: Screenshot / replay / video link (optional)
+      placeholder: Link or relative repository path; images can also be attached after issue creation.
+    validations:
+      required: false

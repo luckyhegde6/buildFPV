@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">RadioMaster Pocket front control map</title>
+  <desc id="desc">Simplified front layout showing gimbals, shoulder switches, menu controls, wheel, trims, LCD and USB-C port.</desc>
+  <defs>
+    <linearGradient id="body" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#f8fafc"/><stop offset="1" stop-color="#cbd5e1"/></linearGradient>
+    <linearGradient id="screen" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#0f172a"/><stop offset="1" stop-color="#334155"/></linearGradient>
+    <style>
+      .label{font: bold 23px system-ui, sans-serif; fill:#0f172a}
+      .small{font: 18px system-ui, sans-serif; fill:#334155}
+      .call{stroke:#0ea5e9;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .switch{fill:#22c55e;stroke:#166534;stroke-width:2}
+      .button{fill:#f8fafc;stroke:#475569;stroke-width:3}
+      .gimbal{fill:#dbeafe;stroke:#334155;stroke-width:5}
+    </style>
+  </defs>
+  <rect width="1200" height="760" rx="24" fill="#f8fafc"/>
+  <text x="600" y="48" text-anchor="middle" font-family="system-ui,sans-serif" font-size="30" font-weight="700" fill="#0f172a">RadioMaster Pocket — Front controls (simplified)</text>
+  <text x="600" y="78" text-anchor="middle" class="small">Use the exact switch labels on your radio; configured functions can differ by model.</text>
+  <!-- radio body -->
+  <path d="M370 172 Q420 128 500 135 L700 135 Q780 128 830 172 L905 250 L875 540 Q866 610 800 632 L400 632 Q334 610 325 540 L295 250 Z" fill="url(#body)" stroke="#64748b" stroke-width="5"/>
+  <path d="M465 156 Q600 180 735 156 L755 190 L445 190 Z" fill="#94a3b8" stroke="#64748b" stroke-width="3"/>
+  <!-- screen -->
+  <rect x="510" y="220" width="180" height="110" rx="10" fill="url(#screen)" stroke="#64748b" stroke-width="5"/>
+  <text x="600" y="265" text-anchor="middle" font-family="system-ui,sans-serif" font-size="20" fill="#e2e8f0">LCD</text><text x="600" y="292" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" fill="#94a3b8">EdgeTX</text>
+  <text x="600" y="351" text-anchor="middle" font-family="system-ui,sans-serif" font-size="20" font-weight="700" fill="#334155">POCKET</text>
+  <!-- gimbals -->
+  <circle cx="425" cy="385" r="84" class="gimbal"/><circle cx="425" cy="385" r="50" fill="#94a3b8" stroke="#475569" stroke-width="4"/><circle cx="425" cy="385" r="27" fill="#0f172a" stroke="#64748b" stroke-width="4"/><path d="M390 385 H460 M425 350 V420" stroke="#64748b" stroke-width="4"/>
+  <circle cx="775" cy="385" r="84" class="gimbal"/><circle cx="775" cy="385" r="50" fill="#94a3b8" stroke="#475569" stroke-width="4"/><circle cx="775" cy="385" r="27" fill="#0f172a" stroke="#64748b" stroke-width="4"/><path d="M740 385 H810 M775 350 V420" stroke="#64748b" stroke-width="4"/>
+  <!-- shoulder switch indicators -->
+  <rect x="360" y="160" width="70" height="22" rx="7" class="switch"/><rect x="450" y="160" width="70" height="22" rx="7" class="switch"/><rect x="680" y="160" width="70" height="22" rx="7" class="switch"/><rect x="770" y="160" width="70" height="22" rx="7" class="switch"/>
+  <text x="395" y="155" text-anchor="middle" class="small">SA</text><text x="485" y="155" text-anchor="middle" class="small">SB</text><text x="715" y="155" text-anchor="middle" class="small">SC</text><text x="805" y="155" text-anchor="middle" class="small">SD</text>
+  <!-- center buttons -->
+  <circle cx="530" cy="385" r="23" class="button"/><circle cx="670" cy="385" r="23" class="button"/><circle cx="600" cy="384" r="26" class="button"/>
+  <text x="530" y="392" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" fill="#0f172a">SYS</text><text x="670" y="392" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" fill="#0f172a">MDL</text><text x="600" y="391" text-anchor="middle" font-family="system-ui,sans-serif" font-size="20" fill="#0f172a">⏻</text>
+  <!-- left menu buttons -->
+  <rect x="355" y="465" width="54" height="26" rx="10" class="button"/><rect x="355" y="499" width="54" height="26" rx="10" class="button"/><rect x="355" y="533" width="54" height="26" rx="10" class="button"/><rect x="355" y="567" width="54" height="26" rx="10" class="button"/>
+  <text x="382" y="483" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#0f172a">RTN</text><text x="382" y="517" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#0f172a">PAGE&gt;</text><text x="382" y="551" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#0f172a">PAGE&lt;</text><text x="382" y="585" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#0f172a">TELE</text>
+  <!-- wheel -->
+  <rect x="825" y="455" width="36" height="125" rx="12" fill="#475569" stroke="#0f172a" stroke-width="3"/><path d="M833 470 H853 M833 482 H853 M833 494 H853 M833 506 H853 M833 518 H853 M833 530 H853 M833 542 H853 M833 554 H853" stroke="#cbd5e1" stroke-width="3"/>
+  <!-- S1 pot -->
+  <circle cx="345" cy="200" r="16" fill="#fff" stroke="#475569" stroke-width="4"/><path d="M345 190 L351 202 L339 202 Z" fill="#0ea5e9"/>
+  <!-- SE -->
+  <rect x="790" y="115" width="35" height="15" rx="5" class="switch"/><text x="844" y="125" class="small">SE momentary</text>
+  <!-- USB-C -->
+  <rect x="553" y="606" width="94" height="12" rx="6" fill="#475569"/><text x="600" y="656" text-anchor="middle" class="small">USB-C / charging and data</text>
+  <!-- callouts -->
+  <path class="call" d="M360 199 H210 V150 H75"/><text x="74" y="140" class="label">S1 pot</text><text x="74" y="168" class="small">Assignable analog input</text>
+  <path class="call" d="M425 385 H185 V308 H75"/><text x="74" y="285" class="label">Left gimbal</text><text x="74" y="312" class="small">Mode 2: throttle + yaw</text>
+  <path class="call" d="M775 385 H1010 V305 H1120"/><text x="1120" y="284" text-anchor="end" class="label">Right gimbal</text><text x="1120" y="312" text-anchor="end" class="small">Mode 2: pitch + roll</text>
+  <path class="call" d="M600 384 V430 H1010 V444 H1120"/><text x="1120" y="440" text-anchor="end" class="label">Power button</text><text x="1120" y="468" text-anchor="end" class="small">Long press for on/off</text>
+  <path class="call" d="M382 527 H190 V625 H75"/><text x="74" y="604" class="label">Navigation buttons</text><text x="74" y="632" class="small">RTN / PAGE / TELE / SYS</text>
+  <path class="call" d="M843 520 H1005 V566 H1120"/><text x="1120" y="562" text-anchor="end" class="label">Menu wheel</text><text x="1120" y="590" text-anchor="end" class="small">Scroll and press to select</text>
+  <path class="call" d="M715 170 H1015 V205 H1120"/><text x="1120" y="201" text-anchor="end" class="label">SA / SB / SC / SD</text><text x="1120" y="229" text-anchor="end" class="small">Physical switches</text>
+  <text x="600" y="720" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" fill="#64748b">Illustrative control map, not a scale drawing. Confirm your actual switch detents and EdgeTX model mapping.</text>
+</svg>

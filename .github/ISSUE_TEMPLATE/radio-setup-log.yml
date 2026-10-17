@@ -1,0 +1,85 @@
+name: Radio / configuration log
+description: Record a Pocket, EdgeTX, ExpressLRS, Betaflight or simulator configuration change.
+title: "[Config] YYYY-MM-DD — device / setting"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🧪 Change one thing at a time
+        Back up first. Remove propellers for bench setup, wiring, firmware and motor tests. Keep simulator-only configuration separate from a real quad model.
+  - type: input
+    id: date
+    attributes:
+      label: Date
+      placeholder: YYYY-MM-DD
+    validations:
+      required: true
+  - type: dropdown
+    id: device
+    attributes:
+      label: Device / context
+      options:
+        - RadioMaster Pocket ELRS
+        - RadioMaster Boxer
+        - RadioMaster TX1 / TX16S / TX family
+        - Liftoff / simulator only
+        - Flight controller / Betaflight
+        - ExpressLRS receiver / TX module
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Firmware / software versions
+      placeholder: EdgeTX, ELRS TX/RX, Betaflight, OS, Liftoff
+    validations:
+      required: false
+  - type: input
+    id: model_name
+    attributes:
+      label: EdgeTX model name
+      placeholder: SIM-Liftoff or QUAD-ELRS
+    validations:
+      required: false
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal and reason for change
+      placeholder: What are you trying to make better or fix?
+    validations:
+      required: true
+  - type: textarea
+    id: before_after
+    attributes:
+      label: Before / after
+      placeholder: "Before:\nAfter:\nMenu path / setting:\nOfficial reference:"
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety / backup checks
+      options:
+        - label: I identified the exact hardware variant and firmware target.
+        - label: I saved a backup before changes.
+        - label: All propellers were removed for bench configuration or motor tests.
+        - label: I kept USB simulator setup separate from real-aircraft RF settings.
+  - type: dropdown
+    id: result
+    attributes:
+      label: Result
+      options:
+        - Pass
+        - Fail — rollback needed
+        - Inconclusive
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Evidence, learning and next step
+      description: Add a screenshot, video timecode, config diff, rollback filename or next question.
+      placeholder: What did you observe and how did you verify it?
+    validations:
+      required: true
