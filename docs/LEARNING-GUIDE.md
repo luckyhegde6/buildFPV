@@ -1,9 +1,9 @@
 # 🚁 buildFPV Learning Guide
 
-This is the main table of contents for the FPV learning material maintained **inside this repository**. Start at the top and move forward when you can explain the concepts or complete the practice checkpoint. There is no deadline: repeat any stage you need.
+This is the main entry point for the FPV learning material maintained **inside this repository**. Follow the sequence below: first understand the whole aircraft, then learn how it moves, then practise in a simulator before buying or configuring hardware. You can revisit any stage at any time.
 
 > [!TIP]
-> A useful first session is 10–15 minutes in Liftoff. Practise one control at a time, then record one thing that improved and one goal for the next session.
+> A useful first session is 10–15 minutes in Liftoff. Practise one control at a time, then record one thing that improved and one goal for the next session. Keep real aircraft disarmed and propellers removed while learning setup or testing motors.
 
 ## Beginner path
 
@@ -18,14 +18,28 @@ This is the main table of contents for the FPV learning material maintained **in
 
 ## Visual guides
 
-### Whole-aircraft mental model
+Use these diagrams as a quick visual index. Read the matching section for the explanation; do not use concept art as a wiring or motor-direction reference.
+
+### 1. Whole-aircraft overview
 ![AI-generated FPV build concept](assets/fpv-build-concept-ai.jpg)
 
-*Concept illustration for orientation only; it is not a wiring diagram. Verify pinouts, motor direction and board revisions in the exact manufacturer's manual.*
+*Concept artwork for orientation only. Component placement varies by build; verify pinouts and board revisions against the exact manufacturer's documentation.*
 
-- [How an FPV quad works](07-how-fpv-drones-work.md) — annotated explanations and diagrams.
-- [RadioMaster Pocket buttons and switches](06-pocket-button-guide.md) — front controls, gimbal adjustments, EdgeTX models and Liftoff calibration.
-- [Video, antennas and range](08-video-antennas-and-range.md) — separates control and video systems.
+### 2. Understand the four flight controls
+![Throttle, roll, pitch and yaw illustrated](assets/flight-axes.svg)
+
+Throttle changes the overall thrust request. Roll, pitch and yaw change the aircraft's rotation by adjusting motor outputs in different ways. The exact motor mix depends on frame orientation, firmware and configuration.
+
+### 3. Follow the control loop
+![Simplified flight-control feedback loop](assets/fpv-control-loop.svg)
+
+The radio sends pilot commands, the flight controller compares requested and measured movement, and the ESCs change motor power. The gyro drives fast stabilisation; GPS is a slower source of navigation data, not a replacement for the gyro.
+
+### Continue into focused guides
+
+- [How an FPV quad works](07-how-fpv-drones-work.md) — lift, propeller rotation, flight axes and feedback.
+- [RadioMaster Pocket buttons and switches](06-pocket-button-guide.md) — physical controls, gimbal adjustments, EdgeTX and Liftoff calibration.
+- [Video, antennas and range](08-video-antennas-and-range.md) — camera-to-goggles signal path and antenna trade-offs.
 - [GPS and flight-controller examples](09-gps-and-flight-controller-examples.md) — GNSS data flow, UARTs, AIO vs stack and GPS Rescue caveats.
 
 ## Practice cadence
@@ -47,4 +61,4 @@ At the end of a session, write down:
 
 ## How to use images
 
-Diagrams and project-owned visual assets live in the [`assets/`](assets/README.md) folder. Markdown pages link to them using relative paths so the rendered repository pages display images directly from the same commit. Product photos hosted by manufacturers or retailers are examples only; follow their links for current versions and specifications. An image is never a substitute for a revision-specific wiring diagram.
+Project-owned diagrams live in [`docs/assets/`](assets/README.md), and pages reference them using repository-relative paths. This keeps core learning visuals versioned alongside the explanations. External manufacturer/retailer photos are examples only; they can move or change, so the linked product page is the reference for current specifications. An image is never a substitute for a revision-specific wiring diagram.
