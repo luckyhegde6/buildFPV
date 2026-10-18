@@ -43,6 +43,7 @@ buildFPV/
 ├── README.md
 ├── .github/ISSUE_TEMPLATE/       # Optional daily practice + configuration logs
 └── docs/
+    ├── LEARNING-GUIDE.md          # Maintained learning entry point
     ├── 01-fpv-basics.md
     ├── 02-simulator-training.md
     ├── 03-pocket-elrs.md
