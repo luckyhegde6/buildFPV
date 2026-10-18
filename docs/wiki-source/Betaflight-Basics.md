@@ -1,5 +1,7 @@
 # 🧠 Betaflight Basics — understand before you click
 
+![FPV flight-control loop](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-control-loop.svg)
+
 [Betaflight](https://betaflight.com/) is flight-controller firmware used on many FPV freestyle/racing quads. The [Betaflight App](https://betaflight.com/docs/wiki/app) is the configurator for supported Betaflight flight controllers. Do not connect the app to the radio or digital video unit; connect it to the **flight controller** with a data-capable USB cable.
 
 > [!WARNING]
