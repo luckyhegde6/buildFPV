@@ -1,5 +1,7 @@
 # Pocket ELRS and Liftoff
 
+![RadioMaster Pocket front-control map](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/pocket-control-map.svg)
+
 This page covers a radio-only simulator workflow. It does not require a real receiver or a powered quad.
 
 ## RadioMaster Pocket notes from the supplied A1.8 quick-start guide
