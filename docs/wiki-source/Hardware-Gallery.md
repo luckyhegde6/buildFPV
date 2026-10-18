@@ -4,17 +4,11 @@ This page collects real build photos and manufacturer product images for learnin
 
 ## A real FPV quadcopter build
 
-![FPV racing quadcopter with camera, frame and rear video antenna](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/FPV_Quadrocopter.jpg/960px-FPV_Quadrocopter.jpg)
-
-**What to spot:** carbon frame, four motors, flight camera and the rear video antenna.
-
-Photo: [FPV Quadrocopter.jpg on Wikimedia Commons](https://commons.wikimedia.org/wiki/File:FPV_Quadrocopter.jpg), by Clicklabs; licensed [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
-
 ![Racing drone with orange propellers and an onboard action camera](https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Racing_Drone.jpg/960px-Racing_Drone.jpg)
 
-**What to spot:** protective camera mount, battery strap/pack, antennas, wiring and component stacking.
+**What to spot:** the central frame, four motor/propeller assemblies, camera protection, battery area, antennas and visible wiring.
 
-Photo: [Racing Drone.jpg on Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Racing_Drone.jpg), by Commanderbryce; licensed [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Photo: [Racing Drone.jpg on Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Racing_Drone.jpg), by Commanderbryce, licensed [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). This photo is useful for visual component recognition; don't use it as a wiring diagram.
 
 ## Flight-controller hardware
 
@@ -48,11 +42,9 @@ Example image from a [BN-220 style GPS module listing](https://readytosky.com/).
 
 This is **AI-generated concept art** created for the buildFPV learning project. It is useful for visual orientation only; labels/perspective may be imperfect. Use the manufacturer manuals and the labelled diagrams in [[How FPV Drones Work]] and [[GPS and Flight Controllers]] for technical decisions.
 
-## Exploded component overview
+## Broader UAV electronics reference
 
-![Exploded component breakdown infographic for a UAV](https://www.mouser.in/images/mktg/advantech_uav_infographic/mouser-amphenoluav-infographic-landingpage-breakdown-drone.png)
-
-Source: [Mouser / Amphenol UAV component infographic](https://www.mouser.in/amphenol-uav-infographic/). This is an explanatory graphic, not a wiring schematic or a bill of materials for a particular quad.
+[Mouser / Amphenol UAV infographic](https://www.mouser.in/amphenol-uav-infographic/) is a broader industry UAV infographic focused on applications and connector/electronics examples, rather than a parts diagram for a typical freestyle quad. Use it as additional context only—not as an FPV wiring schematic or bill of materials.
 
 ## How to use these images
 
