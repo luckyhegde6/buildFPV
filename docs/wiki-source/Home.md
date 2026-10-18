@@ -19,6 +19,7 @@ Welcome to the beginner-first field guide for [`luckyhegde6/buildFPV`](https://g
 | 🛒 **Plan purchases** | Compare compatible parts and local stores | [[Buying Parts in India]] · [[First Build Checklist]] |
 | 🔧 **Configure carefully** | Backups, customisations and troubleshooting | [[Configuration and Customisation]] · [[Troubleshooting]] |
 | 🛡️ **Fly responsibly** | Bench, pre-flight and India checks | [[Bench Safety and Flight Readiness]] · [[India Outdoor Flying Rules]] |
+| 🖼️ **See real hardware** | Real FPV build photos, FC/AIO boards, antennas and GPS | [[Hardware Gallery]] |
 | 🌱 **Explore later** | Open source, digital video, stabilization | [[BuildFPV Projects Library]] · [[Video Systems and Goggles]] · [[References]] |
 
 ## 🗺️ The learning loop
