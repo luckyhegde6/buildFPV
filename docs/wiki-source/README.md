@@ -11,6 +11,18 @@ These Markdown files are the source for the **separate GitHub Wiki**. Names with
 - **Build preparation:** Buying Parts in India, First Build Checklist, Video Systems and Goggles, Bench Safety and Flight Readiness.
 - **Ongoing engineering:** Configuration and Customisation, Troubleshooting, BuildFPV Projects Library, Project Roadmap, References, India Outdoor Flying Rules.
 
+## Why the live Wiki may not show these images
+
+The files in `docs/wiki-source/` are **source copies**, not automatically published Wiki pages. Pushing changes to `main` does not synchronize the separate GitHub Wiki repository. If an image appears here but not on the live Wiki, the corresponding Wiki page has not been updated (or its image URL cannot be loaded by GitHub's Markdown renderer).
+
+The pages added/expanded for visual learning include:
+- `How-FPV-Drones-Work.md` — real FPV quad photo, component examples, and control-loop/flight-axis diagrams.
+- `Hardware-Gallery.md` — real-build photos, SpeedyBee/BETAFPV boards, Walksnail VRX, patch antenna, GNSS module and clearly identified AI concept artwork.
+- `Video-Antennas-VTX-VRX.md` — the VTX-to-VRX path, antenna examples, polarization and range factors.
+- `GPS-and-Flight-Controllers.md` — GNSS examples, UART data path, GPS Rescue caveats and FC-stack/AIO comparisons.
+
+Image links are deliberately either licensed/credited public photos, manufacturer product images, or project-hosted diagrams. Verify source/board revision before using an image as a wiring reference.
+
 ## Publish in browser
 
 1. Open https://github.com/luckyhegde6/buildFPV/wiki and confirm `Home` is already published.
