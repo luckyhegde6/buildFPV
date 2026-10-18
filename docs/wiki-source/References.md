@@ -2,14 +2,15 @@
 
 Links checked on **17 October 2026**. Projects, product revisions, store listings, legal requirements and firmware compatibility change; verify the current page before acting.
 
-## 🎮 Learning to fly
+## 🎮 Learning to fly and FPV fundamentals
 
-- [Joshua Bardwell — beginner-to-FPV playlist](https://youtube.com/playlist?list=PLwoDb7WF6c8lCKhQOTy-Vb9LfW0VAIrTP)
+- [Joshua Bardwell — FPV beginner guide playlist](https://youtube.com/playlist?list=PLwoDb7WF6c8lCKhQOTy-Vb9LfW0VAIrTP)
 - [Liftoff FPV simulator](https://store.steampowered.com/app/410340/Liftoff_FPV_Drone_Racing/)
 - [Learning log template](https://github.com/luckyhegde6/buildFPV/blob/main/docs/learning-log/templates/daily-session.md)
 
 ## 🎛️ Radio and RC control
 
+- [Joshua Bardwell — RadioMaster / radio setup playlist](https://youtube.com/playlist?list=PLwoDb7WF6c8lhlzE6_iA2X50bk3pIYcbb)
 - [RadioMaster official site](https://www.radiomasterrc.com/)
 - [EdgeTX](https://edgetx.org/)
 - [ExpressLRS — Getting Started](https://www.expresslrs.org/quick-start/getting-started/)
@@ -18,8 +19,10 @@ Links checked on **17 October 2026**. Projects, product revisions, store listing
 - [ExpressLRS — hardware overview](https://www.expresslrs.org/hardware/overview/)
 - [ExpressLRS code repository](https://github.com/ExpressLRS/ExpressLRS)
 
-## 🧠 Flight controller and firmware
+## 🧠 Flight controller, Betaflight and PID tuning
 
+- [Joshua Bardwell — Betaflight setup and roadmap playlist](https://youtube.com/playlist?list=PLwoDb7WF6c8kH_vLskPnY5xjuT284rhmj)
+- [Joshua Bardwell — PID tuning playlist](https://youtube.com/playlist?list=PLwoDb7WF6c8kstkxtyFgpNr1cVD7zpp-2)
 - [Betaflight home](https://betaflight.com/)
 - [Betaflight App docs](https://betaflight.com/docs/wiki/app)
 - [Setup guide](https://betaflight.com/docs/wiki/getting-started/setup-guide)
@@ -27,6 +30,8 @@ Links checked on **17 October 2026**. Projects, product revisions, store listing
 - [Receiver guide](https://betaflight.com/docs/wiki/guides/current/Rx)
 - [Modes](https://betaflight.com/docs/wiki/guides/current/Modes)
 - [Failsafe tab](https://betaflight.com/docs/wiki/app/failsafe-tab)
+
+Use the videos as a guided learning sequence, but check firmware-version-specific and safety-critical instructions against the current official documentation. PID tuning is an advanced topic: first establish a known-good baseline and understand backups, failsafe and prop-off bench safety.
 
 ## 📺 Video, recording and open hardware
 
@@ -59,7 +64,6 @@ Store listings are starting points only. Check exact model/revision, compatibili
 ## 🧾 Source quality rule
 
 Prefer exact manufacturer documents and official rules for specifications, firmware targets, wiring, and legality. Community videos/forums are excellent teaching aids, but re-check safety-critical details against current official material.
-
 
 ## 📷 Visual and hardware examples
 
