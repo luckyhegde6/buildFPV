@@ -1,5 +1,9 @@
 # 📺 FPV Video Systems and Goggles
 
+![Walksnail Avatar video receiver example](https://www.caddxfpv.com/cdn/shop/files/VRX_and_V2.webp?v=1760685297&width=2000)
+
+*Manufacturer image: [CADDXFPV / Walksnail VRX](https://www.caddxfpv.com/products/walksnail-avatar-fpv-vrx). Verify compatibility against the exact VRX/goggles and air-unit generation.*
+
 **Choose the video system before buying goggles.** The radio-control link (ELRS) and FPV video link are independent systems. A Pocket ELRS transmitter does not tell you what goggles will work with your quad.
 
 ## Main routes
