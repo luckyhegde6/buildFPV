@@ -7,6 +7,15 @@
 > [!WARNING]
 > **Remove all propellers** before connecting/configuring a real quad, flashing firmware, or testing motors. Disconnect the battery before wiring changes. A motor command can be dangerous even on a bench.
 
+## 🎥 Video learning roadmap
+
+Use these playlists alongside this page:
+
+1. [Betaflight setup and roadmap playlist](https://youtube.com/playlist?list=PLwoDb7WF6c8kH_vLskPnY5xjuT284rhmj) — work through setup concepts in order.
+2. [PID tuning playlist](https://youtube.com/playlist?list=PLwoDb7WF6c8kstkxtyFgpNr1cVD7zpp-2) — save for after you understand the baseline configuration and can identify a specific tuning goal.
+
+Treat video instructions as version-dependent. Before applying a setting, confirm it matches your flight-controller hardware and installed Betaflight version in the current official documentation. Do not copy CLI commands or tune values from another build without understanding them.
+
 ## Tabs to learn first
 
 | App area | What it tells you | Beginner task |
