@@ -22,6 +22,12 @@ Welcome to the beginner-first field guide for [`luckyhegde6/buildFPV`](https://g
 | 🖼️ **See real hardware** | Real FPV build photos, FC/AIO boards, antennas and GPS | [[Hardware Gallery]] |
 | 🌱 **Explore later** | Open source, digital video, stabilization | [[BuildFPV Projects Library]] · [[Video Systems and Goggles]] · [[References]] |
 
+## 🖼️ FPV visual overview
+
+![AI-generated FPV drone anatomy overview](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-build-overview-ai.png)
+
+*AI-generated overview for orientation: it combines the control loop, flight axes, propulsion, video, antenna and GPS concepts. Treat it as a visual index, not as a wiring diagram, exact motor-order instruction or product specification. For the verified details, use [[How FPV Drones Work]], [[Video Antennas VTX VRX]], and [[GPS and Flight Controllers]].*
+
 ## 🗺️ The learning loop
 
 ```mermaid
