@@ -1,8 +1,8 @@
 # 🚁 How FPV Drones Work — From Sticks to Flight
 
-![Exploded view of a typical UAV build showing battery, flight controller, ESC, frame, motors, camera and video transmitter](https://www.mouser.in/images/mktg/advantech_uav_infographic/mouser-amphenoluav-infographic-landingpage-breakdown-drone.png)
+![Real FPV racing quadcopter example](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/FPV_Quadrocopter.jpg/960px-FPV_Quadrocopter.jpg)
 
-*Image source: [Mouser / Amphenol UAV component breakdown](https://www.mouser.in/amphenol-uav-infographic/). It is a component-location illustration; your specific build may look different.*
+*Real-build photo: [FPV Quadrocopter on Wikimedia Commons](https://commons.wikimedia.org/wiki/File:FPV_Quadrocopter.jpg). Use it to identify the broad physical layout; it is not a wiring guide.*
 
 An FPV quadcopter becomes much easier to understand when you separate four systems: **control, flight control, propulsion and video**.
 
