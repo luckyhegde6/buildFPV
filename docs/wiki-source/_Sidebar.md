@@ -32,5 +32,6 @@
 - [[India Outdoor Flying Rules]]
 - [[Troubleshooting]]
 - [[BuildFPV Projects Library]]
+- [[Hardware Gallery]]
 - [[Project Roadmap]]
 - [[References]]
