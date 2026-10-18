@@ -35,9 +35,9 @@ Two motors rotate clockwise and two counter-clockwise so their reaction torques 
 
 ## 3. Throttle, roll, pitch and yaw
 
-![AI-generated visual concept of a real-style FPV build](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-build-concept-ai.jpg)
+![FPV quadcopter overview concept](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-build-concept-ai.jpg)
 
-*AI-generated illustrative concept art made for this learning project, not a wiring or motor-order reference. Use the official diagrams below for configuration.*
+*Illustrative concept art for component recognition only; it is not a wiring or motor-order reference. Use the flight-axis and firmware motor-map diagrams below for movement/configuration.*
 
 - **Throttle** changes the overall thrust request. Real flight-control corrections may add/subtract output from individual motors.
 - **Roll** tilts left/right.
