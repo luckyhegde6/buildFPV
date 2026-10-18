@@ -1,5 +1,9 @@
 # FPV System Basics
 
+![Real FPV quadcopter example](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/FPV_Quadrocopter.jpg/960px-FPV_Quadrocopter.jpg)
+
+*Real-build photo: [FPV Quadrocopter on Wikimedia Commons](https://commons.wikimedia.org/wiki/File:FPV_Quadrocopter.jpg). This is an overview photo, not a wiring diagram.*
+
 FPV means first-person view: an onboard camera transmits live video to compatible goggles or a display. A quad combines several systems that must be compatible but are not the same thing.
 
 ## The control path
