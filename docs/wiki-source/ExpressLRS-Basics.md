@@ -1,5 +1,7 @@
 # 📡 ExpressLRS Basics — radio control link
 
+![Radio-to-receiver-to-flight-controller control loop](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-control-loop.svg)
+
 ExpressLRS (ELRS) is an open-source radio-control link. It is separate from the video link and separate from the flight-controller firmware. Your RadioMaster Pocket ELRS has an internal 2.4 GHz ELRS module (verify this matches the exact product/revision you own).
 
 ## The control path
