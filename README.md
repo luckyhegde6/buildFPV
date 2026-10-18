@@ -49,8 +49,15 @@ buildFPV/
     ├── 04-first-build.md
     ├── 05-roadmap.md
     ├── 06-pocket-button-guide.md
+    ├── 07-how-fpv-drones-work.md
+    ├── 08-video-antennas-and-range.md
+    ├── 09-gps-and-flight-controller-examples.md
     ├── assets/
     │   ├── pocket-control-map.svg
+    │   ├── flight-axes.svg
+    │   ├── fpv-control-loop.svg
+    │   ├── gps-data-chain.svg
+    │   ├── fpv-build-concept-ai.jpg
     │   └── pocket-gimbal-adjustment.png
     ├── checklists.md
     ├── references.md
