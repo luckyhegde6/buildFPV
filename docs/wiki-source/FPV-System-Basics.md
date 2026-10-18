@@ -8,6 +8,10 @@ FPV means first-person view: an onboard camera transmits live video to compatibl
 
 ## The control path
 
+![Simplified FPV flight-control feedback loop](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-control-loop.svg)
+
+*The control loop describes what happens after your command reaches the flight controller. It is a conceptual diagram, not a pinout or wiring schematic.*
+
 `Pilot's sticks → RadioMaster Pocket ELRS → 2.4 GHz ExpressLRS link → aircraft receiver → flight controller → ESC → motors → propellers`
 
 The radio sends control commands. The receiver delivers channel data to the flight controller. The flight controller combines pilot input with gyro/sensor readings; it then sends motor commands to the ESC.
@@ -15,6 +19,8 @@ The radio sends control commands. The receiver delivers channel data to the flig
 ## The video path
 
 `Camera → analog VTX or digital air unit → video link → compatible goggles/display → pilot`
+
+Keep this separate from the control path: the radio link carries stick commands, while the video system carries the camera feed. A compatible ELRS radio and receiver do not automatically make a video transmitter compatible with your goggles.
 
 The selected video system determines which goggles/receiver and antennas are compatible. A 2.4 GHz ELRS control link does not determine which FPV video system to use.
 
@@ -35,6 +41,12 @@ DVR can record what the goggles/display receives. An onboard camera may record h
 - Gyroflow: desktop post-processing/stabilization workflow.
 
 Do not update all systems at once. Confirm the exact target and recovery procedure for each one.
+
+## Quick knowledge check
+
+- [ ] Trace a control command from radio sticks to motor output.
+- [ ] Explain why the video link is separate from the ELRS control link.
+- [ ] Explain why a concept diagram cannot replace a board-specific wiring diagram.
 
 ## Core terms
 
