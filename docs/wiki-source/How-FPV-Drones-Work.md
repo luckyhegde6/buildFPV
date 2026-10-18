@@ -35,7 +35,7 @@ Two motors rotate clockwise and two counter-clockwise so their reaction torques 
 
 ## 3. Throttle, roll, pitch and yaw
 
-![AI-generated visual concept of a real-style FPV build](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-build-3d-concept.jpg)
+![AI-generated visual concept of a real-style FPV build](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-build-concept-ai.jpg)
 
 *AI-generated illustrative concept art made for this learning project, not a wiring or motor-order reference. Use the official diagrams below for configuration.*
 
@@ -95,3 +95,6 @@ This loop runs much faster than GPS navigation updates. The **gyro** is central 
 - [Betaflight control-loop deep dive](https://betaflight.com/docs/wiki/guides/current/Deep-Dive)
 - [SpeedyBee F405 V3](https://www.speedybee.com/speedybee-f405-v3-30x30-flight-controller/)
 - [BETAFPV F4 1S 12A AIO](https://betafpv.com/products/f4-1s-12a-flight-controller)
+
+
+For more real-world build photos, board examples and antenna/GPS product views, see [[Hardware Gallery]].
