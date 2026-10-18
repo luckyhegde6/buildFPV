@@ -13,12 +13,14 @@
 
 | I want to… | Start here |
 |---|---|
-| Understand the whole aircraft | [FPV system basics](docs/01-fpv-basics.md) |
+| Understand the whole aircraft | [FPV system basics](docs/01-fpv-basics.md) · [How flight works](docs/07-how-fpv-drones-work.md) |
 | Build a daily flying habit | [Daily Liftoff routine](docs/wiki-source/Daily-Liftoff-Routine.md) · [Learning journal](docs/learning-log/README.md) |
 | Connect a Pocket ELRS to Liftoff | [Pocket ELRS guide](docs/03-pocket-elrs.md) |
+| Learn VTX, VRX, antennas and range | [Video / antenna guide](docs/08-video-antennas-and-range.md) |
 | Understand Pocket buttons, switches and gimbal adjustments | [Button, switch and gimbal guide](docs/06-pocket-button-guide.md) |
 | Track sessions, race times and screenshots | [Practice log template](docs/learning-log/templates/daily-session.md) |
 | Learn Betaflight without risky guesswork | [Betaflight basics](docs/wiki-source/Betaflight-Basics.md) |
+| Compare GPS, FC stacks and AIO boards | [GPS and FC examples](docs/09-gps-and-flight-controller-examples.md) |
 | Plan a first quad or tiny whoop | [First build checklist](docs/04-first-build.md) · [India buyer guide](docs/wiki-source/Buying-Parts-in-India.md) |
 | Diagnose a problem | [Troubleshooting](docs/wiki-source/Troubleshooting.md) |
 | Explore the projects that inspired this repo | [Project library](docs/wiki-source/BuildFPV-Projects-Library.md) |
