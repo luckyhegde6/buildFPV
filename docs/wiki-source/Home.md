@@ -40,4 +40,4 @@ For the full step-by-step explanation, continue to [[How FPV Drones Work]]. Then
 - Do not assume a radio bind verifies failsafe, motor direction, video or power wiring.
 - Check official documentation and current local airspace/radio rules before outdoor use.
 
-For the canonical learning path, images and instructions, use the [`docs/` folder in the repository](../LEARNING-GUIDE.md).
+For the full walkthrough, continue through [[How FPV Drones Work]], [[RadioMaster Pocket Button Guide]], [[Video Antennas VTX VRX]], and [[GPS and Flight Controllers]]. The page sources and reusable diagrams are maintained in the main `buildFPV` repository.
