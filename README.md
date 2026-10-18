@@ -76,9 +76,9 @@ buildFPV/
 - Confirm receiver mapping, arming/disarming, motor order/direction, and failsafe before flight.
 - Verify India's current airspace, aircraft, and radio rules through official sources before outdoor use.
 
-## 🗂️ Wiki
+## 📚 Learning guide — all content lives in this repository
 
-Open the [buildFPV Wiki](https://github.com/luckyhegde6/buildFPV/wiki) for short, navigable learning pages. Source Markdown for the pages is in [`docs/wiki-source`](docs/wiki-source/README.md). GitHub does not apply arbitrary CSS to Markdown; this project uses headings, icons, clear callouts, diagrams, tables, checklists, and badges for consistent visual hierarchy.
+Use the repository-native [FPV Learning Guide](docs/LEARNING-GUIDE.md) as the contents page. Every guide, diagram and project-owned image is versioned under this repository's `docs/` tree; a normal commit to `main` updates the learning material here without a separate Wiki repository. GitHub renders the Markdown pages directly, including the local SVG diagrams and image files.
 
 ## 🔬 How to write a good log
 
@@ -109,6 +109,6 @@ The technical visuals are split into focused pages so each diagram has context:
 - [Video, antennas and range](docs/08-video-antennas-and-range.md) — separate control/video links, VTX and VRX, omni vs patch antennas, LHCP/RHCP and range factors.
 - [GPS and flight-controller examples](docs/09-gps-and-flight-controller-examples.md) — GNSS/UART data path, GPS Rescue limitations, stacks vs AIO and SpeedyBee/BETAFPV examples.
 - [Visual hardware gallery](docs/wiki-source/Hardware-Gallery.md) — credited real-build photography and product examples, plus project-generated concept artwork.
-- [Wiki source pages](docs/wiki-source/README.md) — the source Markdown pages for the separate GitHub Wiki.
+- [Repository-native learning guide](docs/LEARNING-GUIDE.md) — the single entry point for the beginner sequence and all visual guides.
 
-**Important:** pushing to `main` does not automatically update GitHub Wiki pages. Publish the corresponding `docs/wiki-source/*.md` pages to the separate Wiki repository before expecting the live Wiki to show those images.
+The older `docs/wiki-source/` pages are retained as historical/reference material; the maintained learning path is under `docs/` and uses repository-local assets wherever available.
