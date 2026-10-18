@@ -59,3 +59,15 @@ Store listings are starting points only. Check exact model/revision, compatibili
 ## 🧾 Source quality rule
 
 Prefer exact manufacturer documents and official rules for specifications, firmware targets, wiring, and legality. Community videos/forums are excellent teaching aids, but re-check safety-critical details against current official material.
+
+
+## 📷 Visual and hardware examples
+
+- [Mouser / Amphenol drone component breakdown](https://www.mouser.in/amphenol-uav-infographic/)
+- [SpeedyBee F405 V3 official specs](https://www.speedybee.com/speedybee-f405-v3-30x30-flight-controller/) — discontinued model page; see as example only.
+- [BETAFPV F4 1S 12A AIO](https://betafpv.com/products/f4-1s-12a-flight-controller)
+- [BETAFPV F4 1S 12A AIO V3](https://betafpv.com/products/f4-1s-12a-aio-brushless-flight-controller-v3-0)
+- [CADDXFPV / Walksnail Avatar VRX](https://www.caddxfpv.com/products/walksnail-avatar-fpv-vrx)
+- [ArduPilot GPS/Compass overview](https://ardupilot.org/copter/docs/common-positioning-landing-page.html)
+
+Use these photos and diagrams to learn part names. Specs, layout and firmware targets must be checked against the exact board revision and current manufacturer documentation.
