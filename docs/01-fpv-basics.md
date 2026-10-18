@@ -1,5 +1,9 @@
 # 1. FPV system basics
 
+![FPV quadcopter example](assets/fpv-build-concept-ai.jpg)
+
+*Project concept artwork for orientation only; it is not a wiring diagram. Use exact manufacturer manuals for pinouts and board revisions.*
+
 FPV means **first-person view**: a camera on the aircraft sends live video to a display or goggles so the pilot can see from the aircraft's perspective. A typical FPV quad has separate control, stabilization, propulsion, and video systems.
 
 ## How the parts fit together
