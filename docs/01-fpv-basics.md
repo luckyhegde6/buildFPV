@@ -61,3 +61,10 @@ A successful bind only verifies part of the control link. It does **not** prove 
 ## Beginner checkpoint
 
 Before moving on, explain aloud what happens from moving the radio's roll stick to a motor changing speed, and how that differs from the camera-to-goggles path.
+
+
+## Continue with visual deep dives
+
+- [How an FPV drone works](07-how-fpv-drones-work.md) — lift, motor rotation, axes and the control loop.
+- [Video systems, VTX/VRX, antennas and range](08-video-antennas-and-range.md) — separate control and video links.
+- [GPS, GNSS and FC/AIO examples](09-gps-and-flight-controller-examples.md) — GPS wiring/data path and exact board-revision cautions.
