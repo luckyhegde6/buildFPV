@@ -2,6 +2,10 @@
 
 > Start with the mental model: **you ask for movement, the flight controller measures movement, and the ESCs change motor speed to make the aircraft respond.** The loop repeats rapidly while you fly.
 
+![AI-generated FPV build concept](assets/fpv-build-concept-ai.jpg)
+
+*AI-generated concept artwork created for this project. It is for visual orientation only; use the labelled diagrams and exact manufacturer manuals for component pinouts, motor direction and wiring.*
+
 ![An exploded drone component diagram showing battery, frame, camera, flight controller, ESC, motors and VTX](https://www.mouser.in/images/mktg/advantech_uav_infographic/mouser-amphenoluav-infographic-landingpage-breakdown-drone.png)
 
 *Real-world component illustration from [Mouser / Amphenol's UAV infographic](https://www.mouser.in/amphenol-uav-infographic/). Product layouts vary.*
@@ -92,3 +96,8 @@ The gyro is central to fast attitude/rate control. GPS is **not** a replacement 
 - [Betaflight: deeper look at the control loop](https://betaflight.com/docs/wiki/guides/current/Deep-Dive)
 - [SpeedyBee F405 V3 manufacturer page and wiring/specification notes](https://www.speedybee.com/speedybee-f405-v3-30x30-flight-controller/)
 - [BETAFPV F4 1S 12A AIO example](https://betafpv.com/products/f4-1s-12a-flight-controller)
+
+
+## Visual field guide
+
+Browse the [FPV Hardware Gallery](wiki-source/Hardware-Gallery.md) for real-world FPV build photos, FC/AIO boards, antennas, a video receiver and a GNSS module, with source credits and manufacturer links.
