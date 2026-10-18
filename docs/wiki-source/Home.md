@@ -1,57 +1,27 @@
 # 🚁 buildFPV Wiki — Learn. Practise. Build. Fly safely.
 
-![Beginner FPV](https://img.shields.io/badge/START%20HERE-beginner%20path-0ea5e9?style=for-the-badge) ![Daily habit](https://img.shields.io/badge/DAILY%20HABIT-5%20minutes%20counts-22c55e?style=for-the-badge) ![Safety](https://img.shields.io/badge/ALWAYS-props%20off%20on%20bench-f97316?style=for-the-badge)
+**The maintained learning material lives in this repository.** Open the [repository-native Learning Guide](../LEARNING-GUIDE.md) for the complete beginner path; this page remains a quick index for people browsing this folder.
 
-Welcome to the beginner-first field guide for [`luckyhegde6/buildFPV`](https://github.com/luckyhegde6/buildFPV). Follow the learning order below: understand the parts of an FPV system and how a drone works, learn your RadioMaster Pocket RC transmitter, then study the core links and software before starting the structured Liftoff simulation roadmap.
+## 🧭 Recommended beginner path
 
-> [!TIP]
-> **The daily habit:** open Liftoff, choose one drill, practise for 5/10/15/20/30+ minutes, then record one win and one next step. If you skip a day, just restart the next day—no guilt, no catch-up marathon.
+1. [FPV System Basics](FPV-System-Basics.md) — the control, flight-control, power and video paths.
+2. [How FPV Drones Work](How-FPV-Drones-Work.md) — lift, axes, motor rotation and feedback control.
+3. [RadioMaster Pocket Button Guide](RadioMaster-Pocket-Button-Guide.md) — identify controls, calibrate axes and keep simulator/aircraft models separate.
+4. [Pocket ELRS and Liftoff](Pocket-ELRS-and-Liftoff.md) and [Simulator Training](Simulator-Training.md) — build control skills before buying or flying.
+5. [Betaflight Basics](Betaflight-Basics.md), [ExpressLRS Basics](ExpressLRS-Basics.md), [Video Systems and Goggles](Video-Systems-and-Goggles.md), [Video Antennas](Video-Antennas-VTX-VRX.md), and [GPS and Flight Controllers](GPS-and-Flight-Controllers.md).
+6. [Bench Safety and Flight Readiness](Bench-Safety-and-Flight-Readiness.md), [Buying Parts in India](Buying-Parts-in-India.md) and [Troubleshooting](Troubleshooting.md).
 
-## 🧭 Pick a path
+## 🖼️ Visual overview
 
-| Order | Learn this first | Open these pages |
-|---|---|---|
-| **1. Parts of an FPV system** | Identify the frame, motors, props, battery, camera, video link, receiver and flight controller | [[FPV System Basics]] · [[Hardware Gallery]] |
-| **2. Drone basics: how it works** | Understand lift, propeller directions, throttle, roll, pitch, yaw and the control loop | [[How FPV Drones Work]] |
-| **3. Your RC transmitter** | Learn the RadioMaster Pocket controls, switches, gimbals, USB mode and safe simulator profile | [[RadioMaster Pocket Button Guide]] · [[Pocket ELRS and Liftoff]] · [RadioMaster video playlist](https://youtube.com/playlist?list=PLwoDb7WF6c8lhlzE6_iA2X50bk3pIYcbb) |
-| **4. Core FPV basics** | Separate the control link, flight-controller firmware, video system and GPS | [[ExpressLRS Basics]] · [[Betaflight Basics]] · [[Video Systems and Goggles]] · [[Video Antennas VTX VRX]] · [[GPS and Flight Controllers]] · [FPV guide playlist](https://youtube.com/playlist?list=PLwoDb7WF6c8lCKhQOTy-Vb9LfW0VAIrTP) · [Betaflight roadmap playlist](https://youtube.com/playlist?list=PLwoDb7WF6c8kH_vLskPnY5xjuT284rhmj) · [PID tuning playlist](https://youtube.com/playlist?list=PLwoDb7WF6c8kstkxtyFgpNr1cVD7zpp-2) |
-| **5. Simulation roadmap** | Connect the radio, calibrate in Liftoff, practise in stages, and track progress | [[Getting Started]] · [[Simulator Training]] · [[Daily Liftoff Routine]] · [[Practice Skills and Race Times]] · [[Learning Journal]] |
-| **6. Prepare for a real build** | Learn bench safety, compare parts, and troubleshoot carefully before buying or flying | [[First Build Checklist]] · [[Buying Parts in India]] · [[Bench Safety and Flight Readiness]] · [[India Outdoor Flying Rules]] |
-| **7. Continue exploring** | Configuration, projects, and deeper references | [[Configuration and Customisation]] · [[Troubleshooting]] · [[BuildFPV Projects Library]] · [[References]] |
+![AI-generated FPV build concept](../assets/fpv-build-concept-ai.jpg)
 
-## 🖼️ FPV visual overview
+*Illustration only, not a wiring schematic. The local diagram files in `../assets/` are versioned in this repository. Use exact manufacturer manuals for wiring and board revisions.*
 
-![AI-generated FPV drone anatomy overview](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-build-concept-ai.jpg)
+## ✅ Always remember
 
-*AI-generated overview for orientation: it combines the control loop, flight axes, propulsion, video, antenna and GPS concepts. Treat it as a visual index, not as a wiring diagram, exact motor-order instruction or product specification. For the verified details, use [[How FPV Drones Work]], [[Video Antennas VTX VRX]], and [[GPS and Flight Controllers]].*
+- Remove every propeller during setup, USB configuration, firmware work, receiver checks and motor testing.
+- Disconnect the LiPo before soldering or changing wiring.
+- Do not assume a radio bind verifies failsafe, motor direction, video or power wiring.
+- Check official documentation and current local airspace/radio rules before outdoor use.
 
-## 🗺️ The learning loop
-
-```mermaid
-flowchart TD
-    A[Choose one small goal] --> B[Connect and check radio input]
-    B --> C[Practise in Liftoff]
-    C --> D[Log duration, drill and result]
-    D --> E[Save screenshot or lap time if useful]
-    E --> F[Choose one next focus]
-    F --> A
-```
-
-## ✅ Beginner rules of the road
-
-- Use official documentation for the exact product and firmware version.
-- **Remove every propeller** during setup, USB configuration, firmware work, motor testing and bench troubleshooting.
-- Disconnect the battery before soldering or changing wiring.
-- Save a configuration backup before meaningful changes.
-- A radio bind is not a full safety check; receiver mapping, failsafe, motors, video and power also need verification.
-- Check current Indian airspace and radio requirements before outdoor operations. This Wiki is educational, not legal advice.
-
-## 📅 Habit tracker
-
-- [ ] Today: one Liftoff session (5 min is enough)
-- [ ] Log the radio used and session duration
-- [ ] Record one win and one difficulty
-- [ ] Add a screenshot or lap time if you captured one
-- [ ] Pick exactly one next-session focus
-
-For journaling templates, use the [Learning Journal](Learning-Journal) page or the repository's `docs/learning-log/templates/` files. See the [project source](https://github.com/luckyhegde6/buildFPV) for versioned docs and optional issue forms.
+For the canonical learning path, images and instructions, use the [`docs/` folder in the repository](../LEARNING-GUIDE.md).
