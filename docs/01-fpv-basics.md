@@ -8,6 +8,8 @@ FPV means **first-person view**: a camera on the aircraft sends live video to a 
 
 ## How the parts fit together
 
+The picture above is a concept overview. This signal-flow sketch is more useful for understanding the jobs each system performs; it is still a learning aid, not a wiring schematic.
+
 ```text
 Pilot's sticks
     ↓
@@ -43,6 +45,10 @@ The exact power and signal wiring depends on the chosen hardware. Treat this dia
 - **Recording and stabilization:** DVR records what the pilot sees; an onboard action camera records a separate, often higher-quality video. Gyroflow can stabilize compatible recorded footage when the necessary motion data and camera workflow are available. It is not required to learn to fly.
 
 ## Keep the systems separate in your head
+
+![Flight-controller feedback loop](assets/fpv-control-loop.svg)
+
+*The control loop runs continuously: the FC uses sensor feedback to adjust motor outputs. The control link carries pilot commands; the video link carries the camera image. They are different systems.*
 
 1. **Control link:** Pocket ↔ receiver (ExpressLRS).
 2. **Flight control:** receiver + sensors → flight controller → ESC/motors.
