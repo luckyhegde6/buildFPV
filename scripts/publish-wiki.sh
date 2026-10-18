@@ -45,6 +45,22 @@ if [[ -n "$(git status --porcelain --untracked-files=all)" ]]; then
   exit 1
 fi
 
+# Refresh an existing clean clone before staging changes. This avoids basing a
+# Wiki commit on an old local copy; stop safely if histories have diverged.
+BRANCH="$(git branch --show-current)"
+if [[ -z "$BRANCH" ]]; then
+  echo "Refusing to publish from a detached HEAD." >&2
+  exit 1
+fi
+
+git fetch origin
+if ! git show-ref --verify --quiet "refs/remotes/origin/$BRANCH"; then
+  echo "Refusing to publish: no origin branch matching '$BRANCH'." >&2
+  echo "Check the Wiki's default branch, then retry from that branch." >&2
+  exit 1
+fi
+git merge --ff-only "origin/$BRANCH"
+
 # Wiki pages live at the root of the separate .wiki.git repository.
 # README.md is maintainer documentation for docs/wiki-source, not a Wiki page.
 for page in "$SOURCE"/*.md; do
