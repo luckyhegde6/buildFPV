@@ -46,6 +46,8 @@ A typical quad has **two clockwise (CW) and two counter-clockwise (CCW)** rotors
 - **Pitch:** rotates the nose up/down around the side-to-side axis. The controller creates a thrust difference between the front and rear.
 - **Yaw:** rotates the nose left/right around the vertical axis. The controller changes the relative torque of the CW and CCW motor groups.
 
+![Throttle, roll, pitch and yaw illustrated](assets/flight-axes.svg)
+
 Real flight controllers mix all four commands into four motor outputs continuously. The exact front direction, motor numbering, and “props-in” versus “props-out” rotation layout depend on the frame, firmware motor map and build. **Never copy a rotation diagram blindly**: check the exact Betaflight Motors tab diagram and verify motor direction with every propeller removed.
 
 ## 4. What happens in the control loop?
