@@ -99,3 +99,16 @@ This is a learning project, not legal, electrical, or flight-safety certificatio
 - [Video walkthrough notes](docs/wiki-source/Pocket-Video-Walkthrough-Notes.md) — record timestamps and verify instructions against official documentation.
 
 > Safety reminder: USB joystick mode is separate from ExpressLRS binding. For physical aircraft bench work, remove every propeller and verify failsafe, arming, disarming, and motor direction before flight.
+
+
+## 🖼️ FPV Visual Guides
+
+The technical visuals are split into focused pages so each diagram has context:
+
+- [How an FPV quad works](docs/07-how-fpv-drones-work.md) — real-build photo, throttle/roll/pitch/yaw, clockwise vs counter-clockwise props, lift, and the flight-controller feedback loop.
+- [Video, antennas and range](docs/08-video-antennas-and-range.md) — separate control/video links, VTX and VRX, omni vs patch antennas, LHCP/RHCP and range factors.
+- [GPS and flight-controller examples](docs/09-gps-and-flight-controller-examples.md) — GNSS/UART data path, GPS Rescue limitations, stacks vs AIO and SpeedyBee/BETAFPV examples.
+- [Visual hardware gallery](docs/wiki-source/Hardware-Gallery.md) — credited real-build photography and product examples, plus project-generated concept artwork.
+- [Wiki source pages](docs/wiki-source/README.md) — the source Markdown pages for the separate GitHub Wiki.
+
+**Important:** pushing to `main` does not automatically update GitHub Wiki pages. Publish the corresponding `docs/wiki-source/*.md` pages to the separate Wiki repository before expecting the live Wiki to show those images.
