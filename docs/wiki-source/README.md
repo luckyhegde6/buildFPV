@@ -1,55 +1,22 @@
-# 📚 Wiki source pages and publishing
+# 📚 Repository-native learning docs
 
-These Markdown files are the source for the **separate GitHub Wiki**. Names without `.md` become Wiki page titles; for example `Daily-Liftoff-Routine.md` becomes [[Daily Liftoff Routine]]. `_Sidebar.md` supplies the sidebar when added as a Wiki page with that exact name.
+This folder contains legacy Wiki-style Markdown pages retained for reference. **The maintained entry point is [the buildFPV Learning Guide](../LEARNING-GUIDE.md)**, and the main learning pages are the Markdown files directly under `docs/`. The project does not depend on a separate GitHub Wiki repository.
 
-## Recommended page structure
+## Where to start
 
-- **Daily learning:** Daily Liftoff Routine, Simulator Training, Practice Skills and Race Times, Learning Journal.
-- **Technical foundation:** FPV System Basics, How FPV Drones Work, Pocket ELRS and Liftoff, RadioMaster Pocket Button Guide, Pocket Video Walkthrough Notes, ExpressLRS Basics, Betaflight Basics.
-- **RF/video/navigation:** Video Antennas VTX VRX, GPS and Flight Controllers.
-- **Visual references:** Hardware Gallery (real builds, product photos, attribution and AI-generated concept artwork).
-- **Build preparation:** Buying Parts in India, First Build Checklist, Video Systems and Goggles, Bench Safety and Flight Readiness.
-- **Ongoing engineering:** Configuration and Customisation, Troubleshooting, BuildFPV Projects Library, Project Roadmap, References, India Outdoor Flying Rules.
+- [Learning Guide](../LEARNING-GUIDE.md) — full beginner sequence and visual guide index.
+- [FPV system basics](../01-fpv-basics.md) — control/video/power paths.
+- [How FPV drones work](../07-how-fpv-drones-work.md) — thrust, axes, and controller loop.
+- [RadioMaster Pocket guide](../06-pocket-button-guide.md) — buttons, switches, gimbals and simulator setup.
+- [Liftoff training](../02-simulator-training.md) — structured control practice.
+- [Video systems](../08-video-antennas-and-range.md) and [GPS / flight-controller examples](../09-gps-and-flight-controller-examples.md).
 
-## Why the live Wiki may not show these images
+## Image handling
 
-The files in `docs/wiki-source/` are **source copies**, not automatically published Wiki pages. Pushing changes to `main` does not synchronize the separate GitHub Wiki repository. If an image appears here but not on the live Wiki, the corresponding Wiki page has not been updated (or its image URL cannot be loaded by GitHub's Markdown renderer).
+Project-owned diagrams and images are maintained under [`docs/assets/`](../assets/README.md). Main learning pages should use relative image links such as `assets/flight-axes.svg`; this keeps files versioned together and avoids depending on a separate Wiki's image upload mechanism. External product photos may still be useful as examples but can move or disappear, so always retain source credits and treat product images as illustrative only.
 
-The pages added/expanded for visual learning include:
-- `How-FPV-Drones-Work.md` — real FPV quad photo, component examples, and control-loop/flight-axis diagrams.
-- `Hardware-Gallery.md` — real-build photos, SpeedyBee/BETAFPV boards, Walksnail VRX, patch antenna, GNSS module and clearly identified AI concept artwork.
-- `Video-Antennas-VTX-VRX.md` — the VTX-to-VRX path, antenna examples, polarization and range factors.
-- `GPS-and-Flight-Controllers.md` — GNSS examples, UART data path, GPS Rescue caveats and FC-stack/AIO comparisons.
+Before trusting a visual, confirm that the link opens and that the caption identifies its source. Never use a general product photo as a wiring or motor-order instruction. Exact manufacturer manuals and board-revision documentation remain authoritative.
 
-Image links are deliberately either licensed/credited public photos, manufacturer product images, or project-hosted diagrams. Verify source/board revision before using an image as a wiring reference.
+## Editing style
 
-## Publish in browser
-
-1. Open https://github.com/luckyhegde6/buildFPV/wiki and confirm `Home` is already published.
-2. For each file in this folder, create/update a Wiki page with the filename sans `.md` as the page name and paste its content. New pages include `How-FPV-Drones-Work.md`, `Video-Antennas-VTX-VRX.md`, `GPS-and-Flight-Controllers.md`, and `Hardware-Gallery.md`.
-3. Add `_Sidebar.md` as a separate page to enable the navigation shown in the file.
-4. Review the links after publishing. GitHub Wiki uses `[[Wiki Page]]` links; repository documentation uses relative Markdown links.
-5. Add or update the matching index inside the repository's `docs/` folder so readers can use either entry point.
-
-## Publish by Git (if Wiki access is enabled)
-
-GitHub Wiki content lives in a separate repository, normally `https://github.com/luckyhegde6/buildFPV.wiki.git`:
-
-```bash
-git clone https://github.com/luckyhegde6/buildFPV.wiki.git
-cd buildFPV.wiki
-# Copy files from docs/wiki-source/ into this clone; keep filenames exact.
-git add '*.md'
-git commit -m "docs: expand beginner FPV wiki and daily practice habit"
-git push
-```
-
-Do not paste credentials into a repository or shell history. If pushing fails, use GitHub's Wiki editor or review Wiki permissions.
-
-## Repository issue templates
-
-The root `.github/ISSUE_TEMPLATE/` folder has optional forms for a daily Liftoff practice session and a configuration change. Copy those files into the repository if you want structured logs directly in GitHub Issues. They are not Wiki pages.
-
-## Style guide
-
-Use short sections, tables only for real comparisons, `[!TIP]`/`[!WARNING]` GitHub alerts where supported, icons sparingly, and a checkable action at the end of a page. No arbitrary CSS is used because GitHub Markdown does not apply it. Prioritize contrast, scanability, accessibility, plain language and a next action.
+Use short sections, clear tables only where they compare actual options, alt text on images, source credits, a safety note where needed, and a concrete beginner checkpoint at the end. Keep the terminology consistent across pages, explain acronyms on first use, and separate verified facts from examples or recommendations.
