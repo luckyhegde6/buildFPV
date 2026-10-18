@@ -44,6 +44,8 @@ Two motors rotate clockwise and two counter-clockwise so their reaction torques 
 - **Pitch** tilts the nose forward/back.
 - **Yaw** rotates the nose left/right around the vertical axis.
 
+![Throttle, roll, pitch and yaw illustrated](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/flight-axes.svg)
+
 In Acro/Rate mode, the sticks request rotational rates. The aircraft does not auto-level when you centre the sticks. In Angle mode, self-level behaviour uses the FC's orientation estimate and accelerometer. Learn the difference in Liftoff before flying a real quad.
 
 ## 4. The feedback/control loop
