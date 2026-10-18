@@ -79,7 +79,7 @@ buildFPV/
 
 ## 📚 Learning guide — all content lives in this repository
 
-Use the repository-native [FPV Learning Guide](docs/LEARNING-GUIDE.md) as the contents page. Every guide, diagram and project-owned image is versioned under this repository's `docs/` tree; a normal commit to `main` updates the learning material here without a separate Wiki repository. GitHub renders the Markdown pages directly, including the local SVG diagrams and image files.
+Use the repository-native [FPV Learning Guide](docs/LEARNING-GUIDE.md) as the contents page. Every guide, diagram and project-owned image is versioned under this repository's `docs/` tree; a normal commit to `main` updates the learning material here without a separate Wiki repository. GitHub renders the Markdown pages directly, including the local SVG diagrams and image files. For a convenient published reading experience, this repository can also be deployed as a GitHub Pages site from the same `main` branch.
 
 ## 🔬 How to write a good log
 
