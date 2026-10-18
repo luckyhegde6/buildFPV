@@ -4,6 +4,7 @@
 - [[Home]]
 - [[Getting Started]]
 - [[FPV System Basics]]
+- [[How FPV Drones Work]]
 
 **Practice**
 - [[Daily Liftoff Routine]]
@@ -23,6 +24,8 @@
 - [[First Build Checklist]]
 - [[Buying Parts in India]]
 - [[Video Systems and Goggles]]
+- [[Video Antennas VTX VRX]]
+- [[GPS and Flight Controllers]]
 
 **Safety + learn more**
 - [[Bench Safety and Flight Readiness]]
