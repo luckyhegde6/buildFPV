@@ -1,5 +1,9 @@
 # 📡 FPV Video: Camera, VTX, VRX, Antennas and Range
 
+![FPV link and components concept](assets/fpv-build-concept-ai.jpg)
+
+*Concept artwork only. Use the compatibility tables and exact manuals to identify real video-system components.*
+
 ## 1. Keep the two wireless links separate
 
 An FPV quad normally uses two independent radio links:
