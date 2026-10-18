@@ -6,9 +6,9 @@
 
 *AI-generated concept artwork created for this project. It is for visual orientation only; use the labelled diagrams and exact manufacturer manuals for component pinouts, motor direction and wiring.*
 
-![An exploded drone component diagram showing battery, frame, camera, flight controller, ESC, motors and VTX](https://www.mouser.in/images/mktg/advantech_uav_infographic/mouser-amphenoluav-infographic-landingpage-breakdown-drone.png)
+![A directly photographed FPV racing quadcopter with its camera, frame, battery area and propellers visible](https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Racing_Drone.jpg/960px-Racing_Drone.jpg)
 
-*Real-world component illustration from [Mouser / Amphenol's UAV infographic](https://www.mouser.in/amphenol-uav-infographic/). Product layouts vary.*
+*Real FPV build photo: [Racing Drone.jpg on Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Racing_Drone.jpg), by Commanderbryce, licensed [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). The exact component layout varies by build.*
 
 ## 1. The major parts
 
