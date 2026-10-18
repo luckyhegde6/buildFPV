@@ -1,5 +1,9 @@
 # 🧭 GPS, GNSS and Flight-Controller Boards
 
+![GPS data flow diagram](assets/gps-data-chain.svg)
+
+*Conceptual data path only; confirm UART pads, voltage and wiring in the exact FC and GNSS module manuals.*
+
 GPS is useful, but it is optional on many racing/freestyle FPV quads. Learn what the module sends to the flight controller before buying one or enabling rescue/navigation features.
 
 ## 1. GPS vs GNSS vs compass vs barometer
