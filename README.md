@@ -14,6 +14,7 @@
 | I want to… | Start here |
 |---|---|
 | Understand the whole aircraft | [FPV system basics](docs/01-fpv-basics.md) · [How flight works](docs/07-how-fpv-drones-work.md) |
+| See real build photos and boards | [FPV hardware gallery](docs/wiki-source/Hardware-Gallery.md) |
 | Build a daily flying habit | [Daily Liftoff routine](docs/wiki-source/Daily-Liftoff-Routine.md) · [Learning journal](docs/learning-log/README.md) |
 | Connect a Pocket ELRS to Liftoff | [Pocket ELRS guide](docs/03-pocket-elrs.md) |
 | Learn VTX, VRX, antennas and range | [Video / antenna guide](docs/08-video-antennas-and-range.md) |
