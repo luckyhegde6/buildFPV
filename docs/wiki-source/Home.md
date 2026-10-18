@@ -2,25 +2,22 @@
 
 ![Beginner FPV](https://img.shields.io/badge/START%20HERE-beginner%20path-0ea5e9?style=for-the-badge) ![Daily habit](https://img.shields.io/badge/DAILY%20HABIT-5%20minutes%20counts-22c55e?style=for-the-badge) ![Safety](https://img.shields.io/badge/ALWAYS-props%20off%20on%20bench-f97316?style=for-the-badge)
 
-Welcome to the beginner-first field guide for [`luckyhegde6/buildFPV`](https://github.com/luckyhegde6/buildFPV). Start with your RadioMaster Pocket ELRS and Liftoff. Build reliable stick control and technical understanding before buying a complete quad.
+Welcome to the beginner-first field guide for [`luckyhegde6/buildFPV`](https://github.com/luckyhegde6/buildFPV). Follow the learning order below: understand the parts of an FPV system and how a drone works, learn your RadioMaster Pocket RC transmitter, then study the core links and software before starting the structured Liftoff simulation roadmap.
 
 > [!TIP]
 > **The daily habit:** open Liftoff, choose one drill, practise for 5/10/15/20/30+ minutes, then record one win and one next step. If you skip a day, just restart the next day—no guilt, no catch-up marathon.
 
 ## 🧭 Pick a path
 
-| Path | Goal | Start here |
+| Order | Learn this first | Open these pages |
 |---|---|---|
-| 🟢 **Start now** | Radio + simulator setup | [[Getting Started]] · [[Pocket ELRS and Liftoff]] · [[RadioMaster Pocket Button Guide]] |
-| 🎮 **Build the habit** | Repeatable daily practice | [[Daily Liftoff Routine]] · [[Learning Journal]] · [[Practice Skills and Race Times]] |
-| 🎛️ **Pocket controls** | Buttons, switches, gimbals and video-study notes | [[RadioMaster Pocket Button Guide]] · [[Pocket Video Walkthrough Notes]] |
-| 🧠 **Understand the aircraft** | Control, power, flight and video systems | [[FPV System Basics]] · [[How FPV Drones Work]] · [[ExpressLRS Basics]] · [[Betaflight Basics]] |
-| 📡 **Understand video and GPS** | VTX/VRX, antenna patterns, GPS data and FC boards | [[Video Antennas VTX VRX]] · [[GPS and Flight Controllers]] |
-| 🛒 **Plan purchases** | Compare compatible parts and local stores | [[Buying Parts in India]] · [[First Build Checklist]] |
-| 🔧 **Configure carefully** | Backups, customisations and troubleshooting | [[Configuration and Customisation]] · [[Troubleshooting]] |
-| 🛡️ **Fly responsibly** | Bench, pre-flight and India checks | [[Bench Safety and Flight Readiness]] · [[India Outdoor Flying Rules]] |
-| 🖼️ **See real hardware** | Real FPV build photos, FC/AIO boards, antennas and GPS | [[Hardware Gallery]] |
-| 🌱 **Explore later** | Open source, digital video, stabilization | [[BuildFPV Projects Library]] · [[Video Systems and Goggles]] · [[References]] |
+| **1. Parts of an FPV system** | Identify the frame, motors, props, battery, camera, video link, receiver and flight controller | [[FPV System Basics]] · [[Hardware Gallery]] |
+| **2. Drone basics: how it works** | Understand lift, propeller directions, throttle, roll, pitch, yaw and the control loop | [[How FPV Drones Work]] |
+| **3. Your RC transmitter** | Learn the RadioMaster Pocket controls, switches, gimbals, USB mode and safe simulator profile | [[RadioMaster Pocket Button Guide]] · [[Pocket ELRS and Liftoff]] |
+| **4. Core FPV basics** | Separate the control link, flight-controller firmware, video system and GPS | [[ExpressLRS Basics]] · [[Betaflight Basics]] · [[Video Systems and Goggles]] · [[Video Antennas VTX VRX]] · [[GPS and Flight Controllers]] |
+| **5. Simulation roadmap** | Connect the radio, calibrate in Liftoff, practise in stages, and track progress | [[Getting Started]] · [[Simulator Training]] · [[Daily Liftoff Routine]] · [[Practice Skills and Race Times]] · [[Learning Journal]] |
+| **6. Prepare for a real build** | Learn bench safety, compare parts, and troubleshoot carefully before buying or flying | [[First Build Checklist]] · [[Buying Parts in India]] · [[Bench Safety and Flight Readiness]] · [[India Outdoor Flying Rules]] |
+| **7. Continue exploring** | Configuration, projects, and deeper references | [[Configuration and Customisation]] · [[Troubleshooting]] · [[BuildFPV Projects Library]] · [[References]] |
 
 ## 🖼️ FPV visual overview
 
