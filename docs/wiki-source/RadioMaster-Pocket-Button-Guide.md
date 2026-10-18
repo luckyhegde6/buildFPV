@@ -4,6 +4,10 @@
 
 **Your radio:** RadioMaster Pocket ELRS, running EdgeTX. Use this page to identify each control, create a reliable Liftoff profile, and avoid mixing simulator setup with real-aircraft RF settings.
 
+## 🎥 Video learning resource
+
+- [RadioMaster / RC setup playlist](https://youtube.com/playlist?list=PLwoDb7WF6c8lhlzE6_iA2X50bk3pIYcbb) — use it alongside the control map and setup checklist below. Confirm menu names and firmware-specific steps against the manual for your exact radio/EdgeTX version.
+
 Official links: [Pocket M2 product page](https://radiomasterrc.com/products/pocket-radio-controller-m2) · [RadioMaster manuals](https://radiomasterrc.com/pages/user-manuals) · [EdgeTX manual](https://manual.edgetx.org/) · [EdgeTX USB Joystick docs](https://github.com/EdgeTX/edgetx-user-manual/blob/2.12/color-radios/model-settings/model-setup/usb-joystick.md).
 
 ## ⚠️ Before power-on (from the supplied A1.8 quick-start guide)
