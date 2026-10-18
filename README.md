@@ -14,7 +14,7 @@
 | I want to… | Start here |
 |---|---|
 | Understand the whole aircraft | [FPV system basics](docs/01-fpv-basics.md) · [How flight works](docs/07-how-fpv-drones-work.md) |
-| See real build photos and boards | [Hardware gallery and visuals](docs/LEARNING-GUIDE.md#visual-guides) |
+| See the visual learning path | [Learning guide and diagrams](docs/LEARNING-GUIDE.md#visual-guides) · [Asset index](docs/assets/README.md) |
 | Build a daily flying habit | [Practice log and journal](docs/learning-log/README.md) |
 | Connect a Pocket ELRS to Liftoff | [Pocket ELRS guide](docs/03-pocket-elrs.md) |
 | Learn VTX, VRX, antennas and range | [Video / antenna guide](docs/08-video-antennas-and-range.md) |
@@ -43,7 +43,6 @@ buildFPV/
 ├── README.md
 ├── .github/ISSUE_TEMPLATE/       # Optional daily practice + configuration logs
 └── docs/
-    ├── LEARNING-GUIDE.md          # Maintained learning entry point
     ├── 01-fpv-basics.md
     ├── 02-simulator-training.md
     ├── 03-pocket-elrs.md
@@ -65,8 +64,7 @@ buildFPV/
     ├── learning-log/
     │   ├── README.md
     │   └── templates/            # Copy for every session/change
-    ├── LEARNING-GUIDE.md          # Maintained learning entry point
-    └── wiki-source/              # Legacy/reference Markdown pages
+    └── wiki-source/              # Supplemental reference pages maintained in this repository
 ```
 
 ## ✅ Keep these rules visible
