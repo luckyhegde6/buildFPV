@@ -44,3 +44,13 @@ This repository does not interpret those rules as legal advice. Confirm that the
 - India official rule start point: [Ministry of Civil Aviation — Drone Rules, 2021](https://www.civilaviation.gov.in/ministry-documents/rules/drones-rules-2021-dated-25-august-2021); re-check later amendments and Digital Sky airspace on the day.
 
 For the guided buyer workflow, see [Buying Parts in India](wiki-source/Buying-Parts-in-India.md). For habit and progress logging, see [Daily Liftoff Routine](wiki-source/Daily-Liftoff-Routine.md) and [Learning Journal](learning-log/README.md).
+
+
+## Visual / hardware references
+
+- [Mouser / Amphenol drone component breakdown infographic](https://www.mouser.in/amphenol-uav-infographic/)
+- [SpeedyBee F405 V3 FC official specs and wiring](https://www.speedybee.com/speedybee-f405-v3-30x30-flight-controller/) — this exact V3 listing is marked discontinued; use as an architectural example only.
+- [BETAFPV F4 1S 12A AIO](https://betafpv.com/products/f4-1s-12a-flight-controller)
+- [BETAFPV F4 1S 12A AIO V3](https://betafpv.com/products/f4-1s-12a-aio-brushless-flight-controller-v3-0)
+- [CADDXFPV / Walksnail Avatar VRX](https://www.caddxfpv.com/products/walksnail-avatar-fpv-vrx)
+- [ArduPilot GPS/Compass hardware overview](https://ardupilot.org/copter/docs/common-positioning-landing-page.html)
