@@ -36,11 +36,11 @@ Photo: [Racing Drone.jpg on Wikimedia Commons](https://commons.wikimedia.org/wik
 
 Example image from a [BN-220 style GPS module listing](https://readytosky.com/). Module board, chipset, antenna, supported protocol, power and whether a compass is integrated can differ; verify the module's own data sheet/pinout.
 
-## GPT-generated 3D-style concept image
+## Project overview visual
 
 ![AI-generated FPV build concept crop](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-build-concept-ai.jpg)
 
-This is **AI-generated concept art** created for the buildFPV learning project. It is useful for visual orientation only; labels/perspective may be imperfect. Use the manufacturer manuals and the labelled diagrams in [[How FPV Drones Work]] and [[GPS and Flight Controllers]] for technical decisions.
+This is **AI-generated concept art** created for the buildFPV learning project. It is useful for visual orientation only; labels/perspective may be imperfect. Use the manufacturer manuals and the labelled diagrams in [How FPV Drones Work](https://github.com/luckyhegde6/buildFPV/blob/main/docs/wiki-source/How-FPV-Drones-Work.md) and [GPS and Flight Controllers](https://github.com/luckyhegde6/buildFPV/blob/main/docs/wiki-source/GPS-and-Flight-Controllers.md) for technical decisions.
 
 ## Broader UAV electronics reference
 
