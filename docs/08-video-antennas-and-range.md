@@ -20,7 +20,7 @@ FPV camera → VTX / digital air unit ))) VRX / compatible goggles → pilot see
 
 ## 2. Video signal flow
 
-![Walksnail Avatar FPV VRX example](https://www.caddxfpv.com/cdn/shop/files/walksnail-avatar-fpv-vrx.png)
+![Walksnail Avatar FPV VRX example](https://www.caddxfpv.com/cdn/shop/files/VRX_and_V2.webp?v=1760685297&width=2000)
 
 *Example receiver family: [CADDXFPV / Walksnail Avatar VRX](https://www.caddxfpv.com/products/walksnail-avatar-fpv-vrx). Check the exact product's current specifications and compatible air units.*
 
