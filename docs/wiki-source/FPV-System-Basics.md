@@ -18,6 +18,10 @@ The radio sends control commands. The receiver delivers channel data to the flig
 
 ## The video path
 
+![FPV camera-to-goggles video path overview](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-build-concept-ai.jpg)
+
+*This concept image is for orientation only. The signal path below shows the logical flow; always check hardware-specific manuals for wiring.*
+
 `Camera → analog VTX or digital air unit → video link → compatible goggles/display → pilot`
 
 Keep this separate from the control path: the radio link carries stick commands, while the video system carries the camera feed. A compatible ELRS radio and receiver do not automatically make a video transmitter compatible with your goggles.
