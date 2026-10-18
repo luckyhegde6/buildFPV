@@ -1,12 +1,10 @@
 # 🎮 RadioMaster Pocket — Button, Switch and Gimbal Guide
 
-![RadioMaster Pocket control map](assets/pocket-control-map.svg)
-
-*Illustrative control map maintained in this repository. Check the labels and menu behavior on your exact radio and EdgeTX version.*
-
 > **For your setup:** RadioMaster Pocket ELRS 2.4 GHz + EdgeTX + Liftoff. This guide separates the *physical controls* from the *functions you assign in software*. A switch does not automatically arm a real quad just because it is labelled SA or SD.
 
-![Simplified RadioMaster Pocket control map](assets/pocket-control-map.svg)
+![RadioMaster Pocket control map](assets/pocket-control-map.svg)
+
+*Use this map to identify the physical controls before changing EdgeTX settings. Labels and menu behavior can vary by radio revision and EdgeTX version.*
 
 Official product and manual references: [Pocket M2 product page](https://radiomasterrc.com/products/pocket-radio-controller-m2) · [RadioMaster manuals](https://radiomasterrc.com/pages/user-manuals) · [EdgeTX user manual](https://manual.edgetx.org/) · [USB Joystick setup](https://github.com/EdgeTX/edgetx-user-manual/blob/2.12/color-radios/model-settings/model-setup/usb-joystick.md).
 
