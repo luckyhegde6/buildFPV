@@ -47,4 +47,4 @@ At the end of a session, write down:
 
 ## How to use images
 
-Diagrams and project-owned visual assets live in the `assets/` folder. Markdown pages link to them using relative paths so the rendered repository pages display images directly from the same commit. Product photos hosted by manufacturers or retailers are examples only; follow their links for current versions and specifications. An image is never a substitute for a revision-specific wiring diagram.
+Diagrams and project-owned visual assets live in the [`assets/`](assets/README.md) folder. Markdown pages link to them using relative paths so the rendered repository pages display images directly from the same commit. Product photos hosted by manufacturers or retailers are examples only; follow their links for current versions and specifications. An image is never a substitute for a revision-specific wiring diagram.
