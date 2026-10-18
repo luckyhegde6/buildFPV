@@ -1,6 +1,6 @@
 # 🚁 buildFPV Wiki — Learn. Practise. Build. Fly safely.
 
-**The maintained learning material lives in this repository.** Open the [repository-native Learning Guide](../LEARNING-GUIDE.md) for the complete beginner path; this page remains a quick index for people browsing this folder.
+Welcome to the buildFPV visual learning path. Start with the aircraft overview, then learn the flight axes and control loop, then follow the topic pages in order. These Wiki-ready pages are maintained in the main repository under `docs/wiki-source/`; their core diagrams live in `docs/assets/` so they can be reused consistently.
 
 ## 🧭 Recommended beginner path
 
@@ -15,13 +15,13 @@
 
 ### 1. See the whole aircraft
 
-![AI-generated FPV build concept](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-build-concept-ai.jpg)
+![FPV quadcopter overview concept](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-build-concept-ai.jpg)
 
 *Concept artwork for orientation only. It is not a wiring schematic; component placement and labels can vary from a real build.*
 
 ### 2. Understand how the drone moves
 
-![Throttle, roll, pitch and yaw illustrated](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/flight-axes.svg)
+![Flight axes: throttle, roll, pitch and yaw](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/flight-axes.svg)
 
 Throttle changes the overall thrust request. Roll, pitch and yaw describe rotation around the drone's three axes; the flight controller mixes these requests into motor outputs.
 
@@ -31,7 +31,7 @@ Throttle changes the overall thrust request. Roll, pitch and yaw describe rotati
 
 Your radio sends commands, the flight controller reads sensor feedback and computes corrections, and the ESCs adjust motor power. The gyro is central to fast stabilisation; GPS provides slower navigation data when fitted and configured.
 
-For a step-by-step explanation, continue to [[How FPV Drones Work]].
+For the full step-by-step explanation, continue to [[How FPV Drones Work]]. Then return to [[FPV System Basics]], and use the sidebar to explore radio setup, video, GPS and safety.
 
 ## ✅ Always remember
 
