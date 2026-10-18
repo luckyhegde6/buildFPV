@@ -14,17 +14,17 @@
 | I want to… | Start here |
 |---|---|
 | Understand the whole aircraft | [FPV system basics](docs/01-fpv-basics.md) · [How flight works](docs/07-how-fpv-drones-work.md) |
-| See real build photos and boards | [FPV hardware gallery](docs/wiki-source/Hardware-Gallery.md) |
-| Build a daily flying habit | [Daily Liftoff routine](docs/wiki-source/Daily-Liftoff-Routine.md) · [Learning journal](docs/learning-log/README.md) |
+| See real build photos and boards | [FPV hardware gallery](docs/LEARNING-GUIDE.md#visual-guides) |
+| Build a daily flying habit | [Daily Liftoff routine](docs/learning-log/README.md) · [Learning journal](docs/learning-log/README.md) |
 | Connect a Pocket ELRS to Liftoff | [Pocket ELRS guide](docs/03-pocket-elrs.md) |
 | Learn VTX, VRX, antennas and range | [Video / antenna guide](docs/08-video-antennas-and-range.md) |
 | Understand Pocket buttons, switches and gimbal adjustments | [Button, switch and gimbal guide](docs/06-pocket-button-guide.md) |
 | Track sessions, race times and screenshots | [Practice log template](docs/learning-log/templates/daily-session.md) |
-| Learn Betaflight without risky guesswork | [Betaflight basics](docs/wiki-source/Betaflight-Basics.md) |
+| Learn Betaflight without risky guesswork | [Betaflight basics](docs/LEARNING-GUIDE.md#beginner-path) · [Official docs](https://betaflight.com/docs/wiki/getting-started) |
 | Compare GPS, FC stacks and AIO boards | [GPS and FC examples](docs/09-gps-and-flight-controller-examples.md) |
-| Plan a first quad or tiny whoop | [First build checklist](docs/04-first-build.md) · [India buyer guide](docs/wiki-source/Buying-Parts-in-India.md) |
-| Diagnose a problem | [Troubleshooting](docs/wiki-source/Troubleshooting.md) |
-| Explore the projects that inspired this repo | [Project library](docs/wiki-source/BuildFPV-Projects-Library.md) |
+| Plan a first quad or tiny whoop | [First build checklist](docs/04-first-build.md) · [India buyer guide](docs/LEARNING-GUIDE.md#beginner-path) |
+| Diagnose a problem | [Troubleshooting](docs/LEARNING-GUIDE.md#practice-cadence) |
+| Explore the projects that inspired this repo | [Project library](docs/references.md) |
 
 ## 🏁 Recommended route
 
@@ -64,7 +64,8 @@ buildFPV/
     ├── learning-log/
     │   ├── README.md
     │   └── templates/            # Copy for every session/change
-    └── wiki-source/              # Source files for GitHub Wiki
+    ├── LEARNING-GUIDE.md          # Maintained learning entry point
+    └── wiki-source/              # Legacy/reference Markdown pages
 ```
 
 ## ✅ Keep these rules visible
@@ -96,7 +97,7 @@ This is a learning project, not legal, electrical, or flight-safety certificatio
 
 - [Button, switch and gimbal guide](docs/06-pocket-button-guide.md) — identify the Pocket controls and keep simulator and aircraft models separate.
 - [Pocket-to-Liftoff setup](docs/03-pocket-elrs.md) — connect with a data-capable USB-C cable and calibrate each primary axis.
-- [Video walkthrough notes](docs/wiki-source/Pocket-Video-Walkthrough-Notes.md) — record timestamps and verify instructions against official documentation.
+- [Video walkthrough notes](docs/LEARNING-GUIDE.md#practice-cadence) — record timestamps and verify instructions against official documentation.
 
 > Safety reminder: USB joystick mode is separate from ExpressLRS binding. For physical aircraft bench work, remove every propeller and verify failsafe, arming, disarming, and motor direction before flight.
 
@@ -108,7 +109,7 @@ The technical visuals are split into focused pages so each diagram has context:
 - [How an FPV quad works](docs/07-how-fpv-drones-work.md) — real-build photo, throttle/roll/pitch/yaw, clockwise vs counter-clockwise props, lift, and the flight-controller feedback loop.
 - [Video, antennas and range](docs/08-video-antennas-and-range.md) — separate control/video links, VTX and VRX, omni vs patch antennas, LHCP/RHCP and range factors.
 - [GPS and flight-controller examples](docs/09-gps-and-flight-controller-examples.md) — GNSS/UART data path, GPS Rescue limitations, stacks vs AIO and SpeedyBee/BETAFPV examples.
-- [Visual hardware gallery](docs/wiki-source/Hardware-Gallery.md) — credited real-build photography and product examples, plus project-generated concept artwork.
+- [Visual hardware gallery](docs/LEARNING-GUIDE.md#visual-guides) — local diagrams and image-backed visual explanations.
 - [Repository-native learning guide](docs/LEARNING-GUIDE.md) — the single entry point for the beginner sequence and all visual guides.
 
 The older `docs/wiki-source/` pages are retained as historical/reference material; the maintained learning path is under `docs/` and uses repository-local assets wherever available.
