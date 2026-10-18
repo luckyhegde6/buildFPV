@@ -12,7 +12,7 @@ This is the main table of contents for the FPV learning material maintained **in
 3. **Connect your RadioMaster Pocket to the simulator** — [Pocket ELRS notes](03-pocket-elrs.md) and the [Pocket control guide](06-pocket-button-guide.md). USB joystick input is separate from binding to a real aircraft.
 4. **Build repeatable control** — [Liftoff simulator training](02-simulator-training.md). Progress from single-axis drills to circuits, figure-eights, gates, landing and calm recovery.
 5. **Plan before purchasing** — [First-build planning](04-first-build.md) and [buying parts in India](wiki-source/Buying-Parts-in-India.md). Confirm compatibility and the complete budget before ordering.
-6. **Learn configuration and safety** — [Practical FPV checklists](checklists.md), [Betaflight basics](wiki-source/Betaflight-Basics.md), and [bench safety / flight readiness](wiki-source/Bench-Safety-and-Flight-Readiness.md). Keep props off for setup and motor checks.
+6. **Learn configuration and safety** — [Practical FPV checklists](checklists.md), [Betaflight basics](https://betaflight.com/docs/wiki/getting-started), and [bench safety / flight readiness](wiki-source/Bench-Safety-and-Flight-Readiness.md). Keep props off for setup and motor checks.
 7. **Learn video and navigation systems** — [Video, antennas and range](08-video-antennas-and-range.md) and [GPS/GNSS and flight-controller examples](09-gps-and-flight-controller-examples.md).
 8. **Keep improving** — [Phased learning roadmap](05-roadmap.md), [daily learning log](learning-log/README.md), and the [daily-session template](learning-log/templates/daily-session.md).
 
