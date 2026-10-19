@@ -4,9 +4,10 @@
 1. [[Home]]
 2. [[FPV System Basics]]
 3. [[How FPV Drones Work]]
-4. [[Hardware Gallery]]
-5. [[RadioMaster Pocket Button Guide]]
-6. [[Pocket ELRS and Liftoff]]
+4. [[Drone Parts One by One]]
+5. [[Hardware Gallery]]
+6. [[RadioMaster Pocket Button Guide]]
+7. [[Pocket ELRS and Liftoff]]
 
 **FPV basics**
 - [[ExpressLRS Basics]]
