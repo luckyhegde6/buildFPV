@@ -12,6 +12,16 @@ These image and diagram files are versioned as part of `luckyhegde6/buildFPV`. T
 | `pocket-control-map.svg` | [RadioMaster Pocket guide](../06-pocket-button-guide.md) | Physical radio controls; switch assignments remain configurable |
 | `pocket-gimbal-adjustment.png` | [RadioMaster Pocket guide](../06-pocket-button-guide.md) | Gimbal adjustment reference |
 | `gps-data-chain.svg` | [GPS and FC guide](../09-gps-and-flight-controller-examples.md) | Conceptual GNSS-to-flight-controller data path |
+| `fpv-parts-lineup.svg` | [Drone Parts — One by One](../wiki-source/Drone-Parts-One-by-One.md) | Full beginner component lineup and separate control, power and video paths |
+| `fpv-part-frame.svg` | Drone Parts — One by One | Frame arms, centre plates and motor mounts |
+| `fpv-part-battery-power.svg` | Drone Parts — One by One | LiPo battery, distribution and regulated power paths |
+| `fpv-part-motor.svg`, `fpv-part-propeller.svg` | Drone Parts — One by One | Motor anatomy and propeller geometry |
+| `fpv-part-esc.svg`, `fpv-part-flight-controller.svg`, `fpv-part-fc-esc-aio.svg` | Drone Parts — One by One | ESC, flight controller and stack-vs-AIO comparison |
+| `fpv-part-gyro.svg` | Drone Parts — One by One | Gyro/accelerometer sensing and stabilization |
+| `fpv-part-elrs-receiver.svg` | Drone Parts — One by One | Radio transmitter and aircraft-side ELRS receiver |
+| `fpv-part-camera.svg`, `fpv-part-vtx.svg`, `fpv-part-vrx-goggles.svg` | Drone Parts — One by One | Camera, aircraft video transmitter and ground receiver/goggles |
+| `fpv-part-antennas.svg` | Drone Parts — One by One | Linear, circular-polarized, directional and stubby antennas |
+| `fpv-part-gps.svg`, `fpv-part-buzzer-blackbox.svg` | Drone Parts — One by One | Optional GNSS, recovery beeper and flight logging |
 
 - `fpv-build-concept-ai.jpg` — project-created AI concept art for general orientation only. It is not a wiring schematic or a reliable pinout/motor-order reference.
 - `flight-axes.svg` — original explanatory diagram for throttle, roll, pitch and yaw. Use the installed firmware's motor map for actual motor numbering and direction.
@@ -23,3 +33,8 @@ These image and diagram files are versioned as part of `luckyhegde6/buildFPV`. T
 ## Reliability and attribution rules
 
 Keep alt text and captions with every image. Product photographs hosted by manufacturers or retailers are examples, not official wiring diagrams. Product pages and external photos can move; keep a source link near the image and verify the current board revision and manual before using it to plan a build.
+
+
+## Beginner Wiki component illustrations
+
+The custom SVGs above were created for the [Drone Parts — One by One guide](../wiki-source/Drone-Parts-One-by-One.md). They use simplified conceptual drawings for learning component names and system paths. They are **not** product photographs, wiring schematics, board pinouts, or a universal motor-order reference. Follow the exact hardware and firmware documentation for any build decision.
