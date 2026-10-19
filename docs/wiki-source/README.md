@@ -7,7 +7,7 @@ This folder contains the Markdown pages intended for the **GitHub Wiki view**. T
 - Beginner entry point: [the repository Learning Guide](../LEARNING-GUIDE.md)
 - Image/diagram mapping and attribution: [asset index](../assets/README.md)
 
-The Wiki pages use stable `raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/...` URLs for project-owned diagrams. This keeps the images versioned with the code while allowing the Wiki renderer to load them.
+The source pages use stable `raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/...` URLs for project-owned diagrams so they preview correctly in the main repository. During publishing, `scripts/publish-wiki.sh` copies those project assets into the Wiki repository's `images/` folder, downloads externally hosted image references when possible, and rewrites the Wiki copies to use local `images/...` paths. This means the published Wiki carries its own copies of the images instead of relying only on hotlinks.
 
 ## Publish to the live GitHub Wiki
 
