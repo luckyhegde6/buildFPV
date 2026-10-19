@@ -21,6 +21,10 @@ An FPV quadcopter becomes much easier to understand when you separate four syste
 | Optional GPS/GNSS | Supplies position and ground-speed information to the FC |
 | Optional buzzer / Blackbox | Helps find the quad or analyse recorded flight data |
 
+## Next: identify every part
+
+Now continue to **[FPV Drone Parts — One by One](Drone-Parts-One-by-One.md)** for a visual lineup and detailed explanations of the frame, battery, motors, propellers, ESC, flight controller, receiver, camera, video transmitter/receiver, antennas and optional GPS/accessories.
+
 ## 2. How the quad lifts
 
 ![SpeedyBee flight controller example](https://store-fhxxhuiq8q.mybigcommerce.com/product_images/img_SpeedyBee_F405_V3_Stack/F405-V3-1.jpg)
