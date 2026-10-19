@@ -145,7 +145,7 @@ The physical arrangement differs between builds. A compact whoop may combine man
 
 ## 11. Video transmitter (VTX) or digital air unit — sends the picture
 
-![FPV video system path from camera through aircraft transmitter to goggles or receiver](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-video-system.svg)
+![VTX or digital air unit with antenna connector and flight-controller/power connections](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-vtx.svg)
 
 **Job:** The aircraft-side video hardware transmits the camera feed to a compatible ground receiver or goggles.
 
