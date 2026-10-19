@@ -1,15 +1,17 @@
 # 🚁 buildFPV Wiki — Learn. Practise. Build. Fly safely.
 
-Welcome to the buildFPV visual learning path. Start with the aircraft overview, then learn the flight axes and control loop, then follow the topic pages in order. These Wiki-ready pages are maintained in the main repository under `docs/wiki-source/`; their core diagrams live in `docs/assets/` so they can be reused consistently.
+Welcome to the buildFPV visual learning path. Start with the aircraft overview, understand how it flies, then identify each part one by one before moving into radio setup, simulation, configuration and safety. These Wiki-ready pages are maintained in the main repository under `docs/wiki-source/`; reusable diagrams live in `docs/assets/`.
 
 ## 🧭 Recommended beginner path
 
-1. [FPV System Basics](FPV-System-Basics.md) — the control, flight-control, power and video paths.
-2. [How FPV Drones Work](How-FPV-Drones-Work.md) — lift, axes, motor rotation and feedback control.
-3. [RadioMaster Pocket Button Guide](RadioMaster-Pocket-Button-Guide.md) — identify controls, calibrate axes and keep simulator/aircraft models separate.
-4. [Pocket ELRS and Liftoff](Pocket-ELRS-and-Liftoff.md) and [Simulator Training](Simulator-Training.md) — build control skills before buying or flying.
-5. [Betaflight Basics](Betaflight-Basics.md), [ExpressLRS Basics](ExpressLRS-Basics.md), [Video Systems and Goggles](Video-Systems-and-Goggles.md), [Video Antennas](Video-Antennas-VTX-VRX.md), and [GPS and Flight Controllers](GPS-and-Flight-Controllers.md).
-6. [Bench Safety and Flight Readiness](Bench-Safety-and-Flight-Readiness.md), [Buying Parts in India](Buying-Parts-in-India.md) and [Troubleshooting](Troubleshooting.md).
+1. [FPV System Basics](FPV-System-Basics.md) — understand the control, flight-control, power and video paths.
+2. [How FPV Drones Work](How-FPV-Drones-Work.md) — learn lift, flight axes, motor rotation and feedback control.
+3. **[FPV Drone Parts — One by One](Drone-Parts-One-by-One.md)** — a visual lineup and detailed explanation of the frame, battery, motors, propellers, ESC, flight controller, receiver, camera, video system, antennas and optional GPS/accessories.
+4. [Hardware Gallery](Hardware-Gallery.md) — compare real build photos, boards, antennas and GPS modules.
+5. [RadioMaster Pocket Button Guide](RadioMaster-Pocket-Button-Guide.md) — identify controls and calibrate the radio.
+6. [Pocket ELRS and Liftoff](Pocket-ELRS-and-Liftoff.md) and [Simulator Training](Simulator-Training.md) — build control skills before a real flight.
+7. [Betaflight Basics](Betaflight-Basics.md), [ExpressLRS Basics](ExpressLRS-Basics.md), [Video Systems and Goggles](Video-Systems-and-Goggles.md), [Video Antennas](Video-Antennas-VTX-VRX.md), and [GPS and Flight Controllers](GPS-and-Flight-Controllers.md).
+8. [Bench Safety and Flight Readiness](Bench-Safety-and-Flight-Readiness.md), [Buying Parts in India](Buying-Parts-in-India.md) and [Troubleshooting](Troubleshooting.md).
 
 ## 🖼️ Visual learning path
 
@@ -31,7 +33,9 @@ Throttle changes the overall thrust request. Roll, pitch and yaw describe rotati
 
 Your radio sends commands, the flight controller reads sensor feedback and computes corrections, and the ESCs adjust motor power. The gyro is central to fast stabilisation; GPS provides slower navigation data when fitted and configured.
 
-For the full step-by-step explanation, continue to [[How FPV Drones Work]]. Then return to [[FPV System Basics]], and use the sidebar to explore radio setup, video, GPS and safety.
+### 4. Continue to the detailed parts lineup
+
+Open [FPV Drone Parts — One by One](Drone-Parts-One-by-One.md) next. It walks through each major component in sequence with photos, purpose, connections, compatibility checks and safety notes.
 
 ## ✅ Always remember
 
@@ -40,4 +44,4 @@ For the full step-by-step explanation, continue to [[How FPV Drones Work]]. Then
 - Do not assume a radio bind verifies failsafe, motor direction, video or power wiring.
 - Check official documentation and current local airspace/radio rules before outdoor use.
 
-For the full walkthrough, continue through [[How FPV Drones Work]], [[RadioMaster Pocket Button Guide]], [[Video Antennas VTX VRX]], and [[GPS and Flight Controllers]]. The page sources and reusable diagrams are maintained in the main `buildFPV` repository.
+The page sources and reusable diagrams are maintained in the main `buildFPV` repository. The separate live Wiki needs to be synced using `scripts/publish-wiki.sh` after the initial Wiki page is saved.
