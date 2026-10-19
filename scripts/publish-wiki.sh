@@ -5,11 +5,17 @@ set -euo pipefail
 # Run from a local checkout of luckyhegde6/buildFPV after syncing main.
 ROOT="$(git rev-parse --show-toplevel)"
 SOURCE="$ROOT/docs/wiki-source"
+ASSET_SOURCE="$ROOT/docs/assets"
 WIKI_REMOTE="${BUILDFPV_WIKI_REMOTE:-https://github.com/luckyhegde6/buildFPV.wiki.git}"
 WIKI_DIR="${1:-$(dirname "$ROOT")/buildFPV.wiki}"
 
 if [[ ! -d "$SOURCE" ]]; then
   echo "Could not find Wiki source pages at: $SOURCE" >&2
+  exit 1
+fi
+
+if [[ ! -d "$ASSET_SOURCE" ]]; then
+  echo "Could not find project image assets at: $ASSET_SOURCE" >&2
   exit 1
 fi
 
@@ -68,14 +74,67 @@ for page in "$SOURCE"/*.md; do
   cp "$page" "$WIKI_DIR"/
 done
 
-git add -- *.md
+# Publish image files inside the Wiki repository itself, not just as hotlinks.
+# Project-owned images are copied from docs/assets. External image URLs are
+# downloaded into images/ when possible; if a host blocks downloads, the page
+# keeps its original URL so the image can still load from its source.
+mkdir -p "$WIKI_DIR/images"
+
+for page in "$WIKI_DIR"/*.md; do
+  [[ -f "$page" ]] || continue
+  while IFS= read -r image_url; do
+    [[ -n "$image_url" ]] || continue
+    clean_url="${image_url%%\?*}"
+    basename="${clean_url##*/}"
+    [[ -n "$basename" ]] || continue
+
+    if [[ "$image_url" == https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/* ]]; then
+      filename="$basename"
+      if [[ -f "$ASSET_SOURCE/$filename" ]]; then
+        cp "$ASSET_SOURCE/$filename" "$WIKI_DIR/images/$filename"
+      else
+        echo "Warning: project asset not found: $ASSET_SOURCE/$filename" >&2
+        continue
+      fi
+    else
+      extension="${basename##*.}"
+      stem="${basename%.*}"
+      url_hash="$(printf '%s' "$image_url" | sha256sum | cut -c1-8)"
+      filename="${stem}-${url_hash}.${extension}"
+      target="$WIKI_DIR/images/$filename"
+      if [[ ! -s "$target" ]]; then
+        if ! curl --fail --location --silent --show-error --retry 2 --connect-timeout 15 "$image_url" --output "$target.tmp"; then
+          rm -f "$target.tmp"
+          echo "Warning: could not download image; keeping source URL: $image_url" >&2
+          continue
+        fi
+        mv "$target.tmp" "$target"
+      fi
+    fi
+
+    # Rewrite only the matching Markdown image destination for the Wiki copy.
+    python3 - "$page" "$image_url" "images/$filename" <<'PY'
+import pathlib
+import sys
+
+page = pathlib.Path(sys.argv[1])
+source_url = sys.argv[2]
+wiki_path = sys.argv[3]
+text = page.read_text(encoding="utf-8")
+text = text.replace(f"]({source_url})", f"]({wiki_path})")
+page.write_text(text, encoding="utf-8")
+PY
+  done < <(grep -Eo '!\[[^]]*\]\(https?://[^)]*\)' "$page" | sed -E 's/^!\[[^]]*\]\((https?:\/\/[^)]*)\)$/\1/' | sort -u)
+done
+
+git add -- *.md images/
 if git diff --cached --quiet; then
-  echo "Wiki already matches docs/wiki-source; nothing to publish."
+  echo "Wiki pages and images already match docs/wiki-source; nothing to publish."
   exit 0
 fi
 
 git diff --cached --check
-echo "Wiki pages staged for publication:"
+echo "Wiki pages and images staged for publication:"
 git diff --cached --stat
 printf '\nReview the staged content with: git diff --cached\n'
 printf 'Commit and push these Wiki updates? Type PUBLISH to continue: '
@@ -85,6 +144,6 @@ if [[ "$answer" != "PUBLISH" ]]; then
   exit 0
 fi
 
-git commit -m "docs: sync beginner FPV Wiki pages"
+git commit -m "docs: sync beginner FPV Wiki pages and images"
 echo "Pushing Wiki branch $(git branch --show-current) to origin..."
 git push origin HEAD
