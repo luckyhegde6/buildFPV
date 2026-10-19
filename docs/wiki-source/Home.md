@@ -19,6 +19,8 @@ Welcome to the buildFPV visual learning path. Start with the aircraft overview, 
 
 ![FPV quadcopter overview concept](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-build-concept-ai.jpg)
 
+For a full visual map of the component order, see the [FPV parts lineup](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-parts-lineup.svg).
+
 *Concept artwork for orientation only. It is not a wiring schematic; component placement and labels can vary from a real build.*
 
 ### 2. Understand how the drone moves
@@ -35,7 +37,7 @@ Your radio sends commands, the flight controller reads sensor feedback and compu
 
 ### 4. Continue to the detailed parts lineup
 
-Open [FPV Drone Parts — One by One](Drone-Parts-One-by-One.md) next. It walks through each major component in sequence with photos, purpose, connections, compatibility checks and safety notes.
+Open [FPV Drone Parts — One by One](Drone-Parts-One-by-One.md) next. It now has a dedicated lineup illustration and custom component diagrams for the frame, battery/power, motors/propellers, FC/ESC and AIO, sensor feedback, ELRS receiver, FPV video, antennas and optional GPS/accessories.
 
 ## ✅ Always remember
 
