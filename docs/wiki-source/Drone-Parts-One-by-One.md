@@ -61,7 +61,7 @@ The physical arrangement differs between builds. A compact whoop may combine man
 
 ## 4. Brushless motors — create rotation
 
-![Brushless motor and propeller diagram](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-motors-props.svg)
+![Brushless motor diagram with rotor bell, shaft, stator and windings](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-motor.svg)
 
 **Job:** The four brushless motors spin the propellers. The FC changes the requested output for each motor through the ESC to control thrust and attitude.
 
@@ -73,7 +73,7 @@ The physical arrangement differs between builds. A compact whoop may combine man
 
 ## 5. Propellers — push air to make thrust
 
-![Propeller and motor overview showing the components that create thrust](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-motors-props.svg)
+![Propeller anatomy showing the blade, leading edge, trailing edge, diameter and pitch concepts](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-propeller.svg)
 
 **Job:** Propellers accelerate air and produce thrust. Total thrust greater than weight makes the quad climb; lower thrust makes it descend. Tilting the aircraft points some thrust sideways, which moves it laterally.
 
@@ -85,7 +85,7 @@ The physical arrangement differs between builds. A compact whoop may combine man
 
 ## 6. ESC — electronic speed controller
 
-![FC and 4-in-1 ESC stack compared with a compact AIO board](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-fc-esc-aio.svg)
+![Dedicated electronic speed controller diagram showing battery power, motor outputs and FC connection](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-esc.svg)
 
 **Job:** The ESC converts commands from the FC into electrical switching that drives the brushless motors at the requested speed.
 
@@ -97,7 +97,9 @@ The physical arrangement differs between builds. A compact whoop may combine man
 
 ## 7. Flight controller (FC) — the onboard computer
 
-![Flight controller and ESC stack compared with an AIO board](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-fc-esc-aio.svg)
+![Flight controller diagram showing MCU, gyro, USB and I/O pads](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-flight-controller.svg)
+
+![FC/ESC stack compared with an all-in-one board](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-fc-esc-aio.svg)
 
 **Job:** The FC receives control-channel data and sensor readings, runs flight-control firmware and produces motor commands. Its gyro measures rotation; the controller compares actual movement with the pilot's requested movement and makes corrections.
 
@@ -109,7 +111,7 @@ The physical arrangement differs between builds. A compact whoop may combine man
 
 ## 8. Gyroscope and accelerometer — the motion sensors
 
-![Sensor feedback to flight-controller firmware and motor outputs](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-fc-sensors.svg)
+![Gyroscope and accelerometer visual explaining sensor feedback](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-gyro.svg)
 
 **Job:** The gyro measures how quickly the aircraft rotates around its axes. The accelerometer measures specific force and helps estimate orientation, especially for self-level modes.
 
@@ -133,7 +135,7 @@ The physical arrangement differs between builds. A compact whoop may combine man
 
 ## 10. FPV camera — captures the view
 
-![FPV camera to VTX or digital air unit to compatible goggles video path](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-video-system.svg)
+![FPV camera anatomy showing lens, body and connection lead](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-camera.svg)
 
 **Job:** The onboard camera captures the scene in front of the quad. Depending on the system, it may send an analogue video signal to a VTX or a digital signal to a digital air unit.
 
@@ -155,7 +157,7 @@ The physical arrangement differs between builds. A compact whoop may combine man
 
 ## 12. Video receiver (VRX) and goggles/display — the pilot's view
 
-![FPV video system path including the receiver and goggles](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-video-system.svg)
+![Video receiver, FPV goggles and display comparison](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-vrx-goggles.svg)
 
 **Job:** The ground-side receiver takes in the aircraft's video transmission and displays it through goggles or a screen. Some systems integrate the receiver into the goggles; others use an external VRX.
 
@@ -177,7 +179,7 @@ The physical arrangement differs between builds. A compact whoop may combine man
 
 ## 14. GPS/GNSS module — position and speed data (optional)
 
-![GPS module, buzzer and logging accessory illustrations](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-gps-accessories.svg)
+![GPS/GNSS module receiving satellite data and sending it to the flight controller](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-gps.svg)
 
 **Job:** A GNSS module receives satellite signals and provides position and ground-speed data to supported flight-controller firmware. It can support on-screen data, logging or configured rescue/navigation features.
 
@@ -187,7 +189,7 @@ The physical arrangement differs between builds. A compact whoop may combine man
 
 ## 15. Buzzer, blackbox and other small parts
 
-![Optional GPS, beeper and Blackbox/logging components](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-gps-accessories.svg)
+![Buzzer and Blackbox logging accessories](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-buzzer-blackbox.svg)
 
 **Buzzer:** An onboard beeper can help locate a quad after a crash or make status alerts audible. Some are self-powered; others rely on the flight controller and battery. Confirm compatibility and correct wiring.
 
