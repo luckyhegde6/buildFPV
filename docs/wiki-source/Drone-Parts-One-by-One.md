@@ -6,7 +6,7 @@ This is the next stop after [[How FPV Drones Work]]. Follow the aircraft from th
 
 ## The lineup at a glance
 
-![FPV quadcopter overview concept](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-build-concept-ai.jpg)
+![FPV drone parts lineup: structure, power, flight control, propulsion, control radio, video and optional modules](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-parts-lineup.svg)
 
 *Concept art for orientation only. Do not infer exact component placement, pins, motor numbering or wiring from this image.*
 
@@ -27,7 +27,7 @@ The physical arrangement differs between builds. A compact whoop may combine man
 
 ## 1. Frame — the skeleton
 
-![Real FPV quadcopter example](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/FPV_Quadrocopter.jpg/960px-FPV_Quadrocopter.jpg)
+![Frame diagram showing arms, centre plates and motor mounting points](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-frame.svg)
 
 **Job:** The frame holds the motors at fixed positions and protects/supports the electronics, battery and camera. Its geometry sets the motor-to-motor size and influences stiffness, durability, weight and available mounting space.
 
@@ -38,6 +38,8 @@ The physical arrangement differs between builds. A compact whoop may combine man
 **Check before building:** Confirm the frame supports the intended propeller diameter, motor mount pattern, FC/ESC mounting size, camera format and battery dimensions. Check screws do not protrude into windings or boards.
 
 ## 2. LiPo battery — the energy source
+
+![LiPo battery power path from battery through ESC or power distribution to motors and regulated electronics](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-battery-power.svg)
 
 **Job:** The lithium-polymer (LiPo) battery supplies energy to the aircraft. Cell count is written as **S**: for example, a 4S pack has four cells connected in series.
 
@@ -59,7 +61,7 @@ The physical arrangement differs between builds. A compact whoop may combine man
 
 ## 4. Brushless motors — create rotation
 
-![Quadcopter and propulsion hardware overview](https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Racing_Drone.jpg/960px-Racing_Drone.jpg)
+![Brushless motor and propeller diagram](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-motors-props.svg)
 
 **Job:** The four brushless motors spin the propellers. The FC changes the requested output for each motor through the ESC to control thrust and attitude.
 
@@ -71,6 +73,8 @@ The physical arrangement differs between builds. A compact whoop may combine man
 
 ## 5. Propellers — push air to make thrust
 
+![Propeller and motor overview showing the components that create thrust](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-motors-props.svg)
+
 **Job:** Propellers accelerate air and produce thrust. Total thrust greater than weight makes the quad climb; lower thrust makes it descend. Tilting the aircraft points some thrust sideways, which moves it laterally.
 
 **CW and CCW:** A conventional quad uses two clockwise and two counter-clockwise rotating propellers to balance reaction torque. The correct propeller type and installation depend on motor direction and the selected firmware layout.
@@ -81,7 +85,7 @@ The physical arrangement differs between builds. A compact whoop may combine man
 
 ## 6. ESC — electronic speed controller
 
-![SpeedyBee F405 V3 stack board example](https://store-fhxxhuiq8q.mybigcommerce.com/product_images/img_SpeedyBee_F405_V3_Stack/F405-V3-1.jpg)
+![FC and 4-in-1 ESC stack compared with a compact AIO board](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-fc-esc-aio.svg)
 
 **Job:** The ESC converts commands from the FC into electrical switching that drives the brushless motors at the requested speed.
 
@@ -93,6 +97,8 @@ The physical arrangement differs between builds. A compact whoop may combine man
 
 ## 7. Flight controller (FC) — the onboard computer
 
+![Flight controller and ESC stack compared with an AIO board](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-fc-esc-aio.svg)
+
 **Job:** The FC receives control-channel data and sensor readings, runs flight-control firmware and produces motor commands. Its gyro measures rotation; the controller compares actual movement with the pilot's requested movement and makes corrections.
 
 **What may be on the board:** Processor, gyro, USB connector, receiver inputs, motor outputs, OSD/video connections, blackbox storage and regulated power circuits. Features differ by model and revision.
@@ -102,6 +108,8 @@ The physical arrangement differs between builds. A compact whoop may combine man
 **Check before setup:** Confirm the exact firmware target, board orientation, receiver protocol, UART/pad assignments, input voltage and manual. A photo of a different board revision is not an authoritative pinout.
 
 ## 8. Gyroscope and accelerometer — the motion sensors
+
+![Sensor feedback to flight-controller firmware and motor outputs](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-fc-sensors.svg)
 
 **Job:** The gyro measures how quickly the aircraft rotates around its axes. The accelerometer measures specific force and helps estimate orientation, especially for self-level modes.
 
@@ -113,6 +121,8 @@ The physical arrangement differs between builds. A compact whoop may combine man
 
 ## 9. Control receiver — listens to your radio
 
+![Radio transmitter sends commands over the control link to an ELRS receiver on the aircraft](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-elrs-receiver.svg)
+
 **Job:** The receiver on the aircraft receives commands from the transmitter, such as the RadioMaster Pocket, and passes channel data to the FC. ExpressLRS (ELRS) is one common control-link system.
 
 **Signal path:** `Radio sticks → transmitter RF link → aircraft receiver → FC`
@@ -123,6 +133,8 @@ The physical arrangement differs between builds. A compact whoop may combine man
 
 ## 10. FPV camera — captures the view
 
+![FPV camera to VTX or digital air unit to compatible goggles video path](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-video-system.svg)
+
 **Job:** The onboard camera captures the scene in front of the quad. Depending on the system, it may send an analogue video signal to a VTX or a digital signal to a digital air unit.
 
 **What matters:** Camera format, size, latency, image quality, aspect ratio, connector/pinout and supported voltage. A camera that physically fits may still not be electrically compatible.
@@ -130,6 +142,8 @@ The physical arrangement differs between builds. A compact whoop may combine man
 **Check:** Confirm exact supply-voltage requirements and wiring from the manufacturer's documentation. Keep camera wiring away from moving parts and inspect the lens/cage for obstructions.
 
 ## 11. Video transmitter (VTX) or digital air unit — sends the picture
+
+![FPV video system path from camera through aircraft transmitter to goggles or receiver](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-video-system.svg)
 
 **Job:** The aircraft-side video hardware transmits the camera feed to a compatible ground receiver or goggles.
 
@@ -141,7 +155,7 @@ The physical arrangement differs between builds. A compact whoop may combine man
 
 ## 12. Video receiver (VRX) and goggles/display — the pilot's view
 
-![Walksnail Avatar VRX example](https://www.caddxfpv.com/cdn/shop/files/VRX_and_V2.webp?v=1760685297&width=2000)
+![FPV video system path including the receiver and goggles](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-video-system.svg)
 
 **Job:** The ground-side receiver takes in the aircraft's video transmission and displays it through goggles or a screen. Some systems integrate the receiver into the goggles; others use an external VRX.
 
@@ -151,7 +165,7 @@ The physical arrangement differs between builds. A compact whoop may combine man
 
 ## 13. Antennas — transmit and receive radio energy
 
-![Directional 5.8 GHz patch antenna example](https://www.racedayquads.com/cdn/shop/files/lumenier-lumenier-axii-patch-hd-5-8ghz-antenna-choose-polarization-antenna-32443478507633.webp?v=1736965860&width=600)
+![Illustration comparing linear, circular-polarized, directional patch and stubby omnidirectional antennas](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-antennas.svg)
 
 **Job:** Antennas couple radio-frequency energy into or out of the air. The aircraft's control receiver antenna and video antenna serve different links and may use different frequencies.
 
@@ -163,7 +177,7 @@ The physical arrangement differs between builds. A compact whoop may combine man
 
 ## 14. GPS/GNSS module — position and speed data (optional)
 
-![Compact GNSS module example](https://readytosky.com/pic/big/1171_2.jpg)
+![GPS module, buzzer and logging accessory illustrations](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-gps-accessories.svg)
 
 **Job:** A GNSS module receives satellite signals and provides position and ground-speed data to supported flight-controller firmware. It can support on-screen data, logging or configured rescue/navigation features.
 
@@ -172,6 +186,8 @@ The physical arrangement differs between builds. A compact whoop may combine man
 **Check:** Confirm voltage, UART/pad connection, protocol, mounting/orientation recommendations, antenna view of the sky and firmware configuration. A compass may or may not be integrated; verify the specific module.
 
 ## 15. Buzzer, blackbox and other small parts
+
+![Optional GPS, beeper and Blackbox/logging components](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-gps-accessories.svg)
 
 **Buzzer:** An onboard beeper can help locate a quad after a crash or make status alerts audible. Some are self-powered; others rely on the flight controller and battery. Confirm compatibility and correct wiring.
 
@@ -195,7 +211,9 @@ The physical arrangement differs between builds. A compact whoop may combine man
 
 `LiPo battery → power distribution / ESC → motors; regulated outputs supply the FC, receiver and video equipment as specified`
 
-![FPV flight-control feedback loop](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-control-loop.svg)
+![Custom diagram: sensor feedback, flight controller, ESC and motor output](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-fc-sensors.svg)
+
+The project also maintains a compact reusable control-loop diagram at `docs/assets/fpv-control-loop.svg`.
 
 These are logical paths, not pin-by-pin wiring diagrams. The exact circuit depends on the chosen parts.
 
