@@ -53,12 +53,38 @@ if [[ "$ACTUAL_REMOTE" != "$EXPECTED_REMOTE" ]]; then
   exit 1
 fi
 
-if [[ -n "$(git status --porcelain --untracked-files=all)" ]]; then
-  echo "Refusing to publish: Wiki clone has local changes." >&2
-  echo "Commit/stash or back up the listed changes in the Wiki clone, then rerun." >&2
-  echo "This guard prevents overwriting pages or images that are not in docs/wiki-source." >&2
-  git status --short
-  exit 1
+# Allow recovery when the previous publisher run already copied the generated
+# pages/images into the Wiki checkout. These files are safe to refresh from source.
+# Still stop if a file outside the expected generated set has local edits.
+STATUS="$(git status --porcelain --untracked-files=all)"
+if [[ -n "$STATUS" ]]; then
+  UNEXPECTED=0
+  while IFS= read -r status_line; do
+    [[ -n "$status_line" ]] || continue
+    path="${status_line:3}"
+    case "$path" in
+      *.md|images/*)
+        # Only root Wiki markdown and files under images/ are publisher-managed.
+        if [[ "$path" == */* && "$path" != images/* ]]; then
+          echo "Unexpected nested change: $path" >&2
+          UNEXPECTED=1
+        fi
+        ;;
+      *)
+        echo "Unexpected local change: $path" >&2
+        UNEXPECTED=1
+        ;;
+    esac
+  done <<< "$STATUS"
+
+  if [[ "$UNEXPECTED" -ne 0 ]]; then
+    echo "Refusing to publish because non-generated local changes need review." >&2
+    git status --short
+    exit 1
+  fi
+
+  echo "Found Wiki Markdown/images from an earlier interrupted publish."
+  echo "They will be refreshed from docs/wiki-source and docs/assets before staging."
 fi
 
 # Refresh existing Wiki history before replacing pages. A clean clone is still
