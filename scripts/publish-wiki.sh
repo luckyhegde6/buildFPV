@@ -146,18 +146,15 @@ for page in "$WIKI_DIR"/*.md; do
       fi
     fi
 
-    # Rewrite only the matching Markdown image destination for the Wiki copy.
-    python3 - "$page" "$image_url" "images/$filename" <<'PY'
-import pathlib
-import sys
-
-page = pathlib.Path(sys.argv[1])
-source_url = sys.argv[2]
-wiki_path = sys.argv[3]
-text = page.read_text(encoding="utf-8")
-text = text.replace(f"]({source_url})", f"]({wiki_path})")
-page.write_text(text, encoding="utf-8")
-PY
+    # Rewrite the matching Markdown image destination using Bash only.
+    # This keeps the publisher compatible with Git Bash installs without Python.
+    wiki_path="images/$filename"
+    temp_page="$page.tmp"
+    while IFS= read -r line || [[ -n "$line" ]]; do
+      line="${line//"]($image_url)"/"]($wiki_path)"}"
+      printf '%s\n' "$line"
+    done < "$page" > "$temp_page"
+    mv "$temp_page" "$page"
   done < <(grep -Eo '!\[[^]]*\]\(https?://[^)]*\)' "$page" | sed -E 's/^!\[[^]]*\]\((https?:\/\/[^)]*)\)$/\1/' | sort -u)
 done
 
