@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-labelledby="title desc">
+<title id="title">RadioMaster Pocket-style FPV controller and Mode 2 stick map</title>
+<desc id="desc">Schematic front view of a compact FPV radio with two joystick gimbals and a screen, with typical Mode 2 mapping: left stick controls throttle and yaw, right stick controls pitch and roll.</desc>
+<defs><marker id="arr" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#2563eb"/></marker></defs>
+<rect width="1200" height="600" rx="24" fill="#f8fafc"/>
+<text x="36" y="44" font-family="Arial,sans-serif" font-size="30" font-weight="700" fill="#0f172a">Radio controller: the two sticks send your flight commands</text>
+<text x="36" y="74" font-family="Arial,sans-serif" font-size="18" fill="#475569">Simplified front-view schematic • typical Mode 2 setup</text>
+<!-- body -->
+<path d="M250 125 Q250 100 280 100 H920 Q950 100 950 130 L990 350 Q997 385 965 385 H235 Q203 385 210 350 Z" fill="#cbd5e1" stroke="#334155" stroke-width="5"/>
+<path d="M520 120 H680 L700 240 H500 Z" fill="#64748b" stroke="#334155" stroke-width="3"/>
+<rect x="536" y="139" width="128" height="72" rx="5" fill="#0f172a"/>
+<text x="600" y="169" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#93c5fd">FPV RADIO</text>
+<text x="600" y="191" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#e2e8f0">screen/menu</text>
+<!-- left gimbal -->
+<rect x="290" y="160" width="160" height="160" rx="22" fill="#94a3b8" stroke="#475569" stroke-width="4"/>
+<circle cx="370" cy="240" r="52" fill="#334155" stroke="#0f172a" stroke-width="5"/>
+<circle cx="370" cy="240" r="29" fill="#cbd5e1" stroke="#0f172a" stroke-width="4"/>
+<path d="M370 240 V183 M370 240 V297 M370 240 H313 M370 240 H427" stroke="#2563eb" stroke-width="3" marker-end="url(#arr)"/>
+<circle cx="370" cy="240" r="16" fill="#e2e8f0" stroke="#334155" stroke-width="3"/>
+<text x="370" y="345" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#0f172a">LEFT STICK</text>
+<!-- right gimbal -->
+<rect x="750" y="160" width="160" height="160" rx="22" fill="#94a3b8" stroke="#475569" stroke-width="4"/>
+<circle cx="830" cy="240" r="52" fill="#334155" stroke="#0f172a" stroke-width="5"/>
+<circle cx="830" cy="240" r="29" fill="#cbd5e1" stroke="#0f172a" stroke-width="4"/>
+<path d="M830 240 V183 M830 240 V297 M830 240 H773 M830 240 H887" stroke="#2563eb" stroke-width="3" marker-end="url(#arr)"/>
+<circle cx="830" cy="240" r="16" fill="#e2e8f0" stroke="#334155" stroke-width="3"/>
+<text x="830" y="345" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#0f172a">RIGHT STICK</text>
+<!-- antenna and controls -->
+<path d="M600 104 V85" stroke="#334155" stroke-width="8" stroke-linecap="round"/>
+<rect x="573" y="83" width="54" height="14" rx="7" fill="#475569"/>
+<g fill="#475569"><circle cx="480" cy="151" r="8"/><circle cx="720" cy="151" r="8"/><circle cx="485" cy="260" r="10"/><circle cx="715" cy="260" r="10"/></g>
+<!-- map cards -->
+<g font-family="Arial,sans-serif">
+ <rect x="50" y="415" width="520" height="145" rx="18" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+ <text x="78" y="449" font-size="22" font-weight="700" fill="#1e40af">LEFT STICK (MODE 2)</text>
+ <text x="78" y="484" font-size="18" fill="#1e3a8a">Up / down = THROTTLE</text>
+ <text x="78" y="516" font-size="18" fill="#1e3a8a">Left / right = YAW (turn nose)</text>
+ <rect x="600" y="415" width="550" height="145" rx="18" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+ <text x="628" y="449" font-size="22" font-weight="700" fill="#166534">RIGHT STICK (MODE 2)</text>
+ <text x="628" y="484" font-size="18" fill="#14532d">Up / down = PITCH (nose forward / back)</text>
+ <text x="628" y="516" font-size="18" fill="#14532d">Left / right = ROLL (tilt left / right)</text>
+</g>
+</svg>
