@@ -7,6 +7,11 @@ ROOT="$(git rev-parse --show-toplevel)"
 SOURCE="$ROOT/docs/wiki-source"
 ASSET_SOURCE="$ROOT/docs/assets"
 WIKI_REMOTE="${BUILDFPV_WIKI_REMOTE:-https://github.com/luckyhegde6/buildFPV.wiki.git}"
+AUTO_CONFIRM=0
+if [[ "${1:-}" == "--yes" ]]; then
+  AUTO_CONFIRM=1
+  shift
+fi
 WIKI_DIR="${1:-$(dirname "$ROOT")/buildFPV.wiki}"
 
 if [[ ! -d "$SOURCE" ]]; then
@@ -21,7 +26,11 @@ fi
 
 if [[ ! -d "$WIKI_DIR/.git" ]]; then
   echo "Cloning Wiki into: $WIKI_DIR"
-  git clone "$WIKI_REMOTE" "$WIKI_DIR"
+  if ! git clone "$WIKI_REMOTE" "$WIKI_DIR"; then
+    echo "Could not clone the Wiki repository." >&2
+    echo "GitHub may not have initialized it yet. Open the Wiki page, create/save the first Home page, then rerun this script." >&2
+    exit 1
+  fi
 fi
 
 cd "$WIKI_DIR"
@@ -51,21 +60,20 @@ if [[ -n "$(git status --porcelain --untracked-files=all)" ]]; then
   exit 1
 fi
 
-# Refresh an existing clean clone before staging changes. This avoids basing a
-# Wiki commit on an old local copy; stop safely if histories have diverged.
+# Refresh an existing clean clone before staging changes. On first initialization,
+# the clone may have no branch or remote-tracking ref yet; keep that case usable.
 BRANCH="$(git branch --show-current)"
-if [[ -z "$BRANCH" ]]; then
+if [[ -n "$BRANCH" ]]; then
+  git fetch origin
+  if git show-ref --verify --quiet "refs/remotes/origin/$BRANCH"; then
+    git merge --ff-only "origin/$BRANCH"
+  else
+    echo "Note: no matching origin tracking branch yet; continuing with local Wiki branch '$BRANCH'."
+  fi
+else
   echo "Refusing to publish from a detached HEAD." >&2
   exit 1
 fi
-
-git fetch origin
-if ! git show-ref --verify --quiet "refs/remotes/origin/$BRANCH"; then
-  echo "Refusing to publish: no origin branch matching '$BRANCH'." >&2
-  echo "Check the Wiki's default branch, then retry from that branch." >&2
-  exit 1
-fi
-git merge --ff-only "origin/$BRANCH"
 
 # Wiki pages live at the root of the separate .wiki.git repository.
 # README.md is maintainer documentation for docs/wiki-source, not a Wiki page.
@@ -137,11 +145,15 @@ git diff --cached --check
 echo "Wiki pages and images staged for publication:"
 git diff --cached --stat
 printf '\nReview the staged content with: git diff --cached\n'
-printf 'Commit and push these Wiki updates? Type PUBLISH to continue: '
-read -r answer
-if [[ "$answer" != "PUBLISH" ]]; then
-  echo "Stopped without committing or pushing."
-  exit 0
+if [[ "$AUTO_CONFIRM" -eq 1 ]]; then
+  echo "Auto-confirm enabled by --yes; committing staged Wiki pages and images."
+else
+  printf 'Commit and push these Wiki updates? Type PUBLISH to continue: '
+  read -r answer
+  if [[ "$answer" != "PUBLISH" ]]; then
+    echo "Stopped without committing or pushing."
+    exit 0
+  fi
 fi
 
 git commit -m "docs: sync beginner FPV Wiki pages and images"
