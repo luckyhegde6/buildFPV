@@ -55,24 +55,24 @@ fi
 
 if [[ -n "$(git status --porcelain --untracked-files=all)" ]]; then
   echo "Refusing to publish: Wiki clone has local changes." >&2
-  echo "Review or commit/stash those changes, then run this script again." >&2
+  echo "Commit/stash or back up the listed changes in the Wiki clone, then rerun." >&2
+  echo "This guard prevents overwriting pages or images that are not in docs/wiki-source." >&2
   git status --short
   exit 1
 fi
 
-# Refresh an existing clean clone before staging changes. On first initialization,
-# the clone may have no branch or remote-tracking ref yet; keep that case usable.
+# Refresh existing Wiki history before replacing pages. A clean clone is still
+# required, but source pages in this repo never count as Wiki working-tree edits.
 BRANCH="$(git branch --show-current)"
-if [[ -n "$BRANCH" ]]; then
-  git fetch origin
-  if git show-ref --verify --quiet "refs/remotes/origin/$BRANCH"; then
-    git merge --ff-only "origin/$BRANCH"
-  else
-    echo "Note: no matching origin tracking branch yet; continuing with local Wiki branch '$BRANCH'."
-  fi
-else
+if [[ -z "$BRANCH" ]]; then
   echo "Refusing to publish from a detached HEAD." >&2
   exit 1
+fi
+git fetch origin
+if git show-ref --verify --quiet "refs/remotes/origin/$BRANCH"; then
+  git merge --ff-only "origin/$BRANCH"
+else
+  echo "No origin tracking branch exists for '$BRANCH'; continuing with the initialized Wiki branch."
 fi
 
 # Wiki pages live at the root of the separate .wiki.git repository.
