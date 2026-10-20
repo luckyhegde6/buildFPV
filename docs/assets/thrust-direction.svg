@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+<title id="title">How a quadcopter produces thrust</title>
+<desc id="desc">A quadcopter propellers push air downward and create an opposite upward thrust. It climbs when upward thrust exceeds weight, hovers when balanced, and descends when lift is lower.</desc>
+<defs>
+ <marker id="down" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#2563eb"/></marker>
+ <marker id="up" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#ea580c"/></marker>
+</defs>
+<rect width="1200" height="560" rx="24" fill="#f8fafc"/>
+<text x="38" y="48" font-family="Arial,sans-serif" font-size="30" font-weight="700" fill="#0f172a">Thrust: propellers push air down, the quad is pushed up</text>
+<text x="38" y="79" font-family="Arial,sans-serif" font-size="18" fill="#475569">Throttle changes the baseline speed of all four motors; the flight controller still makes individual corrections.</text>
+<!-- schematic quad -->
+<g>
+ <line x1="310" y1="185" x2="535" y2="253" stroke="#334155" stroke-width="18" stroke-linecap="round"/>
+ <line x1="310" y1="253" x2="535" y2="185" stroke="#334155" stroke-width="18" stroke-linecap="round"/>
+ <rect x="383" y="190" width="78" height="56" rx="12" fill="#64748b" stroke="#0f172a" stroke-width="3"/>
+ <circle cx="292" cy="178" r="35" fill="#bfdbfe" stroke="#2563eb" stroke-width="4"/>
+ <circle cx="553" cy="178" r="35" fill="#bfdbfe" stroke="#2563eb" stroke-width="4"/>
+ <circle cx="292" cy="260" r="35" fill="#bfdbfe" stroke="#2563eb" stroke-width="4"/>
+ <circle cx="553" cy="260" r="35" fill="#bfdbfe" stroke="#2563eb" stroke-width="4"/>
+ <g stroke="#2563eb" stroke-width="5" marker-end="url(#down)">
+  <path d="M264 218 V332"/><path d="M292 220 V350"/><path d="M320 218 V332"/>
+  <path d="M525 218 V332"/><path d="M553 220 V350"/><path d="M581 218 V332"/>
+ </g>
+ <text x="430" y="383" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#1d4ed8">DOWNWASH / AIRFLOW</text>
+ <path d="M700 333 V140" stroke="#ea580c" stroke-width="9" marker-end="url(#up)"/>
+ <text x="742" y="188" font-family="Arial,sans-serif" font-size="28" font-weight="700" fill="#9a3412">UPWARD THRUST</text>
+ <text x="742" y="222" font-family="Arial,sans-serif" font-size="19" fill="#7c2d12">Reaction force on the drone</text>
+ <path d="M700 147 V76" stroke="#64748b" stroke-width="5" marker-end="url(#down)"/>
+ <text x="742" y="105" font-family="Arial,sans-serif" font-size="18" fill="#334155">Weight acts downward</text>
+</g>
+<g font-family="Arial,sans-serif">
+ <rect x="45" y="430" width="350" height="90" rx="16" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+ <text x="70" y="464" font-size="22" font-weight="700" fill="#166534">CLIMB</text><text x="70" y="493" font-size="17" fill="#14532d">Thrust greater than weight</text>
+ <rect x="425" y="430" width="350" height="90" rx="16" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+ <text x="450" y="464" font-size="22" font-weight="700" fill="#1e40af">HOVER</text><text x="450" y="493" font-size="17" fill="#1e3a8a">Thrust balances weight</text>
+ <rect x="805" y="430" width="350" height="90" rx="16" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/>
+ <text x="830" y="464" font-size="22" font-weight="700" fill="#9a3412">DESCEND</text><text x="830" y="493" font-size="17" fill="#7c2d12">Thrust less than weight</text>
+</g>
+</svg>
