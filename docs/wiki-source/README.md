@@ -21,7 +21,7 @@ GitHub's documented local workflow requires one initial Wiki page to be created 
    bash scripts/publish-wiki.sh
    ```
 
-4. Review the staged diff. The script asks for the exact confirmation word `PUBLISH` before it commits and pushes Wiki pages.
+4. Review the staged diff. For a normal interactive publish, type the exact confirmation word `PUBLISH`. For a deliberate non-interactive publish from automation, use `bash scripts/publish-wiki.sh --yes`.
 5. Verify the live Home page, sidebar, images, and internal links after the push.
 
 The publisher intentionally refuses to push to a mismatched remote or over a dirty Wiki checkout. Do not rename `_Sidebar.md`; GitHub uses that exact filename.
@@ -38,4 +38,4 @@ The publisher intentionally refuses to push to a mismatched remote or over a dir
 
 ## Current publication status
 
-The Wiki-ready source and image references can be reviewed in this repository. The connected GitHub API currently reports `has_wiki: true` for the main repository, but `buildFPV.wiki` still returns `404 Not Found`, which usually means its initial page has not been saved yet. The live Wiki could not be browser-verified from the current environment; do not treat a successful `main` commit as proof that the separate Wiki has been published.
+The Wiki-ready source and image references can be reviewed in this repository. The connected GitHub API reports the main repository has Wiki enabled, but the separate `buildFPV.wiki` repository still returns `404 Not Found`, which usually means its initial page has not been saved yet. The live Wiki could not be browser-verified from this environment. Save the first Home page in the Wiki UI, then run the publisher and verify the published pages and images; a commit to the main repository is not itself publication.
