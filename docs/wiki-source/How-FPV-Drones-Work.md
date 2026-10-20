@@ -4,77 +4,96 @@
 
 *Real-build photo: [FPV Quadrocopter on Wikimedia Commons](https://commons.wikimedia.org/wiki/File:FPV_Quadrocopter.jpg). Use it to identify the broad physical layout; it is not a wiring guide.*
 
-An FPV quadcopter becomes much easier to understand when you separate four systems: **control, flight control, propulsion and video**.
+An FPV quadcopter becomes easier to understand when you trace one simple chain:
 
-## 1. The parts and their jobs
+**Your hands → radio transmitter → receiver on the drone → flight controller → ESCs → motors and propellers → movement.**
+
+The diagrams below are deliberately ordered to answer the beginner questions: what creates lift, what yaw/pitch/roll mean, which way the drone moves, and what the radio controller looks like.
+
+## 1. What the radio controller looks like
+
+The radio transmitter is the handheld controller. The **RadioMaster Pocket** is one compact example; the exact switches, display, antennas and case can vary by model.
+
+![RadioMaster Pocket radio controller, charcoal finish](https://radiomasterrc.com/cdn/shop/files/POCKET-1000x1000-Charcoal-1.jpg?v=1750061505)
+
+*Product photo: [RadioMaster Pocket Radio Controller (official manufacturer page)](https://radiomasterrc.com/products/pocket-radio-controller-m2).*
+
+### What the two sticks do — typical Mode 2 layout
+
+![FPV radio controller and Mode 2 stick map](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/radio-controller-mode2.svg)
+
+For a typical **Mode 2** radio:
+
+| Stick movement | Command | What the quad does |
+|---|---|---|
+| Left stick up / down | Throttle | Requests more / less overall thrust |
+| Left stick left / right | Yaw | Rotates the nose left / right |
+| Right stick up / down | Pitch | Tilts the nose forward / backward |
+| Right stick left / right | Roll | Tilts the quad left / right |
+
+Mode 2 is common, but radio modes and channel mapping can be changed. Check your transmitter and flight-controller configuration before relying on this table. In **Acro/Rate mode**, a stick requests a rotation rate; it does not command a fixed tilt angle. In **Angle mode**, the FC tries to self-level.
+
+## 2. How the quad lifts: thrust and airflow
+
+![Diagram showing propellers pushing air down to create upward thrust](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/thrust-direction.svg)
+
+The propellers accelerate air downward. The reaction force pushes the aircraft upward:
+
+- **Climb:** total upward thrust is greater than the drone's weight.
+- **Hover:** upward thrust balances weight.
+- **Descend:** thrust is less than weight.
+
+Throttle changes the overall thrust request, while the flight controller may adjust each motor individually to keep the quad stable or make it turn. Tilting the quad directs some thrust sideways, which can accelerate the drone horizontally.
+
+### Why two propellers spin CW and two CCW
+
+Two motors rotate clockwise and two counter-clockwise so their reaction torques can balance. The flight controller can create yaw by adjusting the torque balance between the clockwise and counter-clockwise motor groups.
+
+**Motor numbers and exact CW/CCW locations depend on the firmware and build.** Use the motor diagram for the installed firmware and verify motor direction with propellers removed; do not treat one generic diagram as universal.
+
+## 3. Pitch, roll and yaw — and which direction the drone moves
+
+![Illustrated thrust, pitch, roll and yaw directions on a quadcopter](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/flight-axes.svg)
+
+| Control | What rotates / changes | Usual movement effect |
+|---|---|---|
+| **Pitch** | Nose tilts up or down | Nose down tilts thrust forward, accelerating forward; nose up can slow forward motion or accelerate backward |
+| **Roll** | Quad tilts left or right around its nose-to-tail axis | Tilting right accelerates right; tilting left accelerates left |
+| **Yaw** | Nose rotates left or right around the vertical axis | Changes the direction the quad is pointing; yaw itself is not the same as moving sideways |
+| **Throttle** | Changes the baseline thrust request | More thrust can climb; less can descend, depending on tilt and current movement |
+
+In Acro mode, the aircraft keeps rotating while a non-zero rotation command is held. Centering the sticks stops requesting additional rotation; it does **not** automatically level the quad. Angle mode uses the FC's orientation estimate and accelerometer to help self-level. Practise the difference in a simulator such as Liftoff before flying a real quad.
+
+## 4. How the flight controller keeps the drone responding
+
+![FPV control-loop diagram](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-control-loop.svg)
+
+1. Your radio sends stick commands over the control link.
+2. The receiver forwards channels to the flight controller (FC).
+3. Firmware turns the stick inputs into desired rates or attitude, depending on flight mode.
+4. The gyro measures the quad's actual rotation.
+5. Controller logic (commonly PID) compares desired and measured movement.
+6. The mixer calculates the four motor commands.
+7. ESCs change motor speed; the gyro measures the result and the loop repeats.
+
+The **gyro** is central to fast stabilisation. GPS is a slower source of position and ground-speed information for supported on-screen display, logging, rescue and navigation features; it does not replace the gyro.
+
+## 5. The parts and their jobs
 
 | Part | What it does |
 |---|---|
 | Frame | Holds components and fixes motor locations |
-| Props + brushless motors | Accelerate air to produce thrust |
+| Propellers + brushless motors | Accelerate air to produce thrust |
 | ESC | Controls electrical power to each motor |
 | Flight controller (FC) | Reads sensors and radio commands, then calculates motor corrections |
-| Radio receiver | Receives pilot commands (e.g. ExpressLRS) and passes them to the FC |
-| Camera + VTX/air unit | Transmits the live camera view |
+| Radio receiver | Receives pilot commands (for example, ExpressLRS) and passes them to the FC |
+| Camera + VTX / air unit | Transmits the live camera view |
 | VRX / goggles | Receives and displays the video |
 | LiPo battery + regulators | Supplies power at the required voltage |
 | Optional GPS/GNSS | Supplies position and ground-speed information to the FC |
 | Optional buzzer / Blackbox | Helps find the quad or analyse recorded flight data |
 
-## Next: identify every part
-
-Now continue to **[FPV Drone Parts — One by One](Drone-Parts-One-by-One.md)** for a visual lineup and detailed explanations of the frame, battery, motors, propellers, ESC, flight controller, receiver, camera, video transmitter/receiver, antennas and optional GPS/accessories.
-
-## 2. How the quad lifts
-
-![SpeedyBee flight controller example](https://store-fhxxhuiq8q.mybigcommerce.com/product_images/img_SpeedyBee_F405_V3_Stack/F405-V3-1.jpg)
-
-All four propellers accelerate air downwards. The reaction creates upward thrust. If the total vertical thrust is greater than the aircraft's weight, it climbs; if lower, it descends; if it balances weight, it can hover. Tilting the quad points some thrust sideways, which accelerates it forward or sideways.
-
-### Why two CW and two CCW propellers?
-
-Two motors rotate clockwise and two counter-clockwise so their reaction torques can balance. The FC creates roll by changing left-vs-right thrust, pitch by changing front-vs-rear thrust, and yaw by changing the torque balance between CW and CCW groups.
-
-**The motor corner numbers and exact CW/CCW layout are firmware/build-dependent.** Use the diagram in the installed firmware's Motors tab and verify with props removed; don't memorise a single illustration as universal.
-
-## 3. Throttle, roll, pitch and yaw
-
-![FPV quadcopter overview concept](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-build-concept-ai.jpg)
-
-*Illustrative concept art for component recognition only; it is not a wiring or motor-order reference. Use the flight-axis and firmware motor-map diagrams below for movement/configuration.*
-
-- **Throttle** changes the overall thrust request. Real flight-control corrections may add/subtract output from individual motors.
-- **Roll** tilts left/right.
-- **Pitch** tilts the nose forward/back.
-- **Yaw** rotates the nose left/right around the vertical axis.
-
-![Throttle, roll, pitch and yaw illustrated](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/flight-axes.svg)
-
-In Acro/Rate mode, the sticks request rotational rates. The aircraft does not auto-level when you centre the sticks. In Angle mode, self-level behaviour uses the FC's orientation estimate and accelerometer. Learn the difference in Liftoff before flying a real quad.
-
-## 4. The feedback/control loop
-
-![FPV control-loop diagram](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-control-loop.svg)
-
-1. Your radio sends stick commands over the control link.
-2. The receiver forwards channels to the FC.
-3. Firmware converts stick positions into desired rates/attitude.
-4. The gyro measures the quad's actual rotation.
-5. Controller logic (commonly PID) compares desired vs actual movement.
-6. The mixer calculates the four motor commands.
-7. ESCs change motor speed; the gyro measures the result and the loop repeats.
-
-This loop runs much faster than GPS navigation updates. The **gyro** is central to fast stabilisation; GPS is a slower source of position/speed information for supported OSD, logging and rescue/navigation features.
-
-## 5. What the letters mean
-
-- **FC** — flight controller, the onboard computer.
-- **ESC** — electronic speed controller; a 4-in-1 ESC drives all four motors from one board.
-- **AIO** — all-in-one FC/ESC board; some AIOs also include a receiver or VTX.
-- **RX (control)** — radio-control receiver.
-- **VTX** — video transmitter carried by the aircraft.
-- **VRX** — video receiver, usually in goggles or an external receiver.
-- **GPS/GNSS** — satellite positioning; does not replace the gyro.
+Continue to **[FPV Drone Parts — One by One](Drone-Parts-One-by-One.md)** for a visual lineup and detailed explanations of the frame, battery, motors, propellers, ESC, flight controller, receiver, camera, video transmitter/receiver, antennas and optional GPS/accessories.
 
 ## 6. Real boards: SpeedyBee stack vs BETAFPV AIO
 
@@ -87,20 +106,20 @@ This loop runs much faster than GPS navigation updates. The **gyro** is central 
 
 ## Start learning today
 
-- [ ] Point out the receiver, FC, ESC, motors, props, camera, VTX and battery on a real photo.
-- [ ] Explain why two props turn CW and two CCW.
-- [ ] Describe throttle, roll, pitch and yaw.
+- [ ] Point out the receiver, FC, ESC, motors, propellers, camera, VTX and battery on a real photo.
+- [ ] Explain how downward airflow produces upward thrust.
+- [ ] Demonstrate throttle, roll, pitch and yaw using the Mode 2 diagram.
 - [ ] Trace the loop from Pocket → receiver → FC → ESCs/motors → gyro feedback.
-- [ ] Practise those movements in Liftoff, then log one win and one next focus.
+- [ ] Practise those movements in Liftoff, then record one win and one next focus.
 
 ## Official references
 
+- [RadioMaster Pocket product page](https://radiomasterrc.com/products/pocket-radio-controller-m2)
 - [Betaflight overview](https://betaflight.com/docs/wiki/getting-started)
 - [Betaflight setup guide](https://betaflight.com/docs/wiki/getting-started/setup-guide)
 - [Betaflight motors tab](https://betaflight.com/docs/wiki/app/motors-tab)
 - [Betaflight control-loop deep dive](https://betaflight.com/docs/wiki/guides/current/Deep-Dive)
 - [SpeedyBee F405 V3](https://www.speedybee.com/speedybee-f405-v3-30x30-flight-controller/)
 - [BETAFPV F4 1S 12A AIO](https://betafpv.com/products/f4-1s-12a-flight-controller)
-
 
 For more real-world build photos, board examples and antenna/GPS product views, see [[Hardware Gallery]].
