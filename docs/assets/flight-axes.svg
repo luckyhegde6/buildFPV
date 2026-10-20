@@ -1,10 +1,84 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="390" viewBox="0 0 1200 390" role="img" aria-labelledby="title desc">
-<title id="title">Throttle, roll, pitch and yaw on a quadcopter</title><desc id="desc">Four panels show throttle as total thrust, roll as rotation around the nose-tail axis, pitch as nose up/down rotation, and yaw as nose left/right rotation.</desc>
-<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#2563eb"/></marker></defs>
-<rect width="1200" height="390" rx="22" fill="#f8fafc"/><text x="32" y="38" font-family="Arial,sans-serif" font-size="26" font-weight="bold" fill="#0f172a">Four primary controls</text>
-<g font-family="Arial,sans-serif" text-anchor="middle">
-<g transform="translate(24,64)"><rect width="276" height="292" rx="18" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/><text x="138" y="35" font-size="22" font-weight="bold" fill="#1e40af">THROTTLE</text><text x="138" y="61" font-size="15" fill="#1e3a8a">More / less total thrust</text><rect x="53" y="105" width="170" height="68" rx="12" fill="#93c5fd"/><text x="138" y="145" font-size="20" font-weight="bold" fill="#1e3a8a">QUAD</text><path d="M138 100 V78" stroke="#2563eb" stroke-width="4" marker-end="url(#a)"/><path d="M138 180 V202" stroke="#2563eb" stroke-width="4" marker-end="url(#a)"/><text x="138" y="236" font-size="15" fill="#1e3a8a">Increase overall thrust</text><text x="138" y="257" font-size="15" fill="#1e3a8a">to climb, if vertical thrust</text><text x="138" y="278" font-size="15" fill="#1e3a8a">exceeds weight.</text></g>
-<g transform="translate(322,64)"><rect width="276" height="292" rx="18" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/><text x="138" y="35" font-size="22" font-weight="bold" fill="#166534">ROLL</text><text x="138" y="61" font-size="15" fill="#166534">Tilt left / right</text><rect x="53" y="105" width="170" height="68" rx="12" fill="#86efac"/><path d="M58 123 L218 155" stroke="#166534" stroke-width="6"/><circle cx="138" cy="139" r="8" fill="#166534"/><path d="M70 96 Q138 55 206 96" fill="none" stroke="#16a34a" stroke-width="4" marker-end="url(#a)"/><text x="138" y="220" font-size="15" fill="#166534">Left-vs-right thrust</text><text x="138" y="242" font-size="15" fill="#166534">difference rotates the</text><text x="138" y="264" font-size="15" fill="#166534">aircraft about its nose-tail</text><text x="138" y="284" font-size="15" fill="#166534">axis.</text></g>
-<g transform="translate(620,64)"><rect width="276" height="292" rx="18" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/><text x="138" y="35" font-size="22" font-weight="bold" fill="#9a3412">PITCH</text><text x="138" y="61" font-size="15" fill="#9a3412">Nose forward / backward</text><rect x="53" y="105" width="170" height="68" rx="12" fill="#fdba74"/><path d="M70 153 L206 119" stroke="#9a3412" stroke-width="6"/><circle cx="138" cy="136" r="8" fill="#9a3412"/><path d="M73 92 Q138 55 203 92" fill="none" stroke="#ea580c" stroke-width="4" marker-end="url(#a)"/><text x="138" y="220" font-size="15" fill="#9a3412">Front-vs-rear thrust</text><text x="138" y="242" font-size="15" fill="#9a3412">difference rotates the</text><text x="138" y="264" font-size="15" fill="#9a3412">aircraft about its side-to-</text><text x="138" y="284" font-size="15" fill="#9a3412">side axis.</text></g>
-<g transform="translate(918,64)"><rect width="258" height="292" rx="18" fill="#f3e8ff" stroke="#9333ea" stroke-width="2"/><text x="129" y="35" font-size="22" font-weight="bold" fill="#6b21a8">YAW</text><text x="129" y="61" font-size="15" fill="#6b21a8">Rotate nose left / right</text><rect x="45" y="105" width="168" height="68" rx="12" fill="#d8b4fe"/><text x="129" y="145" font-size="20" font-weight="bold" fill="#6b21a8">TOP VIEW</text><path d="M63 97 C45 65 85 52 105 70" fill="none" stroke="#9333ea" stroke-width="4" marker-end="url(#a)"/><path d="M195 180 C214 214 175 226 154 207" fill="none" stroke="#9333ea" stroke-width="4" marker-end="url(#a)"/><text x="129" y="236" font-size="15" fill="#6b21a8">Changes the torque balance</text><text x="129" y="258" font-size="15" fill="#6b21a8">between CW and CCW</text><text x="129" y="280" font-size="15" fill="#6b21a8">motor groups.</text></g>
-</g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760" role="img" aria-labelledby="title desc">
+<title id="title">FPV drone thrust, pitch, roll and yaw directions</title>
+<desc id="desc">Four beginner diagrams show thrust and downwash, pitch nose-down acceleration forwards, roll tilt and sideways acceleration, and yaw rotating the nose direction.</desc>
+<defs>
+  <marker id="blueArrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#2563eb"/></marker>
+  <marker id="orangeArrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#ea580c"/></marker>
+  <marker id="greenArrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#16a34a"/></marker>
+  <marker id="purpleArrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#9333ea"/></marker>
+</defs>
+<rect width="1400" height="760" rx="24" fill="#f8fafc"/>
+<text x="38" y="48" font-family="Arial,sans-serif" font-size="30" font-weight="700" fill="#0f172a">How thrust and the flight controls change a quad's motion</text>
+<text x="38" y="78" font-family="Arial,sans-serif" font-size="17" fill="#475569">Blue arrows show movement or airflow; the yaw diagram shows heading rotation.</text>
+<!-- THRUST -->
+<g transform="translate(28,104)" font-family="Arial,sans-serif">
+  <rect width="660" height="292" rx="20" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="26" y="38" font-size="24" font-weight="700" fill="#1e40af">1. THROTTLE / THRUST</text>
+  <text x="26" y="64" font-size="16" fill="#1e3a8a">All four motors change their thrust together as a baseline.</text>
+  <!-- top-down-ish quad with 4 rotors -->
+  <line x1="170" y1="132" x2="290" y2="182" stroke="#334155" stroke-width="12" stroke-linecap="round"/>
+  <line x1="170" y1="182" x2="290" y2="132" stroke="#334155" stroke-width="12" stroke-linecap="round"/>
+  <rect x="210" y="140" width="42" height="36" rx="8" fill="#64748b" stroke="#0f172a" stroke-width="2"/>
+  <g fill="#93c5fd" stroke="#1d4ed8" stroke-width="3">
+    <circle cx="160" cy="126" r="24"/><circle cx="300" cy="126" r="24"/><circle cx="160" cy="188" r="24"/><circle cx="300" cy="188" r="24"/>
+  </g>
+  <g stroke="#2563eb" stroke-width="4" marker-end="url(#blueArrow)">
+    <path d="M135 153 V224"/><path d="M175 153 V224"/><path d="M275 153 V224"/><path d="M315 153 V224"/>
+  </g>
+  <text x="230" y="250" text-anchor="middle" font-size="15" font-weight="700" fill="#1e40af">AIR PUSHED DOWN</text>
+  <path d="M390 218 V106" stroke="#ea580c" stroke-width="6" marker-end="url(#orangeArrow)"/>
+  <text x="420" y="129" font-size="20" font-weight="700" fill="#9a3412">UPWARD</text>
+  <text x="420" y="153" font-size="20" font-weight="700" fill="#9a3412">THRUST</text>
+  <text x="385" y="184" font-size="15" fill="#7c2d12">Climb: upward thrust</text><text x="385" y="204" font-size="15" fill="#7c2d12">greater than weight</text>
+  <text x="385" y="236" font-size="15" fill="#7c2d12">Hover: balances weight</text><text x="385" y="256" font-size="15" fill="#7c2d12">Descend: less lift</text>
+</g>
+<!-- PITCH -->
+<g transform="translate(712,104)" font-family="Arial,sans-serif">
+  <rect width="660" height="292" rx="20" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/>
+  <text x="26" y="38" font-size="24" font-weight="700" fill="#9a3412">2. PITCH — NOSE UP / DOWN</text>
+  <text x="26" y="64" font-size="16" fill="#7c2d12">Side view • the nose is the front of the quad.</text>
+  <path d="M160 153 L292 193" stroke="#334155" stroke-width="14" stroke-linecap="round"/>
+  <path d="M160 153 L133 137 M160 153 L179 119 M292 193 L270 166 M292 193 L313 160" stroke="#64748b" stroke-width="9" stroke-linecap="round"/>
+  <ellipse cx="133" cy="137" rx="27" ry="9" fill="#fdba74" stroke="#9a3412" stroke-width="2" transform="rotate(-25 133 137)"/>
+  <ellipse cx="179" cy="119" rx="27" ry="9" fill="#fdba74" stroke="#9a3412" stroke-width="2" transform="rotate(-25 179 119)"/>
+  <ellipse cx="270" cy="166" rx="27" ry="9" fill="#fdba74" stroke="#9a3412" stroke-width="2" transform="rotate(-25 270 166)"/>
+  <ellipse cx="313" cy="160" rx="27" ry="9" fill="#fdba74" stroke="#9a3412" stroke-width="2" transform="rotate(-25 313 160)"/>
+  <path d="M310 198 H424" stroke="#2563eb" stroke-width="5" marker-end="url(#blueArrow)"/>
+  <text x="324" y="226" font-size="18" font-weight="700" fill="#1d4ed8">FORWARD</text>
+  <text x="26" y="248" font-size="16" fill="#7c2d12">Nose dips → thrust tilts forward</text>
+  <text x="26" y="270" font-size="16" fill="#7c2d12">and the quad accelerates forward.</text>
+  <text x="424" y="123" font-size="15" fill="#7c2d12">Pitch is rotation</text><text x="424" y="143" font-size="15" fill="#7c2d12">around the side-to-</text><text x="424" y="163" font-size="15" fill="#7c2d12">side axis.</text>
+</g>
+<!-- ROLL -->
+<g transform="translate(28,424)" font-family="Arial,sans-serif">
+  <rect width="660" height="292" rx="20" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="26" y="38" font-size="24" font-weight="700" fill="#166534">3. ROLL — TILT LEFT / RIGHT</text>
+  <text x="26" y="64" font-size="16" fill="#14532d">Front view • tilting right directs some thrust to the right.</text>
+  <line x1="150" y1="128" x2="320" y2="188" stroke="#166534" stroke-width="14" stroke-linecap="round"/>
+  <line x1="174" y1="137" x2="174" y2="121" stroke="#166534" stroke-width="8"/><line x1="298" y1="181" x2="298" y2="165" stroke="#166534" stroke-width="8"/>
+  <ellipse cx="151" cy="128" rx="29" ry="10" fill="#86efac" stroke="#166534" stroke-width="2" transform="rotate(20 151 128)"/>
+  <ellipse cx="320" cy="188" rx="29" ry="10" fill="#86efac" stroke="#166534" stroke-width="2" transform="rotate(20 320 188)"/>
+  <circle cx="235" cy="158" r="12" fill="#166534"/>
+  <path d="M342 172 H456" stroke="#2563eb" stroke-width="5" marker-end="url(#blueArrow)"/>
+  <text x="350" y="201" font-size="18" font-weight="700" fill="#1d4ed8">MOVE RIGHT</text>
+  <text x="26" y="244" font-size="16" fill="#14532d">Roll right → the quad tilts right</text>
+  <text x="26" y="266" font-size="16" fill="#14532d">and accelerates sideways.</text>
+  <text x="424" y="124" font-size="15" fill="#14532d">Roll is rotation</text><text x="424" y="144" font-size="15" fill="#14532d">around the nose-to-</text><text x="424" y="164" font-size="15" fill="#14532d">tail axis.</text>
+</g>
+<!-- YAW -->
+<g transform="translate(712,424)" font-family="Arial,sans-serif">
+  <rect width="660" height="292" rx="20" fill="#f3e8ff" stroke="#9333ea" stroke-width="2"/>
+  <text x="26" y="38" font-size="24" font-weight="700" fill="#6b21a8">4. YAW — TURN THE NOSE</text>
+  <text x="26" y="64" font-size="16" fill="#581c87">Top view • yaw changes the direction the quad is pointing.</text>
+  <line x1="155" y1="162" x2="309" y2="162" stroke="#64748b" stroke-width="10" stroke-linecap="round"/>
+  <line x1="232" y1="91" x2="232" y2="233" stroke="#64748b" stroke-width="10" stroke-linecap="round"/>
+  <g fill="#d8b4fe" stroke="#7e22ce" stroke-width="3"><circle cx="155" cy="162" r="22"/><circle cx="309" cy="162" r="22"/><circle cx="232" cy="91" r="22"/><circle cx="232" cy="233" r="22"/></g>
+  <path d="M232 162 V107" stroke="#6b21a8" stroke-width="5" marker-end="url(#purpleArrow)"/>
+  <path d="M168 106 A83 83 0 1 1 299 118" fill="none" stroke="#9333ea" stroke-width="5" marker-end="url(#purpleArrow)"/>
+  <text x="352" y="133" font-size="20" font-weight="700" fill="#6b21a8">HEADING</text>
+  <text x="352" y="158" font-size="16" fill="#581c87">rotates left or right</text>
+  <text x="26" y="266" font-size="16" fill="#581c87">Yaw is rotation around the vertical axis;</text>
+  <text x="352" y="204" font-size="16" fill="#581c87">it is not the same as</text>
+  <text x="352" y="225" font-size="16" fill="#581c87">tilting or translating.</text>
+</g>
+</svg>
