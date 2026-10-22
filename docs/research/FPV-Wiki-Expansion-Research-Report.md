@@ -455,3 +455,22 @@ Remaining evidence gaps:
 - Price, stock, firmware and regional radio rules should be date-checked at publication.
 - Source-committed images do not prove a product photo host will allow an automated download; confirm each image was localized into the Wiki `images/` directory at publication.
 - SVG layout has source review but still needs live-rendered desktop/mobile QA. A real GIF file has been committed, but it must also be checked after copying into the Wiki repository.
+
+
+---
+
+## Addendum: battery flight-time and cycle-life planning guide (22 October 2026)
+
+A dedicated `Battery-Flight-Time-and-Cycle-Life-Planning.md` page is now in source. It uses a nominal-energy calculation:
+
+`nominal Wh ≈ nominal pack voltage × capacity (Ah)`
+
+The worked example uses a hypothetical 4S 1500 mAh LiPo (14.8 V nominal, 22.2 Wh nominal), then explicitly assumes a pilot-chosen 75% energy budget and a measured/assumed 200 W average draw to show about five minutes. These assumptions are pedagogical only; they are not a universally safe reserve, manufacturer guarantee or recommended way to drain a battery. The page reinforces that measured average power, flight profile, weather, battery health, payload, sag and landing reserve are required for actual decisions.
+
+The page adds a pack log for chemistry/cell count, use count, aircraft/payload, conditions, charging notes, inspections and retire/monitor decisions. It deliberately avoids a universal cycle-life number. Calendar ageing, temperature, discharge depth, current, storage, balancing and physical damage all affect service life; a pack must be inspected and can become unsafe before any nominal cycle count.
+
+Navigation now includes this page in the sidebar and Home, and it is cross-linked from both motor/prop matching and charger safety.
+
+### Current implementation status
+
+At this pass, source Markdown and SVG/GIF assets exist for the category selector, frame geometries and assembly, battery/motor/prop/charger, camera/video ecosystems, goggles/VRX, troubleshooting and buying-format tutorials. The dedicated model-level comparison still needs a final exact-SKU row-by-row pass for current prices, firmware/goggles generations, camera cable and recordings. Live Wiki publication and rendered-image verification remain open because this session couldn't clone the separate Wiki remote.
