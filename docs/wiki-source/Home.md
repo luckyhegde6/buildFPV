@@ -29,6 +29,22 @@ Compare [analog vs digital FPV cameras and video](https://github.com/luckyhegde6
 
 This short conceptual animation shows propeller rotation and thrust direction. It is a learning visual, not a motor numbering, propeller installation or wiring diagram.
 
+**New drone / frame / assembly guides**
+- [Drone Categories and Size Guide](https://github.com/luckyhegde6/buildFPV/wiki/Drone-Categories-and-Size-Guide)
+- [Frame Geometries: Balanced X vs Deadcat](https://github.com/luckyhegde6/buildFPV/wiki/Frame-Geometries-Balanced-X-vs-Deadcat)
+- [Balanced X assembly](https://github.com/luckyhegde6/buildFPV/wiki/Balanced-X-Frame-Assembly) · [Deadcat assembly](https://github.com/luckyhegde6/buildFPV/wiki/Deadcat-Frame-Assembly)
+- [2.5-inch micro](https://github.com/luckyhegde6/buildFPV/wiki/2-5-Inch-Frame-Guide) · [3.5-inch cinewhoop](https://github.com/luckyhegde6/buildFPV/wiki/3-5-Inch-Cinewhoop-Frame-Assembly) · [5-inch frame](https://github.com/luckyhegde6/buildFPV/wiki/5-Inch-Frame-Assembly) · [7-inch frame](https://github.com/luckyhegde6/buildFPV/wiki/7-Inch-Long-Range-Frame-Assembly)
+- [Assembly tools and workshop](https://github.com/luckyhegde6/buildFPV/wiki/FPV-Assembly-Tools-and-Workshop-Guide)
+- [Motor, prop and battery compatibility](https://github.com/luckyhegde6/buildFPV/wiki/Motors-Propellers-and-Battery-Compatibility) · [Chargers and battery safety](https://github.com/luckyhegde6/buildFPV/wiki/FPV-Chargers-LiPo-and-Li-ion-Battery-Safety)
+
+**Video / goggles integration**
+- [Analog video + camera guide](https://github.com/luckyhegde6/buildFPV/wiki/Analog-vs-Digital-FPV-Camera-Video-Guide) · [Analog goggles/VRX tutorial](https://github.com/luckyhegde6/buildFPV/wiki/Analog-Goggles-and-VRX-Integration)
+- [DJI O3/O4 integration](https://github.com/luckyhegde6/buildFPV/wiki/DJI-O3-O4-Goggles-and-Air-Unit-Integration) · [Walksnail Avatar](https://github.com/luckyhegde6/buildFPV/wiki/Walksnail-Avatar-Goggles-and-Air-Unit-Integration) · [HDZero](https://github.com/luckyhegde6/buildFPV/wiki/HDZero-Goggles-and-VTX-Integration)
+
+**Troubleshooting**
+- [FPV Troubleshooting Quick Guide](https://github.com/luckyhegde6/buildFPV/wiki/FPV-Troubleshooting-Quick-Guide)
+- [BNF/PNP/RTF/ARF/DIY glossary](https://github.com/luckyhegde6/buildFPV/wiki/BNF-PNP-RTF-ARF-and-DIY-Formats)
+
 ## 🖼️ Visual learning path
 
 ### 1. See the whole aircraft
