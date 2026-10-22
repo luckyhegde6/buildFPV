@@ -4,7 +4,7 @@
 
 - Radio: RadioMaster Pocket ELRS
 - Simulator: Liftoff installed
-- Learning guide: Joshua Bardwell's beginner-to-FPV playlist
+- Learning guide: Learn to fly an FPV drone (for total beginners) playlist
 - Repo: `luckyhegde6/buildFPV`
 
 You have enough to begin practising. You do **not** need to buy goggles, a quad, or new firmware today.
