@@ -2,6 +2,10 @@
 
 ![2.5-inch frame size example alongside other prop classes](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/frame-size-reference.svg)
 
+![Product photo of Sub250 OasisFly25 2.5-inch carbon frame](https://www.unmannedtechshop.co.uk/cdn/shop/files/Sub250-Oasisfly25-Frame-2.webp?v=1753832978&width=1946)
+
+*Real frame photo: Sub250 OasisFly25. The listed manufacturer model specifies 135 mm wheelbase and HQ 2.5×2.5×3 props; confirm the exact frame/SKU before assembly. Image: Unmanned Tech product listing. [Manufacturer specifications](https://sub250.com/en-nl/collections/oasisfly-series/products/sub250-oasisfly25-hd-o3).*
+
 A 2.5-inch frame is usually designed around a nominal propeller diameter of 2.5 inches (63.5 mm). The frame wheelbase is a different dimension and varies by model. Many small open-prop builds are called micro or toothpick; they are not automatically tinywhoops, which typically use guarded/ducted propellers.
 
 ## 1. Why choose this class?
