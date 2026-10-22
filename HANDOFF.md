@@ -77,6 +77,9 @@ Before retrying, the repository owner must add `WIKI_PUBLISH_TOKEN` or `GH_PERSO
 
 **Latest remote run update (22 October 2026):** Run [39797230235](https://github.com/luckyhegde6/buildFPV/actions/runs/39797230235) uses commit `ab2592162031430ecb510238af93c3957b40e1f1`. Link-rewrite regression passed. Publisher job failed due to the missing Wiki-write secret. Playwright/Chromium installation succeeded, and the headless report plus six viewport screenshots were uploaded as [artifact 12434310973](https://github.com/luckyhegde6/buildFPV/actions/runs/39797230235/artifacts/12434310973). Report result: `passed: false`; the two guide URLs redirected to Home, missing required content and tables, and a live Wiki-local JPEG returned `naturalWidth: 0`. Source asset exists in `docs/assets/`. The Wiki has not been published by this workflow.
 
+
+**Post-run changes (not yet re-tested):** after run `39797230235`, `scripts/verify-wiki-live.mjs` gained an explicit final-route assertion (commits `740db33c80abc257ca28a7d64ccef09ed56065a6` and `79572b9a7a3f7174453ea854e339406fa60a4a27`), and `.github/workflows/wiki-publish-verify.yml` had shell-summary quoting/newline fixes (commits `60f521b52f97e175ae6811886c6dbd5f42a71606`, `84f5e794081d5b573715d211b52c26b708776207`, `032fecd0fe52f4a90d76c215620722d73dc4d9e3`). The latest marker update is commit `8e3833255f9485e608d68e75f79333c43a57e3f4`, but the Actions API still shows only three runs and no new run for that marker. Thus those later changes are not yet tested. The next reliable action is to add the Wiki-write secret and manually run the workflow from the Actions UI so current `main` is tested.
+
 ## Research and safety caveats
 
 - Confirm each model/SKU/revision and official manual. Product weights, camera modes, voltage, power, goggles compatibility and firmware are not universal across generations.
