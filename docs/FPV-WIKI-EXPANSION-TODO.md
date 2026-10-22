@@ -53,8 +53,8 @@ Initial manufacturer research was checked on **2026-10-22**. This is a working s
 - [x] Create `docs/wiki-source/Tinywhoop-and-Micro-FPV-Guide.md`.
 - [x] Create `docs/wiki-source/2-5-Inch-Frame-Guide.md` (frame fit, compatibility, assembly; separate wider flight/purchase guide remains a follow-up).
 - [x] Create `docs/wiki-source/3-5-Inch-Cinewhoop-Frame-Assembly.md`; fuller class-specific buying/flight guide remains a follow-up.
-- [ ] Create `docs/wiki-source/5-Inch-FPV-Racing-and-Freestyle.md`.
-- [ ] Create `docs/wiki-source/7-Inch-Long-Range-FPV-Guide.md`.
+- [x] Create `docs/wiki-source/5-Inch-FPV-Racing-and-Freestyle.md`.
+- [x] Create `docs/wiki-source/7-Inch-Long-Range-FPV-Guide.md`.
 - [ ] Decide from source research whether to add separate `3-Inch-Toothpick-and-Freestyle.md`, `4-Inch-Long-Range-FPV-Guide.md`, and `Cine-Lifter-and-Heavy-Lift-FPV.md`; create only if enough distinct guidance exists to avoid shallow duplicate pages.
 - [x] Create `docs/wiki-source/BNF-PNP-RTF-ARF-and-DIY-Formats.md` to explain package/build-completion formats independently from aircraft classes.
 - [ ] Cross-link every class page with `First Build Checklist`, `Drone-Parts-One-by-One`, `FPV System Basics`, `How FPV Drones Work`, `Video Systems and Goggles`, and the new video comparison page.
@@ -197,15 +197,15 @@ Apply the same reusable structure to each class page: hero/overview infographic,
 All custom visual assets should be editable/reproducible SVG where practical, readable on the Wiki at normal zoom, use consistent buildFPV colors/type, include descriptive alt text and captions, and state when they are schematic. Do not use an image as a substitute for a safe wiring diagram or current board pinout.
 
 - [x] Create `docs/assets/drone-class-overview.svg`: size/class comparison from tinywhoop to 7-inch; label prop diameter and wheelbase as separate values/fields.
-- [ ] Create `docs/assets/whoop-vs-toothpick-vs-cinewhoop.svg`: open props vs protective ducts/guards vs open-prop micro, showing typical frame form without implying a universal layout.
-- [ ] Create `docs/assets/frame-prop-size-comparison.svg`: relative-size silhouette for 2.5, 3.5, 5 and 7-inch propellers; clear scale disclaimer if icons are schematic.
+- [x] Create `docs/assets/whoop-vs-toothpick-vs-cinewhoop.svg`: open props vs protective ducts/guards vs open-prop micro, showing typical frame form without implying a universal layout.
+- [x] Create `docs/assets/frame-prop-size-comparison.svg`: relative-size silhouette for 2.5, 3.5, 5 and 7-inch propellers; clear scale disclaimer if icons are schematic.
 - [ ] Create `docs/assets/drone-class-decision-tree.svg`: choose by indoor, outdoor, filming, racing, long range, budget and experience.
 - [ ] Create `docs/assets/bnf-pnp-rtf-arf-comparison.svg`: included/excluded package gear (radio, goggles, batteries, receiver, charger); footnote manufacturer package variation.
-- [ ] Create a small reusable frame anatomy diagram (arm, centre plate, motor mount, FC/ESC mounts, camera cage, battery strap areas).
-- [ ] Create one dedicated hero/overview infographic for each class page: Tinywhoop, 2.5-inch, 3.5-inch Cinewhoop, 5-inch Racing/Freestyle and 7-inch Long Range.
+- [x] Create a small reusable frame anatomy diagram (arm, centre plate, motor mount, FC/ESC mounts, camera cage, battery strap areas).
+- [x] Create one dedicated hero/overview infographic for each class page: Tinywhoop, 2.5-inch, 3.5-inch Cinewhoop, 5-inch Racing/Freestyle and 7-inch Long Range.
 - [ ] Create a 2.5/3.5 cinewhoop comparison diagram that highlights guard/duct volume, camera mounting and action camera payload impact.
 - [ ] Create `docs/assets/video-system-ecosystem-matrix.svg`: Analog, DJI O3/O4, Walksnail Avatar, HDZero and any supported micro-digital option; match air-side and goggles-side by ecosystem/generation.
-- [ ] Create `docs/assets/fpv-video-link-separation.svg`: independent control vs video vs power paths.
+- [x] Create `docs/assets/fpv-video-link-separation.svg`: independent control vs video vs power paths.
 - [ ] Create `docs/assets/fpv-camera-sensor-and-recording.svg`: camera → live feed vs onboard recording, distinguishing analog/HD feed and recorded footage.
 - [ ] Create `docs/assets/vtx-vrx-compatibility-check.svg`: checklist for generation, goggles/VRX, antenna/polarization, band, connector, power, firmware.
 - [ ] Create frame-fit drawings for 20×20/25.5×25.5/30.5×30.5 mm mounting patterns only if measurements are verified from the relevant official spec; label the units.
@@ -232,7 +232,7 @@ All custom visual assets should be editable/reproducible SVG where practical, re
 
 ## 8. Build guides and checklists
 
-- [ ] Expand `First-Build-Checklist.md` with links to the class selector and buying-format glossary.
+- [x] Expand `First-Build-Checklist.md` with links to the class selector and buying-format glossary.
 - [ ] Make separate safe build flows for a BNF whoop setup and a DIY 3.5/5-inch build so soldering-heavy steps are not presented as required for every beginner.
 - [ ] Write a build sequence: inspect contents/revision → identify manuals → frame/mechanical fit → component placement → soldering/continuity checks → power safely without propellers → firmware/target → receiver setup → VTX/camera/goggles setup → motor mapping/direction with props off → failsafe/arming verification → propeller installation → controlled first hover at a suitable permitted site.
 - [ ] Cross-reference Betaflight setup and motor tab; do not invent motor order and always tell readers to remove props when testing motor configuration.
@@ -245,7 +245,7 @@ All custom visual assets should be editable/reproducible SVG where practical, re
 
 ## 9. Troubleshooting guides
 
-- [ ] Create `FPV-Troubleshooting-Quick-Guide.md` with symptom → likely causes → safe checks → next diagnostic step, divided by no power, no arming, no bind, receiver not moving in configurator, wrong motor response, unstable flight, black video, weak/breaking video, hot VTX, GPS/no-satellite, DVR/recording issues and firmware mismatch.
+- [x] Create `FPV-Troubleshooting-Quick-Guide.md` with symptom → likely causes → safe checks → next diagnostic step, divided by no power, no arming, no bind, receiver not moving in configurator, wrong motor response, unstable flight, black video, weak/breaking video, hot VTX, GPS/no-satellite, DVR/recording issues and firmware mismatch.
 - [ ] Create a dedicated video troubleshooting section covering: wrong goggles generation/ecosystem, wrong band/channel, poor antenna, damaged coax/connector, wrong polarization, bad camera cable, VTX not powered/overheating, air-unit firmware/bind mismatch, and region settings.
 - [ ] Create a control-link troubleshooting section: transmitter internal/external module selected correctly, receiver firmware/protocol, binding phrase or bind procedure, antenna/cable condition, telemetry/RSSI and failsafe.
 - [ ] Create a no-arming/motor troubleshooting section: arming disable flags, receiver channel map, motor protocol, firmware target, wiring and battery/power checks—always props removed for bench diagnosis.
@@ -403,3 +403,52 @@ This status was updated after the first source implementation batch. A checkbox 
 - [ ] Verify image download/localisation works for external product photos and the GIF is rendered on the live Wiki.
 - [ ] Inspect SVG/photograph rendering on desktop and mobile.
 - [ ] Add additional short GIFs and remaining class-specific overview infographics.
+
+
+---
+
+## 14. Implementation status update — 22 October 2026 (second pass)
+
+The following are now implemented in the main repository and verified by refetching their source files. This is not proof of separate Wiki publication.
+
+### Additional dedicated pages created
+
+- [x] `docs/wiki-source/Analog-Goggles-and-VRX-Integration.md` — analog goggles, receiver modules and analog link setup.
+- [x] `docs/wiki-source/DJI-O3-O4-Goggles-and-Air-Unit-Integration.md` — DJI FPV air-unit and supported goggles generation checks.
+- [x] `docs/wiki-source/Walksnail-Avatar-Goggles-and-Air-Unit-Integration.md` — Avatar air-unit/camera/goggles integration.
+- [x] `docs/wiki-source/HDZero-Goggles-and-VTX-Integration.md` — HDZero product-family integration and mounting/power checks.
+- [x] `docs/wiki-source/FPV-Assembly-Tools-and-Workshop-Guide.md` — mechanical tools, soldering tools, safe first power, assembly and firmware hand-off.
+- [x] `docs/research/FPV-Wiki-Expansion-Research-Report.md` — dated report of verified facts, sourced examples, cautions and follow-on work.
+- [x] `scripts/test-wiki-link-rewrite.sh` — regression test for relative links ending in `.md`, anchors, and external URLs.
+
+### Actual visual assets / model-specific frame images
+
+- [x] Add `docs/assets/propeller-thrust-loop.gif` — small looping concept animation; embedded in Home and propulsion guide.
+- [x] Add manufacturer/product frame photos near the top of the frame-specific pages: Axisflying MANTA 5 True-X example; GEPRC MK5D Deadcat example; Sub250 OasisFly25 2.5-inch example; BETAFPV Pavo35 3.5-inch example; iFlight AOS 7 V5 7-inch example; BETAFPV Air75 tinywhoop example.
+- [x] Use product-source references to label dimensions separately: prop diameter vs wheelbase vs frame outside dimensions.
+- [x] Correct the balanced-X photo example: GEPRC MK5X is squashed-X; the symmetrical/True-X product example is Axisflying MANTA 5 True-X, while GEPRC MK5D is the Deadcat comparison.
+- [x] Add a model-specific dimension reference in `docs/assets/frame-size-reference.svg`: Sub250 OasisFly25 135 mm wheelbase; BETAFPV Pavo35 148 mm wheelbase / 92 mm duct diameter / D90S 90 mm prop; Axisflying MANTA 5 True-X 238 mm; GEPRC MK5D Deadcat 230 mm; iFlight AOS 7 V5 313 mm. These are model examples, not universal standards, and schematics are not to scale.
+- [x] Register new SVG/GIFs and product image provenance in `docs/assets/README.md`.
+
+### Navigation, source links and publisher
+
+- [x] Add drone classes, frame assembly, battery/charger, camera/video and goggles tutorials to `docs/wiki-source/_Sidebar.md`.
+- [x] Cross-link the First Build Checklist, parts guide, video overview and system basics to the new pages.
+- [x] Update the Wiki Home source to use Wiki page slugs / direct Wiki URLs rather than Markdown source filenames ending in `.md`.
+- [x] Fix the internal link rewrite in `scripts/publish-wiki.sh` so links such as `(How-FPV-Drones-Work.md#pitch)` become `(How-FPV-Drones-Work#pitch)`, while external URLs remain unchanged.
+- [x] Add and locally test `scripts/test-wiki-link-rewrite.sh` using Bash on a sample link set; result: `Wiki link rewrite test passed.`
+
+### Remaining work / publication blocker
+
+- [ ] Create remaining detailed per-class buying comparisons with multiple exact current model SKUs, full takeoff weights and model-specific prop/motor/battery test tables.
+- [ ] Create the separate `FPV-Cameras-VTX-VRX-Compatibility-Comparison.md` matrix with model-by-model camera/air-unit/VTX/VRX specs, recording modes and firmware matrices (the broader analog-vs-digital guide exists, but the full model matrix remains open).
+- [ ] Add further product-verified small-micro / 2.5-inch / 3.5-inch / 5-inch / 7-inch model examples and compare actual full-kit weights and payload limits.
+- [ ] Finish camera choice guides split by tinywhoop, racing, freestyle, cinewhoop and long-range; include confirmed live-view vs onboard recording specs per model.
+- [ ] Add charger model-by-model matrix from exact charger manuals, including per-channel watt allocation and supported chemistry/cell count.
+- [ ] Add a detailed BOM/budget guide using prices checked on date and in a stated region, clearly separating price snapshots from stable technical facts.
+- [ ] Inspect/validate every external image URL and rendered SVG/GIF on desktop/mobile after the assets are downloaded to the Wiki repository.
+- [ ] Run `bash scripts/test-wiki-link-rewrite.sh` in the local checkout after pulling `main`.
+- [ ] Run `bash scripts/publish-wiki.sh` locally, inspect `git diff --cached`, type `PUBLISH`, and verify the commit/push to the separate Wiki repository.
+- [ ] Verify the live Home page, page slugs, sidebar, all internal links and all images after the Wiki push.
+
+**Publication is still pending:** the current session's GitHub Wiki API lookup returned 404 for `luckyhegde6/buildFPV.wiki`, and the local shell cannot resolve `github.com`. The source changes are committed to `buildFPV/main`; the user must run the publisher from a network-enabled local checkout to update the separate live Wiki.
