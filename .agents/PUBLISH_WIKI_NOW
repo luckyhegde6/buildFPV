@@ -20,3 +20,5 @@ Retry 4: repository owner reports WIKI_PUBLISH_TOKEN configured on 2026-10-23. T
 Retry 5: the previous publish step remained active without advancing. Run the updated publisher with bounded image fetches and fail-fast Git prompting; verify the published Wiki and Playwright evidence before recording the outcome.
 
 Retry 6: the original publish attempt remained active and retry 5 was queued behind it. Start an isolated recovery run using the bounded image-download and fail-fast Git safeguards; never force-push the Wiki branch.
+
+Retry 7: bounded retries still left the publisher in image-download work. Since downloaded copies are optional and original image URLs are retained on failure, use a single connection attempt capped at 12 seconds; verify the actual Wiki push and Playwright report.
