@@ -3,7 +3,7 @@
 **Updated:** 2026-10-22  
 **Repository:** https://github.com/luckyhegde6/buildFPV  
 **Branch:** `main`  
-**Last session-log state checked before this handoff update:** `934aee7d0f9739d37383792d3fe801f373dbc897`  
+**Last session-log state checked before this handoff update:** `39d63c41353608dea92c6c76c3171b29e2fd279f`  
 **Live Wiki (existing, user-confirmed):** https://github.com/luckyhegde6/buildFPV/wiki  
 **Wiki source pages:** `docs/wiki-source/`  
 **Assets:** `docs/assets/`  
@@ -18,7 +18,8 @@ The connected GitHub MCP has read/write access to the source repository. Source 
 - Charger model comparison: `docs/wiki-source/FPV-Chargers-LiPo-and-Li-ion-Battery-Safety.md` — ISDT UC2, ISDT 608AC, ToolkitRC M7AC, ToolkitRC M6DAC. [Commit](https://github.com/luckyhegde6/buildFPV/commit/801dcb22270d676e1e1682068d5a89daf88bc148)
 - Exact-model FPV video matrix: `docs/wiki-source/FPV-Cameras-VTX-VRX-Compatibility-Comparison.md` — BETAFPV Air75, DJI O4 standard/Pro, Walksnail Avatar HD Pro, HDZero Whoop V2/Freestyle V2. [Matrix commit](https://github.com/luckyhegde6/buildFPV/commit/57cb27fe6e20fa5eaca3cba7682b9723645a73cf) · [TODO progress](https://github.com/luckyhegde6/buildFPV/commit/43703fb9c5b1afa1dcabd22dd729896d676fa113)
 - Source-level matrix check re-fetched the page through GitHub MCP and found eight table lines, each with five columns, and all six model rows. It does not establish visual rendering or product validity beyond the cited sources.
-- Master TODO now records implementation and publish blockers. [Latest TODO tranche commit](https://github.com/luckyhegde6/buildFPV/commit/84f493197a7e591594b6efa5be3daef747448e48)
+- Master TODO now records implementation and publish blockers, including the remote Playwright workflow. [Latest TODO update](https://github.com/luckyhegde6/buildFPV/commit/7831a3da4bd8ded33e64312c2ef96478a7c5b19e)
+- Remote publish/test infrastructure: [Playwright verifier](https://github.com/luckyhegde6/buildFPV/commit/adf153b4bb3dd60e65007fd283913bcacf46c941) · [GitHub Actions workflow](https://github.com/luckyhegde6/buildFPV/commit/e177a66f90115804928e98cf364e7a5bec4d3bc3) · [marker commit](https://github.com/luckyhegde6/buildFPV/commit/0e8cf8169b26c627f0c00019493cf3ab6d2eaaf1) · [README workflow link](https://github.com/luckyhegde6/buildFPV/commit/d1d302e03af6b3905fe13b3f61b213916f5a8d8a)
 
 ### Agent operating files added
 
@@ -33,6 +34,8 @@ The connected GitHub MCP has read/write access to the source repository. Source 
 - `.agents/templates/research-brief.md` and `.agents/templates/session-entry.md` — reusable handoff/log templates.
 
 - Contributor discoverability was added to the repository README. [Commit](https://github.com/luckyhegde6/buildFPV/commit/549392b19f67fe9aab1e321652df7767d85bd32b)
+
+- The current repository README links the remote [Publish and verify existing Wiki workflow](https://github.com/luckyhegde6/buildFPV/actions/workflows/wiki-publish-verify.yml) for manual dispatch if the trigger commit does not start Actions.
 
 Key commits: [AGENTS.md](https://github.com/luckyhegde6/buildFPV/commit/7047eb25b8fd561a47fbf08222d93ec5a0083298), [research workflow](https://github.com/luckyhegde6/buildFPV/commit/a64aea5015adf8d884450ba5a18452351245ec33), [session log update](https://github.com/luckyhegde6/buildFPV/commit/044efb25845377b62d606c733c382e78a9b5d7ed), [durable memory update](https://github.com/luckyhegde6/buildFPV/commit/e81e72d44dd58e4982675aa1a8b1ad5f0f2f3bcc).
 
