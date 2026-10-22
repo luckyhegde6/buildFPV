@@ -400,3 +400,23 @@ The separate `buildFPV.wiki.git` repository has not been pushed/verified from th
 3. Current chargers and manuals: chemistry/cell count, balance behavior, input requirements, channel watt allocation and output current.
 4. Further product-verified frame classes and manufacturer dimensioned diagrams. Current schematic class ranges should not be treated as CAD.
 5. India-specific buying/BOM snapshots with currency, date, taxes/shipping and full system cost, without treating availability as stable.
+
+
+## 9. Buying and camera-selection guides added (22 October 2026)
+
+The implementation added two more source pages:
+
+- `docs/wiki-source/FPV-Build-Budget-and-Buying-Guide.md` — estimates the whole ownership path instead of only the aircraft: control radio, goggles/VRX, battery/charger, tools, spares, repairs and likely shipping/warranty variables. It distinguishes class selection from BNF/PNP/RTF/DIY package formats and uses a pre-purchase compatibility gate.
+- `docs/wiki-source/FPV-Camera-Selection-Guide.md` — separates live piloting view, goggles DVR, onboard digital recording and separate action-camera footage; provides different selection priorities for tinywhoop, micro, racing, freestyle, cinewhoop and long-range.
+
+Both are linked from Home and the sidebar. The new camera page uses source-supported representative examples, including BETAFPV Air75, DJI standard O4/O4 Pro, Walksnail Avatar product/support pages and the HDZero VTX summary. A complete SKU-by-SKU sensor/low-light/latency/weight/recording comparison is still outstanding; the TODO deliberately leaves this unchecked until exact model revisions and comparable test conditions are verified.
+
+Source pages to revisit during that matrix pass:
+- [BETAFPV Air75](https://betafpv.com/products/air75-brushless-whoop-quadcopter)
+- [DJI O4 specifications](https://www.dji.com/o4-air-unit/specs)
+- [DJI O4 FAQ / compatibility](https://www.dji.com/o4-air-unit/faq)
+- [Walksnail Avatar compatibility](https://wiki.caddxfpv.com/en/Avatar-HD-Series/How-to-buy)
+- [Walksnail Goggles X documentation](https://wiki.caddxfpv.com/en/Avatar-HD-Series/Receiver-Unit/Goggles-X)
+- [HDZero VTX summary](https://docs.hd-zero.com/vtx-summary)
+
+The implementation intentionally avoids fixed universal prices, max-flight-time guarantees, universal battery-cycle life promises, and blanket latency rankings. Those values are setup- and test-dependent or volatile and should only be entered with the named model, revision, conditions, region and check date.
