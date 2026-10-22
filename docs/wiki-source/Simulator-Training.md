@@ -2,6 +2,10 @@
 
 Aim for smooth, repeatable control rather than speed. Practise for 30–45 minutes at a time; stop when fatigue makes inputs sloppy.
 
+> [!IMPORTANT]
+> **Mandatory beginner video course before your first real flight:** complete the [Learn to fly an FPV drone (for total beginners) playlist](https://www.youtube.com/playlist?list=PLwoDb7WF6c8lCKhQOTy-Vb9LfW0VAIrTP) in sequence while practising in Liftoff. This is a buildFPV learning requirement, **not an official licence or certification**; continue to check safety requirements and current local rules.
+
+
 ## Session pattern
 
 - 5 min: warm-up, gentle inputs, check controller behavior.
