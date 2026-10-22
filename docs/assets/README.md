@@ -26,6 +26,11 @@ These image and diagram files are versioned as part of `luckyhegde6/buildFPV`. T
 | `balanced-x-vs-deadcat.svg` | [Frame Geometries — Balanced X vs Deadcat](../wiki-source/Frame-Geometries-Balanced-X-vs-Deadcat.md) | Conceptual frame top view and camera FOV; frame shapes vary |
 | `frame-size-reference.svg` | Class guides and frame assembly pages | Model-specific dimensions; silhouettes are not to scale or drill templates |
 | `motor-prop-battery-compatibility.svg` | [Motors, Propellers and Battery Compatibility](../wiki-source/Motors-Propellers-and-Battery-Compatibility.md) | BLDC, prop and conventional LiPo voltage examples; no universal KV table |
+| `drone-class-decision-tree.svg` | [Drone Categories and Size Guide](../wiki-source/Drone-Categories-and-Size-Guide.md) | Mission-based class selector with strengths and compromises |
+| `bnf-pnp-rtf-arf-comparison.svg` | [BNF/PNP/RTF/ARF/DIY formats](../wiki-source/BNF-PNP-RTF-ARF-and-DIY-Formats.md) | Package inclusion tendencies; always check exact SKU contents |
+| `fpv-camera-sensor-and-recording.svg` | [Analog vs Digital FPV](../wiki-source/Analog-vs-Digital-FPV-Camera-Video-Guide.md) | Separate live feed, onboard recording and goggles DVR paths |
+| `video-system-ecosystem-matrix.svg` | [FPV Cameras/VTX/VRX comparison](../wiki-source/FPV-Cameras-VTX-VRX-Compatibility-Comparison.md) | Analog and digital ecosystem families; not a cross-brand compatibility promise |
+| `vtx-vrx-compatibility-check.svg` | [FPV Cameras/VTX/VRX comparison](../wiki-source/FPV-Cameras-VTX-VRX-Compatibility-Comparison.md) | Pre-buy checklist for power, connector, firmware, generation, antenna and mounting |
 | `lipo-vs-li-ion.svg` | [FPV Chargers, LiPo and Li-ion Safety](../wiki-source/FPV-Chargers-LiPo-and-Li-ion-Battery-Safety.md) | LiPo vs Li-ion use-case trade-offs and voltage caveat; no universal cycle-life/flight-time promise |
 | `charger-balance-power.svg` | [Charger and Battery Safety](../wiki-source/FPV-Chargers-LiPo-and-Li-ion-Battery-Safety.md) | Main and balance leads; illustration only, not a pinout |
 | `analog-vs-digital-video.svg` | [Analog vs Digital FPV](../wiki-source/Analog-vs-Digital-FPV-Camera-Video-Guide.md) | Camera/VTX/VRX signal paths; cross-brand HD compatibility is not implied |
