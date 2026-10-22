@@ -116,3 +116,10 @@ Before retrying, the repository owner must add `WIKI_PUBLISH_TOKEN` or `GH_PERSO
 - The first live Playwright check returned HTTP 200 for Home, charger guide and video compatibility matrix; the charger and matrix text/table checks passed. It failed on one Wiki-local Home image: `images/fpv-build-concept-ai.jpg`.
 - The publisher now force-stages publisher-managed files under `images/`. [Run #15](https://github.com/luckyhegde6/buildFPV/actions/runs/39845914339) successfully republished after that fix. Its Playwright step is still stuck at Playwright/Chromium installation, so this retry does not yet prove the image fix.
 - [Run #16](https://github.com/luckyhegde6/buildFPV/actions/runs/39846078398) is queued with expanded checks for the mandatory beginner course and Drone Coding and Machine Learning page. Do not claim a clean end-to-end verification until a browser report passes.
+
+## FPV infographic publish — 2026-10-23
+
+- User supplied four FPV visual guides for the Wiki. The source pages now reference basics + beginner guide at the top of `FPV-System-Basics.md`, and movement + control-loop guides at the top of `How-FPV-Drones-Work.md`.
+- The control-loop infographic is committed as a real `docs/assets/fpv-drone-control-loop-guide.webp` binary; Run #18 ([Actions](https://github.com/luckyhegde6/buildFPV/actions/runs/39863362323)) successfully pushed the updated pages/assets to the existing `buildFPV.wiki.git` remote.
+- Replaced the stale `fpv-build-concept-ai.jpg` reference on Home with the basics infographic and the stale video-path image on System Basics with `fpv-video-link-separation.svg`. Added the tested `The control path` explanatory text to How FPV Drones Work.
+- The live Playwright job for Run #18 is still stuck in its Playwright/Chromium install step and has not reached page/image assertions. Run #19 ([Actions](https://github.com/luckyhegde6/buildFPV/actions/runs/39863710538)) is queued with explicit required-image checks for the two System Basics visuals and both How FPV Drones Work visuals. Do not mark live-browser verification green until the report completes.
