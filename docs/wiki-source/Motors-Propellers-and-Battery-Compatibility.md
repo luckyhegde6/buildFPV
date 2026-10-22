@@ -98,3 +98,6 @@ Stop using a pack that is swollen, punctured, crushed, unusually hot, leaking, s
 - [Betaflight setup guide](https://betaflight.com/docs/wiki/getting-started/setup-guide)
 
 *Reviewed 22 October 2026. This page is educational, not a universal motor/propeller/BOM recommendation. Prioritise the exact battery, motor, propeller, ESC and aircraft manuals.*
+
+
+For a worked energy-to-duration estimate and a pack-ageing log, continue to [Battery Flight-Time and Cycle-Life Planning](Battery-Flight-Time-and-Cycle-Life-Planning.md).
