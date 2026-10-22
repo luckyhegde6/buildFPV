@@ -167,11 +167,11 @@ for page in "$WIKI_DIR"/*.md; do
     [[ -n "$target_page" ]] || continue
     [[ "$target_page" == "README.md" ]] && continue
     target_slug="${target_page%.md}"
-    escaped_page="${target_page//./\\.}"
+    escaped_page="${target_page//./\.}"
     temp_page="$page.tmp"
     while IFS= read -r line || [[ -n "$line" ]]; do
-      line="$(printf '%s\\n' "$line" | sed -E "s|\\]\\((\\./)?${escaped_page}(#[^)]*)?\\)|](${target_slug}\\2)|g")"
-      printf '%s\\n' "$line"
+      line="$(printf '%s\n' "$line" | sed -E "s|\\]\\((\\./)?${escaped_page}(#[^)]*)?\\)|](${target_slug}\\2)|g")"
+      printf '%s\n' "$line"
     done < "$page" > "$temp_page"
     mv "$temp_page" "$page"
   done < <(for target in "$WIKI_DIR"/*.md; do basename "$target"; done)
