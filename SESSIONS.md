@@ -39,4 +39,26 @@ This is a chronological, append-oriented engineering log. New work should append
 
 ## 2026-10-22 — Repository agent governance files
 
-This section will be completed after the `.agents/` role/workflow files and the root agent memory/handoff files are committed and re-fetched.
+- **Agent / role:** coordinating maintainer using connected GitHub MCP.
+- **Starting state:** `main` at `fcaddcac6608d7173fe2ac1620a0ec8b5eace4e9` after the governance files were created; recursive tree and target files were fetched again from the repository.
+- **Objective:** establish repeatable, research-first and builder-led contribution rules, durable memory, agent-to-agent handoff and append-only session decisions.
+- **Decisions:**
+  - Root `AGENTS.md` is the mandatory contributor/agent rule entry point.
+  - `MEMORY.md` stores durable facts and policy; `HANDOFF.md` stores the immediate working state and next action; `SESSIONS.md` records chronological decisions/flows.
+  - `.agents/research-agent.md` owns evidence quality and uncertainty; `.agents/builder-agent.md` owns scoped implementation and deterministic validation; `.agents/workflows/research-to-build.md` defines their handshake and independent QA gate.
+  - Research, source commits, Wiki push, and live browser verification are different completion states.
+- **Changes committed:** 
+  - `AGENTS.md`: https://github.com/luckyhegde6/buildFPV/commit/7047eb25b8fd561a47fbf08222d93ec5a0083298
+  - `HANDOFF.md`: https://github.com/luckyhegde6/buildFPV/commit/39a2951203656ddf1132ca35a9f07a55858de677
+  - `MEMORY.md`: https://github.com/luckyhegde6/buildFPV/commit/b7d273dcea6d3b1afc6ea1d3ab809f1b0bc84c57
+  - `SESSIONS.md`: https://github.com/luckyhegde6/buildFPV/commit/60cd65a0753e345bf35c2cbb4c4752f01f7a8ae8
+  - `.agents/README.md`: https://github.com/luckyhegde6/buildFPV/commit/584ac93453a914c864447639bcb7acaf9482492a
+  - `.agents/research-agent.md`: https://github.com/luckyhegde6/buildFPV/commit/0ef18bb000b1be774d9419002846445dc290a324
+  - `.agents/builder-agent.md`: https://github.com/luckyhegde6/buildFPV/commit/4b3a16d7172d63f307f234d8842b5632bf19d5ec
+  - `.agents/workflows/research-to-build.md`: https://github.com/luckyhegde6/buildFPV/commit/a64aea5015adf8d884450ba5a18452351245ec33
+  - `.agents/templates/research-brief.md`: https://github.com/luckyhegde6/buildFPV/commit/1a79e32f3f15daf104f27d626dd63d9e3f5a2eac
+  - `.agents/templates/session-entry.md`: https://github.com/luckyhegde6/buildFPV/commit/fcaddcac6608d7173fe2ac1620a0ec8b5eace4e9
+- **Validation:** GitHub MCP recursive tree at `fcaddcac` confirmed all requested root files and the `.agents/` role/workflow/template files exist. Re-fetches of `AGENTS.md`, `HANDOFF.md` and `SESSIONS.md` succeeded. No Playwright/browser session was available. This is repository-source verification, not live Wiki verification.
+- **Publication state:** source pages are committed; live Wiki push and browser-render verification remain unconfirmed.
+- **Blockers/open questions:** plugin search returned TinyFish as an installable/available cloud browser, but it is not connected to this session; no Playwright action was exposed by the active MCP tools. GitHub Wiki route fetches returned cache miss/unsupported-route errors, which are not proof that the Wiki is absent.
+- **Next action:** connect an authenticated browser/Playwright-capable integration (TinyFish was suggested as an available browser alternative), then inspect and publish to the existing Wiki using the network-enabled Git workflow. Do not mark publish/verification complete before evidence is captured.
