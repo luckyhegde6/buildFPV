@@ -30,6 +30,7 @@ These image and diagram files are versioned as part of `luckyhegde6/buildFPV`. T
 | `analog-vs-digital-video.svg` | [Analog vs Digital FPV](../wiki-source/Analog-vs-Digital-FPV-Camera-Video-Guide.md) | Camera/VTX/VRX signal paths; cross-brand HD compatibility is not implied |
 | `goggles-vrx-integration.svg` | [Goggles and VRX Integration](../wiki-source/FPV-Goggles-and-VRX-Integration-Guide.md) | Compatibility categories; exact model/generation must be checked |
 | `propeller-thrust-loop.gif` | [Home / thrust explainer](../wiki-source/Home.md) | Four-frame concept animation; illustrates prop rotation and thrust, not actual motor order |
+| `balanced-x-deadcat-compare.gif` | [Frame geometry guide](../wiki-source/Frame-Geometries-Balanced-X-vs-Deadcat.md) | Four-frame concept animation showing the front motor spread/camera FOV difference; not a manufacturing drawing |
 
 - `fpv-build-concept-ai.jpg` — project-created AI concept art for general orientation only. It is not a wiring schematic or a reliable pinout/motor-order reference.
 - `flight-axes.svg` — original explanatory diagram for throttle, roll, pitch and yaw. Use the installed firmware's motor map for actual motor numbering and direction.
