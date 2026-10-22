@@ -209,7 +209,9 @@ for page in "$WIKI_DIR"/*.md; do
   mv "$temp_page" "$page"
 done
 
-git add -- *.md images/
+git add -- *.md
+# Force-stage publisher-managed Wiki assets; the upstream Wiki checkout may ignore certain image extensions.
+git add -f -- images/
 if git diff --cached --quiet; then
   echo "Wiki pages and images already match docs/wiki-source; nothing to publish."
   exit 0
