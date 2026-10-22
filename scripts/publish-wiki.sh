@@ -137,7 +137,7 @@ for page in "$WIKI_DIR"/*.md; do
       filename="${stem}-${url_hash}.${extension}"
       target="$WIKI_DIR/images/$filename"
       if [[ ! -s "$target" ]]; then
-        if ! curl --fail --location --silent --show-error --retry 2 --connect-timeout 15 "$image_url" --output "$target.tmp"; then
+        if ! curl --fail --location --silent --show-error --retry 2 --retry-max-time 60 --connect-timeout 15 --max-time 45 "$image_url" --output "$target.tmp"; then
           rm -f "$target.tmp"
           echo "Warning: could not download image; keeping source URL: $image_url" >&2
           continue
