@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760" role="img" aria-labelledby="title desc">
+<title id="title">Balanced X versus deadcat FPV frame geometry</title>
+<desc id="desc">Top-down schematic comparison. A symmetrical X frame has diagonal arm geometry and front prop discs that may intrude into a wide camera view. A deadcat layout spreads front motor positions outward to reduce propeller visibility in the camera image. Actual shapes and flight characteristics vary by design.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0d1b2a"/><stop offset="1" stop-color="#133b52"/></linearGradient><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#fb923c"/></marker></defs>
+<rect width="1400" height="760" rx="26" fill="url(#bg)"/>
+<text x="40" y="52" font-family="Arial,sans-serif" font-size="33" font-weight="700" fill="#fff">BALANCED X vs DEADCAT FRAME</text>
+<text x="42" y="84" font-family="Arial,sans-serif" font-size="18" fill="#c7f9ff">Top view • schematic only • front camera field of view shown as a translucent cone</text>
+<!-- Balanced X -->
+<g transform="translate(30 115)" font-family="Arial,sans-serif">
+<rect width="650" height="410" rx="20" fill="#142f4b" stroke="#4b91a8" stroke-width="2"/>
+<text x="325" y="38" text-anchor="middle" font-size="25" font-weight="700" fill="#7dd3fc">SYMMETRICAL / BALANCED X</text>
+<path d="M325 124 L120 66 A225 225 0 0 1 530 66 Z" fill="#fb923c" opacity=".19" stroke="#fb923c" stroke-width="3"/>
+<path d="M325 133 L155 85 M325 133 L495 85" stroke="#fb923c" stroke-width="3" stroke-dasharray="8 7"/>
+<!-- arms -->
+<g stroke="#9cb7c9" stroke-width="26" stroke-linecap="round"><path d="M254 195 L168 109"/><path d="M396 195 L482 109"/><path d="M254 195 L168 281"/><path d="M396 195 L482 281"/></g>
+<g fill="#0b1828" stroke="#7dd3fc" stroke-width="5"><circle cx="155" cy="96" r="46"/><circle cx="495" cy="96" r="46"/><circle cx="155" cy="294" r="46"/><circle cx="495" cy="294" r="46"/></g>
+<g stroke="#7dd3fc" stroke-width="4"><path d="M124 96 h62 M155 65 v62 M464 96 h62 M495 65 v62 M124 294 h62 M155 263 v62 M464 294 h62 M495 263 v62"/></g>
+<rect x="270" y="166" width="110" height="67" rx="12" fill="#e9b44c" stroke="#fff" stroke-width="3"/><path d="M325 166 v-25" stroke="#fff" stroke-width="5"/><path d="M310 143 L325 120 L340 143 Z" fill="#fff"/><text x="325" y="258" text-anchor="middle" font-size="17" fill="#fff">FC / stack</text>
+<text x="325" y="344" text-anchor="middle" font-size="19" fill="#fff">Equal diagonal geometry</text>
+<text x="325" y="372" text-anchor="middle" font-size="16" fill="#c7f9ff">Front props may appear in a wide FOV</text>
+</g>
+<!-- Deadcat -->
+<g transform="translate(720 115)" font-family="Arial,sans-serif">
+<rect width="650" height="410" rx="20" fill="#142f4b" stroke="#4b91a8" stroke-width="2"/>
+<text x="325" y="38" text-anchor="middle" font-size="25" font-weight="700" fill="#86efac">DEADCAT / FRONT-SPREAD</text>
+<path d="M325 124 L85 66 A255 255 0 0 1 565 66 Z" fill="#fb923c" opacity=".19" stroke="#fb923c" stroke-width="3"/>
+<path d="M325 133 L115 85 M325 133 L535 85" stroke="#fb923c" stroke-width="3" stroke-dasharray="8 7"/>
+<!-- arms, front motors spread laterally -->
+<g stroke="#9cb7c9" stroke-width="26" stroke-linecap="round"><path d="M254 195 L125 109"/><path d="M396 195 L525 109"/><path d="M254 195 L168 281"/><path d="M396 195 L482 281"/></g>
+<g fill="#0b1828" stroke="#86efac" stroke-width="5"><circle cx="112" cy="100" r="46"/><circle cx="538" cy="100" r="46"/><circle cx="155" cy="294" r="46"/><circle cx="495" cy="294" r="46"/></g>
+<g stroke="#86efac" stroke-width="4"><path d="M81 100 h62 M112 69 v62 M507 100 h62 M538 69 v62 M124 294 h62 M155 263 v62 M464 294 h62 M495 263 v62"/></g>
+<rect x="270" y="166" width="110" height="67" rx="12" fill="#e9b44c" stroke="#fff" stroke-width="3"/><path d="M325 166 v-25" stroke="#fff" stroke-width="5"/><path d="M310 143 L325 120 L340 143 Z" fill="#fff"/><text x="325" y="258" text-anchor="middle" font-size="17" fill="#fff">FC / stack</text>
+<text x="325" y="344" text-anchor="middle" font-size="19" fill="#fff">Front motors spread outward</text>
+<text x="325" y="372" text-anchor="middle" font-size="16" fill="#c7f9ff">Designed to keep props out of view</text>
+</g>
+<rect x="40" y="552" width="1320" height="170" rx="18" fill="#0b2034" stroke="#315b72"/>
+<text x="68" y="591" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#fff">What changes in practice?</text>
+<g font-family="Arial,sans-serif" font-size="18" fill="#dfeef8">
+<text x="68" y="628">• Balanced X: symmetrical geometry is a common general-purpose layout; camera FOV may include front prop tips.</text>
+<text x="68" y="661">• Deadcat: front motor arms are positioned to reduce prop intrusion in camera footage; exact geometry varies.</text>
+<text x="68" y="694">• Neither is universally better. Compare manufacturer frame geometry, motor spacing, camera lens/FOV, stiffness and tuning.</text>
+</g>
+</svg>
