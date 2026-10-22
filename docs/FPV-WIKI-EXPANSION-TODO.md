@@ -726,3 +726,11 @@ Current animation is a simple concept loop for rotor/thrust orientation, not a p
 - [ ] Publish these source changes to the existing live Wiki and inspect a fresh Playwright report. Previous run 39797230235 did not publish because WIKI_PUBLISH_TOKEN / GH_PERSONAL_ACCESS_TOKEN was missing; follow .agents/wiki-publishing-runbook.md to configure the secret and manually run the workflow. Marker update commit b3d40fa53b4fb180768bca597a296896600dc30c did not create a new Actions run.
 
 **Status:** links and course sections are committed to buildFPV/main. Live Wiki publication/render validation remains a separate outstanding step.
+
+### Latest live Wiki publication result (2026-10-23)
+
+- [Run #13](https://github.com/luckyhegde6/buildFPV/actions/runs/39844524646) passed source link-rewrite testing and staged/committed 63 Wiki Markdown/image changes in the runner.
+- The actual Wiki push failed with HTTP 403: `Permission to luckyhegde6/buildFPV.wiki.git denied to luckyhegde6`. `WIKI_PUBLISH_TOKEN` is present, but its current scope/repository access does not permit writing to the Wiki Git remote.
+- Live verification failed because no push occurred. This TODO remains **open** until a token with Wiki write access is configured, the existing workflow completes the push, and the Playwright live-site report is reviewed.
+- The publisher now avoids external image downloads in Actions, normalizes Markdown EOF whitespace, uses a batched per-page Wiki-link rewrite, and supplies a fallback Git author identity only when none is configured.
+- Next: replace the Actions secret (do not paste token in chat), dispatch [the workflow](https://github.com/luckyhegde6/buildFPV/actions/workflows/wiki-publish-verify.yml), and recheck publish + live browser results.
