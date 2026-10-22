@@ -4,14 +4,30 @@ Welcome to the buildFPV visual learning path. Start with the aircraft overview, 
 
 ## 🧭 Recommended beginner path
 
-1. [FPV System Basics](FPV-System-Basics) — understand the control, flight-control, power and video paths.
-2. [How FPV Drones Work](How-FPV-Drones-Work) — learn lift, flight axes, motor rotation and feedback control.
-3. **[FPV Drone Parts — One by One](Drone-Parts-One-by-One)** — a visual lineup and detailed explanation of the frame, battery, motors, propellers, ESC, flight controller, receiver, camera, video system, antennas and optional GPS/accessories.
-4. [Hardware Gallery](Hardware-Gallery) — compare real build photos, boards, antennas and GPS modules.
-5. [RadioMaster Pocket Button Guide](RadioMaster-Pocket-Button-Guide) — identify controls and calibrate the radio.
-6. [Pocket ELRS and Liftoff](Pocket-ELRS-and-Liftoff) and [Simulator Training](Simulator-Training) — build control skills before a real flight.
-7. [Betaflight Basics](Betaflight-Basics), [ExpressLRS Basics](ExpressLRS-Basics), [Video Systems and Goggles](Video-Systems-and-Goggles), [Video Antennas](Video-Antennas-VTX-VRX), and [GPS and Flight Controllers](GPS-and-Flight-Controllers).
-8. [Bench Safety and Flight Readiness](Bench-Safety-and-Flight-Readiness), [Buying Parts in India](Buying-Parts-in-India) and [Troubleshooting](Troubleshooting).
+1. [FPV System Basics](https://github.com/luckyhegde6/buildFPV/wiki/FPV-System-Basics) — understand the control, flight-control, power and video paths.
+2. [How FPV Drones Work](https://github.com/luckyhegde6/buildFPV/wiki/How-FPV-Drones-Work) — learn lift, flight axes, motor rotation and feedback control.
+3. **[FPV Drone Parts — One by One](https://github.com/luckyhegde6/buildFPV/wiki/Drone-Parts-One-by-One)** — a visual lineup and detailed explanation of the frame, battery, motors, propellers, ESC, flight controller, receiver, camera, video system, antennas and optional GPS/accessories.
+4. [Hardware Gallery](https://github.com/luckyhegde6/buildFPV/wiki/Hardware-Gallery) — compare real build photos, boards, antennas and GPS modules.
+5. [RadioMaster Pocket Button Guide](https://github.com/luckyhegde6/buildFPV/wiki/RadioMaster-Pocket-Button-Guide) — identify controls and calibrate the radio.
+6. [Pocket ELRS and Liftoff](https://github.com/luckyhegde6/buildFPV/wiki/Pocket-ELRS-and-Liftoff) and [Simulator Training](https://github.com/luckyhegde6/buildFPV/wiki/Simulator-Training) — build control skills before a real flight.
+7. [Betaflight Basics](https://github.com/luckyhegde6/buildFPV/wiki/Betaflight-Basics), [ExpressLRS Basics](https://github.com/luckyhegde6/buildFPV/wiki/ExpressLRS-Basics), [Video Systems and Goggles](https://github.com/luckyhegde6/buildFPV/wiki/Video-Systems-and-Goggles), [Video Antennas](https://github.com/luckyhegde6/buildFPV/wiki/Video-Antennas-VTX-VRX), and [GPS and Flight Controllers](https://github.com/luckyhegde6/buildFPV/wiki/GPS-and-Flight-Controllers).
+8. [Bench Safety and Flight Readiness](https://github.com/luckyhegde6/buildFPV/wiki/Bench-Safety-and-Flight-Readiness), [Buying Parts in India](https://github.com/luckyhegde6/buildFPV/wiki/Buying-Parts-in-India) and [Troubleshooting](https://github.com/luckyhegde6/buildFPV/wiki/Troubleshooting).
+
+## 🛠️ Drones, frames and build guides
+
+Start with the [Drone Categories and Size Guide](https://github.com/luckyhegde6/buildFPV/wiki/Drone-Categories-and-Size-Guide), then compare [balanced X vs deadcat frames](https://github.com/luckyhegde6/buildFPV/wiki/Frame-Geometries-Balanced-X-vs-Deadcat) and dedicated frame assembly guides: [balanced X](https://github.com/luckyhegde6/buildFPV/wiki/Balanced-X-Frame-Assembly), [deadcat](https://github.com/luckyhegde6/buildFPV/wiki/Deadcat-Frame-Assembly), [2.5-inch micro](https://github.com/luckyhegde6/buildFPV/wiki/2-5-Inch-Frame-Guide), [3.5-inch cinewhoop](https://github.com/luckyhegde6/buildFPV/wiki/3-5-Inch-Cinewhoop-Frame-Assembly), [5-inch](https://github.com/luckyhegde6/buildFPV/wiki/5-Inch-Frame-Assembly) and [7-inch long-range](https://github.com/luckyhegde6/buildFPV/wiki/7-Inch-Long-Range-Frame-Assembly).
+
+For components, see [motors, propellers and battery compatibility](https://github.com/luckyhegde6/buildFPV/wiki/Motors-Propellers-and-Battery-Compatibility), the [LiPo/Li-ion charger and safety guide](https://github.com/luckyhegde6/buildFPV/wiki/FPV-Chargers-LiPo-and-Li-ion-Battery-Safety), and the [BNF/PNP/RTF/ARF/DIY glossary](https://github.com/luckyhegde6/buildFPV/wiki/BNF-PNP-RTF-ARF-and-DIY-Formats).
+
+## 📺 Video and receiver integration
+
+Compare [analog vs digital FPV cameras and video](https://github.com/luckyhegde6/buildFPV/wiki/Analog-vs-Digital-FPV-Camera-Video-Guide), then use the [goggles and VRX integration guide](https://github.com/luckyhegde6/buildFPV/wiki/FPV-Goggles-and-VRX-Integration-Guide). The radio-control receiver and the video receiver are different systems; digital goggles and air units must match by supported model/generation.
+
+## 🧰 Animated concept
+
+![Animated propeller and thrust loop](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/propeller-thrust-loop.gif)
+
+This short conceptual animation shows propeller rotation and thrust direction. It is a learning visual, not a motor numbering, propeller installation or wiring diagram.
 
 ## 🖼️ Visual learning path
 
@@ -37,7 +53,7 @@ Your radio sends commands, the flight controller reads sensor feedback and compu
 
 ### 4. Continue to the detailed parts lineup
 
-Open [FPV Drone Parts — One by One](Drone-Parts-One-by-One) next. It now has a dedicated lineup illustration and custom component diagrams for the frame, battery/power, motors/propellers, FC/ESC and AIO, sensor feedback, ELRS receiver, FPV video, antennas and optional GPS/accessories.
+Open [FPV Drone Parts — One by One](https://github.com/luckyhegde6/buildFPV/wiki/Drone-Parts-One-by-One) next. It now has a dedicated lineup illustration and custom component diagrams for the frame, battery/power, motors/propellers, FC/ESC and AIO, sensor feedback, ELRS receiver, FPV video, antennas and optional GPS/accessories.
 
 ## ✅ Always remember
 
