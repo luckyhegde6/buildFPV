@@ -63,7 +63,7 @@ jobs:
         run: |
           {
             echo "## Wiki publish job"
-            printf '%s\\n' 'The publisher uses the existing `buildFPV.wiki.git` remote and does not initialize a replacement Wiki.'
+            printf '%s\n' 'The publisher uses the existing `buildFPV.wiki.git` remote and does not initialize a replacement Wiki.'
             echo "The separate browser-verification job checks the live published pages."
           } >> "$GITHUB_STEP_SUMMARY"
 
@@ -106,7 +106,7 @@ jobs:
         run: |
           {
             echo "## Live Wiki browser verification"
-            printf -- '- Publish job result: `%s`\\n' "$PUBLISH_JOB_RESULT"
+            printf -- '- Publish job result: `%s`\n' "$PUBLISH_JOB_RESULT"
             echo "- Browser automation: Playwright Chromium, headless mode"
             printf '%s\\n' '- Screenshots/report: workflow artifact `buildfpv-wiki-playwright-evidence`'
             echo "- Review the report artifact for HTTP status, required text, tables, extensionless routes and Wiki-local images."
