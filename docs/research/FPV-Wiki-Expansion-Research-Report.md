@@ -474,3 +474,19 @@ Navigation now includes this page in the sidebar and Home, and it is cross-linke
 ### Current implementation status
 
 At this pass, source Markdown and SVG/GIF assets exist for the category selector, frame geometries and assembly, battery/motor/prop/charger, camera/video ecosystems, goggles/VRX, troubleshooting and buying-format tutorials. The dedicated model-level comparison still needs a final exact-SKU row-by-row pass for current prices, firmware/goggles generations, camera cable and recordings. Live Wiki publication and rendered-image verification remain open because this session couldn't clone the separate Wiki remote.
+
+
+### Addendum: class-style and system-path visuals (22 October 2026)
+
+Three further SVGs were added and inserted into the relevant sources:
+- `whoop-vs-toothpick-vs-cinewhoop.svg` shows common guarded micro, open-prop toothpick and guarded cinewhoop forms. It is illustrative, not a definition of universal dimensions.
+- `frame-prop-size-comparison.svg` compares nominal 2.5-, 3.5-, 5- and 7-inch propeller diameters proportionally. It explicitly does not depict wheelbase or frame clearance.
+- `fpv-video-link-separation.svg` places control, video and power paths side by side to distinguish control RX from goggles' VRX and to warn against guessing board pinouts.
+
+The asset registry and source pages have been updated to link these visuals. The latest source-level validation pass found:
+- 56 Markdown source pages;
+- 43 direct Home routes to current page slugs, with no `.md` suffix;
+- 28 standard relative links in the Wiki sidebar resolving to source page slugs;
+- 47 files under `docs/assets/`, all listed in the asset registry.
+
+The link rewrite regression pattern passed under Bash/sed. This confirms the rewrite function for representative cases, but does not substitute for running the whole publisher against the actual Wiki clone. The live Wiki push and browser-render check are still outstanding.
