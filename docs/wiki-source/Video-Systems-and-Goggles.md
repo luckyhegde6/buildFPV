@@ -8,7 +8,11 @@ For a deeper camera/system comparison see [Analog vs Digital FPV: Cameras, VTX a
 
 *Manufacturer image: [CADDXFPV / Walksnail VRX](https://www.caddxfpv.com/products/walksnail-avatar-fpv-vrx). Verify compatibility against the exact VRX/goggles and air-unit generation.*
 
-**Choose the video system before buying goggles.** The radio-control link (ELRS) and FPV video link are independent systems. A Pocket ELRS transmitter does not tell you what goggles will work with your quad.
+**Choose the video system before buying goggles.**
+
+For the detailed model-by-model camera / VTX / VRX and goggles compatibility table, start with [FPV Cameras, VTX, VRX and Goggles Compatibility Comparison](FPV-Cameras-VTX-VRX-Compatibility-Comparison.md), then continue to the dedicated [analog vs digital guide](Analog-vs-Digital-FPV-Camera-Video-Guide.md) and ecosystem integration pages below.
+
+ The radio-control link (ELRS) and FPV video link are independent systems. A Pocket ELRS transmitter does not tell you what goggles will work with your quad.
 
 ## Main routes
 
