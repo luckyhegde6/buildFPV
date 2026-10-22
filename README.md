@@ -112,3 +112,17 @@ The technical visuals are split into focused pages so each diagram has context:
 - [Repository-native learning guide](docs/LEARNING-GUIDE.md) — the single entry point for the beginner sequence and all visual guides.
 
 The older `docs/wiki-source/` pages are retained as historical/reference material; the maintained learning path is under `docs/` and uses repository-local assets wherever available.
+
+
+## 🤖 Maintaining buildFPV (contributors and agents)
+
+Use the repository's shared maintenance workflow before editing source pages, doing hardware research, or publishing the separate Wiki:
+
+- [`AGENTS.md`](AGENTS.md) — rules for all contributors and agents.
+- [`HANDOFF.md`](HANDOFF.md) — current state and next action for the next agent.
+- [`MEMORY.md`](MEMORY.md) — durable project knowledge and editorial/safety constraints.
+- [`SESSIONS.md`](SESSIONS.md) — dated decisions, implementation flows, commits and validation results.
+- [`.agents/`](.agents/README.md) — Research Agent / Builder Agent roles, handoff workflow and templates.
+- [FPV Wiki expansion TODO](docs/FPV-WIKI-EXPANSION-TODO.md) — implementation backlog and explicit publication/verification gates.
+
+The [Research → Build → Verify workflow](.agents/workflows/research-to-build.md) separates source evidence, implementation, independent QA, source-repository commits and live-Wiki publication. A main-repository commit does not mean the separate Wiki has been published.
