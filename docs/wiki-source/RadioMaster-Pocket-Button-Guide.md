@@ -8,7 +8,7 @@
 
 - [RadioMaster / RC setup playlist](https://youtube.com/playlist?list=PLwoDb7WF6c8lhlzE6_iA2X50bk3pIYcbb) — use it alongside the control map and setup checklist below. Confirm menu names and firmware-specific steps against the manual for your exact radio/EdgeTX version.
 
-## 🎥 RadioMaster Pocket setup video
+### RadioMaster Pocket setup walkthrough
 
 [![RadioMaster Pocket — how to set up and bind a drone](https://img.youtube.com/vi/GgaWMvAHZi8/hqdefault.jpg)](https://www.youtube.com/watch?v=GgaWMvAHZi8)
 
