@@ -60,9 +60,7 @@ For the guided buyer workflow, see [Buying Parts in India](wiki-source/Buying-Pa
 
 > [!IMPORTANT]
 > **Mandatory beginner video course before your first real flight:** complete the [Learn to fly an FPV drone (for total beginners) playlist](https://www.youtube.com/playlist?list=PLwoDb7WF6c8lCKhQOTy-Vb9LfW0VAIrTP) in sequence while practising in Liftoff. This is a buildFPV learning requirement, **not an official licence or certification**; continue to check safety requirements and current local rules.
-### Drone systems and controls
-
-## 🎛️ Drone systems and controls — video resources
+### 🎛️ Drone systems and controls — video resources
 
 [![Watch the supplied drone systems and controls video](https://img.youtube.com/vi/sxaEaXcuQA4/hqdefault.jpg)](https://www.youtube.com/watch?v=sxaEaXcuQA4)
 
@@ -70,16 +68,12 @@ For the guided buyer workflow, see [Buying Parts in India](wiki-source/Buying-Pa
 - [Single video: drone systems and controls](https://www.youtube.com/watch?v=sxaEaXcuQA4)
 
 Use these as guided explanations alongside the diagrams and official manuals. I could not reliably confirm the playlist/video titles from public page metadata, so the links are grouped by the topic supplied with them rather than making claims about their exact syllabus.
-### RadioMaster Pocket
-
-## 🎥 RadioMaster Pocket setup video
+### 🎥 RadioMaster Pocket setup video
 
 [![RadioMaster Pocket — how to set up and bind a drone](https://img.youtube.com/vi/GgaWMvAHZi8/hqdefault.jpg)](https://www.youtube.com/watch?v=GgaWMvAHZi8)
 
 Watch [RadioMaster Pocket — How To Set Up and Bind a Drone — Step by Step](https://www.youtube.com/watch?v=GgaWMvAHZi8) alongside this button guide. Compare menu names and binding/Betaflight steps with your exact Pocket, EdgeTX, ELRS and receiver versions. For simulator-only input, use USB joystick mode; binding a real drone receiver is a separate task.
-### DGCA rules / drone awareness
-
-## 🎥 Video resources supplied for DGCA rules / drone awareness
+### 🎥 Video resources supplied for DGCA rules / drone awareness
 
 These are **supplementary learning resources**, not an official DGCA certification path or a legal authority. Playlist/video titles and exact coverage were not reliably verified during this pass; check the contents, publication dates and claims yourself.
 
