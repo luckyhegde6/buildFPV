@@ -14,6 +14,20 @@ const cases = [
     minimumTables: 0,
   },
   {
+    name: 'system-basics',
+    url: `${base}/FPV-System-Basics`,
+    required: ['FPV System Basics', 'Visual guides: parts, systems and flight', 'Drone systems and controls'],
+    minimumTables: 0,
+    requiredImages: ['fpv-drone-basics-infographic.webp', 'fpv-drone-beginner-guide.webp'],
+  },
+  {
+    name: 'how-fpv-works',
+    url: `${base}/How-FPV-Drones-Work`,
+    required: ['How FPV Drones Work', 'Visual guides: movement, lift and control', 'The control path'],
+    minimumTables: 0,
+    requiredImages: ['fpv-drone-movements-guide.webp'],
+  },
+  {
     name: 'chargers',
     url: `${base}/FPV-Chargers-LiPo-and-Li-ion-Battery-Safety`,
     required: ['ISDT UC2', 'ISDT 608AC', 'ToolkitRC M7AC', 'ToolkitRC M6DAC'],
@@ -141,6 +155,11 @@ try {
       for (const image of record.localWikiImages) {
         if (!image.complete || image.naturalWidth === 0) {
           record.errors.push(`Wiki-local image failed to load: ${image.src}`);
+        }
+      }
+      for (const imageName of testCase.requiredImages ?? []) {
+        if (!record.localWikiImages.some(image => image.src.includes(imageName) && image.complete && image.naturalWidth > 0)) {
+          record.errors.push(`Expected Wiki-local image failed to load: ${imageName}`);
         }
       }
 
