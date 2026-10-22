@@ -112,6 +112,15 @@ Continue to **[FPV Drone Parts — One by One](Drone-Parts-One-by-One.md)** for 
 - [ ] Trace the loop from Pocket → receiver → FC → ESCs/motors → gyro feedback.
 - [ ] Practise those movements in Liftoff, then record one win and one next focus.
 
+## 🎛️ Drone systems and controls — video resources
+
+[![Watch the supplied drone systems and controls video](https://img.youtube.com/vi/sxaEaXcuQA4/hqdefault.jpg)](https://www.youtube.com/watch?v=sxaEaXcuQA4)
+
+- [Drone systems and controls playlist](https://www.youtube.com/playlist?list=PLgMDNELGJ1CYU7vfun-Q7HXsldD-RsocG)
+- [Single video: drone systems and controls](https://www.youtube.com/watch?v=sxaEaXcuQA4)
+
+Use these as guided explanations alongside the diagrams and official manuals. I could not reliably confirm the playlist/video titles from public page metadata, so the links are grouped by the topic supplied with them rather than making claims about their exact syllabus.
+
 ## Official references
 
 - [RadioMaster Pocket product page](https://radiomasterrc.com/products/pocket-radio-controller-m2)
