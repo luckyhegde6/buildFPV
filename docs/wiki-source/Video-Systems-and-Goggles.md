@@ -1,5 +1,7 @@
 # 📺 FPV Video Systems and Goggles
 
+For step-by-step compatibility and setup, see the [Analog Goggles/VRX guide](Analog-Goggles-and-VRX-Integration.md), [DJI O3/O4 air-unit and goggles guide](DJI-O3-O4-Goggles-and-Air-Unit-Integration.md), [Walksnail Avatar guide](Walksnail-Avatar-Goggles-and-Air-Unit-Integration.md), and [HDZero integration guide](HDZero-Goggles-and-VTX-Integration.md). The general comparison page is [Analog vs Digital FPV Cameras and Video](Analog-vs-Digital-FPV-Camera-Video-Guide.md).
+
 For a deeper camera/system comparison see [Analog vs Digital FPV: Cameras, VTX and VRX](Analog-vs-Digital-FPV-Camera-Video-Guide.md), followed by [FPV Goggles and VRX Integration](FPV-Goggles-and-VRX-Integration-Guide.md). These are dedicated compatibility guides; this page remains the short overview.
 
 ![Walksnail Avatar video receiver example](https://www.caddxfpv.com/cdn/shop/files/VRX_and_V2.webp?v=1760685297&width=2000)
