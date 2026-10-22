@@ -56,3 +56,11 @@ Do not store credentials, personal data, generated login tokens, or other secret
 - `HANDOFF.md` is the immediate next-agent state; `SESSIONS.md` is append-oriented history; `MEMORY.md` is durable knowledge. Do not duplicate a full transcript between these files.
 - Do not mark a Wiki publish complete from a source-repo commit. Require push evidence and live browser checks.
 - Browser-tool status at the latest recorded session: no Playwright action was available in the active tool set; TinyFish was identified as an available cloud-browser option but was not connected. Recheck current plugin/tool availability before assuming this is still the case.
+
+
+## Remote Wiki publish and browser verification
+
+- A headless Playwright verifier now exists at `scripts/verify-wiki-live.mjs`; the GitHub Actions workflow is `.github/workflows/wiki-publish-verify.yml`.
+- The workflow publishes to the user's existing Wiki, then installs Playwright with `npx` on a network-enabled runner and uploads screenshots/report.
+- It requires the repository secret `WIKI_PUBLISH_TOKEN` or `GH_PERSONAL_ACCESS_TOKEN` with Git access to push the Wiki.
+- The ChatGPT local container cannot access GitHub over the network, and a GitHub MCP-created trigger commit did not start an Actions run. The available connector has no dispatch action. Manual `workflow_dispatch` from GitHub is the immediate execution path. Never claim the remote workflow, publication, or Playwright passed until its run results are read.
