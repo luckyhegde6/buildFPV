@@ -38,3 +38,5 @@ Retry 13: repository owner reports WIKI_PUBLISH_TOKEN was replaced with a classi
 Retry 14: first push succeeded. Live verification found only the Home concept image missing, even though the file exists under docs/assets. Force-stage publisher-managed images to ensure Wiki-ignored image extensions are included; rerun and require a clean live Playwright report.
 
 Retry 15: run after force-staging publisher-managed images and expanding Playwright coverage to assert the mandatory course on Home/Simulator Training and the new Drone Coding and Machine Learning page. Require the missing Home concept image to load and all checked pages to pass.
+
+Retry 16: republish the supplied FPV infographic assets. Publisher now reconstructs WebP files from tracked Base64 chunks when normal docs/assets binary files are absent. Live Playwright coverage includes the two requested Wiki pages and asserts their intended local images load. Confirm source encoding reconstruction, push, and browser report.
