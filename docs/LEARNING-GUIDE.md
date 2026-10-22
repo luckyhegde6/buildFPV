@@ -7,6 +7,10 @@ This is the main entry point for the FPV learning material maintained **inside t
 
 ## Beginner path
 
+> [!IMPORTANT]
+> **Mandatory beginner video course before your first real flight:** complete the [Learn to fly an FPV drone (for total beginners) playlist](https://www.youtube.com/playlist?list=PLwoDb7WF6c8lCKhQOTy-Vb9LfW0VAIrTP) in sequence while practising in Liftoff. This is a buildFPV learning requirement, **not an official licence or certification**; continue to check safety requirements and current local rules.
+
+
 1. **Understand the aircraft systems** — [FPV system basics](01-fpv-basics.md). Learn the control link, flight controller, propulsion, video link and power path.
 2. **Understand the aircraft physically** — [How an FPV quad works](07-how-fpv-drones-work.md). Learn thrust, roll/pitch/yaw, opposite motor rotation and the flight-control feedback loop.
 3. **Connect your RadioMaster Pocket to the simulator** — [Pocket ELRS notes](03-pocket-elrs.md) and the [Pocket control guide](06-pocket-button-guide.md). USB joystick input is separate from binding to a real aircraft.
