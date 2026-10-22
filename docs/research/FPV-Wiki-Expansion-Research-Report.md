@@ -292,3 +292,46 @@ Source-linked product photos were added to the six major frame pages: GEPRC MK5X
 ### Important remaining work
 
 This implementation pass is not a substitute for the rest of the TODO. Still required: verify every internal Markdown link after the publisher rewrites relative `.md` targets, validate the SVGs/rendered images on the target Wiki, add further model-specific/price-snapshot matrices, finish extra battery chemistry/charger-source research, create additional video/antenna/camera/compatibility infographic variants, create further animated GIFs, and sync/push the separate GitHub Wiki. The source Home page now uses extensionless Wiki page URLs. The publisher script includes a step to rewrite internal links like `](Some-Page.md)` to `](Some-Page)` when the target page exists in the Wiki checkout.
+
+
+---
+
+## 6. Targeted frame-photo / dimension validation pass (22 October 2026)
+
+These were checked against current product pages and are useful, model-specific examples to accompany the new frame-assembly pages. Product photos are manufacturer or retail product imagery, not fabricated scale drawings.
+
+### Symmetrical True-X vs Deadcat examples
+
+- **Axisflying MANTA 5 True X:** Team BlackSheep's listing identifies a True-X variant, lists a 238 mm wheelbase, 133 g, T700 carbon, and max 5.1-inch propellers. The same product family also has a Squashed-X variant, so the SKU/variant selection matters. Source: [Team BlackSheep / Axisflying MANTA 5](https://www.team-blacksheep.com/products/product%3A7703).
+- **GEPRC GEP-MK5D O3 DeadCat:** official page lists a 230 mm wheelbase, 208 × 193 × 42 mm frame dimensions, 2.5 mm top/bottom plates, 5 mm arms, 30.5 × 30.5 mm FC mounting, camera installation space 20 mm, and 5-inch props. GEPRC describes its DC geometry as aimed at unobstructed O3 onboard video and says the X variant can show props in view. Source: [GEPRC GEP-MK5D O3](https://geprc.com/product/gep-mk5d-o3-frame/).
+- **GEPRC GEP-MK5X O3:** official page lists a 225 mm wheelbase, 214 × 168 × 42 mm overall dimensions, 2.5 mm top/bottom plates, 5 mm arms, 30.5 × 30.5 mm FC mounting and 5-inch prop compatibility. GEPRC describes the MK5X as squashed-X, which is why the balanced-X page's representative photo has been changed to the MANTA True-X example. Source: [GEPRC GEP-MK5X O3](https://geprc.com/product/gep-mk5x-o3-frame/).
+
+### Other class photo/spec examples
+
+- **Sub250 OasisFly25:** the listing gives a 135 mm wheelbase, 2.5-inch props, 2 mm roof/top plate, 2.5 mm bottom plate, 2.5 mm arms, 20 mm equipment-layer height, 9 mm motor-mount holes (M2), recommended 4S 530–730 mAh LiPo or 6S, 14/15-series motors and FC mounting holes 20 × 20 / 25 × 25 mm. The page is a retailer listing, so confirm the purchased kit/SKU and current official documentation. Source: [Pyrodrone product listing](https://pyrodrone.com/collections/sub250-oasisfly25-frame-and-parts-collection/products/sub250-oasisfly25-2-5-inches-hd-freestyle-quadcopter-frame-kit).
+- **BETAFPV Pavo35 frame:** official listing specifies 148 mm wheelbase, 92 mm duct diameter, 3 mm top plate, 1.5 mm base plate, 2 mm gimbal plate, 25.5 × 25.5 mm FC mounts, 20/25.5 mm VTX mounting options and 113.9 g frame weight. It lists the Gemfan D90S 3-blade propeller, 2006 motors, and 6S 1100 mAh as one matched configuration. The complete drone's all-up weight differs. Source: [BETAFPV Pavo35 frame](https://betafpv.com/products/pavo35-brushless-whoop-frame).
+- **iFlight AOS 7 V5:** official listing gives a 313 mm wheelbase, 254 × 184 × 36 mm overall dimensions, 8 mm arms, 2 mm top plate, 2.5 mm bottom plate, 20 × 20 and 30.5 × 30.5 mm FC mount options, multiple VTX mount options and 325 g listed frame weight. Source: [iFlight AOS 7 V5 frame kit](https://shop.iflight.com/AOS-7-V5-Frame-Kit-Pro2311).
+- **BETAFPV Air75 tinywhoop:** official listing gives 21 g, 75 mm wheelbase, 40 mm two-blade props, 0802SE 23000KV motors, 1S 450 mAh recommended pack, onboard serial ELRS and analog 5.8 GHz VTX. The listed 6.5-minute flight-time figure is tied to the manufacturer's 4.35 V–3.3 V test range and setup; don't assume a conventional 4.20 V full-charge LiPo limit without verifying the pack. Source: [BETAFPV Air75](https://betafpv.com/products/air75-brushless-whoop-quadcopter).
+
+### Interpretation limits
+
+- Wheelbase, outside frame dimensions, prop diameter, duct diameter and FC stack mounting patterns are different measurements.
+- Nominal class labels and maker catalog categories overlap; e.g. a cinewhoop mission may use a specific nominal 3.5-inch / 90 mm prop family. Product manuals decide fit.
+- Product photos are not dimensioned engineering drawings. The new `frame-size-reference.svg` labels model-specific examples but explicitly states the top-view silhouettes are illustrative/not to scale and must not be used as drill templates.
+- A True-X frame, Squashed-X and Deadcat are not simply different names for the same geometry; match the model label to the corresponding manufacturer frame.
+- Product stock/prices shown by shops can change and are not preserved as durable facts in the technical guide.
+
+## 7. Second implementation tranche recorded
+
+The source repository now contains additional dedicated integration/tutorial pages:
+- `Analog-Goggles-and-VRX-Integration.md`
+- `DJI-O3-O4-Goggles-and-Air-Unit-Integration.md`
+- `Walksnail-Avatar-Goggles-and-Air-Unit-Integration.md`
+- `HDZero-Goggles-and-VTX-Integration.md`
+- `FPV-Assembly-Tools-and-Workshop-Guide.md`
+
+The source also contains `scripts/test-wiki-link-rewrite.sh`, which was executed locally using Bash against plain internal links, links with anchors and an external URL; the regression test passed. The publisher was changed to rewrite internal source links ending in `.md` into Wiki slugs while preserving anchors and external links.
+
+A small actual GIF `docs/assets/propeller-thrust-loop.gif` has been committed and referenced from the Home and motor/propulsion pages. It is a minimal concept animation; it is not a frame-assembly animation or a motor-order diagram. Further GIFs are still open in the TODO.
+
+**Publication status:** the main repository contains these source commits. The separate GitHub Wiki is not yet confirmed updated; this environment cannot resolve `github.com` through the local shell and the connected GitHub API returned 404 for the `.wiki` repository. Publication remains dependent on running `bash scripts/publish-wiki.sh` from a network-enabled local clone and verifying the push.
