@@ -25,7 +25,11 @@
 **Drones — classes and frame geometry**
 - [Drone Categories and Size Guide](Drone-Categories-and-Size-Guide)
 - [Tinywhoops and Micro FPV Guide](Tinywhoop-and-Micro-FPV-Guide)
-- [2.5-Inch Frame Guide](2-5-Inch-Frame-Guide)
+- [2.5-Inch FPV Guide](2-5-Inch-FPV-Guide)
+- [3.5-Inch Cinewhoop Guide](3-5-Inch-Cinewhoop-Guide)
+- [5-Inch Racing and Freestyle](5-Inch-FPV-Racing-and-Freestyle)
+- [7-Inch Long-Range FPV Guide](7-Inch-Long-Range-FPV-Guide)
+- [2.5-Inch Frame Assembly](2-5-Inch-Frame-Guide)
 - [3.5-Inch Cinewhoop Frame Assembly](3-5-Inch-Cinewhoop-Frame-Assembly)
 - [5-Inch Frame Assembly](5-Inch-Frame-Assembly)
 - [7-Inch Long-Range Frame Assembly](7-Inch-Long-Range-Frame-Assembly)
