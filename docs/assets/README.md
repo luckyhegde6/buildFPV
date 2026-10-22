@@ -13,9 +13,9 @@ These image and diagram files are versioned in the source repository `luckyhegde
 | `pocket-gimbal-adjustment.png` | [RadioMaster Pocket guide](../06-pocket-button-guide.md) | Gimbal adjustment reference |
 | `gps-data-chain.svg` | [GPS and FC guide](../09-gps-and-flight-controller-examples.md) | Conceptual GNSS-to-flight-controller data path |
 | `fpv-part-fc-sensors.svg` | [Drone Parts — One by One](../wiki-source/Drone-Parts-One-by-One.md) | Flight-controller sensor/gyro context; conceptual only |
-| `fpv-part-gps-accessories.svg`, `fpv-part-gps.svg`, `fpv-part-buzzer-blackbox.svg` | [Drone Parts — One by One](../wiki-source/Drone-Parts-One-by-One.md) | Optional GPS/GNSS, buzzer and logging accessories; fit/pinouts vary |
-| `fpv-part-motors-props.svg`, `fpv-part-motor.svg`, `fpv-part-propeller.svg` | [Drone Parts — One by One](../wiki-source/Drone-Parts-One-by-One.md) | BLDC motors and propeller concepts; not a motor order/direction diagram |
-| `fpv-part-video-system.svg`, `fpv-part-camera.svg`, `fpv-part-vtx.svg`, `fpv-part-vrx-goggles.svg` | [Drone Parts — One by One](../wiki-source/Drone-Parts-One-by-One.md) | Camera, aircraft VTX/air unit, video antenna and goggles/VRX system |
+| `fpv-part-gps-accessories.svg` | [Drone Parts — One by One](../wiki-source/Drone-Parts-One-by-One.md) | Optional GPS/GNSS and accessories; fit/pinouts vary |
+| `fpv-part-motors-props.svg` | [Drone Parts — One by One](../wiki-source/Drone-Parts-One-by-One.md) | Combined BLDC motor and propeller overview; not a motor order/direction diagram |
+| `fpv-part-video-system.svg` | [Drone Parts — One by One](../wiki-source/Drone-Parts-One-by-One.md) | Combined camera/VTX/video-receiver overview |
 | `radio-controller-mode2.svg` | [How FPV Drones Work](../wiki-source/How-FPV-Drones-Work.md) | Typical Mode 2 stick map; controller modes/configurations can differ |
 | `thrust-direction.svg` | [How FPV Drones Work](../wiki-source/How-FPV-Drones-Work.md) | Conceptual thrust/airflow explanation; not a motor-layout diagram |
 | `fpv-parts-lineup.svg` | [Drone Parts — One by One](../wiki-source/Drone-Parts-One-by-One.md) | Full beginner component lineup and separate control, power and video paths |
