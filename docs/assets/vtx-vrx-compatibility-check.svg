@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760" role="img" aria-labelledby="title desc">
+<title id="title">FPV VTX and VRX compatibility checklist</title>
+<desc id="desc">A checklist for matching camera, air-unit/VTX, goggles/VRX, firmware, input voltage, antenna connector/polarization, RF bands, physical mounting, cooling and recording features before purchasing.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0b1930"/><stop offset="1" stop-color="#17475c"/></linearGradient></defs><rect width="1400" height="760" rx="26" fill="url(#bg)"/>
+<text x="42" y="52" font-family="Arial,sans-serif" font-size="34" font-weight="700" fill="#fff">VTX / VRX PRE-BUY COMPATIBILITY GATE</text><text x="44" y="84" font-family="Arial,sans-serif" font-size="18" fill="#c7f9ff">If you cannot verify a row against the exact manuals, pause before purchasing or powering up.</text>
+<g font-family="Arial,sans-serif">
+<rect x="40" y="120" width="1320" height="570" rx="18" fill="#132e46" stroke="#4c8297" stroke-width="2"/>
+<g fill="#e6f4fb" font-size="20">
+<rect x="76" y="164" width="27" height="27" rx="4" fill="none" stroke="#86efac" stroke-width="3"/><text x="125" y="185">Camera output / module and cable supported by this VTX or air unit</text>
+<rect x="76" y="224" width="27" height="27" rx="4" fill="none" stroke="#86efac" stroke-width="3"/><text x="125" y="245">Exact goggles / VRX model, product generation and firmware are supported</text>
+<rect x="76" y="284" width="27" height="27" rx="4" fill="none" stroke="#86efac" stroke-width="3"/><text x="125" y="305">Input voltage, battery full voltage, regulator output and current are compatible</text>
+<rect x="76" y="344" width="27" height="27" rx="4" fill="none" stroke="#86efac" stroke-width="3"/><text x="125" y="365">RF band/channel and transmitter-power settings meet local rules</text>
+<rect x="76" y="404" width="27" height="27" rx="4" fill="none" stroke="#86efac" stroke-width="3"/><text x="125" y="425">Antenna connector, polarization, cable and mounting match both ends</text>
+<rect x="76" y="464" width="27" height="27" rx="4" fill="none" stroke="#86efac" stroke-width="3"/><text x="125" y="485">Frame dimensions, mounting holes, lens FOV, cable path and prop clearance fit</text>
+<rect x="76" y="524" width="27" height="27" rx="4" fill="none" stroke="#86efac" stroke-width="3"/><text x="125" y="545">Cooling / airflow, recording path, DVR card and firmware/update steps are known</text>
+</g>
+<rect x="72" y="590" width="1256" height="62" rx="12" fill="#4a2c23" stroke="#fbd38d" stroke-width="2"/><text x="98" y="628" font-size="20" font-weight="700" fill="#fbd38d">Control receiver (ELRS etc.) is separate from the goggles' video receiver (VRX).</text>
+</g></svg>
