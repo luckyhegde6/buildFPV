@@ -106,3 +106,12 @@ This is a chronological, append-oriented engineering log. New work should append
 - **Plugin/MCP inventory:** GitHub repository write/read tools are available, but the connected GitHub tool set exposes neither a workflow-dispatch nor a run-cancel action, and no dedicated Tasks MCP is exposed in the current tool inventory. TinyFish cloud browser was discoverable but was not installed/connected, so it was not used to navigate an authenticated browser session.
 - **Current handoff:** inspect [latest run 39796597578](https://github.com/luckyhegde6/buildFPV/actions/runs/39796597578). If it stays queued, check the Actions UI/repository runner settings. Before Wiki publication can succeed, verify that `WIKI_PUBLISH_TOKEN` or `GH_PERSONAL_ACCESS_TOKEN` is configured as an Actions secret with write access to the existing Wiki Git remote. Never ask for or commit secret values.
 - **Status discipline:** do not mark the live Wiki published, Playwright passed, or screenshots captured until job logs and the uploaded report/artifacts demonstrate those results.
+
+
+## 2026-10-22 — Removing job-level guards to permit the queued execution
+
+- **Finding:** run [39796597578](https://github.com/luckyhegde6/buildFPV/actions/runs/39796597578) completed with the Playwright job marked `skipped`; the publisher job and artifact were absent. This showed the extra marker checks were suppressing job scheduling even though the workflow push path filter had already matched.
+- **Change:** removed the publisher's job-level `if` condition, leaving `.github/workflows/wiki-publish-verify.yml`'s `push.paths` filter as the push-trigger gate. Changed the browser-verification job guard to `if: always()` so it can execute even if the publish job fails.
+- **New marker commit:** `ab2592162031430ecb510238af93c3957b40e1f1`.
+- **Latest observed run:** [39797230235](https://github.com/luckyhegde6/buildFPV/actions/runs/39797230235). Both jobs are now registered — `Publish source pages to the existing Wiki` and `Verify live Wiki with headless Playwright` — but both remain `queued` at the latest check. No artifacts or execution logs have arrived, so publishing and browser verification remain incomplete.
+- **Next gate:** inspect the latest run via the GitHub Actions UI if it remains queued; check repository Actions settings and runner assignment. Keep the token in GitHub Actions Secrets only; verify the publisher job outcome, then download/read the Playwright report and screenshots before changing publication status.
