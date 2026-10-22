@@ -1,5 +1,7 @@
 # 📺 FPV Video Systems and Goggles
 
+For a deeper camera/system comparison see [Analog vs Digital FPV: Cameras, VTX and VRX](Analog-vs-Digital-FPV-Camera-Video-Guide.md), followed by [FPV Goggles and VRX Integration](FPV-Goggles-and-VRX-Integration-Guide.md). These are dedicated compatibility guides; this page remains the short overview.
+
 ![Walksnail Avatar video receiver example](https://www.caddxfpv.com/cdn/shop/files/VRX_and_V2.webp?v=1760685297&width=2000)
 
 *Manufacturer image: [CADDXFPV / Walksnail VRX](https://www.caddxfpv.com/products/walksnail-avatar-fpv-vrx). Verify compatibility against the exact VRX/goggles and air-unit generation.*
