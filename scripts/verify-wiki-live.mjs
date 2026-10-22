@@ -25,7 +25,7 @@ const cases = [
     url: `${base}/How-FPV-Drones-Work`,
     required: ['How FPV Drones Work', 'Visual guides: movement, lift and control', 'The control path'],
     minimumTables: 0,
-    requiredImages: ['fpv-drone-movements-guide.webp'],
+    requiredImages: ['fpv-drone-movements-guide.webp', 'fpv-drone-control-loop-guide.webp'],
   },
   {
     name: 'chargers',
