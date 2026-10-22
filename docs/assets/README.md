@@ -30,6 +30,14 @@ These image and diagram files are versioned as part of `luckyhegde6/buildFPV`. T
 - `pocket-control-map.svg` — original simplified RadioMaster Pocket control map. Switch functions are configurable in EdgeTX and can differ by radio/firmware version.
 - `pocket-gimbal-adjustment.png` — Pocket gimbal adjustment reference supplied by the project owner; see [RadioMaster's product page](https://radiomasterrc.com/products/pocket-radio-controller-m2) and [official manuals index](https://radiomasterrc.com/pages/user-manuals) for current information.
 
+| `drone-class-overview.svg` | [Drone Categories and Size Guide](../wiki-source/Drone-Categories-and-Size-Guide.md) | Schematic class overview; prop diameter and wheelbase deliberately described separately |
+| `frame-size-reference.svg` | class guides and frame assembly pages | Illustrative dimensions only; not to scale and not a drill/manufacturing template |
+| `balanced-x-vs-deadcat.svg` | [Frame geometry guide](../wiki-source/Frame-Geometries-Balanced-X-vs-Deadcat.md) | Top-view comparison and conceptual camera FOV; frame geometry varies by model |
+| `motor-prop-battery-compatibility.svg` | [Motor/prop/battery guide](../wiki-source/Motors-Propellers-and-Battery-Compatibility.md) | Motor anatomy, blade count and conventional LiPo voltage math; no universal KV prescription |
+| `charger-balance-power.svg` | [FPV charger guide](../wiki-source/FPV-Chargers-LiPo-and-Li-ion-Battery-Safety.md) | Main vs balance leads; illustrative 4S pack only; not a connector pinout |
+| `analog-vs-digital-video.svg` | [Analog vs digital video guide](../wiki-source/Analog-vs-Digital-FPV-Camera-Video-Guide.md) | Separate analog, digital and RC control signal paths; not all ecosystems cross-compatible |
+| `goggles-vrx-integration.svg` | [Goggles/VRX integration guide](../wiki-source/FPV-Goggles-and-VRX-Integration-Guide.md) | Compatibility categories and pre-purchase checklist; verify exact product generation |
+
 ## Reliability and attribution rules
 
 Keep alt text and captions with every image. Product photographs hosted by manufacturers or retailers are examples, not official wiring diagrams. Product pages and external photos can move; keep a source link near the image and verify the current board revision and manual before using it to plan a build.
@@ -38,3 +46,8 @@ Keep alt text and captions with every image. Product photographs hosted by manuf
 ## Beginner Wiki component illustrations
 
 The custom SVGs above were created for the [Drone Parts — One by One guide](../wiki-source/Drone-Parts-One-by-One.md). They use simplified conceptual drawings for learning component names and system paths. They are **not** product photographs, wiring schematics, board pinouts, or a universal motor-order reference. Follow the exact hardware and firmware documentation for any build decision.
+
+
+## New FPV class and integration guides (22 October 2026)
+
+The diagrams added in this tranche are original explanatory SVGs intended to render crisply in the Wiki. The frame-size artwork uses clearly labelled illustrative ranges; it must not be used to drill a frame, select screw length, or infer mounting/flight-control layouts. Use exact manufacturer drawings and manuals for those tasks. No short GIF has been marked complete unless an actual animation file is present in the repository; GIF creation and review remain tracked in the master TODO.
