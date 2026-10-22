@@ -75,7 +75,7 @@ try {
       record.finalUrl = page.url();
       record.title = await page.title();
 
-      const normalizePath = value => value.replace(/\\/+$/, '') || '/';
+      const normalizePath = value => value.replace(/\/+$/, '') || '/';
       const expectedPath = normalizePath(new URL(testCase.url).pathname);
       const finalPath = normalizePath(new URL(record.finalUrl).pathname);
       if (finalPath !== expectedPath) {
