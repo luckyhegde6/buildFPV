@@ -427,3 +427,31 @@ The implementation intentionally avoids fixed universal prices, max-flight-time 
 The first hand-built GIF stream did not decode to complete frames and was replaced rather than left in the project. The replacement at `docs/assets/propeller-thrust-loop.gif` is a real, looping 4-frame, 180 × 112 GIF generated with Pillow, opened frame-by-frame for decoding validation before uploading. GitHub now reports a new blob for that asset. The animation is intentionally a concept visual and should not be interpreted as a calibrated rotor-speed/thrust simulation or universal motor order.
 
 The asset registry and master TODO have been updated to record this correction. The image still needs a final rendered check after the publisher copies it into the separate Wiki repository.
+
+
+---
+
+## Addendum: class-selection, package-format and video-path visuals (22 October 2026)
+
+Additional visuals committed in this implementation pass:
+
+- `drone-class-decision-tree.svg`: a mission-based route to tinywhoop, micro, cinewhoop, racing/freestyle and experienced-pilot long-range pages.
+- `bnf-pnp-rtf-arf-comparison.svg`: demonstrates common package-format tendencies while warning that product contents vary by SKU.
+- `fpv-camera-sensor-and-recording.svg`: separates camera/live link, supported onboard recording, and goggles/receiver DVR.
+- `video-system-ecosystem-matrix.svg`: shows analog, DJI O3/O4, Walksnail Avatar and HDZero as separate matching chains.
+- `vtx-vrx-compatibility-check.svg`: checks camera/cable, video generation, firmware, input voltage, antenna, local RF rules, frame fit, cooling and recording before purchase.
+- `lipo-vs-li-ion.svg`: reinforces mission-dependent current and energy trade-offs, plus a warning that chemistry and maximum charge voltage must come from the exact pack.
+
+The new visuals are inserted before the associated page explanations, not only indexed in the asset README. The class selection infographic routes by mission rather than treating the prop-size label as a full description.
+
+### Wiki links and publication
+
+- The Home source now uses direct page routes such as `https://github.com/luckyhegde6/buildFPV/wiki/FPV-System-Basics`, with no `.md` suffix.
+- The publisher's internal link rewrite has sample-tested the cases `Page.md`, `./Page.md`, and `Page.md#anchor`; the public slug becomes `Page` while the fragment remains. An external URL containing `.md` remains unchanged.
+- The main repository has the updated publisher and test script. Live Wiki publication is **not** verified in this environment because the remote Wiki checkout could not be cloned due to unavailable outbound GitHub DNS/network access. Run the publisher from the local user's Git Bash clone, review the staged Wiki diff and confirm the push, then visually check the live page.
+
+Remaining evidence gaps:
+- The full exact SKU/camera and goggles compatibility matrix still requires a final official-manual pass for each revision/firmware row.
+- Price, stock, firmware and regional radio rules should be date-checked at publication.
+- Source-committed images do not prove a product photo host will allow an automated download; confirm each image was localized into the Wiki `images/` directory at publication.
+- SVG layout has source review but still needs live-rendered desktop/mobile QA. A real GIF file has been committed, but it must also be checked after copying into the Wiki repository.
