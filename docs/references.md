@@ -4,7 +4,7 @@ Use official project documentation for installation, firmware targets, wiring, s
 
 ## Personal starting resources
 
-- Joshua Bardwell beginner FPV playlist supplied for this project: https://youtube.com/playlist?list=PLwoDb7WF6c8lCKhQOTy-Vb9LfW0VAIrTP
+- Learn to fly an FPV drone (for total beginners) — beginner video playlist: https://www.youtube.com/playlist?list=PLwoDb7WF6c8lCKhQOTy-Vb9LfW0VAIrTP
 - Liftoff FPV simulator: https://store.steampowered.com/app/410340/Liftoff_FPV_Drone_Racing/
 - RadioMaster official site and documentation: https://radiomasterrc.com/
 - ExpressLRS documentation: https://www.expresslrs.org/
