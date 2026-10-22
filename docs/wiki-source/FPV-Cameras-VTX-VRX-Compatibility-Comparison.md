@@ -2,6 +2,10 @@
 
 ![Analog vs digital FPV video paths](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/analog-vs-digital-video.svg)
 
+![FPV video ecosystem compatibility overview](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/video-system-ecosystem-matrix.svg)
+
+![Pre-purchase VTX and VRX compatibility checklist](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/vtx-vrx-compatibility-check.svg)
+
 **Start with a complete video system.** Camera, VTX/air unit, antenna, ground receiver (VRX) and goggles/display must work as a supported chain. A flight-control radio receiver such as ELRS is separate from the video receiver.
 
 This is a compatibility guide, not a permanent price or stock ranking. Manufacturer specifications and supported goggles/firmware are model- and revision-specific; check the exact current manual before buying.
