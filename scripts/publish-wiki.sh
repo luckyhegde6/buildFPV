@@ -164,21 +164,23 @@ done
 
 # Internal Wiki links point to page slugs, not the source Markdown filenames.
 # GitHub Wiki's public routes omit the ".md" suffix. Preserve optional anchors and
-# do not change external URLs or source-code paths.
+# do not change external URLs or source-code paths. Build all substitutions first,
+# then run sed once per page instead of spawning a process for every line/target pair.
 for page in "$WIKI_DIR"/*.md; do
   [[ -f "$page" ]] || continue
+  sed_args=()
   while IFS= read -r target_page; do
     [[ -n "$target_page" ]] || continue
     [[ "$target_page" == "README.md" ]] && continue
     target_slug="${target_page%.md}"
-    escaped_page="${target_page//./\.}"
-    temp_page="$page.tmp"
-    while IFS= read -r line || [[ -n "$line" ]]; do
-      line="$(printf '%s\n' "$line" | sed -E "s|\\]\\((\\./)?${escaped_page}(#[^)]*)?\\)|](${target_slug}\\2)|g")"
-      printf '%s\n' "$line"
-    done < "$page" > "$temp_page"
-    mv "$temp_page" "$page"
+    escaped_page="${target_page//./\\.}"
+    sed_args+=(-e "s|\\]\\((\\./)?${escaped_page}(#[^)]*)?\\)|](${target_slug}\\2)|g")
   done < <(for target in "$WIKI_DIR"/*.md; do basename "$target"; done)
+  if [[ "${#sed_args[@]}" -gt 0 ]]; then
+    temp_page="$page.tmp"
+    sed -E "${sed_args[@]}" "$page" > "$temp_page"
+    mv "$temp_page" "$page"
+  fi
 done
 
 # GitHub's whitespace check rejects newly added blank lines at EOF. Normalize all
