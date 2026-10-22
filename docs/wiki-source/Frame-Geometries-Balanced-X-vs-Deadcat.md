@@ -4,6 +4,16 @@
 
 A frame is the structure that holds the motors, flight stack, camera, video transmitter, battery and antennas. **Frame geometry, propeller size, and intended flying purpose are different choices.** Two frames may support the same nominal prop size but differ in camera visibility, mounting space, stiffness, and repair access.
 
+## Real frame examples side by side
+
+![GEPRC GEP-MK5X O3 symmetrical/squashed-X frame, manufacturer's product photo](https://geprc.com/wp-content/uploads/2022/11/GEP-MK5-O3-Frame-1-600x600.jpg)
+
+*Example X/squashed-X frame: GEPRC lists 225 mm wheelbase, 214 × 168 × 42 mm overall size and 5-inch prop compatibility. [Manufacturer source](https://geprc.com/product/gep-mk5x-o3-frame/).*
+
+![GEPRC GEP-MK5D O3 deadcat frame, manufacturer's product photo](https://geprc.com/wp-content/uploads/2023/01/7-2-1-600x600.jpg)
+
+*Example deadcat frame: GEPRC lists 230 mm wheelbase, 208 × 193 × 42 mm overall size and 5-inch prop compatibility. These photos illustrate specific SKUs; other frames with the same label can have different geometry and dimensions. [Manufacturer source](https://geprc.com/product/gep-mk5d-o3-frame/).*
+
 ## 1. Frame geometry categories
 
 | Geometry | What it means | Common reason to choose it | Trade-offs / checks |
