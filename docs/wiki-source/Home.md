@@ -15,11 +15,15 @@ Welcome to the buildFPV visual learning path. Start with the aircraft overview, 
 
 ## 🛠️ Drones, frames and build guides
 
+For a full-system budget and pre-purchase compatibility checklist, use the [FPV Build Budget and Buying Guide](https://github.com/luckyhegde6/buildFPV/wiki/FPV-Build-Budget-and-Buying-Guide) before ordering.
+
 Start with the [Drone Categories and Size Guide](https://github.com/luckyhegde6/buildFPV/wiki/Drone-Categories-and-Size-Guide). Dedicated class guides: [Tinywhoop / micro](https://github.com/luckyhegde6/buildFPV/wiki/Tinywhoop-and-Micro-FPV-Guide), [2.5-inch FPV](https://github.com/luckyhegde6/buildFPV/wiki/2-5-Inch-FPV-Guide), [3.5-inch cinewhoop](https://github.com/luckyhegde6/buildFPV/wiki/3-5-Inch-Cinewhoop-Guide), [5-inch racing vs freestyle](https://github.com/luckyhegde6/buildFPV/wiki/5-Inch-FPV-Racing-and-Freestyle), and [7-inch long-range](https://github.com/luckyhegde6/buildFPV/wiki/7-Inch-Long-Range-FPV-Guide). For frame geometry, compare [balanced X vs deadcat](https://github.com/luckyhegde6/buildFPV/wiki/Frame-Geometries-Balanced-X-vs-Deadcat) and use the dedicated assembly guides: [balanced X](https://github.com/luckyhegde6/buildFPV/wiki/Balanced-X-Frame-Assembly), [deadcat](https://github.com/luckyhegde6/buildFPV/wiki/Deadcat-Frame-Assembly), [2.5-inch micro](https://github.com/luckyhegde6/buildFPV/wiki/2-5-Inch-Frame-Guide), [3.5-inch cinewhoop](https://github.com/luckyhegde6/buildFPV/wiki/3-5-Inch-Cinewhoop-Frame-Assembly), [5-inch](https://github.com/luckyhegde6/buildFPV/wiki/5-Inch-Frame-Assembly) and [7-inch long-range](https://github.com/luckyhegde6/buildFPV/wiki/7-Inch-Long-Range-Frame-Assembly).
 
 For components, see [motors, propellers and battery compatibility](https://github.com/luckyhegde6/buildFPV/wiki/Motors-Propellers-and-Battery-Compatibility), the [LiPo/Li-ion charger and safety guide](https://github.com/luckyhegde6/buildFPV/wiki/FPV-Chargers-LiPo-and-Li-ion-Battery-Safety), and the [BNF/PNP/RTF/ARF/DIY glossary](https://github.com/luckyhegde6/buildFPV/wiki/BNF-PNP-RTF-ARF-and-DIY-Formats).
 
 ## 📺 Video and receiver integration
+
+Start with the [camera, VTX, VRX and goggles compatibility comparison](https://github.com/luckyhegde6/buildFPV/wiki/FPV-Cameras-VTX-VRX-Compatibility-Comparison), then use the [FPV Camera Selection Guide](https://github.com/luckyhegde6/buildFPV/wiki/FPV-Camera-Selection-Guide) to choose for tinywhoop, racing, freestyle, cinewhoop or long-range. Continue with [analog vs digital FPV cameras and video](https://github.com/luckyhegde6/buildFPV/wiki/Analog-vs-Digital-FPV-Camera-Video-Guide) and the [goggles and VRX integration guide](https://github.com/luckyhegde6/buildFPV/wiki/FPV-Goggles-and-VRX-Integration-Guide).
 
 Start with the model-level [FPV Cameras, VTX, VRX and Goggles Compatibility Comparison](https://github.com/luckyhegde6/buildFPV/wiki/FPV-Cameras-VTX-VRX-Compatibility-Comparison), then continue to [Analog vs Digital FPV Cameras and Video](https://github.com/luckyhegde6/buildFPV/wiki/Analog-vs-Digital-FPV-Camera-Video-Guide) for the underlying trade-offs.
 
