@@ -91,3 +91,6 @@ Do not charge damaged/swollen packs. Never short a battery, solder directly to a
 - [Betaflight setup guide](https://betaflight.com/docs/wiki/getting-started/setup-guide)
 
 *Reviewed 22 October 2026. Charger examples are not endorsements. Always follow the exact pack, charger and power-supply manuals.*
+
+
+For a worked nominal-Wh flight-time example and cycle-life logging sheet, see [Battery Flight-Time and Cycle-Life Planning](Battery-Flight-Time-and-Cycle-Life-Planning.md).
