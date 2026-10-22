@@ -4,8 +4,6 @@
 
 ![FPV quadcopter movement infographic showing yaw, pitch, roll, throttle, propeller rotation and lift](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-drone-movements-guide.webp)
 
-![FPV drone control-loop infographic covering sensors, flight controller, ESCs, radio link, FPV video link, antennas and component examples](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-drone-control-loop-guide.webp)
-
 These supplied overview graphics complement the step-by-step explanation below. Treat them as learning summaries; confirm motor order, CW/CCW layout, connector pinouts and firmware-specific behavior against the exact aircraft and official manuals.
 
 ![Real FPV racing quadcopter example](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/FPV_Quadrocopter.jpg/960px-FPV_Quadrocopter.jpg)
