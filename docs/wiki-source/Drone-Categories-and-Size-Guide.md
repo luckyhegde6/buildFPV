@@ -102,4 +102,3 @@ For component and video choices:
 - [BNF, PNP, ARF, RTF and DIY formats](BNF-PNP-RTF-ARF-and-DIY-Formats.md)
 - [Analog vs Digital FPV Cameras and Video](Analog-vs-Digital-FPV-Camera-Video-Guide.md)
 - [Goggles and VRX Integration](FPV-Goggles-and-VRX-Integration-Guide.md)
-
