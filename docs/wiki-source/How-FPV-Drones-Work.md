@@ -1,5 +1,13 @@
 # 🚁 How FPV Drones Work — From Sticks to Flight
 
+## Visual guides: movement, lift and control
+
+![FPV quadcopter movement infographic showing yaw, pitch, roll, throttle, propeller rotation and lift](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-drone-movements-guide.webp)
+
+![FPV drone control-loop infographic covering sensors, flight controller, ESCs, radio link, FPV video link, antennas and component examples](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-drone-control-loop-guide.webp)
+
+These supplied overview graphics complement the step-by-step explanation below. Treat them as learning summaries; confirm motor order, CW/CCW layout, connector pinouts and firmware-specific behavior against the exact aircraft and official manuals.
+
 ![Real FPV racing quadcopter example](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/FPV_Quadrocopter.jpg/960px-FPV_Quadrocopter.jpg)
 
 *Real-build photo: [FPV Quadrocopter on Wikimedia Commons](https://commons.wikimedia.org/wiki/File:FPV_Quadrocopter.jpg). Use it to identify the broad physical layout; it is not a wiring guide.*
