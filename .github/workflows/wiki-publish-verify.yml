@@ -12,12 +12,13 @@ permissions:
 
 concurrency:
   group: buildfpv-existing-wiki-publish
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   publish:
     name: Publish source pages to the existing Wiki
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - name: Check out the source repository
         uses: actions/checkout@v4
@@ -55,6 +56,8 @@ jobs:
       - name: Publish existing Wiki pages and assets
         env:
           WIKI_PUBLISH_TOKEN: ${{ secrets.WIKI_PUBLISH_TOKEN || secrets.GH_PERSONAL_ACCESS_TOKEN }}
+          GIT_TERMINAL_PROMPT: "0"
+        timeout-minutes: 12
         run: |
           bash scripts/publish-wiki.sh --yes
 
@@ -72,6 +75,7 @@ jobs:
     needs: [publish]
     if: always()
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - name: Check out verification script
         uses: actions/checkout@v4
