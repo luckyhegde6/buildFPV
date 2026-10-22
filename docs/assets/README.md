@@ -64,3 +64,16 @@ The frame assembly pages show source-linked product images so readers can compar
 - [iFlight AOS 7 V5 Frame Kit](https://shop.iflight.com/AOS-7-V5-Frame-Kit-Pro2311) — 313 mm wheelbase, 254 × 184 × 36 mm size, 8 mm arms and 325 g listed frame mass; inline photo hosted by FPV Store RC, credited in page caption.
 
 Use manufacturer dimensions for fit decisions and exact assembly drawings. Images are not dimensioned CAD, and retailer product photographs may show one edition or color only. Check terms/licensing when reusing photos outside the Wiki; attribution does not by itself grant reuse permission.
+
+
+## Product-frame photos used in the frame guides
+
+| Model / use | Source | Notes |
+|---|---|---|
+| BETAFPV Air75 tinywhoop | [BETAFPV official product page](https://betafpv.com/products/air75-brushless-whoop-quadcopter) | Product photos are illustrative; the page's wheelbase (75 mm) and 40 mm prop size are separate measurements |
+| GEPRC GEP-MK5X / MK5D | [GEPRC MK5X](https://geprc.com/product/gep-mk5x-o3-frame/) / [GEPRC MK5D](https://geprc.com/product/gep-mk5d-o3-frame/) | Official maker specs: X 225 mm and DeadCat 230 mm wheelbase, both nominal 5-inch prop frames |
+| Sub250 OasisFly25 | [Pyrodrone product listing](https://pyrodrone.com/collections/sub250-oasisfly25-frame-and-parts-collection/products/sub250-oasisfly25-2-5-inches-hd-freestyle-quadcopter-frame-kit) | Retailer listing used for 135 mm wheelbase and 2.5-inch prop specifications; confirm against the current kit/version |
+| BETAFPV Pavo35 frame | [BETAFPV official frame page](https://betafpv.com/products/pavo35-brushless-whoop-frame) | 148 mm wheelbase, 92 mm duct diameter and model-specific mount details |
+| iFlight AOS 7 V5 | [iFlight official frame page](https://shop.iflight.com/AOS-7-V5-Frame-Kit-Pro2311) | 313 mm wheelbase, 254 × 184 × 36 mm overall dimensions and 325 g listed frame weight |
+
+The source SVG dimensions are annotated for learning and comparison only. Manufacturer/retailer product photos and specs should be rechecked before purchase; a product image is not a mechanical drawing.
