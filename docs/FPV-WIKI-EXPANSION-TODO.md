@@ -451,7 +451,7 @@ The following are now implemented in the main repository and verified by refetch
 - [ ] Run `bash scripts/publish-wiki.sh` locally, inspect `git diff --cached`, type `PUBLISH`, and verify the commit/push to the separate Wiki repository.
 - [ ] Verify the live Home page, page slugs, sidebar, all internal links and all images after the Wiki push.
 
-**Publication is still pending:** the current session's GitHub Wiki API lookup returned 404 for `luckyhegde6/buildFPV.wiki`, and the local shell cannot resolve `github.com`. The source changes are committed to `buildFPV/main`; the user must run the publisher from a network-enabled local checkout to update the separate live Wiki.
+**Publication is still pending, but the Wiki is not assumed uninitialized:** the user confirmed that the live Wiki exists at https://github.com/luckyhegde6/buildFPV/wiki. The earlier 404 came from attempts to fetch the separate `.wiki.git` endpoint through the available connector and is not evidence that the Wiki does not exist. Source changes are committed to `buildFPV/main`; the actual publisher push and live rendering checks remain unverified because this runtime's local shell cannot resolve `github.com`.
 
 
 ### Third implementation update — video compatibility matrix (22 October 2026)
@@ -577,10 +577,24 @@ Current animation is a simple concept loop for rotor/thrust orientation, not a p
 - [x] Include ISDT UC2 (supported 1S/2S standard LiPo), ISDT 608AC (AC/DC 1–6S charger), ToolkitRC M7AC (portable AC/DC 1–6S charger) and ToolkitRC M6DAC (two-output charger).
 - [x] Link the manufacturer specifications and manuals, and distinguish charger-output ratings from AC input limits.
 - [x] Explain that dual-output “per channel” claims depend on input source and operating mode; do not infer simultaneous full power from the headline rating.
-- [ ] Initialize the separate GitHub Wiki by opening the repository's Wiki tab and creating/saving the first `Home` page; in this verification, the Wiki repository endpoint and raw `Home.md` both returned 404.
-- [ ] From a network-enabled local clone after Wiki initialization, run `bash scripts/test-wiki-link-rewrite.sh`, run `bash scripts/publish-wiki.sh`, review the staged diff and type `PUBLISH` only after review.
+- [x] Record the user's confirmation that the existing live Wiki is at https://github.com/luckyhegde6/buildFPV/wiki; do not attempt to initialize a second Wiki.
+- [ ] From a network-enabled local clone, run `bash scripts/test-wiki-link-rewrite.sh`, run `bash scripts/publish-wiki.sh`, review the staged diff and type `PUBLISH` only after review.
 - [ ] After the push, inspect the rendered table, its four manufacturer-source links, sidebar/slugs, and images/GIFs in the live Wiki.
 - [ ] Expand the list only after checking more current charger models, exact revisions/manuals and source-supported per-channel power allocation. Do not imply this representative set is a market-wide recommendation.
 - [ ] Keep India-specific prices and seller availability out of the table until checked for a stated date/region and exact bundle contents.
 
-**Publication status unchanged:** the source page and TODO are committed to `buildFPV/main`, but the separate Wiki repository is not yet initialized/available to fetch and live rendering has not been verified. This runtime also cannot resolve `github.com` from the local shell, so the network-enabled publishing steps must run elsewhere.
+**Publication status unchanged:** the source page and TODO are committed to `buildFPV/main`; the user confirms the live Wiki already exists at https://github.com/luckyhegde6/buildFPV/wiki. Live rendering and the publisher push have not been verified in this session. The `.wiki.git` fetch returned 404 through the connector, while the local shell cannot resolve `github.com`; neither result disproves the live Wiki's existence, so publishing checks must resume from the existing Wiki using a network-enabled checkout.
+
+
+---
+
+## 17. Existing live Wiki confirmed by user — 22 October 2026
+
+- [x] User confirmed the Wiki already exists at https://github.com/luckyhegde6/buildFPV/wiki.
+- [x] Correct the earlier inaccurate inference: a 404 from the connector's attempt to fetch `buildFPV.wiki.git` / raw `Home.md` is not proof the Wiki is uninitialized.
+- [ ] In a network-enabled checkout, fetch the existing Wiki remote, inspect its current Home/sidebar/pages and preserve any Wiki-only edits before publishing.
+- [ ] Run `bash scripts/test-wiki-link-rewrite.sh` and `bash scripts/publish-wiki.sh`; inspect the staged Wiki diff and type `PUBLISH` only after review.
+- [ ] Verify published pages, internal slugs, source-linked images and GIF rendering on the live Wiki.
+- [ ] Record the resulting Wiki commit and live verification results here after the push.
+
+**Current limitation:** the connector cannot fetch the Wiki routes through its repository fetch action, and this runtime's local shell reports `Could not resolve host: github.com`. Therefore the existence of the Wiki is accepted from the user's confirmation, but publishing and live page inspection remain unverified here.
