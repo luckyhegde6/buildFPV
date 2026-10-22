@@ -5,16 +5,7 @@ These image and diagram files are versioned as part of `luckyhegde6/buildFPV`. T
 ## Where each visual belongs
 
 | Visual | Best place to learn from it | What it explains |
-| `drone-class-overview.svg` | [Drone Categories and Size Guide](../wiki-source/Drone-Categories-and-Size-Guide.md) | Schematic selection overview; not to scale |
-| `balanced-x-vs-deadcat.svg` | [Frame Geometries — Balanced X vs Deadcat](../wiki-source/Frame-Geometries-Balanced-X-vs-Deadcat.md) | Conceptual frame top view and camera FOV; frame shapes vary |
-| `frame-size-reference.svg` | Frame assembly/class guides | Model-specific examples and dimensions; silhouettes are not to scale or drill templates |
-| `motor-prop-battery-compatibility.svg` | [Motors, Propellers and Battery Compatibility](../wiki-source/Motors-Propellers-and-Battery-Compatibility.md) | BLDC, prop and conventional LiPo voltage examples; no universal KV table |
-| `charger-balance-power.svg` | [Charger and Battery Safety](../wiki-source/FPV-Chargers-LiPo-and-Li-ion-Battery-Safety.md) | Main and balance leads; illustration only, not a pinout |
-| `analog-vs-digital-video.svg` | [Analog vs Digital FPV](../wiki-source/Analog-vs-Digital-FPV-Camera-Video-Guide.md) | Camera/VTX/VRX signal paths; cross-brand HD compatibility is not implied |
-| `goggles-vrx-integration.svg` | [Goggles and VRX Integration](../wiki-source/FPV-Goggles-and-VRX-Integration-Guide.md) | Compatibility categories; exact model/generation still has to be checked |
-| `propeller-thrust-loop.gif` | [Home / thrust explainer](../wiki-source/Home.md) | Four-frame concept animation; illustrates prop rotation and thrust, not actual motor order |
-|---|---|---|
-| `fpv-build-concept-ai.jpg` | [Learning guide](../LEARNING-GUIDE.md) and [system basics](../01-fpv-basics.md) | A broad visual orientation to a typical FPV quad; not a wiring reference |
+|---|---|---|| `fpv-build-concept-ai.jpg` | [Learning guide](../LEARNING-GUIDE.md) and [system basics](../01-fpv-basics.md) | A broad visual orientation to a typical FPV quad; not a wiring reference |
 | `flight-axes.svg` | [How an FPV quad works](../07-how-fpv-drones-work.md) | Throttle, roll, pitch and yaw |
 | `fpv-control-loop.svg` | [System basics](../01-fpv-basics.md) and [how a quad works](../07-how-fpv-drones-work.md) | Pilot input, sensor feedback, controller, ESCs and motors |
 | `pocket-control-map.svg` | [RadioMaster Pocket guide](../06-pocket-button-guide.md) | Physical radio controls; switch assignments remain configurable |
@@ -30,6 +21,14 @@ These image and diagram files are versioned as part of `luckyhegde6/buildFPV`. T
 | `fpv-part-camera.svg`, `fpv-part-vtx.svg`, `fpv-part-vrx-goggles.svg` | Drone Parts — One by One | Camera, aircraft video transmitter and ground receiver/goggles |
 | `fpv-part-antennas.svg` | Drone Parts — One by One | Linear, circular-polarized, directional and stubby antennas |
 | `fpv-part-gps.svg`, `fpv-part-buzzer-blackbox.svg` | Drone Parts — One by One | Optional GNSS, recovery beeper and flight logging |
+| `drone-class-overview.svg` | [Drone Categories and Size Guide](../wiki-source/Drone-Categories-and-Size-Guide.md) | Schematic selection overview; not to scale |
+| `balanced-x-vs-deadcat.svg` | [Frame Geometries — Balanced X vs Deadcat](../wiki-source/Frame-Geometries-Balanced-X-vs-Deadcat.md) | Conceptual frame top view and camera FOV; frame shapes vary |
+| `frame-size-reference.svg` | Class guides and frame assembly pages | Model-specific dimensions; silhouettes are not to scale or drill templates |
+| `motor-prop-battery-compatibility.svg` | [Motors, Propellers and Battery Compatibility](../wiki-source/Motors-Propellers-and-Battery-Compatibility.md) | BLDC, prop and conventional LiPo voltage examples; no universal KV table |
+| `charger-balance-power.svg` | [Charger and Battery Safety](../wiki-source/FPV-Chargers-LiPo-and-Li-ion-Battery-Safety.md) | Main and balance leads; illustration only, not a pinout |
+| `analog-vs-digital-video.svg` | [Analog vs Digital FPV](../wiki-source/Analog-vs-Digital-FPV-Camera-Video-Guide.md) | Camera/VTX/VRX signal paths; cross-brand HD compatibility is not implied |
+| `goggles-vrx-integration.svg` | [Goggles and VRX Integration](../wiki-source/FPV-Goggles-and-VRX-Integration-Guide.md) | Compatibility categories; exact model/generation must be checked |
+| `propeller-thrust-loop.gif` | [Home / thrust explainer](../wiki-source/Home.md) | Four-frame concept animation; illustrates prop rotation and thrust, not actual motor order |
 
 - `fpv-build-concept-ai.jpg` — project-created AI concept art for general orientation only. It is not a wiring schematic or a reliable pinout/motor-order reference.
 - `flight-axes.svg` — original explanatory diagram for throttle, roll, pitch and yaw. Use the installed firmware's motor map for actual motor numbering and direction.
@@ -37,14 +36,6 @@ These image and diagram files are versioned as part of `luckyhegde6/buildFPV`. T
 - `gps-data-chain.svg` — original conceptual GPS/GNSS-to-flight-controller data path. Confirm UARTs, power and pins against both exact manuals.
 - `pocket-control-map.svg` — original simplified RadioMaster Pocket control map. Switch functions are configurable in EdgeTX and can differ by radio/firmware version.
 - `pocket-gimbal-adjustment.png` — Pocket gimbal adjustment reference supplied by the project owner; see [RadioMaster's product page](https://radiomasterrc.com/products/pocket-radio-controller-m2) and [official manuals index](https://radiomasterrc.com/pages/user-manuals) for current information.
-
-| `drone-class-overview.svg` | [Drone Categories and Size Guide](../wiki-source/Drone-Categories-and-Size-Guide.md) | Schematic class overview; prop diameter and wheelbase deliberately described separately |
-| `frame-size-reference.svg` | class guides and frame assembly pages | Illustrative dimensions only; not to scale and not a drill/manufacturing template |
-| `balanced-x-vs-deadcat.svg` | [Frame geometry guide](../wiki-source/Frame-Geometries-Balanced-X-vs-Deadcat.md) | Top-view comparison and conceptual camera FOV; frame geometry varies by model |
-| `motor-prop-battery-compatibility.svg` | [Motor/prop/battery guide](../wiki-source/Motors-Propellers-and-Battery-Compatibility.md) | Motor anatomy, blade count and conventional LiPo voltage math; no universal KV prescription |
-| `charger-balance-power.svg` | [FPV charger guide](../wiki-source/FPV-Chargers-LiPo-and-Li-ion-Battery-Safety.md) | Main vs balance leads; illustrative 4S pack only; not a connector pinout |
-| `analog-vs-digital-video.svg` | [Analog vs digital video guide](../wiki-source/Analog-vs-Digital-FPV-Camera-Video-Guide.md) | Separate analog, digital and RC control signal paths; not all ecosystems cross-compatible |
-| `goggles-vrx-integration.svg` | [Goggles/VRX integration guide](../wiki-source/FPV-Goggles-and-VRX-Integration-Guide.md) | Compatibility categories and pre-purchase checklist; verify exact product generation |
 
 ## Reliability and attribution rules
 
