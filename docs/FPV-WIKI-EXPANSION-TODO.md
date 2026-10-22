@@ -616,3 +616,18 @@ Current animation is a simple concept loop for rotor/thrust orientation, not a p
 - [ ] Add regional price/availability snapshots only after current source/checkout verification for a specific date and region.
 
 **Research sources for this tranche:** [DJI O4 specs](https://www.dji.com/o4-air-unit/specs), [BETAFPV Air75](https://betafpv.com/products/air75-brushless-whoop-quadcopter), [Walksnail Avatar HD Pro Kit](https://www.caddxfpv.com/products/walksnail-avatar-hd-pro-kit), and [HDZero VTX specifications](https://docs.hd-zero.com/vtx-summary), all reviewed 22 October 2026.
+
+
+---
+
+## 19. Agent workflow and publish/verification handoff — 22 October 2026
+
+- [x] Add root `AGENTS.md` with repository-wide agent/contributor rules.
+- [x] Add `HANDOFF.md`, `MEMORY.md`, and append-oriented `SESSIONS.md`.
+- [x] Add `.agents/README.md`, separate Research Agent and Builder Agent role files, the research-to-build workflow, and research/session templates.
+- [x] Re-fetch the source tree through GitHub MCP and verify all requested root and `.agents/` files exist.
+- [ ] Publish pending Wiki-source updates to the **existing** live Wiki at https://github.com/luckyhegde6/buildFPV/wiki.
+- [ ] Use an authenticated Playwright/browser-capable tool to inspect the live Home/sidebar, updated charger and video matrix pages, internal links, SVGs and GIFs after publication.
+- [ ] Record publisher push and browser verification evidence separately in `HANDOFF.md` and `SESSIONS.md`.
+
+**Current tool gate:** GitHub repository MCP writes work for `buildFPV/main`, but its fetch action does not expose the Wiki Git remote/push. Plugin discovery did not expose a Playwright tool; TinyFish was found as a browser alternative and suggested, but is not connected in this session. Web fetch attempts for the Wiki routes were not usable for rendered-page verification. Do not label publication or Playwright checks successful until an authenticated browser and a write-capable Wiki Git path are actually available.
