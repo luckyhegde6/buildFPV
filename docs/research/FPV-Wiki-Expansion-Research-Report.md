@@ -249,3 +249,46 @@ These are source SVG diagrams. A completed animated GIF is **not** currently inc
 - [ToolkitRC official support/products](https://www.toolkitrc.com/)
 
 *Scope caveat:* this report is a working snapshot from selected official sources. It does not replace product manuals, battery datasheets, charger manuals, or local laws. The TODO tracks model-specific research, further source-checking and the remaining build/publish work.
+
+
+---
+
+## Addendum: frame-dimension photo references and later implementation pass (22 October 2026)
+
+### Model-specific dimensions now shown in the frame reference
+
+These figures were cross-checked against the manufacturer/model sources listed below; they are examples, not category-wide standards. The SVG uses schematic top views that are **not to scale** and should never be used as drill templates.
+
+| Class / actual product | Manufacturer-published values | What the guide can safely teach |
+|---|---|---|
+| 2.5-inch open micro — Sub250 OasisFly25 | Manufacturer listing: 135 mm wheelbase; HQ 2.5×2.5×3 props; 1404/4500KV motors on the shown build and a 4S 530–730mAh recommended battery. Exact SKU/package differs. | Wheelbase is its own model dimension. Use its frame drawing for plates, mounting holes and fasteners. |
+| 3.5-ish guarded cinewhoop — BETAFPV Pavo35 | Frame page: 148 mm wheelbase; 92 mm duct diameter; 3 mm top plate; 1.5 mm base plate; 2 mm gimbal plate; 113.9 g frame weight; 25.5×25.5 FC holes and 20×20 / 25.5×25.5 VTX mount options. Complete quad SKU lists D90S-3 (90 mm) propellers and a 6S battery configuration. | “3.5-inch cinewhoop” is product-class shorthand; this model uses a 90 mm prop and 92 mm duct. Do not flatten duct OD, prop diameter and wheelbase into one number. |
+| 5-inch symmetrical/squashed-X — GEPRC GEP-MK5X O3 frame | 225 mm wheelbase; 214×168×42 mm overall dimensions; 5-inch props; 2.5 mm top/bottom plates, 5 mm arms, 30.5×30.5 mm FC mounts, 141.9 g standard / 156.1 g Pro frame. | This is a specific 5-inch squashed-X example, not the dimensions of all 5-inch X frames. |
+| 5-inch deadcat — GEPRC GEP-MK5D O3 frame | 230 mm wheelbase; 208×193×42 mm dimensions; 5-inch props; 2.5 mm plates, 5 mm arms; 30.5×30.5 mm FC mounting; 168.0 g standard / 197.0 g Pro frame. | The deadcat and X versions differ in dimensions and mass; the camera-view objective is explicit in the manufacturer's text. |
+| 7-inch long-range — iFlight AOS 7 V5 frame kit | 313 mm wheelbase; 254×184×36 mm overall dimensions; 8 mm arms; 2 mm top and 2.5 mm bottom plates; 20×20 and 30×30 flight-stack mounting; 325 g listed frame mass. | A 7-inch propeller class can use a model-specific wheelbase much larger than generic internet estimates; use the exact drawing for fit. |
+
+Sources:
+- [Sub250 OasisFly25 product page](https://sub250.com/en-nl/collections/oasisfly-series/products/sub250-oasisfly25-hd-o3)
+- [BETAFPV Pavo35 frame](https://betafpv.com/products/pavo35-brushless-whoop-frame)
+- [BETAFPV Pavo35 quad](https://betafpv.com/products/pavo35-brushless-whoop-quadcopter)
+- [GEPRC GEP-MK5X O3 frame](https://geprc.com/product/gep-mk5x-o3-frame/)
+- [GEPRC GEP-MK5D O3 DeadCat frame](https://geprc.com/product/gep-mk5d-o3-frame/)
+- [iFlight AOS 7 V5 frame kit](https://shop.iflight.com/AOS-7-V5-Frame-Kit-Pro2311)
+
+### Real product photographs added in Markdown pages
+
+Source-linked product photos were added to the six major frame pages: GEPRC MK5X (balanced/squashed X and 5 inch), GEPRC MK5D deadcat, Sub250 OasisFly25, BETAFPV Pavo35, and iFlight AOS 7 V5. The source captions identify manufacturer specifications separately from retailer-hosted image files where applicable. The Wiki publishing script attempts to copy external images to the Wiki's local `images/` directory; verify the actual downloaded images during publication.
+
+### Additional pages and tutorials implemented
+
+- `Analog-Goggles-and-VRX-Integration.md` — analog receiver / module integration tutorial.
+- `DJI-O3-O4-Goggles-and-Air-Unit-Integration.md` — DJI air unit/goggles generation compatibility and setup.
+- `Walksnail-Avatar-Goggles-and-Air-Unit-Integration.md` — CADDXFPV/Walksnail model-specific integration path.
+- `HDZero-Goggles-and-VTX-Integration.md` — HDZero VTX and goggles/receiver integration.
+- `FPV-Assembly-Tools-and-Workshop-Guide.md` — mechanical tools, soldering/electrical tools, workshop safety, assembly and first-power checks.
+- `FPV-Troubleshooting-Quick-Guide.md` — symptoms and safe diagnostics.
+- `propeller-thrust-loop.gif` — first actual four-frame looping GIF committed under `docs/assets/`. It is conceptual rather than a specific motor configuration.
+
+### Important remaining work
+
+This implementation pass is not a substitute for the rest of the TODO. Still required: verify every internal Markdown link after the publisher rewrites relative `.md` targets, validate the SVGs/rendered images on the target Wiki, add further model-specific/price-snapshot matrices, finish extra battery chemistry/charger-source research, create additional video/antenna/camera/compatibility infographic variants, create further animated GIFs, and sync/push the separate GitHub Wiki. The source Home page now uses extensionless Wiki page URLs. The publisher script includes a step to rewrite internal links like `](Some-Page.md)` to `](Some-Page)` when the target page exists in the Wiki checkout.
