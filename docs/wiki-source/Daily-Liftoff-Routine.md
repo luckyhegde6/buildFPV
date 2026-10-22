@@ -2,6 +2,8 @@
 
 **Target:** build a durable habit, not chase the longest session. Choose the smallest duration you can honestly complete today. It is okay to choose 5 minutes.
 
+New to FPV? First complete the [mandatory beginner FPV playlist](https://www.youtube.com/playlist?list=PLwoDb7WF6c8lCKhQOTy-Vb9LfW0VAIrTP) in sequence while practising in Liftoff. This is project onboarding, not formal certification.
+
 ## 1. Daily check-in
 
 - Date: `YYYY-MM-DD`
