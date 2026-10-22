@@ -35,6 +35,16 @@ fi
 
 cd "$WIKI_DIR"
 
+# GitHub-hosted runners may not define a Git author identity. Preserve any
+# existing maintainer identity, and add a repository-local fallback only when
+# Git has no configured name/email (needed for automated Wiki commits).
+if ! git config user.name >/dev/null 2>&1; then
+  git config user.name "${BUILDFPV_WIKI_GIT_USER_NAME:-github-actions[bot]}"
+fi
+if ! git config user.email >/dev/null 2>&1; then
+  git config user.email "${BUILDFPV_WIKI_GIT_USER_EMAIL:-41898282+github-actions[bot]@users.noreply.github.com}"
+fi
+
 if ! git remote get-url origin >/dev/null 2>&1; then
   echo "Refusing to publish: Wiki clone has no 'origin' remote." >&2
   exit 1
