@@ -4,14 +4,14 @@ Welcome to the buildFPV visual learning path. Start with the aircraft overview, 
 
 ## 🧭 Recommended beginner path
 
-1. [FPV System Basics](FPV-System-Basics.md) — understand the control, flight-control, power and video paths.
-2. [How FPV Drones Work](How-FPV-Drones-Work.md) — learn lift, flight axes, motor rotation and feedback control.
-3. **[FPV Drone Parts — One by One](Drone-Parts-One-by-One.md)** — a visual lineup and detailed explanation of the frame, battery, motors, propellers, ESC, flight controller, receiver, camera, video system, antennas and optional GPS/accessories.
-4. [Hardware Gallery](Hardware-Gallery.md) — compare real build photos, boards, antennas and GPS modules.
-5. [RadioMaster Pocket Button Guide](RadioMaster-Pocket-Button-Guide.md) — identify controls and calibrate the radio.
-6. [Pocket ELRS and Liftoff](Pocket-ELRS-and-Liftoff.md) and [Simulator Training](Simulator-Training.md) — build control skills before a real flight.
-7. [Betaflight Basics](Betaflight-Basics.md), [ExpressLRS Basics](ExpressLRS-Basics.md), [Video Systems and Goggles](Video-Systems-and-Goggles.md), [Video Antennas](Video-Antennas-VTX-VRX.md), and [GPS and Flight Controllers](GPS-and-Flight-Controllers.md).
-8. [Bench Safety and Flight Readiness](Bench-Safety-and-Flight-Readiness.md), [Buying Parts in India](Buying-Parts-in-India.md) and [Troubleshooting](Troubleshooting.md).
+1. [FPV System Basics](FPV-System-Basics) — understand the control, flight-control, power and video paths.
+2. [How FPV Drones Work](How-FPV-Drones-Work) — learn lift, flight axes, motor rotation and feedback control.
+3. **[FPV Drone Parts — One by One](Drone-Parts-One-by-One)** — a visual lineup and detailed explanation of the frame, battery, motors, propellers, ESC, flight controller, receiver, camera, video system, antennas and optional GPS/accessories.
+4. [Hardware Gallery](Hardware-Gallery) — compare real build photos, boards, antennas and GPS modules.
+5. [RadioMaster Pocket Button Guide](RadioMaster-Pocket-Button-Guide) — identify controls and calibrate the radio.
+6. [Pocket ELRS and Liftoff](Pocket-ELRS-and-Liftoff) and [Simulator Training](Simulator-Training) — build control skills before a real flight.
+7. [Betaflight Basics](Betaflight-Basics), [ExpressLRS Basics](ExpressLRS-Basics), [Video Systems and Goggles](Video-Systems-and-Goggles), [Video Antennas](Video-Antennas-VTX-VRX), and [GPS and Flight Controllers](GPS-and-Flight-Controllers).
+8. [Bench Safety and Flight Readiness](Bench-Safety-and-Flight-Readiness), [Buying Parts in India](Buying-Parts-in-India) and [Troubleshooting](Troubleshooting).
 
 ## 🖼️ Visual learning path
 
@@ -37,7 +37,7 @@ Your radio sends commands, the flight controller reads sensor feedback and compu
 
 ### 4. Continue to the detailed parts lineup
 
-Open [FPV Drone Parts — One by One](Drone-Parts-One-by-One.md) next. It now has a dedicated lineup illustration and custom component diagrams for the frame, battery/power, motors/propellers, FC/ESC and AIO, sensor feedback, ELRS receiver, FPV video, antennas and optional GPS/accessories.
+Open [FPV Drone Parts — One by One](Drone-Parts-One-by-One) next. It now has a dedicated lineup illustration and custom component diagrams for the frame, battery/power, motors/propellers, FC/ESC and AIO, sensor feedback, ELRS receiver, FPV video, antennas and optional GPS/accessories.
 
 ## ✅ Always remember
 
@@ -46,4 +46,4 @@ Open [FPV Drone Parts — One by One](Drone-Parts-One-by-One.md) next. It now ha
 - Do not assume a radio bind verifies failsafe, motor direction, video or power wiring.
 - Check official documentation and current local airspace/radio rules before outdoor use.
 
-The page sources and reusable diagrams are maintained in the main `buildFPV` repository. The separate live Wiki needs to be synced using `scripts/publish-wiki.sh` after the initial Wiki page is saved.
+This is the live-Wiki learning path. Source Markdown and assets are maintained in the [buildFPV source repository](https://github.com/luckyhegde6/buildFPV); changes become visible here after the Wiki publishing workflow completes.
