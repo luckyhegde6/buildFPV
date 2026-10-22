@@ -160,3 +160,10 @@ This is a chronological, append-oriented engineering log. New work should append
 - **Embedding choice:** added clickable YouTube thumbnail images for individual videos and direct links for playlists. GitHub-flavored Markdown filters the raw iframe tag, so literal iframe snippets would not reliably embed within GitHub Wiki Markdown ([GFM spec](https://github.github.com/gfm/#disallowed-raw-html-extension)).
 - **QA:** re-fetched 20 files with GitHub MCP and checked each supplied playlist/video ID appears in its expected docs and Wiki-source resources. The new Wiki slug Drone-Coding-and-Machine-Learning is linked from Home and sidebar. This validates source presence, not live render.
 - **Publish state:** source docs are committed to main; the live Wiki has not been shown updated. Prior publish run 39797230235 failed because no WIKI_PUBLISH_TOKEN / GH_PERSONAL_ACCESS_TOKEN secret was supplied. Next action is follow the .agents/wiki-publishing-runbook.md, configure the repository Actions secret, then run the existing workflow and inspect a fresh browser artifact.
+
+
+## 2026-10-22 — Publication attempt for the new video curriculum
+
+- Updated .agents/PUBLISH_WIKI_NOW at commit b3d40fa53b4fb180768bca597a296896600dc30c to request publication of the new course links and coding/ML page to the existing Wiki.
+- Checked the GitHub Actions run inventory immediately afterwards; it still showed only runs 39797230235, 39796597578 and 39796268242. The marker commit did not start a new workflow run.
+- No live Wiki publication is claimed. The last completed publish attempt failed due to the missing Wiki-write Actions secret. The source repository changes and Wiki-source pages are committed; the existing workflow must be manually dispatched from GitHub Actions after the owner sets WIKI_PUBLISH_TOKEN or GH_PERSONAL_ACCESS_TOKEN.
