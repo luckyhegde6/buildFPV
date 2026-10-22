@@ -2,6 +2,10 @@
 
 ![5-inch frame shape and dimension reference](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/frame-size-reference.svg)
 
+![Manufacturer product photo of GEPRC GEP-MK5X O3 5-inch frame](https://geprc.com/wp-content/uploads/2022/11/GEP-MK5-O3-Frame-1-600x600.jpg)
+
+*Real product example: GEPRC GEP-MK5X O3, a 5-inch squashed-X design. Wheelbase 225 mm, overall dimensions 214 × 168 × 42 mm and 30.5 × 30.5 mm FC mounting according to the maker. [GEPRC frame specs](https://geprc.com/product/gep-mk5x-o3-frame/).*
+
 A nominal 5-inch propeller is 127 mm in diameter, but the frame wheelbase and motor geometry vary by model. Many 5-inch builds use open props and share parts across racing and freestyle, yet their priorities can differ substantially.
 
 ## 1. Racing vs freestyle frame priorities
