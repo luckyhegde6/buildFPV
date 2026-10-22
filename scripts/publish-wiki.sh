@@ -136,6 +136,20 @@ for page in "$WIKI_DIR"/*.md; do
       filename="$basename"
       if [[ -f "$ASSET_SOURCE/$filename" ]]; then
         cp "$ASSET_SOURCE/$filename" "$WIKI_DIR/images/$filename"
+      elif [[ -f "$ROOT/docs/assets/encoded-fpv-infographics/$filename.b64.01" ]]; then
+        encoded_dir="$ROOT/docs/assets/encoded-fpv-infographics"
+        temp_asset="$WIKI_DIR/images/$filename.tmp"
+        if ! cat "$encoded_dir/$filename.b64."* | base64 --decode > "$temp_asset"; then
+          rm -f "$temp_asset"
+          echo "Warning: encoded project asset could not be decoded: $filename" >&2
+          continue
+        fi
+        if [[ "$(head -c 4 "$temp_asset")" != "RIFF" ]] || [[ "$(dd if="$temp_asset" bs=1 skip=8 count=4 2>/dev/null)" != "WEBP" ]]; then
+          rm -f "$temp_asset"
+          echo "Warning: encoded asset is not a valid WebP: $filename" >&2
+          continue
+        fi
+        mv "$temp_asset" "$WIKI_DIR/images/$filename"
       else
         echo "Warning: project asset not found: $ASSET_SOURCE/$filename" >&2
         continue
