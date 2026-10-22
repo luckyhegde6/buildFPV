@@ -298,7 +298,7 @@ All custom visual assets should be editable/reproducible SVG where practical, re
 - [ ] Confirm the publisher commit and push to the separate `buildFPV.wiki.git` remote succeeds; do not treat a main-repo commit as Wiki publication.
 - [ ] Verify live page links, sidebar, all images, local asset links, anchors and page names in a browser.
 - [ ] Confirm the class selector and all class-specific pages show up in sidebar order.
-- [ ] Confirm `FPV-Cameras-VTX-VRX-Compatibility-Comparison` appears immediately after `Video Systems and Goggles`.
+- [x] Place `FPV-Cameras-VTX-VRX-Compatibility-Comparison` immediately after `Video Systems and Goggles` in the source sidebar; live rendering is pending publication.
 - [ ] Open the new video matrix on desktop and mobile; check that tables and diagrams remain legible.
 - [ ] Update this TODO's status/date after each release; leave unresolved items unchecked and write a brief blocker note rather than marking incomplete tasks done.
 
@@ -441,7 +441,7 @@ The following are now implemented in the main repository and verified by refetch
 ### Remaining work / publication blocker
 
 - [ ] Create remaining detailed per-class buying comparisons with multiple exact current model SKUs, full takeoff weights and model-specific prop/motor/battery test tables.
-- [ ] Create the separate `FPV-Cameras-VTX-VRX-Compatibility-Comparison.md` matrix with model-by-model camera/air-unit/VTX/VRX specs, recording modes and firmware matrices (the broader analog-vs-digital guide exists, but the full model matrix remains open).
+- [x] Create `docs/wiki-source/FPV-Cameras-VTX-VRX-Compatibility-Comparison.md` with model-level examples and a compatibility checklist. [ ] Expand it into the full per-SKU firmware/recording/price snapshot matrix.
 - [ ] Add further product-verified small-micro / 2.5-inch / 3.5-inch / 5-inch / 7-inch model examples and compare actual full-kit weights and payload limits.
 - [ ] Finish camera choice guides split by tinywhoop, racing, freestyle, cinewhoop and long-range; include confirmed live-view vs onboard recording specs per model.
 - [ ] Add charger model-by-model matrix from exact charger manuals, including per-channel watt allocation and supported chemistry/cell count.
@@ -493,3 +493,11 @@ The following broad class/flight-purpose pages have now been created separately 
 - [ ] Finish price-stamped India buying/BOM guides with explicit date/currency/region and full kit cost.
 - [ ] Validate all external product photo downloads/URLs and image reuse terms. The source caption attribution is not a blanket licence for unrelated reuse.
 - [ ] Add further small animations/tutorials only as real generated files, then verify the GIF frames and Wiki rendering.
+
+
+### Model-level camera/VTX/VRX compatibility comparison — added
+
+- [x] Create `docs/wiki-source/FPV-Cameras-VTX-VRX-Compatibility-Comparison.md`.
+- [x] Link this page directly after `Video Systems and Goggles` in `_Sidebar.md`.
+- [x] Link the comparison from Home and keep analog-vs-digital as the companion conceptual guide.
+- [ ] Expand the starter model examples into a complete exact-SKU table for camera module, VTX/air unit, receiver/goggles generation, firmware, live-view modes, onboard recording, weight, input-voltage range, current/heat and price checked date.
