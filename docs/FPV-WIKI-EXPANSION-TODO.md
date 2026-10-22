@@ -199,15 +199,15 @@ All custom visual assets should be editable/reproducible SVG where practical, re
 - [x] Create `docs/assets/drone-class-overview.svg`: size/class comparison from tinywhoop to 7-inch; label prop diameter and wheelbase as separate values/fields.
 - [x] Create `docs/assets/whoop-vs-toothpick-vs-cinewhoop.svg`: open props vs protective ducts/guards vs open-prop micro, showing typical frame form without implying a universal layout.
 - [x] Create `docs/assets/frame-prop-size-comparison.svg`: relative-size silhouette for 2.5, 3.5, 5 and 7-inch propellers; clear scale disclaimer if icons are schematic.
-- [ ] Create `docs/assets/drone-class-decision-tree.svg`: choose by indoor, outdoor, filming, racing, long range, budget and experience.
-- [ ] Create `docs/assets/bnf-pnp-rtf-arf-comparison.svg`: included/excluded package gear (radio, goggles, batteries, receiver, charger); footnote manufacturer package variation.
+- [x] Create `docs/assets/drone-class-decision-tree.svg`: choose by indoor, outdoor, filming, racing, long range, budget and experience.
+- [x] Create `docs/assets/bnf-pnp-rtf-arf-comparison.svg`: package format tendencies with an exact-SKU inclusion caveat.
 - [x] Create a small reusable frame anatomy diagram (arm, centre plate, motor mount, FC/ESC mounts, camera cage, battery strap areas).
 - [x] Create one dedicated hero/overview infographic for each class page: Tinywhoop, 2.5-inch, 3.5-inch Cinewhoop, 5-inch Racing/Freestyle and 7-inch Long Range.
 - [ ] Create a 2.5/3.5 cinewhoop comparison diagram that highlights guard/duct volume, camera mounting and action camera payload impact.
-- [ ] Create `docs/assets/video-system-ecosystem-matrix.svg`: Analog, DJI O3/O4, Walksnail Avatar, HDZero and any supported micro-digital option; match air-side and goggles-side by ecosystem/generation.
+- [x] Create `docs/assets/video-system-ecosystem-matrix.svg`: analog, DJI O3/O4, Walksnail Avatar and HDZero overview; exact compatibility matrix work remains.
 - [x] Create `docs/assets/fpv-video-link-separation.svg`: independent control vs video vs power paths.
-- [ ] Create `docs/assets/fpv-camera-sensor-and-recording.svg`: camera → live feed vs onboard recording, distinguishing analog/HD feed and recorded footage.
-- [ ] Create `docs/assets/vtx-vrx-compatibility-check.svg`: checklist for generation, goggles/VRX, antenna/polarization, band, connector, power, firmware.
+- [x] Create `docs/assets/fpv-camera-sensor-and-recording.svg`: live feed vs onboard recording vs goggles DVR.
+- [x] Create `docs/assets/vtx-vrx-compatibility-check.svg`: VTX/VRX compatibility checklist.
 - [ ] Create frame-fit drawings for 20×20/25.5×25.5/30.5×30.5 mm mounting patterns only if measurements are verified from the relevant official spec; label the units.
 - [x] Add every new asset to `docs/assets/README.md`, with owning Wiki page, purpose, source/provenance, and accuracy limitations.
 - [ ] Check all SVGs for valid XML, clipping/text overflow, contrast, alt text and legibility on mobile. Inspect the rendered outputs, not just source text.
@@ -350,7 +350,7 @@ This status was updated after the first source implementation batch. A checkbox 
 
 - [x] Update `_Sidebar.md`, `docs/assets/README.md` and source cross-links. [ ] Verify the rendered navigation after Wiki publication.
 - [x] Create `docs/research/FPV-Wiki-Expansion-Research-Report.md`; continue adding exact current specs as further model pages are implemented.
-- [ ] Add dedicated guides for analog VRX module install, DJI O3/O4 integration, Walksnail integration, HDZero integration, camera selection by use case, and system-specific troubleshooting.
+- [x] Add dedicated guides for analog VRX module integration, DJI O3/O4, Walksnail Avatar, HDZero, camera selection by use case and general troubleshooting. [ ] Add system-specific failure trees and complete exact firmware/version verification.
 - [ ] Add fuller Tinywhoop, 2.5-inch, 3.5-inch cinewhoop, 5-inch and 7-inch class pages with actual manufacturer model comparisons and exact current revisions.
 - [ ] Create verified BNF/PNP/RTF included-item matrix from current individual listings.
 - [ ] Add remaining frame anatomy, frame mounting-pattern references, propeller type, LiPo-vs-Li-ion, video ecosystem comparison and decision-tree infographics.
@@ -533,3 +533,14 @@ Current animation is a simple concept loop for rotor/thrust orientation, not a p
 - [ ] Run publisher against a real local checkout and inspect the generated staged Wiki diff. The remote cannot be cloned from this environment because outbound GitHub DNS/network access is unavailable here; don't claim live publication.
 - [ ] Once locally pushed, verify Home and sidebar links and all linked photos/SVG/GIFs from the live Wiki in a browser.
 - [ ] Continue browser/mobile rendering inspection, additional short GIFs, and model-by-model compatibility/product matrix research.
+
+
+### Sixth implementation update — additional visual tutorials (22 October 2026)
+
+- [x] Create and insert a mission-based class selector visual at the top of `Drone-Categories-and-Size-Guide.md`.
+- [x] Create and insert a BNF/PNP/ARF/RTF/DIY package-format visual at the top of the format glossary.
+- [x] Create and insert a live-feed vs onboard-recording vs goggles-DVR visual in the analog/digital guide.
+- [x] Create and insert a video ecosystem comparison and pre-buy compatibility checklist at the top of the model-level camera/VTX/VRX comparison.
+- [x] Register the new visuals in `docs/assets/README.md`.
+- [ ] Review all visual assets after Wiki conversion to local `images/`, including text legibility on mobile and image-host download success.
+- [ ] Complete the deeper exact-SKU matrix of camera sensor/lens/FOV, live feed modes, onboard recording, goggles/VRX generation, firmware compatibility, power and date-stamped prices; avoid an unsupported product ranking.
