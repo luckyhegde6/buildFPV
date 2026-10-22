@@ -1,6 +1,6 @@
 # Assets and attribution
 
-These image and diagram files are versioned as part of `luckyhegde6/buildFPV`. The maintained learning pages in `docs/` reference them with relative Markdown image paths, so GitHub renders them inline from the same commit. No separate Wiki repository is required.
+These image and diagram files are versioned in the source repository `luckyhegde6/buildFPV` under `docs/assets/`. The canonical Markdown pages are in `docs/wiki-source/`. The live GitHub Wiki is a separate repository: run `scripts/publish-wiki.sh` to copy the pages and assets into it, rewrite image links to the Wiki's local `images/` directory, and convert internal `.md` links to extensionless Wiki page slugs.
 
 ## Where each visual belongs
 
@@ -57,7 +57,7 @@ The custom SVGs above were created for the [Drone Parts — One by One guide](..
 
 ## New FPV class and integration guides (22 October 2026)
 
-The diagrams added in this tranche are original explanatory SVGs intended to render crisply in the Wiki. The frame-size artwork uses clearly labelled illustrative ranges; it must not be used to drill a frame, select screw length, or infer mounting/flight-control layouts. Use exact manufacturer drawings and manuals for those tasks. No short GIF has been marked complete unless an actual animation file is present in the repository; GIF creation and review remain tracked in the master TODO.
+The diagrams added in this tranche are original explanatory SVGs intended to render crisply in the Wiki. The frame-size artwork uses real named-product dimensions where cited, but its silhouettes are still schematic and not to scale; it must not be used to drill a frame, select screw length, or infer mounting/flight-control layouts. Use exact manufacturer drawings and manuals for those tasks. Two concept GIFs are present in the source repo; their appearance and localization into the separate Wiki must still be verified after publication.
 
 
 ## Real product photos used by frame guides
