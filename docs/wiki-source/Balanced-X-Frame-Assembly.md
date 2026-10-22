@@ -2,9 +2,9 @@
 
 ![Balanced X frame geometry and dimension reference](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/balanced-x-vs-deadcat.svg)
 
-![Manufacturer product photo of GEPRC GEP-MK5X O3 frame](https://geprc.com/wp-content/uploads/2022/11/GEP-MK5-O3-Frame-1-600x600.jpg)
+![Manufacturer product photo of the Axisflying MANTA 5 True-X frame](https://www.team-blacksheep.com/img/gallery/Axisflying_MANTA5_5inch_TX-0.jpg)
 
-*Real product example: GEPRC GEP-MK5X O3. Manufacturer lists a 225 mm wheelbase, 214 × 168 × 42 mm overall dimensions, 5-inch prop compatibility, and 30.5 × 30.5 mm FC mounts. [GEPRC specification](https://geprc.com/product/gep-mk5x-o3-frame/).*
+*Real product example: Axisflying MANTA 5 True X. Team BlackSheep lists a 238 mm wheelbase, 133 g frame weight, T700 carbon construction and max 5.1-inch props. The frame has True-X and Squashed-X versions, so verify the selected variant. [Manufacturer listing](https://www.team-blacksheep.com/products/product%3A7703).
 
 A symmetrical or “balanced X” frame places the four motor positions in a symmetric X arrangement around the centre. It is a widely used general-purpose geometry for freestyle and racing builds. This page explains the layout and assembly sequence, not a universal drilling template.
 
