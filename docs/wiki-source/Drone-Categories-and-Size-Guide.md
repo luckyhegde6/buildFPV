@@ -6,6 +6,10 @@
 
 ![Decision tree for choosing an FPV drone class by mission](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/drone-class-decision-tree.svg)
 
+![Visual comparison of tinywhoop, open-prop toothpick micro and cinewhoop](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/whoop-vs-toothpick-vs-cinewhoop.svg)
+
+![Nominal propeller diameters shown to a common scale](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/frame-prop-size-comparison.svg)
+
 > **Important terminology:** Propeller size, frame wheelbase, prop guards, flight purpose and package format describe different things. A “3.5-inch cinewhoop” is a common shorthand, not a guarantee of exact dimensions or camera payload. Check the actual product sheet.
 
 ## 1. First separate the five labels
