@@ -46,6 +46,11 @@ The radio sends pilot commands, the flight controller compares requested and mea
 - [Video, antennas and range](08-video-antennas-and-range.md) — camera-to-goggles signal path and antenna trade-offs.
 - [GPS and flight-controller examples](09-gps-and-flight-controller-examples.md) — GNSS data flow, UARTs, AIO vs stack and GPS Rescue caveats.
 
+## Optional learning extensions
+
+- [Drone Coding and Machine Learning](drone-coding-and-ml.md) — optional advanced work after simulator and system basics.
+- [India outdoor flying rules and video resources](wiki-source/India-Outdoor-Flying-Rules.md) — treat videos as supplementary and verify all current requirements through official DGCA / Ministry of Civil Aviation sources and Digital Sky.
+
 ## Practice cadence
 
 At the end of a session, write down:
