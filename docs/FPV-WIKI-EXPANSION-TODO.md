@@ -519,3 +519,17 @@ The following broad class/flight-purpose pages have now been created separately 
 - [ ] Final browser-render check after the file is copied into the separate Wiki's `images/` folder. Source validation does not prove the separate Wiki has published it.
 
 Current animation is a simple concept loop for rotor/thrust orientation, not a precise rotor-speed simulation or motor-order diagram.
+
+
+### Fifth implementation update — frame geometry, integrations, assets and link validation (22 October 2026)
+
+- [x] Add dedicated integration tutorials: `Analog-Goggles-and-VRX-Integration.md`, `DJI-O3-O4-Goggles-and-Air-Unit-Integration.md`, `Walksnail-Avatar-Goggles-and-Air-Unit-Integration.md`, and `HDZero-Goggles-and-VTX-Integration.md`.
+- [x] Add `FPV-Assembly-Tools-and-Workshop-Guide.md` for mechanical tools, soldering/electrical tools, workshop safety and first-power flow.
+- [x] Add `lipo-vs-li-ion.svg` and place it at the top of the charger/battery safety guide.
+- [x] Add second concept animation `balanced-x-deadcat-compare.gif` and link it from frame geometry and Home.
+- [x] Add source-linked product photos and specific model dimensions to the dedicated balanced-X, deadcat, 2.5-inch, 3.5-inch cinewhoop, 5-inch and 7-inch guides. Model examples include Sub250 OasisFly25, BETAFPV Pavo35, GEPRC MK5X/MK5D and iFlight AOS 7 V5.
+- [x] Correct/verify the Wiki link rewrite regex in `scripts/publish-wiki.sh`: test cases confirm it rewrites `Page.md`, `./Page.md`, and `Page.md#anchor` to extensionless Wiki slugs and leaves external URLs unchanged.
+- [x] Home's beginner-path and new guide links use direct extensionless `https://github.com/luckyhegde6/buildFPV/wiki/Page-Name` URLs, not source-file URLs.
+- [ ] Run publisher against a real local checkout and inspect the generated staged Wiki diff. The remote cannot be cloned from this environment because outbound GitHub DNS/network access is unavailable here; don't claim live publication.
+- [ ] Once locally pushed, verify Home and sidebar links and all linked photos/SVG/GIFs from the live Wiki in a browser.
+- [ ] Continue browser/mobile rendering inspection, additional short GIFs, and model-by-model compatibility/product matrix research.
