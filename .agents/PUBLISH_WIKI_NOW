@@ -32,3 +32,5 @@ Retry 10: run against the latest EOF-normalization and single-sed-per-page link-
 Retry 11: the prior publisher has been cancelled and only its stale Playwright install is running. Run the latest optimized publisher in the final concurrency group, and skip live verification when publish was cancelled. Confirm actual push and live Wiki content.
 
 Retry 12: commit 6a7e6d8 adds a repository-local fallback Git author identity for Actions. Re-run the optimized publisher, and verify that the Wiki Git push succeeds and the live browser checks pass.
+
+Retry 13: repository owner reports WIKI_PUBLISH_TOKEN was replaced with a classic PAT. Re-run the current optimized publisher against latest main; verify the Wiki Git push and live Playwright report, and record the observed result.
