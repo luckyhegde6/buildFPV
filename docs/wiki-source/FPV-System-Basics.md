@@ -10,6 +10,15 @@ FPV means first-person view: an onboard camera transmits live video to compatibl
 
 ![Separate control, video and power paths in an FPV quad](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-video-link-separation.svg)
 
+## 🎛️ Drone systems and controls — video resources
+
+[![Watch the supplied drone systems and controls video](https://img.youtube.com/vi/sxaEaXcuQA4/hqdefault.jpg)](https://www.youtube.com/watch?v=sxaEaXcuQA4)
+
+- [Drone systems and controls playlist](https://www.youtube.com/playlist?list=PLgMDNELGJ1CYU7vfun-Q7HXsldD-RsocG)
+- [Single video: drone systems and controls](https://www.youtube.com/watch?v=sxaEaXcuQA4)
+
+Use these as guided explanations alongside the diagrams and official manuals. I could not reliably confirm the playlist/video titles from public page metadata, so the links are grouped by the topic supplied with them rather than making claims about their exact syllabus.
+
 ## The control path
 
 ![Simplified FPV flight-control feedback loop](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-control-loop.svg)
