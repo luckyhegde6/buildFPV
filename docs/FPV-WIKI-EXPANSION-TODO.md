@@ -610,6 +610,7 @@ Current animation is a simple concept loop for rotor/thrust orientation, not a p
 - [x] Include published sensor/FOV and recording modes when listed, live-view/latency claim with test-condition caveats, input voltage, weight/mount/power/thermal notes, and ground-side ecosystem.
 - [x] Preserve model-generation distinctions and explain that the control receiver is not the video receiver.
 - [x] Flag the Walksnail kit page's inconsistent combined-vs-component weight claims instead of silently choosing a number.
+- [x] Re-fetch the committed matrix through GitHub MCP and perform a source-level structure check: all eight Markdown table lines use the expected five columns across six model rows, and the page introduces no stale local `.md` links.
 - [ ] Continue with more camera and VTX SKUs, exact goggles/receiver + firmware pairings, and additional maker manuals. Do not create cross-brand compatibility assumptions.
 - [ ] Verify the new table's layout and source links on the existing live Wiki after a reviewed publish.
 - [ ] Add regional price/availability snapshots only after current source/checkout verification for a specific date and region.
