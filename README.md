@@ -123,6 +123,8 @@ Use the repository's shared maintenance workflow before editing source pages, do
 - [`MEMORY.md`](MEMORY.md) — durable project knowledge and editorial/safety constraints.
 - [`SESSIONS.md`](SESSIONS.md) — dated decisions, implementation flows, commits and validation results.
 - [`.agents/`](.agents/README.md) — Research Agent / Builder Agent roles, handoff workflow and templates.
+
+- [Publish and verify the existing Wiki](https://github.com/luckyhegde6/buildFPV/actions/workflows/wiki-publish-verify.yml) — remote headless Playwright workflow; use **Run workflow** on `main` if the marker push did not launch it. Requires the `WIKI_PUBLISH_TOKEN` or `GH_PERSONAL_ACCESS_TOKEN` repository secret with Wiki Git write access.
 - [FPV Wiki expansion TODO](docs/FPV-WIKI-EXPANSION-TODO.md) — implementation backlog and explicit publication/verification gates.
 
 The [Research → Build → Verify workflow](.agents/workflows/research-to-build.md) separates source evidence, implementation, independent QA, source-repository commits and live-Wiki publication. A main-repository commit does not mean the separate Wiki has been published.
