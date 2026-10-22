@@ -4,7 +4,7 @@ Links checked on **17 October 2026**. Projects, product revisions, store listing
 
 ## 🎮 Learning to fly and FPV fundamentals
 
-- [Joshua Bardwell — FPV beginner guide playlist](https://youtube.com/playlist?list=PLwoDb7WF6c8lCKhQOTy-Vb9LfW0VAIrTP)
+- [Learn to fly an FPV drone (for total beginners) — playlist](https://youtube.com/playlist?list=PLwoDb7WF6c8lCKhQOTy-Vb9LfW0VAIrTP)
 - [Liftoff FPV simulator](https://store.steampowered.com/app/410340/Liftoff_FPV_Drone_Racing/)
 - [Learning log template](https://github.com/luckyhegde6/buildFPV/blob/main/docs/learning-log/templates/daily-session.md)
 
