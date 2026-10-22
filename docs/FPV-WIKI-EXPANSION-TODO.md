@@ -452,3 +452,12 @@ The following are now implemented in the main repository and verified by refetch
 - [ ] Verify the live Home page, page slugs, sidebar, all internal links and all images after the Wiki push.
 
 **Publication is still pending:** the current session's GitHub Wiki API lookup returned 404 for `luckyhegde6/buildFPV.wiki`, and the local shell cannot resolve `github.com`. The source changes are committed to `buildFPV/main`; the user must run the publisher from a network-enabled local checkout to update the separate live Wiki.
+
+
+### Third implementation update — video compatibility matrix (22 October 2026)
+
+- [x] Add `docs/wiki-source/FPV-Cameras-VTX-VRX-Compatibility-Comparison.md` with product-specific examples for BETAFPV Air75 analog, standard DJI O4 vs O4 Pro, selected HDZero VTX models and Walksnail/Avatar documentation.
+- [x] Put the comparison page immediately after `Video Systems and Goggles` in `_Sidebar.md`.
+- [x] Add a cross-link from `Video-Systems-and-Goggles.md` to the model-by-model comparison.
+
+Remaining: the new comparison gives selected examples and official model docs, but a complete camera sensor / low-light / latency / recording table across every supported model remains open until each current SKU's data is checked. Do not mark cross-brand goggles support or latency rankings as settled without exact model/firmware/test conditions.
