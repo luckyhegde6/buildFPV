@@ -563,3 +563,7 @@ Current animation is a simple concept loop for rotor/thrust orientation, not a p
 - [x] Verify expected class, frame assembly, motor/prop/battery, charger, camera/video ecosystem, goggles/VRX, troubleshooting and battery-planning pages exist in source.
 - [x] Run the link rewrite regression pattern with Bash/sed: standard relative links, `./Page.md`, anchors and an external URL; output matched expected extensionless Wiki links.
 - [ ] Run the actual publisher against the real Wiki checkout and verify the remote push. Container networking could not resolve github.com, and the GitHub contents API cannot read the separate `.wiki.git` repository in this session; publishing remains unverified.
+
+
+- [x] Validate the remaining native Wiki `[[Page Name]]` sidebar links by normalizing spaces to GitHub Wiki slugs: all 27 map to existing source pages.
+- [x] Cross-check the 132 completed-checkbox lines that name a `docs/assets/` or `docs/wiki-source/` path against the repository tree: no missing path is marked complete.
