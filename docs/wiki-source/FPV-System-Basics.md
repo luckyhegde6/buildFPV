@@ -1,5 +1,7 @@
 # FPV System Basics
 
+For choosing an aircraft style, see [Drone Categories and Size Guide](Drone-Categories-and-Size-Guide.md). For hardware/video trade-offs, see [Analog vs Digital FPV Video](Analog-vs-Digital-FPV-Camera-Video-Guide.md) and [Goggles/VRX Integration](FPV-Goggles-and-VRX-Integration-Guide.md).
+
 ![Real FPV quadcopter example](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/FPV_Quadrocopter.jpg/960px-FPV_Quadrocopter.jpg)
 
 *Real-build photo: [FPV Quadrocopter on Wikimedia Commons](https://commons.wikimedia.org/wiki/File:FPV_Quadrocopter.jpg). This is an overview photo, not a wiring diagram.*
