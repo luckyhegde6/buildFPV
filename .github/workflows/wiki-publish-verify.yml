@@ -57,6 +57,7 @@ jobs:
         env:
           WIKI_PUBLISH_TOKEN: ${{ secrets.WIKI_PUBLISH_TOKEN || secrets.GH_PERSONAL_ACCESS_TOKEN }}
           GIT_TERMINAL_PROMPT: "0"
+          BUILDFPV_SKIP_EXTERNAL_IMAGE_DOWNLOADS: "1"
         timeout-minutes: 12
         run: |
           bash scripts/publish-wiki.sh --yes
