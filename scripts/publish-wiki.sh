@@ -158,21 +158,19 @@ for page in "$WIKI_DIR"/*.md; do
   done < <(grep -Eo '!\[[^]]*\]\(https?://[^)]*\)' "$page" | sed -E 's/^!\[[^]]*\]\((https?:\/\/[^)]*)\)$/\1/' | sort -u)
 done
 
-# Internal Wiki pages must link to page slugs, not source Markdown filenames.
-# The Wiki keeps pages in the repository root; "Page.md" is a file name, not the
-# public Wiki route. Rewrite links only when that target page exists in this Wiki.
+# Internal Wiki links point to page slugs, not the source Markdown filenames.
+# GitHub Wiki's public routes omit the ".md" suffix. Preserve optional anchors and
+# do not change external URLs or source-code paths.
 for page in "$WIKI_DIR"/*.md; do
   [[ -f "$page" ]] || continue
   while IFS= read -r target_page; do
     [[ -n "$target_page" ]] || continue
     [[ "$target_page" == "README.md" ]] && continue
     target_slug="${target_page%.md}"
+    escaped_page="${target_page//./\\.}"
     temp_page="$page.tmp"
     while IFS= read -r line || [[ -n "$line" ]]; do
-      line="${line//]($target_page)/]($target_slug)}"
-      line="${line//]($target_page#/]($target_slug#}"
-      line="${line//](./$target_page)/]($target_slug)}"
-      line="${line//](./$target_page#/]($target_slug#}"
+      line="$(printf '%s\\n' "$line" | sed -E "s|\\]\\((\\./)?${escaped_page}(#[^)]*)?\\)|](${target_slug}\\2)|g")"
       printf '%s\\n' "$line"
     done < "$page" > "$temp_page"
     mv "$temp_page" "$page"
