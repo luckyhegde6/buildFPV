@@ -137,3 +137,14 @@ This is a chronological, append-oriented engineering log. New work should append
 - **Observed result:** re-read the GitHub Actions run inventory after the commit; it still contained only runs `39796268242`, `39796597578`, and `39797230235`. The latest marker did not produce a visible new run. Do not claim the post-run code changes have been exercised.
 - **Current gate:** the repository owner needs to add `WIKI_PUBLISH_TOKEN` or `GH_PERSONAL_ACCESS_TOKEN` with existing Wiki Git write access in Settings → Secrets and variables → Actions, then manually run the workflow from GitHub Actions UI on `main`. The connected MCP exposes no workflow dispatch action and no secret-setting action.
 - **Current truth:** no Wiki push occurred. Latest completed run 39797230235 shows successful regression test, missing secret failure, failed live Playwright checks, and artifact 12434310973 with the report/screenshots.
+
+
+## 2026-10-22 — Wiki token and publishing runbook added
+
+- **Request:** document PAT generation for the Wiki Git remote and the repeatable script/publishing process inside `.agents/`.
+- **Created:** [`.agents/wiki-publishing-runbook.md`](.agents/wiki-publishing-runbook.md).
+- **Coverage:** distinguishes PAT value from the Actions secret name; documents preferred `WIKI_PUBLISH_TOKEN` and accepted fallback `GH_PERSONAL_ACCESS_TOKEN`; explains fine-grained PAT first where supported and classic PAT fallback for the Wiki Git remote; gives UI and GitHub CLI secret configuration steps; documents local regression test, safe interactive publishing and diff review, GitHub Actions manual dispatch, headless Playwright artifact review, failure recovery, and token rotation/revocation.
+- **Navigation:** linked from `.agents/README.md`, `.agents/builder-agent.md`, and `.agents/workflows/research-to-build.md`; added to `HANDOFF.md`.
+- **Security posture:** no token value was created, requested, stored, or committed. The runbook instructs the repo owner to save it as an encrypted repository Actions secret and never disclose it in chat/logs or source files.
+- **Evidence sources:** current official GitHub docs for [personal access tokens](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens), [Actions secrets](https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets), and [gh secret set](https://cli.github.com/manual/gh_secret_set).
+- **Existing publish status unchanged:** run `39797230235` remains the last completed evidence: link test passed, publish failed due to missing secret, Playwright ran and failed against stale/redirecting live pages. The runbook does not claim that publication is complete.
