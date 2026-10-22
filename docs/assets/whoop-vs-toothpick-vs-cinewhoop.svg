@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="780" viewBox="0 0 1400 780" role="img" aria-labelledby="title desc">
+<title id="title">Tinywhoop versus toothpick versus cinewhoop frame styles</title>
+<desc id="desc">Three schematic top views compare a guarded tinywhoop with very small ducts, an open-prop toothpick micro frame, and a larger guarded cinewhoop carrying a camera. These represent common design patterns, not exact products.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0b1930"/><stop offset="1" stop-color="#17465b"/></linearGradient></defs><rect width="1400" height="780" rx="26" fill="url(#bg)"/>
+<text x="42" y="50" font-family="Arial,sans-serif" font-size="34" font-weight="700" fill="#fff">WHOOP vs TOOTHPICK vs CINEWHOOP</text><text x="44" y="84" font-family="Arial,sans-serif" font-size="18" fill="#c7f9ff">A frame-style comparison. Class names overlap; always verify actual prop diameter, wheelbase and payload.</text>
+<g font-family="Arial,sans-serif">
+<rect x="30" y="120" width="430" height="500" rx="20" fill="#132f48" stroke="#67e8f9" stroke-width="3"/>
+<text x="245" y="160" text-anchor="middle" font-size="25" font-weight="700" fill="#67e8f9">TINYWHOOP</text>
+<g transform="translate(245 320)" stroke="#829bad" stroke-width="14" stroke-linecap="round"><path d="M-65 -48 L65 48 M-65 48 L65 -48"/></g>
+<g fill="#0b1828" stroke="#67e8f9" stroke-width="7"><circle cx="180" cy="272" r="42"/><circle cx="310" cy="272" r="42"/><circle cx="180" cy="368" r="42"/><circle cx="310" cy="368" r="42"/></g>
+<rect x="218" y="295" width="54" height="50" rx="8" fill="#fbd38d" stroke="#fff" stroke-width="2"/><rect x="228" y="279" width="34" height="18" rx="3" fill="#e2f4ff"/>
+<text x="60" y="435" font-size="18" fill="#eaf6fc">• Very small props inside guards/ducts</text><text x="60" y="467" font-size="18" fill="#eaf6fc">• Often indoor practice and gates</text><text x="60" y="499" font-size="18" fill="#eaf6fc">• Low mass, but limited wind tolerance</text><text x="60" y="531" font-size="18" fill="#eaf6fc">• Inspect ducts, debris and motor shafts</text><text x="60" y="578" font-size="16" fill="#fbd38d">Guards do not eliminate injury/damage.</text>
+<rect x="485" y="120" width="430" height="500" rx="20" fill="#132f48" stroke="#86efac" stroke-width="3"/>
+<text x="700" y="160" text-anchor="middle" font-size="25" font-weight="700" fill="#86efac">TOOTHPICK / OPEN MICRO</text>
+<g transform="translate(700 320)" stroke="#829bad" stroke-width="13" stroke-linecap="round"><path d="M-92 -62 L92 62 M-92 62 L92 -62"/></g>
+<g fill="#0b1828" stroke="#86efac" stroke-width="4"><circle cx="608" cy="258" r="30"/><circle cx="792" cy="258" r="30"/><circle cx="608" cy="382" r="30"/><circle cx="792" cy="382" r="30"/></g>
+<rect x="675" y="295" width="50" height="50" rx="7" fill="#fbd38d" stroke="#fff" stroke-width="2"/>
+<text x="515" y="435" font-size="18" fill="#eaf6fc">• Exposed propellers, light frame</text><text x="515" y="467" font-size="18" fill="#eaf6fc">• Portable outdoor micro / freestyle</text><text x="515" y="499" font-size="18" fill="#eaf6fc">• Less duct drag; wind still matters</text><text x="515" y="531" font-size="18" fill="#eaf6fc">• Check payload and prop clearance</text><text x="515" y="578" font-size="16" fill="#fbd38d">Exposed props require extra care.</text>
+<rect x="940" y="120" width="430" height="500" rx="20" fill="#132f48" stroke="#fbd38d" stroke-width="3"/>
+<text x="1155" y="160" text-anchor="middle" font-size="25" font-weight="700" fill="#fbd38d">CINEWHOOP</text>
+<g transform="translate(1155 320)" stroke="#829bad" stroke-width="17" stroke-linecap="round"><path d="M-94 -64 L94 64 M-94 64 L94 -64"/></g>
+<g fill="#0b1828" stroke="#fbd38d" stroke-width="8"><circle cx="1061" cy="256" r="48"/><circle cx="1249" cy="256" r="48"/><circle cx="1061" cy="384" r="48"/><circle cx="1249" cy="384" r="48"/></g>
+<rect x="1123" y="294" width="64" height="52" rx="8" fill="#fbd38d" stroke="#fff" stroke-width="2"/><rect x="1135" y="274" width="40" height="20" rx="4" fill="#e2f4ff"/>
+<text x="975" y="435" font-size="18" fill="#eaf6fc">• Filming-oriented; often guarded/ducted</text><text x="975" y="467" font-size="18" fill="#eaf6fc">• Camera/air-unit mounts and payload</text><text x="975" y="499" font-size="18" fill="#eaf6fc">• Ducts add mass and aerodynamic load</text><text x="975" y="531" font-size="18" fill="#eaf6fc">• Verify cooling, current and takeoff mass</text><text x="975" y="578" font-size="16" fill="#fbd38d">Payload changes handling significantly.</text>
+<rect x="38" y="654" width="1324" height="82" rx="16" fill="#0a2033" stroke="#4b8198" stroke-width="2"/>
+<text x="68" y="688" font-size="20" font-weight="700" fill="#fff">“Whoop” usually describes compact guarded form; “cinewhoop” describes a filming use and commonly guarded design.</text><text x="68" y="717" font-size="17" fill="#c7f9ff">A toothpick is typically a light open-prop micro. Check the actual product spec; marketing categories are not strict standards.</text>
+</g></svg>
