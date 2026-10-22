@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760" role="img" aria-labelledby="title desc">
+<title id="title">FPV balance charger, main lead and balance lead</title>
+<desc id="desc">Illustration of a balance charger connected by main power leads and an individual cell balance connector to a multi-cell LiPo pack. The diagram emphasizes matching chemistry, cell count and charge voltage.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0b1c30"/><stop offset="1" stop-color="#19465b"/></linearGradient><marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#67e8f9"/></marker></defs>
+<rect width="1400" height="760" rx="26" fill="url(#bg)"/>
+<text x="40" y="52" font-family="Arial,sans-serif" font-size="33" font-weight="700" fill="#fff">BALANCE CHARGER: TWO CONNECTION PATHS</text>
+<text x="42" y="84" font-family="Arial,sans-serif" font-size="18" fill="#c7f9ff">Illustrative 4S conventional LiPo. Actual connector shape and charging steps vary by pack and charger.</text>
+<!-- charger -->
+<g transform="translate(50 145)">
+<rect width="410" height="350" rx="22" fill="#18344b" stroke="#65afc5" stroke-width="3"/>
+<rect x="75" y="55" width="260" height="115" rx="12" fill="#07111c" stroke="#8bb5c8" stroke-width="3"/>
+<rect x="94" y="74" width="224" height="77" rx="6" fill="#163a42"/>
+<text x="206" y="103" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" fill="#8df3bd">LiPo BALANCE</text>
+<text x="206" y="132" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#fff">4S • 1.0 A*</text>
+<g fill="#6a8799" stroke="#e0eef5" stroke-width="2"><rect x="92" y="203" width="78" height="54" rx="6"/><rect x="180" y="203" width="78" height="54" rx="6"/><rect x="268" y="203" width="52" height="54" rx="6"/></g>
+<text x="206" y="293" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#fff">CHARGER</text>
+<text x="206" y="322" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#c7f9ff">Balance port + main output</text>
+</g>
+<!-- battery -->
+<g transform="translate(930 180)">
+<rect width="395" height="280" rx="20" fill="#27323d" stroke="#f6c56a" stroke-width="3"/>
+<rect x="28" y="42" width="339" height="196" rx="15" fill="#111a24" stroke="#6b8191" stroke-width="3"/>
+<g><rect x="45" y="58" width="71" height="164" rx="8" fill="#49372a"/><rect x="126" y="58" width="71" height="164" rx="8" fill="#49372a"/><rect x="207" y="58" width="71" height="164" rx="8" fill="#49372a"/><rect x="288" y="58" width="62" height="164" rx="8" fill="#49372a"/></g>
+<g font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#f6c56a" text-anchor="middle"><text x="80" y="146">1</text><text x="161" y="146">2</text><text x="242" y="146">3</text><text x="319" y="146">4</text></g>
+<text x="197" y="266" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" fill="#fff">4S battery pack</text>
+</g>
+<!-- wires -->
+<path d="M460 305 H920" stroke="#dc5c5c" stroke-width="8" fill="none" marker-end="url(#arr)"/>
+<path d="M460 345 H920" stroke="#3e90dd" stroke-width="8" fill="none" marker-end="url(#arr)"/>
+<text x="685" y="290" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#ffaaaa">MAIN LEADS: pack power (+ / −)</text>
+<text x="685" y="374" text-anchor="middle" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#a4d6ff">Correct polarity and connector</text>
+<path d="M380 400 C560 480 720 475 945 450" stroke="#88efc4" stroke-width="7" fill="none" marker-end="url(#arr)"/>
+<text x="650" y="462" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#a8ffd6">BALANCE LEAD: individual cell taps</text>
+<!-- bottom notes -->
+<rect x="48" y="548" width="1304" height="162" rx="18" fill="#0c2438" stroke="#3d7e99" stroke-width="2"/>
+<g font-family="Arial,sans-serif" font-size="19" fill="#e0edf8">
+<text x="78" y="586">1. Confirm chemistry + cell count + maximum charge voltage before connecting.</text>
+<text x="78" y="622">2. Correct main lead polarity; the balance port must fit the supported cell count and pinout.</text>
+<text x="78" y="658">3. Charge supervised in an appropriate fire-safe location; stop for heat, swelling or errors.</text>
+<text x="78" y="694" fill="#f6c56a">*Current shown is an illustration, not an instruction. Follow the pack maker's charge rate.</text>
+</g>
+</svg>
