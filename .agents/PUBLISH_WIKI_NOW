@@ -36,3 +36,5 @@ Retry 12: commit 6a7e6d8 adds a repository-local fallback Git author identity fo
 Retry 13: repository owner reports WIKI_PUBLISH_TOKEN was replaced with a classic PAT. Re-run the current optimized publisher against latest main; verify the Wiki Git push and live Playwright report, and record the observed result.
 
 Retry 14: first push succeeded. Live verification found only the Home concept image missing, even though the file exists under docs/assets. Force-stage publisher-managed images to ensure Wiki-ignored image extensions are included; rerun and require a clean live Playwright report.
+
+Retry 15: run after force-staging publisher-managed images and expanding Playwright coverage to assert the mandatory course on Home/Simulator Training and the new Drone Coding and Machine Learning page. Require the missing Home concept image to load and all checked pages to pass.
