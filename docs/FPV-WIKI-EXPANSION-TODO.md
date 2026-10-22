@@ -219,7 +219,7 @@ All custom visual assets should be editable/reproducible SVG where practical, re
 ## 7. Buying guides and bill-of-materials tools
 
 - [ ] Expand `Buying Parts in India.md` (check actual filename) with current suppliers, shipping/customs caveats, tax and warranty considerations, currency/date checked, and local regulatory guidance. Do not call out a retailer as vetted unless verified.
-- [ ] Create `FPV-Build-Budget-and-Buying-Guide.md`: full system cost, not just aircraft price, including controller, goggles/VRX, batteries, charger, spare props, repair tools, simulator and replacements.
+- [x] Create `FPV-Build-Budget-and-Buying-Guide.md`: full system cost, not just aircraft price, including controller, goggles/VRX, batteries, charger, spare props, repair tools, simulator and replacements.
 - [ ] Create a class-specific buying matrix with minimum viable, balanced, and premium routes—but list exact model/revision and date, and avoid pretending product stocks/prices stay constant.
 - [ ] Include video-system migration cost: goggles are a major ecosystem commitment; identify what is and isn't reusable before recommending a system.
 - [ ] Create a printable BOM template with exact model, revision, mass, voltage range, mounting, protocol, antenna interface, firmware target, official spec link and open compatibility issue.
@@ -501,3 +501,12 @@ The following broad class/flight-purpose pages have now been created separately 
 - [x] Link this page directly after `Video Systems and Goggles` in `_Sidebar.md`.
 - [x] Link the comparison from Home and keep analog-vs-digital as the companion conceptual guide.
 - [ ] Expand the starter model examples into a complete exact-SKU table for camera module, VTX/air unit, receiver/goggles generation, firmware, live-view modes, onboard recording, weight, input-voltage range, current/heat and price checked date.
+
+
+### Fourth implementation update — buying and camera-selection guides (22 October 2026)
+
+- [x] Add `docs/wiki-source/FPV-Build-Budget-and-Buying-Guide.md`: cost buckets, buying pathways by mission, ecosystem costs, full-system compatibility gates and second-hand equipment checks.
+- [x] Add `docs/wiki-source/FPV-Camera-Selection-Guide.md`: camera/live-feed/DVR/onboard recording distinctions and camera-selection priorities for tinywhoop, micro, racing, freestyle, cinewhoop and long-range.
+- [x] Link both guides from Home and add them to the sidebar. The camera selection guide is near the VTX/VRX comparison; the buying guide is under build/batteries/safety.
+- [ ] Add model-by-model current camera matrix with exact sensor/format/FOV/live feed/recording/weight/power/firmware fields for all shortlisted analog, DJI, Walksnail, HDZero and micro video SKUs. Current guides contain representative examples only.
+- [ ] Add region-stamped prices and supplier comparisons only after current checkout/duty/shipping information has been checked; never use stale promotional prices as stable facts.
