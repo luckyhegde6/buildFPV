@@ -631,3 +631,21 @@ Current animation is a simple concept loop for rotor/thrust orientation, not a p
 - [ ] Record publisher push and browser verification evidence separately in `HANDOFF.md` and `SESSIONS.md`.
 
 **Current tool gate:** GitHub repository MCP writes work for `buildFPV/main`, but its fetch action does not expose the Wiki Git remote/push. Plugin discovery did not expose a Playwright tool; TinyFish was found as a browser alternative and suggested, but is not connected in this session. Web fetch attempts for the Wiki routes were not usable for rendered-page verification. Do not label publication or Playwright checks successful until an authenticated browser and a write-capable Wiki Git path are actually available.
+
+
+---
+
+## 20. Remote publish and Playwright workflow prepared — 22 October 2026
+
+- [x] Add `scripts/verify-wiki-live.mjs` with headless Playwright checks for live Home, the charger guide and exact-model video matrix at desktop/mobile viewports.
+- [x] Add `.github/workflows/wiki-publish-verify.yml` to run link-rewrite tests, publish to the existing Wiki when a suitable secret exists, install Playwright with `npx`, and upload screenshots + a JSON report.
+- [x] Add `.agents/PUBLISH_WIKI_NOW` as a one-shot trigger and add a `workflow_dispatch` entry point.
+- [x] Guard the marker trigger so future edits to this file do not automatically publish again; manual dispatch remains supported.
+- [x] Run local headless attempt: Playwright CLI version 1.57.0 is present, but page navigation failed with `net::ERR_BLOCKED_BY_ADMINISTRATOR`; `github.com` DNS is blocked. `npx` download timed out.
+- [x] Check Actions run inventory after the marker commit: `total_count: 0`; no remote run was started by the GitHub MCP commit.
+- [ ] Manually dispatch [Publish and verify existing FPV Wiki](https://github.com/luckyhegde6/buildFPV/actions/workflows/wiki-publish-verify.yml) on `main`; the connected GitHub MCP exposes no workflow-dispatch action.
+- [ ] Ensure either `WIKI_PUBLISH_TOKEN` or `GH_PERSONAL_ACCESS_TOKEN` repository secret exists with write access to the existing Wiki Git remote.
+- [ ] Confirm the publisher push and review the Playwright screenshots/report artifact. Verify Home/sidebar, target page contents and tables, extensionless routes, and local image loading.
+- [ ] Update `HANDOFF.md` and this TODO with the actual run ID/result and Wiki commit SHA once available.
+
+**Current state:** the remote workflow is committed but unrun. The source repository is not the live Wiki; publication and live browser verification remain open until the GitHub Actions run actually executes.
