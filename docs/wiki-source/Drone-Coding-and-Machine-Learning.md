@@ -21,6 +21,8 @@ This is an **optional advanced track**, not a prerequisite for learning manual F
 [![Open the supplied drone coding / ML video](https://img.youtube.com/vi/QvRxxjaLjxg/hqdefault.jpg)](https://www.youtube.com/watch?v=QvRxxjaLjxg&list=PLeuMA6tJBPKsAfRfFuGrEljpBow5hPVD4)
 
 - [Supplied coding/ML playlist](https://www.youtube.com/playlist?list=PLeuMA6tJBPKsAfRfFuGrEljpBow5hPVD4) — includes the supplied starting video [QvRxxjaLjxg](https://www.youtube.com/watch?v=QvRxxjaLjxg).
+[![Watch the additional supplied drone coding / ML video](https://img.youtube.com/vi/PRwef_c7SXQ/hqdefault.jpg)](https://www.youtube.com/watch?v=PRwef_c7SXQ)
+
 - [Additional supplied drone coding / ML video](https://www.youtube.com/watch?v=PRwef_c7SXQ) — title and syllabus were not independently confirmed in this pass; preview its contents before treating it as a course.
 
 ## Suggested project ladder
