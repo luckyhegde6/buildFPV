@@ -45,23 +45,23 @@ Initial manufacturer research was checked on **2026-10-22**. This is a working s
 
 ### New overview and class pages
 
-- [ ] Create `docs/wiki-source/Drone-Categories-and-Size-Guide.md` as the landing/selector page.
+- [x] Create `docs/wiki-source/Drone-Categories-and-Size-Guide.md` as the landing/selector page.
   - [ ] Explain the different axes: prop size, wheelbase, guards/ducts, intended use, weight/payload, video ecosystem, and purchase format.
   - [ ] Include a comparison table and “choose this if…” pathways.
   - [ ] Link to every dedicated class page below.
   - [ ] Add a compact glossary for FPV, whoop, cinewhoop, toothpick, freestyle, racing, long-range, BNF, PNP, ARF, DIY and RTF.
-- [ ] Create `docs/wiki-source/Tinywhoop-and-Micro-FPV-Guide.md`.
-- [ ] Create `docs/wiki-source/2-5-Inch-FPV-Guide.md` (2.5-inch micros / open-prop builds; explicitly distinguish from tinywhoop ducts).
-- [ ] Create `docs/wiki-source/3-5-Inch-Cinewhoop-Guide.md`.
+- [x] Create `docs/wiki-source/Tinywhoop-and-Micro-FPV-Guide.md`.
+- [x] Create `docs/wiki-source/2-5-Inch-Frame-Guide.md` (frame fit, compatibility, assembly; separate wider flight/purchase guide remains a follow-up).
+- [x] Create `docs/wiki-source/3-5-Inch-Cinewhoop-Frame-Assembly.md`; fuller class-specific buying/flight guide remains a follow-up.
 - [ ] Create `docs/wiki-source/5-Inch-FPV-Racing-and-Freestyle.md`.
 - [ ] Create `docs/wiki-source/7-Inch-Long-Range-FPV-Guide.md`.
 - [ ] Decide from source research whether to add separate `3-Inch-Toothpick-and-Freestyle.md`, `4-Inch-Long-Range-FPV-Guide.md`, and `Cine-Lifter-and-Heavy-Lift-FPV.md`; create only if enough distinct guidance exists to avoid shallow duplicate pages.
-- [ ] Create `docs/wiki-source/BNF-PNP-RTF-ARF-and-DIY-Formats.md` to explain package/build-completion formats independently from aircraft classes.
+- [x] Create `docs/wiki-source/BNF-PNP-RTF-ARF-and-DIY-Formats.md` to explain package/build-completion formats independently from aircraft classes.
 - [ ] Cross-link every class page with `First Build Checklist`, `Drone-Parts-One-by-One`, `FPV System Basics`, `How FPV Drones Work`, `Video Systems and Goggles`, and the new video comparison page.
 
 ### Video and component pages
 
-- [ ] Create `docs/wiki-source/FPV-Cameras-VTX-VRX-Compatibility-Comparison.md`.
+- [x] Create `docs/wiki-source/Analog-vs-Digital-FPV-Camera-Video-Guide.md`; extend the exact-model price/firmware matrix in a later research pass.
 - [ ] Position its link immediately after the existing camera/video-system guide in `docs/wiki-source/_Sidebar.md`; check page sequence and avoid duplicate or stale links.
 - [ ] Review `Video-Systems-and-Goggles.md` and `Video-Antennas-VTX-VRX.md` so their roles are clear and their new-page links point to the detailed comparison rather than repeating entire sections.
 - [ ] Link from `Drone-Parts-One-by-One.md` to the new class selector and the camera/VTX/VRX compatibility guide from the relevant component sections.
@@ -196,7 +196,7 @@ Apply the same reusable structure to each class page: hero/overview infographic,
 
 All custom visual assets should be editable/reproducible SVG where practical, readable on the Wiki at normal zoom, use consistent buildFPV colors/type, include descriptive alt text and captions, and state when they are schematic. Do not use an image as a substitute for a safe wiring diagram or current board pinout.
 
-- [ ] Create `docs/assets/drone-class-overview.svg`: size/class comparison from tinywhoop to 7-inch; label prop diameter and wheelbase as separate values/fields.
+- [x] Create `docs/assets/drone-class-overview.svg`: size/class comparison from tinywhoop to 7-inch; label prop diameter and wheelbase as separate values/fields.
 - [ ] Create `docs/assets/whoop-vs-toothpick-vs-cinewhoop.svg`: open props vs protective ducts/guards vs open-prop micro, showing typical frame form without implying a universal layout.
 - [ ] Create `docs/assets/frame-prop-size-comparison.svg`: relative-size silhouette for 2.5, 3.5, 5 and 7-inch propellers; clear scale disclaimer if icons are schematic.
 - [ ] Create `docs/assets/drone-class-decision-tree.svg`: choose by indoor, outdoor, filming, racing, long range, budget and experience.
@@ -209,7 +209,7 @@ All custom visual assets should be editable/reproducible SVG where practical, re
 - [ ] Create `docs/assets/fpv-camera-sensor-and-recording.svg`: camera → live feed vs onboard recording, distinguishing analog/HD feed and recorded footage.
 - [ ] Create `docs/assets/vtx-vrx-compatibility-check.svg`: checklist for generation, goggles/VRX, antenna/polarization, band, connector, power, firmware.
 - [ ] Create frame-fit drawings for 20×20/25.5×25.5/30.5×30.5 mm mounting patterns only if measurements are verified from the relevant official spec; label the units.
-- [ ] Add every new asset to `docs/assets/README.md`, with owning Wiki page, purpose, source/provenance, and accuracy limitations.
+- [x] Add every new asset to `docs/assets/README.md`, with owning Wiki page, purpose, source/provenance, and accuracy limitations.
 - [ ] Check all SVGs for valid XML, clipping/text overflow, contrast, alt text and legibility on mobile. Inspect the rendered outputs, not just source text.
 - [ ] Prefer actual manufacturer/product photos for examples and original SVG explanatory diagrams for concepts. Preserve image attribution/licensing, use stable links, and avoid inaccurate AI-generated technical labels.
 - [ ] Avoid use of logos/brand styling that implies endorsement. Do not alter manufacturer photos to make their specs appear different.
@@ -260,8 +260,8 @@ All custom visual assets should be editable/reproducible SVG where practical, re
 
 - [ ] Keep canonical text in `docs/wiki-source/` and canonical project-owned diagram files in `docs/assets/`.
 - [ ] Verify current publisher behavior before adding large binary media; SVG/Markdown should sync cleanly, but large images need the supported Git workflow and must exist in the source repo before publishing.
-- [ ] Update `docs/assets/README.md` for all new assets.
-- [ ] Update `docs/wiki-source/_Sidebar.md` only after actual filenames/page titles are confirmed.
+- [x] Update `docs/assets/README.md` for the implemented diagram, GIF and product-photo sources.
+- [x] Update `docs/wiki-source/_Sidebar.md` with the implemented page filenames/titles; rendered live navigation still needs verification.
 - [ ] Add “Next” / “Previous” links where useful to class pages without creating a confusing loop.
 - [ ] Standardize naming, punctuation and acronym definitions (FC, ESC, AIO, VTX, VRX, RX, ELRS, OSD, DVR, GNSS).
 - [ ] Ensure diagrams and product photos appear before the relevant explanation section, not detached at the bottom.
@@ -348,13 +348,13 @@ This status was updated after the first source implementation batch. A checkbox 
 
 ### Still outstanding / next implementation pass
 
-- [ ] Update `_Sidebar.md`, `docs/assets/README.md` and all cross-links, then verify the rendered navigation.
-- [ ] Create the dated research report under `docs/research/FPV-Wiki-Expansion-Research-Report.md`.
+- [x] Update `_Sidebar.md`, `docs/assets/README.md` and source cross-links. [ ] Verify the rendered navigation after Wiki publication.
+- [x] Create `docs/research/FPV-Wiki-Expansion-Research-Report.md`; continue adding exact current specs as further model pages are implemented.
 - [ ] Add dedicated guides for analog VRX module install, DJI O3/O4 integration, Walksnail integration, HDZero integration, camera selection by use case, and system-specific troubleshooting.
 - [ ] Add fuller Tinywhoop, 2.5-inch, 3.5-inch cinewhoop, 5-inch and 7-inch class pages with actual manufacturer model comparisons and exact current revisions.
 - [ ] Create verified BNF/PNP/RTF included-item matrix from current individual listings.
 - [ ] Add remaining frame anatomy, frame mounting-pattern references, propeller type, LiPo-vs-Li-ion, video ecosystem comparison and decision-tree infographics.
-- [ ] Add short explanatory GIFs only after making and reviewing actual GIF assets. SVG diagrams are available now; do not mark GIF creation complete until a real animation file has been added and checked.
+- [x] Create first GIF `docs/assets/propeller-thrust-loop.gif` (concept loop, four frames). [ ] Validate rendering in a browser and create further GIFs for assembly/frame geometry or charger/video workflows.
 - [ ] Add a comprehensive build tooling/assembly guide with separate branches for BNF maintenance and DIY soldering/building.
 - [ ] Recheck battery cycle-life, max-time and charger claims from the exact manufacturer's pack and charger manuals; avoid universal values.
 - [ ] Do final link/SVG/accessibility/source checks and revise any illustrative wheelbase ranges in `frame-size-reference.svg` against actual labelled model drawings or keep them clearly marked as conceptual.
@@ -367,3 +367,39 @@ This status was updated after the first source implementation batch. A checkbox 
 - The current digital-video guide cites official [DJI O4 specifications](https://www.dji.com/o4-air-unit/specs), [CADDXFPV/Walksnail compatibility](https://wiki.caddxfpv.com/en/Avatar-HD-Series/How-to-buy), and [HDZero VTX data](https://docs.hd-zero.com/vtx-summary).
 - The existing guides intentionally avoid a universal motor KV table, exact cycle-life promise, universal max flight time, or cross-brand digital-goggle compatibility claim.
 - Do not mark these source implementation tasks as live-Wiki publication. The main repo and the `.wiki.git` repo have separate commits.
+
+
+---
+
+## 14. Latest implementation progress — 22 October 2026
+
+### Frame images and dimensions
+
+- [x] Create `docs/assets/frame-size-reference.svg` with model-specific examples rather than unsourced generic wheelbase ranges. Current examples: Sub250 OasisFly25 (135 mm wheelbase), BETAFPV Pavo35 (148 mm wheelbase, 92 mm duct diameter), GEPRC MK5X/MK5D (225/230 mm wheelbase), and iFlight AOS 7 V5 (313 mm wheelbase).
+- [x] Add product photos with attribution/source notes to Balanced X, Deadcat, 2.5-inch, 3.5-inch cinewhoop, 5-inch and 7-inch frame pages.
+- [x] Add dedicated frame selection and assembly pages: Balanced X, Deadcat, 2.5-inch, 3.5-inch cinewhoop, 5-inch and 7-inch long-range.
+- [x] Add `FPV-Assembly-Tools-and-Workshop-Guide.md`.
+- [ ] Audit all exact dimensions from the manufacturer drawing for every future class/product page. The class SVG silhouettes are explicitly not to scale and not drill templates.
+
+### Video / goggles integration pages added
+
+- [x] `Analog-Goggles-and-VRX-Integration.md`
+- [x] `DJI-O3-O4-Goggles-and-Air-Unit-Integration.md`
+- [x] `Walksnail-Avatar-Goggles-and-Air-Unit-Integration.md`
+- [x] `HDZero-Goggles-and-VTX-Integration.md`
+- [x] Cross-link these guides from `Video-Systems-and-Goggles.md` and the sidebar.
+- [ ] Complete the exact SKU-by-SKU live compatibility matrix for each ecosystem, with firmware/goggles generation and manufacturer verification date.
+
+### Wiki page URL / link rewrite fix
+
+- [x] Change source Home navigation to direct extensionless Wiki URLs (e.g. `/wiki/FPV-System-Basics`, not `/wiki/FPV-System-Basics.md`).
+- [x] Update `scripts/publish-wiki.sh` to rewrite internal relative Markdown links that target root Wiki pages from `Page.md` to `Page`, and retain anchors. This runs in the separate Wiki checkout during publishing.
+- [ ] Sync and verify Home on the live Wiki; confirm the rendered links go to `/wiki/Page-Name` with no `.md` suffix.
+
+### Quality checks and publication remain outstanding
+
+- [ ] Validate shell syntax and execute `scripts/publish-wiki.sh` in a real local Git Bash clone; inspect every rewritten link in the staged Wiki diff.
+- [ ] Run the publisher, type `PUBLISH`, and verify the Wiki push.
+- [ ] Verify image download/localisation works for external product photos and the GIF is rendered on the live Wiki.
+- [ ] Inspect SVG/photograph rendering on desktop and mobile.
+- [ ] Add additional short GIFs and remaining class-specific overview infographics.
