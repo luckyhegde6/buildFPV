@@ -4,6 +4,8 @@
 
 ![Schematic comparison of FPV drone sizes](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/drone-class-overview.svg)
 
+![Decision tree for choosing an FPV drone class by mission](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/drone-class-decision-tree.svg)
+
 > **Important terminology:** Propeller size, frame wheelbase, prop guards, flight purpose and package format describe different things. A “3.5-inch cinewhoop” is a common shorthand, not a guarantee of exact dimensions or camera payload. Check the actual product sheet.
 
 ## 1. First separate the five labels
