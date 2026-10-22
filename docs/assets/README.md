@@ -93,3 +93,8 @@ Use manufacturer dimensions for fit decisions and exact assembly drawings. Image
 | iFlight AOS 7 V5 | [iFlight official frame page](https://shop.iflight.com/AOS-7-V5-Frame-Kit-Pro2311) | 313 mm wheelbase, 254 × 184 × 36 mm overall dimensions and 325 g listed frame weight |
 
 The source SVG dimensions are annotated for learning and comparison only. Manufacturer/retailer product photos and specs should be rechecked before purchase; a product image is not a mechanical drawing.
+
+| `fpv-drone-basics-infographic.webp` | [FPV System Basics](../wiki-source/FPV-System-Basics.md) | Supplied overview of components, system flow, control loop, flight axes, lift, video and antenna types; 640px WebP copy of user-supplied infographic |
+| `fpv-drone-beginner-guide.webp` | [FPV System Basics](../wiki-source/FPV-System-Basics.md) | Supplied beginner visual guide to quadcopter parts, flight movement, control and video systems |
+| `fpv-drone-movements-guide.webp` | [How FPV Drones Work](../wiki-source/How-FPV-Drones-Work.md) | Supplied diagram covering drone axes, propeller directions, lift and movement |
+| `fpv-drone-control-loop-guide.webp` | [How FPV Drones Work](../wiki-source/How-FPV-Drones-Work.md) | Supplied overview of the control loop, radio/video systems, components and build examples |
