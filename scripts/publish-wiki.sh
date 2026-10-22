@@ -131,6 +131,10 @@ for page in "$WIKI_DIR"/*.md; do
         continue
       fi
     else
+      if [[ "${BUILDFPV_SKIP_EXTERNAL_IMAGE_DOWNLOADS:-0}" == "1" ]]; then
+        echo "Skipping external image download; retaining source URL: $image_url"
+        continue
+      fi
       extension="${basename##*.}"
       stem="${basename%.*}"
       url_hash="$(printf '%s' "$image_url" | sha256sum | cut -c1-8)"
