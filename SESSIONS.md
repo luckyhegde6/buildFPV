@@ -167,3 +167,10 @@ This is a chronological, append-oriented engineering log. New work should append
 - Updated .agents/PUBLISH_WIKI_NOW at commit b3d40fa53b4fb180768bca597a296896600dc30c to request publication of the new course links and coding/ML page to the existing Wiki.
 - Checked the GitHub Actions run inventory immediately afterwards; it still showed only runs 39797230235, 39796597578 and 39796268242. The marker commit did not start a new workflow run.
 - No live Wiki publication is claimed. The last completed publish attempt failed due to the missing Wiki-write Actions secret. The source repository changes and Wiki-source pages are committed; the existing workflow must be manually dispatched from GitHub Actions after the owner sets WIKI_PUBLISH_TOKEN or GH_PERSONAL_ACCESS_TOKEN.
+
+## 2026-10-23 — Wiki publication authorization result
+
+- Run #13 ([Actions](https://github.com/luckyhegde6/buildFPV/actions/runs/39844524646)) reached the push, after the link rewrite regression test passed and the publisher staged/committed 63 Markdown/image changes in the temporary Wiki clone.
+- Push result: **HTTP 403**, `Permission to luckyhegde6/buildFPV.wiki.git denied to luckyhegde6`. The configured token is present but does not have effective Wiki Git write access. Do not treat credential-helper success as publication success.
+- The live Playwright verification failed because the content was not published. The existing Wiki still needs a successful push and passing live-site verification.
+- Follow-up required: replace `WIKI_PUBLISH_TOKEN` with a token authorized to write to the existing Wiki Git repository (see [GitHub PAT documentation](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)); then rerun [the workflow](https://github.com/luckyhegde6/buildFPV/actions/workflows/wiki-publish-verify.yml). No token was exposed.
