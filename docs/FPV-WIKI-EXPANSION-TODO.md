@@ -695,3 +695,17 @@ Current animation is a simple concept loop for rotor/thrust orientation, not a p
 - [ ] Record the new run ID and updated report. Do not treat the rerun request commit as evidence that the latest fixes executed.
 
 **Current handoff:** run 39797230235 is the most recent completed evidence. It proved remote Playwright installation/execution and artifact capture, but the publisher failed due to the missing secret and live Wiki checks failed. The current source code contains additional assertions/quoting fixes that have not yet been re-tested.
+
+
+---
+
+## 24. Wiki credential and publishing runbook — 22 October 2026
+
+- [x] Add `.agents/wiki-publishing-runbook.md` documenting token generation, secret creation, safe local authentication, script execution and review, manual Actions dispatch, live browser verification, troubleshooting and credential rotation.
+- [x] Link the runbook from `.agents/README.md`, `.agents/builder-agent.md`, and `.agents/workflows/research-to-build.md`.
+- [x] Link the runbook from `HANDOFF.md` and record the change in `SESSIONS.md`.
+- [x] Reference current official GitHub documentation for PAT management, Actions secrets and GitHub CLI secret creation.
+- [ ] The repository owner must still create and add the PAT as `WIKI_PUBLISH_TOKEN` (preferred) or `GH_PERSONAL_ACCESS_TOKEN` (fallback) under repository Settings → Secrets and variables → Actions.
+- [ ] After the secret is configured, manually run the existing [publish/verify workflow](https://github.com/luckyhegde6/buildFPV/actions/workflows/wiki-publish-verify.yml) and confirm a successful Wiki push plus passing fresh Playwright report.
+
+**Status:** the runbook is committed and linked in the agent framework. It does not create or reveal credentials and does not change the existing Wiki's publication state.
