@@ -50,6 +50,10 @@ Progress by evidence of skill, not by calendar pressure. You can repeat a phase 
 
 **Exit evidence:** repeatable safe preflight/postflight routine and maintenance records.
 
+## Optional extension — drone coding and machine learning
+
+Once simulator practice and basic system understanding are established, explore the [Drone Coding and Machine Learning Learning Path](drone-coding-and-ml.md). Start in a simulator or supported educational platform; this is optional, not a shortcut around manual control skills.
+
 ## Phase 6 — Explore advanced projects only when they solve a real need
 
 - **Gyroflow:** after you have recorded footage and want post-production stabilization.
