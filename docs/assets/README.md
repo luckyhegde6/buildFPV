@@ -5,6 +5,14 @@ These image and diagram files are versioned as part of `luckyhegde6/buildFPV`. T
 ## Where each visual belongs
 
 | Visual | Best place to learn from it | What it explains |
+| `drone-class-overview.svg` | [Drone Categories and Size Guide](../wiki-source/Drone-Categories-and-Size-Guide.md) | Schematic selection overview; not to scale |
+| `balanced-x-vs-deadcat.svg` | [Frame Geometries — Balanced X vs Deadcat](../wiki-source/Frame-Geometries-Balanced-X-vs-Deadcat.md) | Conceptual frame top view and camera FOV; frame shapes vary |
+| `frame-size-reference.svg` | Frame assembly/class guides | Model-specific examples and dimensions; silhouettes are not to scale or drill templates |
+| `motor-prop-battery-compatibility.svg` | [Motors, Propellers and Battery Compatibility](../wiki-source/Motors-Propellers-and-Battery-Compatibility.md) | BLDC, prop and conventional LiPo voltage examples; no universal KV table |
+| `charger-balance-power.svg` | [Charger and Battery Safety](../wiki-source/FPV-Chargers-LiPo-and-Li-ion-Battery-Safety.md) | Main and balance leads; illustration only, not a pinout |
+| `analog-vs-digital-video.svg` | [Analog vs Digital FPV](../wiki-source/Analog-vs-Digital-FPV-Camera-Video-Guide.md) | Camera/VTX/VRX signal paths; cross-brand HD compatibility is not implied |
+| `goggles-vrx-integration.svg` | [Goggles and VRX Integration](../wiki-source/FPV-Goggles-and-VRX-Integration-Guide.md) | Compatibility categories; exact model/generation still has to be checked |
+| `propeller-thrust-loop.gif` | [Home / thrust explainer](../wiki-source/Home.md) | Four-frame concept animation; illustrates prop rotation and thrust, not actual motor order |
 |---|---|---|
 | `fpv-build-concept-ai.jpg` | [Learning guide](../LEARNING-GUIDE.md) and [system basics](../01-fpv-basics.md) | A broad visual orientation to a typical FPV quad; not a wiring reference |
 | `flight-axes.svg` | [How an FPV quad works](../07-how-fpv-drones-work.md) | Throttle, roll, pitch and yaw |
@@ -51,3 +59,16 @@ The custom SVGs above were created for the [Drone Parts — One by One guide](..
 ## New FPV class and integration guides (22 October 2026)
 
 The diagrams added in this tranche are original explanatory SVGs intended to render crisply in the Wiki. The frame-size artwork uses clearly labelled illustrative ranges; it must not be used to drill a frame, select screw length, or infer mounting/flight-control layouts. Use exact manufacturer drawings and manuals for those tasks. No short GIF has been marked complete unless an actual animation file is present in the repository; GIF creation and review remain tracked in the master TODO.
+
+
+## Real product photos used by frame guides
+
+The frame assembly pages show source-linked product images so readers can compare schematics against a real product. The publisher script downloads these linked images into the Wiki's local `images/` folder where the source host permits it; source links remain in the captions.
+
+- [GEPRC GEP-MK5X O3 Frame](https://geprc.com/product/gep-mk5x-o3-frame/) — product photo and 225 mm wheelbase / 214 × 168 × 42 mm specifications.
+- [GEPRC GEP-MK5D O3 DeadCat Frame](https://geprc.com/product/gep-mk5d-o3-frame/) — product photo and 230 mm wheelbase / 208 × 193 × 42 mm specifications.
+- [Sub250 OasisFly25](https://sub250.com/en-nl/collections/oasisfly-series/products/sub250-oasisfly25-hd-o3) — 135 mm wheelbase and 2.5-inch prop example; inline photo hosted by Unmanned Tech, credited in page caption.
+- [BETAFPV Pavo35 frame](https://betafpv.com/products/pavo35-brushless-whoop-frame) — wheelbase, duct, plate thickness and frame mass; product photo hosted by BETAFPV.
+- [iFlight AOS 7 V5 Frame Kit](https://shop.iflight.com/AOS-7-V5-Frame-Kit-Pro2311) — 313 mm wheelbase, 254 × 184 × 36 mm size, 8 mm arms and 325 g listed frame mass; inline photo hosted by FPV Store RC, credited in page caption.
+
+Use manufacturer dimensions for fit decisions and exact assembly drawings. Images are not dimensioned CAD, and retailer product photographs may show one edition or color only. Check terms/licensing when reusing photos outside the Wiki; attribution does not by itself grant reuse permission.
