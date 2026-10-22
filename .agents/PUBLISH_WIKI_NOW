@@ -18,3 +18,5 @@ Request publication of the new video-course links and Drone Coding and Machine L
 Retry 4: repository owner reports WIKI_PUBLISH_TOKEN configured on 2026-10-23. Trigger the workflow on the current main revision and verify the publish and live browser checks before recording success.
 
 Retry 5: the previous publish step remained active without advancing. Run the updated publisher with bounded image fetches and fail-fast Git prompting; verify the published Wiki and Playwright evidence before recording the outcome.
+
+Retry 6: the original publish attempt remained active and retry 5 was queued behind it. Start an isolated recovery run using the bounded image-download and fail-fast Git safeguards; never force-push the Wiki branch.
