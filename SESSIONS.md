@@ -62,3 +62,17 @@ This is a chronological, append-oriented engineering log. New work should append
 - **Publication state:** source pages are committed; live Wiki push and browser-render verification remain unconfirmed.
 - **Blockers/open questions:** plugin search returned TinyFish as an installable/available cloud browser, but it is not connected to this session; no Playwright action was exposed by the active MCP tools. GitHub Wiki route fetches returned cache miss/unsupported-route errors, which are not proof that the Wiki is absent.
 - **Next action:** connect an authenticated browser/Playwright-capable integration (TinyFish was suggested as an available browser alternative), then inspect and publish to the existing Wiki using the network-enabled Git workflow. Do not mark publish/verification complete before evidence is captured.
+
+
+## 2026-10-22 — Browser/publish attempt and maintainer discoverability
+
+- **Agent / role:** coordinating maintainer using GitHub MCP, web fetch and plugin discovery.
+- **Starting state:** `main` was re-fetched; prior root/tree state included all requested `.agents/` and root agent files.
+- **Objective:** publish/verify the pending live Wiki using browser automation, then complete and surface the agent-maintenance system.
+- **Browser and publish attempts:** searched connected tools for Playwright/browser automation; no Playwright action was exposed. Plugin discovery found TinyFish, a cloud-browser alternative, but it is not connected in this session. The GitHub MCP rejects Wiki routes as unsupported repository-fetch URLs; normal web fetch for the Home and two affected Wiki routes returned cache-miss errors. No live visual result, screenshot, Wiki Git push, or Playwright check was produced.
+- **Decision:** leave publication explicitly pending; do not invent a successful push or claim browser QA. Continue independent repository work while documenting the exact next gate. The Wiki exists per user confirmation; a connector 404 is not evidence of nonexistence.
+- **Changes:** added `AGENTS.md`, `HANDOFF.md`, `MEMORY.md`, `SESSIONS.md`, `.agents/README.md`, Research Agent and Builder Agent role files, research-to-build workflow and two templates. Updated `docs/FPV-WIKI-EXPANSION-TODO.md` with the publish/browser-tool gate. Added contributor-agent navigation to `README.md`.
+- **Latest discoverability commit:** https://github.com/luckyhegde6/buildFPV/commit/549392b19f67fe9aab1e321652df7767d85bd32b
+- **Other workflow/status commits:** [session log](https://github.com/luckyhegde6/buildFPV/commit/044efb25845377b62d606c733c382e78a9b5d7ed) · [durable memory](https://github.com/luckyhegde6/buildFPV/commit/e81e72d44dd58e4982675aa1a8b1ad5f0f2f3bcc) · [master TODO](https://github.com/luckyhegde6/buildFPV/commit/84f493197a7e591594b6efa5be3daef747448e48) · [refreshed handoff](https://github.com/luckyhegde6/buildFPV/commit/5ad5acd54398e48eede2566bf21dadc02ceff94b).
+- **Validation:** GitHub MCP source reads verified the created agent files exist. The video-model Markdown table passed a structural check (six product rows and five columns per row). No shell publisher test, publish push, or live browser test passed in this session.
+- **Next action:** connect an authenticated browser automation integration (Playwright if available; TinyFish is a suggested alternative), then use a network-enabled Git checkout to inspect, publish and verify the existing Wiki. Inspect first and preserve Wiki-only edits.
