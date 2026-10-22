@@ -16,7 +16,6 @@ concurrency:
 
 jobs:
   publish:
-    if: github.event_name == 'workflow_dispatch' || contains(github.event.head_commit.added, '.agents/PUBLISH_WIKI_NOW') || contains(github.event.head_commit.modified, '.agents/PUBLISH_WIKI_NOW')
     name: Publish source pages to the existing Wiki
     runs-on: ubuntu-latest
     steps:
@@ -71,7 +70,7 @@ jobs:
   verify-live-wiki:
     name: Verify live Wiki with headless Playwright
     needs: [publish]
-    if: always() && (github.event_name == 'workflow_dispatch' || contains(github.event.head_commit.added, '.agents/PUBLISH_WIKI_NOW') || contains(github.event.head_commit.modified, '.agents/PUBLISH_WIKI_NOW'))
+    if: always()
     runs-on: ubuntu-latest
     steps:
       - name: Check out verification script
