@@ -2,6 +2,10 @@
 
 ![Motor, propeller and battery compatibility schematic](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/motor-prop-battery-compatibility.svg)
 
+![Animated conceptual view of rotating propellers and thrust direction](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/propeller-thrust-loop.gif)
+
+*Concept animation only. Verify real motor rotation and propeller installation using the installed firmware's motor layout, with all props removed during testing.*
+
 Battery cell count is only one part of the power system. **There is no safe universal table that says one motor KV is always right for 1S, 2S, 3S, 4S or 6S.** Compatibility depends on the exact motor winding/stator, propeller, aircraft weight, ESC, battery current capability, cooling and manufacturer's test recommendations.
 
 ## 1. Nominal vs full-charge voltage
