@@ -23,6 +23,13 @@ Welcome to the buildFPV visual learning path. Start with the aircraft overview, 
 7. [Betaflight Basics](https://github.com/luckyhegde6/buildFPV/wiki/Betaflight-Basics), [ExpressLRS Basics](https://github.com/luckyhegde6/buildFPV/wiki/ExpressLRS-Basics), [Video Systems and Goggles](https://github.com/luckyhegde6/buildFPV/wiki/Video-Systems-and-Goggles), [Video Antennas](https://github.com/luckyhegde6/buildFPV/wiki/Video-Antennas-VTX-VRX), and [GPS and Flight Controllers](https://github.com/luckyhegde6/buildFPV/wiki/GPS-and-Flight-Controllers).
 8. [Bench Safety and Flight Readiness](https://github.com/luckyhegde6/buildFPV/wiki/Bench-Safety-and-Flight-Readiness), [Buying Parts in India](https://github.com/luckyhegde6/buildFPV/wiki/Buying-Parts-in-India) and [Troubleshooting](https://github.com/luckyhegde6/buildFPV/wiki/Troubleshooting).
 
+## 🎥 Additional guided learning
+
+- [Drone systems and controls video/playlist](https://www.youtube.com/playlist?list=PLgMDNELGJ1CYU7vfun-Q7HXsldD-RsocG)
+- [RadioMaster Pocket setup and binding walkthrough](https://www.youtube.com/watch?v=GgaWMvAHZi8)
+- [DGCA / drone-awareness video resources](India-Outdoor-Flying-Rules)
+- [Optional drone coding and machine learning track](Drone-Coding-and-Machine-Learning)
+
 ## 🛠️ Drones, frames and build guides
 
 Start with the [Drone Categories and Size Guide](https://github.com/luckyhegde6/buildFPV/wiki/Drone-Categories-and-Size-Guide). Dedicated class guides: [Tinywhoops and micro](https://github.com/luckyhegde6/buildFPV/wiki/Tinywhoop-and-Micro-FPV-Guide), [2.5-inch FPV](https://github.com/luckyhegde6/buildFPV/wiki/2-5-Inch-FPV-Guide), [3.5-inch cinewhoop](https://github.com/luckyhegde6/buildFPV/wiki/3-5-Inch-Cinewhoop-Guide), [5-inch racing vs freestyle](https://github.com/luckyhegde6/buildFPV/wiki/5-Inch-FPV-Racing-and-Freestyle), and [7-inch long-range](https://github.com/luckyhegde6/buildFPV/wiki/7-Inch-Long-Range-FPV-Guide).
