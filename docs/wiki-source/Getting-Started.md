@@ -9,6 +9,10 @@
 
 You have enough to begin practising. You do **not** need to buy goggles, a quad, or new firmware today.
 
+> [!IMPORTANT]
+> **Mandatory beginner video course before your first real flight:** complete the [Learn to fly an FPV drone (for total beginners) playlist](https://www.youtube.com/playlist?list=PLwoDb7WF6c8lCKhQOTy-Vb9LfW0VAIrTP) in sequence while practising in Liftoff. This is a buildFPV learning requirement, **not an official licence or certification**; continue to check safety requirements and current local rules.
+
+
 ## First session checklist
 
 - [ ] Install batteries matching the Pocket manual and inspect polarity/condition.
