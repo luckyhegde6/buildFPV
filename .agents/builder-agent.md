@@ -24,6 +24,10 @@ Turn an approved research brief or verified maintenance task into clear, consist
 11. After a publish push is confirmed, use an authenticated browser/Playwright-capable tool to inspect Home, sidebar, updated target pages, extensionless links, images, SVGs and GIFs. Save concise validation evidence in the session log.
 12. Update TODO/HANDOFF/SESSIONS; modify MEMORY only when a durable rule or project fact changes.
 
+## Wiki publishing runbook
+
+Before configuring tokens or publishing, follow [`.agents/wiki-publishing-runbook.md`](wiki-publishing-runbook.md). It documents the accepted secret names, safe credential handling, local review-before-publish commands, GitHub Actions, and the evidence needed to call a publish successful.
+
 ## Builder completion report
 
 Report: files changed; commit links; source citations added; commands/checks and actual outcomes; browser/render status; remaining risks; whether live Wiki publication was truly pushed and checked.
