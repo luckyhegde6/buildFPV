@@ -14,3 +14,5 @@ Retry 3: request execution after removing job-level marker guards. The push path
 Latest-code validation requested after updating explicit route-redirect assertions and fixing summary shell quoting. Wiki publishing still requires WIKI_PUBLISH_TOKEN or GH_PERSONAL_ACCESS_TOKEN; do not treat a failed credential step as a publish attempt.
 
 Request publication of the new video-course links and Drone Coding and Machine Learning page to the existing Wiki. Run the current source revision, install headless Playwright, and review publish/verification results. The repository Actions secret WIKI_PUBLISH_TOKEN or GH_PERSONAL_ACCESS_TOKEN is required; do not include credentials in this file.
+
+Retry 4: repository owner reports WIKI_PUBLISH_TOKEN configured on 2026-10-23. Trigger the workflow on the current main revision and verify the publish and live browser checks before recording success.
