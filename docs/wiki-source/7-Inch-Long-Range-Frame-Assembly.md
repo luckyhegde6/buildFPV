@@ -2,6 +2,10 @@
 
 ![7-inch frame class and example wheelbase reference](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/frame-size-reference.svg)
 
+![Product photo of iFlight AOS 7 V5 long-range frame kit](https://fpvstorerc.com/cdn/shop/files/IFlightAOS7V5FrameKit_4.jpg?v=1750820095&width=1445)
+
+*Real frame example: iFlight AOS 7 V5. Official specs list 313 mm wheelbase, 254 × 184 × 36 mm overall dimensions, 8 mm arms and 325 g frame weight. Image: FPV Store RC listing; dimensions: [iFlight official product page](https://shop.iflight.com/AOS-7-V5-Frame-Kit-Pro2311).*
+
 A 7-inch frame is often designed for efficient cruising and mission equipment, but **propeller size alone does not guarantee range or endurance**. Aircraft mass, battery type, wind, average power, radio/video links, legal limits and recovery planning determine whether a mission is viable.
 
 ## 1. Design priorities
