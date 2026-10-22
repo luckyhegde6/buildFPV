@@ -74,6 +74,13 @@ try {
       record.httpStatus = response?.status() ?? null;
       record.finalUrl = page.url();
       record.title = await page.title();
+
+      const normalizePath = value => value.replace(/\\/+$/, '') || '/';
+      const expectedPath = normalizePath(new URL(testCase.url).pathname);
+      const finalPath = normalizePath(new URL(record.finalUrl).pathname);
+      if (finalPath !== expectedPath) {
+        record.errors.push(`Unexpected redirect: expected path ${expectedPath}, landed on ${finalPath}`);
+      }
       await page.locator('body').waitFor({ state: 'visible', timeout: 15000 });
       await page.waitForTimeout(800);
 
