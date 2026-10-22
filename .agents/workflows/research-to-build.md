@@ -68,6 +68,8 @@ Use deterministic scripts for mechanically checkable rules. Visual claims requir
 
 ### Gate 6 — Wiki publication (separate from source commit)
 
+Follow [the Wiki Publishing Runbook](../wiki-publishing-runbook.md) for PAT generation and validation, secret names/setup, local commands, manual workflow dispatch, and troubleshooting.
+
 1. Use the user-confirmed existing Wiki; do not initialize another one.
 2. Fetch the actual Wiki branch and inspect its current Home/sidebar/history. Preserve Wiki-only edits and avoid destructive overwrite.
 3. From a real network-enabled repository checkout, run:
