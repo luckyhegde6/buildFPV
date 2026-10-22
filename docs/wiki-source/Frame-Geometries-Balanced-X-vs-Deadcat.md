@@ -2,6 +2,10 @@
 
 ![Balanced X versus deadcat frame top-view and camera view cone](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/balanced-x-vs-deadcat.svg)
 
+![Short animated comparison of balanced X versus deadcat front-motor placement and camera field of view](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/balanced-x-deadcat-compare.gif)
+
+*Animation is a conceptual geometry comparison, not a frame drawing or a motor-map template.*
+
 A frame is the structure that holds the motors, flight stack, camera, video transmitter, battery and antennas. **Frame geometry, propeller size, and intended flying purpose are different choices.** Two frames may support the same nominal prop size but differ in camera visibility, mounting space, stiffness, and repair access.
 
 ## Real frame examples side by side
