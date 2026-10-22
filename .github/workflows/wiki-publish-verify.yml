@@ -11,7 +11,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: buildfpv-existing-wiki-publish
+  group: buildfpv-existing-wiki-publish-recovery
   cancel-in-progress: true
 
 jobs:
