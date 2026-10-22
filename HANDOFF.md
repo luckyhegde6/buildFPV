@@ -39,7 +39,7 @@ The connected GitHub MCP has read/write access to the source repository. Source 
 
 Key commits: [AGENTS.md](https://github.com/luckyhegde6/buildFPV/commit/7047eb25b8fd561a47fbf08222d93ec5a0083298), [research workflow](https://github.com/luckyhegde6/buildFPV/commit/a64aea5015adf8d884450ba5a18452351245ec33), [session log update](https://github.com/luckyhegde6/buildFPV/commit/044efb25845377b62d606c733c382e78a9b5d7ed), [durable memory update](https://github.com/luckyhegde6/buildFPV/commit/e81e72d44dd58e4982675aa1a8b1ad5f0f2f3bcc).
 
-## Publish and verify status — Actions runs queued; no jobs/artifacts yet
+## Publish and verify status — latest publish and verify jobs queued
 
 | Stage | State |
 |---|---|
@@ -48,7 +48,7 @@ Key commits: [AGENTS.md](https://github.com/luckyhegde6/buildFPV/commit/7047eb25
 | Headless Playwright verification script committed | Done |
 | GitHub Actions publish/verify workflow committed | Done |
 | Publish marker committed and retriggered | Done — workflow conditions accept both added and modified marker paths |
-| GitHub Actions run registered | **Yes, queued** — runs `39796268242` and `39796597578`; Jobs API returned no jobs yet |
+| GitHub Actions run registered | **Yes** — latest run `39797230235` is queued with both publish and verify jobs registered; no artifacts yet |
 | Existing Wiki fetched and compared before publish | Not done |
 | Wiki push confirmed | Not done |
 | Live Home/sidebar/charger/video pages and media verified | Not done |
@@ -60,8 +60,8 @@ The local container has Node.js 22.16.0, a `playwright` CLI version 1.57.0, and 
 - Headless Chromium navigation to the live Wiki failed with `net::ERR_BLOCKED_BY_ADMINISTRATOR`.
 - Direct curl reports `Could not resolve host: github.com`; the web fetcher returned cache misses for the Wiki routes.
 - The first workflow push attempt did not register a run, exposing a marker-condition mismatch. The workflow now accepts `added` or `modified` marker paths; the marker update registered runs `39796268242` and `39796597578` on push.
-- At the latest API read, both runs remained `queued`; the runs/jobs endpoints reported no jobs and no artifacts. The public GitHub status page listed Actions as operational, so do not attribute this queue to a confirmed platform incident.
-- Corrected `scripts/verify-wiki-live.mjs` from an over-escaped whitespace regex to `/\s+/g`, and triggered the latest run at commit `f2323a59632e35084240b09d314ada144025fa0f`.
+- At a prior API read, the first attempts remained `queued` and the latest had no jobs or artifacts. The public GitHub status page listed Actions as operational, so do not attribute this queue to a confirmed platform incident.
+- Corrected `scripts/verify-wiki-live.mjs` from an over-escaped whitespace regex to `/\s+/g`, and triggered a subsequent run at commit `f2323a59632e35084240b09d314ada144025fa0f`.
 
 The following are committed for a network-enabled GitHub-hosted Actions runner:
 - `scripts/verify-wiki-live.mjs` — Playwright headless checks for Home, charger guide and video matrix at desktop and mobile viewports; required content, HTTP status, tables, extensionless routes and Wiki-local images; screenshots and JSON report.
@@ -70,9 +70,12 @@ The following are committed for a network-enabled GitHub-hosted Actions runner:
 
 ## Exact next action
 
-Inspect the [latest run](https://github.com/luckyhegde6/buildFPV/actions/runs/39796597578) and [workflow page](https://github.com/luckyhegde6/buildFPV/actions/workflows/wiki-publish-verify.yml). The current run is registered but has not exposed any jobs/artifacts yet. If the status remains queued, investigate GitHub Actions queue/repository settings through the web UI; the connected GitHub MCP has no workflow-dispatch or cancel operation. Before a publisher run can push, the repository must have either `WIKI_PUBLISH_TOKEN` or `GH_PERSONAL_ACCESS_TOKEN` configured under Settings → Secrets and variables → Actions with permission to push to the existing Wiki Git remote. Do not put tokens into files, chat, or workflow logs.
+Inspect the [latest run](https://github.com/luckyhegde6/buildFPV/actions/runs/39797230235) and [workflow page](https://github.com/luckyhegde6/buildFPV/actions/workflows/wiki-publish-verify.yml). The latest run has both publish and Playwright jobs registered, but they remain queued and no artifacts are available yet. If the status remains queued, investigate GitHub Actions queue/repository settings through the web UI; the connected GitHub MCP has no workflow-dispatch or cancel operation. Before a publisher run can push, the repository must have either `WIKI_PUBLISH_TOKEN` or `GH_PERSONAL_ACCESS_TOKEN` configured under Settings → Secrets and variables → Actions with permission to push to the existing Wiki Git remote. Do not put tokens into files, chat, or workflow logs.
 
 When jobs appear, inspect the run summary/artifact and confirm these separately: publisher push succeeded, Playwright content/routes passed, and Wiki-local images loaded. If publish reports a missing token, the owner must add the repository secret; if a push fails, inspect the masked Git error before retrying.
+
+
+**Latest remote run update (22 October 2026):** Run [39797230235](https://github.com/luckyhegde6/buildFPV/actions/runs/39797230235) uses commit `ab2592162031430ecb510238af93c3957b40e1f1`. Both the publish and Playwright jobs are registered and `queued`; there are no artifacts yet. Earlier run `39796597578` completed with the Playwright job skipped; redundant job-level guards were then removed. Publication and browser verification remain incomplete until the latest run emits logs and the report artifact.
 
 ## Research and safety caveats
 
