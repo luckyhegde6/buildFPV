@@ -2,6 +2,10 @@
 
 ![Deadcat frame geometry versus symmetrical X and camera field of view](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/balanced-x-vs-deadcat.svg)
 
+![Manufacturer product photo of GEPRC GEP-MK5D deadcat frame](https://geprc.com/wp-content/uploads/2023/01/7-2-1-600x600.jpg)
+
+*Real product example: GEPRC GEP-MK5D O3 DeadCat. The manufacturer lists a 230 mm wheelbase, 208 × 193 × 42 mm overall dimensions, and 5-inch prop compatibility. Its maker describes the DC layout as intended to reduce visible props in O3 recordings. [GEPRC specifications](https://geprc.com/product/gep-mk5d-o3-frame/).*
+
 A **deadcat** frame shifts or spreads the front motor positions to reduce propeller tips entering the camera image. The name describes a family of layouts, not one standardized geometry. Check a real frame drawing and camera FOV rather than assuming every deadcat completely hides the props.
 
 ## 1. What the shape changes
