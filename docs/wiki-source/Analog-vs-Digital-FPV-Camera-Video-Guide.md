@@ -2,6 +2,8 @@
 
 ![Analog and digital FPV video-system architecture](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/analog-vs-digital-video.svg)
 
+![Live FPV view versus onboard and goggles DVR recording paths](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-camera-sensor-and-recording.svg)
+
 Choose a video system as a complete chain, not as an isolated camera. The camera signal format, aircraft-side video transmitter (VTX or digital air unit), antenna, and ground-side video receiver (VRX) or goggles must be compatible. The radio-control receiver (for example ExpressLRS) is a separate system.
 
 ## 1. Analog or digital?
