@@ -1,0 +1,6 @@
+# One-shot publish trigger — 2026-10-22
+
+This file exists solely to trigger .github/workflows/wiki-publish-verify.yml once on push to main.
+The workflow runs the link-rewrite regression test, publishes from docs/wiki-source/ to the existing buildFPV.wiki.git remote when WIKI_PUBLISH_TOKEN or GH_PERSONAL_ACCESS_TOKEN is configured, then installs Playwright with npx on a GitHub-hosted runner and captures headless verification screenshots/reports.
+
+No credentials belong in this file. After the workflow run, check the Actions run and artifacts, then record the actual publish result in HANDOFF.md, SESSIONS.md, and docs/FPV-WIKI-EXPANSION-TODO.md.
