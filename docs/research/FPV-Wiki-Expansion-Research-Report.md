@@ -335,3 +335,18 @@ The source also contains `scripts/test-wiki-link-rewrite.sh`, which was executed
 A small actual GIF `docs/assets/propeller-thrust-loop.gif` has been committed and referenced from the Home and motor/propulsion pages. It is a minimal concept animation; it is not a frame-assembly animation or a motor-order diagram. Further GIFs are still open in the TODO.
 
 **Publication status:** the main repository contains these source commits. The separate GitHub Wiki is not yet confirmed updated; this environment cannot resolve `github.com` through the local shell and the connected GitHub API returned 404 for the `.wiki` repository. Publication remains dependent on running `bash scripts/publish-wiki.sh` from a network-enabled local clone and verifying the push.
+
+
+## 8. Dedicated camera / VTX / VRX comparison page added (22 October 2026)
+
+The main repository now contains `docs/wiki-source/FPV-Cameras-VTX-VRX-Compatibility-Comparison.md`. It is placed immediately after `Video Systems and Goggles` in the Wiki sidebar and covers:
+- Analog 5.8 GHz camera → VTX → antenna → VRX/goggles as a distinct modular chain.
+- DJI O4 standard versus O4 Pro with separate model-level sensor/FOV/weight/voltage/recording notes.
+- Selected HDZero Whoop V2 and Freestyle V2 VTX physical/electrical examples from the official VTX summary.
+- Walksnail / CADDXFPV compatibility documentation and how to verify goggles generation.
+- BETAFPV Air75 as an integrated analog micro example, with exact wheelbase separated from prop size and its stated flight-time test range caveat.
+- A mission-selection matrix (tinywhoop, racing, freestyle, cinewhoop, long-range), plus buying compatibility and common-error checklists.
+
+Source for DJI live-view/recording specs and goggles compatibility: [DJI O4 specs](https://www.dji.com/o4-air-unit/specs), [DJI O4 FAQ](https://www.dji.com/o4-air-unit/faq). For HDZero physical/electrical model differences, use [HDZero VTX summary](https://docs.hd-zero.com/vtx-summary) and [Freestyle V2 docs](https://docs.hd-zero.com/freestyle-v2). For Walksnail pairings, use [Avatar compatibility](https://wiki.caddxfpv.com/en/Avatar-HD-Series/How-to-buy) and [Goggles X docs](https://wiki.caddxfpv.com/en/Avatar-HD-Series/Receiver-Unit/Goggles-X). The page deliberately leaves a comprehensive sensor/low-light/latency table across all current cameras as unfinished until exact model revisions and comparable test conditions have been researched.
+
+Navigation update: `_Sidebar.md` now links this comparison immediately after the general video overview; `Video-Systems-and-Goggles.md` links to the deeper matrix. The separate live Wiki still requires the local publisher and verified push.
