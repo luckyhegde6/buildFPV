@@ -181,6 +181,22 @@ for page in "$WIKI_DIR"/*.md; do
   done < <(for target in "$WIKI_DIR"/*.md; do basename "$target"; done)
 done
 
+# GitHub's whitespace check rejects newly added blank lines at EOF. Normalize all
+# publisher-managed Markdown pages while preserving internal blank lines and line breaks.
+for page in "$WIKI_DIR"/*.md; do
+  [[ -f "$page" ]] || continue
+  temp_page="$page.tmp"
+  awk '
+    { lines[NR] = $0 }
+    END {
+      n = NR
+      while (n > 0 && lines[n] ~ /^[[:space:]]*$/) n--
+      for (i = 1; i <= n; i++) print lines[i]
+    }
+  ' "$page" > "$temp_page"
+  mv "$temp_page" "$page"
+done
+
 git add -- *.md images/
 if git diff --cached --quiet; then
   echo "Wiki pages and images already match docs/wiki-source; nothing to publish."
