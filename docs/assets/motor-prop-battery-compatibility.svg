@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820" role="img" aria-labelledby="title desc">
+<title id="title">Brushless motor, propeller and battery cell count overview</title>
+<desc id="desc">Educational diagram of motor stator and rotating bell, propeller diameter and blades, and nominal/full-charge voltages for conventional 4.2-volt-per-cell LiPo battery packs. It does not specify a universal motor KV or prop combination.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0c1930"/><stop offset="1" stop-color="#1c4961"/></linearGradient><marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#7dd3fc"/></marker></defs>
+<rect width="1400" height="820" rx="26" fill="url(#bg)"/>
+<text x="42" y="53" font-family="Arial,sans-serif" font-size="33" font-weight="700" fill="#fff">MOTORS + PROPS + BATTERY VOLTAGE</text>
+<text x="44" y="84" font-family="Arial,sans-serif" font-size="18" fill="#c7f9ff">A matching system—not a single KV number or a single battery label.</text>
+<g font-family="Arial,sans-serif">
+<rect x="32" y="116" width="420" height="320" rx="20" fill="#152f4a" stroke="#3d7e99" stroke-width="2"/>
+<text x="242" y="151" text-anchor="middle" font-size="24" font-weight="700" fill="#7dd3fc">BLDC MOTOR (CUTAWAY)</text>
+<circle cx="238" cy="276" r="96" fill="#101d2b" stroke="#97a8b7" stroke-width="12"/>
+<circle cx="238" cy="276" r="72" fill="#26394d" stroke="#f4c16b" stroke-width="8"/>
+<circle cx="238" cy="276" r="42" fill="#b9c9d6" stroke="#42576a" stroke-width="5"/>
+<circle cx="238" cy="276" r="14" fill="#42576a"/>
+<g stroke="#e9ad4b" stroke-width="7"><path d="M238 210 V240"/><path d="M304 276 H274"/><path d="M238 342 V312"/><path d="M172 276 H202"/><path d="M191 229 L212 250"/><path d="M285 229 L264 250"/><path d="M191 323 L212 302"/><path d="M285 323 L264 302"/></g>
+<path d="M320 206 L350 184" stroke="#7dd3fc" stroke-width="3" marker-end="url(#arr)"/><text x="346" y="177" font-size="15" fill="#dceefa">Bell / rotor</text>
+<path d="M279 276 L348 276" stroke="#7dd3fc" stroke-width="3" marker-end="url(#arr)"/><text x="318" y="303" font-size="15" fill="#dceefa">Stator + windings</text>
+<text x="242" y="390" text-anchor="middle" font-size="16" fill="#c7f9ff">KV = unloaded RPM per volt, not thrust</text>
+<rect x="490" y="116" width="420" height="320" rx="20" fill="#152f4a" stroke="#3d7e99" stroke-width="2"/>
+<text x="700" y="151" text-anchor="middle" font-size="24" font-weight="700" fill="#86efac">PROPELLER TYPES</text>
+<g transform="translate(595 255)"><circle r="14" fill="#e9b44c"/><path d="M0 -9 C-16 -48 -8 -90 9 -93 C26 -82 21 -38 0 -9 M8 2 C48 -12 90 0 93 17 C80 34 37 26 8 2 M-6 6 C-20 47 -60 70 -77 55 C-82 34 -40 4 -6 6" fill="#80a6c0" stroke="#d7e8f3" stroke-width="3"/></g>
+<text x="595" y="366" text-anchor="middle" font-size="17" fill="#fff">3-blade example</text>
+<g transform="translate(790 255)"><circle r="14" fill="#e9b44c"/><path d="M0 -9 C-16 -48 -8 -90 9 -93 C26 -82 21 -38 0 -9 M8 2 C48 -12 90 0 93 17 C80 34 37 26 8 2" fill="#9ac9b0" stroke="#e5f7ec" stroke-width="3"/></g>
+<text x="790" y="366" text-anchor="middle" font-size="17" fill="#fff">2-blade example</text>
+<text x="700" y="402" text-anchor="middle" font-size="15" fill="#c7f9ff">Diameter, pitch and blade area change load</text>
+<rect x="948" y="116" width="420" height="320" rx="20" fill="#152f4a" stroke="#3d7e99" stroke-width="2"/>
+<text x="1158" y="151" text-anchor="middle" font-size="24" font-weight="700" fill="#fbd38d">CONVENTIONAL LIPO VOLTAGE</text>
+<g font-size="16" fill="#fff">
+<text x="982" y="200">1S  •  3.7 V nom. / 4.2 V full</text><rect x="982" y="209" width="62" height="14" rx="4" fill="#fbd38d"/>
+<text x="982" y="247">2S  •  7.4 V nom. / 8.4 V full</text><rect x="982" y="256" width="124" height="14" rx="4" fill="#fbd38d"/>
+<text x="982" y="294">3S  •  11.1 V nom. / 12.6 V full</text><rect x="982" y="303" width="186" height="14" rx="4" fill="#fbd38d"/>
+<text x="982" y="341">4S  •  14.8 V nom. / 16.8 V full</text><rect x="982" y="350" width="248" height="14" rx="4" fill="#fbd38d"/>
+<text x="982" y="388">6S  •  22.2 V nom. / 25.2 V full</text><rect x="982" y="397" width="350" height="14" rx="4" fill="#fbd38d"/>
+</g>
+<rect x="32" y="468" width="1336" height="296" rx="20" fill="#0a2033" stroke="#3d7e99" stroke-width="2"/>
+<text x="64" y="511" font-size="25" font-weight="700" fill="#fff">Before pairing any motor, prop and battery</text>
+<g fill="#dceefa" font-size="20">
+<text x="68" y="558">1. Verify motor-maker test table for the exact battery cell count and propeller.</text>
+<text x="68" y="599">2. Verify ESC voltage/current, airflow/cooling, and regulator input/output ranges.</text>
+<text x="68" y="640">3. Check frame clearance, all-up weight, pack current capability, connector and polarity.</text>
+<text x="68" y="681">4. Check motor/ESC temperature and current safely; do not guess from KV or S count.</text>
+<text x="68" y="723" fill="#fbd38d">Conventional 4.2 V/cell LiPo values only. Other chemistry/Hi-voltage pack limits differ.</text>
+</g>
+</g>
+</svg>
