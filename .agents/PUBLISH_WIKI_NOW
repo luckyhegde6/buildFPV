@@ -24,3 +24,5 @@ Retry 6: the original publish attempt remained active and retry 5 was queued beh
 Retry 7: bounded retries still left the publisher in image-download work. Since downloaded copies are optional and original image URLs are retained on failure, use a single connection attempt capped at 12 seconds; verify the actual Wiki push and Playwright report.
 
 Retry 8: automated publishing now copies repository-owned assets but preserves external image URLs rather than downloading from third-party hosts. This avoids delays from legacy/broken image hosts; confirm push and live verification.
+
+Retry 9: the previous publish reached git diff --cached --check and failed on a blank line at EOF in Drone-Categories-and-Size-Guide.md. The source file and publisher are now normalized before staging; verify push and live-site checks.
