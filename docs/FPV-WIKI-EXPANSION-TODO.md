@@ -643,12 +643,13 @@ Current animation is a simple concept loop for rotor/thrust orientation, not a p
 - [x] Fix the trigger condition: marker `added` **or** `modified` paths are accepted. Updating `.agents/PUBLISH_WIKI_NOW` now deliberately retriggers this workflow; edit it only when requesting a run.
 - [x] Run local headless attempt: Playwright CLI version 1.57.0 is present, but page navigation failed with `net::ERR_BLOCKED_BY_ADMINISTRATOR`; `github.com` DNS is blocked. `npx` download timed out.
 - [x] Re-check the Actions inventory after correcting the trigger: runs `39796268242` (commit `3142812`) and `39796597578` (commit `f2323a5`) were registered on push. Both reported `queued`, no jobs (`total_count: 0` at the jobs endpoint), and no artifacts at the latest read.
-- [ ] Open [the latest workflow run](https://github.com/luckyhegde6/buildFPV/actions/runs/39796597578) / [workflow page](https://github.com/luckyhegde6/buildFPV/actions/workflows/wiki-publish-verify.yml) and inspect why the registered run remains queued if it does not progress; the connector exposes no workflow-dispatch or cancel action.
+- [x] Inspect [run 39797230235](https://github.com/luckyhegde6/buildFPV/actions/runs/39797230235): link-rewrite regression passed; publishing failed at credential setup due to the missing Wiki-write secret; Playwright ran but route/content/image checks failed and artifact `12434310973` was uploaded.
 - [ ] Ensure either `WIKI_PUBLISH_TOKEN` or `GH_PERSONAL_ACCESS_TOKEN` repository secret exists with write access to the existing Wiki Git remote.
-- [ ] Confirm the publisher push and review the Playwright screenshots/report artifact. Verify Home/sidebar, target page contents and tables, extensionless routes, and local image loading.
-- [ ] Update `HANDOFF.md` and this TODO with the actual run ID/result and Wiki commit SHA once available.
+- [x] Download and review artifact [12434310973](https://github.com/luckyhegde6/buildFPV/actions/runs/39797230235/artifacts/12434310973). Its JSON report is `passed: false`: guide routes redirected to Home, expected model text/tables were absent, and a live Wiki-local JPEG failed.
+- [ ] After the owner adds the Wiki-write secret, rerun from Actions UI; require successful publish and a fresh Playwright report with passing routes/content/tables/images.
+- [x] Update `HANDOFF.md` and this TODO with run `39797230235` and its observed result; no Wiki commit SHA exists because the push did not occur.
 
-**Current state at last read:** the initial corrected run `39796597578` completed with `skipped` because the extra job-level conditions suppressed both jobs. Those redundant job guards are now removed; the latest run `39797230235` (commit `ab2592162031430ecb510238af93c3957b40e1f1`) is queued with both `Publish source pages to the existing Wiki` and `Verify live Wiki with headless Playwright` jobs registered. No artifacts/results are available yet, and a successful Wiki push or live verification is not established.
+**Observed run result:** run `39797230235` (commit `ab2592162031430ecb510238af93c3957b40e1f1`) passed the link-rewrite test but failed credential setup because `WIKI_PUBLISH_TOKEN` / `GH_PERSONAL_ACCESS_TOKEN` was empty. The Playwright job installed Chromium and ran headless, then exited 1 because both guide routes redirected to Home and expected content/tables/image checks failed. Artifact `12434310973` exists and has been reviewed. No Wiki push occurred.
 
 
 ---
@@ -663,3 +664,21 @@ Current animation is a simple concept loop for rotor/thrust orientation, not a p
 - [ ] Review the latest headless Playwright report/screenshots; do not claim checks passed without the uploaded evidence.
 
 **Remaining blocker:** at the latest read, latest run `39797230235` has not started jobs and has no artifacts. The manual browser page may expose queue details not available through the connected GitHub MCP. Confirm the Wiki-push secret is set in repository Actions secrets without ever disclosing the secret value.
+
+
+---
+
+## 22. Executed remote workflow result and evidence — 22 October 2026
+
+- [x] Review run [39797230235](https://github.com/luckyhegde6/buildFPV/actions/runs/39797230235), source commit `ab2592162031430ecb510238af93c3957b40e1f1`.
+- [x] Link rewrite regression passed on the GitHub-hosted runner.
+- [x] `npx --yes playwright@1.57.0 install --with-deps chromium` succeeded; Playwright Chromium ran in headless mode.
+- [x] Download and inspect [artifact 12434310973](https://github.com/luckyhegde6/buildFPV/actions/runs/39797230235/artifacts/12434310973), containing `report.json` and six screenshots (Home, chargers and video matrix at desktop/mobile viewports).
+- [x] Publisher failed at credential setup with `Missing WIKI_PUBLISH_TOKEN / GH_PERSONAL_ACCESS_TOKEN secret.`; publisher was skipped and no Wiki push occurred.
+- [x] Playwright report result was `passed: false`. Home lacks the newer `Drone Categories and Size Guide` link and `images/fpv-build-concept-ai.jpg` does not load from the live Wiki; both guide URLs redirect to Home, where expected charger/video model phrases and tables are absent.
+- [x] Confirmed source JPEG `docs/assets/fpv-build-concept-ai.jpg` exists in the main repository; the publisher should copy it to the existing Wiki on a successful publish.
+- [x] Added an explicit unexpected-route redirect assertion and corrected shell quoting in workflow summary lines after reading the logs. These follow-up code changes have not yet been exercised by another Actions run.
+- [ ] Configure `WIKI_PUBLISH_TOKEN` or `GH_PERSONAL_ACCESS_TOKEN` in repository Settings → Secrets and variables → Actions, with write access to the existing Wiki Git remote. Never paste the token into chat or commit it.
+- [ ] Re-run via the Actions UI after the secret is configured. Mark publication complete only after publisher push succeeds and fresh Playwright output passes.
+
+**Current status:** remote Playwright installation/execution and evidence capture are demonstrated. Publishing is blocked by missing secret configuration; live Wiki checks fail. Do not mark the Wiki as updated until a subsequent run proves the Wiki push and passes route/content/image assertions.
