@@ -42,3 +42,5 @@ Retry 15: run after force-staging publisher-managed images and expanding Playwri
 Retry 16: republish the supplied FPV infographic assets. Publisher now reconstructs WebP files from tracked Base64 chunks when normal docs/assets binary files are absent. Live Playwright coverage includes the two requested Wiki pages and asserts their intended local images load. Confirm source encoding reconstruction, push, and browser report.
 
 Retry 17: publish the supplied FPV basics and movement/control-loop infographics on FPV-System-Basics and How-FPV-Drones-Work. Home and System Basics no longer reference the missing fpv-build-concept-ai.jpg; the control path text expected by Playwright was restored. Verify the four new visual links and their Wiki-local images after publish, and report any remaining live checks honestly.
+
+Retry 18: confirm the new control-loop infographic explicitly in the live How-FPV-Drones-Work page. The Playwright verifier now requires both fpv-drone-movements-guide.webp and fpv-drone-control-loop-guide.webp, as well as the two System Basics infographics. Verify all images load.
