@@ -10,9 +10,9 @@ A frame is the structure that holds the motors, flight stack, camera, video tran
 
 ## Real frame examples side by side
 
-![GEPRC GEP-MK5X O3 symmetrical/squashed-X frame, manufacturer's product photo](https://geprc.com/wp-content/uploads/2022/11/GEP-MK5-O3-Frame-1-600x600.jpg)
+![GEPRC GEP-IX5 Fairy true-X frame, manufacturer's product photo](https://geprc.com/wp-content/uploads/2016/12/IMG_6505-600x600.jpg)
 
-*Example X/squashed-X frame: GEPRC lists 225 mm wheelbase, 214 × 168 × 42 mm overall size and 5-inch prop compatibility. [Manufacturer source](https://geprc.com/product/gep-mk5x-o3-frame/).*
+*Example true-X frame: GEPRC GEP-IX5 Fairy. The manufacturer lists 200 mm diagonal motor-to-motor wheelbase, 5-inch props and 105 g frame weight; this is an older listing, so availability may vary. [Manufacturer source](https://geprc.com/products/multirotors/gep-ix5-fairy/).*
 
 ![GEPRC GEP-MK5D O3 deadcat frame, manufacturer's product photo](https://geprc.com/wp-content/uploads/2023/01/7-2-1-600x600.jpg)
 
