@@ -26,6 +26,9 @@ These image and diagram files are versioned in the source repository `luckyhegde
 | `balanced-x-vs-deadcat.svg` | [Frame Geometries — Balanced X vs Deadcat](../wiki-source/Frame-Geometries-Balanced-X-vs-Deadcat.md) | Conceptual frame top view and camera FOV; frame shapes vary |
 | `frame-size-reference.svg` | Class guides and frame assembly pages | Model-specific dimensions; silhouettes are not to scale or drill templates |
 | `motor-prop-battery-compatibility.svg` | [Motors, Propellers and Battery Compatibility](../wiki-source/Motors-Propellers-and-Battery-Compatibility.md) | BLDC, prop and conventional LiPo voltage examples; no universal KV table |
+| `whoop-vs-toothpick-vs-cinewhoop.svg` | [Drone Categories and Size Guide](../wiki-source/Drone-Categories-and-Size-Guide.md) | Schematic frame style comparison; not a standardized size class |
+| `frame-prop-size-comparison.svg` | [Drone Categories and Size Guide](../wiki-source/Drone-Categories-and-Size-Guide.md) | 2.5/3.5/5/7-inch nominal prop diameters shown proportionally; not wheelbase |
+| `fpv-video-link-separation.svg` | [FPV System Basics](../wiki-source/FPV-System-Basics.md) | Separate conceptual control, video and power paths; not a board wiring diagram |
 | `drone-class-decision-tree.svg` | [Drone Categories and Size Guide](../wiki-source/Drone-Categories-and-Size-Guide.md) | Mission-based class selector with strengths and compromises |
 | `bnf-pnp-rtf-arf-comparison.svg` | [BNF/PNP/RTF/ARF/DIY formats](../wiki-source/BNF-PNP-RTF-ARF-and-DIY-Formats.md) | Package inclusion tendencies; always check exact SKU contents |
 | `fpv-camera-sensor-and-recording.svg` | [Analog vs Digital FPV](../wiki-source/Analog-vs-Digital-FPV-Camera-Video-Guide.md) | Separate live feed, onboard recording and goggles DVR paths |
