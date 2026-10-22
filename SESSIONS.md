@@ -181,3 +181,10 @@ This is a chronological, append-oriented engineering log. New work should append
 - Playwright reported HTTP 200 for the Wiki Home, charger guide, and video compatibility matrix. Content/table checks passed on the charger and matrix pages. One Home-page local image, `images/fpv-build-concept-ai.jpg`, failed to load, so the workflow overall reported failure.
 - Updated the publisher to force-stage publisher-managed Wiki images; [run #15](https://github.com/luckyhegde6/buildFPV/actions/runs/39845914339) successfully republished. Its Playwright/Chromium setup is still in progress; the image fix is not yet browser-confirmed.
 - [Run #16](https://github.com/luckyhegde6/buildFPV/actions/runs/39846078398) is queued to validate the mandatory simulator playlist and newly added coding/ML Wiki page alongside image checks. Do not mark Playwright validation green yet.
+
+## 2026-10-23 — Supplied FPV infographics added
+
+- Updated Wiki source pages to include the user-provided basics, beginner, movement, and control-loop infographics. The control-loop visual is a committed binary WebP under `docs/assets/`.
+- Fixed two broken legacy image references on Home/System Basics and added the missing “The control path” explanation to How FPV Drones Work.
+- Run #18 publish job succeeded: https://github.com/luckyhegde6/buildFPV/actions/runs/39863362323.
+- Browser verification did not complete; it remains in the Playwright/Chromium installation step. Run #19 is queued and now explicitly asserts all four intended image filenames. Await that report before recording the live-page image checks as passed.
