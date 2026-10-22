@@ -648,4 +648,18 @@ Current animation is a simple concept loop for rotor/thrust orientation, not a p
 - [ ] Confirm the publisher push and review the Playwright screenshots/report artifact. Verify Home/sidebar, target page contents and tables, extensionless routes, and local image loading.
 - [ ] Update `HANDOFF.md` and this TODO with the actual run ID/result and Wiki commit SHA once available.
 
-**Current state:** pushes have now registered Actions runs, but they are still `queued` and the Jobs API returns no jobs/artifacts. The latest run (`39796597578`, commit `f2323a59632e35084240b09d314ada144025fa0f`) includes a fix to the verifier's whitespace normalization. The existing Wiki still has not been confirmed published by this workflow; publisher outcome and live browser verification remain open until job logs/report evidence exist.
+**Current state at last read:** the initial corrected run `39796597578` completed with `skipped` because the extra job-level conditions suppressed both jobs. Those redundant job guards are now removed; the latest run `39797230235` (commit `ab2592162031430ecb510238af93c3957b40e1f1`) is queued with both `Publish source pages to the existing Wiki` and `Verify live Wiki with headless Playwright` jobs registered. No artifacts/results are available yet, and a successful Wiki push or live verification is not established.
+
+
+---
+
+## 21. Workflow job-guard repair and third remote attempt — 22 October 2026
+
+- [x] Inspect initial corrected run `39796597578`; GitHub reported the Playwright job as `skipped`, with no publisher job/artifact evidence.
+- [x] Remove redundant marker-file job-level `if` guards. Automatic `push.paths` already limits push-triggered runs to `.agents/PUBLISH_WIKI_NOW`; the publisher now runs for a valid workflow trigger, and the verifier uses `if: always()` so it can run even if publish fails.
+- [x] Update the marker to request a third run after the guard fix.
+- [x] Confirm latest run [39797230235](https://github.com/luckyhegde6/buildFPV/actions/runs/39797230235) is registered with both the publish and Playwright jobs in `queued` status.
+- [ ] Inspect actual publish logs; if successful, record the Wiki commit SHA and verify existing pages/media.
+- [ ] Review the latest headless Playwright report/screenshots; do not claim checks passed without the uploaded evidence.
+
+**Remaining blocker:** at the latest read, latest run `39797230235` has not started jobs and has no artifacts. The manual browser page may expose queue details not available through the connected GitHub MCP. Confirm the Wiki-push secret is set in repository Actions secrets without ever disclosing the secret value.
