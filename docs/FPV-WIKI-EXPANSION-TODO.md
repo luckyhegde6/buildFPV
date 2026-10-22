@@ -640,12 +640,12 @@ Current animation is a simple concept loop for rotor/thrust orientation, not a p
 - [x] Add `scripts/verify-wiki-live.mjs` with headless Playwright checks for live Home, the charger guide and exact-model video matrix at desktop/mobile viewports.
 - [x] Add `.github/workflows/wiki-publish-verify.yml` to run link-rewrite tests, publish to the existing Wiki when a suitable secret exists, install Playwright with `npx`, and upload screenshots + a JSON report.
 - [x] Add `.agents/PUBLISH_WIKI_NOW` as a one-shot trigger and add a `workflow_dispatch` entry point.
-- [x] Guard the marker trigger so future edits to this file do not automatically publish again; manual dispatch remains supported.
+- [x] Fix the trigger condition: marker `added` **or** `modified` paths are accepted. Updating `.agents/PUBLISH_WIKI_NOW` now deliberately retriggers this workflow; edit it only when requesting a run.
 - [x] Run local headless attempt: Playwright CLI version 1.57.0 is present, but page navigation failed with `net::ERR_BLOCKED_BY_ADMINISTRATOR`; `github.com` DNS is blocked. `npx` download timed out.
-- [x] Check Actions run inventory after the marker commit: `total_count: 0`; no remote run was started by the GitHub MCP commit.
-- [ ] Manually dispatch [Publish and verify existing FPV Wiki](https://github.com/luckyhegde6/buildFPV/actions/workflows/wiki-publish-verify.yml) on `main`; the connected GitHub MCP exposes no workflow-dispatch action.
+- [x] Re-check the Actions inventory after correcting the trigger: runs `39796268242` (commit `3142812`) and `39796597578` (commit `f2323a5`) were registered on push. Both reported `queued`, no jobs (`total_count: 0` at the jobs endpoint), and no artifacts at the latest read.
+- [ ] Open [the latest workflow run](https://github.com/luckyhegde6/buildFPV/actions/runs/39796597578) / [workflow page](https://github.com/luckyhegde6/buildFPV/actions/workflows/wiki-publish-verify.yml) and inspect why the registered run remains queued if it does not progress; the connector exposes no workflow-dispatch or cancel action.
 - [ ] Ensure either `WIKI_PUBLISH_TOKEN` or `GH_PERSONAL_ACCESS_TOKEN` repository secret exists with write access to the existing Wiki Git remote.
 - [ ] Confirm the publisher push and review the Playwright screenshots/report artifact. Verify Home/sidebar, target page contents and tables, extensionless routes, and local image loading.
 - [ ] Update `HANDOFF.md` and this TODO with the actual run ID/result and Wiki commit SHA once available.
 
-**Current state:** the remote workflow is committed but unrun. The source repository is not the live Wiki; publication and live browser verification remain open until the GitHub Actions run actually executes.
+**Current state:** pushes have now registered Actions runs, but they are still `queued` and the Jobs API returns no jobs/artifacts. The latest run (`39796597578`, commit `f2323a59632e35084240b09d314ada144025fa0f`) includes a fix to the verifier's whitespace normalization. The existing Wiki still has not been confirmed published by this workflow; publisher outcome and live browser verification remain open until job logs/report evidence exist.
