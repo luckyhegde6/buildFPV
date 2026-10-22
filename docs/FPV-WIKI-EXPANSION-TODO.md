@@ -577,8 +577,10 @@ Current animation is a simple concept loop for rotor/thrust orientation, not a p
 - [x] Include ISDT UC2 (supported 1S/2S standard LiPo), ISDT 608AC (AC/DC 1–6S charger), ToolkitRC M7AC (portable AC/DC 1–6S charger) and ToolkitRC M6DAC (two-output charger).
 - [x] Link the manufacturer specifications and manuals, and distinguish charger-output ratings from AC input limits.
 - [x] Explain that dual-output “per channel” claims depend on input source and operating mode; do not infer simultaneous full power from the headline rating.
-- [ ] Before live publication, inspect the rendered table and all four source links in the Wiki.
+- [ ] Initialize the separate GitHub Wiki by opening the repository's Wiki tab and creating/saving the first `Home` page; in this verification, the Wiki repository endpoint and raw `Home.md` both returned 404.
+- [ ] From a network-enabled local clone after Wiki initialization, run `bash scripts/test-wiki-link-rewrite.sh`, run `bash scripts/publish-wiki.sh`, review the staged diff and type `PUBLISH` only after review.
+- [ ] After the push, inspect the rendered table, its four manufacturer-source links, sidebar/slugs, and images/GIFs in the live Wiki.
 - [ ] Expand the list only after checking more current charger models, exact revisions/manuals and source-supported per-channel power allocation. Do not imply this representative set is a market-wide recommendation.
 - [ ] Keep India-specific prices and seller availability out of the table until checked for a stated date/region and exact bundle contents.
 
-**Publication status unchanged:** the main-repository source page is committed, but the separate Wiki push and live rendering have not been verified in this session.
+**Publication status unchanged:** the source page and TODO are committed to `buildFPV/main`, but the separate Wiki repository is not yet initialized/available to fetch and live rendering has not been verified. This runtime also cannot resolve `github.com` from the local shell, so the network-enabled publishing steps must run elsewhere.
