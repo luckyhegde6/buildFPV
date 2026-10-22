@@ -14,6 +14,7 @@
 - [[Betaflight Basics]]
 - [[Video Systems and Goggles]]
 - [FPV Cameras, VTX, VRX and Goggles Compatibility Comparison](FPV-Cameras-VTX-VRX-Compatibility-Comparison)
+- [FPV Camera Selection Guide](FPV-Camera-Selection-Guide)
 - [Analog vs Digital FPV Camera Video Guide](Analog-vs-Digital-FPV-Camera-Video-Guide)
 - [Analog Goggles and VRX Integration](Analog-Goggles-and-VRX-Integration)
 - [FPV Goggles and VRX Integration Guide](FPV-Goggles-and-VRX-Integration-Guide)
@@ -51,6 +52,7 @@
 
 **Build, batteries and safety**
 - [[First Build Checklist]]
+- [FPV Build Budget and Buying Guide](FPV-Build-Budget-and-Buying-Guide)
 - [FPV Chargers, LiPo and Li-ion Battery Safety](FPV-Chargers-LiPo-and-Li-ion-Battery-Safety)
 - [[Buying Parts in India]]
 - [[Bench Safety and Flight Readiness]]
