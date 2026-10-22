@@ -84,7 +84,7 @@ try {
         record.errors.push(`Final route should not use a .md suffix: ${record.finalUrl}`);
       }
 
-      const bodyText = (await page.locator('body').innerText()).replace(/\\s+/g, ' ');
+      const bodyText = (await page.locator('body').innerText()).replace(/\s+/g, ' ');
       for (const phrase of testCase.required) {
         const present = bodyText.includes(phrase);
         record.bodyChecks.push({ phrase, present });
