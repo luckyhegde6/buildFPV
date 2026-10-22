@@ -553,3 +553,13 @@ Current animation is a simple concept loop for rotor/thrust orientation, not a p
 - [x] Link the new battery planning page from Home, sidebar, motor/prop compatibility, and charger safety pages.
 - [ ] Recheck this page's published equations, anchors and table rendering after Wiki sync; verify that links resolve to extensionless Wiki slugs.
 - [ ] Consider a spreadsheet-style calculator only after more representative, sourced flight-log data is available; do not imply an estimate predicts a safe maximum flight time.
+
+
+### Final source-level verification pass — 22 October 2026
+
+- [x] Verify Home's 43 direct Wiki page routes use extensionless slugs; all 43 resolve to current `docs/wiki-source/*.md` filenames and none include `.md`.
+- [x] Verify 28 standard Markdown links in the sidebar resolve to source page slugs; no missing source targets found.
+- [x] Verify all 47 files under `docs/assets/` are registered in `docs/assets/README.md` (excluding the README itself).
+- [x] Verify expected class, frame assembly, motor/prop/battery, charger, camera/video ecosystem, goggles/VRX, troubleshooting and battery-planning pages exist in source.
+- [x] Run the link rewrite regression pattern with Bash/sed: standard relative links, `./Page.md`, anchors and an external URL; output matched expected extensionless Wiki links.
+- [ ] Run the actual publisher against the real Wiki checkout and verify the remote push. Container networking could not resolve github.com, and the GitHub contents API cannot read the separate `.wiki.git` repository in this session; publishing remains unverified.
