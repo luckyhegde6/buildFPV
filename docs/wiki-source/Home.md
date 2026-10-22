@@ -21,6 +21,8 @@ For components, see [motors, propellers and battery compatibility](https://githu
 
 ## 📺 Video and receiver integration
 
+Start with the model-level [FPV Cameras, VTX, VRX and Goggles Compatibility Comparison](https://github.com/luckyhegde6/buildFPV/wiki/FPV-Cameras-VTX-VRX-Compatibility-Comparison), then continue to [Analog vs Digital FPV Cameras and Video](https://github.com/luckyhegde6/buildFPV/wiki/Analog-vs-Digital-FPV-Camera-Video-Guide) for the underlying trade-offs.
+
 Start with the [camera, VTX, VRX and goggles compatibility comparison](https://github.com/luckyhegde6/buildFPV/wiki/FPV-Cameras-VTX-VRX-Compatibility-Comparison), then compare [analog vs digital FPV cameras and video](https://github.com/luckyhegde6/buildFPV/wiki/Analog-vs-Digital-FPV-Camera-Video-Guide) and use the [goggles and VRX integration guide](https://github.com/luckyhegde6/buildFPV/wiki/FPV-Goggles-and-VRX-Integration-Guide).
 
 Compare [analog vs digital FPV cameras and video](https://github.com/luckyhegde6/buildFPV/wiki/Analog-vs-Digital-FPV-Camera-Video-Guide), then use the [goggles and VRX integration guide](https://github.com/luckyhegde6/buildFPV/wiki/FPV-Goggles-and-VRX-Integration-Guide). The radio-control receiver and the video receiver are different systems; digital goggles and air units must match by supported model/generation.
