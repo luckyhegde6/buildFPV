@@ -310,3 +310,60 @@ All custom visual assets should be editable/reproducible SVG where practical, re
 - Manufacturer claims and prices change; keep dates, model/revision and source URLs near the claim.
 - Size labels are practical shorthand; actual wheelbase, prop diameter, mass, payload and configuration govern compatibility.
 - The separate GitHub Wiki publication remains a required last step after source changes are reviewed.
+
+
+---
+
+## 13. Implementation status — 22 October 2026
+
+This status was updated after the first source implementation batch. A checkbox is checked here only where a corresponding repository file/asset has been created; it does **not** mean it has already been published to the separate Wiki.
+
+### Source pages implemented in main (created; verify before final publication)
+
+- [x] `docs/wiki-source/Drone-Categories-and-Size-Guide.md` — first class selector with category comparison and model-specific examples.
+- [x] `docs/wiki-source/Frame-Geometries-Balanced-X-vs-Deadcat.md` — geometry overview, tool inventory, assembly order, troubleshooting.
+- [x] `docs/wiki-source/Balanced-X-Frame-Assembly.md` — dedicated symmetrical-X frame assembly.
+- [x] `docs/wiki-source/Deadcat-Frame-Assembly.md` — dedicated deadcat geometry and assembly.
+- [x] `docs/wiki-source/2-5-Inch-Frame-Guide.md` — dedicated micro frame dimension/fit and assembly.
+- [x] `docs/wiki-source/3-5-Inch-Cinewhoop-Frame-Assembly.md` — ducted frame/payload assembly trade-offs.
+- [x] `docs/wiki-source/5-Inch-Frame-Assembly.md` — racing vs freestyle and assembly.
+- [x] `docs/wiki-source/7-Inch-Long-Range-Frame-Assembly.md` — long-range frame and mission-planning caveats.
+- [x] `docs/wiki-source/Motors-Propellers-and-Battery-Compatibility.md` — motor/prop/cell-count matching and battery ageing caveats.
+- [x] `docs/wiki-source/FPV-Chargers-LiPo-and-Li-ion-Battery-Safety.md` — charger types, watt calculation and safe handling.
+- [x] `docs/wiki-source/Analog-vs-Digital-FPV-Camera-Video-Guide.md` — analog/digital/camera ecosystem overview.
+- [x] `docs/wiki-source/FPV-Goggles-and-VRX-Integration-Guide.md` — goggles categories and generation-specific matching.
+- [x] `docs/wiki-source/Tinywhoop-and-Micro-FPV-Guide.md` — whoop and micro starter guide.
+- [x] `docs/wiki-source/BNF-PNP-RTF-ARF-and-DIY-Formats.md` — package formats separated from flight class.
+- [x] `docs/wiki-source/FPV-Troubleshooting-Quick-Guide.md` — general safe symptom-based troubleshooting.
+
+### Original SVG assets implemented in main
+
+- [x] `docs/assets/drone-class-overview.svg`
+- [x] `docs/assets/balanced-x-vs-deadcat.svg`
+- [x] `docs/assets/frame-size-reference.svg`
+- [x] `docs/assets/motor-prop-battery-compatibility.svg`
+- [x] `docs/assets/charger-balance-power.svg`
+- [x] `docs/assets/analog-vs-digital-video.svg`
+- [x] `docs/assets/goggles-vrx-integration.svg`
+
+### Still outstanding / next implementation pass
+
+- [ ] Update `_Sidebar.md`, `docs/assets/README.md` and all cross-links, then verify the rendered navigation.
+- [ ] Create the dated research report under `docs/research/FPV-Wiki-Expansion-Research-Report.md`.
+- [ ] Add dedicated guides for analog VRX module install, DJI O3/O4 integration, Walksnail integration, HDZero integration, camera selection by use case, and system-specific troubleshooting.
+- [ ] Add fuller Tinywhoop, 2.5-inch, 3.5-inch cinewhoop, 5-inch and 7-inch class pages with actual manufacturer model comparisons and exact current revisions.
+- [ ] Create verified BNF/PNP/RTF included-item matrix from current individual listings.
+- [ ] Add remaining frame anatomy, frame mounting-pattern references, propeller type, LiPo-vs-Li-ion, video ecosystem comparison and decision-tree infographics.
+- [ ] Add short explanatory GIFs only after making and reviewing actual GIF assets. SVG diagrams are available now; do not mark GIF creation complete until a real animation file has been added and checked.
+- [ ] Add a comprehensive build tooling/assembly guide with separate branches for BNF maintenance and DIY soldering/building.
+- [ ] Recheck battery cycle-life, max-time and charger claims from the exact manufacturer's pack and charger manuals; avoid universal values.
+- [ ] Do final link/SVG/accessibility/source checks and revise any illustrative wheelbase ranges in `frame-size-reference.svg` against actual labelled model drawings or keep them clearly marked as conceptual.
+- [ ] Publish to the separate GitHub Wiki with `bash scripts/publish-wiki.sh`, review staged diff and type `PUBLISH`.
+- [ ] Verify the live Wiki contains all new pages and SVGs after successful Wiki push.
+
+### Research / source QA notes
+
+- The current class examples cite the [BETAFPV Air75](https://betafpv.com/products/air75-brushless-whoop-quadcopter) and [Pavo35](https://betafpv.com/products/pavo35-brushless-whoop-quadcopter) official listings. Values and bundled configurations can change.
+- The current digital-video guide cites official [DJI O4 specifications](https://www.dji.com/o4-air-unit/specs), [CADDXFPV/Walksnail compatibility](https://wiki.caddxfpv.com/en/Avatar-HD-Series/How-to-buy), and [HDZero VTX data](https://docs.hd-zero.com/vtx-summary).
+- The existing guides intentionally avoid a universal motor KV table, exact cycle-life promise, universal max flight time, or cross-brand digital-goggle compatibility claim.
+- Do not mark these source implementation tasks as live-Wiki publication. The main repo and the `.wiki.git` repo have separate commits.
