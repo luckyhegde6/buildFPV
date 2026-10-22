@@ -461,3 +461,35 @@ The following are now implemented in the main repository and verified by refetch
 - [x] Add a cross-link from `Video-Systems-and-Goggles.md` to the model-by-model comparison.
 
 Remaining: the new comparison gives selected examples and official model docs, but a complete camera sensor / low-light / latency / recording table across every supported model remains open until each current SKU's data is checked. Do not mark cross-brand goggles support or latency rankings as settled without exact model/firmware/test conditions.
+
+
+---
+
+## 15. New class-guide tranche — committed 22 October 2026
+
+The following broad class/flight-purpose pages have now been created separately from their mechanical assembly pages:
+
+- [x] `docs/wiki-source/2-5-Inch-FPV-Guide.md` — 2.5-inch class, real Sub250 example, weight/payload tradeoffs and setup.
+- [x] `docs/wiki-source/3-5-Inch-Cinewhoop-Guide.md` — real BETAFPV Pavo25 V2 vs Pavo35 comparison, guarded-prop trade-offs, payload and assembly notes.
+- [x] `docs/wiki-source/5-Inch-FPV-Racing-and-Freestyle.md` — distinct race vs freestyle priorities and component compatibility.
+- [x] `docs/wiki-source/7-Inch-Long-Range-FPV-Guide.md` — efficiency, energy reserve, recovery and experienced-pilot planning.
+- [x] Link these class guides in `docs/wiki-source/_Sidebar.md` and `docs/wiki-source/Home.md` using extensionless Wiki slugs.
+- [x] Add dedicated analog goggles/VRX, DJI O3/O4, Walksnail Avatar and HDZero integration tutorials to the sidebar and video overview page.
+- [x] Add a workshop/tooling guide covering mechanical and electrical tools, frame dry-fit, screw-length checks, power safety and no-prop bench testing.
+- [x] Add second short GIF `docs/assets/balanced-x-deadcat-compare.gif`, linked on the frame-geometry page and registered in the asset README.
+
+### Frame-geometry QA
+
+- [x] Correct the balanced-X example: GEPRC GEP-IX5 Fairy is presented as a true-X example (200 mm diagonal motor-to-motor wheelbase; product listing identifies the geometry), and GEPRC GEP-MK5X is not labelled true-X because it is a squashed-X.
+- [x] Keep the deadcat example distinct: GEPRC GEP-MK5D is a named deadcat model (230 mm wheelbase).
+- [x] Frame-size infographic uses manufacturer-specific examples: Sub250 OasisFly25, BETAFPV Pavo35, GEPRC GEP-MK5X/MK5D, iFlight AOS 7 V5. Drawings are illustrative and not scale templates.
+
+### Still outstanding
+
+- [ ] Publish the source bundle to the separate Wiki repository via the network-enabled local Git Bash checkout.
+- [ ] Inspect live Wiki rendering of the sidebar, all images/GIFs and internal URL slugs after publishing.
+- [ ] Build the detailed model-by-model camera/VTX/VRX/goggles compatibility matrix and separate camera-choice guides by tinywhoop, racing, freestyle, cinewhoop and long range.
+- [ ] Add model-by-model charger matrix with current manufacturer manuals, per-channel watt share, supported chemistries/cell counts and current charger specifications.
+- [ ] Finish price-stamped India buying/BOM guides with explicit date/currency/region and full kit cost.
+- [ ] Validate all external product photo downloads/URLs and image reuse terms. The source caption attribution is not a blanket licence for unrelated reuse.
+- [ ] Add further small animations/tutorials only as real generated files, then verify the GIF frames and Wiki rendering.
