@@ -67,4 +67,4 @@ Record simulator, map, aircraft preset, flight mode, rates (if changed), practic
 ## Training references
 
 - Liftoff: https://store.steampowered.com/app/410340/Liftoff_FPV_Drone_Racing/
-- Joshua Bardwell beginner playlist supplied for this project: https://youtube.com/playlist?list=PLwoDb7WF6c8lCKhQOTy-Vb9LfW0VAIrTP
+- Learn to fly an FPV drone (for total beginners) — beginner video playlist: https://www.youtube.com/playlist?list=PLwoDb7WF6c8lCKhQOTy-Vb9LfW0VAIrTP
