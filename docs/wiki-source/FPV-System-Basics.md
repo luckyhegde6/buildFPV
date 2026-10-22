@@ -1,5 +1,13 @@
 # FPV System Basics
 
+## Visual guides: parts, systems and flight
+
+![FPV drone basics infographic covering major components, the control loop, flight axes, thrust, video systems and antenna types](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-drone-basics-infographic.webp)
+
+![Beginner FPV drone guide showing quadcopter components, radio control, movement, propellers and video systems](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-drone-beginner-guide.webp)
+
+These overview infographics are visual companions to the detailed explanations below. Use them for orientation, then follow the text and model-specific manuals for setup, wiring, motor direction and compatibility.
+
 For choosing an aircraft style, see [Drone Categories and Size Guide](Drone-Categories-and-Size-Guide.md). For hardware/video trade-offs, see [Analog vs Digital FPV Video](Analog-vs-Digital-FPV-Camera-Video-Guide.md) and [Goggles/VRX Integration](FPV-Goggles-and-VRX-Integration-Guide.md).
 
 ![Real FPV quadcopter example](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/FPV_Quadrocopter.jpg/960px-FPV_Quadrocopter.jpg)
