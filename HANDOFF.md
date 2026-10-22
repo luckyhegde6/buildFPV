@@ -3,7 +3,7 @@
 **Updated:** 2026-10-22  
 **Repository:** https://github.com/luckyhegde6/buildFPV  
 **Branch:** `main`  
-**Last tree state checked before this handoff update:** `84f493197a7e591594b6efa5be3daef747448e48`  
+**Last session-log state checked before this handoff update:** `934aee7d0f9739d37383792d3fe801f373dbc897`  
 **Live Wiki (existing, user-confirmed):** https://github.com/luckyhegde6/buildFPV/wiki  
 **Wiki source pages:** `docs/wiki-source/`  
 **Assets:** `docs/assets/`  
@@ -31,6 +31,8 @@ The connected GitHub MCP has read/write access to the source repository. Source 
 - `.agents/builder-agent.md` — canonical files, implementation, validation and publication requirements.
 - `.agents/workflows/research-to-build.md` — research → build → QA → commit → Wiki publish gates.
 - `.agents/templates/research-brief.md` and `.agents/templates/session-entry.md` — reusable handoff/log templates.
+
+- Contributor discoverability was added to the repository README. [Commit](https://github.com/luckyhegde6/buildFPV/commit/549392b19f67fe9aab1e321652df7767d85bd32b)
 
 Key commits: [AGENTS.md](https://github.com/luckyhegde6/buildFPV/commit/7047eb25b8fd561a47fbf08222d93ec5a0083298), [research workflow](https://github.com/luckyhegde6/buildFPV/commit/a64aea5015adf8d884450ba5a18452351245ec33), [session log update](https://github.com/luckyhegde6/buildFPV/commit/044efb25845377b62d606c733c382e78a9b5d7ed), [durable memory update](https://github.com/luckyhegde6/buildFPV/commit/e81e72d44dd58e4982675aa1a8b1ad5f0f2f3bcc).
 
