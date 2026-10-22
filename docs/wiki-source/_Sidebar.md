@@ -51,6 +51,13 @@
 - [[Learning Journal]]
 - [[Pocket Video Walkthrough Notes]]
 
+**Video courses and advanced learning**
+- [Drone Coding and Machine Learning](Drone-Coding-and-Machine-Learning)
+- [[India Outdoor Flying Rules]]
+- [[How FPV Drones Work]]
+- [[RadioMaster Pocket Button Guide]]
+- [[Simulator Training]]
+
 **Build, batteries and safety**
 - [[First Build Checklist]]
 - [FPV Build Budget and Buying Guide](FPV-Build-Budget-and-Buying-Guide)
