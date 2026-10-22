@@ -47,3 +47,12 @@ For each meaningful technical claim, retain:
 - Contradictions/open questions.
 
 Do not store credentials, personal data, generated login tokens, or other secrets here.
+
+## Agent operating framework
+
+- Root `AGENTS.md` defines shared quality/safety/contribution rules.
+- `.agents/research-agent.md` defines source verification and evidence-led handoffs; `.agents/builder-agent.md` defines scoped implementation and testing; `.agents/workflows/research-to-build.md` is the standard research → build → independent QA → commit → Wiki publish process.
+- `.agents/templates/research-brief.md` standardizes source evidence handoffs; `.agents/templates/session-entry.md` standardizes chronological log entries.
+- `HANDOFF.md` is the immediate next-agent state; `SESSIONS.md` is append-oriented history; `MEMORY.md` is durable knowledge. Do not duplicate a full transcript between these files.
+- Do not mark a Wiki publish complete from a source-repo commit. Require push evidence and live browser checks.
+- Browser-tool status at the latest recorded session: no Playwright action was available in the active tool set; TinyFish was identified as an available cloud-browser option but was not connected. Recheck current plugin/tool availability before assuming this is still the case.
