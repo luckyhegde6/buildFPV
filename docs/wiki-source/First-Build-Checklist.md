@@ -1,5 +1,17 @@
 # First Build Checklist
 
+![Choose an FPV class and compare frame sizes](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/drone-class-overview.svg)
+
+Start with the [Drone Categories and Size Guide](Drone-Categories-and-Size-Guide.md), then choose a physical frame style using [Balanced X vs Deadcat](Frame-Geometries-Balanced-X-vs-Deadcat.md). Purchase format (BNF/PNP/RTF/DIY) is a separate decision: see [BNF, PNP, ARF, RTF and DIY Formats](BNF-PNP-RTF-ARF-and-DIY-Formats.md).
+
+## Pick a class before buying
+
+- [ ] Choose the purpose first: tinywhoop / indoor practice, 2.5-inch micro, cinewhoop, 5-inch racing/freestyle, or experienced-pilot long-range.
+- [ ] Confirm prop diameter and frame wheelbase as separate specifications from the actual frame drawing.
+- [ ] Decide if prop guards/ducts and camera-payload mounting are needed; they add mass/drag and do not make the aircraft collision-proof.
+- [ ] Select camera, VTX/air-unit and goggles/VRX as a compatible system. Start with [Analog vs Digital FPV Video](Analog-vs-Digital-FPV-Camera-Video-Guide.md) and [Goggles/VRX Integration](FPV-Goggles-and-VRX-Integration-Guide.md).
+- [ ] Check battery chemistry, series count, voltage/current limits and charger: [Motor/Prop/Battery Compatibility](Motors-Propellers-and-Battery-Compatibility.md), [Charger and Battery Safety](FPV-Chargers-LiPo-and-Li-ion-Battery-Safety.md).
+
 A good first build is not the most powerful build. It is the one whose parts fit, whose video/control systems you understand, and which is repairable within the budget.
 
 ## Choose the flying goal first
