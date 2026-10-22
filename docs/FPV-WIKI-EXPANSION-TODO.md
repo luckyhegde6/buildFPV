@@ -723,6 +723,6 @@ Current animation is a simple concept loop for rotor/thrust orientation, not a p
 - [x] Add clickable thumbnails for individual videos and direct playlist links; raw YouTube iframes are avoided because GitHub-flavored Markdown filters iframe.
 - [x] Link the new coding page from Wiki Home/sidebar, README, learning guide, roadmap, and reference pages.
 - [x] Re-fetch 20 docs/Wiki-source files through GitHub MCP and confirm all supplied video/playlist identifiers are present in their intended sections.
-- [ ] Publish these source changes to the existing live Wiki and inspect a fresh Playwright report. Previous run 39797230235 did not publish because WIKI_PUBLISH_TOKEN / GH_PERSONAL_ACCESS_TOKEN was missing; follow .agents/wiki-publishing-runbook.md to configure the secret and run the workflow.
+- [ ] Publish these source changes to the existing live Wiki and inspect a fresh Playwright report. Previous run 39797230235 did not publish because WIKI_PUBLISH_TOKEN / GH_PERSONAL_ACCESS_TOKEN was missing; follow .agents/wiki-publishing-runbook.md to configure the secret and manually run the workflow. Marker update commit b3d40fa53b4fb180768bca597a296896600dc30c did not create a new Actions run.
 
 **Status:** links and course sections are committed to buildFPV/main. Live Wiki publication/render validation remains a separate outstanding step.
