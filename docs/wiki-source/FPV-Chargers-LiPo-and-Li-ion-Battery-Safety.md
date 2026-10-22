@@ -1,5 +1,7 @@
 # FPV Chargers, LiPo and Li-ion Battery Safety
 
+![LiPo versus Li-ion battery comparison and conventional LiPo voltage reference](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/lipo-vs-li-ion.svg)
+
 ![Charger, balance lead and battery compatibility diagram](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/charger-balance-power.svg)
 
 Choose the charger after identifying the exact battery chemistry, cell count, maximum charge voltage, connector and charging method. A charger that fits the plug can still be wrong for the pack.
