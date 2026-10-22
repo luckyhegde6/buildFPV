@@ -11,7 +11,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: buildfpv-existing-wiki-publish-recovery
+  group: buildfpv-wiki-publish-final
   cancel-in-progress: true
 
 jobs:
@@ -74,7 +74,7 @@ jobs:
   verify-live-wiki:
     name: Verify live Wiki with headless Playwright
     needs: [publish]
-    if: always()
+    if: always() && needs.publish.result != 'cancelled'
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
