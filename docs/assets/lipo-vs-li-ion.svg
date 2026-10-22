@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820" role="img" aria-labelledby="title desc">
+<title id="title">FPV LiPo versus Li-ion batteries and safe expectations</title>
+<desc id="desc">Educational comparison of high-current LiPo packs versus energy-dense Li-ion packs, with conventional 4.2-volt-per-cell LiPo voltage math, and notes that flight time and cycle life depend on the exact pack and use. Chemistry limits must be read from the pack label.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0a1830"/><stop offset="1" stop-color="#1b4a60"/></linearGradient></defs>
+<rect width="1400" height="820" rx="26" fill="url(#bg)"/>
+<text x="42" y="52" font-family="Arial,sans-serif" font-size="34" font-weight="700" fill="#fff">LiPo vs Li-ion — choose for the actual mission</text>
+<text x="44" y="85" font-family="Arial,sans-serif" font-size="18" fill="#c7f9ff">Battery chemistry, current capability, weight, reserve and charger settings must match the exact pack.</text>
+<g font-family="Arial,sans-serif">
+<rect x="38" y="120" width="642" height="345" rx="20" fill="#16344d" stroke="#7dd3fc" stroke-width="3"/>
+<text x="70" y="162" font-size="27" font-weight="700" fill="#7dd3fc">LiPo • common high-current choice</text>
+<!-- pouch battery -->
+<rect x="80" y="198" width="140" height="180" rx="14" fill="#9aa7b6" stroke="#e2f4ff" stroke-width="3"/>
+<rect x="95" y="213" width="110" height="150" rx="9" fill="#273d53"/>
+<path d="M120 198 V183 H139 V198 M163 198 V183 H183 V198" stroke="#fb7185" stroke-width="6"/>
+<text x="150" y="282" text-anchor="middle" font-size="25" font-weight="700" fill="#fff">LiPo</text>
+<text x="150" y="309" text-anchor="middle" font-size="16" fill="#c7f9ff">pouch pack</text>
+<g font-size="18" fill="#eaf6fc">
+<text x="250" y="220">• Often chosen for high current</text>
+<text x="250" y="252">• Suits fast throttle changes</text>
+<text x="250" y="284">• Voltage sag and heating depend</text><text x="268" y="308">on pack, current and temperature</text>
+<text x="250" y="345">• Damage/swelling is a stop condition</text>
+<text x="250" y="383">• Match discharge ratings to load</text>
+</g>
+<rect x="720" y="120" width="642" height="345" rx="20" fill="#16344d" stroke="#86efac" stroke-width="3"/>
+<text x="750" y="162" font-size="27" font-weight="700" fill="#86efac">Li-ion • energy / endurance priority</text>
+<!-- cylindrical cells -->
+<g>
+<rect x="778" y="205" width="57" height="166" rx="20" fill="#b6c4ce" stroke="#f2f7fa" stroke-width="3"/><rect x="783" y="219" width="47" height="136" rx="15" fill="#237c69"/><ellipse cx="806" cy="211" rx="25" ry="8" fill="#dce7ee" stroke="#556b7a" stroke-width="2"/>
+<rect x="842" y="205" width="57" height="166" rx="20" fill="#b6c4ce" stroke="#f2f7fa" stroke-width="3"/><rect x="847" y="219" width="47" height="136" rx="15" fill="#237c69"/><ellipse cx="870" cy="211" rx="25" ry="8" fill="#dce7ee" stroke="#556b7a" stroke-width="2"/>
+<rect x="906" y="205" width="57" height="166" rx="20" fill="#b6c4ce" stroke="#f2f7fa" stroke-width="3"/><rect x="911" y="219" width="47" height="136" rx="15" fill="#237c69"/><ellipse cx="934" cy="211" rx="25" ry="8" fill="#dce7ee" stroke="#556b7a" stroke-width="2"/>
+</g>
+<g font-size="18" fill="#eaf6fc">
+<text x="990" y="220">• Can suit efficient cruising</text>
+<text x="990" y="252">• Cell current limit is critical</text>
+<text x="990" y="284">• Not every cell tolerates acro peaks</text>
+<text x="990" y="316">• Pack wiring / parallel groups matter</text>
+<text x="990" y="348">• Sag/heat under excess load can be unsafe</text>
+<text x="990" y="383">• Verify exact cell datasheet</text>
+</g>
+<rect x="38" y="490" width="1324" height="280" rx="20" fill="#0b2236" stroke="#3e7288" stroke-width="2"/>
+<text x="70" y="532" font-size="26" font-weight="700" fill="#fff">Voltage and endurance: read the pack label</text>
+<g font-size="18" fill="#eaf6fc">
+<text x="76" y="576">Conventional 3.7 V nominal / 4.20 V full LiPo per cell:</text>
+<text x="96" y="611">1S  3.7 / 4.2 V   •   2S  7.4 / 8.4 V   •   3S  11.1 / 12.6 V</text>
+<text x="96" y="645">4S  14.8 / 16.8 V   •   6S  22.2 / 25.2 V</text>
+<text x="76" y="685" fill="#fbd38d">LiHV and other lithium chemistries may use different limits. Never infer voltage from “lithium” alone.</text>
+<text x="76" y="724">Max flight time and cycle life are not fixed chemistry values: payload, current, temperature, age, reserve and test conditions matter.</text>
+</g>
+</g>
+</svg>
