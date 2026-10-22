@@ -2,6 +2,16 @@
 
 Welcome to the buildFPV visual learning path. Start with the aircraft overview, understand how it flies, then identify each part one by one before moving into radio setup, simulation, configuration and safety. These Wiki-ready pages are maintained in the main repository under `docs/wiki-source/`; reusable diagrams live in `docs/assets/`.
 
+## 🎓 Required video onboarding and learning tracks
+
+> [!IMPORTANT]
+> **Mandatory beginner video course before your first real flight:** complete the [Learn to fly an FPV drone (for total beginners) playlist](https://www.youtube.com/playlist?list=PLwoDb7WF6c8lCKhQOTy-Vb9LfW0VAIrTP) in sequence while practising in Liftoff. This is a buildFPV learning requirement, **not an official licence or certification**; continue to check safety requirements and current local rules.
+
+- [Drone Systems and Controls](FPV-System-Basics) — supplied playlist and video to complement the control-loop diagrams.
+- [RadioMaster Pocket setup video](RadioMaster-Pocket-Button-Guide) — setup and binding overview.
+- [India outdoor flying rules](India-Outdoor-Flying-Rules) — supplemental video resources plus official rules and airspace links.
+- [Drone Coding and Machine Learning](Drone-Coding-and-Machine-Learning) — optional advanced track.
+
 ## 🧭 Recommended beginner path
 
 1. [FPV System Basics](https://github.com/luckyhegde6/buildFPV/wiki/FPV-System-Basics) — understand the control, flight-control, power and video paths.
