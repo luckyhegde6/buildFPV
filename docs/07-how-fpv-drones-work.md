@@ -90,6 +90,19 @@ The gyro is central to fast attitude/rate control. GPS is **not** a replacement 
 - [ ] I know GPS is optional on many freestyle/racing builds and GPS Rescue is not guaranteed return-to-home.
 - [ ] I will remove all propellers during configuration, firmware work and motor testing.
 
+## 🎛️ Drone systems and controls — video resources
+
+[![Watch the supplied drone systems and controls video](https://img.youtube.com/vi/sxaEaXcuQA4/hqdefault.jpg)](https://www.youtube.com/watch?v=sxaEaXcuQA4)
+
+- [Drone systems and controls playlist](https://www.youtube.com/playlist?list=PLgMDNELGJ1CYU7vfun-Q7HXsldD-RsocG)
+- [Single video: drone systems and controls](https://www.youtube.com/watch?v=sxaEaXcuQA4)
+
+Use these as guided explanations alongside the diagrams and official manuals. I could not reliably confirm the playlist/video titles from public page metadata, so the links are grouped by the topic supplied with them rather than making claims about their exact syllabus.
+
+## 💻 Optional advanced track — drone coding and ML
+
+After learning the basic control, flight-controller and simulator concepts, use the [Drone Coding and Machine Learning Learning Path](drone-coding-and-ml.md). It links the supplied Python/Tello and simulator-first programming videos. This is optional and does not replace manual piloting practice or safety checks.
+
 ## Further reading
 
 - [Betaflight: About the flight controller](https://betaflight.com/docs/wiki/getting-started)
