@@ -444,7 +444,7 @@ The following are now implemented in the main repository and verified by refetch
 - [x] Create `docs/wiki-source/FPV-Cameras-VTX-VRX-Compatibility-Comparison.md` with model-level examples and a compatibility checklist. [ ] Expand it into the full per-SKU firmware/recording/price snapshot matrix.
 - [ ] Add further product-verified small-micro / 2.5-inch / 3.5-inch / 5-inch / 7-inch model examples and compare actual full-kit weights and payload limits.
 - [ ] Finish camera choice guides split by tinywhoop, racing, freestyle, cinewhoop and long-range; include confirmed live-view vs onboard recording specs per model.
-- [ ] Add charger model-by-model matrix from exact charger manuals, including per-channel watt allocation and supported chemistry/cell count.
+- [x] Add a representative manufacturer-sourced charger comparison to `docs/wiki-source/FPV-Chargers-LiPo-and-Li-ion-Battery-Safety.md` for ISDT UC2, ISDT 608AC, ToolkitRC M7AC and M6DAC, including chemistry/cell count, input type, power limits and channel caveats. [ ] Expand the table only after checking additional current models and manuals.
 - [ ] Add a detailed BOM/budget guide using prices checked on date and in a stated region, clearly separating price snapshots from stable technical facts.
 - [ ] Inspect/validate every external image URL and rendered SVG/GIF on desktop/mobile after the assets are downloaded to the Wiki repository.
 - [ ] Run `bash scripts/test-wiki-link-rewrite.sh` in the local checkout after pulling `main`.
@@ -489,7 +489,7 @@ The following broad class/flight-purpose pages have now been created separately 
 - [ ] Publish the source bundle to the separate Wiki repository via the network-enabled local Git Bash checkout.
 - [ ] Inspect live Wiki rendering of the sidebar, all images/GIFs and internal URL slugs after publishing.
 - [ ] Build the detailed model-by-model camera/VTX/VRX/goggles compatibility matrix and separate camera-choice guides by tinywhoop, racing, freestyle, cinewhoop and long range.
-- [ ] Add model-by-model charger matrix with current manufacturer manuals, per-channel watt share, supported chemistries/cell counts and current charger specifications.
+- [x] Add representative charger specifications with manufacturer links and explicit AC/DC and dual-output power caveats. [ ] Broaden to additional models, confirm regional availability, and add dated price snapshots only after verification.
 - [ ] Finish price-stamped India buying/BOM guides with explicit date/currency/region and full kit cost.
 - [ ] Validate all external product photo downloads/URLs and image reuse terms. The source caption attribution is not a blanket licence for unrelated reuse.
 - [ ] Add further small animations/tutorials only as real generated files, then verify the GIF frames and Wiki rendering.
@@ -567,3 +567,18 @@ Current animation is a simple concept loop for rotor/thrust orientation, not a p
 
 - [x] Validate the remaining native Wiki `[[Page Name]]` sidebar links by normalizing spaces to GitHub Wiki slugs: all 27 map to existing source pages.
 - [x] Cross-check the 132 completed-checkbox lines that name a `docs/assets/` or `docs/wiki-source/` path against the repository tree: no missing path is marked complete.
+
+
+---
+
+## 16. Charger specification tranche — 22 October 2026
+
+- [x] Add a dated manufacturer-sourced charger comparison to `docs/wiki-source/FPV-Chargers-LiPo-and-Li-ion-Battery-Safety.md`.
+- [x] Include ISDT UC2 (supported 1S/2S standard LiPo), ISDT 608AC (AC/DC 1–6S charger), ToolkitRC M7AC (portable AC/DC 1–6S charger) and ToolkitRC M6DAC (two-output charger).
+- [x] Link the manufacturer specifications and manuals, and distinguish charger-output ratings from AC input limits.
+- [x] Explain that dual-output “per channel” claims depend on input source and operating mode; do not infer simultaneous full power from the headline rating.
+- [ ] Before live publication, inspect the rendered table and all four source links in the Wiki.
+- [ ] Expand the list only after checking more current charger models, exact revisions/manuals and source-supported per-channel power allocation. Do not imply this representative set is a market-wide recommendation.
+- [ ] Keep India-specific prices and seller availability out of the table until checked for a stated date/region and exact bundle contents.
+
+**Publication status unchanged:** the main-repository source page is committed, but the separate Wiki push and live rendering have not been verified in this session.
