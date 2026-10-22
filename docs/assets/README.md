@@ -5,7 +5,8 @@ These image and diagram files are versioned as part of `luckyhegde6/buildFPV`. T
 ## Where each visual belongs
 
 | Visual | Best place to learn from it | What it explains |
-|---|---|---|| `fpv-build-concept-ai.jpg` | [Learning guide](../LEARNING-GUIDE.md) and [system basics](../01-fpv-basics.md) | A broad visual orientation to a typical FPV quad; not a wiring reference |
+|---|---|---|
+| `fpv-build-concept-ai.jpg` | [Learning guide](../LEARNING-GUIDE.md) and [system basics](../01-fpv-basics.md) | A broad visual orientation to a typical FPV quad; not a wiring reference |
 | `flight-axes.svg` | [How an FPV quad works](../07-how-fpv-drones-work.md) | Throttle, roll, pitch and yaw |
 | `fpv-control-loop.svg` | [System basics](../01-fpv-basics.md) and [how a quad works](../07-how-fpv-drones-work.md) | Pilot input, sensor feedback, controller, ESCs and motors |
 | `pocket-control-map.svg` | [RadioMaster Pocket guide](../06-pocket-button-guide.md) | Physical radio controls; switch assignments remain configurable |
