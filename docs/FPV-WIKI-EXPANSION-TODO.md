@@ -734,3 +734,11 @@ Current animation is a simple concept loop for rotor/thrust orientation, not a p
 - Live verification failed because no push occurred. This TODO remains **open** until a token with Wiki write access is configured, the existing workflow completes the push, and the Playwright live-site report is reviewed.
 - The publisher now avoids external image downloads in Actions, normalizes Markdown EOF whitespace, uses a batched per-page Wiki-link rewrite, and supplies a fallback Git author identity only when none is configured.
 - Next: replace the Actions secret (do not paste token in chat), dispatch [the workflow](https://github.com/luckyhegde6/buildFPV/actions/workflows/wiki-publish-verify.yml), and recheck publish + live browser results.
+
+### Publication update — 2026-10-23
+
+- [Run #14](https://github.com/luckyhegde6/buildFPV/actions/runs/39845553074) published the Wiki source pages successfully using the owner's updated classic PAT.
+- Playwright confirmed HTTP 200 for Home, charger guide and video compatibility matrix; charger and matrix checks passed. It reported one failed Wiki-local image on Home: `images/fpv-build-concept-ai.jpg`.
+- The publisher was changed to force-stage image files and [run #15](https://github.com/luckyhegde6/buildFPV/actions/runs/39845914339) successfully republished. Live verification is still pending in the workflow because Playwright/Chromium installation has not advanced to the test step.
+- [Run #16](https://github.com/luckyhegde6/buildFPV/actions/runs/39846078398) is queued with direct checks for the mandatory simulator course and coding/ML page.
+- Status: **Wiki published; full live browser verification still open.**
