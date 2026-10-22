@@ -4,6 +4,13 @@ The objective is not to win races immediately. It is to develop smooth, repeatab
 
 > For reusable tick-box checks, see [Practical FPV checklists](checklists.md).
 
+> [!IMPORTANT]
+> **Mandatory beginner video course before your first real flight:** complete the [Learn to fly an FPV drone (for total beginners) playlist](https://www.youtube.com/playlist?list=PLwoDb7WF6c8lCKhQOTy-Vb9LfW0VAIrTP) in sequence while practising in Liftoff. This is a buildFPV learning requirement, **not an official licence or certification**; continue to check safety requirements and current local rules.
+
+## Video course and clickable lesson preview
+
+[Open the full beginner FPV playlist on YouTube](https://www.youtube.com/playlist?list=PLwoDb7WF6c8lCKhQOTy-Vb9LfW0VAIrTP). Use the videos in sequence; pause to practise the matching drill in Liftoff before continuing.
+
 ## Before the first session
 
 - Connect the RadioMaster Pocket by USB-C to the computer.
