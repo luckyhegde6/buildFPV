@@ -56,7 +56,7 @@ These short concept animations explain thrust direction and the way front-motor 
 
 ### 1. See the whole aircraft
 
-![FPV quadcopter overview concept](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-build-concept-ai.jpg)
+![FPV quadcopter overview concept](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-drone-basics-infographic.webp)
 
 For a full visual map of the component order, see the [FPV parts lineup](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-parts-lineup.svg).
 
