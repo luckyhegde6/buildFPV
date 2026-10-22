@@ -1,0 +1,113 @@
+name: Publish and verify existing FPV Wiki
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.agents/PUBLISH_WIKI_NOW'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: buildfpv-existing-wiki-publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    name: Publish source pages to the existing Wiki
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the source repository
+        uses: actions/checkout@v4
+
+      - name: Run Wiki link rewrite regression test
+        run: bash scripts/test-wiki-link-rewrite.sh
+
+      - name: Configure credential helper for Wiki Git
+        env:
+          WIKI_PUBLISH_TOKEN: ${{ secrets.WIKI_PUBLISH_TOKEN || secrets.GH_PERSONAL_ACCESS_TOKEN }}
+        run: |
+          if [ -z "$WIKI_PUBLISH_TOKEN" ]; then
+            {
+              echo "## Wiki publish blocked"
+              echo "A secret with Wiki Git write access is missing."
+              echo "Configure either WIKI_PUBLISH_TOKEN or GH_PERSONAL_ACCESS_TOKEN under Settings → Secrets and variables → Actions."
+              echo "The token needs access to push to this repository's existing Wiki Git remote."
+            } >> "$GITHUB_STEP_SUMMARY"
+            echo "::error::Missing WIKI_PUBLISH_TOKEN / GH_PERSONAL_ACCESS_TOKEN secret."
+            exit 1
+          fi
+          echo "::add-mask::$WIKI_PUBLISH_TOKEN"
+          cat > "$RUNNER_TEMP/git-credential-wiki" <<'EOF'
+          #!/bin/sh
+          case "$1" in
+            get)
+              printf 'username=x-access-token\n'
+              printf 'password=%s\n' "$WIKI_PUBLISH_TOKEN"
+              ;;
+          esac
+          EOF
+          chmod 700 "$RUNNER_TEMP/git-credential-wiki"
+          git config --global credential.helper "$RUNNER_TEMP/git-credential-wiki"
+
+      - name: Publish existing Wiki pages and assets
+        env:
+          WIKI_PUBLISH_TOKEN: ${{ secrets.WIKI_PUBLISH_TOKEN || secrets.GH_PERSONAL_ACCESS_TOKEN }}
+        run: |
+          bash scripts/publish-wiki.sh --yes
+
+      - name: Summarize publish outcome
+        if: always()
+        run: |
+          {
+            echo "## Wiki publish job"
+            echo "The publisher uses the existing `buildFPV.wiki.git` remote and does not initialize a replacement Wiki."
+            echo "The separate browser-verification job checks the live published pages."
+          } >> "$GITHUB_STEP_SUMMARY"
+
+  verify-live-wiki:
+    name: Verify live Wiki with headless Playwright
+    needs: [publish]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out verification script
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install Playwright with npx and Chromium
+        run: |
+          npx --yes playwright@1.57.0 --version
+          npm install --no-save --no-package-lock playwright@1.57.0
+          npx --yes playwright@1.57.0 install --with-deps chromium
+
+      - name: Verify Home, charger guide, matrix, links and image loading
+        run: node scripts/verify-wiki-live.mjs
+
+      - name: Upload headless screenshots and verification report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: buildfpv-wiki-playwright-evidence
+          path: artifacts/wiki-playwright/
+          if-no-files-found: warn
+          retention-days: 14
+
+      - name: Write browser result to the job summary
+        if: always()
+        env:
+          PUBLISH_JOB_RESULT: ${{ needs.publish.result }}
+        run: |
+          {
+            echo "## Live Wiki browser verification"
+            echo "- Publish job result: `$PUBLISH_JOB_RESULT`"
+            echo "- Browser automation: Playwright Chromium, headless mode"
+            echo "- Screenshots/report: workflow artifact `buildfpv-wiki-playwright-evidence`"
+            echo "- Review the report artifact for HTTP status, required text, tables, extensionless routes and Wiki-local images."
+          } >> "$GITHUB_STEP_SUMMARY"
