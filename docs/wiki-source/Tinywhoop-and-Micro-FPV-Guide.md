@@ -2,6 +2,10 @@
 
 ![Drone class overview including tinywhoop and micro builds](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/drone-class-overview.svg)
 
+![BETAFPV Air75 guarded micro quadcopter product example](https://cdn.shopify.com/s/files/1/1778/6615/files/74b96dbb2d19db9758ba306fc55ad040_fcbb5dcd-19d9-49bb-806a-1bf6416df4f1.jpg?v=1733968560)
+
+*Real product example: [BETAFPV Air75](https://betafpv.com/products/air75-brushless-whoop-quadcopter). Its listed specifications are 75 mm wheelbase and 40 mm two-blade propellers—not 75 mm props. Manufacturer-listed flight time is tied to its stated battery and voltage test conditions.*
+
 A **tinywhoop** is generally a very small quad with propeller guards/ducts, often used for indoor practice and small spaces. Marketing terms and exact sizes vary, so confirm propeller diameter, wheelbase, weight, battery chemistry/cell count, and receiver/video hardware on the specific product page.
 
 ## 1. Tinywhoop vs open-prop micro
