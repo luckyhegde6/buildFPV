@@ -41,6 +41,7 @@
 - [Deadcat Frame Assembly](Deadcat-Frame-Assembly)
 - [BNF / PNP / RTF / ARF / DIY Formats](BNF-PNP-RTF-ARF-and-DIY-Formats)
 - [Motors, Propellers and Battery Compatibility](Motors-Propellers-and-Battery-Compatibility)
+- [Battery Flight-Time and Cycle-Life Planning](Battery-Flight-Time-and-Cycle-Life-Planning)
 
 **Simulation roadmap**
 - [[Getting Started]]
