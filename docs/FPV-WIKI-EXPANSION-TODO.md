@@ -510,3 +510,12 @@ The following broad class/flight-purpose pages have now been created separately 
 - [x] Link both guides from Home and add them to the sidebar. The camera selection guide is near the VTX/VRX comparison; the buying guide is under build/batteries/safety.
 - [ ] Add model-by-model current camera matrix with exact sensor/format/FOV/live feed/recording/weight/power/firmware fields for all shortlisted analog, DJI, Walksnail, HDZero and micro video SKUs. Current guides contain representative examples only.
 - [ ] Add region-stamped prices and supplier comparisons only after current checkout/duty/shipping information has been checked; never use stale promotional prices as stable facts.
+
+
+### GIF validation correction — 22 October 2026
+
+- [x] Replace the earlier invalid GIF byte stream with a validated four-frame 180 × 112 looping animation at `docs/assets/propeller-thrust-loop.gif`.
+- [x] Verify the GIF header and asset blob on GitHub after replacement; the file now has a new blob SHA and remains referenced by Home and the motor/propulsion guide.
+- [ ] Final browser-render check after the file is copied into the separate Wiki's `images/` folder. Source validation does not prove the separate Wiki has published it.
+
+Current animation is a simple concept loop for rotor/thrust orientation, not a precise rotor-speed simulation or motor-order diagram.
