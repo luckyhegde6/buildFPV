@@ -53,6 +53,10 @@ Key commits: [AGENTS.md](https://github.com/luckyhegde6/buildFPV/commit/7047eb25
 | Wiki push confirmed | Not done |
 | Live Home/sidebar/charger/video pages and media verified | **Failed checks captured** — target guides redirect to Home; required content/tables absent; one live image 404 |
 
+## Wiki publishing guide
+
+Created [`.agents/wiki-publishing-runbook.md`](.agents/wiki-publishing-runbook.md), covering PAT generation (fine-grained first where supported, classic fallback), the exact `WIKI_PUBLISH_TOKEN` / `GH_PERSONAL_ACCESS_TOKEN` Actions secret names, secure local authentication, regression tests, interactive publisher review, manual workflow dispatch, verification evidence, troubleshooting and token rotation.
+
 ## Remote execution attempt
 
 The local container has Node.js 22.16.0, a `playwright` CLI version 1.57.0, and system Chromium. However:
@@ -70,7 +74,7 @@ The following are committed for a network-enabled GitHub-hosted Actions runner:
 
 ## Exact next action
 
-Inspect the [latest run](https://github.com/luckyhegde6/buildFPV/actions/runs/39797230235) and [workflow page](https://github.com/luckyhegde6/buildFPV/actions/workflows/wiki-publish-verify.yml). Run [39797230235](https://github.com/luckyhegde6/buildFPV/actions/runs/39797230235) produced artifact [12434310973](https://github.com/luckyhegde6/buildFPV/actions/runs/39797230235/artifacts/12434310973). The publisher failed at credential setup because neither allowed Wiki-write secret was configured. The headless Playwright job ran but failed because both target page URLs redirected to Home, expected model text/tables were absent, and `fpv-build-concept-ai.jpg` did not load from the live Wiki. Before a publisher run can push, the repository must have either `WIKI_PUBLISH_TOKEN` or `GH_PERSONAL_ACCESS_TOKEN` configured under Settings → Secrets and variables → Actions with permission to push to the existing Wiki Git remote. Do not put tokens into files, chat, or workflow logs.
+Inspect the [latest run](https://github.com/luckyhegde6/buildFPV/actions/runs/39797230235) and [workflow page](https://github.com/luckyhegde6/buildFPV/actions/workflows/wiki-publish-verify.yml). Run [39797230235](https://github.com/luckyhegde6/buildFPV/actions/runs/39797230235) produced artifact [12434310973](https://github.com/luckyhegde6/buildFPV/actions/runs/39797230235/artifacts/12434310973). The publisher failed at credential setup because neither allowed Wiki-write secret was configured. The headless Playwright job ran but failed because both target page URLs redirected to Home, expected model text/tables were absent, and `fpv-build-concept-ai.jpg` did not load from the live Wiki. Follow [the Wiki Publishing Runbook](.agents/wiki-publishing-runbook.md) to generate the PAT and configure either `WIKI_PUBLISH_TOKEN` or `GH_PERSONAL_ACCESS_TOKEN` under Settings → Secrets and variables → Actions. The owner must add the secret with permission to push to the existing Wiki Git remote. Never put tokens into files, chat, or workflow logs.
 
 Before retrying, the repository owner must add `WIKI_PUBLISH_TOKEN` or `GH_PERSONAL_ACCESS_TOKEN` in Settings → Secrets and variables → Actions, with write access to the existing Wiki Git remote; never paste the secret into chat or commit it. Then run the workflow from the Actions UI and review the newly generated report. The source repository contains `docs/assets/fpv-build-concept-ai.jpg`, which the publisher should copy when it can publish.
 
