@@ -158,6 +158,27 @@ for page in "$WIKI_DIR"/*.md; do
   done < <(grep -Eo '!\[[^]]*\]\(https?://[^)]*\)' "$page" | sed -E 's/^!\[[^]]*\]\((https?:\/\/[^)]*)\)$/\1/' | sort -u)
 done
 
+# Internal Wiki pages must link to page slugs, not source Markdown filenames.
+# The Wiki keeps pages in the repository root; "Page.md" is a file name, not the
+# public Wiki route. Rewrite links only when that target page exists in this Wiki.
+for page in "$WIKI_DIR"/*.md; do
+  [[ -f "$page" ]] || continue
+  while IFS= read -r target_page; do
+    [[ -n "$target_page" ]] || continue
+    [[ "$target_page" == "README.md" ]] && continue
+    target_slug="${target_page%.md}"
+    temp_page="$page.tmp"
+    while IFS= read -r line || [[ -n "$line" ]]; do
+      line="${line//]($target_page)/]($target_slug)}"
+      line="${line//]($target_page#/]($target_slug#}"
+      line="${line//](./$target_page)/]($target_slug)}"
+      line="${line//](./$target_page#/]($target_slug#}"
+      printf '%s\\n' "$line"
+    done < "$page" > "$temp_page"
+    mv "$temp_page" "$page"
+  done < <(for target in "$WIKI_DIR"/*.md; do basename "$target"; done)
+done
+
 git add -- *.md images/
 if git diff --cached --quiet; then
   echo "Wiki pages and images already match docs/wiki-source; nothing to publish."
