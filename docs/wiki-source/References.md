@@ -111,7 +111,7 @@ These are **supplementary learning resources**, not an official DGCA certificati
 
 - [DGCA/rules playlist supplied with the video](https://www.youtube.com/playlist?list=PL_Fsqn9m2GhU3ep-PzQ4jg8aa-oxFP8W6)
 - [Additional supplied drone/rules-awareness playlist](https://www.youtube.com/playlist?list=PL3IOIUhLPNVciQ1V5OLMmgEBQJbSzJ8iS)
-- [Additional supplied drone-awareness playlist](https://www.youtube.com/playlist?list=PLn8ARIij4VbeN2OXLqHJfG2Nm4Hx8ilFq)
+- [Drone Technology playlist (additional awareness resource)](https://www.youtube.com/playlist?list=PLn8ARIij4VbeN2OXLqHJfG2Nm4Hx8ilFq) — general context; not verified as a current DGCA-rules syllabus.
 
 **Before every outdoor flight, use current official sources below**, especially the latest DGCA / Ministry of Civil Aviation material and Digital Sky airspace map. Old videos may omit amendments, changed airspace status or operation-specific requirements.
 
