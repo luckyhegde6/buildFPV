@@ -174,3 +174,10 @@ This is a chronological, append-oriented engineering log. New work should append
 - Push result: **HTTP 403**, `Permission to luckyhegde6/buildFPV.wiki.git denied to luckyhegde6`. The configured token is present but does not have effective Wiki Git write access. Do not treat credential-helper success as publication success.
 - The live Playwright verification failed because the content was not published. The existing Wiki still needs a successful push and passing live-site verification.
 - Follow-up required: replace `WIKI_PUBLISH_TOKEN` with a token authorized to write to the existing Wiki Git repository (see [GitHub PAT documentation](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)); then rerun [the workflow](https://github.com/luckyhegde6/buildFPV/actions/workflows/wiki-publish-verify.yml). No token was exposed.
+
+## 2026-10-23 — Classic PAT publish success and live verification
+
+- Confirmed [run #14](https://github.com/luckyhegde6/buildFPV/actions/runs/39845553074): source pages pushed successfully to the existing Wiki after the classic PAT was configured.
+- Playwright reported HTTP 200 for the Wiki Home, charger guide, and video compatibility matrix. Content/table checks passed on the charger and matrix pages. One Home-page local image, `images/fpv-build-concept-ai.jpg`, failed to load, so the workflow overall reported failure.
+- Updated the publisher to force-stage publisher-managed Wiki images; [run #15](https://github.com/luckyhegde6/buildFPV/actions/runs/39845914339) successfully republished. Its Playwright/Chromium setup is still in progress; the image fix is not yet browser-confirmed.
+- [Run #16](https://github.com/luckyhegde6/buildFPV/actions/runs/39846078398) is queued to validate the mandatory simulator playlist and newly added coding/ML Wiki page alongside image checks. Do not mark Playwright validation green yet.
