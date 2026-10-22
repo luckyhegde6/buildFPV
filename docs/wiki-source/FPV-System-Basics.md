@@ -8,6 +8,8 @@ For choosing an aircraft style, see [Drone Categories and Size Guide](Drone-Cate
 
 FPV means first-person view: an onboard camera transmits live video to compatible goggles or a display. A quad combines several systems that must be compatible but are not the same thing.
 
+![Separate control, video and power paths in an FPV quad](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-video-link-separation.svg)
+
 ## The control path
 
 ![Simplified FPV flight-control feedback loop](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-control-loop.svg)
