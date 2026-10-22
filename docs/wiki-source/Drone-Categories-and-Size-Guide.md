@@ -78,3 +78,22 @@ The same class can vary substantially between light and heavy builds. Extra batt
 - [Betaflight setup guide](https://betaflight.com/docs/wiki/getting-started/setup-guide)
 
 *Reviewed on 22 October 2026. This page is educational; it is not a universal BOM or a legal interpretation for every jurisdiction.*
+
+## 7. Detailed frame and system guides
+
+For geometry and mechanical assembly, continue to:
+- [Frame Geometries: Balanced X vs Deadcat](Frame-Geometries-Balanced-X-vs-Deadcat.md)
+- [Balanced X frame assembly](Balanced-X-Frame-Assembly.md)
+- [Deadcat frame assembly](Deadcat-Frame-Assembly.md)
+- [2.5-inch frame guide](2-5-Inch-Frame-Guide.md)
+- [3.5-inch cinewhoop frame assembly](3-5-Inch-Cinewhoop-Frame-Assembly.md)
+- [5-inch frame assembly](5-Inch-Frame-Assembly.md)
+- [7-inch long-range frame assembly](7-Inch-Long-Range-Frame-Assembly.md)
+
+For component and video choices:
+- [Motors, Propellers and Battery Compatibility](Motors-Propellers-and-Battery-Compatibility.md)
+- [FPV Chargers, LiPo and Li-ion Safety](FPV-Chargers-LiPo-and-Li-ion-Battery-Safety.md)
+- [BNF, PNP, ARF, RTF and DIY formats](BNF-PNP-RTF-ARF-and-DIY-Formats.md)
+- [Analog vs Digital FPV Cameras and Video](Analog-vs-Digital-FPV-Camera-Video-Guide.md)
+- [Goggles and VRX Integration](FPV-Goggles-and-VRX-Integration-Guide.md)
+
