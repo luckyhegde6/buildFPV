@@ -350,3 +350,53 @@ The main repository now contains `docs/wiki-source/FPV-Cameras-VTX-VRX-Compatibi
 Source for DJI live-view/recording specs and goggles compatibility: [DJI O4 specs](https://www.dji.com/o4-air-unit/specs), [DJI O4 FAQ](https://www.dji.com/o4-air-unit/faq). For HDZero physical/electrical model differences, use [HDZero VTX summary](https://docs.hd-zero.com/vtx-summary) and [Freestyle V2 docs](https://docs.hd-zero.com/freestyle-v2). For Walksnail pairings, use [Avatar compatibility](https://wiki.caddxfpv.com/en/Avatar-HD-Series/How-to-buy) and [Goggles X docs](https://wiki.caddxfpv.com/en/Avatar-HD-Series/Receiver-Unit/Goggles-X). The page deliberately leaves a comprehensive sensor/low-light/latency table across all current cameras as unfinished until exact model revisions and comparable test conditions have been researched.
 
 Navigation update: `_Sidebar.md` now links this comparison immediately after the general video overview; `Video-Systems-and-Goggles.md` links to the deeper matrix. The separate live Wiki still requires the local publisher and verified push.
+
+
+---
+
+## 8. Third class-guide tranche and geometry correction — 22 October 2026
+
+### Class-level pages now separate from assembly pages
+
+The source repository now distinguishes a class/purpose article from its companion mechanical assembly article:
+
+| Class / purpose page | Assembly companion | Focus |
+|---|---|---|
+| `2-5-Inch-FPV-Guide.md` | `2-5-Inch-Frame-Guide.md` | Use case, micro/toothpick trade-offs, payload and compatibility |
+| `3-5-Inch-Cinewhoop-Guide.md` | `3-5-Inch-Cinewhoop-Frame-Assembly.md` | Filming purposes, guarded-prop trade-offs and Pavo25 V2 vs Pavo35 examples |
+| `5-Inch-FPV-Racing-and-Freestyle.md` | `5-Inch-Frame-Assembly.md` | Shared prop class, differing race/freestyle priorities, repair and payload |
+| `7-Inch-Long-Range-FPV-Guide.md` | `7-Inch-Long-Range-Frame-Assembly.md` | Efficiency, battery reserve, links and recovery planning |
+
+These class guides were linked into both `docs/wiki-source/_Sidebar.md` and `docs/wiki-source/Home.md` via Wiki page slugs, not source filenames. The sidebar retains the assembly pages as separate entries.
+
+### Verified frame examples and correction to naming
+
+An important terminology correction was made during image review: **GEPRC GEP-MK5X is a squashed-X example, not a true-X frame**. The balanced/true-X explanatory page now uses GEPRC's GEP-IX5 Fairy listing as a true-X example, whose maker page identifies 5-inch prop compatibility, a 200 mm diagonal motor-to-motor wheelbase, and 105 g frame weight. Source: [GEPRC GEP-IX5 Fairy product page](https://geprc.com/products/multirotors/gep-ix5-fairy/). It is an older product listing; current availability may differ.
+
+The comparison page uses GEPRC's GEP-MK5X O3 (225 mm WB, 214 × 168 × 42 mm overall dimensions, 5-inch props) for the squashed-X frame example and GEP-MK5D O3 DeadCat (230 mm WB, 208 × 193 × 42 mm overall dimensions, 5-inch props) for the deadcat example:
+- [GEP-MK5X frame specs](https://geprc.com/product/gep-mk5x-o3-frame/)
+- [GEP-MK5D DeadCat frame specs](https://geprc.com/product/gep-mk5d-o3-frame/)
+
+A real product photo is not a dimensioned engineering drawing. The model dimensions in the SVG are source-backed labels; the silhouettes are explicitly marked illustrative/not to scale. Readers are directed to the exact manufacturer's technical drawing for mounting patterns, arm fit and screw length.
+
+### Actual animation files
+
+Two real GIF assets are in source:
+- `docs/assets/propeller-thrust-loop.gif` — simple looping concept of propeller rotation/thrust direction.
+- `docs/assets/balanced-x-deadcat-compare.gif` — four-frame conceptual comparison of front motor spread and camera field of view.
+
+They are intentionally small schematic explainers, not real-world simulated physics or motor-order diagrams. The first is linked from Home; the second is linked from the frame geometry page. Both are listed in `docs/assets/README.md`. Browser rendering and the downloaded/served result still need checking after Wiki publication.
+
+### Navigation and publication status
+
+The source Home page now links to the new class pages at absolute extensionless paths such as `/wiki/2-5-Inch-FPV-Guide`, not `/wiki/2-5-Inch-FPV-Guide.md`. The publisher script was updated to rewrite relative internal `.md` links into extensionless Wiki slugs when their target pages exist in the local Wiki checkout, while preserving anchors/external URLs. A Bash regression-test script has been added and reported passing in the local Git Bash test context.
+
+The separate `buildFPV.wiki.git` repository has not been pushed/verified from this session. The main-repo source commits are not the same as a live Wiki publication. Final publication still requires pulling `main`, running `bash scripts/publish-wiki.sh`, inspecting the staged diff, typing `PUBLISH`, and checking the resulting live pages and images.
+
+### Remaining research priorities
+
+1. Exact SKU-by-SKU video ecosystem matrix: supported camera modules, air unit/VTX, goggles/VRX generation, firmware, input voltage, live-view modes, recording modes and current date checked.
+2. Camera recommendations split by micro/tinywhoop, race, freestyle, cinewhoop and long range, with separate live camera feed vs onboard recording fields.
+3. Current chargers and manuals: chemistry/cell count, balance behavior, input requirements, channel watt allocation and output current.
+4. Further product-verified frame classes and manufacturer dimensioned diagrams. Current schematic class ranges should not be treated as CAD.
+5. India-specific buying/BOM snapshots with currency, date, taxes/shipping and full system cost, without treating availability as stable.
