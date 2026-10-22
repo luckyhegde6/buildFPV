@@ -709,3 +709,20 @@ Current animation is a simple concept loop for rotor/thrust orientation, not a p
 - [ ] After the secret is configured, manually run the existing [publish/verify workflow](https://github.com/luckyhegde6/buildFPV/actions/workflows/wiki-publish-verify.yml) and confirm a successful Wiki push plus passing fresh Playwright report.
 
 **Status:** the runbook is committed and linked in the agent framework. It does not create or reveal credentials and does not change the existing Wiki's publication state.
+
+
+---
+
+## 25. Beginner video curriculum and YouTube resource links — 22 October 2026
+
+- [x] Add the [Learn to fly an FPV drone (for total beginners)](https://www.youtube.com/playlist?list=PLwoDb7WF6c8lCKhQOTy-Vb9LfW0VAIrTP) playlist as a required buildFPV onboarding course before the first real flight in the README, Learning Guide, simulator docs, Wiki Home, Getting Started, Simulator Training and Daily Liftoff Routine. Label it as a learning gate, not certification.
+- [x] Add drone systems/controls playlist PLgMDNELGJ1CYU7vfun-Q7HXsldD-RsocG and video sxaEaXcuQA4 to the relevant docs and Wiki pages.
+- [x] Add RadioMaster Pocket setup/bind video GgaWMvAHZi8 to Pocket docs and Wiki.
+- [x] Add DGCA/drone-awareness playlist resources PL_Fsqn9m2GhU3ep-PzQ4jg8aa-oxFP8W6, PL3IOIUhLPNVciQ1V5OLMmgEBQJbSzJ8iS, and PLn8ARIij4VbeN2OXLqHJfG2Nm4Hx8ilFq to India rules/resources pages, clearly marked supplemental to current official sources.
+- [x] Create the optional coding/ML learning paths at docs/drone-coding-and-ml.md and docs/wiki-source/Drone-Coding-and-Machine-Learning.md covering LmEcyQnfpDA, QvRxxjaLjxg / PLeuMA6tJBPKsAfRfFuGrEljpBow5hPVD4, k-yDYgc8AmU, and PRwef_c7SXQ.
+- [x] Add clickable thumbnails for individual videos and direct playlist links; raw YouTube iframes are avoided because GitHub-flavored Markdown filters iframe.
+- [x] Link the new coding page from Wiki Home/sidebar, README, learning guide, roadmap, and reference pages.
+- [x] Re-fetch 20 docs/Wiki-source files through GitHub MCP and confirm all supplied video/playlist identifiers are present in their intended sections.
+- [ ] Publish these source changes to the existing live Wiki and inspect a fresh Playwright report. Previous run 39797230235 did not publish because WIKI_PUBLISH_TOKEN / GH_PERSONAL_ACCESS_TOKEN was missing; follow .agents/wiki-publishing-runbook.md to configure the secret and run the workflow.
+
+**Status:** links and course sections are committed to buildFPV/main. Live Wiki publication/render validation remains a separate outstanding step.
