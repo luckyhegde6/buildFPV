@@ -1,0 +1,312 @@
+# FPV Wiki Expansion — Master TODO
+
+**Owner:** buildFPV project  
+**Last research pass:** 2026-10-22  
+**Canonical source repo:** `luckyhegde6/buildFPV`  
+**Wiki source pages:** `docs/wiki-source/`  
+**Reusable source assets:** `docs/assets/`  
+**Publisher:** `scripts/publish-wiki.sh`  
+**Scope:** drone categories and frame-size guides, component/platform comparisons, camera/VTX/VRX guide, images and diagrams, purchasing/building guides, troubleshooting, navigation, quality checks, and live-Wiki publication.
+
+This file is the implementation backlog. Check items only after they have been implemented and verified. A commit to the main repository does **not** publish the separate GitHub Wiki. Live publication is complete only after the publisher has pushed to the Wiki repository and the live pages and images have been checked.
+
+---
+
+## 0. Research findings and accuracy guardrails
+
+Initial manufacturer research was checked on **2026-10-22**. This is a working snapshot, not a permanent product catalogue. Revisit current datasheets, revision notes, local radio regulations, prices, and availability before writing definitive comparisons.
+
+- [x] Confirm that frame class, flight purpose, duct/guard style, and purchase format are separate axes; do not present “BNF” as a frame size.
+- [x] Confirm that propeller diameter (e.g. 2.5-inch, 3.5-inch, 5-inch, 7-inch) is not the same measurement as frame wheelbase (e.g. 75 mm/80.8 mm). Label diagrams carefully.
+- [x] Confirm that “tinywhoop” usually refers to a very small protected-prop/ducted whoop class, but marketing names and exact dimensions vary by product. Use actual prop size, wheelbase, weight and duct style for examples.
+- [x] Confirm that “cinewhoop” is primarily a guarded/ducted filming-oriented form/use case, not one universal propeller size. It can overlap with whoop construction and digital HD payloads.
+- [x] Confirm official manufacturer examples demonstrate important variation even within the same rough category:
+  - BETAFPV Air75: 75 mm wheelbase, 40 mm props, 1S, advertised 21 g, onboard ELRS receiver and 5.8 GHz analog VTX on the listed configuration. Source: https://betafpv.com/products/air75-brushless-whoop-quadcopter
+  - BETAFPV Meteor75 Pro: frame/gyro/FC and SKU revisions exist; source page includes 45 mm props and revision notes. Check exact batch and gyro before firmware flashing. Source: https://betafpv.com/products/meteor75-pro-brushless-whoop-quadcopter
+  - BETAFPV Pavo Pico: 80.8 mm wheelbase, 45 mm props, 2S, weights vary by air-unit fit; source supports several HD VTX families. Source: https://betafpv.com/products/pavo-pico-brushless-whoop-quadcopter
+  - BETAFPV Pavo35: 148 mm wheelbase, D90S-style 90 mm props, 6S example; listed frame/air-unit weights differ with included equipment. Source: https://betafpv.com/products/pavo35-brushless-whoop-quadcopter
+- [x] Confirm video ecosystems must be compared by exact product generation and supported goggles/receiver, not just by the label “digital”.
+  - DJI O4 Air Unit Series specs/compatibility: https://www.dji.com/o4-air-unit/specs
+  - DJI O4 FAQ: https://www.dji.com/o4-air-unit/faq
+  - Walksnail / CADDX Avatar model comparison: https://wiki.caddxfpv.com/en/Avatar-HD-Series/How-to-buy
+  - Walksnail Avatar HD Pro Kit: https://www.caddxfpv.com/products/walksnail-avatar-hd-pro-kit
+  - Walksnail Goggles X manual/wiki: https://wiki.caddxfpv.com/en/Avatar-HD-Series/Receiver-Unit/Goggles-X
+  - HDZero VTX summary: https://docs.hd-zero.com/vtx-summary
+  - HDZero Freestyle V2 docs: https://docs.hd-zero.com/freestyle-v2
+- [x] Flag a common error to avoid in any existing prose: do **not** imply all digital FPV video operates at 2.4 GHz. For example, DJI O4, Walksnail Avatar Pro and HDZero Freestyle V2 specs list 5 GHz / 5.8 GHz band ranges; the exact supported bands and legal power vary by product/region.
+- [x] Distinguish DJI's camera-drone products from DJI O3/O4 FPV air units. A DJI camera drone is not automatically a modular DIY FPV air unit or compatible VRX.
+- [ ] Do another direct source pass before publishing any spec table; cite each non-obvious spec near the row and record the source model/revision.
+- [ ] Record a “last checked” date for volatile price, availability, firmware, goggles compatibility and regional transmitter rules. Prefer official specifications over retailer summaries.
+- [ ] Remove or qualify unsupported blanket statements such as “digital is always lower latency”, “5-inch is always the fastest”, “whoops are safe indoors”, and universal range/flight-time promises. Explain test conditions and trade-offs.
+
+---
+
+## 1. Page architecture and navigation
+
+### New overview and class pages
+
+- [ ] Create `docs/wiki-source/Drone-Categories-and-Size-Guide.md` as the landing/selector page.
+  - [ ] Explain the different axes: prop size, wheelbase, guards/ducts, intended use, weight/payload, video ecosystem, and purchase format.
+  - [ ] Include a comparison table and “choose this if…” pathways.
+  - [ ] Link to every dedicated class page below.
+  - [ ] Add a compact glossary for FPV, whoop, cinewhoop, toothpick, freestyle, racing, long-range, BNF, PNP, ARF, DIY and RTF.
+- [ ] Create `docs/wiki-source/Tinywhoop-and-Micro-FPV-Guide.md`.
+- [ ] Create `docs/wiki-source/2-5-Inch-FPV-Guide.md` (2.5-inch micros / open-prop builds; explicitly distinguish from tinywhoop ducts).
+- [ ] Create `docs/wiki-source/3-5-Inch-Cinewhoop-Guide.md`.
+- [ ] Create `docs/wiki-source/5-Inch-FPV-Racing-and-Freestyle.md`.
+- [ ] Create `docs/wiki-source/7-Inch-Long-Range-FPV-Guide.md`.
+- [ ] Decide from source research whether to add separate `3-Inch-Toothpick-and-Freestyle.md`, `4-Inch-Long-Range-FPV-Guide.md`, and `Cine-Lifter-and-Heavy-Lift-FPV.md`; create only if enough distinct guidance exists to avoid shallow duplicate pages.
+- [ ] Create `docs/wiki-source/BNF-PNP-RTF-ARF-and-DIY-Formats.md` to explain package/build-completion formats independently from aircraft classes.
+- [ ] Cross-link every class page with `First Build Checklist`, `Drone-Parts-One-by-One`, `FPV System Basics`, `How FPV Drones Work`, `Video Systems and Goggles`, and the new video comparison page.
+
+### Video and component pages
+
+- [ ] Create `docs/wiki-source/FPV-Cameras-VTX-VRX-Compatibility-Comparison.md`.
+- [ ] Position its link immediately after the existing camera/video-system guide in `docs/wiki-source/_Sidebar.md`; check page sequence and avoid duplicate or stale links.
+- [ ] Review `Video-Systems-and-Goggles.md` and `Video-Antennas-VTX-VRX.md` so their roles are clear and their new-page links point to the detailed comparison rather than repeating entire sections.
+- [ ] Link from `Drone-Parts-One-by-One.md` to the new class selector and the camera/VTX/VRX compatibility guide from the relevant component sections.
+- [ ] Review `FPV-System-Basics.md` and `How-FPV-Drones-Work.md` for terminology, duplicate material, outdated band/latency claims, and inconsistent labels.
+
+### Sidebar sequence to implement
+
+- [ ] Keep the existing introductory learning pages first.
+- [ ] Add a clearly labelled **Drones — classes and choosing a build** section after the introductory drone/system pages and before advanced build-purchase pages.
+- [ ] Under that section, link the class selector, Tinywhoop, 2.5-inch, 3.5-inch Cinewhoop, 5-inch Racing/Freestyle, 7-inch Long Range, and BNF/PNP/RTF/DIY glossary.
+- [ ] Put the camera/VTX/VRX comparison immediately after `Video Systems and Goggles` (which is the current closest camera/video overview), before or adjacent to `Video Antennas VTX VRX`.
+- [ ] Add buying/build/troubleshooting pages to the existing **Build + safety** or **Configure + troubleshoot** section, not into the introductory flow.
+- [ ] Verify exact GitHub Wiki page names generated by the publisher: filenames should map cleanly to internal Wiki link names.
+
+---
+
+## 2. Drone categories and class comparisons
+
+- [ ] Define propeller size vs wheelbase in plain English with diagrams; state that convention and manufacturer naming vary.
+- [ ] Build a comparison matrix containing intended use, typical props/frame style, indoor/outdoor fit, protected vs open props, payload/camera options, flight feel, noise, wind tolerance, typical repair scope, cost drivers, learning curve, and likely compromises.
+- [ ] Use ranges as illustrative class descriptions, never as hard universal standards. For every product example quote its exact manufacturer spec and model/revision.
+- [ ] Compare tinywhoop vs open-prop micro/toothpick vs cinewhoop vs 5-inch freestyle vs racing vs 7-inch long-range.
+- [ ] Explain why prop guards/ducts may help close-proximity filming but add drag, mass, and tuning/efficiency trade-offs; do not describe them as collision-proof or universally safer.
+- [ ] Explain that 5-inch racing and 5-inch freestyle share a prop class but commonly optimize for different priorities (weight, durability, camera/HD gear, tune, course vs tricks).
+- [ ] Explain 7-inch builds are commonly selected for efficiency/payload/range missions, but larger battery and aircraft mass increase consequence of a crash; long range is not guaranteed by prop size.
+- [ ] Explain micro/2.5-inch tradeoffs in weight, outdoor wind, battery energy, digital VTX payload, frame strength, repairability and RF range.
+- [ ] Add “Who should choose this?” and “Who should avoid this?” sections to each page.
+- [ ] Add budget planner categories: aircraft, goggles/video receiver, radio transmitter/control link, batteries, charger, spare props/frame/arms, tools, soldering gear where required, simulator and repairs. Mark prices volatile and local/import taxes dependent.
+- [ ] Add recommended paths by goal: apartment/indoor, garden/park, cinematic indoor, freestyle, organized racing, long-range, and learn-to-build.
+- [ ] Avoid unsafe or overly confident long-range advice; cover visual line of sight, failsafe planning, battery reserve, RF conditions, geographic/legal rules and spotter practices where applicable.
+
+---
+
+## 3. Buying-format glossary: BNF / PNP / ARF / RTF / DIY
+
+- [ ] Explain **BNF (Bind-N-Fly)** as an assembled aircraft generally supplied with a receiver; buyer still needs a compatible transmitter and must confirm receiver protocol/firmware and binding steps.
+- [ ] Explain **PNP (Plug-N-Play)** product definitions vary by manufacturer; usually excludes the receiver or radio-link equipment, but package details must be checked.
+- [ ] Explain **RTF (Ready-To-Fly)** package contents explicitly: a bundle may include aircraft, transmitter, goggles, batteries and charger, but contents differ by kit.
+- [ ] Explain **ARF / ARF+** carefully because package contents differ; provide a table of included/excluded parts for each actual listing reviewed.
+- [ ] Explain a DIY kit / self-build as a separate path with soldering, firmware, configuration, troubleshooting and safety requirements.
+- [ ] Add a protocol compatibility checklist for ELRS 2.4 GHz, ELRS 900 MHz/sub-GHz variants where relevant, Crossfire/TBS, FrSky and proprietary control links; no vague “compatible radio” claims.
+- [ ] Add a warning that a BNF label does not mean compatible with every transmitter, and it does not include the FPV goggles/video system by definition.
+- [ ] Sources to begin from: BETAFPV product kits and current official product descriptions; optionally supplement retailer definitions but privilege manufacturer package lists.
+
+---
+
+## 4. Dedicated page implementation checklist
+
+Apply the same reusable structure to each class page: hero/overview infographic, plain-English summary, typical parts layout, manufacturer examples with exact model/revision, use cases, advantages, disadvantages, component matching, video-system implications, build/purchase checklist, maintenance/troubleshooting, safety/legal notes, and sources/date checked.
+
+### Tinywhoop / micro
+
+- [ ] Explain ducts/guards, 65–75 mm-class layouts and smaller indoor micro formats without making wheelbase = propeller size.
+- [ ] Compare 1S/2S examples only when supported by product specifications.
+- [ ] Compare brushed vs brushless only as relevant to the model; avoid describing all whoops as brushed or all as 1S.
+- [ ] Include indoor etiquette, airflow/dust, prop/duct inspection, battery care and the fact that ducts do not eliminate injury or damage.
+- [ ] Examples/source pages to review: BETAFPV Air75, Meteor75 Pro, Cetus X, current supported firmware/gyro revisions.
+- [ ] Add starter buying checklist and repair/spares checklist.
+
+### 2.5-inch micro / open-prop
+
+- [ ] Explain toothpick/open-prop vs guarded tinywhoop and cinematic ducted designs.
+- [ ] Explain the implications of exposed propellers, frame strength, payload, wind, digital air-unit weight and battery choice.
+- [ ] Research actual 2.5-inch product/frame specifications; do not extrapolate from 2-inch or 3-inch models without labelling it.
+- [ ] Include compatible prop/motor/ESC/frame/battery/video-fit review steps.
+
+### 3.5-inch cinewhoop
+
+- [ ] Explain protected/ducted propellers, close-quarters filming, HD air-unit and action-camera payload, and thrust margin.
+- [ ] Compare at least one documented 2.5-inch or 2-inch option and one 3.5-inch option by exact weight without battery/air-unit vs complete takeoff weight when manufacturer data supports it.
+- [ ] Use BETAFPV Pavo35 and smaller Pavo-family examples; verify current model, props, wheelbase, battery and camera compatibility.
+- [ ] Explain duct drag, battery draw, inertia, heat/airflow, repair access and the difference between onboard HD recording and a carried action camera.
+- [ ] Add indoor/close proximity risk and location permission considerations.
+
+### 5-inch racing vs freestyle
+
+- [ ] Explain shared nominal prop class but different build priorities.
+- [ ] Compare frame geometry/durability, motor/prop/battery choices, HD video weight, camera protection, VTX antenna protection, tuning and repair costs.
+- [ ] Give no universal motor KV or battery recommendation; use manufacturer build guides and fully scoped examples.
+- [ ] Add a no-props bench checklist, motor order/direction verification, failsafe and radio/video checks.
+- [ ] Link to simulator learning and the project's First Build Checklist.
+
+### 7-inch long-range
+
+- [ ] Explain design goals and common component pressures: efficient propulsion, battery energy/mass, GPS where appropriate, recovery options, antenna placement, video link, logging and redundancy.
+- [ ] Separate claims about maximum radio-link range from usable/endurance range and jurisdictional operating limits.
+- [ ] Explain wind, momentum, battery reserve, signal-loss plan, GPS limitations, failsafe/return behaviour dependencies, and the need to understand aircraft/firmware setup before field use.
+- [ ] Add advanced/experienced-pilot flag rather than recommending a large long-range quad as a first aircraft by default.
+- [ ] Review local laws and airspace pages before publication; never imply GPS guarantees recovery.
+
+---
+
+## 5. Camera / VTX / VRX ecosystem comparison
+
+### Comparison matrix
+
+- [ ] Compare analog 5.8 GHz video, DJI digital air units, Walksnail/Avatar (CADDXFPV), HDZero, and any currently supported BETAFPV P1 / other small-digital ecosystem that merits coverage.
+- [ ] For each ecosystem, compare camera/sensor and resolution, recording method, live-view resolution/fps, latency claim and test condition, VTX weight/dimensions, input voltage, power draw/heat, antennas, goggles/VRX, firmware/update process, price tier checked on date, availability caveat, repair/accessories and ecosystem compatibility.
+- [ ] Separate **live FPV feed** from **onboard recorded footage**. Do not state the live image and recording resolution are the same unless official documentation says so.
+- [ ] Distinguish video receiver/VRX and goggles from the aircraft's control receiver (e.g. ExpressLRS). These are separate systems.
+- [ ] Add a visual system diagram for each link: camera → video transmitter/air unit → video antenna → matching receiver/goggles; separately draw radio transmitter → control receiver → FC.
+- [ ] Build a compatibility table with exact goggles and air-unit generations (especially DJI O3/O4 and Walksnail Avatar generations). Add a “check manufacturer matrix before purchase” note.
+- [ ] Check regional frequency/power limits; power and frequencies vary by model and legal region. Do not treat manufacturer FCC-range claims as usable flight-range promises.
+- [ ] Explain antenna connector type, impedance, polarization and mounting. Match circular polarization (RHCP/LHCP) at the relevant link ends; verify hardware conventions.
+- [ ] Avoid universal claims about digital latency or range; explain compression, breakup/latency behaviour, race use, DVR and hardware dependencies.
+- [ ] Clarify DJI consumer camera drones vs DIY FPV O3/O4 Air Units: distinct product classes, installation and receiver requirements.
+- [ ] Source the comparison from current official docs/products and date the table. Re-check the DJI supported-goggles table before publishing.
+
+### Current source list to verify again
+
+- [BETAFPV Air75](https://betafpv.com/products/air75-brushless-whoop-quadcopter)
+- [BETAFPV Meteor75 Pro](https://betafpv.com/products/meteor75-pro-brushless-whoop-quadcopter)
+- [BETAFPV Pavo Pico](https://betafpv.com/products/pavo-pico-brushless-whoop-quadcopter)
+- [BETAFPV Pavo35](https://betafpv.com/products/pavo35-brushless-whoop-quadcopter)
+- [BETAFPV Cetus X kit](https://betafpv.com/products/cetus-x-fpv-kit)
+- [CADDXFPV / Walksnail Avatar HD Pro](https://www.caddxfpv.com/products/walksnail-avatar-hd-pro-kit)
+- [CADDXFPV Avatar product comparison](https://wiki.caddxfpv.com/en/Avatar-HD-Series/How-to-buy)
+- [CADDXFPV / Walksnail Goggles X](https://wiki.caddxfpv.com/en/Avatar-HD-Series/Receiver-Unit/Goggles-X)
+- [CADDXFPV downloads/manuals](https://www.caddxfpv.com/pages/download-center)
+- [DJI O4 Air Unit specs](https://www.dji.com/o4-air-unit/specs)
+- [DJI O4 Air Unit FAQ/compatibility](https://www.dji.com/o4-air-unit/faq)
+- [DJI camera drone catalogue](https://www.dji.com/global/camera-drones?site=brandsite&from=nav)
+- [HDZero VTX comparison](https://docs.hd-zero.com/vtx-summary)
+- [HDZero Freestyle V2 VTX docs](https://docs.hd-zero.com/freestyle-v2)
+- [HDZero product catalogue](https://www.hd-zero.com/products)
+- [Betaflight setup guide](https://betaflight.com/docs/wiki/getting-started/setup-guide)
+- [Betaflight motors tab](https://betaflight.com/docs/wiki/app/motors-tab)
+
+---
+
+## 6. Create the diagrams and image assets
+
+All custom visual assets should be editable/reproducible SVG where practical, readable on the Wiki at normal zoom, use consistent buildFPV colors/type, include descriptive alt text and captions, and state when they are schematic. Do not use an image as a substitute for a safe wiring diagram or current board pinout.
+
+- [ ] Create `docs/assets/drone-class-overview.svg`: size/class comparison from tinywhoop to 7-inch; label prop diameter and wheelbase as separate values/fields.
+- [ ] Create `docs/assets/whoop-vs-toothpick-vs-cinewhoop.svg`: open props vs protective ducts/guards vs open-prop micro, showing typical frame form without implying a universal layout.
+- [ ] Create `docs/assets/frame-prop-size-comparison.svg`: relative-size silhouette for 2.5, 3.5, 5 and 7-inch propellers; clear scale disclaimer if icons are schematic.
+- [ ] Create `docs/assets/drone-class-decision-tree.svg`: choose by indoor, outdoor, filming, racing, long range, budget and experience.
+- [ ] Create `docs/assets/bnf-pnp-rtf-arf-comparison.svg`: included/excluded package gear (radio, goggles, batteries, receiver, charger); footnote manufacturer package variation.
+- [ ] Create a small reusable frame anatomy diagram (arm, centre plate, motor mount, FC/ESC mounts, camera cage, battery strap areas).
+- [ ] Create one dedicated hero/overview infographic for each class page: Tinywhoop, 2.5-inch, 3.5-inch Cinewhoop, 5-inch Racing/Freestyle and 7-inch Long Range.
+- [ ] Create a 2.5/3.5 cinewhoop comparison diagram that highlights guard/duct volume, camera mounting and action camera payload impact.
+- [ ] Create `docs/assets/video-system-ecosystem-matrix.svg`: Analog, DJI O3/O4, Walksnail Avatar, HDZero and any supported micro-digital option; match air-side and goggles-side by ecosystem/generation.
+- [ ] Create `docs/assets/fpv-video-link-separation.svg`: independent control vs video vs power paths.
+- [ ] Create `docs/assets/fpv-camera-sensor-and-recording.svg`: camera → live feed vs onboard recording, distinguishing analog/HD feed and recorded footage.
+- [ ] Create `docs/assets/vtx-vrx-compatibility-check.svg`: checklist for generation, goggles/VRX, antenna/polarization, band, connector, power, firmware.
+- [ ] Create frame-fit drawings for 20×20/25.5×25.5/30.5×30.5 mm mounting patterns only if measurements are verified from the relevant official spec; label the units.
+- [ ] Add every new asset to `docs/assets/README.md`, with owning Wiki page, purpose, source/provenance, and accuracy limitations.
+- [ ] Check all SVGs for valid XML, clipping/text overflow, contrast, alt text and legibility on mobile. Inspect the rendered outputs, not just source text.
+- [ ] Prefer actual manufacturer/product photos for examples and original SVG explanatory diagrams for concepts. Preserve image attribution/licensing, use stable links, and avoid inaccurate AI-generated technical labels.
+- [ ] Avoid use of logos/brand styling that implies endorsement. Do not alter manufacturer photos to make their specs appear different.
+
+---
+
+## 7. Buying guides and bill-of-materials tools
+
+- [ ] Expand `Buying Parts in India.md` (check actual filename) with current suppliers, shipping/customs caveats, tax and warranty considerations, currency/date checked, and local regulatory guidance. Do not call out a retailer as vetted unless verified.
+- [ ] Create `FPV-Build-Budget-and-Buying-Guide.md`: full system cost, not just aircraft price, including controller, goggles/VRX, batteries, charger, spare props, repair tools, simulator and replacements.
+- [ ] Create a class-specific buying matrix with minimum viable, balanced, and premium routes—but list exact model/revision and date, and avoid pretending product stocks/prices stay constant.
+- [ ] Include video-system migration cost: goggles are a major ecosystem commitment; identify what is and isn't reusable before recommending a system.
+- [ ] Create a printable BOM template with exact model, revision, mass, voltage range, mounting, protocol, antenna interface, firmware target, official spec link and open compatibility issue.
+- [ ] Add a compatibility gate before purchase: frame/mount fit, prop clearance, motor/ESC/current, battery cell count, FC/regulator voltage, receiver protocol, VTX voltage/heat/airflow, camera/VTX/goggle generation, antenna connector/polarization and firmware support.
+- [ ] Explain when BNF reduces soldering/configuration but can still need firmware setup, binding, checks and crash repairs.
+- [ ] Add a guide for used/refurbished equipment: check firmware/end-of-support, connector/pin damage, goggle generation, battery health, transmitter/receiver protocol and whether the exact product has been discontinued.
+- [ ] Add budget/cost calculator or table only after verified sample prices are collected; include a date/region and don't hardcode volatile promotions as permanent facts.
+
+---
+
+## 8. Build guides and checklists
+
+- [ ] Expand `First-Build-Checklist.md` with links to the class selector and buying-format glossary.
+- [ ] Make separate safe build flows for a BNF whoop setup and a DIY 3.5/5-inch build so soldering-heavy steps are not presented as required for every beginner.
+- [ ] Write a build sequence: inspect contents/revision → identify manuals → frame/mechanical fit → component placement → soldering/continuity checks → power safely without propellers → firmware/target → receiver setup → VTX/camera/goggles setup → motor mapping/direction with props off → failsafe/arming verification → propeller installation → controlled first hover at a suitable permitted site.
+- [ ] Cross-reference Betaflight setup and motor tab; do not invent motor order and always tell readers to remove props when testing motor configuration.
+- [ ] Add build-specific diagrams for mounting, airflow/thermal clearance, antenna strain relief and cable routing; do not infer pad locations from stock images.
+- [ ] Add firmware target/gyro revision verification. Use Meteor75 Pro as one example of why revision/gyro variations matter, not as the only model with revisions.
+- [ ] Add first-flight checks: correct props, motor order/direction, arm switch, failsafe, control directions, battery voltage/connector, video antenna installed, antenna placement and local/legal flight conditions.
+- [ ] Add post-crash inspection (props/motors/arms/screws/battery/wires/antennas/FC stack) and post-flight log checklist.
+
+---
+
+## 9. Troubleshooting guides
+
+- [ ] Create `FPV-Troubleshooting-Quick-Guide.md` with symptom → likely causes → safe checks → next diagnostic step, divided by no power, no arming, no bind, receiver not moving in configurator, wrong motor response, unstable flight, black video, weak/breaking video, hot VTX, GPS/no-satellite, DVR/recording issues and firmware mismatch.
+- [ ] Create a dedicated video troubleshooting section covering: wrong goggles generation/ecosystem, wrong band/channel, poor antenna, damaged coax/connector, wrong polarization, bad camera cable, VTX not powered/overheating, air-unit firmware/bind mismatch, and region settings.
+- [ ] Create a control-link troubleshooting section: transmitter internal/external module selected correctly, receiver firmware/protocol, binding phrase or bind procedure, antenna/cable condition, telemetry/RSSI and failsafe.
+- [ ] Create a no-arming/motor troubleshooting section: arming disable flags, receiver channel map, motor protocol, firmware target, wiring and battery/power checks—always props removed for bench diagnosis.
+- [ ] Create an “after firmware update / board revision” guide: record current settings, verify target and hardware revision/gyro, backup config where supported, avoid random flashing and give vendor/Betaflight source links.
+- [ ] Create a damaged LiPo / charging / storage safety page or extend the existing battery guidance; swollen/damaged batteries should not be used or charged.
+- [ ] Add diagnostic flowcharts that start with the symptom and end with clear stop conditions (smell, smoke, heat, short, swollen battery, unknown pinout → disconnect safely and stop).
+- [ ] Do not encourage powered testing with installed propellers. Emphasize safe power disconnection before soldering or handling exposed battery wiring.
+
+---
+
+## 10. Asset, content, and link integration
+
+- [ ] Keep canonical text in `docs/wiki-source/` and canonical project-owned diagram files in `docs/assets/`.
+- [ ] Verify current publisher behavior before adding large binary media; SVG/Markdown should sync cleanly, but large images need the supported Git workflow and must exist in the source repo before publishing.
+- [ ] Update `docs/assets/README.md` for all new assets.
+- [ ] Update `docs/wiki-source/_Sidebar.md` only after actual filenames/page titles are confirmed.
+- [ ] Add “Next” / “Previous” links where useful to class pages without creating a confusing loop.
+- [ ] Standardize naming, punctuation and acronym definitions (FC, ESC, AIO, VTX, VRX, RX, ELRS, OSD, DVR, GNSS).
+- [ ] Ensure diagrams and product photos appear before the relevant explanation section, not detached at the bottom.
+- [ ] Ensure image alt text describes the actual image, not a sales pitch.
+- [ ] Add source notes next to product photos; use official manuals for critical specifications and installation details.
+- [ ] Preserve a clear distinction among concept illustration, marketing photo, product photo, product spec table and actual wiring/pinout diagram.
+
+---
+
+## 11. Content QA, validation, and maintenance
+
+- [ ] Review every statement about voltage, bands, legal transmitter power, latency, range, camera recording, weight, flight time, goggles support, mounting pattern and included kit contents against an official spec/manual.
+- [ ] Attach source links to the exact model and revision wherever available. Use citations/links immediately following tables or claims rather than one generic source list only.
+- [ ] Mark manufacturer claim vs project interpretation vs practical recommendation. Explain test conditions for range/latency/endurance.
+- [ ] Check internal links, filenames, sidebar order, image URLs and page naming against the separate GitHub Wiki's actual rendering.
+- [ ] Check external images load and have stable attribution/license. Prefer locally copied images for Wiki reliability where permission/terms allow.
+- [ ] Run Markdown/link/image checks on all changed pages.
+- [ ] Validate new SVG syntax and view each new infographic rendered at full size and at typical Wiki/mobile width.
+- [ ] Check terms consistency: props/ducts/whoop/cinewhoop/frame wheelbase/prop size/BNF vs physical class.
+- [ ] Check legal content with current official regional sources at publication time. Clearly distinguish law from etiquette and product manufacturer advice.
+- [ ] Verify no SKU revision, firmware/gyro target, or product discontinuation notice has been silently lost.
+- [ ] Add a sources “checked on” date and review interval to pages whose specs/availability can change.
+- [ ] Read every new page as a beginner: what is this category, what is it for, what does it cost beyond the aircraft, what must match, what can go wrong, and what should I read next?
+
+---
+
+## 12. Publish and verify the actual GitHub Wiki
+
+- [ ] Commit source pages, assets, sidebar, asset README, and this TODO to the main `buildFPV` repository.
+- [ ] Pull the latest `main` in the user's local clone.
+- [ ] Run `bash scripts/publish-wiki.sh` from the repository root.
+- [ ] Review the staged Wiki diff and check that images were copied into the Wiki repository's `images/` folder and Markdown references were rewritten to local Wiki image paths.
+- [ ] Type the publisher's exact confirmation word `PUBLISH` after reviewing the staged content.
+- [ ] Confirm the publisher commit and push to the separate `buildFPV.wiki.git` remote succeeds; do not treat a main-repo commit as Wiki publication.
+- [ ] Verify live page links, sidebar, all images, local asset links, anchors and page names in a browser.
+- [ ] Confirm the class selector and all class-specific pages show up in sidebar order.
+- [ ] Confirm `FPV-Cameras-VTX-VRX-Compatibility-Comparison` appears immediately after `Video Systems and Goggles`.
+- [ ] Open the new video matrix on desktop and mobile; check that tables and diagrams remain legible.
+- [ ] Update this TODO's status/date after each release; leave unresolved items unchecked and write a brief blocker note rather than marking incomplete tasks done.
+
+---
+
+## Working notes
+
+- This is a staged programme, not a claim that all pages/assets have been created.
+- Manufacturer claims and prices change; keep dates, model/revision and source URLs near the claim.
+- Size labels are practical shorthand; actual wheelbase, prop diameter, mass, payload and configuration govern compatibility.
+- The separate GitHub Wiki publication remains a required last step after source changes are reviewed.
