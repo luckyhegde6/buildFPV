@@ -28,3 +28,5 @@ Retry 8: automated publishing now copies repository-owned assets but preserves e
 Retry 9: the previous publish reached git diff --cached --check and failed on a blank line at EOF in Drone-Categories-and-Size-Guide.md. The source file and publisher are now normalized before staging; verify push and live-site checks.
 
 Retry 10: run against the latest EOF-normalization and single-sed-per-page link-rewrite optimization. Verify that the publisher commits and pushes successfully, then review the final live Wiki Playwright report.
+
+Retry 11: the prior publisher has been cancelled and only its stale Playwright install is running. Run the latest optimized publisher in the final concurrency group, and skip live verification when publish was cancelled. Confirm actual push and live Wiki content.
