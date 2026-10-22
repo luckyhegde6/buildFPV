@@ -1,4 +1,4 @@
-# One-shot publish trigger — 2026-10-22 (retry 3)
+# One-shot publish trigger — 2026-10-22 (latest-code validation)
 
 This file exists solely to trigger .github/workflows/wiki-publish-verify.yml once on push to main.
 The workflow runs the link-rewrite regression test, publishes from docs/wiki-source/ to the existing buildFPV.wiki.git remote when WIKI_PUBLISH_TOKEN or GH_PERSONAL_ACCESS_TOKEN is configured, then installs Playwright with npx on a GitHub-hosted runner and captures headless verification screenshots/reports.
@@ -10,3 +10,5 @@ Remote retry requested after fixing the workflow's marker condition so an existi
 Retry 2: trigger after the live verifier whitespace assertion fix. Review both queued/running attempts and use the one testing the newest main commit as final evidence.
 
 Retry 3: request execution after removing job-level marker guards. The push path filter is the gate for automatic runs; verification must execute even if publishing fails.
+
+Latest-code validation requested after updating explicit route-redirect assertions and fixing summary shell quoting. Wiki publishing still requires WIKI_PUBLISH_TOKEN or GH_PERSONAL_ACCESS_TOKEN; do not treat a failed credential step as a publish attempt.
