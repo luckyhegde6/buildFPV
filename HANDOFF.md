@@ -84,6 +84,16 @@ Before retrying, the repository owner must add `WIKI_PUBLISH_TOKEN` or `GH_PERSO
 
 **Post-run changes (not yet re-tested):** after run `39797230235`, `scripts/verify-wiki-live.mjs` gained an explicit final-route assertion (commits `740db33c80abc257ca28a7d64ccef09ed56065a6` and `79572b9a7a3f7174453ea854e339406fa60a4a27`), and `.github/workflows/wiki-publish-verify.yml` had shell-summary quoting/newline fixes (commits `60f521b52f97e175ae6811886c6dbd5f42a71606`, `84f5e794081d5b573715d211b52c26b708776207`, `032fecd0fe52f4a90d76c215620722d73dc4d9e3`). The latest marker update is commit `8e3833255f9485e608d68e75f79333c43a57e3f4`, but the Actions API still shows only three runs and no new run for that marker. Thus those later changes are not yet tested. The next reliable action is to add the Wiki-write secret and manually run the workflow from the Actions UI so current `main` is tested.
 
+## Video learning resources added — source files updated, live Wiki publish pending
+
+- Added the supplied videos/playlists across README, docs/, and canonical docs/wiki-source/ pages.
+- Mandatory beginner course: [Learn to fly an FPV drone (for total beginners)](https://www.youtube.com/playlist?list=PLwoDb7WF6c8lCKhQOTy-Vb9LfW0VAIrTP), linked from the README, learning guide, simulator training, Wiki Home, Getting Started, Simulator Training and Daily Liftoff Routine.
+- Added drone systems/control playlist and video to system basics/how-drones-work pages, the RadioMaster Pocket setup video to Pocket guides, DGCA/drone-awareness playlists to India rules and references pages, and a new [Drone Coding and Machine Learning page](docs/wiki-source/Drone-Coding-and-Machine-Learning.md) plus [repository guide](docs/drone-coding-and-ml.md).
+- Added links to Wiki Home and the sidebar, docs learning guide, reference library and roadmap. Clickable YouTube thumbnails link to individual videos; playlists use direct YouTube playlist links because GitHub-flavored Markdown filters raw iframe tags.
+- DGCA videos are marked supplemental and not a legal authority; official DGCA / Ministry of Civil Aviation and Digital Sky links remain primary. Playlist titles/syllabus that could not be confirmed are not inferred.
+- A source-level pass re-fetched 20 affected/new files through GitHub MCP and found all supplied playlist/video IDs in the intended docs/Wiki-source groups. This does not establish that the live Wiki has updated.
+- **Publication status:** these edits are in buildFPV/main source files. The existing live Wiki still needs a successful publish workflow; the prior run (39797230235) was blocked by the missing WIKI_PUBLISH_TOKEN / GH_PERSONAL_ACCESS_TOKEN Actions secret. See [the publishing runbook](.agents/wiki-publishing-runbook.md).
+
 ## Research and safety caveats
 
 - Confirm each model/SKU/revision and official manual. Product weights, camera modes, voltage, power, goggles compatibility and firmware are not universal across generations.
