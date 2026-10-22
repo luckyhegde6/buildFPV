@@ -1,5 +1,7 @@
 # BNF, PNP, ARF, RTF and DIY — What Is Actually Included?
 
+![Comparison of common FPV purchase formats and typical kit contents](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/bnf-pnp-rtf-arf-comparison.svg)
+
 These acronyms describe **purchase/package completion**, not the aircraft's size or flying style. A 2.5-inch micro, tinywhoop, cinewhoop or 5-inch quad can be sold in different package formats. Read the exact SKU's “what's included” list; manufacturers use package terms somewhat differently.
 
 ## 1. Package formats
