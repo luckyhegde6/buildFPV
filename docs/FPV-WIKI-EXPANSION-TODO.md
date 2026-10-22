@@ -682,3 +682,16 @@ Current animation is a simple concept loop for rotor/thrust orientation, not a p
 - [ ] Re-run via the Actions UI after the secret is configured. Mark publication complete only after publisher push succeeds and fresh Playwright output passes.
 
 **Current status:** remote Playwright installation/execution and evidence capture are demonstrated. Publishing is blocked by missing secret configuration; live Wiki checks fail. Do not mark the Wiki as updated until a subsequent run proves the Wiki push and passes route/content/image assertions.
+
+
+---
+
+## 23. Latest-code validation marker — 22 October 2026
+
+- [x] Commit the explicit final-route assertion in `scripts/verify-wiki-live.mjs` and the workflow shell-summary quoting/newline fixes.
+- [x] Update `.agents/PUBLISH_WIKI_NOW` at commit `8e3833255f9485e608d68e75f79333c43a57e3f4` to request a fresh run of current `main`.
+- [x] Re-check `/actions/runs?per_page=10`; the inventory still contains only the three earlier runs. No new run was visible for the latest marker update.
+- [ ] After configuring the Wiki-write secret, manually run [Publish and verify existing FPV Wiki](https://github.com/luckyhegde6/buildFPV/actions/workflows/wiki-publish-verify.yml) on `main` so the latest code is tested together with the actual Wiki publish.
+- [ ] Record the new run ID and updated report. Do not treat the rerun request commit as evidence that the latest fixes executed.
+
+**Current handoff:** run 39797230235 is the most recent completed evidence. It proved remote Playwright installation/execution and artifact capture, but the publisher failed due to the missing secret and live Wiki checks failed. The current source code contains additional assertions/quoting fixes that have not yet been re-tested.
