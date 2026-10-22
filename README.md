@@ -26,6 +26,12 @@
 | Diagnose a problem | [Troubleshooting notes](docs/wiki-source/Troubleshooting.md) |
 | Explore the projects that inspired this repo | [Project library](docs/references.md) |
 
+## 🎓 Mandatory beginner FPV video course
+
+Before your first real flight, complete [Learn to fly an FPV drone (for total beginners)](https://www.youtube.com/playlist?list=PLwoDb7WF6c8lCKhQOTy-Vb9LfW0VAIrTP) in sequence while practising in Liftoff. This is buildFPV's learning gate, not an official licence or certification. Start from the [simulator-training guide](docs/02-simulator-training.md).
+
+Advanced optional track: [Drone Coding and Machine Learning](docs/drone-coding-and-ml.md).
+
 ## 🏁 Recommended route
 
 1. **Week 1 — radio + simulator:** establish USB input, learn the sticks, and practise basic orientation.
