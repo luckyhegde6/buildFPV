@@ -10,7 +10,7 @@ const cases = [
   {
     name: 'home',
     url: base,
-    required: ['FPV System Basics', 'Drone Categories and Size Guide'],
+    required: ['FPV System Basics', 'Drone Categories and Size Guide', 'Mandatory beginner video course before your first real flight', 'Learn to fly an FPV drone (for total beginners)', 'Drone Coding and Machine Learning'],
     minimumTables: 0,
   },
   {
@@ -18,6 +18,7 @@ const cases = [
     url: `${base}/FPV-Chargers-LiPo-and-Li-ion-Battery-Safety`,
     required: ['ISDT UC2', 'ISDT 608AC', 'ToolkitRC M7AC', 'ToolkitRC M6DAC'],
     minimumTables: 2,
+    requireLocalImages: true,
   },
   {
     name: 'video-matrix',
@@ -30,6 +31,19 @@ const cases = [
       'HDZero Freestyle V2 VTX',
     ],
     minimumTables: 2,
+    requireLocalImages: true,
+  },
+  {
+    name: 'simulator',
+    url: `${base}/Simulator-Training`,
+    required: ['Mandatory beginner video course before your first real flight', 'Learn to fly an FPV drone (for total beginners)', 'Liftoff'],
+    minimumTables: 0,
+  },
+  {
+    name: 'coding-ml',
+    url: `${base}/Drone-Coding-and-Machine-Learning`,
+    required: ['Drone Coding and Machine Learning Learning Path', 'How to Program a Tello Drone With Python', 'Learn Drone Programming with Python', 'Suggested project ladder'],
+    minimumTables: 0,
   },
 ];
 
@@ -121,7 +135,7 @@ try {
           }
         })
       );
-      if (testCase.name !== 'home' && record.localWikiImages.length === 0) {
+      if (testCase.requireLocalImages && record.localWikiImages.length === 0) {
         record.errors.push('No Wiki-local images were found on this guide page.');
       }
       for (const image of record.localWikiImages) {
