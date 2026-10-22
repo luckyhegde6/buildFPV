@@ -36,37 +36,38 @@ The connected GitHub MCP has read/write access to the source repository. Source 
 
 Key commits: [AGENTS.md](https://github.com/luckyhegde6/buildFPV/commit/7047eb25b8fd561a47fbf08222d93ec5a0083298), [research workflow](https://github.com/luckyhegde6/buildFPV/commit/a64aea5015adf8d884450ba5a18452351245ec33), [session log update](https://github.com/luckyhegde6/buildFPV/commit/044efb25845377b62d606c733c382e78a9b5d7ed), [durable memory update](https://github.com/luckyhegde6/buildFPV/commit/e81e72d44dd58e4982675aa1a8b1ad5f0f2f3bcc).
 
-## Publish and verify status — still open
+## Publish and verify status — remote runner prepared, not yet executed
 
 | Stage | State |
 |---|---|
 | Wiki-source pages committed in source repo | Done |
-| Existing Wiki inspected for differences before publishing | Not done |
-| `bash scripts/test-wiki-link-rewrite.sh` run in a real checkout | Not verified |
-| `bash scripts/publish-wiki.sh` run and staged diff reviewed | Not done |
-| Git push to Wiki confirmed | Not done |
-| Live Home/sidebar/changed pages/assets verified using Playwright/browser | Not done |
+| Agent framework and TODO/handoff rules committed | Done |
+| Headless Playwright verification script committed | Done |
+| GitHub Actions publish/verify workflow committed | Done |
+| One-shot marker committed | Done |
+| GitHub Actions run actually started | **No** — `actions/runs` returned `total_count: 0` when checked |
+| Existing Wiki fetched and compared before publish | Not done |
+| Wiki push confirmed | Not done |
+| Live Home/sidebar/charger/video pages and media verified | Not done |
 
-Do **not** claim that the requested Wiki publish/Playwright verification completed. Current obstacles:
-- Active MCP tool discovery did not expose a Playwright/browser-control action.
-- Plugin discovery found TinyFish as an available cloud browser option, but it is not connected in this session.
-- GitHub MCP fetch does not expose Wiki Git push; web fetch attempts did not return usable rendered Wiki pages.
-- Earlier local shell execution could not resolve `github.com`.
+## Remote execution attempt
 
-These are environment/connection limits; they do not disprove that the live Wiki exists. The user requested publishing and Playwright verification. Browser/publish were attempted through available routes and remain blocked; the agent framework files were still added so the requested maintenance system would not be lost.
+The local container has Node.js 22.16.0, a `playwright` CLI version 1.57.0, and system Chromium. However:
+- `timeout 35s npx --yes playwright --version` did not finish within the execution window.
+- Headless Chromium navigation to the live Wiki failed with `net::ERR_BLOCKED_BY_ADMINISTRATOR`.
+- Direct curl reports `Could not resolve host: github.com`; the web fetcher returned cache misses for the Wiki routes.
+- GitHub MCP commits succeeded, but no GitHub Actions run appeared after the trigger marker commit. The current connector provides no workflow-dispatch/write action, so it cannot start the workflow directly.
 
-## Next action — publish the existing Wiki
+The following are now committed and ready for a network-enabled GitHub-hosted Actions runner:
+- `scripts/verify-wiki-live.mjs` — Playwright headless checks for Home, charger guide and video matrix at desktop and mobile viewports; required content, HTTP status, tables, extensionless routes and Wiki-local images; screenshots and JSON report.
+- `.github/workflows/wiki-publish-verify.yml` — installs Playwright with `npx`, runs `scripts/test-wiki-link-rewrite.sh`, publishes to the existing Wiki, then uploads screenshots/report.
+- `.agents/PUBLISH_WIKI_NOW` — one-shot push trigger. The workflow also supports `workflow_dispatch`.
 
-1. Re-read root `AGENTS.md`, `MEMORY.md`, latest `SESSIONS.md`, this file and the master TODO.
-2. Connect/use an authenticated Playwright-capable browser or the available browser plugin after it is connected. Inspect the existing live Wiki Home, sidebar, charger page and video-matrix page first; record actual routes/screenshots and check for Wiki-only changes.
-3. From a network-enabled checkout of `buildFPV`, fetch the existing Wiki Git remote and preserve intentional Wiki-only content. Run:
-   ```bash
-   bash scripts/test-wiki-link-rewrite.sh
-   bash scripts/publish-wiki.sh
-   ```
-4. Review `git diff --cached --check` and `git diff --cached`, especially removal/overwrites, stale pages, internal link slugs, image localization and unrelated files. Enter `PUBLISH` only after reviewing the staged diff.
-5. Confirm the Wiki push through Git and re-open the live Home, sidebar, affected pages, images/SVGs/GIFs at desktop and narrow/mobile viewport sizes using browser automation.
-6. Record push SHA, URLs, screenshots or evidence, failures, and the accurate state in `docs/FPV-WIKI-EXPANSION-TODO.md`, `SESSIONS.md` and this handoff.
+## Exact next action
+
+Open [the publish/verify workflow](https://github.com/luckyhegde6/buildFPV/actions/workflows/wiki-publish-verify.yml) on GitHub and click **Run workflow** on `main`; this manual dispatch is currently required because the GitHub MCP write did not start Actions. Before it can publish, the repository must have either `WIKI_PUBLISH_TOKEN` or `GH_PERSONAL_ACCESS_TOKEN` configured under Settings → Secrets and variables → Actions with permission to push to the existing Wiki Git remote. Do not put tokens into files, chat, or workflow logs.
+
+Then inspect the run summary/artifact and confirm all three states separately: publisher push succeeded, Playwright content/routes passed, and Wiki-local images loaded. If the publish job reports a missing token, stop at that result and ask the owner to add the repository secret; if it reports a failed push, inspect the masked Git error before retrying.
 
 ## Research and safety caveats
 
