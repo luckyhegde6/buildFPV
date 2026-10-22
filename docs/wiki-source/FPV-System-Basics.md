@@ -39,7 +39,7 @@ The radio sends control commands. The receiver delivers channel data to the flig
 
 ## The video path
 
-![FPV camera-to-goggles video path overview](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-build-concept-ai.jpg)
+![FPV camera-to-goggles video path overview](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-video-link-separation.svg)
 
 *This concept image is for orientation only. The signal path below shows the logical flow; always check hardware-specific manuals for wiring.*
 
