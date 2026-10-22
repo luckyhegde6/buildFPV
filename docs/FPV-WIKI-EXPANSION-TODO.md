@@ -544,3 +544,12 @@ Current animation is a simple concept loop for rotor/thrust orientation, not a p
 - [x] Register the new visuals in `docs/assets/README.md`.
 - [ ] Review all visual assets after Wiki conversion to local `images/`, including text legibility on mobile and image-host download success.
 - [ ] Complete the deeper exact-SKU matrix of camera sensor/lens/FOV, live feed modes, onboard recording, goggles/VRX generation, firmware compatibility, power and date-stamped prices; avoid an unsupported product ranking.
+
+
+### Seventh implementation update — battery flight-time planning (22 October 2026)
+
+- [x] Create `docs/wiki-source/Battery-Flight-Time-and-Cycle-Life-Planning.md`.
+- [x] Include cell-count / capacity Wh arithmetic, a hypothetical 4S 1500 mAh estimate using an explicitly illustrative reserve and average-power assumption, flight-time uncertainty factors, LiPo/Li-ion constraints, and a battery inspection/use log.
+- [x] Link the new battery planning page from Home, sidebar, motor/prop compatibility, and charger safety pages.
+- [ ] Recheck this page's published equations, anchors and table rendering after Wiki sync; verify that links resolve to extensionless Wiki slugs.
+- [ ] Consider a spreadsheet-style calculator only after more representative, sourced flight-log data is available; do not imply an estimate predicts a safe maximum flight time.
