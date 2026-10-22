@@ -8,6 +8,13 @@
 
 - [RadioMaster / RC setup playlist](https://youtube.com/playlist?list=PLwoDb7WF6c8lhlzE6_iA2X50bk3pIYcbb) — use it alongside the control map and setup checklist below. Confirm menu names and firmware-specific steps against the manual for your exact radio/EdgeTX version.
 
+## 🎥 RadioMaster Pocket setup video
+
+[![RadioMaster Pocket — how to set up and bind a drone](https://img.youtube.com/vi/GgaWMvAHZi8/hqdefault.jpg)](https://www.youtube.com/watch?v=GgaWMvAHZi8)
+
+Watch [RadioMaster Pocket — How To Set Up and Bind a Drone — Step by Step](https://www.youtube.com/watch?v=GgaWMvAHZi8) alongside this button guide. Compare menu names and binding/Betaflight steps with your exact Pocket, EdgeTX, ELRS and receiver versions. For simulator-only input, use USB joystick mode; binding a real drone receiver is a separate task.
+
+
 Official links: [Pocket M2 product page](https://radiomasterrc.com/products/pocket-radio-controller-m2) · [RadioMaster manuals](https://radiomasterrc.com/pages/user-manuals) · [EdgeTX manual](https://manual.edgetx.org/) · [EdgeTX USB Joystick docs](https://github.com/EdgeTX/edgetx-user-manual/blob/2.12/color-radios/model-settings/model-setup/usb-joystick.md).
 
 ## ⚠️ Before power-on (from the supplied A1.8 quick-start guide)
