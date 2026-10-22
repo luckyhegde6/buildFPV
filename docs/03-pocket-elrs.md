@@ -14,6 +14,12 @@ Important points from the guide:
 - Firmware updates can make a radio unusable if done incorrectly; update only with a clear reason and a verified procedure.
 - It warns to remove propellers for assembly/maintenance where applicable, and not to charge unattended. Use only the supported battery chemistry and correct polarity.
 
+## 🎥 RadioMaster Pocket setup video
+
+[![RadioMaster Pocket — how to set up and bind a drone](https://img.youtube.com/vi/GgaWMvAHZi8/hqdefault.jpg)](https://www.youtube.com/watch?v=GgaWMvAHZi8)
+
+Watch [RadioMaster Pocket — How To Set Up and Bind a Drone — Step by Step](https://www.youtube.com/watch?v=GgaWMvAHZi8) alongside this button guide. Compare menu names and binding/Betaflight steps with your exact Pocket, EdgeTX, ELRS and receiver versions. For simulator-only input, use USB joystick mode; binding a real drone receiver is a separate task.
+
 ## Radio and simulator: separate the workflows
 
 **Simulator input does not require binding an aircraft receiver.** The normal beginner workflow is to use USB joystick input and calibrate the axes in the simulator. The exact prompt/menu can vary by EdgeTX build and computer operating system.
