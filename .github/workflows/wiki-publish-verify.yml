@@ -108,6 +108,6 @@ jobs:
             echo "## Live Wiki browser verification"
             printf -- '- Publish job result: `%s`\n' "$PUBLISH_JOB_RESULT"
             echo "- Browser automation: Playwright Chromium, headless mode"
-            printf '%s\\n' '- Screenshots/report: workflow artifact `buildfpv-wiki-playwright-evidence`'
+            printf '%s\n' '- Screenshots/report: workflow artifact `buildfpv-wiki-playwright-evidence`'
             echo "- Review the report artifact for HTTP status, required text, tables, extensionless routes and Wiki-local images."
           } >> "$GITHUB_STEP_SUMMARY"
