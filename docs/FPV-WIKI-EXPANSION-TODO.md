@@ -742,3 +742,10 @@ Current animation is a simple concept loop for rotor/thrust orientation, not a p
 - The publisher was changed to force-stage image files and [run #15](https://github.com/luckyhegde6/buildFPV/actions/runs/39845914339) successfully republished. Live verification is still pending in the workflow because Playwright/Chromium installation has not advanced to the test step.
 - [Run #16](https://github.com/luckyhegde6/buildFPV/actions/runs/39846078398) is queued with direct checks for the mandatory simulator course and coding/ML page.
 - Status: **Wiki published; full live browser verification still open.**
+
+### Supplied infographic images — publication status
+
+- Source updates are committed and the latest Wiki publish (Run #18) succeeded: https://github.com/luckyhegde6/buildFPV/actions/runs/39863362323.
+- `FPV-System-Basics.md` now links the FPV basics and beginner guide infographics. `How-FPV-Drones-Work.md` now links the movement and control-loop infographics.
+- Fixed legacy broken-image references in Home and System Basics; added “The control path” text to How FPV Drones Work.
+- Playwright has not completed for Run #18 because the Chromium installation step remains active. Run #19 is queued with explicit required-image assertions for all four visuals. This TODO stays open for live-verification until those browser checks report results.
