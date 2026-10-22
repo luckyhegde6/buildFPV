@@ -500,7 +500,8 @@ The following broad class/flight-purpose pages have now been created separately 
 - [x] Create `docs/wiki-source/FPV-Cameras-VTX-VRX-Compatibility-Comparison.md`.
 - [x] Link this page directly after `Video Systems and Goggles` in `_Sidebar.md`.
 - [x] Link the comparison from Home and keep analog-vs-digital as the companion conceptual guide.
-- [ ] Expand the starter model examples into a complete exact-SKU table for camera module, VTX/air unit, receiver/goggles generation, firmware, live-view modes, onboard recording, weight, input-voltage range, current/heat and price checked date.
+- [x] Expand the starter model examples into an exact-model comparison for BETAFPV Air75 (listed 5-in-1/C03 configuration), DJI O4 standard and Pro, Walksnail Avatar HD Pro Kit, HDZero Whoop V2 and HDZero Freestyle V2; record camera/live-feed/onboard recording, voltage, weight/mount, power/heat and ground-side ecosystem where manufacturer data is available.
+- [ ] Continue the full per-SKU compatibility matrix across additional camera/VTX/VRX/goggle generations and firmware revisions; date-stamp verified price/availability only after a current market check.
 
 
 ### Fourth implementation update — buying and camera-selection guides (22 October 2026)
@@ -508,7 +509,8 @@ The following broad class/flight-purpose pages have now been created separately 
 - [x] Add `docs/wiki-source/FPV-Build-Budget-and-Buying-Guide.md`: cost buckets, buying pathways by mission, ecosystem costs, full-system compatibility gates and second-hand equipment checks.
 - [x] Add `docs/wiki-source/FPV-Camera-Selection-Guide.md`: camera/live-feed/DVR/onboard recording distinctions and camera-selection priorities for tinywhoop, micro, racing, freestyle, cinewhoop and long-range.
 - [x] Link both guides from Home and add them to the sidebar. The camera selection guide is near the VTX/VRX comparison; the buying guide is under build/batteries/safety.
-- [ ] Add model-by-model current camera matrix with exact sensor/format/FOV/live feed/recording/weight/power/firmware fields for all shortlisted analog, DJI, Walksnail, HDZero and micro video SKUs. Current guides contain representative examples only.
+- [x] Add a dated representative exact-model camera/VTX/VRX matrix covering an analog micro (Air75), DJI O4 standard and Pro, Walksnail Avatar HD Pro, and two HDZero VTX models, including the camera/live-view/recording distinction, voltage, mounting/weight/power and ground-side ecosystem where manufacturer data was explicit.
+- [ ] Extend the matrix to additional supported SKUs, exact goggles/receiver and firmware pairings, and price/availability snapshots only when source-checked for a stated date and region.
 - [ ] Add region-stamped prices and supplier comparisons only after current checkout/duty/shipping information has been checked; never use stale promotional prices as stable facts.
 
 
@@ -598,3 +600,18 @@ Current animation is a simple concept loop for rotor/thrust orientation, not a p
 - [ ] Record the resulting Wiki commit and live verification results here after the push.
 
 **Current limitation:** the connector cannot fetch the Wiki routes through its repository fetch action, and this runtime's local shell reports `Could not resolve host: github.com`. Therefore the existence of the Wiki is accepted from the user's confirmation, but publishing and live page inspection remain unverified here.
+
+
+---
+
+## 18. Exact-model FPV video matrix tranche — 22 October 2026
+
+- [x] Expand `FPV-Cameras-VTX-VRX-Compatibility-Comparison.md` with model-specific rows for BETAFPV Air75 (listed 5-in-1/C03 configuration), DJI O4 standard, DJI O4 Pro, Walksnail Avatar HD Pro Kit, HDZero Whoop V2 and HDZero Freestyle V2.
+- [x] Include published sensor/FOV and recording modes when listed, live-view/latency claim with test-condition caveats, input voltage, weight/mount/power/thermal notes, and ground-side ecosystem.
+- [x] Preserve model-generation distinctions and explain that the control receiver is not the video receiver.
+- [x] Flag the Walksnail kit page's inconsistent combined-vs-component weight claims instead of silently choosing a number.
+- [ ] Continue with more camera and VTX SKUs, exact goggles/receiver + firmware pairings, and additional maker manuals. Do not create cross-brand compatibility assumptions.
+- [ ] Verify the new table's layout and source links on the existing live Wiki after a reviewed publish.
+- [ ] Add regional price/availability snapshots only after current source/checkout verification for a specific date and region.
+
+**Research sources for this tranche:** [DJI O4 specs](https://www.dji.com/o4-air-unit/specs), [BETAFPV Air75](https://betafpv.com/products/air75-brushless-whoop-quadcopter), [Walksnail Avatar HD Pro Kit](https://www.caddxfpv.com/products/walksnail-avatar-hd-pro-kit), and [HDZero VTX specifications](https://docs.hd-zero.com/vtx-summary), all reviewed 22 October 2026.
