@@ -420,3 +420,10 @@ Source pages to revisit during that matrix pass:
 - [HDZero VTX summary](https://docs.hd-zero.com/vtx-summary)
 
 The implementation intentionally avoids fixed universal prices, max-flight-time guarantees, universal battery-cycle life promises, and blanket latency rankings. Those values are setup- and test-dependent or volatile and should only be entered with the named model, revision, conditions, region and check date.
+
+
+## 10. Animated visual validation correction — 22 October 2026
+
+The first hand-built GIF stream did not decode to complete frames and was replaced rather than left in the project. The replacement at `docs/assets/propeller-thrust-loop.gif` is a real, looping 4-frame, 180 × 112 GIF generated with Pillow, opened frame-by-frame for decoding validation before uploading. GitHub now reports a new blob for that asset. The animation is intentionally a concept visual and should not be interpreted as a calibrated rotor-speed/thrust simulation or universal motor order.
+
+The asset registry and master TODO have been updated to record this correction. The image still needs a final rendered check after the publisher copies it into the separate Wiki repository.
