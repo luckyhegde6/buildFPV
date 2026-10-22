@@ -12,6 +12,18 @@ This is a **verify-before-flight checklist**, not legal advice. FPV rules can de
 - [ ] Verify safe visual awareness/spotter arrangements and the applicable operating restrictions.
 - [ ] Do not rely on a forum post, old video, seller listing, or a previous flight as proof that a location or setup is legal today.
 
+## 🎥 Video resources supplied for DGCA rules / drone awareness
+
+These are **supplementary learning resources**, not an official DGCA certification path or a legal authority. Playlist/video titles and exact coverage were not reliably verified during this pass; check the contents, publication dates and claims yourself.
+
+[![Open the supplied DGCA-rules video](https://img.youtube.com/vi/jnyQJVzRiyg/hqdefault.jpg)](https://www.youtube.com/watch?v=jnyQJVzRiyg&list=PL_Fsqn9m2GhU3ep-PzQ4jg8aa-oxFP8W6)
+
+- [DGCA/rules playlist supplied with the video](https://www.youtube.com/playlist?list=PL_Fsqn9m2GhU3ep-PzQ4jg8aa-oxFP8W6)
+- [Additional supplied drone/rules-awareness playlist](https://www.youtube.com/playlist?list=PL3IOIUhLPNVciQ1V5OLMmgEBQJbSzJ8iS)
+- [Additional supplied drone-awareness playlist](https://www.youtube.com/playlist?list=PLn8ARIij4VbeN2OXLqHJfG2Nm4Hx8ilFq)
+
+**Before every outdoor flight, use current official sources below**, especially the latest DGCA / Ministry of Civil Aviation material and Digital Sky airspace map. Old videos may omit amendments, changed airspace status or operation-specific requirements.
+
 ## Official starting points
 
 - [Ministry of Civil Aviation — Drone Rules, 2021](https://www.civilaviation.gov.in/ministry-documents/rules/drones-rules-2021-dated-25-august-2021)
