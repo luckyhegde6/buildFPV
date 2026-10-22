@@ -27,6 +27,8 @@ The physical arrangement differs between builds. A compact whoop may combine man
 
 ## 1. Frame — the skeleton
 
+For frame geometry choices and assembly tooling, see [Balanced X vs Deadcat](Frame-Geometries-Balanced-X-vs-Deadcat.md), [Balanced X assembly](Balanced-X-Frame-Assembly.md), [Deadcat assembly](Deadcat-Frame-Assembly.md), and the [frame-size guides](Drone-Categories-and-Size-Guide.md).
+
 ![Frame diagram showing arms, centre plates and motor mounting points](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-frame.svg)
 
 **Job:** The frame holds the motors at fixed positions and protects/supports the electronics, battery and camera. Its geometry sets the motor-to-motor size and influences stiffness, durability, weight and available mounting space.
@@ -38,6 +40,8 @@ The physical arrangement differs between builds. A compact whoop may combine man
 **Check before building:** Confirm the frame supports the intended propeller diameter, motor mount pattern, FC/ESC mounting size, camera format and battery dimensions. Check screws do not protrude into windings or boards.
 
 ## 2. LiPo battery — the energy source
+
+See [Motor, Propeller and Battery Compatibility](Motors-Propellers-and-Battery-Compatibility.md) for cell-count and chemistry trade-offs, and [FPV Chargers, LiPo and Li-ion Safety](FPV-Chargers-LiPo-and-Li-ion-Battery-Safety.md) for charging procedures and charger selection.
 
 ![LiPo battery power path from battery through ESC or power distribution to motors and regulated electronics](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-battery-power.svg)
 
