@@ -2,6 +2,10 @@
 
 ![Cinewhoop guarded-frame schematic and frame size reference](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/frame-size-reference.svg)
 
+![BETAFPV Pavo35 ducted cinewhoop frame product photo](https://betafpv.com/cdn/shop/files/d2e1b9aec379546f426ce88c187b9234_7825ca02-2d37-40da-a299-8051a920ac4c.jpg?v=1777538418&width=1445)
+
+*Real frame example: BETAFPV Pavo35. The frame listing states 148 mm wheelbase, 92 mm duct diameter, 3 mm top plate, 1.5 mm base plate and 113.9 g frame weight. [BETAFPV frame specifications](https://betafpv.com/products/pavo35-brushless-whoop-frame).*
+
 A cinewhoop is a filming-oriented quad design that often uses guards or ducts around the propellers for selected close-proximity shots. “Cinewhoop” is not a universal size standard; check actual prop diameter, wheelbase, guard dimensions, payload and takeoff weight. Some models marketed as cinewhoops use 2.5-inch, 3.5-inch or other prop sizes.
 
 ## 1. Why use a guarded frame?
