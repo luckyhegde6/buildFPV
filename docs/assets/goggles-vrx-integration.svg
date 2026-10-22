@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760" role="img" aria-labelledby="title desc">
+<title id="title">FPV goggles and VRX integration map</title>
+<desc id="desc">A visual compatibility map shows analog VTX connecting only to an appropriate analog VRX; digital ecosystems connect to goggles or receivers explicitly supported by that product generation. The control receiver is separate.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0a1830"/><stop offset="1" stop-color="#17465b"/></linearGradient><marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#c5efff"/></marker></defs>
+<rect width="1400" height="760" rx="26" fill="url(#bg)"/>
+<text x="42" y="52" font-family="Arial,sans-serif" font-size="33" font-weight="700" fill="#fff">GOGGLES / VRX: MATCH THE EXACT SYSTEM</text>
+<text x="44" y="84" font-family="Arial,sans-serif" font-size="18" fill="#c7f9ff">Analog vs digital receiver type, product generation, firmware, band and antenna must all be checked.</text>
+<!-- row cards -->
+<g font-family="Arial,sans-serif">
+<rect x="40" y="120" width="410" height="300" rx="18" fill="#19354c" stroke="#f6c56a" stroke-width="3"/>
+<text x="245" y="158" text-anchor="middle" font-size="25" font-weight="700" fill="#f6c56a">ANALOG</text>
+<rect x="78" y="190" width="150" height="82" rx="14" fill="#273f52" stroke="#f6c56a" stroke-width="2"/><text x="153" y="226" text-anchor="middle" font-size="19" font-weight="700" fill="#fff">Analog VTX</text><text x="153" y="251" text-anchor="middle" font-size="15" fill="#ffebbf">aircraft</text>
+<path d="M228 231 H256" stroke="#c5efff" stroke-width="3" marker-end="url(#arr)"/>
+<rect x="270" y="190" width="150" height="82" rx="14" fill="#273f52" stroke="#f6c56a" stroke-width="2"/><text x="345" y="226" text-anchor="middle" font-size="19" font-weight="700" fill="#fff">Analog VRX</text><text x="345" y="251" text-anchor="middle" font-size="15" fill="#ffebbf">goggles/module</text>
+<text x="70" y="315" font-size="17" fill="#eaf6fc">Check RF band/channel, RX module</text><text x="70" y="341" font-size="17" fill="#eaf6fc">interface, antenna connector and</text><text x="70" y="367" font-size="17" fill="#eaf6fc">polarization. Receiver features vary.</text><text x="70" y="397" font-size="15" fill="#ffebbf">Most modular when parts match.</text>
+<rect x="495" y="120" width="410" height="300" rx="18" fill="#19354c" stroke="#7dd3fc" stroke-width="3"/>
+<text x="700" y="158" text-anchor="middle" font-size="25" font-weight="700" fill="#7dd3fc">DIGITAL ECOSYSTEM</text>
+<rect x="530" y="190" width="165" height="82" rx="14" fill="#273f52" stroke="#7dd3fc" stroke-width="2"/><text x="612" y="219" text-anchor="middle" font-size="18" font-weight="700" fill="#fff">Air unit / VTX</text><text x="612" y="245" text-anchor="middle" font-size="15" fill="#bcecff">camera + encoder</text>
+<path d="M695 231 H724" stroke="#c5efff" stroke-width="3" marker-end="url(#arr)"/>
+<rect x="738" y="190" width="132" height="82" rx="14" fill="#273f52" stroke="#7dd3fc" stroke-width="2"/><text x="804" y="220" text-anchor="middle" font-size="18" font-weight="700" fill="#fff">Matching</text><text x="804" y="245" text-anchor="middle" font-size="15" fill="#bcecff">goggles/VRX</text>
+<text x="525" y="315" font-size="17" fill="#eaf6fc">DJI, Walksnail and HDZero do not</text><text x="525" y="341" font-size="17" fill="#eaf6fc">become compatible by both being HD.</text><text x="525" y="367" font-size="17" fill="#eaf6fc">Verify exact generation, firmware,</text><text x="525" y="393" font-size="17" fill="#eaf6fc">camera module, power and connectors.</text>
+<rect x="950" y="120" width="410" height="300" rx="18" fill="#19354c" stroke="#86efac" stroke-width="3"/>
+<text x="1155" y="158" text-anchor="middle" font-size="25" font-weight="700" fill="#86efac">GOGGLE FORM FACTOR</text>
+<!-- box goggles -->
+<path d="M1010 216 Q1010 195 1032 195 H1091 Q1115 195 1115 218 L1110 260 Q1107 273 1092 273 H1030 Q1015 273 1013 260 Z" fill="#2e4d65" stroke="#86efac" stroke-width="3"/><rect x="1030" y="212" width="65" height="43" rx="8" fill="#0a1a2b" stroke="#dff8ea" stroke-width="2"/>
+<text x="1063" y="300" text-anchor="middle" font-size="15" fill="#fff">Box style</text>
+<!-- compact goggles -->
+<path d="M1160 220 Q1170 193 1200 205 L1224 216 L1248 205 Q1279 193 1290 220 L1280 261 Q1278 272 1265 272 H1185 Q1172 272 1170 261 Z" fill="#2e4d65" stroke="#86efac" stroke-width="3"/><circle cx="1200" cy="238" r="16" fill="#0a1a2b" stroke="#dff8ea" stroke-width="2"/><circle cx="1250" cy="238" r="16" fill="#0a1a2b" stroke="#dff8ea" stroke-width="2"/>
+<text x="1225" y="300" text-anchor="middle" font-size="15" fill="#fff">Compact binocular</text>
+<text x="980" y="341" font-size="17" fill="#eaf6fc">Form doesn't determine compatibility.</text><text x="980" y="367" font-size="17" fill="#eaf6fc">Check FOV, diopter/IPD/eye box,</text><text x="980" y="393" font-size="17" fill="#eaf6fc">battery, DVR and input/output too.</text>
+</g>
+<rect x="40" y="452" width="1320" height="258" rx="18" fill="#0a2033" stroke="#3d7e99" stroke-width="2"/>
+<text x="72" y="496" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#fff">Before buying or binding</text>
+<g font-family="Arial,sans-serif" font-size="19" fill="#e0edf8">
+<text x="78" y="538">1. Write down exact VTX/air-unit and goggles/VRX model, hardware revision and firmware.</text>
+<text x="78" y="578">2. Check the manufacturer's current compatibility table and binding/update procedure.</text>
+<text x="78" y="618">3. Check bands, regional RF rules, antennas, connector, polarization, power and camera support.</text>
+<text x="78" y="658">4. Test live video, warnings, DVR and onboard recording separately before flight.</text>
+<text x="78" y="694" fill="#f6c56a">Control RX (e.g. ELRS) is separate from the video receiver / goggles.</text>
+</g>
+</svg>
