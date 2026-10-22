@@ -9,6 +9,7 @@ Read the root `AGENTS.md` first. This folder describes the working roles and the
 - `workflows/research-to-build.md`: the end-to-end handoff and quality gates.
 - `templates/research-brief.md`: reusable evidence package for a builder.
 - `templates/session-entry.md`: reusable append-only session record.
+- `wiki-publishing-runbook.md`: PAT generation, Actions secret setup, local publishing, GitHub Actions execution, verification, and recovery.
 
 ## Separation of duties
 
