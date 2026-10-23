@@ -749,3 +749,9 @@ Current animation is a simple concept loop for rotor/thrust orientation, not a p
 - `FPV-System-Basics.md` now links the FPV basics and beginner guide infographics. `How-FPV-Drones-Work.md` now links the movement and control-loop infographics.
 - Fixed legacy broken-image references in Home and System Basics; added “The control path” text to How FPV Drones Work.
 - Playwright has not completed for Run #18 because the Chromium installation step remains active. Run #19 is queued with explicit required-image assertions for all four visuals. This TODO stays open for live-verification until those browser checks report results.
+
+### Real-world component photos — done
+
+- The 15 downloaded photo assets, attribution/license manifest and page updates are committed on `main`.
+- Live publish and Playwright verification passed: https://github.com/luckyhegde6/buildFPV/actions/runs/39929235479.
+- Drone Parts One by One rendered with HTTP 200; all 15 unique real-world photo assets passed Wiki-local loading checks. Credits link to each Wikimedia Commons file and license, with caveats for representative examples (for instance, Crossfire receiver rather than ELRS; analog VTX rather than digital air unit).
