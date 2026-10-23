@@ -46,3 +46,5 @@ Retry 17: publish the supplied FPV basics and movement/control-loop infographics
 Retry 18: confirm the new control-loop infographic explicitly in the live How-FPV-Drones-Work page. The Playwright verifier now requires both fpv-drone-movements-guide.webp and fpv-drone-control-loop-guide.webp, as well as the two System Basics infographics. Verify all images load.
 
 Retry 19: the owner requested real-world component photos on Drone-Parts-One-by-One. Download 15 openly licensed Wikimedia Commons photos into docs/assets, persist them to main from the publish job, publish to the existing Wiki repository, and require the live browser verifier to load every image on Drone-Parts-One-by-One. Check the photo credit/license captions and report publish and browser status distinctly.
+
+Retry 20: real-world FPV component photos are published. The previous live check showed all 15 new photo URLs loading with nonzero naturalWidth, but its body-text assertions mistakenly treated image alt text as visible text. The verifier has been corrected to check actual headings separately while retaining explicit local image loading assertions; rerun and record final live result.
