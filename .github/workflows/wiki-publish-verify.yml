@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: buildfpv-wiki-publish-final
@@ -53,6 +53,23 @@ jobs:
           chmod 700 "$RUNNER_TEMP/git-credential-wiki"
           git config --global credential.helper "$RUNNER_TEMP/git-credential-wiki"
 
+      - name: Download and commit real-world component photographs
+        env:
+          WIKI_PUBLISH_TOKEN: ${{ secrets.WIKI_PUBLISH_TOKEN || secrets.GH_PERSONAL_ACCESS_TOKEN }}
+          GIT_TERMINAL_PROMPT: "0"
+        timeout-minutes: 8
+        run: |
+          bash scripts/download-component-photos.sh
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/assets/fpv-photo-* docs/assets/REAL-WORLD-COMPONENT-PHOTO-CREDITS.md
+          if git diff --cached --quiet; then
+            echo "Component photo assets already exist in the source repository."
+          else
+            git commit -m "docs: add licensed real-world FPV component photos"
+            git push origin HEAD:main
+          fi
+
       - name: Publish existing Wiki pages and assets
         env:
           WIKI_PUBLISH_TOKEN: ${{ secrets.WIKI_PUBLISH_TOKEN || secrets.GH_PERSONAL_ACCESS_TOKEN }}
@@ -87,10 +104,11 @@ jobs:
           node-version: '22'
 
       - name: Install Playwright with npx and Chromium
+        timeout-minutes: 5
         run: |
           npx --yes playwright@1.57.0 --version
           npm install --no-save --no-package-lock playwright@1.57.0
-          npx --yes playwright@1.57.0 install --with-deps chromium
+          npx --yes playwright@1.57.0 install chromium
 
       - name: Verify Home, charger guide, matrix, links and image loading
         run: node scripts/verify-wiki-live.mjs
