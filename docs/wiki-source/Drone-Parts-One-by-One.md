@@ -10,6 +10,10 @@ This is the next stop after [[How FPV Drones Work]]. Follow the aircraft from th
 
 *Concept art for orientation only. Do not infer exact component placement, pins, motor numbering or wiring from this image.*
 
+![Real-world FPV racing quadcopter components in their installed arrangement](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-photo-components-overview.jpg)
+
+*Photo: [Sw1ngc, via Wikimedia Commons](https://commons.wikimedia.org/wiki/File:71188-fpv-components.jpg), licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Resized copy; use it for visual orientation, not to infer wiring or exact component compatibility.*
+
 A typical FPV quadcopter can be understood in this order:
 
 1. **Frame** — the structure that holds everything.
@@ -31,6 +35,10 @@ For frame geometry choices and assembly tooling, see [Balanced X vs Deadcat](Fra
 
 ![Frame diagram showing arms, centre plates and motor mounting points](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-frame.svg)
 
+![Real-world carbon-fibre drone frame kit](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-photo-frame-kit.png)
+
+*Photo: [Johndeinder, via Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Drone_frame_kit_main_image.png), licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Resized copy; the photo illustrates a frame kit, not a build-specific fitment guide.*
+
 **Job:** The frame holds the motors at fixed positions and protects/supports the electronics, battery and camera. Its geometry sets the motor-to-motor size and influences stiffness, durability, weight and available mounting space.
 
 **What to look for:** Arms, central plates, motor mounting holes, camera cage, FC mounting pattern, battery mounting area and room for antennas/wires.
@@ -45,6 +53,10 @@ See [Motor, Propeller and Battery Compatibility](Motors-Propellers-and-Battery-C
 
 ![LiPo battery power path from battery through ESC or power distribution to motors and regulated electronics](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-battery-power.svg)
 
+![Real-world lithium-polymer drone battery pack](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-photo-lipo-battery.jpg)
+
+*Photo: [Project Kei, via Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Drone_li-po_battery.jpg), licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Resized copy; connector and pack shown are examples, not a voltage or polarity reference.*
+
 **Job:** The lithium-polymer (LiPo) battery supplies energy to the aircraft. Cell count is written as **S**: for example, a 4S pack has four cells connected in series.
 
 **What it connects to:** Battery leads normally feed the ESC/power distribution path. Regulators or board power circuits supply other components at their required voltages. The exact arrangement depends on the build.
@@ -54,6 +66,12 @@ See [Motor, Propeller and Battery Compatibility](Motors-Propellers-and-Battery-C
 **Check before using:** Inspect the pack and leads for damage or swelling, verify polarity and voltage compatibility, and use a suitable balance charger. Never assume a plug shape alone proves voltage or polarity compatibility. Disconnect the pack before soldering or changing wiring.
 
 ## 3. Power distribution and voltage regulators
+
+## 3. Power distribution and voltage regulators
+
+![Real-world FPV quadcopter with components installed around the frame and central electronics area](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-photo-components-overview.jpg)
+
+*Photo: [Sw1ngc, via Wikimedia Commons](https://commons.wikimedia.org/wiki/File:71188-fpv-components.jpg), licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Resized copy; board pads are not legible and the photo is not a power-distribution wiring reference.*
 
 **Job:** Power wiring and distribution carry battery power to the devices that need it. Regulators provide a suitable voltage for electronics that cannot accept raw battery voltage.
 
@@ -67,6 +85,10 @@ See [Motor, Propeller and Battery Compatibility](Motors-Propellers-and-Battery-C
 
 ![Brushless motor diagram with rotor bell, shaft, stator and windings](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-motor.svg)
 
+![Real brushless hobby motor with an electronic speed controller and propeller](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-photo-brushless-motor-esc.jpg)
+
+*Photo: [Drew Dollas, via Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Brushless_ESC_and_propellor.jpg), licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). Resized copy; this is a representative brushless motor/ESC assembly, not a specific FPV motor recommendation.*
+
 **Job:** The four brushless motors spin the propellers. The FC changes the requested output for each motor through the ESC to control thrust and attitude.
 
 **How to recognise them:** Each motor has a stator, a bell/rotor and a shaft or propeller mount. Motor specifications commonly include stator dimensions and a KV rating.
@@ -79,6 +101,10 @@ See [Motor, Propeller and Battery Compatibility](Motors-Propellers-and-Battery-C
 
 ![Propeller anatomy showing the blade, leading edge, trailing edge, diameter and pitch concepts](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-propeller.svg)
 
+![Real-world quadcopter propeller close-up](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-photo-propeller.jpg)
+
+*Photo: [Ryan Decker, via Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Quadcopter_Propeller.JPG), licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). Resized copy; check propeller size and rotation against the build and firmware.*
+
 **Job:** Propellers accelerate air and produce thrust. Total thrust greater than weight makes the quad climb; lower thrust makes it descend. Tilting the aircraft points some thrust sideways, which moves it laterally.
 
 **CW and CCW:** A conventional quad uses two clockwise and two counter-clockwise rotating propellers to balance reaction torque. The correct propeller type and installation depend on motor direction and the selected firmware layout.
@@ -90,6 +116,10 @@ See [Motor, Propeller and Battery Compatibility](Motors-Propellers-and-Battery-C
 ## 6. ESC — electronic speed controller
 
 ![Dedicated electronic speed controller diagram showing battery power, motor outputs and FC connection](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-esc.svg)
+
+![A standalone electronic speed controller for a brushless motor](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-photo-esc.jpg)
+
+*Photo: [1sfoerster, via Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Esc2.jpg), licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). Resized copy; this is a traditional three-wire RC ESC example, not a modern 4-in-1 FPV ESC pinout.*
 
 **Job:** The ESC converts commands from the FC into electrical switching that drives the brushless motors at the requested speed.
 
@@ -105,6 +135,10 @@ See [Motor, Propeller and Battery Compatibility](Motors-Propellers-and-Battery-C
 
 ![FC/ESC stack compared with an all-in-one board](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-fc-esc-aio.svg)
 
+![Real flight-controller circuit board](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-photo-flight-controller.jpg)
+
+*Photo: [Unknownlfcg, via Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Afro-Naze32-6DOF-Flight-Controller-Board-For-QAV250-ZMR250-Quadcopter(1).jpg), licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Resized copy of a specific older board; use the current manufacturer's documentation for model-specific pad names and wiring.*
+
 **Job:** The FC receives control-channel data and sensor readings, runs flight-control firmware and produces motor commands. Its gyro measures rotation; the controller compares actual movement with the pilot's requested movement and makes corrections.
 
 **What may be on the board:** Processor, gyro, USB connector, receiver inputs, motor outputs, OSD/video connections, blackbox storage and regulated power circuits. Features differ by model and revision.
@@ -116,6 +150,10 @@ See [Motor, Propeller and Battery Compatibility](Motors-Propellers-and-Battery-C
 ## 8. Gyroscope and accelerometer — the motion sensors
 
 ![Gyroscope and accelerometer visual explaining sensor feedback](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-gyro.svg)
+
+![Example flight-control board used to illustrate where motion sensors are integrated](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-photo-flight-control-board.jpg)
+
+*Photo: [Maxorazon, via Wikimedia Commons](https://commons.wikimedia.org/wiki/File:UAV_Flight_control.jpg), licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Resized copy; on FPV builds the gyro/accelerometer are usually small ICs on the flight controller, not a separate plug-in board. This UAV board is illustrative, not an FPV wiring guide.*
 
 **Job:** The gyro measures how quickly the aircraft rotates around its axes. The accelerometer measures specific force and helps estimate orientation, especially for self-level modes.
 
@@ -129,6 +167,10 @@ See [Motor, Propeller and Battery Compatibility](Motors-Propellers-and-Battery-C
 
 ![Radio transmitter sends commands over the control link to an ELRS receiver on the aircraft](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-elrs-receiver.svg)
 
+![Real-world compact radio-control receiver board and antenna](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-photo-control-receiver.jpg)
+
+*Photo: [SokilFPV, via Wikimedia Commons](https://commons.wikimedia.org/wiki/File:TBS_Crossfire_Nano_receiver_(XF_nano).jpg), licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Resized copy; this specific example is TBS Crossfire, not ELRS. It illustrates the physical form of a separate receiver only.*
+
 **Job:** The receiver on the aircraft receives commands from the transmitter, such as the RadioMaster Pocket, and passes channel data to the FC. ExpressLRS (ELRS) is one common control-link system.
 
 **Signal path:** `Radio sticks → transmitter RF link → aircraft receiver → FC`
@@ -141,6 +183,10 @@ See [Motor, Propeller and Battery Compatibility](Motors-Propellers-and-Battery-C
 
 ![FPV camera anatomy showing lens, body and connection lead](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-camera.svg)
 
+![Real-world Foxeer FPV camera with lens and housing](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-photo-fpv-camera.jpg)
+
+*Photo: [Lucasbosch, via Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Foxeer_XAT600M_HS1177_FPV_camera.jpg), licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). Resized copy; camera size and wiring vary by model.*
+
 **Job:** The onboard camera captures the scene in front of the quad. Depending on the system, it may send an analogue video signal to a VTX or a digital signal to a digital air unit.
 
 **What matters:** Camera format, size, latency, image quality, aspect ratio, connector/pinout and supported voltage. A camera that physically fits may still not be electrically compatible.
@@ -150,6 +196,10 @@ See [Motor, Propeller and Battery Compatibility](Motors-Propellers-and-Battery-C
 ## 11. Video transmitter (VTX) or digital air unit — sends the picture
 
 ![VTX or digital air unit with antenna connector and flight-controller/power connections](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-vtx.svg)
+
+![Real-world TBS Unify Pro analogue video transmitter with antenna pigtail](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-photo-vtx.png)
+
+*Photo: [Lucasbosch, via Wikimedia Commons](https://commons.wikimedia.org/wiki/File:TeamBlacksheep_(TBS)_Unify_Pro_HV_5.8_GHz_RF_video_transmitter_with_RP_SMA_pigtail_front.png), licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). Resized copy of an analogue VTX; digital air units look different, and this is not a wiring or legal power-settings reference.*
 
 **Job:** The aircraft-side video hardware transmits the camera feed to a compatible ground receiver or goggles.
 
@@ -163,6 +213,10 @@ See [Motor, Propeller and Battery Compatibility](Motors-Propellers-and-Battery-C
 
 ![Video receiver, FPV goggles and display comparison](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-vrx-goggles.svg)
 
+![Real-world FPV radio controller, quadcopter and FPV goggles](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-photo-radio-goggles.jpg)
+
+*Photo: [Wacou123, via Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Remote_Control_FPV_drone_FPV_Goggles.jpg), licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Resized copy; equipment in this photo is one example of a control/video setup, not a compatibility guarantee.*
+
 **Job:** The ground-side receiver takes in the aircraft's video transmission and displays it through goggles or a screen. Some systems integrate the receiver into the goggles; others use an external VRX.
 
 **Compatibility rule:** A VRX/goggle system must support the aircraft's video system. Do not assume goggles work with every VTX just because the antenna connector fits.
@@ -172,6 +226,10 @@ See [Motor, Propeller and Battery Compatibility](Motors-Propellers-and-Battery-C
 ## 13. Antennas — transmit and receive radio energy
 
 ![Illustration comparing linear, circular-polarized, directional patch and stubby omnidirectional antennas](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-antennas.svg)
+
+![Real-world FPV video antennas: circular-polarized and linear dipole styles](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-photo-antennas.jpg)
+
+*Photo: [Clicklabs, via Wikimedia Commons](https://commons.wikimedia.org/wiki/File:FPV_Antennen.jpg), licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Resized copy; connector, frequency band and polarisation must still match the exact system.*
 
 **Job:** Antennas couple radio-frequency energy into or out of the air. The aircraft's control receiver antenna and video antenna serve different links and may use different frequencies.
 
@@ -185,6 +243,10 @@ See [Motor, Propeller and Battery Compatibility](Motors-Propellers-and-Battery-C
 
 ![GPS/GNSS module receiving satellite data and sending it to the flight controller](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-gps.svg)
 
+![Real-world u-blox GPS module circuit board](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-photo-gps-module.jpg)
+
+*Photo: [Markus Bärlocher, via Wikimedia Commons](https://commons.wikimedia.org/wiki/File:GPS_ublox_NEO-M6_Chip.jpg), dedicated to the public domain under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/). Resized copy; this is a GPS module example, not proof of compatibility with a particular FPV FC.*
+
 **Job:** A GNSS module receives satellite signals and provides position and ground-speed data to supported flight-controller firmware. It can support on-screen data, logging or configured rescue/navigation features.
 
 **Important distinction:** GPS/GNSS is slower than the gyro-based feedback used for rapid stabilisation. It does not replace the gyro and should not be assumed to make a quad autonomous or safe by itself.
@@ -194,6 +256,10 @@ See [Motor, Propeller and Battery Compatibility](Motors-Propellers-and-Battery-C
 ## 15. Buzzer, blackbox and other small parts
 
 ![Buzzer and Blackbox logging accessories](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-buzzer-blackbox.svg)
+
+![Real-world electromagnetic buzzer component](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-photo-buzzer.jpg)
+
+*Photo: [jdx, via Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Electromagnetic_buzzer_06.jpg), licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). Resized copy of a general electromagnetic buzzer; FPV lost-model buzzers differ in mounting and power features.*
 
 **Buzzer:** An onboard beeper can help locate a quad after a crash or make status alerts audible. Some are self-powered; others rely on the flight controller and battery. Confirm compatibility and correct wiring.
 
