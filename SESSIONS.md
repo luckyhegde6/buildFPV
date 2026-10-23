@@ -188,3 +188,9 @@ This is a chronological, append-oriented engineering log. New work should append
 - Fixed two broken legacy image references on Home/System Basics and added the missing “The control path” explanation to How FPV Drones Work.
 - Run #18 publish job succeeded: https://github.com/luckyhegde6/buildFPV/actions/runs/39863362323.
 - Browser verification did not complete; it remains in the Playwright/Chromium installation step. Run #19 is queued and now explicitly asserts all four intended image filenames. Await that report before recording the live-page image checks as passed.
+
+## 2026-10-23 — Real-world Drone Parts photos published
+
+- Downloaded 15 freely licensed Wikimedia Commons component photos into `docs/assets/` and added in-page attribution/CC license links and technical caveats to `docs/wiki-source/Drone-Parts-One-by-One.md`.
+- Publisher script and workflow now download/validate, commit the binary files to main, and copy the local images into the existing Wiki.
+- [Run #21](https://github.com/luckyhegde6/buildFPV/actions/runs/39929235479) succeeded for both publish and live Playwright verification. The live Drone Parts page returned HTTP 200, its required headings passed, and all 15 unique photos loaded from Wiki-local image paths. Image caption/alt text is asserted through image elements rather than body text.
