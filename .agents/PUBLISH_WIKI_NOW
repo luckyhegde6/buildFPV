@@ -44,3 +44,5 @@ Retry 16: republish the supplied FPV infographic assets. Publisher now reconstru
 Retry 17: publish the supplied FPV basics and movement/control-loop infographics on FPV-System-Basics and How-FPV-Drones-Work. Home and System Basics no longer reference the missing fpv-build-concept-ai.jpg; the control path text expected by Playwright was restored. Verify the four new visual links and their Wiki-local images after publish, and report any remaining live checks honestly.
 
 Retry 18: confirm the new control-loop infographic explicitly in the live How-FPV-Drones-Work page. The Playwright verifier now requires both fpv-drone-movements-guide.webp and fpv-drone-control-loop-guide.webp, as well as the two System Basics infographics. Verify all images load.
+
+Retry 19: the owner requested real-world component photos on Drone-Parts-One-by-One. Download 15 openly licensed Wikimedia Commons photos into docs/assets, persist them to main from the publish job, publish to the existing Wiki repository, and require the live browser verifier to load every image on Drone-Parts-One-by-One. Check the photo credit/license captions and report publish and browser status distinctly.
