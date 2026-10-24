@@ -1,5 +1,9 @@
 # FPV Cameras, VTX, VRX and Goggles — Compatibility Comparison
 
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-section-video-system.svg" alt="Enlarged high-resolution FPV camera, video transmitter, antenna and goggles/VRX path" width="1200" />
+
+*High-resolution signal-path overview. Check the exact camera, VTX/air unit and goggles/VRX model for compatibility; the control receiver is separate.*
+
 ![Analog vs digital FPV video paths](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/analog-vs-digital-video.svg)
 
 ![FPV video ecosystem compatibility overview](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/video-system-ecosystem-matrix.svg)
