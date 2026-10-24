@@ -1,5 +1,9 @@
 # 📡 FPV Video Links, Antennas and Range
 
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-section-antenna-types.svg" alt="Enlarged high-resolution vector overview of common FPV antenna forms and their use" width="1200" />
+
+*High-resolution antenna reference. Match frequency band, connector, polarization and antenna placement to the selected video system.*
+
 ![Walksnail Avatar FPV VRX and HD kit product image](https://www.caddxfpv.com/cdn/shop/files/VRX_and_V2.webp?v=1760685297&width=2000)
 
 *Product example: [CADDXFPV / Walksnail Avatar VRX kit](https://www.caddxfpv.com/products/walksnail-avatar-fpv-with-avatar-hd-kit-v2-32g-single). Use the exact product compatibility list before buying.*
