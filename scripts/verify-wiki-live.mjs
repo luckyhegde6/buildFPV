@@ -26,6 +26,7 @@ const cases = [
     required: ['How FPV Drones Work', 'Visual guides: movement, lift and control', 'The control path'],
     minimumTables: 0,
     requiredImages: ['fpv-drone-movements-guide.webp', 'fpv-drone-control-loop-guide.webp'],
+    expandedImages: ['fpv-drone-movements-guide.webp', 'fpv-drone-control-loop-guide.webp'],
   },
   {
     name: 'drone-parts',
@@ -169,6 +170,8 @@ try {
           src: img.currentSrc || img.src,
           complete: img.complete,
           naturalWidth: img.naturalWidth,
+          renderedWidth: Math.round(img.getBoundingClientRect().width),
+          declaredWidth: img.getAttribute('width') || '',
         })).filter(img => {
           try {
             const pathname = new URL(img.src).pathname;
@@ -189,6 +192,16 @@ try {
       for (const imageName of testCase.requiredImages ?? []) {
         if (!record.localWikiImages.some(image => image.src.includes(imageName) && image.complete && image.naturalWidth > 0)) {
           record.errors.push(`Expected Wiki-local image failed to load: ${imageName}`);
+        }
+      }
+      for (const imageName of testCase.expandedImages ?? []) {
+        const image = record.localWikiImages.find(candidate => candidate.src.includes(imageName));
+        if (!image || !image.complete || image.naturalWidth === 0) continue;
+        if (Number(image.declaredWidth) < 1200) {
+          record.errors.push(`Expected width="1200" for enlarged infographic: ${imageName}`);
+        }
+        if (image.renderedWidth < 800) {
+          record.errors.push(`Enlarged infographic is narrower than expected on desktop (${image.renderedWidth}px): ${imageName}`);
         }
       }
 
