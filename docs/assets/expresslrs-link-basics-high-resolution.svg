@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1240" viewBox="0 0 1800 1240" role="img" aria-labelledby="title desc">
+<title id="title">ExpressLRS basics — radio control link map</title>
+<desc id="desc">High-resolution beginner diagram showing the transmitter module, compatible ExpressLRS radio-frequency link, receiver-to-flight-controller serial connection, and separate checks for band, firmware target, binding, channel input and failsafe.</desc>
+<defs>
+ <linearGradient id="header" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#10283f"/><stop offset="1" stop-color="#235779"/></linearGradient>
+ <marker id="blueArrow" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#1684d8"/></marker>
+ <marker id="greenArrow" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#15945b"/></marker>
+ <style>
+ .head{font-family:Arial,Helvetica,sans-serif;font-weight:700;fill:#fff}
+ .title{font-family:Arial,Helvetica,sans-serif;font-size:29px;font-weight:700;fill:#123b5b}
+ .node{font-family:Arial,Helvetica,sans-serif;font-size:24px;font-weight:700;fill:#173d59}
+ .body{font-family:Arial,Helvetica,sans-serif;font-size:21px;fill:#405c71}
+ .small{font-family:Arial,Helvetica,sans-serif;font-size:18px;fill:#536d80}
+ .pill{font-family:Arial,Helvetica,sans-serif;font-size:18px;font-weight:700}
+ </style>
+</defs>
+<rect width="1800" height="1240" rx="32" fill="#edf4f9"/>
+<rect width="1800" height="140" rx="32" fill="url(#header)"/><rect y="108" width="1800" height="32" fill="#1a4a6e"/>
+<circle cx="86" cy="69" r="35" fill="#0b72a9" stroke="#80d6ff" stroke-width="3"/>
+<g stroke="#fff" stroke-width="5" stroke-linecap="round" fill="none"><path d="M62 54 L78 68 L62 82 M110 54 L94 68 L110 82"/><path d="M78 68 L94 68"/></g>
+<text x="146" y="61" class="head" font-size="46">EXPRESSLRS BASICS</text>
+<text x="146" y="101" font-family="Arial,Helvetica,sans-serif" font-size="25" fill="#c9eafa">The radio-control path • bind carefully • prove failsafe behavior</text>
+<rect x="1460" y="40" width="285" height="54" rx="27" fill="#e0f2fe" stroke="#7dd3fc" stroke-width="2"/>
+<text x="1602" y="74" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" fill="#075985">SCHEMATIC VIEW</text>
+
+<!-- Three core nodes -->
+<rect x="40" y="170" width="500" height="430" rx="26" fill="#fff" stroke="#c5d7e4" stroke-width="3"/>
+<text x="78" y="219" class="title">01  TRANSMITTER</text>
+<rect x="82" y="252" width="132" height="178" rx="20" fill="#d9e6ef" stroke="#6d879b" stroke-width="4"/>
+<rect x="105" y="277" width="86" height="58" rx="8" fill="#163d59"/>
+<path d="M125 309 L140 292 L154 309 L171 288" stroke="#73d7ff" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="124" cy="374" r="17" fill="#fff" stroke="#6d879b" stroke-width="4"/><circle cx="172" cy="374" r="17" fill="#fff" stroke="#6d879b" stroke-width="4"/>
+<path d="M124 374 L132 366 M172 374 L180 366" stroke="#1684d8" stroke-width="4"/>
+<path d="M146 253 L146 235 M146 235 L135 219 M146 235 L157 219" stroke="#64748b" stroke-width="5" fill="none" stroke-linecap="round"/>
+<text x="240" y="276" class="node">Radio + TX module</text>
+<text x="240" y="315" class="body">EdgeTX model outputs</text>
+<text x="240" y="349" class="body">ExpressLRS firmware</text>
+<text x="240" y="383" class="body">Antenna fitted before</text>
+<text x="240" y="411" class="body">RF transmission</text>
+<rect x="78" y="463" width="424" height="92" rx="16" fill="#e8f4fc"/>
+<text x="100" y="498" class="pill" fill="#075985">CHECK FIRST</text>
+<text x="100" y="528" class="body">Exact TX variant, band, target</text>
+<text x="100" y="552" class="body">and firmware version</text>
+
+<rect x="650" y="170" width="500" height="430" rx="26" fill="#fff" stroke="#c5d7e4" stroke-width="3"/>
+<text x="688" y="219" class="title">02  RADIO LINK</text>
+<g fill="none" stroke="#1684d8" stroke-width="6" stroke-linecap="round">
+ <path d="M790 327 Q900 222 1010 327"/>
+ <path d="M820 350 Q900 273 980 350"/>
+ <path d="M850 374 Q900 328 950 374"/>
+</g>
+<circle cx="900" cy="392" r="12" fill="#1684d8"/>
+<text x="900" y="438" text-anchor="middle" class="node">Compatible RF link</text>
+<rect x="688" y="463" width="424" height="92" rx="16" fill="#e8f4fc"/>
+<text x="710" y="495" class="pill" fill="#075985">BOTH ENDS MUST AGREE</text>
+<text x="710" y="524" class="body">Supported band + compatible</text>
+<text x="710" y="550" class="body">firmware/configuration + bind</text>
+
+<rect x="1260" y="170" width="500" height="430" rx="26" fill="#fff" stroke="#c5d7e4" stroke-width="3"/>
+<text x="1298" y="219" class="title">03  AIRCRAFT RECEIVER</text>
+<rect x="1305" y="276" width="126" height="100" rx="15" fill="#d9efe4" stroke="#29805a" stroke-width="4"/>
+<rect x="1328" y="299" width="80" height="52" rx="6" fill="#145a3b"/>
+<path d="M1368 299 L1368 274 L1384 257" stroke="#64748b" stroke-width="5" fill="none" stroke-linecap="round"/>
+<text x="1453" y="294" class="node">ELRS receiver</text>
+<text x="1453" y="330" class="body">Power + antenna</text>
+<text x="1453" y="363" class="body">Serial output, commonly</text>
+<text x="1453" y="391" class="body">CRSF for UART receivers</text>
+<path d="M1370 376 L1370 413 L1510 413 L1510 434" stroke="#15945b" stroke-width="4" fill="none" marker-end="url(#greenArrow)" stroke-linejoin="round"/>
+<rect x="1305" y="442" width="410" height="54" rx="12" fill="#e8f7ef" stroke="#9bd3b5" stroke-width="2"/>
+<text x="1510" y="476" text-anchor="middle" class="node">Flight controller UART</text>
+<text x="1305" y="532" class="small">Correct pads/UART and Serial RX</text>
+<text x="1305" y="557" class="small">must match the actual wiring.</text>
+
+<!-- directional arrows -->
+<path d="M548 360 L635 360" stroke="#1684d8" stroke-width="5" fill="none" marker-end="url(#blueArrow)"/>
+<text x="590" y="337" text-anchor="middle" class="small">TX</text>
+<path d="M1158 360 L1245 360" stroke="#1684d8" stroke-width="5" fill="none" marker-end="url(#blueArrow)"/>
+<text x="1202" y="337" text-anchor="middle" class="small">RF</text>
+
+<!-- four verification tiles -->
+<text x="48" y="650" class="title">BEFORE YOU FLY: FOUR SEPARATE CHECKS</text>
+<g>
+ <rect x="40" y="680" width="410" height="315" rx="24" fill="#fff" stroke="#c5d7e4" stroke-width="3"/>
+ <circle cx="88" cy="730" r="24" fill="#dbeafe"/><text x="88" y="738" text-anchor="middle" class="node" fill="#075985">1</text>
+ <text x="128" y="738" class="node">Bind compatibility</text>
+ <text x="72" y="788" class="body">• Check TX/RX band</text>
+ <text x="72" y="824" class="body">• Record exact targets</text>
+ <text x="72" y="860" class="body">• Match supported firmware</text>
+ <text x="72" y="896" class="body">• Use same bind phrase on</text>
+ <text x="94" y="924" class="body">compatible setups, or follow</text>
+ <text x="94" y="952" class="body">the current bind procedure</text>
+
+ <rect x="480" y="680" width="410" height="315" rx="24" fill="#fff" stroke="#c5d7e4" stroke-width="3"/>
+ <circle cx="528" cy="730" r="24" fill="#dbeafe"/><text x="528" y="738" text-anchor="middle" class="node" fill="#075985">2</text>
+ <text x="568" y="738" class="node">Receiver input</text>
+ <text x="512" y="788" class="body">• Verify wiring and UART</text>
+ <text x="512" y="824" class="body">• Set Serial RX on that UART</text>
+ <text x="512" y="860" class="body">• Choose the right receiver</text>
+ <text x="534" y="888" class="body">provider for the hardware</text>
+ <text x="512" y="932" class="body">• Confirm each stick/channel</text>
+ <text x="534" y="960" class="body">in the FC receiver tab</text>
+
+ <rect x="920" y="680" width="410" height="315" rx="24" fill="#fff" stroke="#c5d7e4" stroke-width="3"/>
+ <circle cx="968" cy="730" r="24" fill="#dcfce7"/><text x="968" y="738" text-anchor="middle" class="node" fill="#166534">3</text>
+ <text x="1008" y="738" class="node">Failsafe</text>
+ <text x="952" y="788" class="body">• Configure deliberately</text>
+ <text x="952" y="824" class="body">• Follow current ELRS and</text>
+ <text x="974" y="852" class="body">Betaflight guidance</text>
+ <text x="952" y="896" class="body">• Test using the documented</text>
+ <text x="974" y="924" class="body">method, in a safe setup</text>
+ <text x="952" y="968" class="body">• Don't assume a successful bind</text>
+
+ <rect x="1360" y="680" width="400" height="315" rx="24" fill="#fff" stroke="#c5d7e4" stroke-width="3"/>
+ <circle cx="1408" cy="730" r="24" fill="#ffedd5"/><text x="1408" y="738" text-anchor="middle" class="node" fill="#9a3412">4</text>
+ <text x="1448" y="738" class="node">Troubleshoot by layer</text>
+ <text x="1392" y="788" class="body">No link → band / firmware /</text>
+ <text x="1392" y="816" class="body">phrase / receiver power</text>
+ <text x="1392" y="860" class="body">No stick movement → UART /</text>
+ <text x="1392" y="888" class="body">Serial RX / provider / mapping</text>
+ <text x="1392" y="932" class="body">Intermittent link → antenna,</text>
+ <text x="1392" y="960" class="body">installation, interference, mode</text>
+</g>
+
+<rect x="40" y="1020" width="1720" height="160" rx="24" fill="#fff7ed" stroke="#fdba74" stroke-width="3"/>
+<text x="76" y="1067" font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="700" fill="#9a3412">IMPORTANT</text>
+<text x="76" y="1107" font-family="Arial,Helvetica,sans-serif" font-size="23" fill="#7c3f12">A successful bind proves only that the radio link paired. It does not prove correct channel mapping, arming, motor setup,</text>
+<text x="76" y="1140" font-family="Arial,Helvetica,sans-serif" font-size="23" fill="#7c3f12">failsafe response or flight readiness. Remove every propeller for configuration and bench checks.</text>
+<text x="76" y="1166" class="small">Conceptual diagram — check current ExpressLRS and flight-controller documentation for your precise hardware and firmware.</text>
+</svg>
