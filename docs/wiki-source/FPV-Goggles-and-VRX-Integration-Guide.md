@@ -1,5 +1,9 @@
 # FPV Goggles and VRX Integration Guide
 
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-section-video-system.svg" alt="Enlarged high-resolution overview connecting FPV camera, VTX/air unit and compatible goggles/VRX" width="1200" />
+
+*High-resolution video-chain overview. Choose goggles/VRX based on the exact supported analog or digital system and generation.*
+
 ![Goggles and receiver integration overview](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/goggles-vrx-integration.svg)
 
 ![CADDXFPV Walksnail Avatar Goggles X product photo](https://www.caddxfpv.com/cdn/shop/files/041778b25bd172e599bd84f495f87b2d.jpg?v=1698284376&width=2400)
