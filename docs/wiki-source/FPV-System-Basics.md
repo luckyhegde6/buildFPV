@@ -8,6 +8,37 @@
 
 These overview infographics are visual companions to the detailed explanations below. Use them for orientation, then follow the text and model-specific manuals for setup, wiring, motor direction and compatibility.
 
+### Enlarged subsystem panels
+
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-section-drone-overview.svg" alt="FPV drone components overview panel" width="1200" />
+
+*Major aircraft parts at a glance.*
+
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-section-control-loop.svg" alt="Flight-control loop from radio through receiver, FC, ESC and motors" width="1200" />
+
+*Control and stabilization path; not a wiring diagram.*
+
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-section-video-system.svg" alt="FPV camera-to-goggles video system overview" width="1200" />
+
+*Camera video and radio control are distinct links.*
+
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-section-antenna-types.svg" alt="Common FPV antenna forms and their typical coverage" width="1200" />
+
+*Confirm antenna band, connector, polarization and orientation.*
+
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-section-flight-controller.svg" alt="Flight controller functional blocks and external interfaces" width="1200" />
+
+*Board-specific pinout documentation remains authoritative.*
+
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-section-radio-control-link.svg" alt="Radio transmitter, ExpressLRS link, aircraft receiver and flight controller" width="1200" />
+
+*Match radio protocol, receiver firmware and wiring.*
+
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-section-gps-navigation.svg" alt="GPS satellites to GNSS module and flight controller" width="1200" />
+
+*GPS-enabled features depend on hardware, firmware and configuration.*
+
+
 For choosing an aircraft style, see [Drone Categories and Size Guide](Drone-Categories-and-Size-Guide.md). For hardware/video trade-offs, see [Analog vs Digital FPV Video](Analog-vs-Digital-FPV-Camera-Video-Guide.md) and [Goggles/VRX Integration](FPV-Goggles-and-VRX-Integration-Guide.md).
 
 ![Real FPV quadcopter example](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/FPV_Quadrocopter.jpg/960px-FPV_Quadrocopter.jpg)
