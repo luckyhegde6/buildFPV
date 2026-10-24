@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1220" viewBox="0 0 1800 1220" role="img" aria-labelledby="title desc">
+<title id="title">FPV simulator training — high-resolution practice roadmap</title>
+<desc id="desc">A scalable beginner training visual showing typical Mode 2 stick commands, the recommended sequence of simulator drills, and a repeatable warm-up, focused practice, review and log routine.</desc>
+<defs>
+ <linearGradient id="header" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#092b4c"/><stop offset="1" stop-color="#14567c"/></linearGradient>
+ <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#1684d8"/></marker>
+ <marker id="greenArrow" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#16a34a"/></marker>
+ <style>
+ .head{font-family:Arial,Helvetica,sans-serif;font-weight:700;fill:#fff}
+ .section{font-family:Arial,Helvetica,sans-serif;font-size:29px;font-weight:700;fill:#123b5b}
+ .node{font-family:Arial,Helvetica,sans-serif;font-size:23px;font-weight:700;fill:#163d59}
+ .body{font-family:Arial,Helvetica,sans-serif;font-size:20px;fill:#405b71}
+ .small{font-family:Arial,Helvetica,sans-serif;font-size:18px;fill:#526e82}
+ </style>
+</defs>
+<rect width="1800" height="1220" rx="32" fill="#edf4fa"/>
+<rect width="1800" height="138" rx="32" fill="url(#header)"/><rect y="106" width="1800" height="32" fill="#10466f"/>
+<circle cx="88" cy="68" r="35" fill="#0b72a9" stroke="#80d6ff" stroke-width="3"/><path d="M72 50 L83 66 L72 83 M104 50 L93 66 L104 83 M83 66 L93 66" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round"/>
+<text x="146" y="61" class="head" font-size="45">FPV SIMULATOR TRAINING</text>
+<text x="146" y="100" font-family="Arial,Helvetica,sans-serif" font-size="24" fill="#c9eafa">Build smooth, repeatable control before flying a real quad</text>
+<rect x="1465" y="41" width="275" height="53" rx="26" fill="#e0f2fe" stroke="#7dd3fc" stroke-width="2"/>
+<text x="1602" y="74" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" fill="#075985">1800 × 1220 SVG</text>
+
+<!-- stick mapping -->
+<rect x="40" y="165" width="790" height="505" rx="26" fill="#fff" stroke="#c5d7e4" stroke-width="3"/>
+<text x="78" y="217" class="section">01  KNOW YOUR INPUTS</text>
+<text x="78" y="250" class="small">Typical Mode 2 layout — verify your controller profile.</text>
+<rect x="78" y="285" width="320" height="255" rx="20" fill="#f3f8fc" stroke="#c5d7e4" stroke-width="2"/>
+<text x="238" y="324" text-anchor="middle" class="node">LEFT STICK</text>
+<rect x="123" y="342" width="230" height="145" rx="14" fill="#d9e5ef" stroke="#90a6b8" stroke-width="3"/>
+<circle cx="238" cy="414" r="34" fill="#334155" stroke="#0f172a" stroke-width="4"/><circle cx="238" cy="414" r="18" fill="#cbd5e1"/>
+<path d="M238 378 L238 356 M238 450 L238 472 M202 414 L180 414 M274 414 L296 414" stroke="#1684d8" stroke-width="4" stroke-linecap="round"/>
+<text x="238" y="515" text-anchor="middle" class="body" font-weight="700">Vertical: throttle</text>
+<text x="238" y="565" text-anchor="middle" class="body">Horizontal: yaw</text>
+<rect x="425" y="285" width="365" height="255" rx="20" fill="#f3f8fc" stroke="#c5d7e4" stroke-width="2"/>
+<text x="607" y="324" text-anchor="middle" class="node">RIGHT STICK</text>
+<rect x="490" y="342" width="235" height="145" rx="14" fill="#d9e5ef" stroke="#90a6b8" stroke-width="3"/>
+<circle cx="607" cy="414" r="34" fill="#334155" stroke="#0f172a" stroke-width="4"/><circle cx="607" cy="414" r="18" fill="#cbd5e1"/>
+<path d="M607 378 L607 356 M607 450 L607 472 M571 414 L549 414 M643 414 L665 414" stroke="#7c3aed" stroke-width="4" stroke-linecap="round"/>
+<text x="607" y="515" text-anchor="middle" class="body" font-weight="700">Vertical: pitch</text>
+<text x="607" y="565" text-anchor="middle" class="body">Horizontal: roll</text>
+<rect x="78" y="592" width="712" height="48" rx="14" fill="#fff5e5" stroke="#f0ce95" stroke-width="2"/>
+<text x="98" y="622" class="body" font-weight="700" fill="#92400e">Calibrate one axis at a time before starting the drill.</text>
+
+<!-- drill progression -->
+<rect x="855" y="165" width="905" height="505" rx="26" fill="#fff" stroke="#c5d7e4" stroke-width="3"/>
+<text x="893" y="217" class="section">02  PRACTISE IN THIS ORDER</text>
+<text x="893" y="250" class="small">Progress only when the current skill is controlled and repeatable.</text>
+<g>
+ <rect x="895" y="280" width="380" height="88" rx="16" fill="#eaf5ff" stroke="#a4cde8" stroke-width="2"/>
+ <circle cx="933" cy="324" r="22" fill="#1684d8"/><text x="933" y="332" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700" fill="#fff">1</text>
+ <text x="970" y="314" class="node">Axis awareness</text><text x="970" y="343" class="body">Name roll, pitch, yaw, throttle.</text>
+ <path d="M1278 324 L1320 324" stroke="#1684d8" stroke-width="4" marker-end="url(#arrow)"/>
+ <rect x="1330" y="280" width="385" height="88" rx="16" fill="#e8f8ef" stroke="#9bd9b5" stroke-width="2"/>
+ <circle cx="1368" cy="324" r="22" fill="#16a34a"/><text x="1368" y="332" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700" fill="#fff">2</text>
+ <text x="1405" y="314" class="node">Straight flight</text><text x="1405" y="343" class="body">Use gentle throttle changes.</text>
+ <path d="M1523 374 L1523 399" stroke="#1684d8" stroke-width="4" marker-end="url(#arrow)"/>
+ <rect x="1330" y="410" width="385" height="88" rx="16" fill="#f3e8ff" stroke="#c6b3f6" stroke-width="2"/>
+ <circle cx="1368" cy="454" r="22" fill="#7c3aed"/><text x="1368" y="462" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700" fill="#fff">3</text>
+ <text x="1405" y="444" class="node">Wide turns</text><text x="1405" y="473" class="body">Practise both directions.</text>
+ <path d="M1320 454 L1278 454" stroke="#1684d8" stroke-width="4" marker-end="url(#arrow)"/>
+ <rect x="895" y="410" width="380" height="88" rx="16" fill="#fff5e5" stroke="#f0ce95" stroke-width="2"/>
+ <circle cx="933" cy="454" r="22" fill="#d97706"/><text x="933" y="462" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700" fill="#fff">4</text>
+ <text x="970" y="444" class="node">Circles + figure-eight</text><text x="970" y="473" class="body">Combine smooth turns.</text>
+ <path d="M1085 502 L1085 527" stroke="#1684d8" stroke-width="4" marker-end="url(#arrow)"/>
+ <rect x="895" y="538" width="820" height="82" rx="16" fill="#eaf5ff" stroke="#a4cde8" stroke-width="2"/>
+ <circle cx="933" cy="579" r="22" fill="#0f5d91"/><text x="933" y="587" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700" fill="#fff">5</text>
+ <text x="970" y="570" class="node">Gate approach, recovery and landing</text><text x="970" y="598" class="body">Choose your line early; land deliberately and log one improvement.</text>
+</g>
+
+<!-- session loop -->
+<rect x="40" y="700" width="1720" height="405" rx="26" fill="#fff" stroke="#c5d7e4" stroke-width="3"/>
+<text x="78" y="753" class="section">03  REPEATABLE SESSION LOOP</text>
+<text x="78" y="785" class="small">A calm, short session teaches more than rushing to high speed.</text>
+<g>
+ <rect x="78" y="826" width="300" height="150" rx="19" fill="#eaf5ff" stroke="#a4cde8" stroke-width="2"/>
+ <text x="228" y="865" text-anchor="middle" class="node">1. Set up</text><text x="228" y="899" text-anchor="middle" class="body">USB Joystick if using</text><text x="228" y="925" text-anchor="middle" class="body">the Pocket; calibrate</text><text x="228" y="951" text-anchor="middle" class="body">axes and verify input.</text>
+ <path d="M386 901 L425 901" stroke="#1684d8" stroke-width="5" marker-end="url(#arrow)"/>
+ <rect x="436" y="826" width="300" height="150" rx="19" fill="#e8f8ef" stroke="#9bd9b5" stroke-width="2"/>
+ <text x="586" y="865" text-anchor="middle" class="node">2. Warm up</text><text x="586" y="899" text-anchor="middle" class="body">Use gentle inputs for</text><text x="586" y="925" text-anchor="middle" class="body">about 5 minutes;</text><text x="586" y="951" text-anchor="middle" class="body">check controller feel.</text>
+ <path d="M744 901 L783 901" stroke="#1684d8" stroke-width="5" marker-end="url(#arrow)"/>
+ <rect x="794" y="826" width="300" height="150" rx="19" fill="#f3e8ff" stroke="#c6b3f6" stroke-width="2"/>
+ <text x="944" y="865" text-anchor="middle" class="node">3. Focus</text><text x="944" y="899" text-anchor="middle" class="body">Pick one skill; repeat</text><text x="944" y="925" text-anchor="middle" class="body">it for 10–15 min</text><text x="944" y="951" text-anchor="middle" class="body">without changing setup.</text>
+ <path d="M1102 901 L1141 901" stroke="#1684d8" stroke-width="5" marker-end="url(#arrow)"/>
+ <rect x="1152" y="826" width="270" height="150" rx="19" fill="#fff5e5" stroke="#f0ce95" stroke-width="2"/>
+ <text x="1287" y="865" text-anchor="middle" class="node">4. Review</text><text x="1287" y="899" text-anchor="middle" class="body">Describe the mistake;</text><text x="1287" y="925" text-anchor="middle" class="body">choose one correction</text><text x="1287" y="951" text-anchor="middle" class="body">for the next attempt.</text>
+ <path d="M1430 901 L1469 901" stroke="#16a34a" stroke-width="5" marker-end="url(#greenArrow)"/>
+ <rect x="1480" y="826" width="230" height="150" rx="19" fill="#e8f8ef" stroke="#9bd9b5" stroke-width="2"/>
+ <text x="1595" y="865" text-anchor="middle" class="node">5. Log</text><text x="1595" y="899" text-anchor="middle" class="body">Record a win,</text><text x="1595" y="925" text-anchor="middle" class="body">one difficulty and</text><text x="1595" y="951" text-anchor="middle" class="body">one next focus.</text>
+</g>
+<text x="78" y="1034" class="body" font-weight="700" fill="#075985">Stop when fatigue makes your inputs sloppy. Keep the same rates and craft preset while practising a skill.</text>
+<rect x="40" y="1127" width="1720" height="62" rx="18" fill="#092b4c"/>
+<text x="76" y="1166" class="head" font-size="23">Simulator success = smooth, repeatable inputs, deliberate recovery and a controlled landing — not just speed.</text>
+</svg>
