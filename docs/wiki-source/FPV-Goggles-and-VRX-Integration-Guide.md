@@ -2,6 +2,10 @@
 
 ![Goggles and receiver integration overview](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/goggles-vrx-integration.svg)
 
+![CADDXFPV Walksnail Avatar Goggles X product photo](https://caddxfpv.com/cdn/shop/files/041778b25bd172e599bd84f495f87b2d.jpg?v=1698284376&width=2400)
+
+*Real goggles example: [Walksnail Avatar Goggles X](https://www.caddxfpv.com/products/walksnail-avatar-hd-goggles-x). This is a Walksnail digital product; it does not make DJI or HDZero systems interchangeable. Check the exact goggles/VRX generation and firmware.*
+
 **Choose goggles before choosing the aircraft video transmitter.** Goggles are not all interchangeable. The aircraft video receiver (VRX) must support the exact analog or digital video system and, for digital products, often the precise generation and firmware combination. The radio-control receiver (e.g. ELRS) is completely separate.
 
 ## 1. Goggles and receiver categories
