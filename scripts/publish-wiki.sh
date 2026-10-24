@@ -139,13 +139,13 @@ for page in "$WIKI_DIR"/*.md; do
       temp_page="$page.tmp"
       while IFS= read -r line || [[ -n "$line" ]]; do
         line="${line//"$image_url"/"images/$filename"}"
-        printf '%s\\n' "$line"
+        printf '%s\n' "$line"
       done < "$page" > "$temp_page"
       mv "$temp_page" "$page"
       echo "Localized project asset: $filename"
     fi
   done < <(
-    grep -Eo 'https://raw\\.githubusercontent\\.com/luckyhegde6/buildFPV/main/docs/assets/[^" )>]+' "$page" | sort -u
+    grep -Eo 'https://raw\.githubusercontent\.com/luckyhegde6/buildFPV/main/docs/assets/[^" )>]+' "$page" | sort -u
   )
 
   while IFS= read -r filename; do
@@ -153,7 +153,7 @@ for page in "$WIKI_DIR"/*.md; do
     if [[ -f "$ASSET_SOURCE/$filename" ]]; then
       cp "$ASSET_SOURCE/$filename" "$WIKI_DIR/images/$filename"
     fi
-  done < <(grep -Eo 'images/[A-Za-z0-9._-]+\\.(svg|png|jpe?g|webp|gif)' "$page" | sed 's#^images/##' | sort -u)
+  done < <(grep -Eo 'images/[A-Za-z0-9._-]+\.(svg|png|jpe?g|webp|gif)' "$page" | sed 's#^images/##' | sort -u)
 done
 
 for page in "$WIKI_DIR"/*.md; do
