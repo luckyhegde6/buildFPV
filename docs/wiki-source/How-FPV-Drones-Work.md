@@ -10,6 +10,43 @@
 
 These supplied overview graphics complement the step-by-step explanation below. Treat them as learning summaries; confirm motor order, CW/CCW layout, connector pinouts and firmware-specific behavior against the exact aircraft and official manuals.
 
+### Enlarged section diagrams
+
+The individual panels below expand the key topics from the supplied overview sheets. They are scalable vector illustrations for readability; use the exact aircraft documentation for wiring, motor order and board pinouts.
+
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-section-drone-overview.svg" alt="Complete FPV drone build with frame, battery, motors, propellers, camera, video antenna and flight controller" width="1200" />
+
+*Section: complete drone build — component positions are illustrative, not a wiring map.*
+
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-section-axes-movements.svg" alt="Expanded throttle, yaw, pitch and roll movement guide" width="1200" />
+
+*Section: axes and stick movements — direction cues are generic; firmware motor layout may differ.*
+
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-section-lift-thrust.svg" alt="Expanded quadcopter lift, thrust, airflow and propeller rotation explainer" width="1200" />
+
+*Section: lift and thrust — propellers accelerate air down to generate upward thrust.*
+
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-section-control-loop.svg" alt="Expanded control loop from radio input through receiver, flight controller, ESCs and motors with sensor feedback" width="1200" />
+
+*Section: control loop — conceptual signal flow, not a pinout.*
+
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-section-video-system.svg" alt="Expanded FPV camera, VTX or digital air unit, antenna and goggles video path" width="1200" />
+
+*Section: FPV video system — video compatibility is independent of the radio-control link.*
+
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-section-antenna-types.svg" alt="Expanded linear, circular-polarized, patch and stubby FPV antenna types" width="1200" />
+
+*Section: antenna types — match band, connector and polarization to the video system.*
+
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-section-flight-controller.svg" alt="Expanded flight-controller anatomy with processor, IMU, flash, UARTs, power and ESC outputs" width="1200" />
+
+*Section: flight-controller anatomy — pad placement and names vary by board.*
+
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-section-flight-modes.svg" alt="Expanded comparison of Angle, Horizon, Acro or Rate and GPS Rescue flight modes" width="1200" />
+
+*Section: flight modes — confirm actual behavior and configuration in the installed firmware.*
+
+
 ![Real FPV racing quadcopter example](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/FPV_Quadrocopter.jpg/960px-FPV_Quadrocopter.jpg)
 
 *Real-build photo: [FPV Quadrocopter on Wikimedia Commons](https://commons.wikimedia.org/wiki/File:FPV_Quadrocopter.jpg). Use it to identify the broad physical layout; it is not a wiring guide.*
