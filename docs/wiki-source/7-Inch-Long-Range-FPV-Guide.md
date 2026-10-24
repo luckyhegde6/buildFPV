@@ -36,6 +36,11 @@ Before assembly, check:
 
 Use [7-Inch Long-Range Frame Assembly](7-Inch-Long-Range-Frame-Assembly.md).
 
+## Real-world long-range video hardware example
+
+<img src="https://www.caddxfpv.com/cdn/shop/files/Avatar_GT2_Kit.webp?v=1776417737&width=1080" alt="CADDXFPV Walksnail Avatar GT2 camera and video transmitter kit product photo" width="800" />
+*Manufacturer photo: [CADDXFPV / Walksnail Avatar GT2 Kit](https://www.caddxfpv.com/products/walksnail-avatar-gt2-kit). This is a camera/video-transmitter kit, not a complete 7-inch aircraft or frame. Use it only as an example of long-range video hardware; verify system compatibility, legal transmit-power limits and the complete build's measured range.*
+
 ## 4. Control/video link and recovery
 
 Control and video are separate links. A control receiver such as ELRS is not the same as the goggles' VRX. Choose compatible air-side VTX/air unit and goggles receiver, follow exact firmware and antenna guidance, and comply with regional channel/power constraints.
