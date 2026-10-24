@@ -2,9 +2,9 @@
 
 ## Visual guides: movement, lift and control
 
-![FPV quadcopter movement infographic showing yaw, pitch, roll, throttle, propeller rotation and lift](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-drone-movements-guide.webp)
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-drone-movements-guide.webp" alt="FPV quadcopter movement infographic showing yaw, pitch, roll, throttle, propeller rotation and lift" width="1200" />
 
-![FPV drone control-loop infographic covering sensors, flight controller, ESCs, radio and video links, antenna types, and common build components](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-drone-control-loop-guide.webp)
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-drone-control-loop-guide.webp" alt="FPV drone control-loop infographic covering sensors, flight controller, ESCs, radio and video links, antenna types, and common build components" width="1200" />
 
 **The control path:** stick inputs travel from the radio transmitter to the receiver on the aircraft, then to the flight controller, ESCs, motors and propellers. Gyroscope and accelerometer feedback helps the controller correct motion and keep the quad stable.
 
