@@ -2,6 +2,10 @@
 
 ![Analog video system diagram](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/analog-vs-digital-video.svg)
 
+![CADDXFPV Ratel 2 analog FPV camera product photo](https://www.caddxfpv.com/cdn/shop/files/CADDXFPVRatel2Camera_c2e413af-99a4-4978-9367-b3ae881ae02f.png?v=1744944069&width=1200)
+
+*Real aircraft-side example: [CADDXFPV Ratel 2 analog camera](https://www.caddxfpv.com/products/ratel-2-1-1-8inch-starlight-sensor-freestyle-fpv-camera). This is the camera end of the analog chain; pair it with a supported analog VTX and compatible analog goggles/VRX.*
+
 This page is for an analog FPV video chain. The typical path is **analog camera → analog video transmitter (VTX) → aircraft antenna → analog video receiver (VRX) → goggles/display**. The control receiver (for example ELRS) is a separate radio system and is not the goggles' VRX.
 
 ## 1. Types of analog goggles and receivers
