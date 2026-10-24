@@ -158,10 +158,12 @@ for page in "$WIKI_DIR"/*.md; do
       # When broad third-party image downloads are disabled in CI, still
       # localize explicitly requested official BETAFPV / CADDXFPV product photos.
       # This keeps those product images stable in the Wiki without enabling
-      # downloads from every external image host.
+      # downloads from every external image host. Official DJI and HDZero product-image hosts used by the integration guides are also explicitly allowed.
       if [[ "${BUILDFPV_SKIP_EXTERNAL_IMAGE_DOWNLOADS:-0}" == "1" ]] &&
          [[ "$image_url" != https://betafpv.com/cdn/shop/* ]] &&
-         [[ "$image_url" != https://www.caddxfpv.com/cdn/shop/* ]]; then
+         [[ "$image_url" != https://www.caddxfpv.com/cdn/shop/* ]] &&
+         [[ "$image_url" != https://se-cdn.djiits.com/tpc/uploads/spu/cover/* ]] &&
+         [[ "$image_url" != https://static.wixstatic.com/media/967e02_* ]]; then
         echo "Skipping external image download; retaining source URL: $image_url"
         continue
       fi
