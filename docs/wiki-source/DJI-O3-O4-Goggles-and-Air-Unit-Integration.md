@@ -2,6 +2,10 @@
 
 ![Digital video systems map](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/analog-vs-digital-video.svg)
 
+![DJI O4 Air Unit Pro product photo]( https://se-cdn.djiits.com/tpc/uploads/spu/cover/9712cbcf1610c37cbbeaf5276cac77d9%40small.png?format=webp )
+
+*Real product photo from the official [DJI Store product listing](https://store.dji.com/product/dji-o4-air-unit-pro). The O4 standard and O4 Pro are distinct variants; use the [official O4 specification page](https://www.dji.com/o4-air-unit/specs) to verify the exact product and compatible goggles.*
+
 This page covers modular **DJI FPV air units** for compatible DIY aircraft. DJI's consumer camera drones are a separate product category; do not treat a Mavic, Mini or other camera-drone camera as a modular air-unit camera for a build.
 
 ## 1. First identify the generation
