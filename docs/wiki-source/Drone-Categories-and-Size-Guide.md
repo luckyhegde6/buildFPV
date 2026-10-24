@@ -56,12 +56,12 @@ These are actual manufacturer product photos to ground the class diagrams in rea
 | **Tinywhoop / micro** | **2.5-inch cinewhoop** |
 |---|---|
 | <img src="https://betafpv.com/cdn/shop/files/Air65_II_Brushless_Whoop_Quadcopter_Champion.jpg?v=1779348978" alt="BETAFPV Air65 II real product photograph" width="360" /> | <img src="https://betafpv.com/cdn/shop/products/pavo25-whoop-quadcopter_7_4bd247b6-2bc1-4b88-96f2-b20120eee7aa_1200x.jpg?v=1669723784" alt="BETAFPV Pavo25 2.5-inch cinewhoop real product photograph" width="360" /> |
-| [BETAFPV Air65 II]( https://betafpv.com/products/air65-ii-brushless-whoop-quadcopter ) — micro/65 mm class | [BETAFPV Pavo25]( https://betafpv.com/products/pavo25-whoop-quadcopter ) — 2.5-inch prop class |
+| [BETAFPV Air65 II](https://betafpv.com/products/air65-ii-brushless-whoop-quadcopter) — micro/65 mm class | [BETAFPV Pavo25](https://betafpv.com/products/pavo25-whoop-quadcopter) — 2.5-inch prop class |
 
 | **3.5-inch cinewhoop** | **5-inch open-prop quad** |
 |---|---|
 | <img src="https://betafpv.com/cdn/shop/files/O3_1200x.jpg?v=1700798037" alt="BETAFPV Pavo35 real product photograph" width="360" /> | <img src="https://betafpv.com/cdn/shop/products/FCC.jpg?v=1594620323" alt="BETAFPV X-Knight 5-inch quad real product photograph" width="360" /> |
-| [BETAFPV Pavo35]( https://betafpv.com/products/pavo35-brushless-whoop-quadcopter ) — guarded cinewhoop example | [BETAFPV X-Knight 5-inch]( https://betafpv.com/products/x-knight-5-fpv-toothpick-quad ) — open-prop example |
+| [BETAFPV Pavo35](https://betafpv.com/products/pavo35-brushless-whoop-quadcopter) — guarded cinewhoop example | [BETAFPV X-Knight 5-inch](https://betafpv.com/products/x-knight-5-fpv-toothpick-quad) — open-prop example |
 
 *The photographs are from BETAFPV product listings and remain manufacturer property. Configurations, stock and product revisions can change; follow each linked product page rather than inferring fitment from an image.*
 
