@@ -6,6 +6,14 @@
 
 ![Pre-purchase VTX and VRX compatibility checklist](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/vtx-vrx-compatibility-check.svg)
 
+![CADDXFPV Walksnail Avatar HD Pro Kit product photo]( https://caddxfpv.com/cdn/shop/products/Pro_62561ada-8f5a-4ec5-a416-cba1d0b7dd77.jpg?v=1680772446&width=2400 )
+
+*Real product example: [CADDXFPV Walksnail Avatar HD Pro Kit](https://www.caddxfpv.com/products/walksnail-avatar-hd-pro-kit). This belongs to the Walksnail digital ecosystem; it is not compatible with DJI or HDZero goggles merely because all are digital HD systems.*
+
+![CADDXFPV Ratel 2 analog FPV camera product photo](https://www.caddxfpv.com/cdn/shop/files/CADDXFPVRatel2Camera_c2e413af-99a4-4978-9367-b3ae881ae02f.png?v=1744944069&width=1200)
+
+*Real analog camera example: [CADDXFPV Ratel 2](https://www.caddxfpv.com/products/ratel-2-1-1-8inch-starlight-sensor-freestyle-fpv-camera). It illustrates the aircraft-side camera, not a complete camera/VTX/goggles bundle.*
+
 **Start with a complete video system.** Camera, VTX/air unit, antenna, ground receiver (VRX) and goggles/display must work as a supported chain. A flight-control radio receiver such as ELRS is separate from the video receiver.
 
 This is a compatibility guide, not a permanent price or stock ranking. Manufacturer specifications and supported goggles/firmware are model- and revision-specific; check the exact current manual before buying.
