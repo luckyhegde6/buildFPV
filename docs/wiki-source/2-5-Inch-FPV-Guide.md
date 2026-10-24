@@ -6,6 +6,11 @@
 
 A 2.5-inch FPV build uses propellers around **63.5 mm nominal diameter**. Its frame wheelbase is a different dimension, and propellers/clearance, all-up weight, battery, camera/video gear and flight purpose matter more than the category name alone.
 
+## Real-world 2.5-inch product example
+
+<img src="https://betafpv.com/cdn/shop/products/pavo25-whoop-quadcopter_7_4bd247b6-2bc1-4b88-96f2-b20120eee7aa_1200x.jpg?v=1669723784" alt="BETAFPV Pavo25 2.5-inch pusher cinewhoop product photo" width="800" />
+*Manufacturer photo: [BETAFPV Pavo25 Whoop Quadcopter](https://betafpv.com/products/pavo25-whoop-quadcopter). The product is described by BETAFPV as a 2.5-inch pusher drone. Check the selected VTX/RX variant and the exact parts included before buying or building.*
+
 ## 1. What is a 2.5-inch quad good for?
 
 Common goals are portable outdoor practice, lightweight freestyle, travel builds, and compact filming with small camera/video hardware. Some are called **toothpick** builds (light, open propellers); some are more reinforced or protected. “2.5-inch” tells you nominal propeller diameter, not whether the aircraft is a cinewhoop or a toothpick.
