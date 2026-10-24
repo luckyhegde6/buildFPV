@@ -2,11 +2,13 @@
 
 ## Visual guides: parts, systems and flight
 
-![FPV drone basics infographic covering major components, the control loop, flight axes, thrust, video systems and antenna types](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-drone-basics-infographic.webp)
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-system-basics-high-resolution.svg" alt="High-resolution vector overview of FPV aircraft components and separate radio-control, video and power paths" width="1200" />
 
-![Beginner FPV drone guide showing quadcopter components, radio control, movement, propellers and video systems](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-drone-beginner-guide.webp)
+*High-resolution vector recreation of the overview graphic. The diagram is scalable and designed to stay sharp when enlarged. It is a conceptual learning map, not a wiring diagram or exact build layout.*
 
-These overview infographics are visual companions to the detailed explanations below. Use them for orientation, then follow the text and model-specific manuals for setup, wiring, motor direction and compatibility.
+The original supplied raster artwork is still available: [FPV drone basics infographic](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-drone-basics-infographic.webp) · [beginner FPV guide](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-drone-beginner-guide.webp).
+
+Use the visual map for orientation, then follow the text and model-specific manuals for setup, wiring, motor direction and compatibility.
 
 ### Enlarged subsystem panels
 
