@@ -8,7 +8,7 @@
 
 *Analog hardware example: [CADDXFPV Ratel 2 camera](https://www.caddxfpv.com/products/ratel-2-1-1-8inch-starlight-sensor-freestyle-fpv-camera). The VTX and goggles/VRX are separate compatibility checks.*
 
-![CADDXFPV Walksnail Avatar HD Pro Kit digital FPV video system](https://caddxfpv.com/cdn/shop/products/Pro_62561ada-8f5a-4ec5-a416-cba1d0b7dd77.jpg?v=1680772446&width=2400)
+![CADDXFPV Walksnail Avatar HD Pro Kit digital FPV video system](https://www.caddxfpv.com/cdn/shop/products/Pro_62561ada-8f5a-4ec5-a416-cba1d0b7dd77.jpg?v=1680772446&width=2400)
 
 *Digital hardware example: [Walksnail Avatar HD Pro Kit](https://www.caddxfpv.com/products/walksnail-avatar-hd-pro-kit). Its air unit and goggles must match the supported Walksnail ecosystem and firmware.*
 
