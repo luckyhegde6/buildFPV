@@ -1,5 +1,9 @@
 # Walksnail Avatar / CADDXFPV — Goggles, VRX and Air-Unit Integration
 
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-section-video-system.svg" alt="Enlarged high-resolution FPV camera, digital air unit and compatible goggles/VRX signal path" width="1200" />
+
+*High-resolution digital-video path overview. Verify exact Walksnail Avatar camera, air-unit, goggles/VRX generation and firmware; it is not cross-compatible with DJI or HDZero by default.*
+
 ![Goggles and VRX compatibility map](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/goggles-vrx-integration.svg)
 
 ![CADDXFPV Walksnail Avatar HD Pro Kit product photo](https://www.caddxfpv.com/cdn/shop/products/Pro_62561ada-8f5a-4ec5-a416-cba1d0b7dd77.jpg?v=1680772446&width=2400)
