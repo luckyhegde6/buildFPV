@@ -6,7 +6,7 @@
 
 ![Digital video systems map](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/analog-vs-digital-video.svg)
 
-![DJI O4 Air Unit Pro product photo](${djiImageUrl})
+![DJI O4 Air Unit Pro product photo](https://fpvguru.in/wp-content/uploads/2025/03/dji-o4-air-unit-pro-_main-image_-150x150.webp)
 
 *Product thumbnail hosted by [FPVGuru](https://fpvguru.in/product/dji-o4-air-unit-pro/); use the [official DJI Store listing](https://store.dji.com/product/dji-o4-air-unit-pro) and [O4 specifications](https://www.dji.com/o4-air-unit/specs) to verify the exact variant and supported goggles.*
 
