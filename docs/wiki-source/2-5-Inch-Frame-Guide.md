@@ -6,6 +6,11 @@
 
 *Real frame photo: Sub250 OasisFly25. The listed manufacturer model specifies 135 mm wheelbase and HQ 2.5×2.5×3 props; confirm the exact frame/SKU before assembly. Image: Unmanned Tech product listing. [Manufacturer specifications](https://sub250.com/en-nl/collections/oasisfly-series/products/sub250-oasisfly25-hd-o3).*
 
+## Additional manufacturer frame example
+
+<img src="https://betafpv.com/cdn/shop/files/7007342a36fdad8d81fe1333f226d127_1200x.jpg?v=1699430594" alt="BETAFPV Pavo25 V2 guarded 2.5-inch frame product photo" width="800" />
+*Manufacturer photo: [BETAFPV Pavo25 V2 Brushless Whoop Frame](https://betafpv.com/products/pavo25-v2-brushless-whoop-frame). A second real frame example with ducts. This geometry differs from an open-prop toothpick frame such as the Sub250 example above; do not transfer dimensions or mounting assumptions between them.*
+
 A 2.5-inch frame is usually designed around a nominal propeller diameter of 2.5 inches (63.5 mm). The frame wheelbase is a different dimension and varies by model. Many small open-prop builds are called micro or toothpick; they are not automatically tinywhoops, which typically use guarded/ducted propellers.
 
 ## 1. Why choose this class?
