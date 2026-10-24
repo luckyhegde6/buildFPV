@@ -137,3 +137,11 @@ Before retrying, the repository owner must add `WIKI_PUBLISH_TOKEN` or `GH_PERSO
 - The two infographics under `## Visual guides: movement, lift and control` now use HTML `<img width="1200">` embeds, preserving descriptive alt text. The Wiki publisher recognizes HTML `img src` references, copies the WebP files to its own `images/` directory and rewrites the source URL while retaining the width attribute.
 - Prepublish regression test now covers the HTML image rewrite.
 - Live publish and Playwright checks passed in [Actions run #22](https://github.com/luckyhegde6/buildFPV/actions/runs/40063630087). Both `fpv-drone-movements-guide.webp` and `fpv-drone-control-loop-guide.webp` report `declaredWidth=1200`, `renderedWidth=896` at desktop viewport, loaded from Wiki-local paths; the page has no errors.
+
+## Enlarged FPV section panels — published and verified (2026-10-24)
+
+- Added separate scalable section illustrations to the existing Wiki guides: overview build, drone axes and movements, lift/thrust, control loop, video link, antenna types, flight-controller anatomy, motors/props, radio-control link, GPS/navigation, and flight modes.
+- Updated `docs/wiki-source/How-FPV-Drones-Work.md`, `FPV-System-Basics.md`, `Drone-Parts-One-by-One.md`, and `Simulator-Training.md` to place relevant images adjacent to their topic explanations, using descriptive alt text and `width="1200"`.
+- Created missing `docs/assets/fpv-section-lift-thrust.svg` after the first verification detected the referenced asset had not been committed.
+- Set Simulator Training's axes / flight-modes images to direct Wiki-local `images/` paths. The same assets are copied into the Wiki by How-FPV-Drones-Work's project-asset references, avoiding the prior non-local detection.
+- Existing publisher regression test passed; the publish job and full Playwright verification passed in [Run #24](https://github.com/luckyhegde6/buildFPV/actions/runs/40067259902). The verifier checked required section images, Wiki-local loading and expanded display sizing across all four guides; no page-level validation errors remain.
