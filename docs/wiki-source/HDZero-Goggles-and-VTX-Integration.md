@@ -1,5 +1,9 @@
 # HDZero Goggles and VTX Integration Guide
 
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-section-video-system.svg" alt="Enlarged high-resolution FPV camera, HDZero VTX, antenna and compatible goggles signal path" width="1200" />
+
+*High-resolution digital-video path overview. Confirm support for the exact HDZero camera, VTX and goggles combination using current manufacturer documentation.*
+
 ![Goggles and VRX integration map](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/goggles-vrx-integration.svg)
 
 ![HDZero goggles product photo from the manufacturer's product catalogue](https://static.wixstatic.com/media/967e02_c553e8472fab468e9214fe2a5123e194~mv2.png)
