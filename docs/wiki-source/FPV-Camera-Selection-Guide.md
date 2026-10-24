@@ -2,6 +2,14 @@
 
 ![Analog and digital camera/video system paths](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/analog-vs-digital-video.svg)
 
+![CADDXFPV Ratel 2 analog FPV camera product photo](https://www.caddxfpv.com/cdn/shop/files/CADDXFPVRatel2Camera_c2e413af-99a4-4978-9367-b3ae881ae02f.png?v=1744944069&width=1200)
+
+*Analog camera example: [CADDXFPV Ratel 2](https://www.caddxfpv.com/products/ratel-2-1-1-8inch-starlight-sensor-freestyle-fpv-camera). Confirm camera dimensions, format and exact VTX support before use.*
+
+![CADDXFPV Walksnail Avatar HD Pro Kit product photo](https://caddxfpv.com/cdn/shop/products/Pro_62561ada-8f5a-4ec5-a416-cba1d0b7dd77.jpg?v=1680772446&width=2400)
+
+*Digital system example: [Walksnail Avatar HD Pro Kit](https://www.caddxfpv.com/products/walksnail-avatar-hd-pro-kit). Use the exact matching camera/air unit and explicitly compatible goggles/VRX.*
+
 Camera choice depends on the entire video link and the footage you need. A camera that looks good on a product page may be too large, heavy, slow, power-hungry or unsupported for the frame/VTX/goggles combination.
 
 ## 1. First classify the recording or viewing goal
