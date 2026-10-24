@@ -4,6 +4,14 @@
 
 ![Live FPV view versus onboard and goggles DVR recording paths](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-camera-sensor-and-recording.svg)
 
+![CADDXFPV Ratel 2 analog FPV camera product photo](https://www.caddxfpv.com/cdn/shop/files/CADDXFPVRatel2Camera_c2e413af-99a4-4978-9367-b3ae881ae02f.png?v=1744944069&width=1200)
+
+*Analog hardware example: [CADDXFPV Ratel 2 camera](https://www.caddxfpv.com/products/ratel-2-1-1-8inch-starlight-sensor-freestyle-fpv-camera). The VTX and goggles/VRX are separate compatibility checks.*
+
+![CADDXFPV Walksnail Avatar HD Pro Kit digital FPV video system]( https://caddxfpv.com/cdn/shop/products/Pro_62561ada-8f5a-4ec5-a416-cba1d0b7dd77.jpg?v=1680772446&width=2400 )
+
+*Digital hardware example: [Walksnail Avatar HD Pro Kit](https://www.caddxfpv.com/products/walksnail-avatar-hd-pro-kit). Its air unit and goggles must match the supported Walksnail ecosystem and firmware.*
+
 Choose a video system as a complete chain, not as an isolated camera. The camera signal format, aircraft-side video transmitter (VTX or digital air unit), antenna, and ground-side video receiver (VRX) or goggles must be compatible. The radio-control receiver (for example ExpressLRS) is a separate system.
 
 ## 1. Analog or digital?
