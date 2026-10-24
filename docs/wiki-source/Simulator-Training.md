@@ -4,6 +4,12 @@
 
 *High-resolution practice roadmap. Keep drills easy enough to repeat cleanly; the sequence is a training aid, not a real-flight safety checklist.*
 
+## Connect simulator practice to the aircraft
+
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-system-basics-high-resolution.svg" alt="High-resolution overview connecting the FPV aircraft parts to separate radio-control, video and power paths" width="1200" />
+
+*Use this overview to understand what each simulator control ultimately affects. It is conceptual rather than a wiring map.*
+
 Aim for smooth, repeatable control rather than speed. Practise for 30–45 minutes at a time; stop when fatigue makes inputs sloppy.
 
 > [!IMPORTANT]
