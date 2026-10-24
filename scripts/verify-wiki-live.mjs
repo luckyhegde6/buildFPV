@@ -84,6 +84,87 @@ const cases = [
     ],
     minimumTables: 2,
     requireLocalImages: true,
+    requiredImages: ['CADDXFPVRatel2Camera', 'Pro_62561ada'],
+  },
+  {
+    name: 'video-systems-and-goggles',
+    url: `${base}/Video-Systems-and-Goggles`,
+    required: ['FPV Video Systems and Goggles', 'For step-by-step compatibility and setup'],
+    minimumTables: 0,
+    requireLocalImages: true,
+    requiredImages: ['VRX_and_V2'],
+  },
+  {
+    name: 'camera-selection',
+    url: `${base}/FPV-Camera-Selection-Guide`,
+    required: ['FPV Camera Selection Guide', 'Analog camera example: CADDXFPV Ratel 2'],
+    minimumTables: 0,
+    requireLocalImages: true,
+    requiredImages: ['CADDXFPVRatel2Camera', 'Pro_62561ada'],
+  },
+  {
+    name: 'analog-vs-digital-video',
+    url: `${base}/Analog-vs-Digital-FPV-Camera-Video-Guide`,
+    required: ['Analog vs Digital FPV: Cameras, VTX and Receivers Compared', 'Analog hardware example: CADDXFPV Ratel 2 camera'],
+    minimumTables: 0,
+    requireLocalImages: true,
+    requiredImages: ['CADDXFPVRatel2Camera', 'Pro_62561ada'],
+  },
+  {
+    name: 'analog-goggles-vrx',
+    url: `${base}/Analog-Goggles-and-VRX-Integration`,
+    required: ['Analog FPV Goggles and VRX', 'Real aircraft-side example: CADDXFPV Ratel 2 analog camera'],
+    minimumTables: 0,
+    requireLocalImages: true,
+    requiredImages: ['CADDXFPVRatel2Camera'],
+  },
+  {
+    name: 'goggles-vrx-integration',
+    url: `${base}/FPV-Goggles-and-VRX-Integration-Guide`,
+    required: ['FPV Goggles and VRX Integration Guide', 'Real goggles example: Walksnail Avatar Goggles X'],
+    minimumTables: 0,
+    requireLocalImages: true,
+    requiredImages: ['041778b25bd172e599bd84f495f87b2d'],
+  },
+  {
+    name: 'dji-o3-o4-integration',
+    url: `${base}/DJI-O3-O4-Goggles-and-Air-Unit-Integration`,
+    required: ['DJI O3 / O4 FPV Air Units and Goggles', 'Real product photo from the official DJI Store product listing'],
+    minimumTables: 0,
+    requireLocalImages: true,
+    requiredLoadedImages: ['9712cbcf1610c37cbbeaf5276cac77d9'],
+  },
+  {
+    name: 'walksnail-integration',
+    url: `${base}/Walksnail-Avatar-Goggles-and-Air-Unit-Integration`,
+    required: ['Walksnail Avatar / CADDXFPV', 'Aircraft-side example: Walksnail Avatar HD Pro Kit'],
+    minimumTables: 0,
+    requireLocalImages: true,
+    requiredImages: ['Pro_62561ada', '041778b25bd172e599bd84f495f87b2d'],
+  },
+  {
+    name: 'hdzero-integration',
+    url: `${base}/HDZero-Goggles-and-VTX-Integration`,
+    required: ['HDZero Goggles and VTX Integration Guide', 'Real product example: HDZero goggles'],
+    minimumTables: 0,
+    requireLocalImages: true,
+    requiredLoadedImages: ['967e02_c553e8472fab468e9214fe2a5123e194', '967e02_33e9daad991546f5830572a3e5ea4dff'],
+  },
+  {
+    name: 'video-antennas-vtx-vrx',
+    url: `${base}/Video-Antennas-VTX-VRX`,
+    required: ['FPV Video Links, Antennas and Range', 'Product example: CADDXFPV / Walksnail Avatar VRX kit'],
+    minimumTables: 0,
+    requireLocalImages: true,
+    requiredImages: ['VRX_and_V2'],
+  },
+  {
+    name: 'gps-and-flight-controllers',
+    url: `${base}/GPS-and-Flight-Controllers`,
+    required: ['GPS, GNSS and Flight Controller Boards', 'Example FC hardware'],
+    minimumTables: 0,
+    requireLocalImages: true,
+    requiredImages: ['567042f830a15bcefdc659371169a57e'],
   },
   {
     name: 'simulator',
@@ -271,12 +352,25 @@ try {
           }
         })
       );
+      record.allImages = await page.locator('img').evaluateAll(images =>
+        images.map(img => ({
+          alt: img.alt || '',
+          src: img.currentSrc || img.src,
+          complete: img.complete,
+          naturalWidth: img.naturalWidth,
+        }))
+      );
       if (testCase.requireLocalImages && record.localWikiImages.length === 0) {
         record.errors.push('No Wiki-local images were found on this guide page.');
       }
       for (const image of record.localWikiImages) {
         if (!image.complete || image.naturalWidth === 0) {
           record.errors.push(`Wiki-local image failed to load: ${image.src}`);
+        }
+      }
+      for (const imageName of testCase.requiredLoadedImages ?? []) {
+        if (!record.allImages.some(image => image.src.includes(imageName) && image.complete && image.naturalWidth > 0)) {
+          record.errors.push(`Expected product image failed to load: ${imageName}`);
         }
       }
       for (const imageName of testCase.requiredImages ?? []) {
