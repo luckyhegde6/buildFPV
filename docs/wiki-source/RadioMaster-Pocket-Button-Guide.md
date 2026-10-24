@@ -1,6 +1,10 @@
 # 🎮 RadioMaster Pocket — Button & Setup Guide
 
-![Pocket front control map](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/pocket-control-map.svg)
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/radiomaster-pocket-controls-high-resolution.svg" alt="High-resolution RadioMaster Pocket control map showing switches, sticks, menu keys, typical Mode 2 functions and USB simulator versus real-aircraft setup" width="1200" />
+
+*Use this enlarged schematic to recognise the front controls. Switch functions and menu labels can vary by EdgeTX version and model configuration; verify them on your radio and in the official manual.*
+
+[Compact front control map](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/pocket-control-map.svg)
 
 **Your radio:** RadioMaster Pocket ELRS, running EdgeTX. Use this page to identify each control, create a reliable Liftoff profile, and avoid mixing simulator setup with real-aircraft RF settings.
 
