@@ -2,6 +2,10 @@
 
 ## Visual guides: movement, lift and control
 
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-drone-flight-mechanics-high-resolution.svg" alt="High-resolution vector summary of FPV flight axes, lift and thrust, and the radio-to-flight-controller feedback loop" width="1200" />
+
+*High-resolution flight-mechanics overview. Use it to connect the flight axes, thrust and control loop; it is a learning illustration, not a motor map or wiring schematic.*
+
 <img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-drone-movements-guide.webp" alt="FPV quadcopter movement infographic showing yaw, pitch, roll, throttle, propeller rotation and lift" width="1200" />
 
 <img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-drone-control-loop-guide.webp" alt="FPV drone control-loop infographic covering sensors, flight controller, ESCs, radio and video links, antenna types, and common build components" width="1200" />
