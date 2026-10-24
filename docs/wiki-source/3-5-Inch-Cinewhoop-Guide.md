@@ -4,6 +4,11 @@
 
 *Real frame example: BETAFPV Pavo35. The manufacturer lists a 148 mm wheelbase, 92 mm ducts, 113.9 g bare-frame weight, and support for specified camera/video payload options. [Official frame specification](https://betafpv.com/products/pavo35-brushless-whoop-frame).*
 
+### Complete aircraft example
+
+<img src="https://betafpv.com/cdn/shop/files/O3_1200x.jpg?v=1700798037" alt="BETAFPV Pavo35 3.5-inch cinewhoop complete aircraft product photo" width="800" />
+*Manufacturer photo: [BETAFPV Pavo35 Brushless Whoop Quadcopter](https://betafpv.com/products/pavo35-brushless-whoop-quadcopter). This complete aircraft image complements the Pavo35 frame photo above. Camera and digital video equipment depend on the chosen package; check the official listing.*
+
 A **cinewhoop** is defined more by its close-proximity filming purpose and often guarded/ducted propellers than by one universal propeller size. “3.5-inch” is common shorthand; the Pavo35 product uses **D90S-3 90 mm props** and 92 mm ducts, so always quote the exact frame and prop model.
 
 ## 1. When it makes sense
