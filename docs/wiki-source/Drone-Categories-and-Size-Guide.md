@@ -1,5 +1,9 @@
 # Drone Categories and Size Guide
 
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-section-drone-overview.svg" alt="Enlarged high-resolution vector overview of the major parts of a representative FPV drone" width="1200" />
+
+*High-resolution aircraft overview. Classes differ in frame, guards, propellers and payload; use the actual model drawing for dimensions and fit.*
+
 **Purpose:** choose an FPV aircraft by the job you want to do, then check exact dimensions and components. This is a class-selection guide, not a universal build specification.
 
 ![Schematic comparison of FPV drone sizes](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/drone-class-overview.svg)
