@@ -194,3 +194,9 @@ This is a chronological, append-oriented engineering log. New work should append
 - Downloaded 15 freely licensed Wikimedia Commons component photos into `docs/assets/` and added in-page attribution/CC license links and technical caveats to `docs/wiki-source/Drone-Parts-One-by-One.md`.
 - Publisher script and workflow now download/validate, commit the binary files to main, and copy the local images into the existing Wiki.
 - [Run #21](https://github.com/luckyhegde6/buildFPV/actions/runs/39929235479) succeeded for both publish and live Playwright verification. The live Drone Parts page returned HTTP 200, its required headings passed, and all 15 unique photos loaded from Wiki-local image paths. Image caption/alt text is asserted through image elements rather than body text.
+
+## 2026-10-24 — Enlarge movement/control infographics
+
+- Updated the two images in `How-FPV-Drones-Work.md` to use accessible HTML `img` tags with `width="1200"`.
+- Publisher and prepublish test now handle/rewrite HTML `img src` attributes to Wiki-local images while preserving the width.
+- [Run #22](https://github.com/luckyhegde6/buildFPV/actions/runs/40063630087) succeeded. Live Playwright measured both top infographics at 896 CSS px wide on desktop, with declared width 1200 and no page errors.
