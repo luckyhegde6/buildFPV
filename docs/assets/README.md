@@ -64,6 +64,10 @@ Keep alt text and captions with every image. Product photographs hosted by manuf
 The custom SVGs above were created for the [Drone Parts — One by One guide](../wiki-source/Drone-Parts-One-by-One.md). They use simplified conceptual drawings for learning component names and system paths. They are **not** product photographs, wiring schematics, board pinouts, or a universal motor-order reference. Follow the exact hardware and firmware documentation for any build decision.
 
 
+## Enlarged high-resolution overview graphic (24 October 2026)
+
+`fpv-system-basics-high-resolution.svg` is a project-created 1800 × 1240 scalable vector overview. The Wiki embeds it with `width="1200"` so the full image can render wide and remain crisp on larger screens. Topic-specific 1400-pixel SVG panels are also embedded at the same width in the drone-class/frame, video-system, antenna and GPS/FC guides. All graphics are educational illustrations, not exact product layouts, board pinouts, wiring diagrams or manufacturing drawings.
+
 ## New FPV class and integration guides (22 October 2026)
 
 The diagrams added in this tranche are original explanatory SVGs intended to render crisply in the Wiki. The frame-size artwork uses real named-product dimensions where cited, but its silhouettes are still schematic and not to scale; it must not be used to drill a frame, select screw length, or infer mounting/flight-control layouts. Use exact manufacturer drawings and manuals for those tasks. Two concept GIFs are present in the source repo; their appearance and localization into the separate Wiki must still be verified after publication.
@@ -94,6 +98,7 @@ Use manufacturer dimensions for fit decisions and exact assembly drawings. Image
 
 The source SVG dimensions are annotated for learning and comparison only. Manufacturer/retailer product photos and specs should be rechecked before purchase; a product image is not a mechanical drawing.
 
+| `fpv-system-basics-high-resolution.svg` | [FPV System Basics](../wiki-source/FPV-System-Basics.md), Home, Getting Started, How FPV Drones Work and Drone Parts — One by One | Original 1800×1240 scalable vector recreation that combines aircraft hardware with distinct control, video and power paths; conceptual overview, not a wiring diagram |
 | `fpv-drone-basics-infographic.webp` | [FPV System Basics](../wiki-source/FPV-System-Basics.md) | Supplied overview of components, system flow, control loop, flight axes, lift, video and antenna types; 640px WebP copy of user-supplied infographic |
 | `fpv-drone-beginner-guide.webp` | [FPV System Basics](../wiki-source/FPV-System-Basics.md) | Supplied beginner visual guide to quadcopter parts, flight movement, control and video systems |
 | `fpv-drone-movements-guide.webp` | [How FPV Drones Work](../wiki-source/How-FPV-Drones-Work.md) | Supplied diagram covering drone axes, propeller directions, lift and movement |
