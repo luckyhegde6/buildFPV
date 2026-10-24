@@ -131,3 +131,9 @@ Before retrying, the repository owner must add `WIKI_PUBLISH_TOKEN` or `GH_PERSO
 - Workflow `scripts/download-component-photos.sh` downloads and validates images, commits assets to `main`, then the existing publisher copies the page and images into `buildFPV.wiki.git`.
 - Live publish + headless verification passed in [Actions run #21](https://github.com/luckyhegde6/buildFPV/actions/runs/39929235479). The Drone Parts page returned HTTP 200; Playwright checked the target page and all 15 unique photo filenames loaded as Wiki-local images with nonzero natural dimensions. The overall photo is intentionally reused in two sections.
 - Component-photo assertion bug was fixed: test actual visible section headings via body text, and validate photo alt text/images through image elements / required Wiki-local image checks.
+
+## Enlarged How FPV Drones Work infographics — verified (2026-10-24)
+
+- The two infographics under `## Visual guides: movement, lift and control` now use HTML `<img width="1200">` embeds, preserving descriptive alt text. The Wiki publisher recognizes HTML `img src` references, copies the WebP files to its own `images/` directory and rewrites the source URL while retaining the width attribute.
+- Prepublish regression test now covers the HTML image rewrite.
+- Live publish and Playwright checks passed in [Actions run #22](https://github.com/luckyhegde6/buildFPV/actions/runs/40063630087). Both `fpv-drone-movements-guide.webp` and `fpv-drone-control-loop-guide.webp` report `declaredWidth=1200`, `renderedWidth=896` at desktop viewport, loaded from Wiki-local paths; the page has no errors.
