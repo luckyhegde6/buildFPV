@@ -1,5 +1,9 @@
 # 5-Inch FPV: Racing vs Freestyle
 
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-section-drone-overview.svg" alt="Enlarged high-resolution vector overview of FPV frame, propulsion, electronics and video hardware" width="1200" />
+
+*High-resolution orientation panel; racing and freestyle builds differ in frame layout, payload and component choices.*
+
 ![GEPRC GEP-MK5X O3 squashed-X frame product photo](https://geprc.com/wp-content/uploads/2022/11/GEP-MK5-O3-Frame-1-600x600.jpg)
 
 *One specific 5-inch example: GEPRC GEP-MK5X O3 lists 225 mm wheelbase, 214 × 168 × 42 mm overall size, 5-inch prop compatibility and 30.5 × 30.5 mm FC mounting. It is a squashed-X layout, not a universal specification for all 5-inch frames. [Manufacturer source](https://geprc.com/product/gep-mk5x-o3-frame/).*
