@@ -1,5 +1,9 @@
 # Analog FPV Goggles and VRX — Integration Tutorial
 
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-section-video-system.svg" alt="Enlarged high-resolution video link diagram from FPV camera through VTX to goggles/VRX" width="1200" />
+
+*High-resolution path overview. This guide covers analog goggles/VRX; verify analog band/channel support, antennas and connectors before connecting equipment.*
+
 ![Analog video system diagram](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/analog-vs-digital-video.svg)
 
 ![CADDXFPV Ratel 2 analog FPV camera product photo](https://www.caddxfpv.com/cdn/shop/files/CADDXFPVRatel2Camera_c2e413af-99a4-4978-9367-b3ae881ae02f.png?v=1744944069&width=1200)
