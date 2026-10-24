@@ -4,6 +4,12 @@ This is the next stop after [[How FPV Drones Work]]. Follow the aircraft from th
 
 > **Image note:** Photos help you recognise a component, but they are not wiring diagrams. Boards and product revisions vary. Use the exact manufacturer's manual and pinout for all wiring, voltage, connector and firmware decisions.
 
+## High-resolution system overview
+
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-system-basics-high-resolution.svg" alt="High-resolution vector map of FPV drone components and separate control, video and power links" width="1200" />
+
+*Use this system map before exploring each part below. The signal paths are conceptual; exact connections and voltages vary by hardware.*
+
 ## The lineup at a glance
 
 <img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-section-drone-overview.svg" alt="Separate enlarged complete FPV drone component overview" width="1200" />
