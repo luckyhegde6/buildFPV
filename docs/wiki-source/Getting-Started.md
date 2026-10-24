@@ -9,6 +9,10 @@
 
 You have enough to begin practising. You do **not** need to buy goggles, a quad, or new firmware today.
 
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-system-basics-high-resolution.svg" alt="High-resolution visual map of FPV drone components and the control, video and power systems" width="1200" />
+
+*Start with this scalable overview; return to [FPV System Basics](FPV-System-Basics.md) when you want to explore each path in more detail.*
+
 > [!IMPORTANT]
 > **Mandatory beginner video course before your first real flight:** complete the [Learn to fly an FPV drone (for total beginners) playlist](https://www.youtube.com/playlist?list=PLwoDb7WF6c8lCKhQOTy-Vb9LfW0VAIrTP) in sequence while practising in Liftoff. This is a buildFPV learning requirement, **not an official licence or certification**; continue to check safety requirements and current local rules.
 
