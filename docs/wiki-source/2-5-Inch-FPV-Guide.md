@@ -4,6 +4,10 @@
 
 *Real frame photo: Sub250 OasisFly25. The manufacturer lists a 135 mm wheelbase, 2.5-inch props and HQ2.5×2.5×3 propeller model on its current product listing. [Sub250 specification](https://sub250.com/en-nl/collections/oasisfly-series/products/sub250-oasisfly25-hd-o3). Image hosted by Unmanned Tech.*
 
+![BETAFPV Pavo25 V2 compact cinewhoop product photo](https://betafpv.com/cdn/shop/files/47c7274e5f2763504fdcb644f2ab50f0_1254ba36-bab4-4f0b-bee5-4578f0f2b186_1800x1800.jpg?v=1706871127)
+
+*Additional manufacturer example: BETAFPV Pavo25 V2, a compact guarded build with 63 mm props. The photo shows the product, not a dimensioned drawing. [Official BETAFPV product page](https://betafpv.com/products/pavo25-v2-brushless-whoop-quadcopter).*
+
 A 2.5-inch FPV build uses propellers around **63.5 mm nominal diameter**. Its frame wheelbase is a different dimension, and propellers/clearance, all-up weight, battery, camera/video gear and flight purpose matter more than the category name alone.
 
 ## Real-world 2.5-inch product example
