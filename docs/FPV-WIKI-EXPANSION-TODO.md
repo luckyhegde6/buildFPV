@@ -755,3 +755,9 @@ Current animation is a simple concept loop for rotor/thrust orientation, not a p
 - The 15 downloaded photo assets, attribution/license manifest and page updates are committed on `main`.
 - Live publish and Playwright verification passed: https://github.com/luckyhegde6/buildFPV/actions/runs/39929235479.
 - Drone Parts One by One rendered with HTTP 200; all 15 unique real-world photo assets passed Wiki-local loading checks. Credits link to each Wikimedia Commons file and license, with caveats for representative examples (for instance, Crossfire receiver rather than ELRS; analog VTX rather than digital air unit).
+
+### How FPV Drones Work image sizing — done
+
+- Both top infographics now use accessible HTML image tags with declared width 1200; publisher rewrites them to Wiki-local paths.
+- Regression test and Playwright live verification passed: https://github.com/luckyhegde6/buildFPV/actions/runs/40063630087.
+- Desktop browser measured both images at 896 CSS px wide; both assets loaded and the page had no errors.
