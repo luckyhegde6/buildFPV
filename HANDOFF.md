@@ -177,3 +177,12 @@ Before retrying, the repository owner must add `WIKI_PUBLISH_TOKEN` or `GH_PERSO
 - Extended `scripts/verify-wiki-live.mjs` so all target class/frame and video pages require the local topic-specific SVG and assert declared width 1200 / desktop rendered width >=800 CSS pixels.
 - Run #28 failed live verification only because external DJI and HDZero product image URLs failed to load. Expanded the publisher's explicit download allowlist for the two official hosts so they can be localized, while keeping broad third-party image downloads disabled.
 - Next: trigger fresh publish/verify after these page, verifier and publisher updates. Do not mark the full enlarged-image batch as live verified until the new run's Playwright artifact passes every page and image assertion.
+
+## 2026-10-24 — High-resolution visuals for How FPV Drones Work, RadioMaster Pocket and Simulator Training
+
+- Added `docs/assets/fpv-drone-flight-mechanics-high-resolution.svg` (1800×1220) to How FPV Drones Work at width="1200". The graphic combines axes, lift/thrust, and the radio → receiver → FC → ESC → motors feedback loop.
+- Added `docs/assets/radiomaster-pocket-controls-high-resolution.svg` (1800×1240) to RadioMaster Pocket Button Guide at width="1200". It includes a recognition schematic, typical Mode 2 stick mapping, switch/menu callouts, and separates USB simulator use from real-aircraft ELRS setup. The original Pocket front-control map remains linked.
+- Added `docs/assets/fpv-simulator-training-high-resolution.svg` (1800×1220) to Simulator Training at width="1200". It visualizes Mode 2 inputs, staged drills, and a repeatable practice-session routine.
+- Documented these assets in `docs/assets/README.md` and expanded Playwright live checks for required local assets plus width="1200" / rendered desktop width >=800 CSS pixels.
+- Fixed the previous run #29 issues before retrying: Getting Started now points directly to Wiki-local `images/fpv-system-basics-high-resolution.svg`; DJI O4 image URL no longer forces WebP while retaining a PNG extension. Run #29 had published successfully but failed live checks on the former raw GitHub image path and the DJI O4 image's actual format.
+- Next: republish through the existing workflow and inspect the new run and full Playwright report. Do not consider all three new page visuals verified until the browser assertions pass.
