@@ -2,7 +2,7 @@
 
 ![Goggles and VRX compatibility map](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/goggles-vrx-integration.svg)
 
-![CADDXFPV Walksnail Avatar HD Pro Kit product photo]( https://caddxfpv.com/cdn/shop/products/Pro_62561ada-8f5a-4ec5-a416-cba1d0b7dd77.jpg?v=1680772446&width=2400 )
+![CADDXFPV Walksnail Avatar HD Pro Kit product photo](https://caddxfpv.com/cdn/shop/products/Pro_62561ada-8f5a-4ec5-a416-cba1d0b7dd77.jpg?v=1680772446&width=2400)
 
 *Aircraft-side example: [Walksnail Avatar HD Pro Kit](https://www.caddxfpv.com/products/walksnail-avatar-hd-pro-kit). Verify the exact camera, air-unit revision, input voltage and goggles support before purchase.*
 
