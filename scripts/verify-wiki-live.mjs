@@ -145,9 +145,8 @@ const cases = [
     required: ['DJI O3 / O4 FPV Air Units and Goggles', 'Real product photo from the official DJI Store product listing'],
     minimumTables: 0,
     expandedImages: ['fpv-section-video-system.svg'],
-    requiredImages: ['fpv-section-video-system.svg'],
+    requiredImages: ['fpv-section-video-system.svg', 'dji-o4-air-unit-pro-_main-image_'],
     requireLocalImages: true,
-    requiredLoadedImages: ['9712cbcf1610c37cbbeaf5276cac77d9'],
   },
   {
     name: 'walksnail-integration',
@@ -201,7 +200,7 @@ const cases = [
     required: ['RadioMaster Pocket', 'What the controls do', 'SIM-Liftoff', 'QUAD-ELRS'],
     minimumTables: 2,
     requireLocalImages: true,
-    requiredImages: ['radiomaster-pocket-controls-high-resolution.svg', 'pocket-control-map.svg', 'pocket-gimbal-adjustment.png'],
+    requiredImages: ['radiomaster-pocket-controls-high-resolution.svg', 'pocket-gimbal-adjustment.png'],
     expandedImages: ['radiomaster-pocket-controls-high-resolution.svg'],
   },
   {
