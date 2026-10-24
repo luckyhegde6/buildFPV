@@ -1,5 +1,9 @@
 # 3.5-Inch Cinewhoop Frame — Guards, Camera Payload and Assembly
 
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-section-drone-overview.svg" alt="Enlarged high-resolution vector overview of cinewhoop aircraft components and assembly areas" width="1200" />
+
+*High-resolution assembly orientation. Duct diameter, arm geometry, screw length and stack layout must come from the selected frame's manual.*
+
 ![Cinewhoop guarded-frame schematic and frame size reference](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/frame-size-reference.svg)
 
 ![BETAFPV Pavo35 ducted cinewhoop frame product photo](https://betafpv.com/cdn/shop/files/d2e1b9aec379546f426ce88c187b9234_7825ca02-2d37-40da-a299-8051a920ac4c.jpg?v=1777538418&width=1445)
