@@ -53,3 +53,5 @@ Retry 21: enlarge both top-of-page Visual guides on How-FPV-Drones-Work using HT
 
 Retry 22: publish the new separate, enlarged scalable SVG sections created from the user's five FPV infographic sheets. The new panels cover drone overview, axes/movements, lift/thrust, control loop, video link, antenna types, flight-controller anatomy, motors/props, ExpressLRS radio link, GPS/navigation, and flight modes. They have been inserted into How-FPV-Drones-Work, FPV-System-Basics, Drone-Parts-One-by-One and Simulator-Training. Playwright now requires each section image to load from Wiki-local paths and checks width="1200" plus a desktop rendered width >=800px. Verify mobile too and record exact results.
 
+Retry 23: fix the missing fpv-section-lift-thrust.svg referenced by How-FPV-Drones-Work; use explicit Wiki-local relative paths for the two enlarged SVG panels on Simulator-Training, whose shared image assets are published by How-FPV-Drones-Work. Publish again and require Playwright to validate local loading / 1200 width for all section images across the four guides.
+
