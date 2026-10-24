@@ -1,5 +1,9 @@
 # 7-Inch Long-Range FPV — Aircraft Design and Mission Planning
 
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-section-drone-overview.svg" alt="Enlarged high-resolution vector overview of FPV drone components, propulsion, battery and video hardware" width="1200" />
+
+*High-resolution orientation panel. Long-range capability depends on the whole build and mission plan, not on the diagram or frame size alone.*
+
 ![iFlight AOS 7 V5 long-range frame kit product photo](https://fpvstorerc.com/cdn/shop/files/IFlightAOS7V5FrameKit_4.jpg?v=1750820095&width=1445)
 
 *Real frame example: iFlight AOS 7 V5. Official product specs list 313 mm wheelbase, 254 × 184 × 36 mm overall dimensions, 8 mm arms, and 325 g frame weight. [iFlight specification](https://shop.iflight.com/AOS-7-V5-Frame-Kit-Pro2311). Image hosted by FPV Store RC.*
