@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1240" viewBox="0 0 1800 1240" role="img" aria-labelledby="title desc">
+<title id="title">FPV drone parts — component connections and system paths</title>
+<desc id="desc">High-resolution conceptual map of an FPV quadcopter showing the structural and propulsion components, separate power, radio-control and live-video paths, and optional navigation and recovery modules.</desc>
+<defs>
+ <linearGradient id="header" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#10283f"/><stop offset="1" stop-color="#235779"/></linearGradient>
+ <marker id="powerArrow" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#d97706"/></marker>
+ <marker id="controlArrow" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#1684d8"/></marker>
+ <marker id="videoArrow" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#8b5cf6"/></marker>
+ <marker id="sensorArrow" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#15945b"/></marker>
+ <style>
+ .head{font-family:Arial,Helvetica,sans-serif;font-weight:700;fill:#fff}
+ .title{font-family:Arial,Helvetica,sans-serif;font-size:28px;font-weight:700;fill:#123b5b}
+ .node{font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;fill:#173d59}
+ .body{font-family:Arial,Helvetica,sans-serif;font-size:19px;fill:#405c71}
+ .small{font-family:Arial,Helvetica,sans-serif;font-size:17px;fill:#536d80}
+ .legend{font-family:Arial,Helvetica,sans-serif;font-size:18px;font-weight:700}
+ </style>
+</defs>
+<rect width="1800" height="1240" rx="32" fill="#edf4f9"/>
+<rect width="1800" height="140" rx="32" fill="url(#header)"/><rect y="108" width="1800" height="32" fill="#1a4a6e"/>
+<circle cx="86" cy="69" r="35" fill="#0b72a9" stroke="#80d6ff" stroke-width="3"/>
+<g stroke="#fff" stroke-width="5" stroke-linecap="round" fill="none"><path d="M66 53 L80 68 L66 83 M106 53 L92 68 L106 83"/><path d="M80 68 L92 68"/></g>
+<text x="146" y="61" class="head" font-size="46">FPV DRONE PARTS — THE CONNECTION MAP</text>
+<text x="146" y="101" font-family="Arial,Helvetica,sans-serif" font-size="25" fill="#c9eafa">Follow the energy source, pilot commands, camera picture and optional data separately</text>
+<rect x="1460" y="40" width="285" height="54" rx="27" fill="#e0f2fe" stroke="#7dd3fc" stroke-width="2"/>
+<text x="1602" y="74" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" fill="#075985">CONCEPT MAP</text>
+
+<!-- power / propulsion -->
+<rect x="40" y="170" width="850" height="465" rx="24" fill="#fff" stroke="#c5d7e4" stroke-width="3"/>
+<text x="78" y="215" class="title">01  POWER + PROPULSION</text>
+<text x="78" y="246" class="small">Electrical energy becomes motor torque and propeller thrust.</text>
+<rect x="78" y="280" width="190" height="94" rx="16" fill="#fff0d6" stroke="#f0b35c" stroke-width="3"/>
+<text x="173" y="317" text-anchor="middle" class="node">LiPo battery</text><text x="173" y="346" text-anchor="middle" class="small">Energy source</text>
+<path d="M274 327 L336 327" stroke="#d97706" stroke-width="5" fill="none" marker-end="url(#powerArrow)"/>
+<rect x="350" y="280" width="200" height="94" rx="16" fill="#fff0d6" stroke="#f0b35c" stroke-width="3"/>
+<text x="450" y="317" text-anchor="middle" class="node">ESC / power</text><text x="450" y="346" text-anchor="middle" class="small">Distributes / switches</text>
+<path d="M556 327 L618 327" stroke="#d97706" stroke-width="5" fill="none" marker-end="url(#powerArrow)"/>
+<rect x="632" y="280" width="210" height="94" rx="16" fill="#fff0d6" stroke="#f0b35c" stroke-width="3"/>
+<text x="737" y="317" text-anchor="middle" class="node">4 motors + props</text><text x="737" y="346" text-anchor="middle" class="small">Thrust / movement</text>
+<rect x="78" y="405" width="350" height="170" rx="18" fill="#f8fafc" stroke="#d8e4ed" stroke-width="2"/>
+<text x="104" y="446" class="node">Frame</text><text x="104" y="480" class="body">Holds motors, plates, battery</text><text x="104" y="508" class="body">and mounting hardware.</text><text x="104" y="548" class="small">Size determines fit and prop clearance.</text>
+<rect x="450" y="405" width="392" height="170" rx="18" fill="#f8fafc" stroke="#d8e4ed" stroke-width="2"/>
+<text x="476" y="446" class="node">Regulated power</text><text x="476" y="480" class="body">FC / VTX / receiver rails depend</text><text x="476" y="508" class="body">on the board and build design.</text><text x="476" y="548" class="small">Verify voltage range and pads.</text>
+
+<!-- control path -->
+<rect x="920" y="170" width="840" height="465" rx="24" fill="#fff" stroke="#c5d7e4" stroke-width="3"/>
+<text x="958" y="215" class="title">02  RADIO CONTROL + STABILIZATION</text>
+<text x="958" y="246" class="small">The pilot requests movement; the FC uses sensor feedback.</text>
+<rect x="958" y="280" width="190" height="94" rx="16" fill="#e5f2ff" stroke="#93c5fd" stroke-width="3"/>
+<text x="1053" y="317" text-anchor="middle" class="node">Radio TX</text><text x="1053" y="346" text-anchor="middle" class="small">Pilot stick input</text>
+<path d="M1154 327 L1216 327" stroke="#1684d8" stroke-width="5" fill="none" marker-end="url(#controlArrow)"/>
+<rect x="1230" y="280" width="190" height="94" rx="16" fill="#e5f2ff" stroke="#93c5fd" stroke-width="3"/>
+<text x="1325" y="317" text-anchor="middle" class="node">ELRS RX</text><text x="1325" y="346" text-anchor="middle" class="small">Aircraft receiver</text>
+<path d="M1426 327 L1488 327" stroke="#1684d8" stroke-width="5" fill="none" marker-end="url(#controlArrow)"/>
+<rect x="1502" y="280" width="210" height="94" rx="16" fill="#e5f2ff" stroke="#93c5fd" stroke-width="3"/>
+<text x="1607" y="317" text-anchor="middle" class="node">Flight controller</text><text x="1607" y="346" text-anchor="middle" class="small">Firmware / motor mix</text>
+<path d="M1607 378 L1607 412 L737 412 L737 382" stroke="#1684d8" stroke-width="4" stroke-dasharray="10 7" fill="none" marker-end="url(#controlArrow)"/>
+<text x="1120" y="402" class="small" fill="#075985">Motor command signals to ESC</text>
+<rect x="958" y="445" width="350" height="130" rx="18" fill="#e8f7ef" stroke="#9bd3b5" stroke-width="2"/>
+<text x="984" y="484" class="node">Gyro / accelerometer</text><text x="984" y="518" class="body">Measures motion; gyro feedback</text><text x="984" y="546" class="body">supports fast stabilisation.</text>
+<path d="M1315 510 L1468 510 L1468 383" stroke="#15945b" stroke-width="4" fill="none" marker-end="url(#sensorArrow)"/>
+<text x="1353" y="495" class="small" fill="#166534">sensor data</text>
+<rect x="1330" y="530" width="382" height="45" rx="12" fill="#f8fafc" stroke="#d8e4ed" stroke-width="2"/>
+<text x="1521" y="559" text-anchor="middle" class="small">Backup settings; verify channel mapping + failsafe</text>
+
+<!-- video path -->
+<rect x="40" y="670" width="1100" height="330" rx="24" fill="#fff" stroke="#c5d7e4" stroke-width="3"/>
+<text x="78" y="715" class="title">03  LIVE VIDEO — A SEPARATE SYSTEM</text>
+<text x="78" y="745" class="small">Control radio and FPV picture are different links; matching band alone does not guarantee compatibility.</text>
+<rect x="78" y="780" width="205" height="104" rx="16" fill="#f2ecff" stroke="#c4b5fd" stroke-width="3"/>
+<text x="180" y="819" text-anchor="middle" class="node">FPV camera</text><text x="180" y="849" text-anchor="middle" class="small">Captures view</text>
+<path d="M289 832 L351 832" stroke="#8b5cf6" stroke-width="5" fill="none" marker-end="url(#videoArrow)"/>
+<rect x="365" y="780" width="220" height="104" rx="16" fill="#f2ecff" stroke="#c4b5fd" stroke-width="3"/>
+<text x="475" y="819" text-anchor="middle" class="node">VTX / air unit</text><text x="475" y="849" text-anchor="middle" class="small">Sends video signal</text>
+<path d="M591 832 L653 832" stroke="#8b5cf6" stroke-width="5" fill="none" marker-end="url(#videoArrow)"/>
+<rect x="667" y="780" width="205" height="104" rx="16" fill="#f2ecff" stroke="#c4b5fd" stroke-width="3"/>
+<text x="769" y="819" text-anchor="middle" class="node">Video antenna</text><text x="769" y="849" text-anchor="middle" class="small">RF path</text>
+<path d="M878 832 L940 832" stroke="#8b5cf6" stroke-width="5" fill="none" marker-end="url(#videoArrow)"/>
+<rect x="954" y="780" width="150" height="104" rx="16" fill="#f2ecff" stroke="#c4b5fd" stroke-width="3"/>
+<text x="1029" y="819" text-anchor="middle" class="node">VRX /</text><text x="1029" y="844" text-anchor="middle" class="node">goggles</text><text x="1029" y="868" text-anchor="middle" class="small">Displays video</text>
+<rect x="78" y="910" width="1026" height="55" rx="14" fill="#f8fafc" stroke="#d8e4ed" stroke-width="2"/>
+<text x="100" y="944" class="body">Check ecosystem / generation, connector, voltage, antenna and firmware compatibility.</text>
+
+<!-- optional modules -->
+<rect x="1170" y="670" width="590" height="330" rx="24" fill="#fff" stroke="#c5d7e4" stroke-width="3"/>
+<text x="1208" y="715" class="title">04  OPTIONAL EXTRAS</text>
+<rect x="1208" y="750" width="244" height="88" rx="16" fill="#e8f7ef" stroke="#9bd3b5" stroke-width="2"/>
+<text x="1330" y="786" text-anchor="middle" class="node">GPS / GNSS</text><text x="1330" y="813" text-anchor="middle" class="small">Navigation / position</text>
+<rect x="1474" y="750" width="248" height="88" rx="16" fill="#e8f7ef" stroke="#9bd3b5" stroke-width="2"/>
+<text x="1598" y="786" text-anchor="middle" class="node">Buzzer</text><text x="1598" y="813" text-anchor="middle" class="small">Recovery aid</text>
+<rect x="1208" y="857" width="514" height="108" rx="16" fill="#f8fafc" stroke="#d8e4ed" stroke-width="2"/>
+<text x="1232" y="894" class="node">Blackbox / telemetry</text><text x="1232" y="926" class="body">Helps diagnose logs, link and sensor issues.</text><text x="1232" y="951" class="small">Integration and power requirements vary.</text>
+
+<!-- legend + caution -->
+<rect x="40" y="1025" width="1720" height="155" rx="24" fill="#fff7ed" stroke="#fdba74" stroke-width="3"/>
+<text x="76" y="1068" font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="700" fill="#9a3412">HOW TO READ THIS MAP</text>
+<path d="M80 1104 L160 1104" stroke="#d97706" stroke-width="6" marker-end="url(#powerArrow)"/><text x="177" y="1111" class="legend" fill="#9a5b07">Power / propulsion</text>
+<path d="M410 1104 L490 1104" stroke="#1684d8" stroke-width="6" marker-end="url(#controlArrow)"/><text x="507" y="1111" class="legend" fill="#075985">Radio control / motor commands</text>
+<path d="M855 1104 L935 1104" stroke="#8b5cf6" stroke-width="6" marker-end="url(#videoArrow)"/><text x="952" y="1111" class="legend" fill="#6d28d9">Live video</text>
+<path d="M1165 1104 L1245 1104" stroke="#15945b" stroke-width="6" marker-end="url(#sensorArrow)"/><text x="1262" y="1111" class="legend" fill="#166534">Sensors / optional data</text>
+<text x="76" y="1150" class="small">Conceptual paths, not a wiring schematic. Voltage, pinout, UART, mounting and motor order must come from exact manufacturer documentation.</text>
+</svg>
