@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1220" viewBox="0 0 1800 1220" role="img" aria-labelledby="title desc">
+<title id="title">How FPV drones work — high-resolution flight mechanics</title>
+<desc id="desc">A scalable visual summary of throttle, roll, pitch and yaw, how propellers make thrust, and the feedback loop from radio and receiver through flight controller, ESCs and motors.</desc>
+<defs>
+ <linearGradient id="header" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#082b4c"/><stop offset="1" stop-color="#15567b"/></linearGradient>
+ <marker id="blueArrow" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#1684d8"/></marker>
+ <marker id="greenArrow" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#15945b"/></marker>
+ <marker id="orangeArrow" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#d97706"/></marker>
+ <style>
+ .head{font-family:Arial,Helvetica,sans-serif;font-weight:700;fill:#fff}
+ .title{font-family:Arial,Helvetica,sans-serif;font-size:29px;font-weight:700;fill:#103b5d}
+ .node{font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;fill:#163d5b}
+ .body{font-family:Arial,Helvetica,sans-serif;font-size:20px;fill:#405e73}
+ .small{font-family:Arial,Helvetica,sans-serif;font-size:18px;fill:#526e82}
+ </style>
+</defs>
+<rect width="1800" height="1220" rx="32" fill="#edf4fa"/>
+<rect width="1800" height="135" rx="32" fill="url(#header)"/><rect y="105" width="1800" height="30" fill="#10466f"/>
+<circle cx="86" cy="68" r="34" fill="#0d72ac" stroke="#79d0ff" stroke-width="3"/>
+<g stroke="#fff" stroke-width="5" stroke-linecap="round" fill="none"><path d="M66 53 L80 67 L66 82 M106 53 L92 67 L106 82"/><path d="M80 67 L92 67"/></g>
+<text x="145" y="61" class="head" font-size="46">HOW FPV DRONES WORK</text>
+<text x="145" y="101" font-family="Arial,Helvetica,sans-serif" font-size="25" fill="#c4e8ff">Flight axes • lift and thrust • the feedback-control loop</text>
+<rect x="1460" y="39" width="285" height="54" rx="27" fill="#e0f2fe" stroke="#7dd3fc" stroke-width="2"/>
+<text x="1602" y="73" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" fill="#075985">1800 × 1220 SVG</text>
+
+<!-- Flight axes panel -->
+<rect x="40" y="165" width="850" height="505" rx="26" fill="#fff" stroke="#c5d7e4" stroke-width="3"/>
+<text x="78" y="218" class="title">01  THE FOUR FLIGHT COMMANDS</text>
+<text x="78" y="251" class="small">Mode 2 is common; confirm your radio and FC channel mapping.</text>
+<!-- center top view quad -->
+<g stroke-linecap="round" stroke-linejoin="round">
+ <g fill="#d7e6f1" stroke="#7895aa" stroke-width="4">
+  <ellipse cx="445" cy="355" rx="70" ry="19" transform="rotate(-24 445 355)"/>
+  <ellipse cx="555" cy="355" rx="70" ry="19" transform="rotate(24 555 355)"/>
+  <ellipse cx="445" cy="435" rx="70" ry="19" transform="rotate(24 445 435)"/>
+  <ellipse cx="555" cy="435" rx="70" ry="19" transform="rotate(-24 555 435)"/>
+ </g>
+ <g stroke="#264257" stroke-width="22"><path d="M480 385 L445 355"/><path d="M520 385 L555 355"/><path d="M480 405 L445 435"/><path d="M520 405 L555 435"/></g>
+ <g fill="#132e45" stroke="#94b1c4" stroke-width="4"><circle cx="445" cy="355" r="18"/><circle cx="555" cy="355" r="18"/><circle cx="445" cy="435" r="18"/><circle cx="555" cy="435" r="18"/></g>
+ <path d="M465 380 L535 380 L550 400 L535 420 L465 420 L450 400 Z" fill="#176d50" stroke="#104631" stroke-width="3"/>
+ <path d="M500 370 L500 330" stroke="#1684d8" stroke-width="5" marker-end="url(#blueArrow)"/>
+ <path d="M425 395 L385 395" stroke="#15945b" stroke-width="5" marker-end="url(#greenArrow)"/>
+ <path d="M575 395 L615 395" stroke="#15945b" stroke-width="5" marker-end="url(#greenArrow)"/>
+ <path d="M500 435 L500 469" stroke="#d97706" stroke-width="5" marker-end="url(#orangeArrow)"/>
+</g>
+<text x="500" y="310" text-anchor="middle" class="small">PITCH</text>
+<text x="360" y="388" text-anchor="middle" class="small">ROLL</text>
+<text x="642" y="388" text-anchor="middle" class="small">ROLL</text>
+<text x="500" y="495" text-anchor="middle" class="small">YAW / THROTTLE EFFECTS</text>
+<!-- bottom command cards -->
+<rect x="72" y="530" width="176" height="104" rx="16" fill="#eaf5ff" stroke="#9ac9e8" stroke-width="2"/>
+<text x="160" y="563" text-anchor="middle" class="node">Throttle</text><text x="160" y="591" text-anchor="middle" class="body">More / less</text><text x="160" y="616" text-anchor="middle" class="body">overall thrust</text>
+<rect x="264" y="530" width="176" height="104" rx="16" fill="#e8f8ef" stroke="#9bd9b5" stroke-width="2"/>
+<text x="352" y="563" text-anchor="middle" class="node">Roll</text><text x="352" y="591" text-anchor="middle" class="body">Tilts left /</text><text x="352" y="616" text-anchor="middle" class="body">right</text>
+<rect x="456" y="530" width="176" height="104" rx="16" fill="#f3e8ff" stroke="#c6b3f6" stroke-width="2"/>
+<text x="544" y="563" text-anchor="middle" class="node">Pitch</text><text x="544" y="591" text-anchor="middle" class="body">Nose forward</text><text x="544" y="616" text-anchor="middle" class="body">/ backward</text>
+<rect x="648" y="530" width="176" height="104" rx="16" fill="#fff5e5" stroke="#f0ce95" stroke-width="2"/>
+<text x="736" y="563" text-anchor="middle" class="node">Yaw</text><text x="736" y="591" text-anchor="middle" class="body">Rotates nose</text><text x="736" y="616" text-anchor="middle" class="body">left / right</text>
+
+<!-- Thrust panel -->
+<rect x="915" y="165" width="845" height="505" rx="26" fill="#fff" stroke="#c5d7e4" stroke-width="3"/>
+<text x="953" y="218" class="title">02  LIFT AND THRUST</text>
+<text x="953" y="251" class="small">Propellers accelerate air downward; the reaction force is upward thrust.</text>
+<!-- side quad -->
+<g stroke-linecap="round" stroke-linejoin="round">
+ <path d="M1135 382 L1285 382" stroke="#263f54" stroke-width="32"/>
+ <rect x="1180" y="351" width="70" height="60" rx="9" fill="#176d50" stroke="#104631" stroke-width="4"/>
+ <rect x="1200" y="372" width="30" height="18" rx="3" fill="#d5f5e3"/>
+ <rect x="1090" y="346" width="30" height="72" rx="8" fill="#f59e0b" stroke="#9a5b0b" stroke-width="3"/>
+ <path d="M1065 347 L1145 347" stroke="#7895aa" stroke-width="7"/>
+ <ellipse cx="1105" cy="334" rx="80" ry="15" fill="#d7e6f1" stroke="#7895aa" stroke-width="3"/>
+ <!-- arrows -->
+ <path d="M1060 290 L1060 337" stroke="#d97706" stroke-width="5" marker-end="url(#orangeArrow)"/>
+ <path d="M1106 290 L1106 337" stroke="#d97706" stroke-width="5" marker-end="url(#orangeArrow)"/>
+ <path d="M1060 435 L1060 490" stroke="#1684d8" stroke-width="6" marker-end="url(#blueArrow)"/>
+ <path d="M1106 435 L1106 490" stroke="#1684d8" stroke-width="6" marker-end="url(#blueArrow)"/>
+</g>
+<text x="1156" y="300" class="body" font-weight="700" fill="#92400e">Air pushed down</text>
+<text x="1156" y="467" class="body" font-weight="700" fill="#075985">Thrust pushes up</text>
+<rect x="1330" y="292" width="380" height="80" rx="16" fill="#eaf5ff" stroke="#a4cde8" stroke-width="2"/>
+<text x="1360" y="324" class="node">Climb</text><text x="1360" y="351" class="body">Thrust greater than weight</text>
+<rect x="1330" y="391" width="380" height="80" rx="16" fill="#e8f8ef" stroke="#9bd9b5" stroke-width="2"/>
+<text x="1360" y="423" class="node">Hover</text><text x="1360" y="450" class="body">Thrust balances weight</text>
+<rect x="1330" y="490" width="380" height="80" rx="16" fill="#fff5e5" stroke="#f0ce95" stroke-width="2"/>
+<text x="1360" y="522" class="node">Descend</text><text x="1360" y="549" class="body">Thrust less than weight</text>
+<text x="955" y="623" class="small">Tilting redirects part of the thrust sideways, accelerating the quad horizontally.</text>
+
+<!-- Feedback loop -->
+<rect x="40" y="700" width="1720" height="405" rx="26" fill="#fff" stroke="#c5d7e4" stroke-width="3"/>
+<text x="78" y="753" class="title">03  THE CONTROL LOOP — FROM STICK INPUT TO MOVEMENT</text>
+<text x="78" y="785" class="small">The flight controller mixes pilot commands with sensor feedback to update motor outputs rapidly.</text>
+<g>
+ <rect x="78" y="830" width="225" height="118" rx="17" fill="#eaf5ff" stroke="#a4cde8" stroke-width="2"/>
+ <text x="190" y="868" text-anchor="middle" class="node">Radio</text><text x="190" y="900" text-anchor="middle" class="body">Stick commands</text><text x="190" y="925" text-anchor="middle" class="body">throttle/yaw/pitch/roll</text>
+ <path d="M308 889 L351 889" stroke="#1684d8" stroke-width="5" marker-end="url(#blueArrow)"/>
+ <rect x="362" y="830" width="205" height="118" rx="17" fill="#eaf5ff" stroke="#a4cde8" stroke-width="2"/>
+ <text x="464" y="868" text-anchor="middle" class="node">Receiver</text><text x="464" y="900" text-anchor="middle" class="body">Passes control</text><text x="464" y="925" text-anchor="middle" class="body">channel data</text>
+ <path d="M572 889 L615 889" stroke="#1684d8" stroke-width="5" marker-end="url(#blueArrow)"/>
+ <rect x="626" y="830" width="225" height="118" rx="17" fill="#e8f8ef" stroke="#9bd9b5" stroke-width="2"/>
+ <text x="738" y="868" text-anchor="middle" class="node">Flight controller</text><text x="738" y="900" text-anchor="middle" class="body">Mix + stabilize</text><text x="738" y="925" text-anchor="middle" class="body">using gyro feedback</text>
+ <path d="M856 889 L899 889" stroke="#15945b" stroke-width="5" marker-end="url(#greenArrow)"/>
+ <rect x="910" y="830" width="205" height="118" rx="17" fill="#e8f8ef" stroke="#9bd9b5" stroke-width="2"/>
+ <text x="1012" y="868" text-anchor="middle" class="node">ESCs</text><text x="1012" y="900" text-anchor="middle" class="body">Apply motor</text><text x="1012" y="925" text-anchor="middle" class="body">power commands</text>
+ <path d="M1120 889 L1163 889" stroke="#15945b" stroke-width="5" marker-end="url(#greenArrow)"/>
+ <rect x="1174" y="830" width="205" height="118" rx="17" fill="#e8f8ef" stroke="#9bd9b5" stroke-width="2"/>
+ <text x="1276" y="868" text-anchor="middle" class="node">Motors + props</text><text x="1276" y="900" text-anchor="middle" class="body">Generate thrust</text><text x="1276" y="925" text-anchor="middle" class="body">and torque</text>
+ <path d="M1384 889 L1427 889" stroke="#15945b" stroke-width="5" marker-end="url(#greenArrow)"/>
+ <rect x="1438" y="830" width="245" height="118" rx="17" fill="#fff5e5" stroke="#f0ce95" stroke-width="2"/>
+ <text x="1560" y="868" text-anchor="middle" class="node">Drone movement</text><text x="1560" y="900" text-anchor="middle" class="body">New attitude / speed</text><text x="1560" y="925" text-anchor="middle" class="body">sensed by gyro</text>
+ <!-- feedback arrow -->
+ <path d="M1560 953 L1560 1010 L738 1010 L738 953" stroke="#d97706" stroke-width="5" fill="none" stroke-dasharray="12 8" marker-end="url(#orangeArrow)"/>
+ <text x="1147" y="1045" text-anchor="middle" class="body" font-weight="700" fill="#92400e">Sensor feedback closes the loop</text>
+</g>
+<rect x="40" y="1127" width="1720" height="62" rx="18" fill="#082b4c"/>
+<text x="76" y="1166" class="head" font-size="23">Learning diagram only: check the exact firmware motor map, wiring, pinouts, failsafe and setup instructions for your aircraft.</text>
+</svg>
