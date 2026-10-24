@@ -180,10 +180,20 @@ for page in "$WIKI_DIR"/*.md; do
     temp_page="$page.tmp"
     while IFS= read -r line || [[ -n "$line" ]]; do
       line="${line//"]($image_url)"/"]($wiki_path)"}"
+      html_from="src=\"$image_url\""
+      html_to="src=\"$wiki_path\""
+      line="${line//"$html_from"/"$html_to"}"
       printf '%s\n' "$line"
     done < "$page" > "$temp_page"
     mv "$temp_page" "$page"
-  done < <(grep -Eo '!\[[^]]*\]\(https?://[^)]*\)' "$page" | sed -E 's/^!\[[^]]*\]\((https?:\/\/[^)]*)\)$/\1/' | sort -u)
+  done < <(
+    {
+      grep -Eo '!\[[^]]*\]\(https?://[^)]*\)' "$page" |
+        sed -E 's/^!\[[^]]*\]\((https?:\/\/[^)]*)\)$/\1/'
+      grep -Eo '<img src="https?://[^"]+"' "$page" |
+        sed 's/^<img src="//; s/"$//'
+    } | sort -u
+  )
 done
 
 # Internal Wiki links point to page slugs, not the source Markdown filenames.
