@@ -106,3 +106,12 @@ The source SVG dimensions are annotated for learning and comparison only. Manufa
 | `fpv-drone-beginner-guide.webp` | [FPV System Basics](../wiki-source/FPV-System-Basics.md) | Supplied beginner visual guide to quadcopter parts, flight movement, control and video systems |
 | `fpv-drone-movements-guide.webp` | [How FPV Drones Work](../wiki-source/How-FPV-Drones-Work.md) | Supplied diagram covering drone axes, propeller directions, lift and movement |
 | `fpv-drone-control-loop-guide.webp` | [How FPV Drones Work](../wiki-source/How-FPV-Drones-Work.md) | Supplied overview of the control loop, radio/video systems, components and build examples |
+
+
+## ELRS, Betaflight and component-map diagrams (25 October 2026)
+
+- `expresslrs-link-basics-high-resolution.svg` — 1800 × 1240 scalable diagram embedded at `width="1200"` in [ExpressLRS Basics](../wiki-source/ExpressLRS-Basics.md); shows transmitter, RF link, receiver-to-FC path, binding checks and failsafe verification.
+- `betaflight-basics-high-resolution.svg` — 1800 × 1240 scalable diagram embedded at `width="1200"` in [Betaflight Basics](../wiki-source/Betaflight-Basics.md); shows the safe first-setup sequence and key configurator areas.
+- `fpv-drone-components-connection-map-high-resolution.svg` — 1800 × 1240 scalable diagram embedded at `width="1200"` in [Drone Parts — One by One](../wiki-source/Drone-Parts-One-by-One.md); separates power/propulsion, radio-control/stabilisation, live-video and optional data paths.
+
+These are educational conceptual diagrams—not universal wiring schematics, board pinouts, motor-order references or substitutes for exact manufacturer manuals and current firmware documentation.
