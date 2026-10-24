@@ -142,7 +142,7 @@ const cases = [
   {
     name: 'dji-o3-o4-integration',
     url: `${base}/DJI-O3-O4-Goggles-and-Air-Unit-Integration`,
-    required: ['DJI O3 / O4 FPV Air Units and Goggles', 'Real product photo from the official DJI Store product listing'],
+    required: ['DJI O3 / O4 FPV Air Units and Goggles', 'Product thumbnail hosted by FPVGuru'],
     minimumTables: 0,
     expandedImages: ['fpv-section-video-system.svg'],
     requiredImages: ['fpv-section-video-system.svg', 'dji-o4-air-unit-pro-_main-image_'],
