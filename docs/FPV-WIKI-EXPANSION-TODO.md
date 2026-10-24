@@ -798,3 +798,12 @@ Current animation is a simple concept loop for rotor/thrust orientation, not a p
 - [x] Add enlarged width=1200 topic-specific SVG panels across all 10 drone class/frame guides, 9 camera/video/goggles guides, the antenna guide, and GPS/Flight Controllers.
 - [x] Update verifier assertions for required local images and enlarged-size rendering; enable local downloading of the official DJI/HDZero imagery that failed remote-load checks.
 - [ ] Publish the latest source changes and inspect the full live Playwright report. Run #28 failed for two image-load assertions, so do not treat the new high-resolution rollout as live-verified until the next run passes.
+
+### High-resolution diagrams for flight mechanics, Pocket controls and simulator practice — source committed
+
+- [x] Add an original enlarged SVG for the How FPV Drones Work guide (axes, thrust and control feedback loop).
+- [x] Add an original enlarged RadioMaster Pocket control-recognition map with Mode 2 labels and the simulator-vs-real-aircraft distinction.
+- [x] Add an original enlarged Simulator Training roadmap showing staged drills and repeatable practice routines.
+- [x] Extend browser verification to require Wiki-local image files, declared width="1200", and rendered desktop width >=800 CSS pixels.
+- [x] Fix run #29 image failures in Getting Started's local SVG path and the DJI O4 product-image format URL.
+- [ ] Republish and inspect full Playwright results for How FPV Drones Work, RadioMaster Pocket, Simulator Training, and the other expanded pages.
