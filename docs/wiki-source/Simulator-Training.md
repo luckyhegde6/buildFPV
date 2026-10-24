@@ -16,11 +16,11 @@ Aim for smooth, repeatable control rather than speed. Practise for 30–45 minut
 
 ## Enlarged control visuals
 
-<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-section-axes-movements.svg" alt="Enlarged throttle, yaw, pitch and roll movement guide" width="1200" />
+<img src="images/fpv-section-axes-movements.svg" alt="Enlarged throttle, yaw, pitch and roll movement guide" width="1200" />
 
 *Use this panel to name the command before practising it in the simulator.*
 
-<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-section-flight-modes.svg" alt="Comparison of Angle, Horizon, Acro or Rate and GPS Rescue modes" width="1200" />
+<img src="images/fpv-section-flight-modes.svg" alt="Comparison of Angle, Horizon, Acro or Rate and GPS Rescue modes" width="1200" />
 
 *Mode availability and behavior vary by simulator, firmware and craft preset.*
 
