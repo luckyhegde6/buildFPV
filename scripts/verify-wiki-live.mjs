@@ -98,8 +98,7 @@ const cases = [
     url: `${base}/Drone-Coding-and-Machine-Learning`,
     required: ['Drone Coding and Machine Learning Learning Path', 'How to Program a Tello Drone With Python', 'Learn Drone Programming with Python', 'Suggested project ladder'],
     minimumTables: 0,
-  },,
-
+  },
   {
     name: 'drone-categories',
     url: `${base}/Drone-Categories-and-Size-Guide`,
