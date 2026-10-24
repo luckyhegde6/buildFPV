@@ -20,4 +20,17 @@ if [[ "$actual" != "$expected" ]]; then
   exit 1
 fi
 
-printf 'Wiki link rewrite test passed.\n'
+# Regression test for HTML image sizing and Wiki-local asset rewrite.
+image_url='https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-drone-movements-guide.webp'
+wiki_path='images/fpv-drone-movements-guide.webp'
+html_input='<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-drone-movements-guide.webp" alt="movement" width="1200" />'
+html_from="src=\"$image_url\""
+html_to="src=\"$wiki_path\""
+html_actual="${html_input//"$html_from"/"$html_to"}"
+html_expected='<img src="images/fpv-drone-movements-guide.webp" alt="movement" width="1200" />'
+if [[ "$html_actual" != "$html_expected" ]]; then
+  printf 'HTML image rewrite regression.\\nExpected: %s\\nActual:   %s\\n' "$html_expected" "$html_actual" >&2
+  exit 1
+fi
+
+printf 'Wiki link and image rewrite tests passed.\\n'
