@@ -776,3 +776,10 @@ Current animation is a simple concept loop for rotor/thrust orientation, not a p
 - [x] Preserve suitable real model photos on existing tinywhoop, cinewhoop, 5-inch GEPRC, 7-inch iFlight, antenna/VRX and GPS/FC pages. Use exact-model captions; do not imply cross-ecosystem video compatibility.
 - [x] Re-fetch all 21 requested docs/wiki-source files and confirm each contains at least one non-SVG real product photo.
 - [ ] Trigger the existing publish/verify workflow and inspect actual results for published routes and all product CDN images. Source-level presence is not evidence of live image loading.
+
+### Official real-world manufacturer photos — complete
+
+- Added BETAFPV product images (Air65 II, Meteor75 Pro II, Pavo25/Pavo25 V2 frame, Pavo35 quad/frame, X-Knight 5 quad/frame) and a CADDXFPV / Walksnail Avatar GT2 video-system image to all ten requested class/frame guides.
+- Product captions link to official pages; Caddx GT2 is not described as a full aircraft or frame. 7-inch frame photos remain the accurate existing iFlight AOS 7 reference.
+- The publisher localizes official BETAFPV/CADDXFPV CDN images to Wiki `images/`; CI's broader external-host skip remains in place for other sites.
+- Publish and Playwright checks passed in https://github.com/luckyhegde6/buildFPV/actions/runs/40075353669.
