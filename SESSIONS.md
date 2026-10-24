@@ -238,3 +238,12 @@ This is a chronological, append-oriented engineering log. New work should append
 - Published-source changes place the overview at width=1200 on FPV System Basics, Home, How FPV Drones Work, Drone Parts — One by One, and Getting Started. The 10 drone class/frame guides now use 1200-wide drone-overview SVG panels; the video/goggles/camera guides use the video-system panel, Video Antennas uses the antenna-types panel, and GPS/FC uses both FC anatomy and GPS-navigation panels.
 - Updated `docs/assets/README.md` with the new asset and scope. Extended `scripts/verify-wiki-live.mjs` to require the relevant SVGs and check both the width attribute and rendered size.
 - Latest live result before the enlarged panel rollout: run #28 published the product photo sources but failed the new Playwright assertions because the external DJI and HDZero product images did not load. Added explicit official-host download exceptions in `scripts/publish-wiki.sh` so those product images become Wiki-local. Fresh publication/browser verification is pending.
+
+## 2026-10-24 — Added enlarged high-resolution diagrams to three more beginner pages
+
+- **How FPV Drones Work:** added an original 1800×1220 SVG covering roll/pitch/yaw/throttle, lift/thrust balance and the receiver/flight-controller/ESC/motor feedback loop, embedded at width=1200.
+- **RadioMaster Pocket Button Guide:** created an original 1800×1240 control-recognition schematic showing switches, Mode 2 stick commands, menu keys, USB simulator setup vs the real-aircraft ELRS model and key precautions. Replaced the small top image with a width=1200 embed; retained a link to the earlier compact map.
+- **Simulator Training:** created an original 1800×1220 visual roadmap showing typical Mode 2 mapping, the drill sequence and a repeatable practice routine, embedded at width=1200. Existing axes/mode panels remain enlarged.
+- Added two new SVG assets and a README asset registry entry; the live verifier now asserts local Wiki loading and enlarged image widths on all three target pages.
+- Fixed two run #29 image issues for the next publish: direct Wiki-local src on Getting Started (the source-asset URL had remained external on that route), and use a genuine PNG source URL for the DJI O4 cover asset rather than requesting WebP with a .png pathname.
+- Publication/browser verification for this batch is pending; a fresh workflow run is required.
