@@ -1,5 +1,9 @@
 # FPV Camera Selection Guide — Tinywhoop, Racing, Freestyle, Cine and Long-Range
 
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-section-video-system.svg" alt="Enlarged high-resolution FPV camera to goggles signal path" width="1200" />
+
+*High-resolution overview of where the camera sits in the complete video system. Live FPV view, goggles DVR and onboard recording are separate paths.*
+
 ![Analog and digital camera/video system paths](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/analog-vs-digital-video.svg)
 
 ![CADDXFPV Ratel 2 analog FPV camera product photo](https://www.caddxfpv.com/cdn/shop/files/CADDXFPVRatel2Camera_c2e413af-99a4-4978-9367-b3ae881ae02f.png?v=1744944069&width=1200)
