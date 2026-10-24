@@ -1,5 +1,9 @@
 # Simulator Training
 
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-simulator-training-high-resolution.svg" alt="High-resolution FPV simulator roadmap with Mode 2 stick mapping, beginner drill progression and a repeatable practice session loop" width="1200" />
+
+*High-resolution practice roadmap. Keep drills easy enough to repeat cleanly; the sequence is a training aid, not a real-flight safety checklist.*
+
 Aim for smooth, repeatable control rather than speed. Practise for 30–45 minutes at a time; stop when fatigue makes inputs sloppy.
 
 > [!IMPORTANT]
