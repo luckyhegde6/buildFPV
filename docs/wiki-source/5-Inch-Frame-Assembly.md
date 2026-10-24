@@ -6,6 +6,11 @@
 
 *Real product example: GEPRC GEP-MK5X O3, a 5-inch squashed-X design. Wheelbase 225 mm, overall dimensions 214 × 168 × 42 mm and 30.5 × 30.5 mm FC mounting according to the maker. [GEPRC frame specs](https://geprc.com/product/gep-mk5x-o3-frame/).*
 
+### BETAFPV carbon-frame example
+
+<img src="https://betafpv.com/cdn/shop/products/74b96dbb2d19db9758ba306fc55ad040_4ce30fae-a379-4643-8a53-8e0af990c663.jpg?v=1594375273" alt="BETAFPV X-Knight 5-inch carbon-fibre frame kit product photo" width="800" />
+*Manufacturer photo: [BETAFPV X-Knight Carbon Fiber 5-inch Frame V2 Kit](https://betafpv.com/products/x-knight-carbon-fiber-5-frame-v2-kit). This is a real 5-inch frame kit with separate arms and plates. It is an additional example, not the same frame as the GEPRC GEP-MK5X above; confirm stack mounting, motor-hole pattern, arm thickness and dimensions against the exact model.*
+
 A nominal 5-inch propeller is 127 mm in diameter, but the frame wheelbase and motor geometry vary by model. Many 5-inch builds use open props and share parts across racing and freestyle, yet their priorities can differ substantially.
 
 ## 1. Racing vs freestyle frame priorities
