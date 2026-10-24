@@ -1,5 +1,9 @@
 # 7-Inch Long-Range FPV Frame — Selection, Assembly and Mission Planning
 
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-section-drone-overview.svg" alt="Enlarged high-resolution vector overview of long-range FPV aircraft components" width="1200" />
+
+*High-resolution assembly orientation only. Verify 7-inch frame dimensions, battery support, antenna placement and payload fit against the exact manual.*
+
 ![7-inch frame class and example wheelbase reference](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/frame-size-reference.svg)
 
 ![Product photo of iFlight AOS 7 V5 long-range frame kit](https://fpvstorerc.com/cdn/shop/files/IFlightAOS7V5FrameKit_4.jpg?v=1750820095&width=1445)
