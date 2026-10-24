@@ -223,3 +223,11 @@ This is a chronological, append-oriented engineering log. New work should append
 - Expanded live Playwright page assertions to cover all 10 guides and expected official images.
 - [Actions run #26](https://github.com/luckyhegde6/buildFPV/actions/runs/40075353669) succeeded for both publish and browser verification. All 10 targeted guides passed with no browser assertion errors.
 - The 7-inch guides retain their existing iFlight AOS 7 frame photo; the Caddx GT2 image is clearly captioned as a video component, not a frame/drone.
+
+## 2026-10-24 — Publish result review, CADDX CDN correction and expanded route checks
+
+- Workflow run #27 (https://github.com/luckyhegde6/buildFPV/actions/runs/40075613106) pushed the existing Wiki successfully and its configured Playwright job returned WIKI_PLAYWRIGHT_PASSED=true. The report tested the current baseline subset; a number of page loads emitted 404 console messages, but configured required-content, expected-image and local-image checks reported no errors.
+- Inspected the publisher logs. The skip-external-download setting correctly localized the BETAFPV Pavo25 V2 frame/quad and CADDX Ratel2 photo, but kept CADDX Avatar Pro Kit and Goggles X as external URLs because they used the non-www CDN hostname.
+- Updated the source URLs to https://www.caddxfpv.com/cdn/shop/ in the video matrix, camera-selection, analog-vs-digital, general goggles/VRX and Walksnail integration guides, allowing the existing publisher whitelist to localize those images.
+- Extended scripts/verify-wiki-live.mjs to test the additional video-system overview, camera selection, analog/digital, analog goggles, general goggles/VRX, DJI, Walksnail, HDZero, video antennas and GPS/FC pages. Added checks for required local product photos plus loaded external DJI/HDZero product images.
+- The extended verifier and corrected image URLs are committed to main, but require a fresh workflow run before their live state can be marked verified.
