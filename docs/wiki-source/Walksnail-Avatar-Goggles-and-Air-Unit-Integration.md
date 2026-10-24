@@ -2,6 +2,14 @@
 
 ![Goggles and VRX compatibility map](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/goggles-vrx-integration.svg)
 
+![CADDXFPV Walksnail Avatar HD Pro Kit product photo]( https://caddxfpv.com/cdn/shop/products/Pro_62561ada-8f5a-4ec5-a416-cba1d0b7dd77.jpg?v=1680772446&width=2400 )
+
+*Aircraft-side example: [Walksnail Avatar HD Pro Kit](https://www.caddxfpv.com/products/walksnail-avatar-hd-pro-kit). Verify the exact camera, air-unit revision, input voltage and goggles support before purchase.*
+
+![CADDXFPV Walksnail Avatar Goggles X product photo](https://caddxfpv.com/cdn/shop/files/041778b25bd172e599bd84f495f87b2d.jpg?v=1698284376&width=2400)
+
+*Ground-side example: [Walksnail Avatar Goggles X](https://www.caddxfpv.com/products/walksnail-avatar-hd-goggles-x). Check the current manufacturer compatibility guide for exact generation and firmware support.*
+
 Walksnail Avatar is a digital FPV video family from CADDXFPV/Walksnail. There are multiple camera/air-unit and goggles/receiver generations. Do not treat every Walksnail-labelled product as automatically compatible: use the official matrix for the exact model and firmware.
 
 ## 1. Pick the aircraft-side system
