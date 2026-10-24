@@ -790,3 +790,11 @@ Current animation is a simple concept loop for rotor/thrust orientation, not a p
 - [x] Correct official CADDX CDN image URLs to the allowlisted www.caddxfpv.com host in the five affected guides so CI can localize the Pro Kit and Goggles X photos into Wiki images/.
 - [x] Extend scripts/verify-wiki-live.mjs to cover all additional listed video/goggles/GPS guides and assert that their expected product photos load.
 - [ ] Run the updated publish workflow and review its new Playwright report/artifact before marking all 21 requested pages live-image verified.
+
+### High-resolution overview and enlarged visuals across Wiki pages — source committed, live verification pending
+
+- [x] Create editable 1800×1240 vector recreation `docs/assets/fpv-system-basics-high-resolution.svg` for the full FPV system overview.
+- [x] Add the overview at width=1200 to FPV System Basics, Home, How FPV Drones Work, Drone Parts — One by One, and Getting Started.
+- [x] Add enlarged width=1200 topic-specific SVG panels across all 10 drone class/frame guides, 9 camera/video/goggles guides, the antenna guide, and GPS/Flight Controllers.
+- [x] Update verifier assertions for required local images and enlarged-size rendering; enable local downloading of the official DJI/HDZero imagery that failed remote-load checks.
+- [ ] Publish the latest source changes and inspect the full live Playwright report. Run #28 failed for two image-load assertions, so do not treat the new high-resolution rollout as live-verified until the next run passes.
