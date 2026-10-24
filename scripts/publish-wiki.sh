@@ -155,7 +155,13 @@ for page in "$WIKI_DIR"/*.md; do
         continue
       fi
     else
-      if [[ "${BUILDFPV_SKIP_EXTERNAL_IMAGE_DOWNLOADS:-0}" == "1" ]]; then
+      # When broad third-party image downloads are disabled in CI, still
+      # localize explicitly requested official BETAFPV / CADDXFPV product photos.
+      # This keeps those product images stable in the Wiki without enabling
+      # downloads from every external image host.
+      if [[ "${BUILDFPV_SKIP_EXTERNAL_IMAGE_DOWNLOADS:-0}" == "1" ]] &&
+         [[ "$image_url" != https://betafpv.com/cdn/shop/* ]] &&
+         [[ "$image_url" != https://www.caddxfpv.com/cdn/shop/* ]]; then
         echo "Skipping external image download; retaining source URL: $image_url"
         continue
       fi
