@@ -29,8 +29,8 @@ html_to="src=\"$wiki_path\""
 html_actual="${html_input//"$html_from"/"$html_to"}"
 html_expected='<img src="images/fpv-drone-movements-guide.webp" alt="movement" width="1200" />'
 if [[ "$html_actual" != "$html_expected" ]]; then
-  printf 'HTML image rewrite regression.\\nExpected: %s\\nActual:   %s\\n' "$html_expected" "$html_actual" >&2
+  printf 'HTML image rewrite regression.\nExpected: %s\nActual:   %s\n' "$html_expected" "$html_actual" >&2
   exit 1
 fi
 
-printf 'Wiki link and image rewrite tests passed.\\n'
+printf 'Wiki link and image rewrite tests passed.\n'
