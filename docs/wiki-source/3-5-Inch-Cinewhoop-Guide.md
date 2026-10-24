@@ -1,5 +1,9 @@
 # 3.5-Inch Cinewhoop — Filming Use Cases, Payload and Trade-offs
 
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-section-drone-overview.svg" alt="Enlarged high-resolution vector overview of FPV aircraft components and payload locations" width="1200" />
+
+*High-resolution component map. Cinewhoop ducts, camera mount and payload vary by frame; this visual is not a mechanical drawing.*
+
 ![BETAFPV Pavo35 cinewhoop frame photo](https://betafpv.com/cdn/shop/files/d2e1b9aec379546f426ce88c187b9234_7825ca02-2d37-40da-a299-8051a920ac4c.jpg?v=1777538418&width=1445)
 
 *Real frame example: BETAFPV Pavo35. The manufacturer lists a 148 mm wheelbase, 92 mm ducts, 113.9 g bare-frame weight, and support for specified camera/video payload options. [Official frame specification](https://betafpv.com/products/pavo35-brushless-whoop-frame).*
