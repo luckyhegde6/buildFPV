@@ -44,6 +44,10 @@ In Betaflight, enable the appropriate GPS peripheral on the correct UART and sel
 
 ![GPS data route: satellites to GPS module to flight controller](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/gps-data-chain.svg)
 
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-section-gps-navigation.svg" alt="Enlarged high-resolution vector diagram of GPS satellites, the GNSS module and navigation data going to the flight controller" width="1200" />
+
+*High-resolution GNSS data-path overview. Satellite navigation data reaches the flight controller, but rescue behavior depends on supported firmware and careful configuration/testing.*
+
 ## 4. What GPS can help with
 
 When supported and correctly configured, GPS data can be used for OSD position/speed/distance, flight logs and features such as GPS Rescue. GPS is not required for many freestyle/racing quads and is not the fast sensor that controls each motor wobble.
