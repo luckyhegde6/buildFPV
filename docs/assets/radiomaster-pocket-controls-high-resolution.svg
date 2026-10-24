@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1240" viewBox="0 0 1800 1240" role="img" aria-labelledby="title desc">
+<title id="title">RadioMaster Pocket — high-resolution control map</title>
+<desc id="desc">A scalable schematic reference for the RadioMaster Pocket front controls, Mode 2 stick functions, menu/navigation buttons, switches, rotary control and the difference between USB simulator use and real-aircraft ELRS operation.</desc>
+<defs>
+ <linearGradient id="header" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#10283f"/><stop offset="1" stop-color="#235779"/></linearGradient>
+ <linearGradient id="radio" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f6f8fb"/><stop offset="1" stop-color="#cbd5e1"/></linearGradient>
+ <marker id="call" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#1684d8"/></marker>
+ <style>
+ .head{font-family:Arial,Helvetica,sans-serif;font-weight:700;fill:#fff}
+ .section{font-family:Arial,Helvetica,sans-serif;font-size:28px;font-weight:700;fill:#123b5b}
+ .label{font-family:Arial,Helvetica,sans-serif;font-size:21px;font-weight:700;fill:#173d59}
+ .body{font-family:Arial,Helvetica,sans-serif;font-size:19px;fill:#405c71}
+ .small{font-family:Arial,Helvetica,sans-serif;font-size:17px;fill:#536d80}
+ .callout{stroke:#1684d8;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}
+ </style>
+</defs>
+<rect width="1800" height="1240" rx="32" fill="#edf4f9"/>
+<rect width="1800" height="140" rx="32" fill="url(#header)"/><rect y="108" width="1800" height="32" fill="#1a4a6e"/>
+<circle cx="86" cy="69" r="35" fill="#0b72a9" stroke="#80d6ff" stroke-width="3"/>
+<path d="M68 53 L82 68 L68 83 M104 53 L90 68 L104 83 M82 68 L90 68" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round"/>
+<text x="146" y="61" class="head" font-size="45">RADIOMASTER POCKET</text>
+<text x="146" y="101" font-family="Arial,Helvetica,sans-serif" font-size="24" fill="#c9eafa">High-resolution control reference • typical Mode 2 layout</text>
+<rect x="1465" y="41" width="275" height="53" rx="26" fill="#e0f2fe" stroke="#7dd3fc" stroke-width="2"/>
+<text x="1602" y="74" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" fill="#075985">SCHEMATIC VIEW</text>
+
+<!-- left panel -->
+<rect x="40" y="170" width="850" height="845" rx="26" fill="#fff" stroke="#c5d7e4" stroke-width="3"/>
+<text x="78" y="220" class="section">01  IDENTIFY THE FRONT CONTROLS</text>
+<text x="78" y="253" class="small">Simplified layout; physical details can vary by version.</text>
+<!-- radio silhouette -->
+<g stroke-linecap="round" stroke-linejoin="round">
+ <!-- antennas and shoulder switches -->
+ <path d="M330 330 L292 255" stroke="#334155" stroke-width="18"/><path d="M292 255 L277 228" stroke="#64748b" stroke-width="9"/>
+ <path d="M598 330 L636 255" stroke="#334155" stroke-width="18"/><path d="M636 255 L651 228" stroke="#64748b" stroke-width="9"/>
+ <rect x="300" y="320" width="326" height="490" rx="54" fill="url(#radio)" stroke="#64748b" stroke-width="5"/>
+ <path d="M328 342 Q463 370 598 342 L608 383 L318 383 Z" fill="#94a3b8" stroke="#64748b" stroke-width="3"/>
+ <!-- switches -->
+ <g fill="#475569" stroke="#0f172a" stroke-width="3">
+  <rect x="326" y="302" width="34" height="50" rx="11"/><rect x="365" y="302" width="34" height="50" rx="11"/>
+  <rect x="533" y="302" width="34" height="50" rx="11"/><rect x="572" y="302" width="34" height="50" rx="11"/>
+ </g>
+ <g fill="#22c55e" stroke="#166534" stroke-width="2">
+  <circle cx="343" cy="315" r="7"/><circle cx="382" cy="315" r="7"/><circle cx="550" cy="315" r="7"/><circle cx="589" cy="315" r="7"/>
+ </g>
+ <!-- screen -->
+ <path d="M410 390 L516 390 L528 475 L398 475 Z" fill="#334155" stroke="#475569" stroke-width="4"/>
+ <rect x="416" y="399" width="94" height="62" rx="5" fill="#0f172a" stroke="#93c5fd" stroke-width="2"/>
+ <text x="463" y="425" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#93c5fd">MODEL</text>
+ <text x="463" y="443" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#e2e8f0">SETUP / TELE</text>
+ <!-- gimbal housings -->
+ <rect x="328" y="492" width="118" height="124" rx="22" fill="#94a3b8" stroke="#475569" stroke-width="4"/>
+ <rect x="479" y="492" width="118" height="124" rx="22" fill="#94a3b8" stroke="#475569" stroke-width="4"/>
+ <circle cx="387" cy="553" r="43" fill="#334155" stroke="#0f172a" stroke-width="4"/>
+ <circle cx="387" cy="553" r="26" fill="#cbd5e1" stroke="#64748b" stroke-width="4"/>
+ <path d="M387 533 L387 573 M367 553 L407 553" stroke="#475569" stroke-width="3"/>
+ <circle cx="538" cy="553" r="43" fill="#334155" stroke="#0f172a" stroke-width="4"/>
+ <circle cx="538" cy="553" r="26" fill="#cbd5e1" stroke="#64748b" stroke-width="4"/>
+ <path d="M538 533 L538 573 M518 553 L558 553" stroke="#475569" stroke-width="3"/>
+ <!-- menu buttons -->
+ <g fill="#f8fafc" stroke="#475569" stroke-width="3">
+  <circle cx="350" cy="647" r="16"/><circle cx="398" cy="647" r="16"/><circle cx="446" cy="647" r="16"/>
+  <circle cx="500" cy="647" r="16"/><circle cx="548" cy="647" r="16"/><circle cx="596" cy="647" r="16"/>
+  <circle cx="463" cy="701" r="27"/>
+ </g>
+ <g font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700" fill="#334155" text-anchor="middle">
+  <text x="350" y="652">SYS</text><text x="398" y="652">MDL</text><text x="446" y="652">RTN</text><text x="500" y="652">P&lt;</text><text x="548" y="652">P&gt;</text><text x="596" y="652">TEL</text>
+  <text x="463" y="706" font-size="17">OK</text>
+ </g>
+ <!-- rotary pot -->
+ <circle cx="580" cy="730" r="22" fill="#334155" stroke="#64748b" stroke-width="4"/>
+ <circle cx="580" cy="730" r="8" fill="#cbd5e1"/>
+ <!-- USB-C -->
+ <rect x="440" y="780" width="45" height="12" rx="5" fill="#475569" stroke="#0f172a" stroke-width="2"/>
+ <!-- bottom trim -->
+ <g fill="#64748b" stroke="#334155" stroke-width="2"><rect x="352" y="758" width="28" height="10" rx="3"/><rect x="398" y="758" width="28" height="10" rx="3"/><rect x="492" y="758" width="28" height="10" rx="3"/><rect x="538" y="758" width="28" height="10" rx="3"/></g>
+</g>
+<!-- callout lines/cards -->
+<path d="M328 327 L260 327 L237 354" class="callout"/><circle cx="328" cy="327" r="5" fill="#1684d8"/>
+<rect x="72" y="350" width="190" height="74" rx="14" fill="#eaf5ff" stroke="#a4cde8" stroke-width="2"/>
+<text x="92" y="380" class="label">SA / SD</text><text x="92" y="406" class="body">2-position latching</text>
+<path d="M598 327 L670 327 L691 354" class="callout"/><circle cx="598" cy="327" r="5" fill="#1684d8"/>
+<rect x="663" y="350" width="195" height="74" rx="14" fill="#eaf5ff" stroke="#a4cde8" stroke-width="2"/>
+<text x="683" y="380" class="label">SB / SC</text><text x="683" y="406" class="body">Often 3-position</text>
+<path d="M538 553 L679 553 L699 577" class="callout"/><circle cx="538" cy="553" r="5" fill="#1684d8"/>
+<rect x="669" y="577" width="188" height="82" rx="14" fill="#e8f8ef" stroke="#9bd9b5" stroke-width="2"/>
+<text x="689" y="607" class="label">Gimbals</text><text x="689" y="633" class="body">Pitch / roll,</text><text x="689" y="654" class="body">throttle / yaw</text>
+<path d="M463 700 L252 700 L235 730" class="callout"/><circle cx="463" cy="700" r="5" fill="#1684d8"/>
+<rect x="72" y="729" width="202" height="82" rx="14" fill="#f3e8ff" stroke="#c6b3f6" stroke-width="2"/>
+<text x="92" y="759" class="label">Menu keys</text><text x="92" y="785" class="body">SYS / MDL / RTN,</text><text x="92" y="806" class="body">PAGE and TELE</text>
+<text x="330" y="852" class="small">USB-C: use a data-capable cable for USB Joystick mode.</text>
+<text x="78" y="890" class="small">Controls shown for recognition only; labels and switch functions depend</text>
+<text x="78" y="914" class="small">on radio revision, EdgeTX version and your configured channel mapping.</text>
+<rect x="72" y="941" width="786" height="48" rx="14" fill="#fff5e5" stroke="#f0ce95" stroke-width="2"/>
+<text x="94" y="971" class="body" font-weight="700" fill="#92400e">Never transmit with the internal RF module enabled and the antenna removed.</text>
+
+<!-- right panel -->
+<rect x="915" y="170" width="845" height="845" rx="26" fill="#fff" stroke="#c5d7e4" stroke-width="3"/>
+<text x="953" y="220" class="section">02  TYPICAL MODE 2 STICKS</text>
+<text x="953" y="253" class="small">Check channel monitor / outputs instead of assuming switch or axis mapping.</text>
+<!-- left stick pad -->
+<rect x="956" y="288" width="340" height="300" rx="20" fill="#f4f8fc" stroke="#c5d7e4" stroke-width="2"/>
+<text x="1126" y="327" text-anchor="middle" class="label">LEFT STICK</text>
+<rect x="1016" y="350" width="220" height="175" rx="14" fill="#dbe5ee" stroke="#94a3b8" stroke-width="3"/>
+<circle cx="1126" cy="437" r="36" fill="#334155" stroke="#0f172a" stroke-width="4"/>
+<circle cx="1126" cy="437" r="20" fill="#cbd5e1"/>
+<path d="M1126 401 L1126 371 M1126 473 L1126 503 M1090 437 L1060 437 M1162 437 L1192 437" stroke="#1684d8" stroke-width="4" stroke-linecap="round"/>
+<text x="1126" y="554" text-anchor="middle" class="body" font-weight="700">Vertical = Throttle</text>
+<text x="1126" y="579" text-anchor="middle" class="body">Horizontal = Yaw</text>
+<!-- right stick pad -->
+<rect x="1320" y="288" width="400" height="300" rx="20" fill="#f4f8fc" stroke="#c5d7e4" stroke-width="2"/>
+<text x="1520" y="327" text-anchor="middle" class="label">RIGHT STICK</text>
+<rect x="1393" y="350" width="254" height="175" rx="14" fill="#dbe5ee" stroke="#94a3b8" stroke-width="3"/>
+<circle cx="1520" cy="437" r="36" fill="#334155" stroke="#0f172a" stroke-width="4"/>
+<circle cx="1520" cy="437" r="20" fill="#cbd5e1"/>
+<path d="M1520 401 L1520 371 M1520 473 L1520 503 M1484 437 L1454 437 M1556 437 L1586 437" stroke="#7c3aed" stroke-width="4" stroke-linecap="round"/>
+<text x="1520" y="554" text-anchor="middle" class="body" font-weight="700">Vertical = Pitch</text>
+<text x="1520" y="579" text-anchor="middle" class="body">Horizontal = Roll</text>
+
+<rect x="956" y="620" width="764" height="105" rx="18" fill="#eaf5ff" stroke="#a4cde8" stroke-width="2"/>
+<text x="985" y="654" class="label">SIM-Liftoff (USB)</text>
+<text x="985" y="682" class="body">Choose USB Joystick, calibrate each axis, and keep this profile separate</text>
+<text x="985" y="707" class="body">from the real-aircraft RF model. Follow current EdgeTX prompts.</text>
+<rect x="956" y="744" width="764" height="105" rx="18" fill="#e8f8ef" stroke="#9bd9b5" stroke-width="2"/>
+<text x="985" y="778" class="label">QUAD-ELRS (real aircraft)</text>
+<text x="985" y="806" class="body">Confirm band, hardware target, firmware and receiver/AUX mapping.</text>
+<text x="985" y="831" class="body">Test failsafe and motor direction with every propeller removed.</text>
+<rect x="956" y="870" width="764" height="119" rx="18" fill="#fff5e5" stroke="#f0ce95" stroke-width="2"/>
+<text x="985" y="905" class="label">Before changing settings</text>
+<text x="985" y="934" class="body">Back up your model; verify labels against the exact manual/version.</text>
+<text x="985" y="961" class="body">A successful ELRS bind does not prove flight readiness or failsafe behavior.</text>
+
+<rect x="40" y="1042" width="1720" height="150" rx="26" fill="#102e48"/>
+<text x="78" y="1087" class="head" font-size="29">REMEMBER</text>
+<text x="78" y="1127" font-family="Arial,Helvetica,sans-serif" font-size="23" fill="#d8efff">Radio controls send commands. USB Joystick is for simulation; ExpressLRS is the radio-control link to a compatible receiver.</text>
+<text x="78" y="1165" font-family="Arial,Helvetica,sans-serif" font-size="19" fill="#b6d6ea">Illustration is a recognition aid, not an exact mechanical drawing. Use RadioMaster's manual and EdgeTX documentation for version-specific instructions.</text>
+</svg>
