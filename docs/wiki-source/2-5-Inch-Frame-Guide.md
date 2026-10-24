@@ -1,5 +1,9 @@
 # 2.5-Inch FPV Frame — Dimensions, Component Fit and Assembly
 
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-section-drone-overview.svg" alt="Enlarged high-resolution vector overview of FPV frame, arms, motors and core electronics" width="1200" />
+
+*High-resolution assembly orientation. This is not a dimensioned frame drawing; confirm wheelbase, motor holes and prop clearance from the exact maker drawing.*
+
 ![2.5-inch frame size example alongside other prop classes](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/frame-size-reference.svg)
 
 ![Product photo of Sub250 OasisFly25 2.5-inch carbon frame](https://www.unmannedtechshop.co.uk/cdn/shop/files/Sub250-Oasisfly25-Frame-2.webp?v=1753832978&width=1946)
