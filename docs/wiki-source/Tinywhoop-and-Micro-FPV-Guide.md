@@ -6,6 +6,14 @@
 
 *Real product example: [BETAFPV Air75](https://betafpv.com/products/air75-brushless-whoop-quadcopter). Its listed specifications are 75 mm wheelbase and 40 mm two-blade propellers—not 75 mm props. Manufacturer-listed flight time is tied to its stated battery and voltage test conditions.*
 
+### More real-world tinywhoop examples
+
+<img src="https://betafpv.com/cdn/shop/files/Air65_II_Brushless_Whoop_Quadcopter_Champion.jpg?v=1779348978" alt="BETAFPV Air65 II Champion tinywhoop product photo" width="700" />
+*Manufacturer photo: [BETAFPV Air65 II](https://betafpv.com/products/air65-ii-brushless-whoop-quadcopter). Shown as the manufacturer's 65 mm micro product example; the image is for identification, not a setup or safety guide.*
+
+<img src="https://betafpv.com/cdn/shop/files/Meteor75_Pro_II_Brushless_Whoop_Quadcopter.jpg?v=1788256337" alt="BETAFPV Meteor75 Pro II guarded micro quadcopter product photo" width="700" />
+*Manufacturer photo: [BETAFPV Meteor75 Pro II](https://betafpv.com/products/meteor75-pro-ii-brushless-whoop-quadcopter). Shown as the manufacturer's 75 mm-wheelbase product example; wheelbase is not propeller diameter.*
+
 A **tinywhoop** is generally a very small quad with propeller guards/ducts, often used for indoor practice and small spaces. Marketing terms and exact sizes vary, so confirm propeller diameter, wheelbase, weight, battery chemistry/cell count, and receiver/video hardware on the specific product page.
 
 ## 1. Tinywhoop vs open-prop micro
