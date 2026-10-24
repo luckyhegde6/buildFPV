@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1240" viewBox="0 0 1800 1240" role="img" aria-labelledby="title desc">
+<title id="title">Betaflight basics — safe first setup map</title>
+<desc id="desc">High-resolution beginner visual for connecting to the flight controller, using Betaflight Configurator, checking receiver channels and modes, backing up settings, and testing motors only with propellers removed.</desc>
+<defs>
+ <linearGradient id="header" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#10283f"/><stop offset="1" stop-color="#235779"/></linearGradient>
+ <marker id="blueArrow" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#1684d8"/></marker>
+ <marker id="greenArrow" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#15945b"/></marker>
+ <style>
+ .head{font-family:Arial,Helvetica,sans-serif;font-weight:700;fill:#fff}
+ .title{font-family:Arial,Helvetica,sans-serif;font-size:29px;font-weight:700;fill:#123b5b}
+ .node{font-family:Arial,Helvetica,sans-serif;font-size:23px;font-weight:700;fill:#173d59}
+ .body{font-family:Arial,Helvetica,sans-serif;font-size:20px;fill:#405c71}
+ .small{font-family:Arial,Helvetica,sans-serif;font-size:18px;fill:#536d80}
+ .pill{font-family:Arial,Helvetica,sans-serif;font-size:18px;font-weight:700}
+ </style>
+</defs>
+<rect width="1800" height="1240" rx="32" fill="#edf4f9"/>
+<rect width="1800" height="140" rx="32" fill="url(#header)"/><rect y="108" width="1800" height="32" fill="#1a4a6e"/>
+<circle cx="86" cy="69" r="35" fill="#0b72a9" stroke="#80d6ff" stroke-width="3"/>
+<g stroke="#fff" stroke-width="5" stroke-linecap="round" fill="none"><path d="M64 52 L80 68 L64 84 M108 52 L92 68 L108 84"/><path d="M80 68 L92 68"/></g>
+<text x="146" y="61" class="head" font-size="46">BETAFLIGHT BASICS</text>
+<text x="146" y="101" font-family="Arial,Helvetica,sans-serif" font-size="25" fill="#c9eafa">Understand the tabs • establish a safe baseline • verify each change</text>
+<rect x="1460" y="40" width="285" height="54" rx="27" fill="#e0f2fe" stroke="#7dd3fc" stroke-width="2"/>
+<text x="1602" y="74" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" fill="#075985">SCHEMATIC VIEW</text>
+
+<rect x="40" y="170" width="1720" height="190" rx="24" fill="#fff" stroke="#c5d7e4" stroke-width="3"/>
+<text x="76" y="214" class="title">THE CONFIGURATOR TALKS TO THE FLIGHT CONTROLLER</text>
+<rect x="82" y="244" width="330" height="77" rx="14" fill="#e8f4fc" stroke="#9fcbe4" stroke-width="2"/>
+<text x="247" y="276" text-anchor="middle" class="node">Computer + Configurator</text><text x="247" y="303" text-anchor="middle" class="small">Data-capable USB cable</text>
+<path d="M425 283 L520 283" stroke="#1684d8" stroke-width="5" fill="none" marker-end="url(#blueArrow)"/>
+<rect x="535" y="244" width="340" height="77" rx="14" fill="#e8f7ef" stroke="#9bd3b5" stroke-width="2"/>
+<text x="705" y="276" text-anchor="middle" class="node">Flight controller</text><text x="705" y="303" text-anchor="middle" class="small">FC USB port / correct target</text>
+<path d="M890 283 L985 283" stroke="#1684d8" stroke-width="5" fill="none" marker-end="url(#blueArrow)"/>
+<rect x="1000" y="244" width="320" height="77" rx="14" fill="#f2ecff" stroke="#c4b5fd" stroke-width="2"/>
+<text x="1160" y="276" text-anchor="middle" class="node">Read current setup</text><text x="1160" y="303" text-anchor="middle" class="small">Version, sensors, settings</text>
+<rect x="1350" y="244" width="365" height="77" rx="14" fill="#fff7ed" stroke="#fdba74" stroke-width="2"/>
+<text x="1532" y="276" text-anchor="middle" class="node">Backup before changes</text><text x="1532" y="303" text-anchor="middle" class="small">Save diff/dump as docs advise</text>
+
+<text x="48" y="415" class="title">BEGINNER TAB ORDER — VERIFY ONE THING AT A TIME</text>
+<g>
+ <rect x="40" y="445" width="410" height="235" rx="22" fill="#fff" stroke="#c5d7e4" stroke-width="3"/>
+ <circle cx="88" cy="490" r="24" fill="#dbeafe"/><text x="88" y="498" text-anchor="middle" class="node">1</text>
+ <text x="128" y="498" class="node">Setup</text>
+ <text x="72" y="544" class="body">• Board orientation follows the</text><text x="94" y="573" class="body">physical aircraft movements</text>
+ <text x="72" y="612" class="body">• Sensor status is plausible</text>
+ <text x="72" y="651" class="small">Calibrate only when appropriate.</text>
+
+ <rect x="480" y="445" width="410" height="235" rx="22" fill="#fff" stroke="#c5d7e4" stroke-width="3"/>
+ <circle cx="528" cy="490" r="24" fill="#dbeafe"/><text x="528" y="498" text-anchor="middle" class="node">2</text>
+ <text x="568" y="498" class="node">Ports + Receiver</text>
+ <text x="512" y="544" class="body">• Serial RX only on the UART</text><text x="534" y="573" class="body">where a UART receiver is wired</text>
+ <text x="512" y="612" class="body">• Correct provider / input type</text>
+ <text x="512" y="651" class="small">Move each stick and AUX switch.</text>
+
+ <rect x="920" y="445" width="410" height="235" rx="22" fill="#fff" stroke="#c5d7e4" stroke-width="3"/>
+ <circle cx="968" cy="490" r="24" fill="#dcfce7"/><text x="968" y="498" text-anchor="middle" class="node">3</text>
+ <text x="1008" y="498" class="node">Modes + Failsafe</text>
+ <text x="952" y="544" class="body">• ARM on a known AUX switch</text>
+ <text x="952" y="583" class="body">• Understand ANGLE vs Acro</text>
+ <text x="952" y="622" class="body">• Read and deliberately verify</text><text x="974" y="651" class="body">the documented failsafe behavior</text>
+
+ <rect x="1360" y="445" width="400" height="235" rx="22" fill="#fff" stroke="#c5d7e4" stroke-width="3"/>
+ <circle cx="1408" cy="490" r="24" fill="#ffedd5"/><text x="1408" y="498" text-anchor="middle" class="node">4</text>
+ <text x="1448" y="498" class="node">Motors</text>
+ <text x="1392" y="544" class="body">• Use FC motor map for the</text><text x="1414" y="573" class="body">actual numbering / direction</text>
+ <text x="1392" y="612" class="body">• Verify motor protocol/output</text>
+ <text x="1392" y="651" class="small">All propellers removed.</text>
+</g>
+
+<rect x="40" y="716" width="1090" height="270" rx="24" fill="#fff" stroke="#c5d7e4" stroke-width="3"/>
+<text x="76" y="762" class="title">CONFIGURATION CONCEPTS TO KEEP SEPARATE</text>
+<rect x="76" y="790" width="315" height="150" rx="16" fill="#e8f4fc"/>
+<text x="100" y="829" class="node">Firmware target</text><text x="100" y="867" class="body">Must match the exact FC</text><text x="100" y="895" class="body">model and hardware revision.</text>
+<rect x="408" y="790" width="315" height="150" rx="16" fill="#f2ecff"/>
+<text x="432" y="829" class="node">Configurator version</text><text x="432" y="867" class="body">Compatibility changes; check</text><text x="432" y="895" class="body">current official guidance.</text>
+<rect x="740" y="790" width="350" height="150" rx="16" fill="#e8f7ef"/>
+<text x="764" y="829" class="node">Receiver configuration</text><text x="764" y="867" class="body">UART/provider differs from</text><text x="764" y="895" class="body">built-in SPI receiver options.</text>
+<text x="76" y="966" class="small">Inspect before flashing; a preconfigured quad may already have the correct firmware and settings.</text>
+
+<rect x="1160" y="716" width="600" height="270" rx="24" fill="#fff7ed" stroke="#fdba74" stroke-width="3"/>
+<path d="M1210 780 L1244 722 L1278 780 Z" fill="#fed7aa" stroke="#c2410c" stroke-width="3" stroke-linejoin="round"/>
+<text x="1244" y="769" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="39" font-weight="700" fill="#9a3412">!</text>
+<text x="1300" y="770" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="700" fill="#9a3412">PROPELLERS OFF</text>
+<text x="1200" y="827" class="body">Remove every prop before USB setup,</text>
+<text x="1200" y="857" class="body">firmware changes, receiver checks or</text>
+<text x="1200" y="887" class="body">motor testing. Disconnect the battery</text>
+<text x="1200" y="917" class="body">before wiring changes.</text>
+<text x="1200" y="957" class="small">Never guess pad labels, UARTs or motor order.</text>
+
+<rect x="40" y="1020" width="1720" height="160" rx="24" fill="#fff" stroke="#c5d7e4" stroke-width="3"/>
+<text x="76" y="1066" class="title">SAFE FIRST SESSION</text>
+<text x="76" y="1105" class="body">1. Inspect and back up  →  2. Confirm orientation and receiver  →  3. Configure modes / failsafe  →  4. Check motors prop-off  →  5. Re-read official docs</text>
+<text x="76" y="1142" class="small">Illustrative workflow. Tabs, options and supported features depend on Betaflight version and flight-controller hardware.</text>
+</svg>
