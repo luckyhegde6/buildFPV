@@ -1,5 +1,9 @@
 # Analog vs Digital FPV: Cameras, VTX and Receivers Compared
 
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-section-video-system.svg" alt="Enlarged high-resolution overview of FPV camera, VTX or digital air unit, antenna and receiver/goggles" width="1200" />
+
+*High-resolution signal-path overview for comparing analog and digital chains; component-level compatibility remains system-specific.*
+
 ![Analog and digital FPV video-system architecture](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/analog-vs-digital-video.svg)
 
 ![Live FPV view versus onboard and goggles DVR recording paths](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-camera-sensor-and-recording.svg)
