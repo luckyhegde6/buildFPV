@@ -56,11 +56,11 @@ These short concept animations explain thrust direction and the way front-motor 
 
 ### 1. See the whole aircraft
 
-![FPV quadcopter overview concept](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-drone-basics-infographic.webp)
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-system-basics-high-resolution.svg" alt="High-resolution vector overview of FPV drone hardware, control, video and power systems" width="1200" />
 
 For a full visual map of the component order, see the [FPV parts lineup](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-parts-lineup.svg).
 
-*Concept artwork for orientation only. It is not a wiring schematic; component placement and labels can vary from a real build.*
+*A scalable vector overview of the hardware and system paths. It is conceptual, not a wiring schematic; verify every detail against the exact build and manufacturer manual.*
 
 ### 2. Understand how the drone moves
 
