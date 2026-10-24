@@ -10,6 +10,20 @@
 
 ![Nominal propeller diameters shown to a common scale](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/frame-prop-size-comparison.svg)
 
+## Real aircraft examples — manufacturer product photos
+
+![BETAFPV Air75 tinywhoop product photo](https://cdn.shopify.com/s/files/1/1778/6615/files/74b96dbb2d19db9758ba306fc55ad040_fcbb5dcd-19d9-49bb-806a-1bf6416df4f1.jpg?v=1733968560)
+
+*BETAFPV Air75 — a guarded micro example. [Official product page](https://betafpv.com/products/air75-brushless-whoop-quadcopter).*
+
+![BETAFPV Pavo25 V2 cinewhoop product photo](https://betafpv.com/cdn/shop/files/47c7274e5f2763504fdcb644f2ab50f0_1254ba36-bab4-4f0b-bee5-4578f0f2b186_1800x1800.jpg?v=1706871127)
+
+*BETAFPV Pavo25 V2 — a compact guarded cinewhoop example. [Official product page](https://betafpv.com/products/pavo25-v2-brushless-whoop-quadcopter).*
+
+![BETAFPV Pavo35 cinewhoop product photo](https://betafpv.com/cdn/shop/files/d2e1b9aec379546f426ce88c187b9234_7825ca02-2d37-40da-a299-8051a920ac4c.jpg?v=1777538418&width=1445)
+
+*BETAFPV Pavo35 — a larger ducted cinewhoop example. [Official product page](https://betafpv.com/products/pavo35-brushless-whoop-quadcopter). These are real product examples, not to-scale images; use the exact product dimensions and frame drawing for decisions.*
+
 > **Important terminology:** Propeller size, frame wheelbase, prop guards, flight purpose and package format describe different things. A “3.5-inch cinewhoop” is a common shorthand, not a guarantee of exact dimensions or camera payload. Check the actual product sheet.
 
 ## 1. First separate the five labels
