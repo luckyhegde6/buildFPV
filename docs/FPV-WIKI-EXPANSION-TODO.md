@@ -767,3 +767,12 @@ Current animation is a simple concept loop for rotor/thrust orientation, not a p
 - Added individual large SVG panels for overview, axes/movements, lift/thrust, control loop, video link, antenna types, FC anatomy, motors/props, radio link, GPS and flight modes to four relevant guides.
 - Fixed missing lift/thrust SVG and Simulator local asset paths.
 - Live publish and verification passed: https://github.com/luckyhegde6/buildFPV/actions/runs/40067259902.
+
+### Real product photos across drone and video integration guides — source committed
+
+- [x] Add BETAFPV Air75, Pavo25 V2 and Pavo35 real product photos to the drone-class comparison and relevant 2.5-inch class/frame source guides.
+- [x] Add CADDXFPV Ratel 2 analog camera and Walksnail Avatar HD Pro Kit/Goggles X product photos to the camera, video-system, and goggles/VRX integration guides.
+- [x] Add official DJI O4 Air Unit and HDZero goggles/VRX product images to their respective integration guides.
+- [x] Preserve suitable real model photos on existing tinywhoop, cinewhoop, 5-inch GEPRC, 7-inch iFlight, antenna/VRX and GPS/FC pages. Use exact-model captions; do not imply cross-ecosystem video compatibility.
+- [x] Re-fetch all 21 requested docs/wiki-source files and confirm each contains at least one non-SVG real product photo.
+- [ ] Trigger the existing publish/verify workflow and inspect actual results for published routes and all product CDN images. Source-level presence is not evidence of live image loading.
