@@ -1,5 +1,9 @@
 # 2.5-Inch FPV Quads — Purpose, Parts, Trade-offs and First Setup
 
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-section-drone-overview.svg" alt="Enlarged high-resolution vector overview of FPV aircraft frame, motors, battery and video hardware" width="1200" />
+
+*High-resolution component map. A 2.5-inch class describes nominal propeller size, not a universal frame layout.*
+
 ![Sub250 OasisFly25 2.5-inch frame product photo](https://www.unmannedtechshop.co.uk/cdn/shop/files/Sub250-Oasisfly25-Frame-2.webp?v=1753832978&width=1946)
 
 *Real frame photo: Sub250 OasisFly25. The manufacturer lists a 135 mm wheelbase, 2.5-inch props and HQ2.5×2.5×3 propeller model on its current product listing. [Sub250 specification](https://sub250.com/en-nl/collections/oasisfly-series/products/sub250-oasisfly25-hd-o3). Image hosted by Unmanned Tech.*
