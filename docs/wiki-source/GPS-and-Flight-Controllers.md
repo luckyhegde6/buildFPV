@@ -1,5 +1,9 @@
 # 🧭 GPS, GNSS and Flight Controller Boards
 
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-section-flight-controller.svg" alt="Enlarged high-resolution vector overview of a flight controller's processor, IMU, UART, power and motor interfaces" width="1200" />
+
+*High-resolution conceptual flight-controller map. Board layouts and pad labels vary; use the exact board pinout and manual.*
+
 ![SpeedyBee F405 V3 FC example](https://store-fhxxhuiq8q.mybigcommerce.com/product_images/img_SpeedyBee_F405_V3_Stack/F405-V3-1.jpg)
 
 *Example FC hardware. Exact board features vary by revision; see [manufacturer specs](https://www.speedybee.com/speedybee-f405-v3-30x30-flight-controller/). That exact V3 product page is marked discontinued.*
