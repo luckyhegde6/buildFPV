@@ -200,3 +200,9 @@ This is a chronological, append-oriented engineering log. New work should append
 - Updated the two images in `How-FPV-Drones-Work.md` to use accessible HTML `img` tags with `width="1200"`.
 - Publisher and prepublish test now handle/rewrite HTML `img src` attributes to Wiki-local images while preserving the width.
 - [Run #22](https://github.com/luckyhegde6/buildFPV/actions/runs/40063630087) succeeded. Live Playwright measured both top infographics at 896 CSS px wide on desktop, with declared width 1200 and no page errors.
+
+## 2026-10-24 — Enlarged section diagrams published
+
+- Added scalable section diagrams across How-FPV-Drones-Work, FPV-System-Basics, Drone-Parts-One-by-One, and Simulator-Training.
+- Created the missing lift/thrust asset and changed Simulator's two diagrams to Wiki-local relative paths after Run #23 detected image-path failures.
+- [Run #24](https://github.com/luckyhegde6/buildFPV/actions/runs/40067259902) passed publisher regression and live Playwright checks. All required section images loaded locally and no page errors remained.
