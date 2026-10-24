@@ -1,5 +1,9 @@
 # DJI O3 / O4 FPV Air Units and Goggles — Compatibility Guide
 
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-section-video-system.svg" alt="Enlarged high-resolution FPV camera, digital air unit, antenna and goggles signal path" width="1200" />
+
+*High-resolution digital-video path overview. DJI O3/O4 variants, goggles generations, camera modules and firmware must match the manufacturer's current compatibility list.*
+
 ![Digital video systems map](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/analog-vs-digital-video.svg)
 
 ![DJI O4 Air Unit Pro product photo](https://se-cdn.djiits.com/tpc/uploads/spu/cover/9712cbcf1610c37cbbeaf5276cac77d9%40small.png?format=webp)
