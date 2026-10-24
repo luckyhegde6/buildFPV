@@ -6,6 +6,11 @@ This is the next stop after [[How FPV Drones Work]]. Follow the aircraft from th
 
 ## The lineup at a glance
 
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-section-drone-overview.svg" alt="Separate enlarged complete FPV drone component overview" width="1200" />
+
+*An enlarged orientation panel before inspecting parts individually.*
+
+
 ![FPV drone parts lineup: structure, power, flight control, propulsion, control radio, video and optional modules](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-parts-lineup.svg)
 
 *Concept art for orientation only. Do not infer exact component placement, pins, motor numbering or wiring from this image.*
@@ -83,6 +88,11 @@ See [Motor, Propeller and Battery Compatibility](Motors-Propellers-and-Battery-C
 
 ## 4. Brushless motors — create rotation
 
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-section-motors-props.svg" alt="Brushless motor and propeller type comparison with motor KV notes" width="1200" />
+
+*Separate motor / propeller panel; verify dimensions and motor/ESC compatibility for your build.*
+
+
 ![Brushless motor diagram with rotor bell, shaft, stator and windings](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-motor.svg)
 
 ![Real brushless hobby motor with an electronic speed controller and propeller](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-photo-brushless-motor-esc.jpg)
@@ -131,6 +141,11 @@ See [Motor, Propeller and Battery Compatibility](Motors-Propellers-and-Battery-C
 
 ## 7. Flight controller (FC) — the onboard computer
 
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-section-flight-controller.svg" alt="Expanded flight-controller functional anatomy with MCU, IMU, flash, UART and ESC outputs" width="1200" />
+
+*Conceptual block layout only; never infer board pad positions from it.*
+
+
 ![Flight controller diagram showing MCU, gyro, USB and I/O pads](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-flight-controller.svg)
 
 ![FC/ESC stack compared with an all-in-one board](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-fc-esc-aio.svg)
@@ -165,6 +180,11 @@ See [Motor, Propeller and Battery Compatibility](Motors-Propellers-and-Battery-C
 
 ## 9. Control receiver — listens to your radio
 
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-section-radio-control-link.svg" alt="Radio transmitter, ExpressLRS RF link, receiver and flight controller" width="1200" />
+
+*Separate radio-link panel; confirm the protocol and receiver compatibility.*
+
+
 ![Radio transmitter sends commands over the control link to an ELRS receiver on the aircraft](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-elrs-receiver.svg)
 
 ![Real-world compact radio-control receiver board and antenna](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-photo-control-receiver.jpg)
@@ -180,6 +200,11 @@ See [Motor, Propeller and Battery Compatibility](Motors-Propellers-and-Battery-C
 **Check before setup:** Confirm frequency band, receiver/transmitter protocol and firmware compatibility, antenna placement, UART or input configuration, channel mapping and failsafe behaviour. Successful binding alone does not prove the rest of the aircraft is configured safely.
 
 ## 10. FPV camera — captures the view
+
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-section-video-system.svg" alt="Camera, video transmitter or digital air unit, antenna and goggles path" width="1200" />
+
+*Separate video-link panel; check camera, VTX or air unit and goggles compatibility.*
+
 
 ![FPV camera anatomy showing lens, body and connection lead](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-camera.svg)
 
@@ -240,6 +265,11 @@ See [Motor, Propeller and Battery Compatibility](Motors-Propellers-and-Battery-C
 **Check:** Keep antennas clear of carbon, metal and high-current wiring as recommended by the manufacturer; secure them against props and crashes. Match antenna specifications to the exact radio/video system.
 
 ## 14. GPS/GNSS module — position and speed data (optional)
+
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-section-gps-navigation.svg" alt="GPS satellites, GNSS module and flight-controller navigation data flow" width="1200" />
+
+*Navigation functions depend on the module, firmware support and correct configuration.*
+
 
 ![GPS/GNSS module receiving satellite data and sending it to the flight controller](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-part-gps.svg)
 
