@@ -2,6 +2,14 @@
 
 ![Goggles and VRX integration map](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/goggles-vrx-integration.svg)
 
+![HDZero goggles product photo from the manufacturer's product catalogue](https://static.wixstatic.com/media/967e02_c553e8472fab468e9214fe2a5123e194~mv2.png)
+
+*Real product example: HDZero goggles, shown in the [official HDZero product catalogue](https://www.hd-zero.com/products). Pair them with supported HDZero VTX hardware and follow the current model-specific manual; this is not interchangeable with DJI or Walksnail digital systems.*
+
+![HDZero video receiver module product photo](https://static.wixstatic.com/media/967e02_33e9daad991546f5830572a3e5ea4dff~mv2.png)
+
+*Ground-side receiver example: HDZero VRX receiver module, from the same [official manufacturer listing](https://www.hd-zero.com/fpv-hd-video-tranceiver). Verify display output, input voltage, antenna connections and required goggles/display configuration.*
+
 HDZero is a digital FPV video ecosystem with multiple VTX/air-side product types. The dimensions, voltage, output power, mounting pattern, weight and intended aircraft size differ between VTX models. “HDZero” must refer to supported components and setup, not a generic digital interface.
 
 ## 1. Select an exact VTX and receiver combination
