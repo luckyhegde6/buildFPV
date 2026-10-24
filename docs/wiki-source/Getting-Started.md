@@ -9,7 +9,7 @@
 
 You have enough to begin practising. You do **not** need to buy goggles, a quad, or new firmware today.
 
-<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-system-basics-high-resolution.svg" alt="High-resolution visual map of FPV drone components and the control, video and power systems" width="1200" />
+<img src="images/fpv-system-basics-high-resolution.svg" alt="High-resolution visual map of FPV drone components and the control, video and power systems" width="1200" />
 
 *Start with this scalable overview; return to [FPV System Basics](FPV-System-Basics.md) when you want to explore each path in more detail.*
 
