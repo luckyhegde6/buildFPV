@@ -4,6 +4,11 @@
 
 *One specific 5-inch example: GEPRC GEP-MK5X O3 lists 225 mm wheelbase, 214 × 168 × 42 mm overall size, 5-inch prop compatibility and 30.5 × 30.5 mm FC mounting. It is a squashed-X layout, not a universal specification for all 5-inch frames. [Manufacturer source](https://geprc.com/product/gep-mk5x-o3-frame/).*
 
+### BETAFPV 5-inch real-world example
+
+<img src="https://betafpv.com/cdn/shop/products/FCC.jpg?v=1594620323" alt="BETAFPV X-Knight 5-inch FPV toothpick quad product photo" width="800" />
+*Manufacturer photo: [BETAFPV X-Knight 5-inch FPV Toothpick Quad](https://betafpv.com/products/x-knight-5-fpv-toothpick-quad). Manufacturer-listed example of a lightweight 5-inch open-prop quad. Compare the listed frame, motor and electronics configuration with the GEPRC example above; they are not interchangeable build specifications.*
+
 A 5-inch propeller has a nominal diameter of **127 mm**, but the frame wheelbase, motor layout, powertrain and payload vary. Racing and freestyle often use the same broad prop class but optimize for different things.
 
 ## 1. Racing vs freestyle
