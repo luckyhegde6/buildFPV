@@ -124,6 +124,38 @@ done
 # keeps its original URL so the image can still load from its source.
 mkdir -p "$WIKI_DIR/images"
 
+# Robustly localize every project-owned asset referenced in the published pages.
+# This also covers raw SVG links and relative images/... references, even if the
+# main per-URL rewrite loop has no matching URL shape for a particular page.
+for page in "$WIKI_DIR"/*.md; do
+  [[ -f "$page" ]] || continue
+
+  while IFS= read -r image_url; do
+    [[ -n "$image_url" ]] || continue
+    filename="${image_url##*/}"
+    [[ -n "$filename" ]] || continue
+    if [[ -f "$ASSET_SOURCE/$filename" ]]; then
+      cp "$ASSET_SOURCE/$filename" "$WIKI_DIR/images/$filename"
+      temp_page="$page.tmp"
+      while IFS= read -r line || [[ -n "$line" ]]; do
+        line="${line//"$image_url"/"images/$filename"}"
+        printf '%s\\n' "$line"
+      done < "$page" > "$temp_page"
+      mv "$temp_page" "$page"
+      echo "Localized project asset: $filename"
+    fi
+  done < <(
+    grep -Eo 'https://raw\\.githubusercontent\\.com/luckyhegde6/buildFPV/main/docs/assets/[^" )>]+' "$page" | sort -u
+  )
+
+  while IFS= read -r filename; do
+    [[ -n "$filename" ]] || continue
+    if [[ -f "$ASSET_SOURCE/$filename" ]]; then
+      cp "$ASSET_SOURCE/$filename" "$WIKI_DIR/images/$filename"
+    fi
+  done < <(grep -Eo 'images/[A-Za-z0-9._-]+\\.(svg|png|jpe?g|webp|gif)' "$page" | sed 's#^images/##' | sort -u)
+done
+
 for page in "$WIKI_DIR"/*.md; do
   [[ -f "$page" ]] || continue
   while IFS= read -r image_url; do
@@ -163,7 +195,8 @@ for page in "$WIKI_DIR"/*.md; do
          [[ "$image_url" != https://betafpv.com/cdn/shop/* ]] &&
          [[ "$image_url" != https://www.caddxfpv.com/cdn/shop/* ]] &&
          [[ "$image_url" != https://se-cdn.djiits.com/tpc/uploads/spu/cover/* ]] &&
-         [[ "$image_url" != https://static.wixstatic.com/media/967e02_* ]]; then
+         [[ "$image_url" != https://static.wixstatic.com/media/967e02_* ]] &&
+         [[ "$image_url" != https://fpvguru.in/wp-content/uploads/* ]]; then
         echo "Skipping external image download; retaining source URL: $image_url"
         continue
       fi
