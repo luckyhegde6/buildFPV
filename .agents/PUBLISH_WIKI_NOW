@@ -68,3 +68,5 @@ Retry 25: publish the newly added official BETAFPV / CADDXFPV product images acr
 - 7-Inch-Long-Range-Frame-Assembly: Caddx GT2 long-range video hardware; preserve the existing accurate iFlight AOS 7 frame photo and state clearly that GT2 is not a frame.
 Report publish success and image verification separately; if any CDN fails to download or render, fix it instead of calling complete.
 
+Retry 26: Run #25 did not localize the new official images because CI was configured to skip all external downloads. Publisher logic is now changed to keep the general skip policy, but still download/localize official product-CDN images from https://betafpv.com/cdn/shop/ and https://www.caddxfpv.com/cdn/shop/. Re-publish the ten guides and rerun all ten live image checks to confirm the official photos are now Wiki-local and loaded.
+
