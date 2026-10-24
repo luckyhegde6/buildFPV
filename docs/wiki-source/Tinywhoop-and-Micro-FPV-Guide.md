@@ -1,5 +1,9 @@
 # Tinywhoops and Micro FPV — Choosing an Indoor Trainer
 
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-section-drone-overview.svg" alt="Enlarged high-resolution vector overview of FPV drone structure and components" width="1200" />
+
+*High-resolution component overview for orientation. Tinywhoop ducts and micro-frame geometry vary by model; use manufacturer specifications for actual fit.*
+
 ![Drone class overview including tinywhoop and micro builds](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/drone-class-overview.svg)
 
 ![BETAFPV Air75 guarded micro quadcopter product example](https://cdn.shopify.com/s/files/1/1778/6615/files/74b96dbb2d19db9758ba306fc55ad040_fcbb5dcd-19d9-49bb-806a-1bf6416df4f1.jpg?v=1733968560)
