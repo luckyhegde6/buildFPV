@@ -55,3 +55,16 @@ Retry 22: publish the new separate, enlarged scalable SVG sections created from 
 
 Retry 23: fix the missing fpv-section-lift-thrust.svg referenced by How-FPV-Drones-Work; use explicit Wiki-local relative paths for the two enlarged SVG panels on Simulator-Training, whose shared image assets are published by How-FPV-Drones-Work. Publish again and require Playwright to validate local loading / 1200 width for all section images across the four guides.
 
+Retry 25: publish the newly added official BETAFPV / CADDXFPV product images across the 10 drone-class and frame-geometry Wiki guides. Image source URLs in the Markdown are official product-CDN URLs with explicit links/attribution. The publisher should download external images into Wiki-local images and rewrite references when the manufacturer CDN permits it. Live Playwright now has ten new page cases requiring those images to load locally:
+- Drone-Categories-and-Size-Guide: Air65 II, Pavo25, Pavo35, X-Knight 5.
+- Tinywhoop-and-Micro-FPV-Guide: Air65 II, Meteor75 Pro II.
+- 2-5-Inch-FPV-Guide: Pavo25.
+- 3-5-Inch-Cinewhoop-Guide: Pavo35.
+- 5-Inch-FPV-Racing-and-Freestyle: X-Knight 5.
+- 7-Inch-Long-Range-FPV-Guide: Caddx Walksnail Avatar GT2 video kit.
+- 2-5-Inch-Frame-Guide: Pavo25 V2 frame.
+- 3-5-Inch-Cinewhoop-Frame-Assembly: Pavo35 aircraft plus existing Pavo35 frame photo.
+- 5-Inch-Frame-Assembly: X-Knight 5 frame.
+- 7-Inch-Long-Range-Frame-Assembly: Caddx GT2 long-range video hardware; preserve the existing accurate iFlight AOS 7 frame photo and state clearly that GT2 is not a frame.
+Report publish success and image verification separately; if any CDN fails to download or render, fix it instead of calling complete.
+
