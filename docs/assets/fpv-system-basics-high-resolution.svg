@@ -1,0 +1,195 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1240" viewBox="0 0 1800 1240" role="img" aria-labelledby="title desc">
+<title id="title">FPV System Basics — high-resolution overview</title>
+<desc id="desc">A scalable vector infographic showing a representative quadcopter's frame, motors and propellers, battery, camera, flight controller and video transmitter, alongside separate radio-control, video and power paths, with GPS as an optional navigation module.</desc>
+<defs>
+  <linearGradient id="head" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#082b4c"/><stop offset="1" stop-color="#14527d"/></linearGradient>
+  <linearGradient id="card" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ffffff"/><stop offset="1" stop-color="#f3f8fc"/></linearGradient>
+  <marker id="arrowBlue" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#1684d8"/></marker>
+  <marker id="arrowPurple" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#7c3aed"/></marker>
+  <marker id="arrowOrange" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#d97706"/></marker>
+  <style>
+    .label {font-family:Arial,Helvetica,sans-serif; fill:#163a57}
+    .muted {font-family:Arial,Helvetica,sans-serif; fill:#536c81}
+    .small {font-size:20px}
+    .body {font-size:23px}
+    .head {font-family:Arial,Helvetica,sans-serif; font-weight:700; fill:#ffffff}
+    .cardTitle {font-family:Arial,Helvetica,sans-serif; font-size:29px; font-weight:700; fill:#113b5d}
+    .nodeTitle {font-family:Arial,Helvetica,sans-serif; font-size:22px; font-weight:700; fill:#163a57}
+    .nodeText {font-family:Arial,Helvetica,sans-serif; font-size:19px; fill:#415d73}
+  </style>
+</defs>
+<rect width="1800" height="1240" rx="34" fill="#edf4fa"/>
+<rect width="1800" height="142" rx="34" fill="url(#head)"/>
+<rect y="108" width="1800" height="34" fill="#10466f"/>
+<circle cx="94" cy="70" r="37" fill="#0d72ac" stroke="#79d0ff" stroke-width="3"/>
+<g stroke="#ffffff" stroke-width="5" stroke-linecap="round" fill="none">
+  <path d="M74 55 L88 68 L74 82 M114 55 L100 68 L114 82"/>
+  <path d="M88 68 L100 68"/>
+</g>
+<text x="157" y="64" class="head" font-size="47">FPV SYSTEM BASICS</text>
+<text x="157" y="105" font-family="Arial,Helvetica,sans-serif" font-size="25" fill="#c4e8ff">A visual map of the aircraft, radio control, video and power</text>
+<rect x="1445" y="42" width="295" height="55" rx="27" fill="#e0f2fe" stroke="#7dd3fc" stroke-width="2"/>
+<text x="1592" y="77" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700" fill="#075985">VECTOR • HIGH RES</text>
+
+<!-- Left: aircraft overview -->
+<rect x="40" y="170" width="825" height="850" rx="28" fill="url(#card)" stroke="#c5d6e4" stroke-width="3"/>
+<text x="78" y="224" class="cardTitle">01  AIRCRAFT HARDWARE</text>
+<text x="78" y="260" class="muted small">Representative quad layout — not a build drawing</text>
+
+<!-- Callout labels left and right -->
+<rect x="72" y="322" width="210" height="94" rx="16" fill="#e8f4ff" stroke="#94c7e8" stroke-width="2"/>
+<circle cx="101" cy="352" r="12" fill="#1684d8"/>
+<text x="125" y="359" class="nodeTitle">Propellers</text>
+<text x="92" y="390" class="nodeText">Create thrust</text>
+<path d="M282 369 L326 369 L355 392" stroke="#1684d8" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+<rect x="620" y="322" width="210" height="94" rx="16" fill="#fff7e8" stroke="#f3c987" stroke-width="2"/>
+<circle cx="648" cy="352" r="12" fill="#d97706"/>
+<text x="672" y="359" class="nodeTitle">Battery</text>
+<text x="640" y="390" class="nodeText">Supplies energy</text>
+<path d="M620 369 L595 369 L554 446" stroke="#d97706" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+<rect x="72" y="604" width="210" height="94" rx="16" fill="#f3e8ff" stroke="#c4b5fd" stroke-width="2"/>
+<circle cx="101" cy="634" r="12" fill="#7c3aed"/>
+<text x="125" y="641" class="nodeTitle">FPV camera</text>
+<text x="92" y="671" class="nodeText">Captures live view</text>
+<path d="M282 650 L328 650 L406 529" stroke="#7c3aed" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+<rect x="620" y="604" width="210" height="94" rx="16" fill="#e7f8ef" stroke="#9bd9b5" stroke-width="2"/>
+<circle cx="648" cy="634" r="12" fill="#16a34a"/>
+<text x="672" y="641" class="nodeTitle">FC + ESC</text>
+<text x="640" y="671" class="nodeText">Stabilise + drive</text>
+<path d="M620 650 L588 650 L523 519" stroke="#16a34a" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+<!-- Top view quad illustration -->
+<g stroke-linecap="round" stroke-linejoin="round">
+  <!-- prop disks -->
+  <g fill="#dbe8f3" fill-opacity="0.88" stroke="#7b9ab3" stroke-width="4">
+    <ellipse cx="366" cy="393" rx="91" ry="24" transform="rotate(-20 366 393)"/>
+    <ellipse cx="570" cy="393" rx="91" ry="24" transform="rotate(20 570 393)"/>
+    <ellipse cx="366" cy="570" rx="91" ry="24" transform="rotate(20 366 570)"/>
+    <ellipse cx="570" cy="570" rx="91" ry="24" transform="rotate(-20 570 570)"/>
+  </g>
+  <!-- carbon arms -->
+  <g stroke="#243f56" stroke-width="28">
+    <path d="M445 455 L366 393"/>
+    <path d="M492 455 L570 393"/>
+    <path d="M445 510 L366 570"/>
+    <path d="M492 510 L570 570"/>
+  </g>
+  <g stroke="#668196" stroke-width="3">
+    <path d="M445 455 L366 393"/><path d="M492 455 L570 393"/><path d="M445 510 L366 570"/><path d="M492 510 L570 570"/>
+  </g>
+  <!-- motors -->
+  <g fill="#102a40" stroke="#9db8cb" stroke-width="5">
+    <circle cx="366" cy="393" r="31"/><circle cx="570" cy="393" r="31"/>
+    <circle cx="366" cy="570" r="31"/><circle cx="570" cy="570" r="31"/>
+  </g>
+  <g fill="#6fc5f3">
+    <circle cx="366" cy="393" r="10"/><circle cx="570" cy="393" r="10"/><circle cx="366" cy="570" r="10"/><circle cx="570" cy="570" r="10"/>
+  </g>
+  <!-- central frame -->
+  <path d="M408 425 L472 425 L528 480 L528 505 L472 544 L408 544 L352 505 L352 480 Z" fill="#243f56" stroke="#102a40" stroke-width="5"/>
+  <!-- FC board -->
+  <rect x="410" y="454" width="68" height="65" rx="9" fill="#15805d" stroke="#9ae6b4" stroke-width="4"/>
+  <rect x="429" y="470" width="30" height="22" rx="3" fill="#0c3142" stroke="#d5f5e3" stroke-width="2"/>
+  <circle cx="423" cy="502" r="3" fill="#f8fafc"/><circle cx="465" cy="502" r="3" fill="#f8fafc"/>
+  <!-- battery -->
+  <rect x="475" y="465" width="35" height="75" rx="6" fill="#f59e0b" stroke="#9a5b0b" stroke-width="3" transform="rotate(12 492 503)"/>
+  <rect x="485" y="457" width="13" height="12" rx="2" fill="#475569" transform="rotate(12 491 463)"/>
+  <!-- camera at front -->
+  <rect x="431" y="407" width="50" height="32" rx="8" fill="#364f65" stroke="#b7e4fa" stroke-width="3"/>
+  <circle cx="456" cy="423" r="12" fill="#061725" stroke="#7dd3fc" stroke-width="4"/>
+  <!-- antenna -->
+  <path d="M514 470 L529 432" stroke="#7c3aed" stroke-width="7"/>
+  <circle cx="532" cy="426" r="8" fill="#7c3aed" stroke="#ede9fe" stroke-width="3"/>
+</g>
+<text x="466" y="736" text-anchor="middle" class="muted small">Frame + arms hold the components; motors/props provide thrust.</text>
+
+<!-- component chips -->
+<g>
+  <rect x="72" y="778" width="352" height="80" rx="16" fill="#f4f8fc" stroke="#bfd2e2" stroke-width="2"/>
+  <rect x="72" y="778" width="10" height="80" rx="5" fill="#1684d8"/>
+  <text x="101" y="811" class="nodeTitle">Frame, arms, motors, props</text>
+  <text x="101" y="840" class="nodeText">Structure + thrust</text>
+  <rect x="448" y="778" width="382" height="80" rx="16" fill="#f4f8fc" stroke="#bfd2e2" stroke-width="2"/>
+  <rect x="448" y="778" width="10" height="80" rx="5" fill="#d97706"/>
+  <text x="477" y="811" class="nodeTitle">Battery + power electronics</text>
+  <text x="477" y="840" class="nodeText">Energy and regulated voltage</text>
+  <rect x="72" y="874" width="352" height="80" rx="16" fill="#f4f8fc" stroke="#bfd2e2" stroke-width="2"/>
+  <rect x="72" y="874" width="10" height="80" rx="5" fill="#16a34a"/>
+  <text x="101" y="907" class="nodeTitle">Flight controller (FC) + ESC</text>
+  <text x="101" y="936" class="nodeText">Sensors, stabilisation, motor output</text>
+  <rect x="448" y="874" width="382" height="80" rx="16" fill="#f4f8fc" stroke="#bfd2e2" stroke-width="2"/>
+  <rect x="448" y="874" width="10" height="80" rx="5" fill="#7c3aed"/>
+  <text x="477" y="907" class="nodeTitle">Camera, VTX / air unit, antennas</text>
+  <text x="477" y="936" class="nodeText">Video capture and transmission</text>
+</g>
+
+<!-- Right: system paths -->
+<rect x="890" y="170" width="870" height="850" rx="28" fill="url(#card)" stroke="#c5d6e4" stroke-width="3"/>
+<text x="930" y="224" class="cardTitle">02  THREE SEPARATE SYSTEMS</text>
+<text x="930" y="260" class="muted small">They work together, but they are not the same link.</text>
+
+<!-- Control path -->
+<rect x="920" y="292" width="810" height="188" rx="22" fill="#eaf5ff" stroke="#b5d9f1" stroke-width="2"/>
+<rect x="920" y="292" width="12" height="188" rx="6" fill="#1684d8"/>
+<text x="954" y="331" font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="700" fill="#075985">RADIO CONTROL</text>
+<g>
+  <rect x="952" y="352" width="155" height="88" rx="14" fill="#ffffff" stroke="#91c5e5" stroke-width="2"/>
+  <text x="1029" y="385" text-anchor="middle" class="nodeTitle">Radio</text><text x="1029" y="414" text-anchor="middle" class="nodeText">Stick inputs</text>
+  <path d="M1110 396 L1131 396" stroke="#1684d8" stroke-width="4" marker-end="url(#arrowBlue)"/>
+  <rect x="1140" y="352" width="155" height="88" rx="14" fill="#ffffff" stroke="#91c5e5" stroke-width="2"/>
+  <text x="1217" y="385" text-anchor="middle" class="nodeTitle">Receiver</text><text x="1217" y="414" text-anchor="middle" class="nodeText">ELRS / RC</text>
+  <path d="M1298 396 L1319 396" stroke="#1684d8" stroke-width="4" marker-end="url(#arrowBlue)"/>
+  <rect x="1328" y="352" width="155" height="88" rx="14" fill="#ffffff" stroke="#91c5e5" stroke-width="2"/>
+  <text x="1405" y="385" text-anchor="middle" class="nodeTitle">Flight FC</text><text x="1405" y="414" text-anchor="middle" class="nodeText">Control loop</text>
+  <path d="M1486 396 L1507 396" stroke="#1684d8" stroke-width="4" marker-end="url(#arrowBlue)"/>
+  <rect x="1516" y="352" width="184" height="88" rx="14" fill="#ffffff" stroke="#91c5e5" stroke-width="2"/>
+  <text x="1608" y="385" text-anchor="middle" class="nodeTitle">ESCs + motors</text><text x="1608" y="414" text-anchor="middle" class="nodeText">Make motion</text>
+</g>
+
+<!-- Video path -->
+<rect x="920" y="502" width="810" height="188" rx="22" fill="#f4efff" stroke="#d7c9fb" stroke-width="2"/>
+<rect x="920" y="502" width="12" height="188" rx="6" fill="#7c3aed"/>
+<text x="954" y="541" font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="700" fill="#5b21b6">VIDEO</text>
+<g>
+  <rect x="952" y="562" width="155" height="88" rx="14" fill="#ffffff" stroke="#c7b6f5" stroke-width="2"/>
+  <text x="1029" y="595" text-anchor="middle" class="nodeTitle">Camera</text><text x="1029" y="624" text-anchor="middle" class="nodeText">Live image</text>
+  <path d="M1110 606 L1131 606" stroke="#7c3aed" stroke-width="4" marker-end="url(#arrowPurple)"/>
+  <rect x="1140" y="562" width="155" height="88" rx="14" fill="#ffffff" stroke="#c7b6f5" stroke-width="2"/>
+  <text x="1217" y="595" text-anchor="middle" class="nodeTitle">VTX / air unit</text><text x="1217" y="624" text-anchor="middle" class="nodeText">Transmit video</text>
+  <path d="M1298 606 L1319 606" stroke="#7c3aed" stroke-width="4" marker-end="url(#arrowPurple)"/>
+  <rect x="1328" y="562" width="155" height="88" rx="14" fill="#ffffff" stroke="#c7b6f5" stroke-width="2"/>
+  <text x="1405" y="595" text-anchor="middle" class="nodeTitle">Antenna + link</text><text x="1405" y="624" text-anchor="middle" class="nodeText">RF video</text>
+  <path d="M1486 606 L1507 606" stroke="#7c3aed" stroke-width="4" marker-end="url(#arrowPurple)"/>
+  <rect x="1516" y="562" width="184" height="88" rx="14" fill="#ffffff" stroke="#c7b6f5" stroke-width="2"/>
+  <text x="1608" y="595" text-anchor="middle" class="nodeTitle">Goggles / VRX</text><text x="1608" y="624" text-anchor="middle" class="nodeText">Pilot display</text>
+</g>
+
+<!-- Power path -->
+<rect x="920" y="712" width="810" height="170" rx="22" fill="#fff6e8" stroke="#f3d3a1" stroke-width="2"/>
+<rect x="920" y="712" width="12" height="170" rx="6" fill="#d97706"/>
+<text x="954" y="751" font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="700" fill="#92400e">POWER</text>
+<g>
+  <rect x="952" y="770" width="190" height="78" rx="14" fill="#ffffff" stroke="#efc47f" stroke-width="2"/>
+  <text x="1047" y="801" text-anchor="middle" class="nodeTitle">Battery</text><text x="1047" y="829" text-anchor="middle" class="nodeText">Pack voltage</text>
+  <path d="M1146 809 L1180 809" stroke="#d97706" stroke-width="4" marker-end="url(#arrowOrange)"/>
+  <rect x="1189" y="770" width="220" height="78" rx="14" fill="#ffffff" stroke="#efc47f" stroke-width="2"/>
+  <text x="1299" y="801" text-anchor="middle" class="nodeTitle">Power / regulators</text><text x="1299" y="829" text-anchor="middle" class="nodeText">Distribute safe voltage</text>
+  <path d="M1413 809 L1447 809" stroke="#d97706" stroke-width="4" marker-end="url(#arrowOrange)"/>
+  <rect x="1456" y="770" width="244" height="78" rx="14" fill="#ffffff" stroke="#efc47f" stroke-width="2"/>
+  <text x="1578" y="801" text-anchor="middle" class="nodeTitle">FC, ESC, motors, video</text><text x="1578" y="829" text-anchor="middle" class="nodeText">Check every input rating</text>
+</g>
+
+<!-- optional GPS and safety note -->
+<rect x="920" y="900" width="810" height="78" rx="18" fill="#e9f8ef" stroke="#a9dfbb" stroke-width="2"/>
+<circle cx="957" cy="939" r="16" fill="#16a34a"/><path d="M957 927 L957 951 M945 939 L969 939" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+<text x="986" y="933" class="nodeTitle">Optional GPS / GNSS</text>
+<text x="986" y="959" class="nodeText">Provides navigation data when fitted and correctly configured; it does not guarantee recovery.</text>
+
+<rect x="40" y="1050" width="1720" height="140" rx="24" fill="#082b4c"/>
+<text x="78" y="1096" class="head" font-size="29">KEY DISTINCTION</text>
+<text x="78" y="1136" font-family="Arial,Helvetica,sans-serif" font-size="24" fill="#d5efff">Control carries stick commands • Video carries the camera image • Power supplies each component</text>
+<text x="78" y="1172" font-family="Arial,Helvetica,sans-serif" font-size="19" fill="#a9cce3">Educational overview only — verify the exact wiring, connector pinout, voltage range, motor order and compatibility in manufacturer manuals.</text>
+</svg>
