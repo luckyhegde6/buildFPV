@@ -197,7 +197,7 @@ const cases = [
   {
     name: 'radiomaster-pocket',
     url: `${base}/RadioMaster-Pocket-Button-Guide`,
-    required: ['RadioMaster Pocket', 'What the controls do', 'SIM-Liftoft', 'QUAD-ELRS'],
+    required: ['RadioMaster Pocket', 'What the controls do', 'SIM-Liftoff', 'QUAD-ELRS'],
     minimumTables: 2,
     requireLocalImages: true,
     requiredImages: ['radiomaster-pocket-controls-high-resolution.svg', 'pocket-control-map.svg', 'pocket-gimbal-adjustment.png'],
