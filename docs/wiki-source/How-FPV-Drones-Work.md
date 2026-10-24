@@ -10,6 +10,10 @@
 
 These supplied overview graphics complement the step-by-step explanation below. Treat them as learning summaries; confirm motor order, CW/CCW layout, connector pinouts and firmware-specific behavior against the exact aircraft and official manuals.
 
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-system-basics-high-resolution.svg" alt="High-resolution vector overview connecting FPV drone hardware with separate radio-control, video and power paths" width="1200" />
+
+*Whole-system overview: use it to connect the movement and control-loop graphics to the aircraft hardware. It is not an exact wiring diagram.*
+
 ### Enlarged section diagrams
 
 The individual panels below expand the key topics from the supplied overview sheets. They are scalable vector illustrations for readability; use the exact aircraft documentation for wiring, motor order and board pinouts.
