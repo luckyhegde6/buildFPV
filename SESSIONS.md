@@ -215,3 +215,11 @@ This is a chronological, append-oriented engineering log. New work should append
 - Video changes: added product photos in FPV-Cameras-VTX-VRX-Compatibility-Comparison.md, FPV-Camera-Selection-Guide.md, Analog-vs-Digital-FPV-Camera-Video-Guide.md, Analog-Goggles-and-VRX-Integration.md, FPV-Goggles-and-VRX-Integration-Guide.md, DJI-O3-O4-Goggles-and-Air-Unit-Integration.md, Walksnail-Avatar-Goggles-and-Air-Unit-Integration.md, and HDZero-Goggles-and-VTX-Integration.md. Existing suitable product images were retained on Video Systems and Goggles, Video Antennas/VTX/VRX, and GPS/Flight Controllers.
 - QA: fetched all 21 specified files from main and counted Markdown images. Each of the 21 now has at least one non-SVG, real product photo. Normalized whitespace around four image URLs. Verified the CADDX Ratel 2 image URL via its official product page; official DJI/HDZero image URLs were found through manufacturer pages. CDN rendering on the live Wiki has not yet been tested.
 - Publish status: source changes are committed to main. Update .agents/PUBLISH_WIKI_NOW to trigger the existing publish workflow, then read the actual Action job results and browser report. Do not claim live publication until that run confirms it.
+
+## 2026-10-24 — Official product photos published to ten drone/frame guides
+
+- Added actual manufacturer images from BETAFPV and CADDXFPV to the 10 requested Wiki pages for drone classes and frame geometry. Captions link to official product pages and carefully distinguish full quad, frame, and video-system components.
+- Updated `scripts/publish-wiki.sh` so CI's external-image skip still blocks unrelated hosts but lets the requested official BETAFPV / CADDXFPV image-CDN URLs be copied into Wiki-local `images/` assets.
+- Expanded live Playwright page assertions to cover all 10 guides and expected official images.
+- [Actions run #26](https://github.com/luckyhegde6/buildFPV/actions/runs/40075353669) succeeded for both publish and browser verification. All 10 targeted guides passed with no browser assertion errors.
+- The 7-inch guides retain their existing iFlight AOS 7 frame photo; the Caddx GT2 image is clearly captioned as a video component, not a frame/drone.
