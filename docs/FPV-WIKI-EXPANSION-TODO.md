@@ -761,3 +761,9 @@ Current animation is a simple concept loop for rotor/thrust orientation, not a p
 - Both top infographics now use accessible HTML image tags with declared width 1200; publisher rewrites them to Wiki-local paths.
 - Regression test and Playwright live verification passed: https://github.com/luckyhegde6/buildFPV/actions/runs/40063630087.
 - Desktop browser measured both images at 896 CSS px wide; both assets loaded and the page had no errors.
+
+### Enlarged section visuals — verified
+
+- Added individual large SVG panels for overview, axes/movements, lift/thrust, control loop, video link, antenna types, FC anatomy, motors/props, radio link, GPS and flight modes to four relevant guides.
+- Fixed missing lift/thrust SVG and Simulator local asset paths.
+- Live publish and verification passed: https://github.com/luckyhegde6/buildFPV/actions/runs/40067259902.
