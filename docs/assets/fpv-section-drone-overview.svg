@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760" role="img" aria-labelledby="title desc">
+<title id="title">Complete FPV drone build — component overview</title><desc id="desc">A labeled quadcopter overview showing frame, flight controller, battery, motors, propellers, camera, video transmitter and antennas.</desc>
+<defs><linearGradient id="bg" x2="0" y2="1"><stop stop-color="#f8fbff"/><stop offset="1" stop-color="#e8f1fb"/></linearGradient><marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#1684d8"/></marker></defs>
+<rect width="1400" height="760" rx="28" fill="url(#bg)"/><rect x="0" y="0" width="1400" height="100" rx="28" fill="#082a4c"/><rect x="0" y="70" width="1400" height="30" fill="#082a4c"/>
+<text x="52" y="48" font-family="Arial,sans-serif" font-weight="700" font-size="38" fill="#fff">COMPLETE FPV DRONE BUILD</text><text x="52" y="80" font-family="Arial,sans-serif" font-size="21" fill="#bde6ff">What the major parts do — quick visual map</text>
+<!-- propellers and motors -->
+<g stroke-linecap="round">
+<g fill="#c4d8eb" stroke="#55718d" stroke-width="5"><ellipse cx="430" cy="270" rx="104" ry="25" transform="rotate(-20 430 270)"/><ellipse cx="970" cy="270" rx="104" ry="25" transform="rotate(20 970 270)"/><ellipse cx="430" cy="545" rx="104" ry="25" transform="rotate(20 430 545)"/><ellipse cx="970" cy="545" rx="104" ry="25" transform="rotate(-20 970 545)"/></g>
+<g stroke="#162f49" stroke-width="26"><path d="M535 350 L430 270"/><path d="M865 350 L970 270"/><path d="M535 450 L430 545"/><path d="M865 450 L970 545"/></g>
+<g fill="#e13b4b" stroke="#8a1f2d" stroke-width="5"><circle cx="430" cy="270" r="26"/><circle cx="970" cy="270" r="26"/><circle cx="430" cy="545" r="26"/><circle cx="970" cy="545" r="26"/></g>
+<rect x="520" y="310" width="360" height="180" rx="38" fill="#223d57" stroke="#071a2b" stroke-width="8"/><rect x="575" y="334" width="250" height="75" rx="16" fill="#e9b94e" stroke="#805b16" stroke-width="4"/><rect x="628" y="425" width="145" height="44" rx="9" fill="#27a9a0" stroke="#087d7a" stroke-width="4"/>
+<rect x="540" y="424" width="72" height="46" rx="10" fill="#111d2c" stroke="#8da0b6" stroke-width="4"/><circle cx="575" cy="447" r="15" fill="#4e6b86"/>
+<path d="M650 310 L635 235" stroke="#152f49" stroke-width="12"/><circle cx="635" cy="226" r="18" fill="#152f49"/><path d="M745 310 L774 232" stroke="#152f49" stroke-width="12"/><circle cx="780" cy="221" r="18" fill="#152f49"/>
+</g>
+<!-- labels -->
+<g font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#082a4c">
+<rect x="70" y="190" width="250" height="64" rx="14" fill="#fff" stroke="#5c83a8" stroke-width="2"/><text x="92" y="230">Propellers</text><path d="M320 224 L375 250" stroke="#1684d8" stroke-width="4" marker-end="url(#arr)" fill="none"/>
+<rect x="70" y="335" width="250" height="64" rx="14" fill="#fff" stroke="#5c83a8" stroke-width="2"/><text x="92" y="375">Frame / arms</text><path d="M320 365 L487 365" stroke="#1684d8" stroke-width="4" marker-end="url(#arr)" fill="none"/>
+<rect x="70" y="495" width="250" height="64" rx="14" fill="#fff" stroke="#5c83a8" stroke-width="2"/><text x="92" y="535">Brushless motors</text><path d="M320 525 L393 545" stroke="#1684d8" stroke-width="4" marker-end="url(#arr)" fill="none"/>
+<rect x="1050" y="178" width="280" height="64" rx="14" fill="#fff" stroke="#5c83a8" stroke-width="2"/><text x="1072" y="218">Video antenna</text><path d="M1050 210 L804 225" stroke="#1684d8" stroke-width="4" marker-end="url(#arr)" fill="none"/>
+<rect x="1050" y="290" width="280" height="64" rx="14" fill="#fff" stroke="#5c83a8" stroke-width="2"/><text x="1072" y="330">LiPo battery</text><path d="M1050 322 L823 362" stroke="#1684d8" stroke-width="4" marker-end="url(#arr)" fill="none"/>
+<rect x="1050" y="405" width="280" height="64" rx="14" fill="#fff" stroke="#5c83a8" stroke-width="2"/><text x="1072" y="445">Flight controller</text><path d="M1050 438 L827 445" stroke="#1684d8" stroke-width="4" marker-end="url(#arr)" fill="none"/>
+<rect x="1050" y="520" width="280" height="64" rx="14" fill="#fff" stroke="#5c83a8" stroke-width="2"/><text x="1072" y="560">FPV camera</text><path d="M1050 552 L610 452" stroke="#1684d8" stroke-width="4" marker-end="url(#arr)" fill="none"/>
+</g>
+<rect x="72" y="655" width="1256" height="62" rx="16" fill="#d5e9fb"/><text x="98" y="693" font-family="Arial,sans-serif" font-size="23" fill="#16466e">Illustration only: real layouts differ by frame, stack and build. Never use this diagram as a wiring or pinout guide.</text>
+</svg>
