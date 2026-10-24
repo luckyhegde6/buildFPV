@@ -10,6 +10,12 @@ This is the next stop after [[How FPV Drones Work]]. Follow the aircraft from th
 
 *Use this system map before exploring each part below. The signal paths are conceptual; exact connections and voltages vary by hardware.*
 
+## Component connections at a glance
+
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-drone-components-connection-map-high-resolution.svg" alt="High-resolution component connection map separating power and propulsion, radio control and flight stabilization, live video, and optional GPS, buzzer and logging paths" width="1200" />
+
+*Use this map to follow each system independently. It is a conceptual learning aid, not a wiring diagram or pinout.*
+
 ## The lineup at a glance
 
 <img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-section-drone-overview.svg" alt="Separate enlarged complete FPV drone component overview" width="1200" />
@@ -75,8 +81,6 @@ See [Motor, Propeller and Battery Compatibility](Motors-Propellers-and-Battery-C
 **Why it matters:** Battery voltage must be supported by the ESC, motors, FC power input and video system. Capacity affects flight time and mass; discharge capability must suit the current demand.
 
 **Check before using:** Inspect the pack and leads for damage or swelling, verify polarity and voltage compatibility, and use a suitable balance charger. Never assume a plug shape alone proves voltage or polarity compatibility. Disconnect the pack before soldering or changing wiring.
-
-## 3. Power distribution and voltage regulators
 
 ## 3. Power distribution and voltage regulators
 
