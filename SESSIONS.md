@@ -231,3 +231,10 @@ This is a chronological, append-oriented engineering log. New work should append
 - Updated the source URLs to https://www.caddxfpv.com/cdn/shop/ in the video matrix, camera-selection, analog-vs-digital, general goggles/VRX and Walksnail integration guides, allowing the existing publisher whitelist to localize those images.
 - Extended scripts/verify-wiki-live.mjs to test the additional video-system overview, camera selection, analog/digital, analog goggles, general goggles/VRX, DJI, Walksnail, HDZero, video antennas and GPS/FC pages. Added checks for required local product photos plus loaded external DJI/HDZero product images.
 - The extended verifier and corrected image URLs are committed to main, but require a fresh workflow run before their live state can be marked verified.
+
+## 2026-10-24 — Recreated a high-resolution system overview and extended visual treatment
+
+- Created a project-owned 1800×1240 SVG called `fpv-system-basics-high-resolution.svg`. It shows representative drone hardware and keeps radio-control, FPV video and power pathways clearly separate. Captions state it is not a wiring or mechanical drawing.
+- Published-source changes place the overview at width=1200 on FPV System Basics, Home, How FPV Drones Work, Drone Parts — One by One, and Getting Started. The 10 drone class/frame guides now use 1200-wide drone-overview SVG panels; the video/goggles/camera guides use the video-system panel, Video Antennas uses the antenna-types panel, and GPS/FC uses both FC anatomy and GPS-navigation panels.
+- Updated `docs/assets/README.md` with the new asset and scope. Extended `scripts/verify-wiki-live.mjs` to require the relevant SVGs and check both the width attribute and rendered size.
+- Latest live result before the enlarged panel rollout: run #28 published the product photo sources but failed the new Playwright assertions because the external DJI and HDZero product images did not load. Added explicit official-host download exceptions in `scripts/publish-wiki.sh` so those product images become Wiki-local. Fresh publication/browser verification is pending.
