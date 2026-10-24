@@ -1,5 +1,9 @@
 # 5-Inch FPV Frame — Freestyle vs Racing and Assembly
 
+<img src="https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-section-drone-overview.svg" alt="Enlarged high-resolution vector overview of FPV frame, propulsion, battery and electronics" width="1200" />
+
+*High-resolution assembly orientation only. Use the selected 5-inch frame's engineering drawing for dimensions, mounting holes and prop clearance.*
+
 ![5-inch frame shape and dimension reference](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/frame-size-reference.svg)
 
 ![Manufacturer product photo of GEPRC GEP-MK5X O3 5-inch frame](https://geprc.com/wp-content/uploads/2022/11/GEP-MK5-O3-Frame-1-600x600.jpg)
