@@ -6,7 +6,7 @@
 
 ![Pre-purchase VTX and VRX compatibility checklist](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/vtx-vrx-compatibility-check.svg)
 
-![CADDXFPV Walksnail Avatar HD Pro Kit product photo]( https://caddxfpv.com/cdn/shop/products/Pro_62561ada-8f5a-4ec5-a416-cba1d0b7dd77.jpg?v=1680772446&width=2400 )
+![CADDXFPV Walksnail Avatar HD Pro Kit product photo](https://caddxfpv.com/cdn/shop/products/Pro_62561ada-8f5a-4ec5-a416-cba1d0b7dd77.jpg?v=1680772446&width=2400)
 
 *Real product example: [CADDXFPV Walksnail Avatar HD Pro Kit](https://www.caddxfpv.com/products/walksnail-avatar-hd-pro-kit). This belongs to the Walksnail digital ecosystem; it is not compatible with DJI or HDZero goggles merely because all are digital HD systems.*
 
