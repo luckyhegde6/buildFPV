@@ -41,6 +41,11 @@ Prepare proper hex drivers, nut driver, caliper, torque caution, screw tray, twe
 7. Inspect all propeller discs, wiring, fasteners and battery retention.
 8. Complete polarity/continuity and firmware steps with propellers removed. Verify motor mapping/direction with the installed firmware's instructions.
 
+## Real-world long-range video component
+
+<img src="https://www.caddxfpv.com/cdn/shop/files/Avatar_GT2_Kit.webp?v=1776417737&width=1080" alt="CADDXFPV Walksnail Avatar GT2 camera and video transmitter kit product photo" width="800" />
+*Manufacturer photo: [CADDXFPV / Walksnail Avatar GT2 Kit](https://www.caddxfpv.com/products/walksnail-avatar-gt2-kit). This is long-range video equipment, not a 7-inch frame. The BETAFPV and CADDXFPV product pages I could verify did not provide a matching 7-inch frame product, so the iFlight AOS 7 photo above remains the size-specific frame example. Use this image only to identify a possible video-system component, and check compatibility and lawful transmit settings.*
+
 ## 4. Range is a mission plan, not a frame specification
 
 Do not interpret a manufacturer RF link range as guaranteed flight range. A safe mission must account for battery energy and reserve, wind, return distance, altitude/terrain, RF interference, antennas, aircraft direction, link/failsafe behavior, video visibility, weather and local aviation/radio rules. Test failsafe and recovery procedures in a controlled safe environment before any extended mission. A GPS module is not a substitute for pilot skill, a working control link or a safe route.
