@@ -20,6 +20,12 @@
 
 A **tinywhoop** is generally a very small quad with propeller guards/ducts, often used for indoor practice and small spaces. Marketing terms and exact sizes vary, so confirm propeller diameter, wheelbase, weight, battery chemistry/cell count, and receiver/video hardware on the specific product page.
 
+## Simulator practice for tinywhoops
+
+For a simulator that focuses specifically on small micro aircraft, see [Liftoff: Micro Drones](https://store.steampowered.com/app/1432320/Liftoff_Micro_Drones/) and the [official product overview](https://www.liftoff-game.com/our-products/liftoff-micro-drones). It is a separate title from [Liftoff FPV Drone Racing](https://store.steampowered.com/app/410340/Liftoff_FPV_Drone_Racing/) and is designed around the micro-drone class, including indoor environments and customisable drones.
+
+Try gentle throttle control, low-altitude lines, broad turns, figure-eights, gate approaches, orientation recovery and deliberate landings before adding speed. Connect the radio as a USB game controller and calibrate inputs inside this game separately; do not assume another simulator's craft settings or rates are equivalent to your real whoop. Simulator practice builds control habits but cannot guarantee identical real-world flight behaviour.
+
 ## 1. Tinywhoop vs open-prop micro
 
 | Feature | Tinywhoop / guarded micro | Open-prop micro / toothpick |
