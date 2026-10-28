@@ -195,6 +195,13 @@ const cases = [
     expandedImages: ['fpv-simulator-training-high-resolution.svg', 'fpv-system-basics-high-resolution.svg', 'fpv-section-axes-movements.svg', 'fpv-section-flight-modes.svg'],
   },
   {
+    name: 'pocket-micro-drones',
+    url: `${base}/Pocket-ELRS-and-Liftoff-Micro-Drones`,
+    required: ['Connect the RadioMaster Pocket to Liftoff: Micro Drones', 'The connection path', 'USB joystick / HID', 'Calibrate inside Liftoff: Micro Drones', 'Check Steam Input if controls look wrong', 'Controller configuration is not shared between the games'],
+    minimumTables: 2,
+    requireLocalImages: false,
+  },
+  {
     name: 'radiomaster-pocket',
     url: `${base}/RadioMaster-Pocket-Button-Guide`,
     required: ['RadioMaster Pocket', 'What the controls do', 'SIM-Liftoff', 'QUAD-ELRS'],
