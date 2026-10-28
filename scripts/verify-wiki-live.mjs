@@ -197,7 +197,7 @@ const cases = [
   {
     name: 'pocket-micro-drones',
     url: `${base}/Pocket-ELRS-and-Liftoff-Micro-Drones`,
-    required: ['Connect the RadioMaster Pocket to Liftoff: Micro Drones', 'The connection path', 'USB joystick / HID', 'Calibrate inside Liftoff: Micro Drones', 'Check Steam Input if controls look wrong', 'Controller configuration is not shared between the games'],
+    required: ['Connect the RadioMaster Pocket to Liftoff: Micro Drones', 'The connection path', 'USB joystick / HID', 'Calibrate inside Liftoff: Micro Drones', 'Check Steam Input if controls look wrong', 'do not share controller configuration files'],
     minimumTables: 2,
     requireLocalImages: false,
   },
