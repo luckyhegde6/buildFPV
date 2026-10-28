@@ -186,3 +186,12 @@ Before retrying, the repository owner must add `WIKI_PUBLISH_TOKEN` or `GH_PERSO
 - Documented these assets in `docs/assets/README.md` and expanded Playwright live checks for required local assets plus width="1200" / rendered desktop width >=800 CSS pixels.
 - Fixed the previous run #29 issues before retrying: Getting Started now points directly to Wiki-local `images/fpv-system-basics-high-resolution.svg`; DJI O4 image URL no longer forces WebP while retaining a PNG extension. Run #29 had published successfully but failed live checks on the former raw GitHub image path and the DJI O4 image's actual format.
 - Next: republish through the existing workflow and inspect the new run and full Playwright report. Do not consider all three new page visuals verified until the browser assertions pass.
+
+
+## FPV System Basics expansion — 28 October 2026
+
+- Created six in-depth Wiki source chapters: Power System Explained, Flight Controller and Stabilization Explained, Propulsion System Explained, Radio-Control Path Explained, Video Path Explained, and GPS/Telemetry/Recovery Explained.
+- Expanded `FPV-System-Basics.md` into a learning hub with a recommended reading order and a table that maps each of the power, control, video, sensor and navigation paths to deeper chapters.
+- Updated `_Sidebar.md`, the source README, asset attribution notes, and the Playwright verifier with dedicated route/content/image-width checks for the six new pages.
+- The chapters reuse existing high-resolution diagrams and link to the existing practical setup guides rather than duplicating their hardware-specific steps. All source graphics are labeled conceptual; firmware targets, board pinouts, voltage limits, motor maps and failsafe behavior must be verified against the exact current official manuals.
+- Status at handoff: source changes are committed to main; publish/Playwright workflow must be checked before claiming the live Wiki pages have all passed rendering checks.
