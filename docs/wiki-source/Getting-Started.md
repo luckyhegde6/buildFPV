@@ -52,7 +52,7 @@ Not just speed. Progress includes smoother control, fewer over-corrections, more
 3. [[Hardware Gallery]] — compare real builds and common board/module shapes; photos are not wiring diagrams.
 4. [[RadioMaster Pocket Button Guide]] — identify your RC controls and set up a dedicated simulator profile.
 5. [[Pocket ELRS and Liftoff]] — connect the radio over USB for the original Liftoff game.
-7. [Pocket ELRS and Liftoff: Micro Drones](Pocket-ELRS-and-Liftoff-Micro-Drones) — connect and calibrate separately for the micro-drone simulator.
+6. [Pocket ELRS and Liftoff: Micro Drones](Pocket-ELRS-and-Liftoff-Micro-Drones) — connect and calibrate separately for the micro-drone simulator.
 7. [[ExpressLRS Basics]], [[Betaflight Basics]], [[Video Systems and Goggles]], [[Video Antennas VTX VRX]], and [[GPS and Flight Controllers]] — understand the separate subsystems.
 8. [[Simulator Training]] — follow the staged practice roadmap.
 9. [[Daily Liftoff Routine]], [[Practice Skills and Race Times]], and [[Learning Journal]] — build consistency and record progress.
