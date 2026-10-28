@@ -13,7 +13,14 @@
 Aim for smooth, repeatable control rather than speed. Practise for 30–45 minutes at a time; stop when fatigue makes inputs sloppy.
 
 > [!IMPORTANT]
-> **Mandatory beginner video course before your first real flight:** complete the [Learn to fly an FPV drone (for total beginners) playlist](https://www.youtube.com/playlist?list=PLwoDb7WF6c8lCKhQOTy-Vb9LfW0VAIrTP) in sequence while practising in Liftoff. This is a buildFPV learning requirement, **not an official licence or certification**; continue to check safety requirements and current local rules.
+> **Mandatory beginner video course before your first real flight:** complete the [Learn to fly an FPV drone (for total beginners) playlist](https://www.youtube.com/playlist?list=PLwoDb7WF6c8lCKhQOTy-Vb9LfW0VAIrTP) in sequence while practising in a simulator such as [Liftoff FPV Drone Racing](https://store.steampowered.com/app/410340/Liftoff_FPV_Drone_Racing/) or [Liftoff: Micro Drones](https://store.steampowered.com/app/1432320/Liftoff_Micro_Drones/). This is a buildFPV learning requirement, **not an official licence or certification**; continue to check safety requirements and current local rules.
+
+## Choose a simulator for your aircraft class
+
+- **[Liftoff: Micro Drones](https://store.steampowered.com/app/1432320/Liftoff_Micro_Drones/)** — a separate simulator focused on the micro-drone class, with indoor environments and drone customisation. It is a particularly relevant option when your practice target is a tinywhoop or another small indoor micro.
+- **[Liftoff FPV Drone Racing](https://store.steampowered.com/app/410340/Liftoff_FPV_Drone_Racing/)** — the original Liftoff title, also useful for building general FPV control, circuit, gate and racing skills.
+
+These are separate games, not two modes of one install. Do not assume aircraft presets, rates, physics or controller profiles transfer between them. In either game, calibrate the radio axes and throttle minimum independently, start with a forgiving layout, and log the game, craft preset and map so practice results are comparable.
 
 
 ## Session pattern
