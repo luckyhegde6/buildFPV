@@ -188,7 +188,7 @@ const cases = [
   {
     name: 'simulator',
     url: `${base}/Simulator-Training`,
-    required: ['Simulator Training', 'Mandatory beginner video course before your first real flight', 'Learn to fly an FPV drone (for total beginners)', 'Liftoff', 'Enlarged control visuals'],
+    required: ['Simulator Training', 'Mandatory beginner video course before your first real flight', 'Learn to fly an FPV drone (for total beginners)', 'Liftoff', 'Choose a simulator for your aircraft class', 'Liftoff: Micro Drones', 'Enlarged control visuals'],
     minimumTables: 0,
     requireLocalImages: true,
     requiredImages: ['fpv-simulator-training-high-resolution.svg', 'fpv-system-basics-high-resolution.svg', 'fpv-section-axes-movements.svg', 'fpv-section-flight-modes.svg'],
@@ -302,7 +302,7 @@ const cases = [
   {
     name: 'tinywhoop',
     url: `${base}/Tinywhoop-and-Micro-FPV-Guide`,
-    required: ['Tinywhoops and Micro FPV', 'More real-world tinywhoop examples'],
+    required: ['Tinywhoops and Micro FPV', 'More real-world tinywhoop examples', 'Simulator practice for tinywhoops', 'Liftoff: Micro Drones'],
     minimumTables: 0,
     expandedImages: ['fpv-section-drone-overview.svg'],
     requireLocalImages: true,
