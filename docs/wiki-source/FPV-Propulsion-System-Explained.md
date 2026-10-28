@@ -16,6 +16,14 @@ The flight controller sits in the control loop and tells the ESC what output is 
 
 A 4-in-1 ESC drives four motors from one board. Some small quads combine FC and ESC circuitry on an AIO board. Separate ESCs also exist. The topology affects mounting and wiring but does not change the basic principle.
 
+| Part | Input | Output / effect |
+|---|---|---|
+| Flight controller | Pilot channel data and sensor feedback | Calculates motor commands |
+| ESC | Motor commands plus battery power | Switches current through motor phases |
+| Brushless motor | Electrical drive from the ESC | Rotational torque and speed |
+| Propeller | Motor rotation plus airflow | Thrust and aerodynamic load |
+| Frame / mounting | Structural load from motors and battery | Holds geometry and maintains clearance |
+
 ## 2. Brushless motors and KV
 
 A typical FPV motor is a brushless DC (BLDC) motor. Stator windings are energized in sequence, causing the rotor bell and attached propeller to spin. The ESC performs electronic commutation, coordinating current through the motor phases.
