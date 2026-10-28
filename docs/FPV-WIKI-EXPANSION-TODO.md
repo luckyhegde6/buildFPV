@@ -807,3 +807,12 @@ Current animation is a simple concept loop for rotor/thrust orientation, not a p
 - [x] Extend browser verification to require Wiki-local image files, declared width="1200", and rendered desktop width >=800 CSS pixels.
 - [x] Fix run #29 image failures in Getting Started's local SVG path and the DJI O4 product-image format URL.
 - [ ] Republish and inspect full Playwright results for How FPV Drones Work, RadioMaster Pocket, Simulator Training, and the other expanded pages.
+
+
+## FPV System Basics learning hub expansion — 28 October 2026
+
+- [x] Create six deeper subpages covering the power path, FC/sensor stabilization, propulsion, radio-control path, video path, and GPS/telemetry/recovery.
+- [x] Link the pages from `FPV-System-Basics.md` in a recommended beginner learning order.
+- [x] Add the six chapter links to `_Sidebar.md` and document the learning path in the source README.
+- [x] Add live Playwright checks for each new route's key headings, local diagrams and width-1200 enlarged rendering.
+- [ ] Publish the latest source revision and inspect the complete Playwright report; fix any failed route, image-localization or width assertion before marking verified.
