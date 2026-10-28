@@ -115,3 +115,10 @@ The source SVG dimensions are annotated for learning and comparison only. Manufa
 - `fpv-drone-components-connection-map-high-resolution.svg` — 1800 × 1240 scalable diagram embedded at `width="1200"` in [Drone Parts — One by One](../wiki-source/Drone-Parts-One-by-One.md); separates power/propulsion, radio-control/stabilisation, live-video and optional data paths.
 
 These are educational conceptual diagrams—not universal wiring schematics, board pinouts, motor-order references or substitutes for exact manufacturer manuals and current firmware documentation.
+
+
+## FPV System Basics deep-dive chapter map (28 October 2026)
+
+The existing scalable diagrams are reused by six new explainer chapters instead of creating duplicate graphics: [power system](../wiki-source/FPV-Power-System-Explained.md) uses `fpv-part-battery-power.svg`; [flight controller and stabilization](../wiki-source/Flight-Controller-and-Stabilization-Explained.md) uses `fpv-section-control-loop.svg`; [propulsion](../wiki-source/FPV-Propulsion-System-Explained.md) uses `fpv-section-motors-props.svg`; [radio control path](../wiki-source/FPV-Radio-Control-Path-Explained.md) uses `fpv-section-radio-control-link.svg`; [video path](../wiki-source/FPV-Video-Path-Explained.md) uses `fpv-section-video-system.svg` and `fpv-section-antenna-types.svg`; [GPS, telemetry and recovery](../wiki-source/FPV-GPS-Telemetry-and-Recovery-Explained.md) uses `fpv-section-gps-navigation.svg`.
+
+All chapters use these illustrations as concept maps at width 1200, not as wiring schematics or pinout references.
