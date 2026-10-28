@@ -12,6 +12,15 @@
 
 USB joystick mode sends stick positions to the simulator. It is not an ExpressLRS radio link and does not use the aircraft's receiver. The game's Steam page recommends using an RC transmitter, and the developer notes that the transmitter must be detected as a gamepad by the host computer before the game can calibrate it.
 
+## Connection check at a glance
+
+| Stage | What to confirm |
+|---|---|
+| USB cable and radio | The Pocket is powered and set to USB joystick/HID mode using a data-capable cable. |
+| Computer | A controller/gamepad appears and responds when the sticks move. |
+| Micro Drones | The game can select the controller in its own input/calibration settings. |
+| Calibration | Roll, pitch, yaw and throttle each have the expected direction and usable range. |
+
 ## Before connecting
 
 - [ ] Install and launch *Liftoff: Micro Drones* from Steam at least once.
