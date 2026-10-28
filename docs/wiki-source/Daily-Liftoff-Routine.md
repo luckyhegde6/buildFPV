@@ -2,13 +2,14 @@
 
 **Target:** build a durable habit, not chase the longest session. Choose the smallest duration you can honestly complete today. It is okay to choose 5 minutes.
 
-New to FPV? First complete the [mandatory beginner FPV playlist](https://www.youtube.com/playlist?list=PLwoDb7WF6c8lCKhQOTy-Vb9LfW0VAIrTP) in sequence while practising in Liftoff. This is project onboarding, not formal certification.
+New to FPV? First complete the [mandatory beginner FPV playlist](https://www.youtube.com/playlist?list=PLwoDb7WF6c8lCKhQOTy-Vb9LfW0VAIrTP) in sequence while practising in [Liftoff FPV Drone Racing](https://store.steampowered.com/app/410340/Liftoff_FPV_Drone_Racing/) or [Liftoff: Micro Drones](https://store.steampowered.com/app/1432320/Liftoff_Micro_Drones/). This is project onboarding, not formal certification.
 
 ## 1. Daily check-in
 
 - Date: `YYYY-MM-DD`
 - Radio: [ ] RadioMaster Pocket ELRS  [ ] Boxer  [ ] TX1 / TX16S / other TX-family radio (write exact model)  [ ] Other: ______
-- Liftoff controller input detected: [ ] yes  [ ] no / troubleshoot
+- Simulator: [ ] Liftoff FPV Drone Racing  [ ] Liftoff: Micro Drones
+- Selected simulator controller input detected: [ ] yes  [ ] no / troubleshoot
 - Today's chosen duration (tick one): [ ] **5 min**  [ ] **10 min**  [ ] **15 min**  [ ] **20 min**  [ ] **30+ min**
 - One goal only: __________________________________
 
