@@ -14,15 +14,19 @@ This page covers a radio-only simulator workflow. It does not require a real rec
 
 Refer to the manufacturer's current documentation if the radio menus differ from the A1.8 guide.
 
-## Connect it to Liftoff
+## Connect it to Liftoff FPV Drone Racing
 
 1. Install suitable radio batteries and fit the antenna before powering the radio.
 2. Turn the radio on and connect it to the computer using a data-capable USB-C cable.
 3. If an EdgeTX USB mode prompt appears, choose the joystick/HID-style mode intended for simulator input. Wording can vary by firmware version.
-4. In the computer's controller settings and Liftoff input settings, look for the controller and calibrate it.
+4. In the computer's controller settings and the game's input settings, look for the controller and calibrate it.
 5. Move each stick axis separately. Confirm roll, pitch, yaw and throttle respond to the intended controls and directions; confirm throttle minimum is truly minimum.
 6. Map a simulator arm/disarm control if the simulator supports it. Test in the simulator before attempting a practice flight.
 7. Save the controller profile or record the working setup.
+
+### Also using Liftoff: Micro Drones?
+
+[Liftoff: Micro Drones](https://store.steampowered.com/app/1432320/Liftoff_Micro_Drones/) is a separate game dedicated to the micro-drone class. Use the same general USB joystick/HID approach, but select and calibrate the Pocket again in Micro Drones and verify every axis in that game's own input menu. Record a separate working profile if needed; do not assume settings or craft presets from Liftoff FPV Drone Racing carry across.
 
 ## If the radio is not detected
 
