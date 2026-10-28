@@ -20,6 +20,14 @@ A typical 4-motor FPV quad has a path similar to this:
 
 Not every build follows one physical layout. An AIO board may integrate the FC, ESC and regulators. Some video systems can accept the battery directly; others require a regulated supply. A connector that fits is not proof that voltage or polarity is correct.
 
+| Block | Main job | What to verify |
+|---|---|---|
+| Battery pack | Stores energy and provides the main supply | Chemistry, cell count, maximum voltage, condition and connector polarity |
+| ESC / power input | Routes battery power and drives the motors | Supported voltage, board input pads, current path and recommended capacitor/filtering |
+| Regulator | Supplies a lower/controlled voltage to accessories | Output voltage, available current, thermal limits and whether the output is shared |
+| FC / receiver | Runs control firmware and reads control inputs/sensors | The board's supported input rail and stable ground/power path |
+| Camera / video unit | Captures and transmits the picture | Exact input range, peak current, connector and cooling requirement |
+
 ## 2. Voltage, cell count and current are different ideas
 
 - **Voltage** is the electrical potential supplied by the pack. Cell count is commonly written as 1S, 2S, 4S and so on.
