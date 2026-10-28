@@ -247,3 +247,16 @@ This is a chronological, append-oriented engineering log. New work should append
 - Added two new SVG assets and a README asset registry entry; the live verifier now asserts local Wiki loading and enlarged image widths on all three target pages.
 - Fixed two run #29 image issues for the next publish: direct Wiki-local src on Getting Started (the source-asset URL had remained external on that route), and use a genuine PNG source URL for the DJI O4 cover asset rather than requesting WebP with a .png pathname.
 - Publication/browser verification for this batch is pending; a fresh workflow run is required.
+
+
+## 28 October 2026 — FPV System Basics learning-hub expansion
+
+Added six source subpages that explain the underlying system behavior and keep practical setup guides as follow-on reading:
+- `FPV-Power-System-Explained.md` — battery, current/voltage, regulators, sag, noise and power-path fault isolation.
+- `Flight-Controller-and-Stabilization-Explained.md` — sensors, setpoints, feedback, PID concepts, modes and common symptoms.
+- `FPV-Propulsion-System-Explained.md` — ESC/motor/propeller sequence, KV, thrust, motor direction and matching.
+- `FPV-Radio-Control-Path-Explained.md` — radio model, RF/ELRS, receiver protocol, FC mapping, bind and failsafe layers.
+- `FPV-Video-Path-Explained.md` — camera to compatible goggles, analog/digital differences, antennas, OSD and recording.
+- `FPV-GPS-Telemetry-and-Recovery-Explained.md` — GNSS data, telemetry, OSD, buzzer/logging and version-specific GPS Rescue cautions.
+
+Updated the FPV System Basics hub, wiki sidebar, source README and live Playwright verifier. New chapters reuse existing scalable concept diagrams and link to official Betaflight/ExpressLRS documentation. Publication and browser verification are pending for this batch; do not treat source commits alone as live rendering evidence.
