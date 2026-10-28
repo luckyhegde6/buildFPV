@@ -39,3 +39,17 @@ The publisher intentionally refuses to push to a mismatched remote or over a dir
 ## Current publication status
 
 The Wiki-ready source and image references can be reviewed in this repository. The connected GitHub API reports the main repository has Wiki enabled, but the separate `buildFPV.wiki` repository still returns `404 Not Found`, which usually means its initial page has not been saved yet. The live Wiki could not be browser-verified from this environment. Save the first Home page in the Wiki UI, then run the publisher and verify the published pages and images; a commit to the main repository is not itself publication.
+
+
+## FPV System Basics — guided subpages
+
+The System Basics page is the hub. These six focused explainer pages describe the energy, control, propulsion, video and supporting-data paths in plain language, link back to practical setup pages, and include knowledge checks:
+
+- [FPV Power System Explained](FPV-Power-System-Explained.md)
+- [Flight Controller and Stabilization Explained](Flight-Controller-and-Stabilization-Explained.md)
+- [FPV Propulsion System Explained](FPV-Propulsion-System-Explained.md)
+- [FPV Radio-Control Path Explained](FPV-Radio-Control-Path-Explained.md)
+- [FPV Video Path Explained](FPV-Video-Path-Explained.md)
+- [FPV GPS, Telemetry and Recovery Explained](FPV-GPS-Telemetry-and-Recovery-Explained.md)
+
+The source pages intentionally distinguish conceptual paths from real wiring. Always use exact manufacturer board drawings and current firmware guides for voltage, pinout, motor order, firmware targets and safety-critical configuration.
