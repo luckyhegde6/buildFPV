@@ -26,7 +26,7 @@ Refer to the manufacturer's current documentation if the radio menus differ from
 
 ### Also using Liftoff: Micro Drones?
 
-[Liftoff: Micro Drones](https://store.steampowered.com/app/1432320/Liftoff_Micro_Drones/) is a separate game dedicated to the micro-drone class. Use the same general USB joystick/HID approach, but select and calibrate the Pocket again in Micro Drones and verify every axis in that game's own input menu. Record a separate working profile if needed; do not assume settings or craft presets from Liftoff FPV Drone Racing carry across.
+Use the dedicated [Pocket ELRS and Liftoff: Micro Drones connection guide](Pocket-ELRS-and-Liftoff-Micro-Drones) for detailed setup, per-game calibration, Steam Input troubleshooting and axis checks. [Liftoff: Micro Drones](https://store.steampowered.com/app/1432320/Liftoff_Micro_Drones/) is a separate game, so do not assume controller settings or craft presets from Liftoff FPV Drone Racing carry across.
 
 ## If the radio is not detected
 
