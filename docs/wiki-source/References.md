@@ -1,11 +1,12 @@
 # 🔗 References — official first, community second
 
-Links checked on **17 October 2026**. Projects, product revisions, store listings, legal requirements and firmware compatibility change; verify the current page before acting.
+Links checked on **28 October 2026**. Projects, product revisions, store listings, legal requirements and firmware compatibility change; verify the current page before acting.
 
 ## 🎮 Learning to fly and FPV fundamentals
 
 - [Learn to fly an FPV drone (for total beginners) — playlist](https://youtube.com/playlist?list=PLwoDb7WF6c8lCKhQOTy-Vb9LfW0VAIrTP)
 - [Liftoff FPV simulator](https://store.steampowered.com/app/410340/Liftoff_FPV_Drone_Racing/)
+- [Liftoff: Micro Drones — Steam store](https://store.steampowered.com/app/1432320/Liftoff_Micro_Drones/) · [official product overview](https://www.liftoff-game.com/our-products/liftoff-micro-drones) — separate simulator focused on the micro-drone class and indoor environments.
 - [Learning log template](https://github.com/luckyhegde6/buildFPV/blob/main/docs/learning-log/templates/daily-session.md)
 
 ## 🎛️ Radio and RC control
