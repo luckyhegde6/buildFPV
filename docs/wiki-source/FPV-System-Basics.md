@@ -6,6 +6,34 @@
 
 *High-resolution vector recreation of the overview graphic. The diagram is scalable and designed to stay sharp when enlarged. It is a conceptual learning map, not a wiring diagram or exact build layout.*
 
+## Explore the system, one path at a time
+
+Use this page as the map, then open the chapter that explains the part you want to understand. Each chapter follows the signal or energy path through the aircraft and ends with checks and questions. These are learning explanations, not wiring instructions.
+
+### Start with the whole aircraft
+
+1. [How FPV Drones Work — from sticks to flight](How-FPV-Drones-Work.md) explains pitch, roll, yaw, thrust and the control loop.
+2. [Drone Parts — One by One](Drone-Parts-One-by-One.md) identifies the hardware and its purpose.
+3. [FPV Power System Explained](FPV-Power-System-Explained.md) follows battery energy through distribution and regulated supplies.
+4. [FPV Propulsion System Explained](FPV-Propulsion-System-Explained.md) follows the ESC, motors and propellers from electrical command to thrust.
+5. [Flight Controller and Stabilization Explained](Flight-Controller-and-Stabilization-Explained.md) explains sensor feedback, setpoints, PID concepts and flight modes.
+
+### Follow each data path
+
+| System path | What travels through it | Read next |
+|---|---|---|
+| **Radio control** | Stick/channel values from the transmitter, over the RF link and receiver, into the FC | [Radio-Control Path Explained](FPV-Radio-Control-Path-Explained.md) · [ExpressLRS Basics](ExpressLRS-Basics.md) |
+| **Live video** | Camera picture through the analog VTX or digital air unit, over the video link to a compatible receiver/goggles | [Video Path Explained](FPV-Video-Path-Explained.md) · [Analog vs Digital Video](Analog-vs-Digital-FPV-Camera-Video-Guide.md) |
+| **Power and propulsion** | Stored battery energy converted into controlled motor torque and thrust | [Power System Explained](FPV-Power-System-Explained.md) · [Propulsion System Explained](FPV-Propulsion-System-Explained.md) |
+| **Sensors and stabilization** | Gyro/other sensor measurements feed the FC's control loop; motor output changes the aircraft's motion | [Flight Controller and Stabilization](Flight-Controller-and-Stabilization-Explained.md) · [Betaflight Basics](Betaflight-Basics.md) |
+| **GPS, telemetry and recovery** | Position/status data feeds supported FC features and selected displays; telemetry can send data back | [GPS, Telemetry and Recovery Explained](FPV-GPS-Telemetry-and-Recovery-Explained.md) · [GPS and Flight Controllers](GPS-and-Flight-Controllers.md) |
+
+### A suggested learning order
+
+Follow the chapter order above if you are starting from zero. Then read [ExpressLRS Basics](ExpressLRS-Basics.md) and [Betaflight Basics](Betaflight-Basics.md) for hands-on configuration, [Motors, Propellers and Battery Compatibility](Motors-Propellers-and-Battery-Compatibility.md) for selection trade-offs, and [FPV Chargers, LiPo and Li-ion Battery Safety](FPV-Chargers-LiPo-and-Li-ion-Battery-Safety.md) before charging or handling packs.
+
+**Important:** a radio bind, a working video picture or a correctly detected GPS is only proof about that part of the system. It does not establish flight readiness. Use the exact hardware documentation, keep props removed during configuration and motor checks, and follow current local rules.
+
 The original supplied raster artwork is still available: [FPV drone basics infographic](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-drone-basics-infographic.webp) · [beginner FPV guide](https://raw.githubusercontent.com/luckyhegde6/buildFPV/main/docs/assets/fpv-drone-beginner-guide.webp).
 
 Use the visual map for orientation, then follow the text and model-specific manuals for setup, wiring, motor direction and compatibility.
