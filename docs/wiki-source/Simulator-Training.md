@@ -20,7 +20,7 @@ Aim for smooth, repeatable control rather than speed. Practise for 30–45 minut
 - **[Liftoff: Micro Drones](https://store.steampowered.com/app/1432320/Liftoff_Micro_Drones/)** — a separate simulator focused on the micro-drone class, with indoor environments and drone customisation. It is a particularly relevant option when your practice target is a tinywhoop or another small indoor micro.
 - **[Liftoff FPV Drone Racing](https://store.steampowered.com/app/410340/Liftoff_FPV_Drone_Racing/)** — the original Liftoff title, also useful for building general FPV control, circuit, gate and racing skills.
 
-These are separate games, not two modes of one install. Do not assume aircraft presets, rates, physics or controller profiles transfer between them. In either game, calibrate the radio axes and throttle minimum independently, start with a forgiving layout, and log the game, craft preset and map so practice results are comparable.
+These are separate games, not two modes of one install. Do not assume aircraft presets, rates, physics or controller profiles transfer between them. In either game, calibrate the radio axes and throttle minimum independently, start with a forgiving layout, and log the game, craft preset and map so practice results are comparable. For Pocket-specific USB setup in the micro-drone game, follow the [Liftoff: Micro Drones connection and integration guide](Pocket-ELRS-and-Liftoff-Micro-Drones).
 
 
 ## Session pattern
