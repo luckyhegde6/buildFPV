@@ -8,6 +8,7 @@
 5. [[Hardware Gallery]]
 6. [[RadioMaster Pocket Button Guide]]
 7. [[Pocket ELRS and Liftoff]]
+8. [Pocket ELRS and Liftoff: Micro Drones](Pocket-ELRS-and-Liftoff-Micro-Drones)
 
 **FPV basics and video systems**
 - [[ExpressLRS Basics]]
@@ -54,6 +55,8 @@
 **Simulation roadmap**
 - [[Getting Started]]
 - [[Simulator Training]]
+- [[Pocket ELRS and Liftoff]]
+- [Pocket ELRS and Liftoff: Micro Drones](Pocket-ELRS-and-Liftoff-Micro-Drones)
 - [[Daily Liftoff Routine]]
 - [[Practice Skills and Race Times]]
 - [[Learning Journal]]
