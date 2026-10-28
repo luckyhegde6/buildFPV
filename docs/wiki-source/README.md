@@ -53,3 +53,9 @@ The System Basics page is the hub. These six focused explainer pages describe th
 - [FPV GPS, Telemetry and Recovery Explained](FPV-GPS-Telemetry-and-Recovery-Explained.md)
 
 The source pages intentionally distinguish conceptual paths from real wiring. Always use exact manufacturer board drawings and current firmware guides for voltage, pinout, motor order, firmware targets and safety-critical configuration.
+
+
+## Simulator integration guides
+
+- `Pocket-ELRS-and-Liftoff.md` — RadioMaster Pocket setup for the original Liftoff FPV Drone Racing.
+- `Pocket-ELRS-and-Liftoff-Micro-Drones.md` — USB controller setup and per-game calibration for Liftoff: Micro Drones.
